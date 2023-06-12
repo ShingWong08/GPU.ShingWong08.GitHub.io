@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="zh_HK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>顯示卡天梯圖</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&family=Noto+Sans+HK:wght@700&display=swap');
+    .NVIDIA {
+        color: green;
+    }
+    .AMD {
+        color: red;
+    }
+    .INTEL {
+        color: dodgerblue;
+    }
+</style>
+<body>
+    <h1>顯示卡天梯圖</h1>
+    <table>
+        <tr>
+            <th colspan="7" class="NVIDIA">NVIDIA GeForce</th>
+            <th colspan="7" class="AMD">AMD</th>
+            <th colspan="1" class="INTEL">Intel</th>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GeForce 600 及更早</td>
+            <td class="NVIDIA">GeForce 700</td>
+            <td class="NVIDIA">GeForce 900</td>
+            <td class="NVIDIA">GeForce 10</td>
+            <td class="NVIDIA">GeForce 20</td>
+            <td class="NVIDIA">GeForce 30</td>
+            <td class="NVIDIA">GeForce 40</td>
+            <td class="AMD">RX 7000</td>
+            <td class="AMD">RX 6000</td>
+            <td class="AMD">RX 5000</td>
+            <td class="AMD">RX 400 / 500 / Vega</td>
+            <td class="AMD">Radeon R300</td>
+            <td class="AMD">Radeon R200</td>
+            <td class="AMD">Radeon HD<br>7000</td>
+            <td class="INTEL">Arc A</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 4090</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="AMD">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 7900 XTX</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 4080</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="AMD">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 7900 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 3090 Ti</td>
+            <td class="NVIDIA">RTX 4070 Ti</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 3090</td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6950 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="AMD">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6900 XT 水冷版</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 3080 Ti</td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6900 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">Titan RTX</td>
+            <td class="NVIDIA">RTX 3080 12GB</td>
+            <td class="NVIDIA">RTX 4070</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 3080</td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6800 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="AMD">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6800</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 3070 Ti</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 2080 Ti</td>
+            <td class="NVIDIA">RTX 3070</td>
+            <td class="NVIDIA">RTX 4060 Ti</td>
+            <td></td>
+            <td class="AMD">RX 6750 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="AMD">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6700 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 3060 Ti</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">Titan V</td>
+            <td class="NVIDIA">RTX 2080 Super</td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 7600</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">Titan Xp</td>
+            <td class="NVIDIA">RTX 2080</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 1080 Ti</td>
+            <td class="NVIDIA">RTX 2070 Super</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6650 XT</td>
+            <td></td>
+            <td class="AMD">Radeon VII</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="AMD">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6600 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R9 295X2</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="NVIDIA">GTX Titan Z</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 5700 XT 50周年紀念版</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="INTEL">Arc A770</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">Titan X</td>
+            <td></td>
+            <td class="NVIDIA">RTX 3060</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 5700 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="INTEL">Arc A750</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 2070</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX Vega 64 水冷</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 2060 Super</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 1080</td>
+            <td class="NVIDIA">RTX 2060 Super</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6600</td>
+            <td class="AMD">RX 5700</td>
+            <td class="AMD">RX Vega 64</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="INTEL">Arc A580</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 1070 Ti</td>
+            <td class="NVIDIA">RTX 2060</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 5600 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">RTX 3050</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX Vega 56</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX Titan X</td>
+            <td class="NVIDIA">GTX 1070</td>
+            <td class="NVIDIA">GTX 1660 Ti</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 5600</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 980 Ti</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R9 Fury X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 1660 Super</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R9 Nano</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 1660</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6500 XT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD7990</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 690</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 5500 XT</td>
+            <td class="AMD">RX 590</td>
+            <td class="AMD">R9 Fury</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTXTitan Black</td>
+            <td class="NVIDIA">GTX980</td>
+            <td></td>
+            <td class="NVIDIA">GTX 1650 Super</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 580</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="NVIDIA">GTX 780 Ti</td>
+            <td></td>
+            <td class="NVIDIA">GTX 1060 6GB</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 480</td>
+            <td class="AMD">R9 390X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="NVIDIA">GTX Titan</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 580 2048SP<br>RX 570</td>
+            <td class="AMD">R9 390</td>
+            <td class="AMD">R9290X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="NVIDIA">GTX 780</td>
+            <td class="NVIDIA">GTX 970</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 470</td>
+            <td></td>
+            <td class="AMD">R9290</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 1060 3GB</td>
+            <td class="NVIDIA">GTX 1650GD5/GD6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 6400</td>
+            <td></td>
+            <td class="AMD">RX 560 XT</td>
+            <td class="AMD">R9 380X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 590</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 470D</td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6990</td>
+            <td class="INTEL">Arc A380</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="NVIDIA">GTX 770</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R9 380</td>
+            <td class="AMD">R9280X</td>
+            <td class="AMD">HD7970 GE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 680</td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 1050 Ti</td>
+            <td class="NVIDIA">GTX 1630</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R9 285</td>
+            <td class="AMD">HD7970</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="NVIDIA">GTX 760</td>
+            <td class="NVIDIA">GTX 960</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R9 280</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 670</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD7950 Boost</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD7950</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 660 Ti</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 560</td>
+            <td class="AMD">R9 370X</td>
+            <td></td>
+            <td class="AMD">HD5970</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 1050</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R9270X</td>
+            <td></td>
+            <td class="INTEL">Arc A310</td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 580</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GTX 950</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD7870</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 660</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 460</td>
+            <td class="AMD">R7 370</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 570</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R9270</td>
+            <td class="AMD">HD6970</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 480</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 560 Ti<br>(448SP)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7 265</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 650 Ti Boost</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">RX 550</td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD7850</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 295</td>
+            <td class="NVIDIA">GTX 750 Ti</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6950</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5870</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 560 Ti<br>(384SP)</td>
+            <td></td>
+            <td></td>
+            <td class="NVIDIA">GT 1030</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7260X</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6930</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7 360</td>
+            <td></td>
+            <td class="AMD">HD4870 X2</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 470</td>
+            <td class="NVIDIA">GTX 750</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD7790</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 560</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7 260</td>
+            <td class="AMD">HD6870</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 650 Ti>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5850</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 465</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 460</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7 250X</td>
+            <td class="AMD">HD6850</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD7770</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 560 SE</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 285</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 460 768MB</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5830</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 280</td>
+            <td class="NVIDIA">GT 730384SP</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6790</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 275</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 260 216SP</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD 7750</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 460 SE</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7 350</td>
+            <td></td>
+            <td class="AMD">HD4890</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 260</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7250</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTX 550 Ti</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7 340</td>
+            <td></td>
+            <td class="AMD">HD6770</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R7240</td>
+            <td class="AMD">HD4870</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9800 GX2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5770</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTS 450</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R5 340</td>
+            <td></td>
+            <td class="AMD">HD3870 X2</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GTS 250</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R5 240</td>
+            <td class="AMD">HD6750</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5750</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9800 GTX+</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD4860</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8800 Ultra</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD4850</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9800 GTX</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD4770</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 640</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8800 GTX</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6670 D5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9800 GT</td>
+            <td class="NVIDIA">GT 710</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8800 GTS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD4830</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8800 GTS 512MB</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD7730 D3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8800 GT</td>
+            <td class="NVIDIA">GT 720 D5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD4750</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6670 D3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8800 GS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5670</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="NVIDIA">GT 720 D3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 240 D5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6570 D5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9600 GT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD3870</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 630 D5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD2900 XT</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 440 D5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD3850</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 630 D3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD2900 Pro</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 240 D3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD4670</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9600 GSO</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD3830</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 440 D3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6570 D3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8600 GTS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5570</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9500 GT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5550</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 620</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD4650</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 430</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD3690</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8600 GT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD3650</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9500 GS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R5 230</td>
+            <td class="AMD">HD2600 XT</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8600 GS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD2600 Pro</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 220</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">R5 220</td>
+            <td class="AMD">HD3550</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 610</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD6450</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">9400 GT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD 4550</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8500 GT</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD2400 XT</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 520</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD3450</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">8400 GS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD2400 Pro</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD5450</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="NVIDIA">GT 210</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="AMD">HD 4350</td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

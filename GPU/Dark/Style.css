@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(12,12,12);
+    background-size: 100%;
+    color: white;
+    font-family: 'Lexend', 'Noto Sans HK';
+    font-size: 16px;
+    text-align: center;
+}
+h1 {
+    font-size: 36px;
+}
+table, th, td {
+    border: 1px solid rgb(128, 128, 128);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
