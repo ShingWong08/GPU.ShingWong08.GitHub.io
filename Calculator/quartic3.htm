@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>一元四次方程 Quartic Equation</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">一元四次方程(III) Quartic Equation III</font>
+            </b></u></p>
+    <p>程式由網友<span class="gen"><span class="postername">
+                <font color="#0000FF">
+                    roviury</font> 提供。
+            </span> </span></p>
+    <p>更新日期: 2012年1月15日</p>
+    <p>這個程式版本只可以計算實數係數的一元四次方程。</p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>注意: 5<font color="#000080"><b>!</b></font><sup>o</sup>是按 5 SHIFT
+        <font color="#0000FF">x!</font> SHIFT Ans 1。
+    </p>
+    <p>程式一(實數係數版本，221 bytes)</p>
+    <p>?→A: ?→B: ?→C: ?→D: ?→M: B┘(4A→B: C┘A - 6B<sup>2</sup>→C: </p>
+    <p>D┘A - 4B<sup>3</sup> - 2BC→D: M┘A - B( B<sup>3</sup> + BC + D→M: C<sup>2</sup>
+        - 4M→X: <br>
+        <br>
+        8C<sup>3</sup> - 9┘2( 2CX+3D<sup>2</sup>→Y:&nbsp; 4C<sup>2 </sup>- 3X→M: √( Y<sup>2
+        </sup>- M<sup>3</sup>: Ans - Y - 2Ans( Ans=Y→Y:
+    </p>
+    <p>
+        <font color="#FF0000"><sup>3</sup>√(</font> Abs( Ans <font color="#FF0000">=&gt;</font>
+        Ans∠( 3<sup>-1</sup>arg( Y ) + 5!<sup>o </sup>(π<sup>r </sup>= arg( Y→Y: Abs(Ans
+        <font color="#FF0000">=&gt;</font> Y + M┘Y:
+    </p>
+    <p>√( ( Ans - 2C)┘3→A: √( X→X: A <font color="#FF0000">=&gt;</font> D┘A→X: For
+        -1→D to 1 Step 2:
+        √( 2DX - 2C-A<sup>2</sup>→M:&nbsp; </p>
+    <p>( M - DA )┘2 - B◢ Ans - M◢ Next<br>
+        <br>
+        　
+    </p>
+    <p>程式二(複數係數版本，259 bytes)</p>
+    <p>?→A: ?→B: ?→C: ?→D: ?→M: B┘(4A→B: C┘A - 6B<sup>2</sup>→C: </p>
+    <p>D┘A - 4B<sup>3</sup> - 2BC→D: M┘A - B( B<sup>3</sup> + BC + D→M: C<sup>2</sup>
+        - 4M→X: <br>
+        <br>
+        8C<sup>3</sup> - 9┘2( 2CX+3D<sup>2</sup>→Y:&nbsp; 4C<sup>2 </sup>- 3X→M: √(
+        Abs(Y<sup>2 </sup>- M<sup>3 </sup>
+        <font color="#FF0000">=&gt;</font> Ans∠(.5arg(Y<sup>2
+        </sup>- M<sup>3</sup>:
+    </p>
+    <p>Ans - Y - 2Ans( Ans=Y→Y: <font color="#FF0000"><sup>3</sup>√(</font> Abs( Ans
+        <font color="#FF0000">=&gt;</font> Ans∠( 3<sup>-1</sup>arg( Y→Y:
+    </p>
+    <p>Abs(Ans <font color="#FF0000">=&gt;</font> Y + M┘Y: ( Ans - 2C)┘3→A: √( Abs(A
+        <font color="#FF0000">=&gt;</font> Ans∠( . 5arg(A→A: <br>
+        <br>
+        √( Abs(X <font color="#FF0000">=&gt;</font> Ans∠(
+        . 5arg(X→X: Abs(A<font color="#FF0000"> =&gt;</font> D┘A→X: <br>
+        <br>
+        For -1→D to 1 Step 2: 2DX - 2C - A<sup>2</sup>→M: √(Abs(M <font color="#FF0000">=&gt;</font> Ans∠(
+        . 5 arg(M→M: ( M - DA )┘2 - B◢
+    </p>
+    <p>Ans - M◢ - A→A: - X→X: Next</p>
+    <p>　</p>
+    <p>例題1: 解 2x<sup>4</sup> - 11x<sup>3</sup> - 12x<sup>2</sup> + 71x + 70 = 0 </p>
+    <p>
+        按 Prog 1&nbsp; 再按 2 EXE - 11 EXE - 12 EXE 71 EXE 70 EXE (顯示第一個根為 5) EXE (顯示第二個根為
+        3.5)EXE (顯示第三個根為-1)</p>
+    <p>EXE (顯示第四個根為 -2) </p>
+    <p>計算完結後按AC 或 EXE 終止程式</p>
+    <p>　</p>
+    <p>例題2: 解 3x<sup>4</sup> - 5x<sup>3</sup> + x<sup>2</sup> - 4x =0</p>
+    <p>
+        按 Prog 1&nbsp; 再按 3 EXE - 5 EXE 1 EXE - 4 EXE</p>
+    <p>
+        0
+        EXE (顯示第一個根為1.869774)</p>
+    <p>
+        EXE (顯示第二個根為 0)</p>
+    <p>
+        EXE (顯示第三個根實數部為 - 0.101554) </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第三個根虛數部為 0.838323 i)</p>
+    <p>
+        EXE (顯示第四個根的實數部為
+        - 0.101554)</p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第四個根虛數部為
+        - 0.838323 i)</p>
+    <p>計算完結後按AC 或 EXE終止程式</p>
+    <p>
+        　</p>
+    <p>例題3: 解 (1+2i)x<sup>4</sup> + (3+4i)x<sup>3</sup> + (5+6i)x<sup>2</sup> +
+        (7+8i)x + 9 + 10i = 0</p>
+    <p>
+        <font color="#FF0000">只適用於第二個程式</font>
+    </p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 1 + 2i EXE 3 + 4i EXE 5 + 6i EXE 7 + 8i EXE</p>
+    <p>
+        9 + 10i
+        EXE (顯示第一個根為0.338372)</p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第一個根虛數部為 1.525119 i)</p>
+    <p>EXE (顯示第二個根為 0.190034)</p>
+    <p>Shift Re&lt;=&gt;Im (顯示第二個根虛數部為 -1.423764 i)</p>
+    <p>
+        EXE (顯示第三個根實數部為 - 1.318397) </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第三個根虛數部為 1.043530 i)</p>
+    <p>
+        EXE (顯示第四個根的實數部為 - 1.410008)</p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第四個根虛數部為 - 0.744885 i)</p>
+    <p>
+        計算完結後按AC 或 EXE 終止程式</p>
+    <p>
+        　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

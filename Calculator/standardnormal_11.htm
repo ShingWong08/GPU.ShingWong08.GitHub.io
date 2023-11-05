@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>標準常態分佈及反標準常態分佈高考準確版</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">標準常態分佈及反標準常態分佈</font>
+            </b></u></p>
+    <p align="center"><u><b>
+                <font size="5">文憑試準確版 III</font>
+            </b></u></p>
+    <p>程式更新日期: 2014年10月14日</p>
+    <p><b>
+            <font color="#FF0000">注意: 程式只適用於fx-3650P II計算機</font>
+        </b>
+        <font color="#FF0000"><b>，程式比版本I短很多，但速度較慢。</b></font>
+    </p>
+    <p>程式都可以計算標準常態分佈或反標準常態分佈，程式針對文憑試數學而設計，亦即是利用查表的數據及線性比例方法<font size="3">(Linear
+            Interpolation)計算答案，</font>因此<font color="#FF0000">能確保與文憑試標準答案相同<b>(包括順查及反查的情況)</b></font>。</p>
+    <p>注意: <font color="#FF0000">e^( </font>是按shift
+        e<sup>x</sup> ，<font size="1">E</font>是按 EXP。</p>
+    <p>程式(158 bytes，使用記憶A, B, C, X, Y及M)</p>
+    <p>?→X: ?→C: If X: Then ln( 1 - 4C<sup>2 </sup>: </p>
+    <p>√( - Ans - 8 + √( Ans<sup>2</sup>
+        - 9Ans + 64: Else Abs( C→C: </p>
+    <p>C - . 005: IfEnd: Fix 2: Rnd( Ans→M: Fix 4: 0: Lbl 0: </p>
+    <p>M - Ans→Y: B→A: Rnd(√(2π)<sup>-1</sup>&#643;( √( <font color="#FF0000">e^(</font> -X<sup>2</sup>
+        , 0 , M→B: </p>
+    <p>(M=Y) + X(A=B <font color="#FF0000">=&gt;</font> . 01 - . 02(B&gt;C<font color="#FF0000">M+ =&gt; </font>
+        Goto 0: Norm 1: </p>
+    <p>(A - B) ÷ (Y - M: If X: Then Y + Ans<sup>-1</sup>(C - A: Else A + Ans(C - Y</p>
+    <p>　</p>
+    <p>　</p>
+    <p>註1: 反查計算時，輸入概率範圍為 0&lt; P&lt; 0.5，否則程式可能會出現Math error或不能正常運作。</p>
+    <p>註2: 如果輸入的數值X為負數，程式會計算P(X≦Z≦0)。</p>
+    <p>註3: 反查的概率P&gt;0.4973時，查表可能會出現多於一個答案，這時程式二可能會出現Math
+        ERROR(現時很多同類程式的限制)，程式一則解決了這方面問題，可以顯示其中一個正確答案。例如: 反查P=0.4990，查表可得的答案分別為 Z=3.08,
+        Z=3.09 或 Z=3.10，程式二會出現Math
+        ERROR，程式一則顯示答案為Z=3.08。其實若果使用程式二，而反查的P值是表有的(即P值不多於4位小數)，在Math ERROR後，可以自行按 AC RCL
+        M 或 RCL Y 顯示可能的答案。</p>
+    <p>　</p>
+    <p>例題1: 計算 P(0≦
+        Z≦1)、P(Z≧1)
+        及 P(Z≦1)，其中
+        Z ~ N(0, 1)。</p>
+    <p>
+        按 Prog 1
+        再按 <font color="#FF0000">0 EXE</font>
+        (輸入0代表計算標準常態分佈)</p>
+    <p>
+        1 EXE (顯示P(0≦
+        Z≦1)為0.3413)</p>
+    <p>　</p>
+    <p>例題2: 計算 P(0≦
+        Z≦1.234)、P(Z≧1.234)
+        及 P(Z≦1.234)，其中
+        Z ~ N(0, 1)。</p>
+    <p>
+        按 Prog 1
+        再按 <font color="#FF0000">0 EXE</font>
+        (輸入0代表計算標準常態分佈)</p>
+    <p>
+        1.234 EXE (顯示P(0≦
+        Z≦1.234)為0.39142)<font color="#008000">
+        </font>
+    </p>
+    <p>註4: 輸入多於2位小數，程式會使線性比例方法(Linear
+        Interpolation)，程式執行完結後可以按 <font color="#0000FF">RCL A</font>及<font color="#0000FF">RCL
+            B</font>可以顯示查表時使用的兩個概率的數值，由於一般考試可能需要詳細步驟，你亦可以直接使用這兩個數值作為考試步驟的數據。</p>
+    <p>　</p>
+    <p>例題3: 若P(0≦
+        Z≦x)
+        = 0.3907，求 x 的值，其中
+        Z ~ N(0, 1)。</p>
+    <p>
+        按 Prog 1
+        再按 <font color="#FF0000">1 EXE</font>
+        (輸入1代表計算反標準常態分佈)</p>
+    <p>
+        0.3907 EXE (顯示答案為 1.23)</p>
+    <p>
+        　</p>
+    <p>
+        註5: 得出的答案若果<font color="#FF0000">不多於兩位小數</font>(表的Z位數)，
+        表示直接查表求得答案，因此不需要任何考試的計算步驟。</p>
+    <p>
+        　</p>
+    <p>例題4: 若P(0≦
+        Z≦x)
+        = 0.3，求 x 的值，其中
+        Z ~ N(0, 1)。</p>
+    <p>
+        按 Prog 1
+        再按 <font color="#FF0000">1 EXE</font>
+        (輸入1代表計算反標準常態分佈)</p>
+    <p>
+        0.3 EXE (顯示答案為 0.841785714)</p>
+    <p>
+        　</p>
+    <p>
+        註6: 答案<font color="#0000FF">多於兩位小數</font>，表示答案不能直接查表求得，要使用線性比例方法(Linear
+        Interpolation)求出答案， 按 <font color="#0000FF">RCL A</font> 及<font color="#0000FF">RCL B</font>可以顯示計算步驟所要的概率
+        值(0.2995及0.3023)，再按 <font color="#0000FF">RCL Y</font>及<font color="#0000FF">RCL
+            M</font>則顯示兩個X值(0.84及0.85)，由於一般考試可能需要詳細步驟，你亦可以直接使用這些數值作為考試步驟的數據。</p>
+    <p>
+        註7: 現時很多這類<font color="#FF0000">高考版程式</font>在計算一些特別情況都均會出現錯誤(由於不是使用與高考計算時完全一致方法之故)，例如:
+        以下例題5及例題6，順查P(0≦Z≦0.77)會得錯誤答案0.2793，<font color="#FF0000">正確答案為0.2794</font>。反查P(0≦
+        Z≦x)=0.48078會得出錯誤的答案 2.0695，<font color="#FF0000">正確答案為2.0696</font>，本程式沒有類似的計算問題。</p>
+    <p>
+        　</p>
+    <p>例題5: 計算 P(0≦
+        Z≦0.77)，其中
+        Z ~ N(0, 1)。</p>
+    <p>
+        按 Prog 1
+        再按 <font color="#FF0000">0 EXE</font>
+        (輸入0代表計算標準常態分佈)</p>
+    <p>
+        0.77 EXE (顯示P(0≦
+        Z≦1)為0.2794)</p>
+    <p>
+        　</p>
+    <p>例題6: 若P(0≦
+        Z≦x)
+        = 0.48078，求 x 的值，其中
+        Z ~ N(0, 1)。</p>
+    <p>
+        按 Prog 1
+        再按 1 EXE 0.48078 EXE (顯示答案為 2.0696)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

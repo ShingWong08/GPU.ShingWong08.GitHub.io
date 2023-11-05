@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <title>回歸計算</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">回歸計算</font>
+            </b></u></p>
+    <p>編寫日期: 2007年9月11日</p>
+    <p>
+        <font color="#FF0000">按鍵說明:</font>
+    </p>
+    <p>
+        <font color="#800080">(A) 回歸模的選擇</font>
+    </p>
+    <p>MODE 5 1 (進入線性回歸模式: y= A + Bx)</p>
+    <p>MODE 5 2 (進入對數回歸模式: y= A + B ln x)</p>
+    <p>MODE 5 3 (進入指數回歸模式: y= A e<sup>Bx</sup>)</p>
+    <p>MODE 5 4 (進入乘方回歸模式: y= A x<sup>B</sup>)</p>
+    <p>MODE 5 → 1 (進入逆回歸模式: y= A + B/x)</p>
+    <p>MODE 5 → 2 (進入二次回歸模式: y= A + Bx +Cx<sup>2</sup>)</p>
+    <p>MODE 5 → 3 (進入AB指數回歸模式: y= AB<sup>x</sup>)</p>
+    <p>
+        <font color="#800080">(B) 回歸變數</font>
+    </p>
+    <p>
+        SHIFT CLR 1 EXE (清除統計記憶)</p>
+    <p>
+        SHIFT S-SUM 1 EXE (顯示數據的平方總和<font color="#FF0000">
+            Σx<sup>2</sup></font>)</p>
+    <p>
+        SHIFT S-SUM 2 EXE (顯示數據的總和<font color="#FF0000">
+            Σx</font>)</p>
+    <p>
+        SHIFT S-SUM 3 EXE (顯示數據的數量<font color="#FF0000">
+            n</font>)</p>
+    <p>
+        SHIFT S-SUM → 1 EXE (顯示數據的數量<font color="#FF0000">
+            Σy<sup>2</sup></font>)</p>
+    <p>
+        SHIFT S-SUM → 2 EXE (顯示數據的數量<font color="#FF0000">
+            Σy</font>)</p>
+    <p>
+        SHIFT S-SUM → 3 EXE (顯示數據的數量<font color="#FF0000">
+            Σxy</font>)</p>
+    <p>
+        SHIFT S-SUM ← 1 EXE (只限二次回歸模式，顯示數據的數量<font color="#FF0000">
+            Σx<sup>3</sup></font>)</p>
+    <p>
+        SHIFT S-SUM ← 2 EXE (只限二次回歸模式，顯示數據的數量<font color="#FF0000">
+            Σx<sup>2</sup>y</font>)</p>
+    <p>
+        SHIFT S-SUM ← 3 EXE (只限二次回歸模式，顯示數據的數量<font color="#FF0000">
+            Σx<sup>4</sup></font>)</p>
+    <p>
+        SHIFT S-VAR 1 1 EXE (顯示x數據的平均數
+        <span style="text-decoration: overline">
+            <font color="#FF0000">x</font>
+        </span>)
+    </p>
+    <p>
+        SHIFT S-VAR 1 2 EXE (顯示x數據的標準差
+        <font color="#FF0000">xσn</font>)
+    </p>
+    <p>
+        SHIFT S_VAR 1 3 EXE (顯示x數據的樣本標準差<font color="#FF0000">xσn-1</font>)</p>
+    <p>
+        SHIFT S-VAR 1 → 1 EXE (顯示y數據的平均數 <span style="text-decoration: overline">
+            <font color="#FF0000">y</font>
+        </span>)</p>
+    <p>
+        SHIFT S-VAR 1 → 2 EXE (顯示y數據的標準差
+        <font color="#FF0000">yσn</font>)
+    </p>
+    <p>
+        SHIFT S_VAR 1 → 3 EXE (顯示y數據的樣本標準差<font color="#FF0000">yσn-1</font>)</p>
+    <p>
+        SHIFT S_VAR 1 → → 1 EXE (顯示回歸係數<font color="#FF0000">a</font>)</p>
+    <p>
+        SHIFT S_VAR 1 → → 2 EXE (顯示回歸係數<font color="#FF0000">b</font>)</p>
+    <p>
+        SHIFT S_VAR 1 → → 3 EXE (顯示回歸係數<font color="#FF0000">
+            r </font>或 <font color="#FF0000">c</font>)</p>
+    <p>
+        輸入數據的方法: <font color="#800080">[x數據]</font> , <font color="#800080">[y數據]</font> DT 或&nbsp; <font
+            color="#800080">[x數據]</font>
+        , <font color="#800080">[y數據]</font> ; <font color="#800080">[數量]</font> DT</p>
+    <p>
+        <b>
+            <font color="#FF0000">注意:</font>
+        </b> 當改變計數機模式(包括改變到相同的統計模式)，統計記憶會自動被清除。
+    </p>
+    <p>
+        　</p>
+    <p>
+        例題:
+        利用線性回歸方法，找出下列數據的線性關係，估計當x=10，y的數值?估計當y=38，x的數值?</p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" id="AutoNumber1"
+        align="left" bordercolorlight="#666666" bordercolordark="#000000">
+        <tr align="center">
+            <td width="12%"> x
+            </td>
+            <td width="12%">2
+            </td>
+            <td width="12%">2
+            </td>
+            <td width="12%">13
+            </td>
+            <td width="13%">19
+            </td>
+            <td width="13%">19
+            </td>
+            <td width="13%">19
+            </td>
+            <td width="13%">15
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">y
+            </td>
+            <td width="12%">5
+            </td>
+            <td width="12%">5
+            </td>
+            <td width="12%">26
+            </td>
+            <td width="13%">40
+            </td>
+            <td width="13%">40
+            </td>
+            <td width="13%">40
+            </td>
+            <td width="13%">30
+            </td>
+        </tr>
+    </table>
+    <p>
+        　</p>
+    <p>
+        　</p>
+    <p>
+        若現在不是在REG模式，</p>
+    <p>
+        按 <font color="#800080">MODE 5 1</font> 進入REG模式的Lin及清除統計記憶，否則不會清除記憶。</p>
+    <p>
+        若現在是REG 模式，
+        按 <font color="#800080">MODE 5 1</font> 進入REG模式的Lin，再按 <font color="#800080">SHIFT CLR 1 EXE</font> 清除統計記憶。</p>
+    <p>
+        　</p>
+    <p>
+        FreqOn 輸入方法:&nbsp; 按 <font color="#800080">2 , 5 DT DT 13 , 26 DT 19 , 40
+            SHIFT ; 3 DT 15 , 30 DT</font>
+    </p>
+    <p>
+        FreqOff 輸入方法:&nbsp; 按 <font color="#800080">2 , 5 DT DT 13 , 26 DT 19 , 40 DT DT DT 15 , 30 DT</font>
+    </p>
+    <p>
+        　</p>
+    <p>
+        <font color="#800080">SHIFT S_VAR 1
+            → → 1 EXE</font> (顯示A為0.556992724)
+    </p>
+    <p>
+        <font color="#800080">SHIFT S_VAR 1
+            → → 2 EXE</font> (顯示B為
+        2.046079224)
+    </p>
+    <p>
+        <font color="#800080">SHIFT S_VAR 1
+            → → 3 EXE</font>
+    </p>
+    <p>
+        (顯示 r為0.998615112，這個數值(correlation
+        coefficient)越近1或-1，代表越接近線性關係)</p>
+    <p>
+        <font color="#800080">10 SHIFT S_VAR ← 2 EXE</font>
+        (顯示21.01778496)
+    </p>
+    <p>
+        <font color="#800080">38 SHIFT S_VAR ← 1 EXE</font>
+        (顯示18.29988147)
+    </p>
+    <p>
+        　</p>
+    <p>
+        因此直線關係為 y = 0.556992724 +&nbsp;
+        2.046079224 x </p>
+    <p>
+        當x=10，y
+        = 21.01778496</p>
+    <p>
+        當y=38，x
+        = 18.29988147</p>
+    <p>
+        完成計算後，按 MODE 1
+        返回正常模式。</p>
+    <p>
+        <font color="#FF0000">注意: </font>若計算新一組統計問題，請按SHIFT MODE 1 EXE (清除統計記憶)
+    </p>
+    <p>　</p>
+    <p>
+        註: FreqOn 及 FreqOff 設定下能輸入數據項的最大數目分別為26及40。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

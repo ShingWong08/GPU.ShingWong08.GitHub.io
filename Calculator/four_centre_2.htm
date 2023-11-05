@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>三角形重心、垂心、外心及內心</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">三角形重心、垂心、外心及內心(II)</font>
+            </b></u></p>
+    <p>程式更新日期: 2016年3月21日</p>
+    <p>程式由網友<span class="gen"><span class="postername">
+                <font color="#0000FF">
+                    roviury</font> 提供。
+            </span></span></p>
+    <p><span class="gen">&nbsp;</span>已知三角形三頂點的坐標，程式可計算三角形的重心、垂心、外心及內心的坐標。</p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在輸入程式前請先按 Mode 2。</font>
+    </p>
+    <p>程式一 (96 bytes，使用記憶A, B, C及M)</p>
+    <p>
+        ?→A: ?→B: ?→C: 3<sup>-1</sup>(A + B + C◢ (B - C)÷( A - C→M: </p>
+    <p>
+        C- i (A - B) tan( arg( iM◢ .5(A + B + C - Ans◢ </p>
+    <p>
+        Abs(B - C) + Abs(A - C) - Abs(A - B: </p>
+    <p>
+        Ans - i Ans tan( .5arg(M: C + Ans ( .5∠ arg(B - C
+        　</p>
+    <p>
+        　</p>
+    <p>程式二 (93 bytes，使用記憶A, B, C, D及M)</p>
+    <p>?→A: ?→B: ?→C: A + B + C→M: M÷3◢ </p>
+    <p>(B - C) ÷( A - C→D: C-i (A - B) tan(arg(iD <font color="#FF0000">M-</font>◢ </p>
+    <p>. 5M◢ Abs(B - C) + Abs(A - C) - Abs(A - B: </p>
+    <p>Ans - i Ans tan( .5arg(D: C + Ans ( .5∠ arg(B - C
+        　</p>
+    <p>
+        <font color="#FF0000">注意: 座標以複數形式輸入及顯示答案，即是複數實數部為x座標，虛數部為y座標。</font>
+    </p> <span lang="en">
+        <p>例題1: A、B及C三點的坐標分別為(4 , 3)、(0 , 0) 及 (4 , 0)，求三角形ABC的重心、垂心、外心及內心的坐標。</p>
+        <p>
+            按 Prog 1 再按 4 + 3 i EXE (以複數形式輸入座標) </p>
+        <p>
+            0 + 0 i EXE 4 + 0 i EXE (顯示實數部為 2.666666667) </p>
+        <p>
+            Shift Re&lt;=&gt;Im (顯示虛數部為 1
+    </span>i<span lang="en">，所以重心=(2.666666667, 1))</p>
+        <p>EXE (顯示實數部為4) Shift Re&lt;=&gt;Im (顯示虛數部為 0i，所以垂心=(4, 0))</p>
+        <p>EXE ((顯示實數部為2) Shift Re&lt;=&gt;Im (顯示虛數部為 1.5i，所以外心=(2, 1.5))</p>
+        <p>EXE (顯示實數部為3) Shift Re&lt;=&gt;Im (顯示虛數部為 1i，所以內心 = (3 , 1))</p>
+        <p>
+            　</p>
+        <p>例題2: A、B及C三點的坐標分別為(0 , 2)、(1 , 1) 及 (0 , 0)，求三角形ABC的重心、垂心、外心及內心的坐標。</p>
+        <p>
+            按 Prog 1 再按 0 + 2 i EXE (以複數形式輸入座標) </p>
+        <p>
+            1 + i EXE 0 + 0 i EXE (顯示實數部為 0.333333333) </p>
+        <p>
+            Shift Re&lt;=&gt;Im (顯示虛數部為 1 i，所以重心=(0.333333333, 1))</p>
+        <p>EXE (顯示實數部為1) Shift Re&lt;=&gt;Im (顯示虛數部為 1i，所以垂心=(1, 1))</p>
+        <p>EXE (
+    </span>先顯示<span lang="en">虛數部(</span>有i字) <span lang="en">為 1i，
+        表示沒有實數部(這時</span>再按<span lang="en">Shift Re&lt;=&gt;Im會顯示0)，所以外心=(0, 1))</p>
+        <p>EXE (顯示實數部為0.414213562) Shift Re&lt;=&gt;Im (顯示虛數部為 1i，所以內心 = (0.414213562 , 1))</p>
+        <p>
+            　</p>
+        <p>
+            註1: 外心亦是三點共圓的圓心。</p>
+    </span>
+    <p>
+        註2: 要注意若答案的x坐標為0(實數部)，答案會直接先顯示y坐標的值(虛數部(有 i字))</p>
+    <p>
+        參考資料: </p>
+    <p>
+        <a href="http://edson.tw/math/circle/circle.html">
+            http://edson.tw/math/circle/circle.html</a>
+    </p>
+    <p>
+        <a href="http://agutie.homestead.com/files/center/nine_point_center_euler.html">
+            http://agutie.homestead.com/files/center/nine_point_center_euler.html</a>
+    </p>
+    <p><a href="http://imgur.com/a/BXq2k">http://imgur.com/a/BXq2k</a></p>
+    <p><a href="http://imgur.com/a/YQJil">http://imgur.com/a/YQJil</a></p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+</body>
+
+</html>

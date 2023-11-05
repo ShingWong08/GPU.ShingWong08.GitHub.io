@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <title>薪俸稅(累進稅率) Salaries tax (Progressive rate)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">薪俸稅(累進稅率) Salaries tax (Progressive rate) </font>
+            </b></u></p>
+    <p>
+        程式編寫日期: 2008年12月9日</p>
+    <p>
+        注意: <font size="1">E</font> 是按 EXP。</p>
+    <p>程式 (47 bytes)</p>
+    <p>ClrMemory: ?→A: 1: While Ans: ?→B: ?→C:</p>
+    <p>B <font color="#FF0000">=&gt;</font> A&gt;B <font color="#FF0000">=&gt;</font> BC ÷<font size="1">
+            E</font>2 <font color="#FF0000">M+ =&gt;</font> A - B→A: WhileEnd:</p>
+    <p>M + AC ÷<font size="1"> E</font>2</p>
+    <p>　</p>
+    <p>註1: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，而程式所使用的記憶為A，B，C及M。
+    </p>
+    <p>註2: 應課稅入息實額，即應評稅入息減去扣除及免稅額。</p>
+    <p>　</p>
+    <p>例題1: 一位文員一年應課稅入息實額為 $75 000，請按下表資料計算他的薪俸稅。</p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="38%" id="AutoNumber1"
+        bordercolorlight="#666666" bordercolordark="#000000">
+        <tr>
+            <td width="13%" align="center">　
+            </td>
+            <td width="49%" align="center">應課稅入息實額
+            </td>
+            <td width="38%" align="center">稅率
+            </td>
+        </tr>
+        <tr>
+            <td width="13%" align="center">首
+            </td>
+            <td width="49%" align="center">40000
+            </td>
+            <td width="38%" align="center">2%
+            </td>
+        </tr>
+        <tr>
+            <td width="13%" align="center">另
+            </td>
+            <td width="49%" align="center">40000
+            </td>
+            <td width="38%" align="center">7%
+            </td>
+        </tr>
+        <tr>
+            <td width="13%" align="center">另
+            </td>
+            <td width="49%" align="center">40000
+            </td>
+            <td width="38%" align="center">12%
+            </td>
+        </tr>
+        <tr>
+            <td width="13%" align="center">餘額
+            </td>
+            <td width="49%" align="center">　
+            </td>
+            <td width="38%" align="center">17%
+            </td>
+        </tr>
+    </table>
+    <p>
+        　</p>
+    <p>
+        按 Prog 1 再按 75000 EXE (應課稅入息實額)</p>
+    <p>
+        40000 EXE (首4萬) 2 EXE (稅率)</p>
+    <p>
+        EXE (可不用輸入另4萬，因為已是4萬) 7 EXE (稅率，程式計算完結，顯示薪俸稅為 $3250)</p>
+    <p>
+        　</p>
+    <p>例題2: 一位律師一年的淨收入為 $1500 000，而免稅額為 $200 000，請按下表資料計算他的薪俸稅。。</p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="38%" id="AutoNumber2"
+        bordercolorlight="#666666" bordercolordark="#000000">
+        <tr>
+            <td width="13%" align="center">　
+            </td>
+            <td width="50%" align="center">應課稅入息實額
+            </td>
+            <td width="37%" align="center">稅率
+            </td>
+        </tr>
+        <tr>
+            <td width="13%" align="center">首
+            </td>
+            <td width="50%" align="center">30000
+            </td>
+            <td width="37%" align="center">2%
+            </td>
+        </tr>
+        <tr>
+            <td width="13%" align="center">另
+            </td>
+            <td width="50%" align="center">40000
+            </td>
+            <td width="37%" align="center">8%
+            </td>
+        </tr>
+        <tr>
+            <td width="13%" align="center">另
+            </td>
+            <td width="50%" align="center">40000
+            </td>
+            <td width="37%" align="center">14%
+            </td>
+        </tr>
+        <tr>
+            <td width="13%" align="center">餘額
+            </td>
+            <td width="50%" align="center">　
+            </td>
+            <td width="37%" align="center">20%
+            </td>
+        </tr>
+    </table>
+    <p>
+        　</p>
+    <p>
+        注意: 應課稅入息實額，即應評稅入息減去扣除及免稅額。</p>
+    <p>
+        按 Prog 1 再按 1500 000 - 200 000 EXE (應課稅入息實額)</p>
+    <p>
+        30000 EXE (首3萬) 2 EXE (稅率)</p>
+    <p>
+        40000 EXE (另4萬) 8 EXE (稅率)</p>
+    <p>
+        EXE (可不用輸入另4萬，因為已是4萬) 14 EXE (稅率)</p>
+    <p>
+        0 EXE (輸入0代表餘額) 20 EXE (稅率，顯示薪俸稅為 $247 400)</p>
+    <p>　</p>
+    <p>
+        參考資料: </p>
+    <p>
+        香港薪俸稅及個人入息課稅 (包括不同年份)</p>
+    <p>
+        <a href="http://www.gov.hk/tc/residents/taxes/taxfiling/taxrates/salariesrates.htm">
+            http://www.gov.hk/tc/residents/taxes/taxfiling/taxrates/salariesrates.htm</a>
+    </p>
+    <p>
+        計算香港香港薪俸稅及個人入息課稅 (包括不同年份)</p>
+    <p>
+        <a href="http://www.gov.hk/tc/residents/taxes/etax/services/tax_computation.htm">
+            http://www.gov.hk/tc/residents/taxes/etax/services/tax_computation.htm</a>
+    </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

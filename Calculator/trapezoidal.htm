@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>梯形法則定積分計算</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">梯形法則定積分計算</font>
+            </b></u></p>
+    <p>
+        <font color="#0000FF"><b>程式新版 </b></font>(舊版保留在網頁下方)
+    </p>
+    <p>程式可以計算梯形法則定積分問題。第二個程式雖然長一點，但函數的修改部份接近程式的開始位置，因此較容易及快速修改函數，使整體速度加快。
+        注意新版方程變數使用X，與舊版使用Ans不同。</p>
+    <p>　</p>
+    <p>程式編寫日期: 2009年2月16日</p>
+    <p>
+        <font color="#0000FF">第一個程式</font> (54 bytes，不包括綠色函數方程)
+    </p>
+    <p>ClrMemory: ?→X: ?→Y: ?→A: A<sup>-1</sup>(Y-X→Y: </p>
+    <p>For 0→B To A:<font color="#008000"> ln( X</font>: Ans - . 5Ans(B<sup>2</sup>=BA<font color="#FF0000">M+</font>:
+    </p>
+    <p>X+Y→X: Next: YM</p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF">第二個程式</font> (68 bytes，不包括綠色函數方程)
+    </p>
+    <p>Goto 1: Lbl 0:<font color="#008000"> ln( X</font>: B + Ans - . 5Ans(M<sup>2</sup>=MA→B: </p>
+    <p>X+Y→X: A&gt;M<font color="#FF0000">M+ =&gt;</font> Goto 0: YB◢ </p>
+    <p>Lbl 1: ClrMemory: ?→X: ?→Y: ?→A: </p>
+    <p>A<sup>-1</sup>(Y-X→Y: Goto 0</p>
+    <p>註1: 綠色的 <font color="#008000">ln( X </font>是函數方程(變數是X)，若果想計算其它函數的積分，只要修改綠色的部份。</p>
+    <p>註2: 進行三角函數的積分計算時請將度單位設定為Rad(弧度)，否則答案將會錯誤。</p>
+    <p>註3: 若果想保留一些記憶用作儲存臨時數據，第一個可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，
+        第二個程式將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>: 0→B&quot;，而程式所使用的記憶為A，B，X，Y及M。</p>
+    <p>　</p>
+    <p>例題: 利用梯形法則，區間數目為10，計算
+        
+    </p>
+    <p>
+        按 Prog 1
+        再按 1 EXE 2 EXE 10 EXE (顯示答案為0.385877936)</p>
+    <p>
+        　</p>
+    <p>
+        <font color="#FF0000">注意:</font> 梯形法則的區間數目必為<font color="#FF0000">正整數</font>
+    </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+    <p>　</p>
+    <hr>
+    <hr>
+    <p>
+        <font color="#FF00FF">程式舊版&nbsp; (另一個版本)</font>
+    </p>
+    <p>程式編寫日期: 2008年2月12日</p>
+    <p>程式 (52bytes，不包括綠色函數方程)</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C: C<sup>-1</sup>(B-A→D: </p>
+    <p>For 0→B To C: A + BD:<font color="#008000"> ln( Ans</font>
+        <font color="#FF0000">M+</font>: .
+        5Ans(B<sup>2</sup>=BC<font color="#FF0000">M- </font>:
+    </p>
+    <p>Next: DM</p>
+    <p>註1: 綠色的 <font color="#008000">ln( Ans </font>是函數方程(變數是Ans)，若果想計算其它函數的積分，只要修改綠色的部份。</p>
+    <p>註2: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>
+        &quot;，而程式所使用的記憶為A，B，C，D及M。</p>
+</body>
+
+</html>

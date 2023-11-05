@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <title>一元二次方程式(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">一元二次方程式(II)</font>
+            </b></u></p>
+    <p><b>
+            <font color="#0000FF">程式新版</font>
+        </b></p>
+    <p>更新日期: 2011年6月21日</p>
+    <p>
+        <font color="#FF0000">這個程式可解一元二次方程<span lang="en-us">(</span>實根)、亦可計頂點的(x,y)座標及判別式的值。</font>
+        第二個程式採用了較快計算平方根化簡程式，所以程式較長一點。另外若果輸入數據為整數及方程的根為有理數時，<font color="#FF0000">根會以分數形式表示</font>建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )，若為無理數，<font color="#FF0000">根亦可用根號形式表示</font>。
+    </p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式需要在 COMP 模式下執行，因此在選擇新程式位置後，按 1 選用COMP模式。</font>
+    </p>
+    <p>第一個程式 (共80 bytes，使用記憶為A, B, C及M ):</p>
+    <p>?→A: ?→B: ?→M: - B┘( 2A→B◢ AB<sup>2</sup>
+        <font color="#FF0000">M-</font>:
+    </p>
+    <p>- 4AM→C: M<font color="#FF0000">M-</font>◢ B + √( -Ans┘A◢&nbsp; 2B - Ans◢ B◢</p>
+    <p>
+        <font face="新細明體">π: </font>Sci 8: While Ans≠Rnd( Ans<font color="#FF0000">M+</font>: √( C÷M:
+        WhileEnd:
+    </p>
+    <p>Norm 1: Ans┘(2A ◢ M </p>
+    <p>　</p>
+    <p>第二個程式 (共100 bytes，使用記憶為A, B, C及M ):</p>
+    <p>?→A: ?→B: ?→M: - B┘( 2A→B◢ AB<sup>2</sup>
+        <font color="#FF0000">M-</font>:
+    </p>
+    <p>- 4AM→C: M◢ B + √( -Ans┘A◢&nbsp; 2B - Ans◢ B◢</p>
+    <p>1: Fix 0: While Ans: Rnd(√( C ÷ Ans ) - . 5→B:&nbsp; C ÷ B<sup>2</sup>→M:
+    </p>
+    <p>Ans - Rnd(Ans <font color="#FF0000">
+            =&gt;</font> Rnd( M + . 5: WhileEnd: Norm 1:
+        B┘(2A◢ M</p>
+    <p>　</p>
+    <p><a href="#Q1">其它不同的版本</a></p>
+    <p>　</p>
+    <p>
+        <a href="factorize_1.htm">如何用這個程式計二次函數的因式分解</a>
+    </p>
+    <p>
+        <a href="complete_S.htm">頂點功能求配方法算式</a>
+    </p>
+    <p>
+        　</p>
+    <p>
+        例題1:
+        解 21x<sup>2</sup> - 11x
+        - 2 = 0 </p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 21 EXE
+        - 11 EXE - 2 EXE (顯示頂點的x座標為11/42) </p>
+    <p>
+        EXE (顯示頂點的y座標或二次函數的極小值為
+        -289/84)</p>
+    <p>
+        EXE (顯示第一個根為2/3)</p>
+    <p>
+        EXE (顯示第二個根為 -1/7)</p>
+    <p>
+        (<font color="#FF0000">注意</font>: 若果無需要以根式表示或根為整數/分數(有理數)，可以直接按AC終止程式)</p>
+    <p>
+        　</p>
+    <p>
+        例題2:
+        解 x<sup>2</sup> - 8x +
+        3 = 0</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 1 EXE - 8 EXE 3 EXE
+        (顯示頂點的x座標為
+        <font color="#FF0000">4</font>)
+    </p>
+    <p>
+        EXE (顯示頂點的y座標或二次函數的極小值為
+        - 13)</p>
+    <p>
+        EXE (顯示第一個根為7.60555)</p>
+    <p>
+        EXE (顯示第二個根為 0.394449)</p>
+    <p>
+        EXE
+        (顯示4) </p>
+    <p>
+        EXE (顯示1)</p>
+    <p>
+        EXE (顯示13)</p>
+    <p>
+        所以方程的根為&nbsp; 4 ±1√13</p>
+    <p>　</p>
+    <p>程式執行完成後，按
+        RCL C顯示判別式的值。</p>
+    <p>註1: 若兩根為整數或分數，表示為有理數，亦即沒有必要計算根式表示式，請直接AC終止程式。</p>
+    <p>註2: 第一個程式輸入的係數必須為<font color="#FF0000">整數及有限小數</font>，否則計算<font color="#ff0000">根式表示式的結果</font>可能不成立。</p>
+    <p>註3: 第二個程式輸入的係數必須為<font color="#FF0000">整數</font>，否則計算<font color="#ff0000">根式表示式的結果</font>可能不成立。</p>
+    <p>註4: 第二個程式使用了較快計算平方根化簡程式，能夠有效處理各種不同情況下整數平方根化簡。</p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF"><b>附錄 (兩根儲存在Ｘ及Ｙ中)</b></font>
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 COMP 模式下執行，因此在選擇新程式位置後，按 1 選用COMP模式。</font>
+    </p>
+    <p>第一個程式有記存兩根版本 (共84 bytes，使用記憶為A, B, C, X, Y及M )</p>
+    <p>?→A: ?→B: ?→M: - B┘( 2A→B◢ AB<sup>2</sup>
+        <font color="#FF0000">M-</font>:
+    </p>
+    <p>- 4AM→C: M<font color="#FF0000">M-</font>◢ B + √( -Ans┘A→X◢&nbsp; 2B - Ans→Y◢ B◢</p>
+    <p>
+        <font face="新細明體">π: </font>Sci 8: While Ans≠Rnd( Ans<font color="#FF0000">M+</font>: √( C÷M:
+        WhileEnd:
+    </p>
+    <p>Norm 1: Ans┘(2A ◢ M </p>
+    <p>　</p>
+    <p>第二個程式有記存兩根版本 (共104 bytes，使用記憶為A, B, C, X, Y及M )</p>
+    <p>?→A: ?→B: ?→M: - B┘( 2A→B◢ AB<sup>2</sup>
+        <font color="#FF0000">M-</font>:
+    </p>
+    <p>- 4AM→C: M◢ B + √( -Ans┘A→X◢&nbsp; 2B - Ans→Y◢ B◢</p>
+    <p>1: Fix 0: While Ans: Rnd(√( C ÷ Ans ) - . 5→B:&nbsp; C ÷ B<sup>2</sup>→M:
+    </p>
+    <p>Ans - Rnd(Ans <font color="#FF0000">
+            =&gt;</font> Rnd( M + . 5: WhileEnd: Norm 1:
+        B┘(2A◢ M</p>
+    <p>　</p>
+    <p>
+        <a name="Q1" id="Q1"></a><b>
+            <font color="#800080">附錄一元二次方程式的其它版</font>
+        </b>
+    </p>
+    <p>
+        1. <a href="quadratic_short.htm">簡短版</a> (32 或 34 bytes)</p>
+    <p>
+        2.
+        <a href="quadratic_1b.htm">有判別式的版本</a> (47 或 43 bytes)
+    </p>
+    <p>
+        3. <a href="quadratic1a.htm">可顯示未化簡根式版本</a> (42 bytes)&nbsp;&nbsp;&nbsp;&nbsp; </p>
+    <p>4. <a href="quadratic_4.htm">使用較小數目記憶版本</a> (37 至 41 bytes)</p>
+    <p>
+        5.
+        <a href="quadratic_1c.htm">程式其它版本(包括小數版)</a> (35 bytes 至 46 bytes)
+    </p>
+    <p>
+        6. <a href="quadratic_5.htm">程式特別版(準確度較高</a>) (43 至 55 bytes)&nbsp;</p>
+    <p>
+        7. <font color="#008000"><a href="quadratic2.htm">複數係數版</a></font>
+        (52 bytes)&nbsp;&nbsp; </p>
+    <p>
+        8. <a href="quadratic_step.htm">可顯示計算步驟(二次公式)版本</a> (46 - 50 bytes)</p>
+    <p>　</p>
+    <p><b>
+            <font color="#FF0000">附錄一元二次方程式根式版</font>
+        </b></p>
+    <p>
+        1. <a href="quadratic1a.htm">未化簡根式版本</a> (42 bytes)</p>
+    <p>
+        2.
+        <a href="quadratic_9.htm">可顯示簡化根式實根版本</a> (79 至 105 bytes)&nbsp;
+    </p>
+    <p>
+        3.
+        <a href="quadratic_10.htm">可顯示簡化根式複數根版本</a> (84 至 115 bytes)
+    </p>
+    <p>4. <a href="quadratic3.htm">可顯示簡化根式及頂點實根版本</a>
+        (80 至 104 bytes)</p>
+    <p>5. <a href="quadratic_3.htm">可顯示簡化根式及頂點複數根版本</a>
+        (80 至 118 bytes)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

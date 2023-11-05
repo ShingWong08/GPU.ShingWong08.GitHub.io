@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <title>解三角形(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">解三角形(I)</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">Kith</font> 提供。</p>
+    <p>更新日期: 2014年8月31日 </p>
+    <p>程式可解一個三角形，計算內容與程式<a
+            href="sinelawcosinelaw2.htm">正弦、餘弦定律及三角形面積</a>相同，不過使用者不用對正弦及餘弦定律有任何認識，只要輸入三邊及三邊的對應角亦可，答案會依照之前輸入次序顯示。要特別注意，
+        <font color="#FF0000">先輸入所有已知邊，之後若有未知的邊則輸入0</font>
+        (否則會出現錯誤)，然後再順序輸入之前三邊的對應角，即順序輸入第一邊的對應角、第二邊的對應角及第三邊的對應角，同樣若未知的角輸入0。
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>
+        <font>
+            <font color="#FF0000">注意:</font>
+            <font color="#0000FF">π</font><sup>r</sup>
+        </font>
+        是按 Shift EXP Shift Ans 2，藍色的英文字為統計模式中的變數(<font color="#0000FF">minX</font> 按 shift 2 2
+        1，<font color="#0000FF">minY</font>
+        按 shift 2 2 → 1，<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，<font
+            color="#0000FF">n</font> 按 Shift 1 3)。
+    </p>
+    <p>程式 (287 bytes)</p>
+    <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: B(C=0)(DX=0)(Y=0: </p>
+    <p>DAns≠0 <font color="#FF0000">,</font> XAns≠0<font color="#FF0000"> DT</font>:
+        <font color="#0000FF">Σx</font>
+        <font color="#FF0000"> =&gt; sin<sup>-1</sup>(</font>A<sup>-1</sup>Bsin(D→X:
+        <font color="#0000FF">Σy</font>
+        <font color="#FF0000">=&gt; </font>
+    </p>
+    <p>
+        <font color="#FF0000">sin<sup>-1</sup>( </font>B<sup>-1</sup>Asin(X→D: C
+        <font color="#FF0000">=&gt; cos<sup>-1</sup>( </font>(A<sup>2 </sup>+ B<sup> 2
+        </sup>- C<sup>2</sup>) ÷<b>
+            <font color="#800080"> (</font>
+        </b> 2AB→Y:
+    </p>
+    <p>DX <font color="#FF0000">=&gt;</font> π<sup>r</sup> - D - X →Y: X
+        <font color="#FF0000">=&gt;</font> π<sup>r</sup> -X -Y→D: D <font color="#FF0000">
+            =&gt;</font> π<sup>r</sup> - D -Y →X:
+    </p>
+    <p>B <font color="#FF0000">=&gt;</font> √(A<sup>2 </sup>+ B<sup>2 </sup>-
+        2ABcos(Y→C: If DX: Then BC <font color="#FF0000">=&gt;</font> Goto 0: </p>
+    <p>A ÷ sin(D→M: Msin(X→B: Msin(Y→C: Else <font color="#FF0000">cos-<sup>1</sup>(
+        </font>(B<sup>2 </sup>+ C<sup>2 </sup>- A<sup>2</sup>)</p>
+    <p>÷ <b>
+            <font color="#800080">(</font>
+        </b> 2BC→D: π<sup>r</sup> - D - Y →X: IfEnd: Lbl 0: A◢ B◢ C◢ D◢ X◢ Y◢</p>
+    <p>2<sup>-1</sup>BCsin(D→M◢ <font color="#0000FF">Σx</font>X&gt;D<font color="#FF0000">,</font>
+        <font color="#0000FF">Σy</font>D&gt;X <font color="#FF0000">DT</font>: If
+        <font color="#0000FF">minx </font>+ <font color="#0000FF">minY</font>: Then
+    </p>
+    <p>Abs(D - X→Y: <font color="#0000FF">minX</font>
+        <font color="#FF0000">=&gt;</font>
+        π<sup>r</sup> - X→X: <font color="#0000FF">minY </font>
+        <font color="#FF0000">=&gt;</font>
+        π<sup>r</sup> - D→D:
+    </p>
+    <p>Asin(Y) ÷ sin(D→C: Goto 0<br>
+        　</p>
+    <p>註1: 先輸入所有已知邊，之後若有未知的邊則輸入0(否則會出現錯誤)，然後再順序輸入之前三邊的對應角，即順序輸入第一邊的對應角、第二邊的對應角及第三邊的對應角，同樣若未知的角輸入0即可。</p>
+    <p>註2: 第一個數(A)不能輸入0，即最少要有一已知邊，否則無法計算。</p>
+    <p>註3: 最少要有三個已知變數(邊或角)，否則無法計算。若輸入多於三個已知變數，可能只會根據其中三個已知變數進行計算。</p>
+    <p>
+        <span lang="en">
+            註4: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
+            </b></font>
+        <span lang="en">
+            可以省略，程式長度可減2 bytes。</span>
+    </p>
+    <p>
+        　</p>
+    <p>
+        例題1:
+        ∠A = 40<sup>o</sup>，a
+        = 5，∠B
+        = 60<sup>o</sup>，求b，∠C及c。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 5 EXE 0 EXE 0 EXE 40 EXE 60 EXE 0 EXE (顯示a為5)</p>
+    <p>
+        EXE (顯示b為6.7365) EXE (顯示c為7.6604)</p>
+    <p>
+        EXE (顯示∠A為 40<sup>o</sup>)
+        EXE (顯示∠B為 60<sup>o</sup>)
+        EXE (顯示∠C為 80<sup>o</sup>)</p>
+    <p>
+        EXE (顯示面積為16.5853)</p>
+    <p>
+        　</p>
+    <p>
+        例題2:
+        ∠A = 50<sup>o</sup>，a
+        = 10，b = 13，求∠B，∠C及c。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 10 EXE 13 EXE 0 EXE 50 EXE 0 EXE 0 EXE (顯示a為10)</p>
+    <p>
+        EXE (顯示b為13) EXE (顯示c為9.2655)</p>
+    <p>
+        EXE (顯示∠A為 50<sup>o</sup>) EXE (顯示∠B為84.7832<sup>o</sup>) EXE (顯示∠C為 45.2168<sup>o</sup>)</p>
+    <p>
+        EXE (顯示面積為46.1355)</p>
+    <p>
+        EXE (程式未終止及顯示另一組答案，a為10) </p>
+    <p>
+        EXE (顯示b為13) EXE (顯示c為7.44699)</p>
+    <p>
+        EXE (顯示∠A為 50<sup>o</sup>) EXE (顯示∠B為95.2168<sup>o</sup>) EXE (顯示∠C為 34.7832<sup>o</sup>)</p>
+    <p>
+        EXE (顯示面積為37.0807)</p>
+    <p>
+        請按 AC 終止程式</p>
+    <p>
+        　</p>
+    <p>
+        例題3:
+        ∠A =
+        150<sup>o</sup>，a
+        = 10，b = 6，求∠B，∠C及c。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 10 EXE 6 EXE 0 EXE 150 EXE 0 EXE 0 EXE (顯示a為10)</p>
+    <p>
+        EXE (顯示b為6) EXE (顯示c為4.3432)</p>
+    <p>
+        EXE (顯示∠A為 150<sup>o</sup>)
+        EXE (顯示∠B為17.4576<sup>o</sup>) EXE (顯示∠C為 12.5424<sup>o</sup>)</p>
+    <p>
+        EXE (顯示面積為6.51486)</p>
+    <p>　</p>
+    <p>例題4:
+        a=4, b=5, ∠C=40<sup>o</sup>
+        ，求c及三角形面積。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 4 EXE 5 EXE 0 EXE 0 EXE 0 EXE 40 EXE (顯示a為4)</p>
+    <p>
+        EXE (顯示b為5) EXE (顯示c為3.2184)</p>
+    <p>
+        EXE (顯示∠A=53.024<sup>o</sup>) EXE (顯示∠B=86.976<sup>o</sup>) EXE (顯示∠C=40<sup>o</sup>)</p>
+    <p>
+        EXE (顯示面積為6.4279)</p>
+    <p>
+        　</p>
+    <p>例題5:
+        a=4, b=5, c=6，求∠C及三角形面積。</p>
+    <p>注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 4 EXE 5 EXE 6 EXE 0 EXE 0 EXE 0 EXE (顯示a為4)</p>
+    <p>
+        EXE (顯示b為5) EXE (顯示c為6)</p>
+    <p>
+        EXE (顯示∠A=41.410<sup>o</sup>) EXE (顯示∠B=55.771<sup>o</sup>) EXE (顯示∠C=82.8192<sup>o</sup>)</p>
+    <p>
+        EXE (顯示面積為9.9216)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

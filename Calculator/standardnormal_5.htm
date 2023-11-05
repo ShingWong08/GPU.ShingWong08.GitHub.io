@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>標準常態分佈高考準確版</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">標準常態分佈文憑試<font color="#FF0000">準確版 I</font>
+                </font>
+            </b></u></p>
+    <p>
+        <font color="#FF0000"><b>程式更新日期: 2010年11月25日</b></font>
+    </p>
+    <p>這個程式除了確保與文憑試標準常態分佈查表的數值<font color="#FF0000">完全一樣(兩位小數查對應概率)。</font>另外計算不能用查表方法直接
+        求得的數值時(例如:
+        多過兩位小數)，本程式將使用與查表所得的數據，再配合正比例的方法求出答案，因此可以<b>
+            <font color="#FF0000">確保與文憑試的標準答案全完相同</font>
+        </b>。</p>
+    <p>注意: <font color="#FF0000">e^(</font>是按shift
+        e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
+    <p>若果不想同時計算P(Z≧X)及P(Z≦X)，綠色的程式碼可以略去。</p>
+    <p>程式一 (121 bytes 或 <font color="#008000">130 bytes</font>，使用記憶為A、B、C及M)</p>
+    <p>?→C: Abs( C→C: Fix 2: Rnd( C - . 005→M: Fix 4: </p>
+    <p>Lbl 0: A→B: 2 ÷ (2 + . 4633M: Rnd( . 5 - <font size="1">E</font> - 4</p>
+    <p>&nbsp;<font color="#FF0000">e^(</font>
+        - . 5M<sup>2</sup> )Ans(1274 - 1422Ans + Ans<sup>2 </sup>(7107 - 7266Ans </p>
+    <p>+ 5307Ans<sup>2</sup>→A: C&gt;M <font color="#FF0000">=&gt;</font>
+        . 01<font color="#FF0000">M+ =&gt;</font> Goto 0: </p>
+    <p>C<font color="#FF0000">M-</font>: Norm 1: A - <font size="1">E</font> 2M(A - B<font color="#008000">◢ . 5 -
+            Ans ◢ 1 - Ans</font>
+    </p>
+    <p align="left">　</p>
+    <p>程式二(124 bytes 或 <font color="#008000">133 bytes</font>，使用記憶為Y、C及M)</p>
+    <p>?→C: Abs( C→C: Fix 2: Rnd( C - . 005→M: Fix 4: </p>
+    <p>Lbl 0: 2 ÷ (2 + . 4633M: Rnd( . 5 - <font size="1">E</font> - 4</p>
+    <p>&nbsp;<font color="#FF0000">e^(</font> - . 5M<sup>2</sup> )Ans(1274 - 1422Ans +
+        Ans<sup>2 </sup>(7107 - 7266Ans </p>
+    <p>+ 5307Ans<sup>2</sup>: If C&gt;M: Then Ans→Y: . 01<font color="#FF0000">M+</font>:
+        Goto 0: IfEnd:</p>
+    <p>Norm 1: Ans - <font size="1">E</font> 2(M - C)(Ans - Y<font color="#008000">◢
+            . 5 - Ans ◢ 1 - Ans</font>
+    </p>
+    <p align="left">　</p>
+    <p>例題1: 計算 P(≦
+        Z≦1)、P(Z≧1)
+        及 P(Z≦1)，其中
+        Z ~ N(0, 1)。</p>
+    <p>
+        按 Prog 1
+        再按 1 EXE (顯示P(0≦
+        Z≦1)為0.3413)</p>
+    <p>
+        EXE
+        (顯示P(Z≧1)為0.1587)
+        EXE
+        (顯示P(Z≦1)為0.8413)</p>
+    <p>
+        　</p>
+    <p>例題2: 計算 P(0≦
+        Z≦0.0045)、P(Z≧0.0045)
+        及 P(Z≦0.0045)，其中
+        Z ~ N(0, 1)。</p>
+    <p>
+        按 Prog 1
+        再按 0.0045 EXE (顯示P(0≦
+        Z≦0.0045)為0.0018)</p>
+    <p>
+        EXE
+        (顯示P(Z≧0.0045)為0.4982)
+        EXE
+        (顯示P(Z≦0.0045)為0.5018)</p>
+    <p>
+        　</p>
+    <p>註1: 如果輸入的數值X
+        為負數，程式會計算P(X≦
+        Z≦0)，然後順序計算P(Z
+        ≦X)及P(Z
+        ≧ X)。</p>
+    <p>註2: 如果輸入的數值多於小數兩位，由於要使用正比例計算答案(Linear
+        Interpolation)，程式所用的時間會略為增長。</p>
+    <p>註3: 輸入多於2位小數，程式會使正比例方法(Linear
+        Interpolation)，程式執行完結後可以按 <font color="#0000FF">RCL A</font>及<font color="#0000FF">RCL
+            B</font>顯示查表時使用的兩個概率的數值，由於一般考試需要詳細步驟，你亦可以直接使用這兩個數值作為考試步驟的數據。</p>
+    <p>註5: 程式保留沒有使用的記憶為D、X及Y。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p> <!--msthemeseparator-->
+    <p align="center">
+    <!--msthemeseparator-->
+    <p align="center">
+    <p>　</p>
+    <p>
+        <font color="#0000FF">程式舊版</font>
+    </p>
+    <p>程式編寫日期: 2008年1月27日</p>
+    <p>這個程式除了確保與高考標準常態分佈查表的數值<font color="#FF0000">完全一樣(兩位小數查對應概率)。</font>另外計算不能用查表方法直接
+        求得的數值時(例如:
+        多過兩位小數)，本程式將使用與查表所得的數據，再配合正比例的方法求出答案，因此可以<b>
+            <font color="#FF0000">確保與高考的標準答案全完相同</font>
+        </b>。</p>
+    <p>注意: <font color="#FF0000">e^(</font>是按shift
+        e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
+    <p>若果不想同時計算P(Z≧X)及P(Z≦X)，綠色的程式碼可以略去。</p>
+    <p>程式 (145 bytes 或 <font color="#008000">154 bytes</font>，使用記憶為A、B、C及M)</p>
+    <p>?→C: Abs( C→C: Fix 2: Ans <font color="#FF0000">=&gt;</font> Rnd( C - . 005: Ans→M:</p>
+    <p>Lbl 0: A→B: 1 ÷ (1 + . 231642M: Fix 4: Rnd( . 5 - <font size="1">E</font> - 7</p>
+    <p>√( <font color="#FF0000">e^(</font>
+        - M<sup>2</sup> ) )( 1274148Ans - 1422484Ans<sup>2</sup> + 7107069Ans<sup>3</sup>
+        -</p>
+    <p>7265760Ans<sup>2 2</sup> + 5307027Ans^( 5→A: C&gt;M <font color="#FF0000">=&gt;</font>
+        . 01<font color="#FF0000">M+ =&gt;</font> Goto 0: </p>
+    <p>C<font color="#FF0000">M-</font>: Norm 1: A - <font size="1">E</font> 2M(A - B<font color="#008000">◢ . 5 -
+            Ans ◢ 1 - Ans</font>
+    </p>
+    <p>　</p>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <title>攤銷進度表</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">攤銷進度表</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年9月27日</p>
+    <p>
+        程式會計算攤銷進度表(Amortization
+        Schedule)，每一期的貸款利[息(Loan
+        Interest)、償還貸款(Loan Repaid)及尚欠貸款(Outstanding
+        Balance)。程式假設利息每期結算、息率不變及每期供款不變(最後一期供款可以較少)。注意程式每一次計算準確至小數後兩位，與實際情況一樣。</p>
+    <p>程式 (69 bytes)</p>
+    <p>?→M: ?→A: ?→B: ?→C: Lbl 0:</p>
+    <p>Fix 2: Rnd( MAB ÷ 1200→D:</p>
+    <p>Norm 1◢ D+M→X: X≧C <font color="#FF0000">=&gt;</font> C - D<font color="#FF0000">M-</font>◢ </p>
+    <p>C&gt;X <font color="#FF0000">=&gt;</font> M<font color="#FF0000">M-</font>◢
+        M◢ X&gt;C <font color="#FF0000">=&gt;</font> Goto 0: X</p>
+    <p>
+        　</p>
+    <p>例題: 某銀行提供私人貸款，年利率 15%，提供貸款當日起計之後的每月結算利息及供款。張先生銀行申請得 $ 40 000的私人貸款，並同意每月供款
+        $9000給銀行直至貸款全數清還(最後一個月的供款可以少於 $9000)，試完成以下攤銷進度表。</p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" id="AutoNumber3"
+        bordercolorlight="#666666" bordercolordark="#000000">
+        <tr align="center">
+            <td width="12%">月
+            </td>
+            <td width="29%">貸款利息
+            </td>
+            <td width="29%">償還貸款
+            </td>
+            <td width="30%">尚欠貸款
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">1
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="30%">　
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">2
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="30%">　
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">3
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="30%">　
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">4
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="30%">　
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">5
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="29%">　
+            </td>
+            <td width="30%">　
+            </td>
+        </tr>
+    </table>
+    <p class="MsoNormal">按 Prog 1&nbsp; 40000 (貸款) EXE 15 EXE (年利率) 1 EXE (一個月結算) </p>
+    <p class="MsoNormal">9000 EXE (每月供款，顯示第1個月的貸款利[息為 500) </p>
+    <p class="MsoNormal">EXE (顯示第1個月的償還貸款為 8500) </p>
+    <p class="MsoNormal">EXE (顯示第1個月的尚欠貸款為 31500)</p>
+    <p class="MsoNormal">EXE (顯示第2個月的貸款利[息為 393.75) </p>
+    <p class="MsoNormal">EXE (顯示第2個月的償還貸款為 8606.25)</p>
+    <p class="MsoNormal">EXE (顯示第2個月的尚欠貸款為 22893.75)</p>
+    <p class="MsoNormal">EXE (顯示 286.17) EXE (顯示 8713.83) EXE (顯示 14179.92)</p>
+    <p class="MsoNormal">EXE (顯示 177.25) EXE (顯示 8822.75) EXE (顯示 5357.17)</p>
+    <p class="MsoNormal">EXE (顯示 66.96) EXE (顯示 5357.17) EXE (顯示
+        <font color="#FF0000">0</font>，表示最後一期)
+    </p>
+    <p class="MsoNormal">EXE (顯示<font color="#FF0000">最後一期的供款</font>為 5424.13)</p>
+    <p class="MsoNormal">所以答案為: </p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" id="AutoNumber3"
+        bordercolorlight="#666666" bordercolordark="#000000">
+        <tr align="center">
+            <td width="12%">月
+            </td>
+            <td width="29%">貸款利息
+            </td>
+            <td width="29%">償還貸款
+            </td>
+            <td width="30%">尚欠貸款
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">1
+            </td>
+            <td width="29%">500
+            </td>
+            <td width="29%">8500
+            </td>
+            <td width="30%">31500
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">2
+            </td>
+            <td width="29%">393.75
+            </td>
+            <td width="29%">8606.25
+            </td>
+            <td width="30%">22893.75
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">3
+            </td>
+            <td width="29%">286.17
+            </td>
+            <td width="29%">8713.83
+            </td>
+            <td width="30%">14179.92
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">4
+            </td>
+            <td width="29%">177.25
+            </td>
+            <td width="29%">8822.75
+            </td>
+            <td width="30%">5357.17
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="12%">5
+            </td>
+            <td width="29%">66.96
+            </td>
+            <td width="29%">5357.17
+            </td>
+            <td width="30%">0
+            </td>
+        </tr>
+    </table>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

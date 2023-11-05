@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>F-分佈概率 (F-distribution)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">F-分佈概率</font>
+            </b></u></p>
+    <p>程式編寫日期: 2008年7月9日</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>
+        <font color="#FF0000">注意</font> : π<sup>r</sup> 是按 SHIFT EXP SHIFT
+        Ans 2 ，藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>為平均x
+        按 shift 2 1)
+    </p>
+    <p>程式 (343 bytes)</p>
+    <p>ClrStat: 0→M: ?→A: ?→B: ?→C: B + C - 4 <font color="#FF0000">
+            ;</font> B <font color="#FF0000">DT</font>:</p>
+    <p>AB ÷ (AB + C→A: Lbl 0: Fix 0: Rnd( B<span lang="en">÷2: Norm 1: </span>B -
+        2Ans <font color="#FF0000">=&gt;</font>
+    </p>
+    <p>Goto 1: 1→D: 1→X: C→Y: While
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>≧Y: DAY ÷ (Y - C + 2→D:
+    </p>
+    <p>D + X→X: Y + 2→Y: WhileEnd:
+        1 - M - X cos( π<sup>r</sup>M ) (1-A) ^( C÷2◢ </p>
+    <p>Lbl 1:
+        If M=0: Then 1→M: C→B:
+        <font color="#0000FF">n</font>→C: 1 - A→A: Goto 0: IfEnd:
+    </p>
+    <p>
+        <font color="#FF0000">tan<sup>-1</sup>(</font>
+        √( A<sup>-1</sup> - 1→A: <font color="#FF0000">Rec(</font> 1 , A): 1→C: 1→D: 2→M:
+        While B - 3≧M:
+    </p>
+    <p>CX<sup>2</sup>M ÷ (M + 1→C: C + D→D: M + 2→M: WhileEnd: 2A÷π<sup>r</sup> +</p>
+    <p>2DXYπ<sup> -1</sup>(B&gt;1→A: <font color="#0000FF">n</font>=1
+        <font color="#FF0000">=&gt;</font> A◢ 1→C: 1→D: B+1→M: While
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>≧M:
+    </p>
+    <p>CY<sup>2</sup>M÷(M - B + 2→C: C + D→D: M+ 2→M: WhileEnd: </p>
+    <p>4DYπ<sup> -1</sup>X^( B→C: B=1 <font color="#FF0000">=&gt;</font>
+        A - C÷2◢ 2→M: While B - 1≧2M:</p>
+    <p>CM ÷ (M - . 5→C: M + 1→M: WhileEnd: A - C</p>
+    <p>　</p>
+    <p>
+        例題1: 若 F 分佈 (F distribution)的自由度分別為1(分子)及2(分母)，求P(0≦F≦1.5)的概率。</p>
+    <p>
+        Prog 1 再按 1.5 EXE 1 EXE 2 EXE (顯示概率為0.6547)</p>
+    <p>
+        　</p>
+    <p>
+        例題2: 若 F 分佈 (F distribution)的自由度分別為2(分子)及1(分母)，求P(0≦F≦1.5)的概率。</p>
+    <p>
+        Prog 1 再按 1.5 EXE 2 EXE 1 EXE (顯示概率為0.5)</p>
+    <p>
+        　</p>
+    <p>
+        例題3: 若 F 分佈 (F distribution)的自由度分別為1(分子)及3(分母)，求P(0≦F≦1.5)的概率。</p>
+    <p>
+        Prog 1 再按 1.5 EXE 1 EXE 3 EXE (顯示概率為0.6919)</p>
+    <p>
+        　</p>
+    <p>
+        例題4: 若 F 分佈 (F distribution)的自由度分別為3(分子)及5(分母)，求P(0≦F≦1.5)的概率。</p>
+    <p>
+        Prog 1 再按 1.5 EXE 3 EXE 5 EXE (顯示概率為0.6778)</p>
+    <p>　</p>
+    <p>註: 顯示答案後，若程式未終止，請按 AC 終止程式。</p>
+    <p>　</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

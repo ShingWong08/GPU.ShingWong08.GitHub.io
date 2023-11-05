@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>聯立三元一次方程及行列式(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">聯立三元一次方程</font>
+            </b>
+            <font size="5"><b>(複數係數版本)</b></font>
+        </u></p>
+    <p>程式參考了網友<font color="#0000FF">roviury</font>意見進行修改。</p>
+    <p>更新日期: 2010年4月22日</p>
+    <p>注意:
+        此程式雖可計算複數係(包括實係數)的聯立三元一次方程式，但會較其它實數版較多的限制條件，而且程式亦較長。若不用計算複數係數方程，請使用其它實數版本的程式。另外若果不需要記存答案，程式中<font
+            color="#008000">綠色</font>部份可以不輸入。</p>
+    <p>程式 (143 bytes 或 <font color="#008000">139 bytes</font>)</p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>?→A: ?→B: B┘A→C: ?→Y: Y┘A→D: ?→X: X┘A→M:
+    </p>
+    <p>?→A: ?→B: 1┘(B - CA→B: ?→Y: B(DA - Y→Y: D + CY→D: </p>
+    <p>?→X: B(X - MA→X: CX<font color="#FF0000">M-</font>: ?→A: ?→B: ?→C: A: ?→A: </p>
+    <p>(A - BX - AnsM)┘(C + BY - AnsD→C: M - DC<font color="#008000">→A</font>◢ X +
+        YC<font color="#008000">→B</font>◢ C
+    </p>
+    <p>　</p>
+    <p><a href="simultaneousMethod.htm">如何使用聯立三元一次方程程式計算三階伴隨矩陣及逆矩陣</a></p>
+    <p>
+        　</p>
+    <p>
+        例題1:
+        解聯立方程 :</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE -1 EXE 2 EXE 5 EXE </p>
+    <p>1 EXE 3 EXE 1 EXE 10 EXE (顯示X=1) EXE (顯示y=2) EXE (顯示z=3)</p>
+    <p>　</p>
+    <p>
+        例題2:
+        解聯立方程 :</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 - i EXE 2 + 3i EXE 3 + i EXE 21 + 16i EXE </p>
+    <p>2 + i EXE 5 - 2i EXE 4 + 2i EXE 8 + 8i EXE </p>
+    <p>3 + 2i EXE 1 + 3i EXE 4 - 3i EXE 34 + 18i EXE</p>
+    <p>
+        <strong>
+            <font color="#FF0000">( 此時計算機右上角出現R&lt;=&gt;I，表示為複數解)</font>
+        </strong>
+    </p>
+    <p>
+        (顯示X實數部為 1)
+        Shift Re&lt;=&gt;Im (顯示X虛數部為 2i)</p>
+    <p>
+        EXE
+        (顯示y實數部為 2)
+        Shift Re&lt;=&gt;Im (顯示y虛數部為 - 3i)</p>
+    <p>
+        EXE
+        (顯示z實數部為 3)
+        Shift Re&lt;=&gt;Im (顯示z虛數部為 4i)</p>
+    <p>即 X=1+2i, y=2-3i, z=3+4i </p>
+    <p>　</p>
+    <p>註1: 若程式有綠色程式碼，執行完成後，按
+        RCL A 、RCL B及RCLC分別顯示x、y、z的值。</p>
+    <p>註2: 若方程組為&nbsp;
+        a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z
+        = d<sub>1 , </sub>a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z = d<sub>2</sub>
+        , a<sub>3</sub>X + b<sub>3</sub>y + c<sub>3</sub>z
+        = d<sub>3</sub></p>
+    <p>解聯立三元一次方程的限制條件為: <font color="#FF0000">a<sub>1</sub>b<sub>2</sub>≠b<sub>1</sub>a<sub>2</sub>及a<sub>1</sub>≠0
+        </font>
+    </p>
+    <p>若果出現Math error，代表方程組的行列式為零或違反限制條件。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

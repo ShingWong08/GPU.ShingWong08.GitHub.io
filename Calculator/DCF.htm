@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>貼現現金流(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">貼現現金流(I)</font>
+            </b></u></p>
+    <p>更新日期: 2011年3月27日</p>
+    <p>程式可以計算貼現現金流 (Discounted cash flow: DCF) 問題，輸入的現金流可以不依時間順序，輸入錯誤現金流
+        ，只要輸入相反正負號的現金流即可刪除。</p>
+    <p>程式 (42 bytes)</p>
+    <p>ClrMemory: ?→A: ?→B: </p>
+    <p>1+B%÷A→B: While 1: ?→C: </p>
+    <p>?→A: C÷B^( A<font color="#FF0000">M+</font>: M→C: WhileEnd</p>
+    <p>　</p>
+    <p>註: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;Mem clear&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，而程式所使用的記憶為A，B，C及M。
+    </p>
+    <p>　</p>
+    <p>例題: 一公司以$20000購買一機器，以下為每年年結時可以節省的金額:</p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" id="AutoNumber1"
+        bordercolorlight="#666666" bordercolordark="#000000">
+        <tr>
+            <td width="20%" align="center">年
+            </td>
+            <td width="20%" align="center">1
+            </td>
+            <td width="20%" align="center">2
+            </td>
+            <td width="20%" align="center">3
+            </td>
+            <td width="20%" align="center">4
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" align="center">金額
+            </td>
+            <td width="20%" align="center">$5000
+            </td>
+            <td width="20%" align="center">$7500
+            </td>
+            <td width="20%" align="center">$9000
+            </td>
+            <td width="20%" align="center">$11000
+            </td>
+        </tr>
+    </table>
+    <p>假設年折現率 (Discount rate)為10%，試計算凈現值。</p>
+    <p>按 Prog 1 再按 1 EXE (每年複利計算期數) 10 EXE (年折現率)</p>
+    <p>- 20000 EXE (負數代表支出) 0 EXE (期數0代表現時)</p>
+    <p>5000 EXE (正數代表收入) 1 EXE (期數)</p>
+    <p>7500 EXE 2 EXE 9000 EXE 3 EXE 11000 EXE 4 EXE (顯示凈現值為 $5018.78)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>
+        　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

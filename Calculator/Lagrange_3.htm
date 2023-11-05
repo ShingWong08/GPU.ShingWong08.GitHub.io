@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>四點拉格朗日插值多項式</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">四點拉格朗日插值多項式(I)</font>
+            </b></u></p>
+    <p>最新更新日期: 2011年4月29日</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，
+        <font color="#0000FF">Σxy</font>
+        按 Shift 1 → 3)。若果不需要記存方程的答案，程式中<font color="#008000">綠色</font>部份可以不輸入。
+    </p>
+    <p>第一個程式 (148 / <font color="#008000">144 </font>bytes)</p>
+    <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y:</p>
+    <p>(Y - D)
+        ÷ (X - C , D - B <font color="#FF0000">DT</font>: ?→D: ?→M:</p>
+    <p>(M - Y) ÷ (D - X→M: (M -
+        <font color="#0000FF">Σx</font>) ÷ (D - C→B:
+    </p>
+    <p>(D - A)<sup>-1</sup>(B - (X - A)<sup>-1</sup>(<font color="#0000FF">Σx</font>
+        - <font color="#0000FF">Σy</font> ÷ (C - A→A◢</p>
+    <p>B - A(D +X + C→B◢ D + X: M - BAns - A(DAns + X<sup>2</sup>
+        <font color="#008000">→C</font>◢
+    </p>
+    <p>Y - AX<sup>3</sup> - BX<sup>2</sup> - AnsX<font color="#008000">→D</font>
+    </p>
+    <p>　</p>
+    <p>第二個程式 (169 / <font color="#008000">163</font> bytes，程式亦可以計算三點拉朗日格插值多項式)</p>
+    <p>ClrStat:
+        ?→X: ?→Y: ?→D: ?→M: ?→B: ?→A:</p>
+    <p>(M - Y) ÷ (D
+        - X , B <font color="#FF0000">DT</font>: (X - B)<sup>-1</sup>(<font color="#0000FF">Σx</font> - (A-
+        M) ÷ (B -
+        D→M:
+    </p>
+    <p>?→B: If B≠<font color="#0000FF">Σy</font>: Then ?→C:&nbsp; (D -
+        B )<sup>-1</sup>(M - (X - B)<sup>-1</sup>( (A
+        - Y) </p>
+    <p>÷ (<font color="#0000FF">Σy</font> - X) - (C - A) ÷ (B - <font color="#0000FF">Σy</font>→A◢
+        Else 0→A: IfEnd:</p>
+    <p>M - A(X + D + <font color="#0000FF">Σy</font>
+        <font color="#008000">→B</font>◢ D + X:
+        <font color="#0000FF">Σx</font> - MAns + A(<font color="#0000FF">Σy</font>Ans + DX<font color="#008000">→C
+        </font>◢
+    </p>
+    <p>Y + X(MD -
+        A<font color="#0000FF">Σy</font>D - <font color="#0000FF">Σx</font>
+        <font color="#008000">→D</font>
+    </p>
+    <p>　</p>
+    <p>
+        例題1:
+        求 (0 , - 4), (1 , - 4)、(2
+        , 2)
+        及 (3 , 26)四點的拉格朗日插值多項式。</p>
+    <p>按
+        Prog 1&nbsp; 再按 0 EXE - 4 EXE 1 EXE - 4
+        EXE 2 EXE 2 EXE 3 EXE 26 EXE</p>
+    <p>
+        (顯示x<sup>3</sup>的係數為2)
+        EXE (顯示x<sup>2</sup>的係數為
+        -3)
+    </p>
+    <p>
+        EXE (顯示x的係數為
+        1) EXE (顯示常數項為
+        - 4)</p>
+    <p>
+        所以拉格朗日插值多項式為 2x<sup>3</sup>
+        -&nbsp;3x<sup>2</sup>
+        + x - 4</p>
+    <p>計算完結後按 MODE 1
+        返回正常計算模式。</p>
+    <p>
+        　</p>
+    <p>
+        例題2:
+        求過點 (0 , 5), (1 , 4)
+        及 (-1 , 10)三點的拉格朗日插值多項式。</p>
+    <p>
+        <font color="#FF0000">注意: 只適用於第二個程式</font>
+    </p>
+    <p>
+        按 Prog 1
+        再按 0 EXE
+        5 EXE 1 EXE 4 EXE </p>
+    <p>
+        - 1 EXE 10 EXE <font color="#FF0000">EXE</font> (<font color="#FF0000">不輸入數值</font>代表計算三點拉格朗日插值多項式
+        ，顯示x<sup>2</sup>的係數為2) </p>
+    <p>
+        EXE (顯示x的係數為
+        -3)
+        EXE (顯示常數項為5)</p>
+    <p>
+        所以拉格朗日插值多項式為 &nbsp;2x<sup>2</sup>
+        - 3x + 5</p>
+    <p>計算完結後按 MODE 1
+        返回正常計算模式。</p>
+    <p>　</p>
+    <p>註1: 若程式包含綠色程式碼，程式執行完成後，按 RCL A 、RCL B、RCL C及RCL D顯示多項式的係數。</p>
+    <p>註2:
+        基於計算方法本身限制，輸入的四點中有任何兩點的x座標相同，程式會出現 Math
+        ERROR，不過若果第三點的x值與第四點的x值相等時，第二個程式會自動假定是計算三點拉格朗日插值多項式，因此亦不能輸入第四點的y值。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

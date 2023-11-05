@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>坐標變換</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">坐標變換</font>
+            </b></u></p>
+    <p>程式更新日期: 2010年7月22日</p>
+    <p>程式一參考了網友<font color="#0000FF"> roviury </font>的修改建議。</p>
+    <p>程式一(23 bytes，使用記憶為X, Y及A)</p>
+    <p>?→X: ?→Y: ?→A:&nbsp; <font color="#FF0000">Rec(</font>
+        <font color="#FF0000">Pol(</font>
+        X , Y, Y+A◢ Y
+    </p>
+    <p>　</p>
+    <p>程式二由<font color="#0000FF">Webcal論壇網友</font>提供。</p>
+    <p>
+        <font color="#FF0000">程式二需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>程式二(18 bytes，使用記憶為X, Y及A)</p>
+    <p>?→A: ?→B: Abs(A)<font face="新細明體">∠(B+arg(A</font>
+        <font face="Times New Roman">&#9658;a+bi</font>
+    </p>
+    <p>　</p>
+    <p>例題:
+        求點 (4, 3)繞原點逆時針方向旋轉90<sup>o</sup>的坐標。</p>
+    <p>注意:
+        這個例題要在DEG Mode
+        之下執行。</p>
+    <p>　</p>
+    <p>程式一按法</p>
+    <p>
+        按 Prog 1
+        再按 4 EXE 3 EXE 90 EXE
+        (逆時針取正值輸入，顯示x坐標為
+        -3) EXE (顯示y坐標為4)</p>
+    <p>
+        　</p>
+    <p>程式二按法</p>
+    <p>
+        按 Prog 1
+        再按 4 + 3i EXE 90 EXE
+        (逆時針取正值輸入，顯示x坐標為
+        -3) Shift Re&lt;=&gt;Im EXE (顯示4i即y坐標為4)</p>
+    <p>　</p>
+    <p><b>注意: 本程式取逆時針旋轉為正值，順時針旋轉為負值。</b>若果希望是順時針取正，逆時針為負，程式一中的 Rec( X, Y+A可改為 Rec(
+        X, Y-A，而程式二中的 B+arg(A 可改為 - B+arg(A即可。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

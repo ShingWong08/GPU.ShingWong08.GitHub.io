@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>聯立二元一為一次及一為二次方程(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">聯立二元一為一次及一為二次方程(II)</font>
+            </b></u></p>
+    <p>程式編寫日期: 2010年7月17日</p>
+    <p>
+        這兩個程式可解聯立二元一為一次與一為二次方程，亦可以解聯立二元一次方程。另外若果輸入係數為整數/分數及最後答案為有理數時，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+        這個版本程式沒有第(I)版程式的輸入限制(亦即是輸入的第二個係數可以是0)。若果不需要記存聯立二元一次方程的答案，程式中<font color="#008000">綠色</font>部份可以不輸入。
+    </p>
+    <p>
+        <b>
+            <font color="#FF0000">注意:若果你不用計複數根，為被免混淆及使用方便，建議輸入程式時選用COMP 模式。若要計複數根，
+                輸入程式時請選用複數模式(選擇新程式位置後按 2 選用CMPLX模式)，當執行程式時，程式會自動進入複數模式。</font>
+        </b>
+    </p>
+    <p>程式 (219 /<font color="#008000"> 205 </font>bytes)</p>
+    <p>?→D: ?→Y: ?→C: ?→M: ?→B:?→A: ?→X: </p>
+    <p>If Y: Then D┘Y→D: C┘Y→C:&nbsp; AD<sup>2</sup>
+        - DB<font color="#FF0000">M+</font>: ?→Y: </p>
+    <p>YD - CB + 2CDA - X→B: ?→X: AC<sup>2 </sup>+ YC - X→A: </p>
+    <p>2M <font color="#FF0000">=&gt;</font> (√(B<sup>2</sup> - 4MA) + B)┘Ans→X◢</p>
+    <p>M=0
+        <font color="#FF0000">=&gt;</font> A┘B→X◢ C-DX<font color="#008000">→Y</font>◢
+        B┘M - X<font color="#008000">→A</font>◢ C-DAns<font color="#008000">→B</font>:
+    </p>
+    <p>Else C┘D→D: ?→Y: ?→C: D<sup>2</sup>M+XD-C→M: - Y-DB→B:
+        D<font color="#008000">→X</font>◢ </p>
+    <p>A=0 <font color="#FF0000">=&gt;</font> M┘B<font color="#008000">→Y</font>◢ 2A <font color="#FF0000">=&gt;</font>
+        (√(B<sup>2</sup> - 4MA)
+        + B)┘Ans<font color="#008000">→Y</font>◢</p>
+    <p>B┘A - Ans→B: D<font color="#008000">→A</font>◢ B</p>
+    <p>　</p>
+    <p>例題1: 解聯立方程:</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 3 EXE 5 EXE 8 EXE 3 EXE 4
+        EXE 5 EXE 3 EXE 5 EXE 20 </p>
+    <p>EXE (顯示1) EXE
+        (顯示1，即第一組的解答為 x=1, y=1)</p>
+    <p>EXE (顯示1/3) EXE (顯示7/5，即第一組的解答為 x=1/3, y=7/5)</p>
+    <p>若果程式包含綠色程式碼，執行完成後，按
+        RCL X 及 RCL Y分別顯示第一組解答案的x及y的值，按 RCL A
+        及 RCL B分別顯示第二組解答案的x及y的值。</p>
+    <p>　</p>
+    <p>例題2: 解以下聯立二元一次方程</p>
+    <p>
+        
+    </p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 7 EXE 0 EXE 0
+        EXE 0 EXE </p>
+    <p>1
+        EXE -1 EXE 1 EXE (顯示4)
+        EXE (顯示3)</p>
+    <p>
+        因此解答為 x = 4
+        及 y = 3. </p>
+    <p>若果程式包含綠色程式碼，執行完成後，按 RCL X
+        及 RCL Y分別顯示解答案的x及y的值。</p>
+    <p>　</p>
+    <p>例題3: 試求直線 x - 2 = 0與圓形x<sup>2 </sup>+ y<sup>2 </sup>+ 3x + 7y + 2 = 0的交點。</p>
+    <p>先將兩個方程整理為 x = 2 及 x<sup>2 </sup>+ y<sup>2 </sup>+ 3x + 7y = - 2</p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 0 EXE 2 EXE 1 EXE 0
+        EXE 1 EXE 3 EXE 7 EXE - 2 </p>
+    <p>EXE (顯示2) EXE
+        (顯示 - 3，即第一組的解答為 x=2, y= - 3)</p>
+    <p>EXE (顯示2) EXE (顯示 - 4，即第一組的解答為 x=2, y= - 4)</p>
+    <p>所以兩個交點分別為(2, - 3)及(2, - 4)</p>
+    <p>若果程式包含綠色程式碼，執行完成後，按
+        RCLX 及 RCL Y分別顯示第一組解答案的x及y的值，按 RCL A
+        及 RCL B分別顯示第二組解答案的x及y的值。</p>
+    <p>　</p>
+    <p>註1: 舊版程式(版本 I )第二個輸入係數不可以是0，否則會出現Math ERROR，新版兩個程式(版本II)沒有這方面的限制(例題3)。</p>
+    <p>註2: 若果兩組的解相同，表示曲線與直線相切。</p>
+    <p>註3: 若果只計算出一組解答時(非兩組相同的情況)，答案只記存在X及Y的記憶。</p>
+    <p>註4: 若顯示顯示第一組解後，在顯示第二組解時出現Math ERROR。表示方程組只有一組解答，而且曲線與直線不是相切的關係。</p>
+    <p>註4: 現時不少同類程式，會無法計算下列方程的情況(出現 Math error)，這個程式沒有這方面的問題，其實這類程式<font color="#FF0000">必定</font>可以同時計算<font
+            color="#FF0000">聯立二元一次方程</font>的問題，若果那個程式不能同時計算聯立二元一次方程，那麼很可能是設計欠嚴謹的程式，會能得出錯答的答案(誤以為無解)。</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 3 EXE 4 EXE 7 EXE 15 EXE
+        8
+        EXE - 16 EXE </p>
+    <p>1
+        EXE 1 EXE 9 EXE (顯示1)
+        EXE (顯示1)</p>
+    <p>
+        因此解答為 x = 1
+        及 y = 1. </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

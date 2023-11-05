@@ -1,0 +1,314 @@
+<html>
+
+<head>
+    <title>解三角形(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">解三角形(II)</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">roviury</font> 提供。</p>
+    <p>更新日期: 2014年8月31日 </p>
+    <p>程式可解一個三角形，計算內容與程式<a
+            href="sinelawcosinelaw2.htm">正弦、餘弦定律及三角形面積</a>相同，不過使用者不用對正弦及餘弦定律有任何認識，只要輸入三角形的三邊及三邊其中三個資料(最少要輸入一邊資料)，答案會由第一個輸入資料依次序(邊角邊....或角邊角)顯示，要注意邊要以負數形式輸入，以順時針或逆時針方向輸入已知三個已知變數(依邊角邊角.....或角邊角邊....排列次序)。若果輸入資料有邊及角同時存在，第一及第二個資料(邊及角必定要相鄰關係)，
+        輸入的旋轉方向(順時針或逆時針)為<font color="#FF0000">排列次序</font>(邊角邊角.....或角邊角邊....)的<font color="#FF0000">最短路&#32171;</font>。
+    </p>
+    <p>
+        <font>
+            <font color="#FF0000">注意:</font>
+            <font color="#0000FF">π</font><sup>r</sup>
+        </font>
+        是按 Shift EXP Shift Ans 2，90<sup>o</sup> 按 90 Shift Ans 1。
+    </p>
+    <p>程式 (197 bytes，使用記憶A, B, C, D, X及Y)</p>
+    <p>While 1: ?→A: ?→B: ?→C: 0&gt;AB <font color="#FF0000">=&gt;</font> Goto 0: B→X: -
+        sin(C) ÷ sin(A→B: <br>
+        <br>
+        0&gt;A <font color="#FF0000">=&gt; cos<sup>-1</sup>(</font> (A<sup>2</sup>+X<sup>2</sup>-C<sup>
+            <font color="#000000">2</font>
+        </sup>)÷
+        <b>
+            <font color="#800080">(</font>
+        </b> 2AX→B:
+        X→C: Lbl 0: 0&gt;C→D: Abs(A◢ <br>
+        <br>
+        Abs(B◢ 0&gt;A <font color="#FF0000">=&gt;</font> Break: D <font color="#FF0000">=&gt;</font>
+        π<sup>r</sup> - A - <font color="#FF0000">sin<sup>-1</sup>(</font> C<sup>-1</sup>
+        Bsin(A→C:
+        C◢ <br>
+        <br>
+        Pol( B tan(90<sup>o </sup>- A - C , -B ) sin(A◢ Y◢ X sin(C◢ - . 5AnsBsin(A◢ <br>
+        <br>
+        YD - A→C: Ans&gt;0 <font color="#FF0000">=&gt;</font> Goto 0: WhileEnd : <font color="#FF0000">
+            cos<sup>-1</sup>(</font>
+        D <font color="#FF0000">=&gt;</font> Asin(B+C) ÷ sin(C→C: <br>
+        <br>
+        - C◢ Pol(Ans + Acos(B , -Asin(B: Y◢ X◢ π<sup>r</sup> - B - Y◢ . 5ACsin(B
+    </p>
+    <p>　</p>
+    </p>
+    </p>
+    <p>註1: 若不用計算三邊的比例(即輸入為AAA時)，可以刪除第一行中的 <font color="#008000">- sin(C) ÷ sin(A→B:
+        </font>，程式可以縮短10 bytes。</p>
+    <p>註2: 最少要有三個已知變數(邊或角)，否則無法計算。</p>
+    <p>註3: 輸入的資料若不能構成三角形，則會出現異常結果(例如: 0，負數，角度大於或等於180<sup>o</sup>，Math ERROR)。 </p>
+    <p>註4:<font face="新細明體"> </font>
+        <span class="Apple-style-span"
+            style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+            <span class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">
+                注意ASS這種三角形會出現 兩組解<span class="Apple-converted-space">答。</span></span></span>
+    </p>
+    <p>註5:
+        若多於三個己知變數，可任意選取其中三個已知變數輸入，但要注意有可能出現兩組解答(ASS情況)，若出現這種情況，其中一組不是要找的答案，請用未輸入的已知變數核對清楚那組答案是正確。</p>
+    <p>註6: 邊的資料必定要以負值形式輸，否則無法正確計算。</p>
+    <p>
+        註7: 若只知道三角及先輸入最小的角，可以求得三邊的比例。</p>
+    <p>
+        <font color="#FF0000">
+            <span class="Apple-style-span">
+                <span style="font-family: 新細明體; letter-spacing: normal">註</span></span>
+        </font><span class="Apple-style-span"><span style="color: #FF0000; letter-spacing: normal">8</span></span><span
+            class="Apple-style-span"
+            style="border-collapse: separate; color: #FF0000; font-family: 新細明體; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><span
+                class="Apple-style-span">:SAA及ASS的三角形輸入次序不能倒轉,若出現異常結果(MATH
+                ERROR,顯示的邊,角與原本資料的不同),請把次序倒回</span></span>
+    </p>
+    <p>
+        <span lang="en">
+            註9: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
+            </b></font>
+        <span lang="en">
+            可以省略，程式長度可減1 byte。</span>
+    </p>
+    <p>
+        　</p>
+    <A=>
+        <p>例題1:
+            a=4, b=5, c=6，求∠A、∠B、∠C及三角形面積。</p>
+        </a>
+        <p>
+        <A=>
+            <p>注意:要在DEG
+                Mode執行</p>
+            <p>
+                按 Prog 1
+                再按 -4 EXE -5 EXE -6 EXE (顯示a為4)</p>
+            <p>
+                EXE (顯示∠C=82.8192<sup>o</sup>) EXE (顯示b為5) </p>
+            <p>
+                EXE (顯示∠A=41.410<sup>o</sup>) EXE (顯示c為6)</p>
+            <p>
+                EXE (顯示∠B=55.771<sup>o</sup>)
+                EXE (顯示面積為9.9216)</p>
+            <p>
+                　</p>
+            <p><span class="Apple-style-span">
+                    <span style="font-family: 新細明體; letter-spacing: normal">例</span></span><span
+                    class="Apple-style-span"
+                    style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><span
+                        class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">題2:
+                        ∠A = 40<sup>o</sup>, ∠B = 60<sup>o</sup>, ∠C = 80<sup>o</sup>)<span
+                            class="Apple-converted-space">&nbsp;，求三邊的比例。</span></span></span></p>
+            <p>
+            <p>
+                <span class="Apple-style-span"
+                    style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                    <span class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">
+                        先輸入最小的角使邊長皆大於1<span class="Apple-converted-space">&nbsp;</span></span></span>
+            </p>
+            <p>
+                <span class="Apple-style-span"
+                    style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                    <span class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">
+                        按 Prog 1 再按 40 EXE 60 EXE 80 EXE (顯示∠A為40<sup>o</sup>)<span
+                            class="Apple-converted-space">&nbsp;</span></span></span>
+            </p>
+            <p>
+                <span class="Apple-style-span"
+                    style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                    <span class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">
+                        EXE (顯示c為 1.5321) EXE (顯示∠B為60<sup>o</sup>)<span
+                            class="Apple-converted-space">&nbsp;</span></span></span>
+            </p>
+            <p>
+                <span class="Apple-style-span"
+                    style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                    <span class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">
+                        EXE (顯示a為 1) EXE (顯示∠C為80<sup>o</sup>)<span
+                            class="Apple-converted-space">&nbsp;</span></span></span>
+            </p>
+            <p>
+                <span class="Apple-style-span"
+                    style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                    <span class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">
+                        EXE (顯示b為 1.3473) EXE (顯示面積為0.663(基於上述假設邊的面積 )<span
+                            class="Apple-converted-space">)&nbsp;</span></span></span>
+            </p>
+            <p><span class="Apple-converted-space">
+                    <span style="font-family: 新細明體; letter-spacing: normal">a : b : c = 1: 1.3473 :
+                        1.5321</span></span></p>
+            <p>
+                　</p>
+            <p>例題3:
+                a=4, b=5, ∠C=40<sup>o</sup>
+                ，求∠A、∠B、c及三角形面積。</p>
+            </a>
+            <p>
+            <A=>
+                <p>
+                    注意:要在DEG
+                    Mode執行</p>
+                <p>
+                    按 Prog 1
+                    再按 -4 EXE 40 EXE -5 EXE (顯示a為4)</p>
+                <p>
+                    &nbsp;EXE (顯示∠C=40<sup>o</sup>)
+                    EXE (顯示b為5) </p>
+                <p>
+                    EXE (顯示∠A=53.024<sup>o</sup>) EXE (顯示c為3.2184)</p>
+                <p>
+                    EXE (顯示∠B=86.976<sup>o</sup>)EXE (顯示面積為6.4279) </p>
+                <p>　</p>
+                <p><span class="Apple-style-span">
+                        <span style="font-family: 新細明體; letter-spacing: normal">例</span></span><span
+                        class="Apple-style-span"
+                        style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><span
+                            class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">題4:
+                            ∠A = 40<sup>o</sup>, c = 5, ∠B = 40<sup>o</sup></span></span>，求 a、b、∠C及三角形面積。</p>
+                </a>
+                <p>
+                <A=>
+                    <p>注意:要在DEG
+                        Mode執行</p>
+                    <p>
+                        <span class="Apple-style-span"
+                            style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                            <span class="Apple-style-span"
+                                style="font-family: 新細明體; line-height: 15px; text-align: left">
+                                按 Prog 1 再按 40 EXE -5 EXE 40 EXE (顯示∠A為40<sup>o</sup>)<span
+                                    class="Apple-converted-space">&nbsp;</span></span></span>
+                    </p>
+                    <p>
+                        <span class="Apple-style-span"
+                            style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                            <span class="Apple-style-span"
+                                style="font-family: 新細明體; line-height: 15px; text-align: left">
+                                EXE (顯示c為 5) EXE (顯示∠B為40<sup>o</sup>)<span
+                                    class="Apple-converted-space">&nbsp;</span></span></span>
+                    </p>
+                    <p>
+                        <span class="Apple-style-span"
+                            style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                            <span class="Apple-style-span"
+                                style="font-family: 新細明體; line-height: 15px; text-align: left">
+                                EXE (顯示a為 3.2635) EXE (顯示∠C為100<sup>o</sup>)<span
+                                    class="Apple-converted-space">&nbsp;</span></span></span>
+                    </p>
+                    <p>
+                        <span class="Apple-style-span"
+                            style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+                            <span class="Apple-style-span"
+                                style="font-family: 新細明體; line-height: 15px; text-align: left">
+                                EXE (顯示b為 3.2635) EXE (顯示面積為5.2444)<span
+                                    class="Apple-converted-space">&nbsp;</span></span></span>
+                    </p> </a>
+                    <p>
+                        計算完結後
+                        請按 AC 終止程式</p>
+                    <p>
+                        　</p>
+                    <p>
+                        例題5:
+                        ∠A = 40<sup>o</sup>，a
+                        = 5，∠B
+                        = 60<sup>o</sup>，求b，∠C及c。</p>
+                    </a>
+                    <p>
+                        
+                    </p>
+                    <A=>
+                        <p>
+                            注意:要在DEG
+                            Mode執行</p>
+                        <p>
+                            按 Prog 1
+                            再按 - 5 EXE 60 EXE 40 EXE (顯示a為5)</p>
+                        <p>
+                            EXE (顯示∠B為 60<sup>o</sup>) EXE (顯示c為7.6604)</p>
+                        <p>
+                            EXE (顯示∠A為 40<sup>o</sup>) EXE (顯示b為6.7365) </p>
+                        <p>
+                            EXE (顯示∠C為 80<sup>o</sup>)
+                            EXE (顯示面積為16.5853)</p>
+                        <p>
+                            　</p>
+                        <p>
+                            例題6:
+                            ∠A =
+                            150<sup>o</sup>，a
+                            = 10，b = 6，求∠B，∠C及c。</p>
+                        <p>
+                            
+                        </p>
+                        <p>
+                            注意:要在DEG
+                            Mode執行</p>
+                        <p>
+                            按 Prog 1
+                            再按 150 EXE -6 EXE -10
+                            EXE (顯示∠A為 150<sup>o</sup>) </p>
+                        <p>
+                            EXE (顯示b為6) EXE (顯示∠C為 12.5424<sup>o</sup>)</p>
+                        <p>
+                            EXE (顯示a為10) EXE (顯示∠B為17.4576<sup>o</sup>) </p>
+                        <p>
+                            EXE (顯示c為4.3432)
+                            EXE (顯示面積為6.51486)</p>
+                        <p>
+                            計算完結後
+                            請按 AC 終止程式</p>
+                        <p>
+                            　</p>
+                        <p>
+                            例題7:
+                            ∠A = 50<sup>o</sup>，a
+                            = 10，b = 13，求∠B，∠C及c。</p>
+                        </a>
+                        <p>
+                            
+                        </p>
+                        <A=>
+                            <p>
+                                注意:要在DEG
+                                Mode執行</p>
+                            <p>
+                                按 Prog 1
+                                再按 50 EXE -13 EXE -10
+                                EXE (顯示∠A為 50<sup>o</sup>) </p>
+                            <p>
+                                EXE (顯示b為13) EXE (顯示∠C為 45.2168<sup>o</sup>) EXE (顯示a為10)</p>
+                            <p>
+                                EXE (顯示∠B為84.7832<sup>o</sup>) EXE (顯示c為9.2655)</p>
+                            <p>
+                                EXE (顯示面積為46.1355)</p>
+                            <p>
+                                EXE (程式未終止及顯示另一組答案，∠A為 50<sup>o</sup>) </p>
+                            <p>
+                                EXE (顯示b為13) EXE (顯示∠C為 34.7832<sup>o</sup>)
+                                EXE (顯示a為10) </p>
+                            <p>
+                                EXE (顯示∠B為95.2168<sup>o</sup>) EXE (顯示c為7.44699)</p>
+                            <p>
+                                EXE (顯示面積為37.0807) </p>
+                            <p>
+                                計算完結後
+                                請按 AC 終止程式</p>
+                            <p>　</p>
+                            <p>
+                                </a>
+                                <a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a>
+                            </p>
+</body>
+
+</html>

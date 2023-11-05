@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>聲強及聲強級計算 (Sound intensity and sound intensity level calculation)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">聲強及聲強級計算 </font>
+            </b></u></p>
+    <p align="center"><u><b>
+                <font size="5">(Sound intensity and sound intensity
+                    level calculation)</font>
+            </b></u></p>
+    <p>更新日期: 2011年4月18日</p>
+    <p>
+        程式可以計算下列問題:</p>
+    <p>
+        ˙由聲強(Sound intensity / W m<sup>-2</sup>)計算出聲強級(Sound
+        intensity level / db)</p>
+    <p>
+        ˙由聲強級(Sound intensity level / db)計算出聲強級(Sound
+        intensity / W m<sup>-2</sup>)</p>
+    <p>
+        ˙由N個聲強級(Sound intensity level / db)計算出聲強級總和</p>
+    <p>
+        計算公式:</p>
+    <p>
+        h = 10 log<sub>
+            <font size="2">10</font>
+        </sub>( I / I<sub>o</sub> ) db</p>
+    <p>
+        　</p>
+    <p>
+        <font color="#FF0000">注意</font> : <font color="#FF0000">10^( </font>是按shift log ，<font size="1">E</font>是按
+        EXP
+    </p>
+    <p>程式 (54 bytes)</p>
+    <p>M<font color="#FF0000">M-</font>: ?→A: Lbl 0: ?→B:<font color="#FF0000"> 10^( </font>
+        . 1B<font color="#FF0000">M+</font>: </p>
+    <p>A <font color="#FF0000">=&gt; </font>10 log( M→B: A=2 <font color="#FF0000">
+            =&gt;</font> Goto 0:&nbsp; </p>
+    <p>If A: Then <font size="1">E</font>-12M: Else 5<font color="#FF0000">!</font> + 10 log( B</p>
+    <p>
+        　</p>
+    <p>
+        例題1: 若聲強為 10<sup>-11</sup> W m<sup>-2</sup> ，求聲強級。</p>
+    <p>
+        按 Prog 1 再按 EXE (不輸入或輸入0代表轉換為聲強級)</p>
+    <p>
+        1 <font color="#FF0000">EXP</font> - 11 EXE (顯示答案為 10 db)</p>
+    <p>
+        　</p>
+    <p>
+        例題2: 若聲強級為 10 db ，求聲強。</p>
+    <p>
+        按 Prog 1 再按 1 EXE (輸入1代表轉換為聲強)</p>
+    <p>
+        10 EXE (顯示答案為10<sup>-11</sup> W m<sup>-2</sup> )</p>
+    <p>
+        　</p>
+    <p>
+        例題3: 三個噪音源的聲強級分別為 60 db, 63 db及65 db，求三個噪音加起來的聲強級。</p>
+    <p>
+        按 Prog 1 再按 2 EXE (輸入2代表計算N個聲強級的和)</p>
+    <p>
+        60 EXE 63 EXE 65 EXE (顯示答案為 67.89 db)</p>
+    <p>
+        計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>一元三次方程(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">一元三次方程(II)</font>
+            </b></u></p>
+    <p>最新更新日期: 2011年4月24日</p>
+    <p>程式一由網友<span class="gen"><span class="postername">
+                <font color="#0000FF">
+                    roviury</font> 提供。
+            </span> </span></p>
+    <p>第一個程式只能計算<font color="#FF0000">實根</font>，若果有學習過複數的朋友或需要計算<font color="#FF0000">複數根</font>，請使用第二個程式。</p>
+    <p>
+        <font color="#FF0000">注意:</font> 60<sup>o </sup>是按 6 0 SHIFT Ans 1。
+    </p>
+    <p>
+        <font color="#0000FF">程式一</font> (126 bytes
+        <font color="#0000FF">實數版</font>，使用記憶為A, B, C及M)
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 COMP 模式下執行，因此在選擇新程式位置後，按 1 選用COMP模式。</font>
+    </p>
+    <p>?→A: ?→B: ?→C: ?→M: - B┘(3A→B: BC<font color="#FF0000">M+</font>:</p>
+    <p>B<sup>3</sup>
+        - M┘(2A→M: B<sup>2</sup> - C┘(3A→C: M<sup>2</sup> - C<sup>3</sup>: </p>
+    <p>
+        If Ans&gt;0: Then √( Ans<font color="#FF0000">M+</font>: B +<font color="#FF0000"><sup> 3</sup>√( </font>
+        M
+        ) + <font color="#FF0000"><sup>3</sup>√( </font>M - 2Ans◢ Lbl IfEnd:</p>
+    <p>
+        2√( C→C: C <font color="#FF0000">=&gt;</font> 3<sup>-1</sup>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> 8M÷C<sup>3</sup>→M: B + C cos(M◢
+    </p>
+    <p>
+        B - C cos( M + 60<sup>o</sup>◢ B - C cos( M - 60<sup>o</sup></p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF">程式二</font> (132 / <font color="#008000">128</font>
+        bytes <font color="#0000FF">複數版</font>)
+    </p>
+    <p>
+        <font color="#FF0000">注意</font> : 若果不需要記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入
+        ，5<font color="#000080"><b>!</b></font><sup>o</sup>是按 5 SHIFT
+        <font color="#0000FF">x!</font> SHIFT Ans 1
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>?→A: ?→B: ?→C: ?→M: - B┘(3A→B: BC<font color="#FF0000">M+</font>:</p>
+    <p>B<sup>3</sup> - M┘(2A→M: B<sup>2</sup> - C┘(3A: √(M<sup>2</sup> - Ans<sup>3</sup>
+        <font color="#FF0000">M+</font>:
+    </p>
+    <p>If Ans=Conjg( Ans: Then <font color="#FF0000"><sup>3</sup>√(</font> M - 2Ans→C: <font color="#FF0000">
+            <sup>3</sup>√(
+        </font>M→M:
+    </p>
+    <p>Else <font color="#FF0000"> <sup>3</sup>√( </font>Abs( M
+        ) )∠( 3<sup>-1</sup>arg( M→M: Conjg( M→C: IfEnd:</p>
+    <p>M + C + B→A◢ 1∠5<font color="#000080"><b>!</b></font><sup>o</sup>: M ÷ Ans +
+        B + CAns<font color="#008000">→C</font>◢ </p>
+    <p>3B - A - Ans<font color="#008000">→B</font>
+    </p>
+    <p>　</p>
+    <p>例題1: 解 3x<sup>3</sup> - 5x<sup>2</sup> + x - 4 =0</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 3 EXE - 5 EXE 1 EXE
+        - 4 EXE (顯示第一個根為1.86977)</p>
+    <p>
+        EXE <font color="#FF0000"> <strong> (第一個程式出現 ERROR，而第二個程式右上角出現R&lt;=&gt;I，表示為複數解)</strong>
+        </font>
+    </p>
+    <p>
+        (顯示第二個根實數部為 -
+        0.101554) </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第
+        二個根虛數部為 - 0.838323 i)</p>
+    <p>
+        EXE (顯示第三個根的實數部為
+        - 0.101554)</p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第
+        三個根虛數部為 0.838323 i)</p>
+    <p>
+        　</p>
+    <p>例題2: 解 2x<sup>3</sup> - x<sup>2</sup> - 72x + 36 =0</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 2 EXE - 1 EXE - 72
+        EXE 36 EXE (顯示第一個根為6)</p>
+    <p>EXE (顯示第二個根為 0.5) EXE (顯示第三個根為 -6)</p>
+    <p>　</p>
+    <p>例題3: 解 x<sup>3</sup> + 3x<sup>2</sup> + 3x + 1 =0</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 1 EXE 3 EXE 3 EXE 1 EXE (顯示第一個根為
+        -1)</p>
+    <p>EXE (顯示第二個根為 -1) EXE (顯示第三個根為
+        -1)</p>
+    <p>
+        　</p>
+    <p>
+        例題4:
+        解 x<sup>2</sup> - 7x +
+        12 = 0&nbsp; (一元二次方程)</p>
+    <p>
+        方程可以寫成 x<sup>3</sup> - 7x<sup>2</sup> + 12x = 0 (其中捨去 一個 x=0 的解)</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 1 EXE
+        - 7 EXE 12 EXE 0 EXE(顯示第一個實數根為4) </p>
+    <p>
+        EXE (顯示第二個根為3)
+        EXE (顯示第三個實數根為0
+        <font color="#FF0000">
+            (捨去)</font>)&nbsp;
+    </p>
+    <p>　</p>
+    <p>註1: 輸入的係數為整數或分數較為理想，若果輸入的係數為小數，準確度有可能會減少一點。</p>
+    <p>
+        註2: 第一個根必為實數根。</p>
+    <p>
+        註3: 程式用作解一元二次方程時，要捨去其中一個0的解，另外這個0的解有可能因計數機的誤差而出現一個很小的數值。</p>
+    <p>
+        註4: 若使用程式一及三根均為實數，答案會由大至小順序顯示出現(例如: x<sup>3</sup>-5x<sup>2</sup>+8x-4=0)。</p>
+    <p>
+        　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

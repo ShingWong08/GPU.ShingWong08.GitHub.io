@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>多項式除法(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">多項式除法(I)</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年10月7日</p>
+    <p>程式計算一個四次多項式除以一個一次多項式所得的商式及餘數。另外若果輸入係數為整數或分數，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按六次 Mode，再按 2 EXE )。</p>
+    <p>
+        <font color="#FF0000">注意</font> : 若果不需要記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入。
+    </p>
+    <p>程式 (64 bytes / <font color="#008000">74 bytes</font>)</p>
+    <p>?→A:?→B:?→C:?→D:?→X:?→Y:?→M:</p>
+    <p>M┘Y→M: A┘Y<font color="#008000">→A</font>◢ B┘Y-AnsM<font color="#008000">→B</font>◢ C┘Y-AnsM<font
+            color="#008000">→C</font>◢</p>
+    <p>D┘Y-AnsM<font color="#008000">→D</font>◢ X-AnsYM<font color="#008000">→X</font>
+    </p>
+    <p>　</p>
+    <p>例題1:計算 (2x<sup>4</sup> + x<sup>3</sup>
+        + 3x<sup>2</sup> + 4x + 5)
+        ÷
+        (x + 2) 的商及餘數。<br>
+        <br>
+        按
+        Prog 1&nbsp; 再按 2 EXE 1 EXE
+        3 EXE&nbsp;4 EXE&nbsp;5 EXE 1 EXE 2 EXE
+    </p>
+    <p>(顯示商 x<sup>3</sup> 的係數為2) EXE
+        (顯示商 x<sup>2</sup> 的係數為 - 3) EXE
+        (顯示商 x的係數為9)</p>
+    <p>EXE (顯示商常數項的係數為 - 14) EXE (顯示餘數為33)</p>
+    <p>
+        所以商為2x<sup>3</sup> - 3x<sup>2</sup> + 9x -
+        14，餘數為33。</p>
+    <p>　</p>
+    <p>
+        例題:
+        計算 (3x<sup>3</sup> –
+        5x<sup>2</sup> – 4x + 5) ÷
+        (3x–2)的商及餘數。</p>
+    <p>
+        <font face="新細明體">按
+            Prog 1&nbsp; 再按 0</font> EXE 3 EXE
+        - 5 EXE&nbsp;- 4 EXE&nbsp;5 EXE 3 EXE - 2 EXE
+    </p>
+    <p>(顯示商 x<sup>3</sup> 的係數為0) EXE
+        (顯示商 x<sup>2</sup> 的係數為1) EXE
+        (顯示商 x的係數為 -1)</p>
+    <p>EXE (顯示商常數項的係數為 - 2) EXE (顯示餘數為1)</p>
+    <p>
+        所以商為x<sup>2</sup>–x–2，餘數為1。</p>
+    <p>
+        　</p>
+    <p>
+        若果是有記存答案的版本，程式執行完結後按 RCL A、RCL B、RCL C及RCL D顯示商式的係數，按 RCL X顯示餘數。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

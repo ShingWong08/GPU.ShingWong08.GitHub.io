@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>聯立四元一次方程</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">聯立四元一次方程</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">Alan Cai</font> 提供。</p>
+    <p>若果輸入係數為整數，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+    </p>
+    <p>更新寫日期: 2013年12月12日</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>
+        <font color="#FF0000">注意</font> :&nbsp; 藍色的英文字為統計模式中的變數(例如:
+        <font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">
+            <font color="#0000FF">Σxy</font>
+        </font>
+        按 Shift 1 → 3 等等)，FreqOn 按 Shift MODE ← ← 1，<font size="1">E </font>是按 EXP。
+    </p>
+    <p>程式 (359 bytes)</p>
+    <p>FreqOn: <font size="1">E</font>50→M: ?→A: ?→B: ?→C: 1 ; 2<sup>-1</sup>(A+B-2C
+        <font color="#FF0000">DT</font>: <br>
+        <br>
+        -1 ; 2<sup>-1</sup>(A-B <font color="#FF0000">DT</font>: 1 , 1 ; C <font color="#FF0000">DT</font>: ?→D: ?→X:
+        M<sup>-1</sup> , 1 ; M(X-C <font color="#FF0000">DT</font>: <br>
+        <br>
+        ?→Y: ?→A: ?→B: B<font color="#0000FF">Σx<sup>4</sup></font> - Y<font color="#0000FF">Σx<sup>2</sup>y</font>→B:
+        ?→C: ?→X: 0 , 1 ; -
+        <font color="#0000FF">Σy</font>
+        <font color="#FF0000">DT</font>: <br>
+        <br>
+        ; B <font color="#FF0000">DT</font>: , M<sup>-1</sup> ; M(A<font color="#0000FF">Σx<sup>4</sup></font> - Y<font
+            color="#0000FF">Σx<sup>3</sup></font> - B <font color="#FF0000">DT</font>: M<sup>-1</sup>, 0 ; M(X<font
+            color="#0000FF">Σx<sup>4</sup></font> - Y<font color="#0000FF">
+            <font color="#0000FF">Σxy</font>
+        </font> -
+        <font color="#0000FF">Σx</font>
+        <font color="#FF0000">DT</font>: <br>
+        <br>
+        0 ; -<font color="#0000FF">n</font>
+        <font color="#FF0000">DT</font>: ; C<font color="#0000FF">Σx<sup>4</sup></font> - YD <font color="#FF0000">DT
+        </font>: ?→X: ?→Y: Y<font color="#0000FF">Σx<sup>4</sup></font> - X<font color="#0000FF">Σx<sup>3</sup></font>
+        →Y: ?→A: <br>
+        <br>
+        A<font color="#0000FF">Σx<sup>4 </sup>Σy</font> - X<font color="#0000FF">Σx<sup>2</sup>y Σy</font> - Y<font
+            color="#0000FF">Σy<sup>2</sup></font>→A: ?→B: B<font color="#0000FF">Σx<sup>4</sup></font>Σy - XD<font
+            color="#0000FF">Σy</font> - Y<font color="#0000FF">n</font>→B: <br>
+        <br>
+        ?→C: C<font color="#0000FF">Σx<sup>4 </sup>Σy</font> - X<font color="#0000FF">Σxy Σy</font> - Y<font
+            color="#0000FF">Σx</font>→C: ?→X: ?→Y: Y<font color="#0000FF">Σx<sup>4</sup></font> - X<font
+            color="#0000FF">Σx<sup>3</sup></font>→Y: <br>
+        <br>
+        ?→M: M<font color="#0000FF">Σx<sup>4 </sup>Σy</font> - X<font color="#0000FF">Σx<sup>2</sup>y Σy</font> - Y<font
+            color="#0000FF">Σy<sup>2</sup></font>→M: D ; 0 <font color="#FF0000">DT</font>: ?→D: MB - A(D<font
+            color="#0000FF">Σx<sup>4 </sup>Σy</font> - XAns
+        <font color="#0000FF">Σy</font> - Y<font color="#0000FF">n</font>: <br>
+        <br>
+        ?→D: (MC- A(D<font color="#0000FF">Σx<sup>4 </sup>Σy</font> - X<font color="#0000FF">Σxy Σy</font> - Y<font
+            color="#0000FF">Σx</font>))┘Ans→D: (C - BD)┘A→C: <br>
+        <br>
+        (Σx - nD - <font color="#0000FF">Σy<sup>2</sup></font>C)┘Σy→B: ;0<font color="#FF0000">DT</font>: (<font
+            color="#0000FF">Σxy</font> - AnsD - <font color="#0000FF">Σx<sup>2</sup>y</font>C - <font color="#0000FF">
+            Σx<sup>3</sup></font>B)┘<font color="#0000FF">Σx<sup>4</sup></font>→A◢ B◢ C◢ D
+    </p>
+    <p>　</p>
+    <p>
+        例題:
+        解聯立方程 :</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 2 EXE 5 EXE 3 EXE 4 EXE 1 EXE </p>
+    <p>5 EXE 12 EXE 7 EXE 1 EXE 2 EXE</p>
+    <p>3 EXE 7 EXE 6 EXE 9 EXE 9 EXE</p>
+    <p>3 EXE 3 EXE 9 EXE 4 EXE 7 EXE </p>
+    <p>(顯示A= - 912/25) EXE (顯示B=237/25) EXE (顯示C=256/25) EXE (顯示D= - 26/25)</p>
+    <p>　</p>
+    <p>註1: 方程組的答案分別儲存在記憶A、B、C及D中。</p>
+    <p>註2: 若方程組為&nbsp;
+        a<sub>1</sub>w + b<sub>1</sub>x + c<sub>1</sub>y + d<sub>1</sub>z = e<sub>1 ，</sub>a<sub>2</sub>w +
+        b<sub>2</sub>x + c<sub>2</sub>y
+        + d<sub>2</sub>z = e<sub>2，</sub>a<sub>3</sub>w + b<sub>3</sub>x + c<sub>3</sub>y
+        + d<sub>3</sub>z = e<sub>3，</sub>a<sub>4</sub>w + b<sub>4</sub>x + c<sub>4</sub>y
+        + d<sub>4</sub>z = e<sub>4</sub>。</p>
+    <p>解聯立四元一次方程的限制條件為:</p>
+    <p>&nbsp;a<sub>1</sub>≠0</p>
+    <p>
+    <p>
+    <p>
+    <p>若果出現Math error，代表方程組的行列式為零
+        或違反限制條件，若果是違反限制條件，請將方程組內的方程式調換次序輸入。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

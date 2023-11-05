@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Conversion of decimal approximation into possible fraction</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">小數近似值轉換為可能分數</font>
+            </b></u></p>
+    <p>更新日期: 2011年10月10日</p>
+    <p>程式根據網友 3173137 提供的fx-3650P<a
+            href="http://hk.geocities.com/kl_cheuk/3650P/approximationFraction.htm">程式</a>修改以適合fx-50FH使用，程式可以計算小數近似值誤差範圍內可能的分數。
+    </p>
+    <p>注意: <font color="#FF0000">10^( </font>是按shift log。</p>
+    <p>程式 (147 bytes)</p>
+    <p>Ans→A: ?→A: ?→B: 2→M: ?→M: 1<font color="#FF0000">M-</font>:</p>
+    <p>A - . 5 <font color="#FF0000">10^(</font> - B→C: 2A - C→D: Lbl 0: Fix 0: 1<font color="#FF0000">M+</font>:</p>
+    <p>DM ≦ Rnd( CM + . 5 <font color="#FF0000">=&gt;</font> Goto 0: </p>
+    <p>Rnd( CM: Ans + (CM&gt;Ans→X: Rnd( DM - . 5→Y:</p>
+    <p>If X=Y: Then X→A: M→B: While B: A - B Rnd( A÷B - . 5→Y: </p>
+    <p>B→A: Y→B: WhileEnd: A - 1
+        <font color="#FF0000">=&gt;</font> Goto 0: IfEnd: Norm 2: X◢
+    </p>
+    <p>Y <font color="#FF0000">=&gt;</font> Y◢ M◢ Goto 0</p>
+    <p>
+        　</p>
+    <p>註1: 顯示X及Y表示分子，M表示分母。當出現Y時表示同一個分母有多於一個可能分數，分子可能的值由X至Y的整數。</p>
+    <p>註2: 輸入的小數為正數，否則計算有可能不成立。</p>
+    <p>註3: 程式不會自動終止，因為有無限個可能的分數，若要終止程式請按 AC 或 ON。</p>
+    <p>註4: 程式若在執行中未顯示任何數值答案(X、Y或Z)時按 AC 或 ON終止程式，計算機會保留在小數0位的設定，請自行清除這個設定。</p>
+    <p>註5: 預設計算的近似值為Ans記憶的數值(之前計算結果)，輸入時只要直接 EXE 輸入即可，若是其它數值請自行輸入。</p>
+    <p>　</p>
+    <p>例題: 數值0.5準確至小數1位，試計算這個近似值可能的分數。</p>
+    <p>按 Prog 1 再按 0.5 EXE (數值) 1 EXE (準確至小數1位)</p>
+    <p>EXE (輸入開始分母數值，直接按 EXE 則接受預設值2開始，顯示X為1)</p>
+    <p>EXE (顯示M為2，即第一個可能分數為 1/2)</p>
+    <p>EXE (顯示X為5) EXE (顯示Y為6，由於出現Y表示分子可能的範圍是 5至6的整數)</p>
+    <p>EXE (顯示M為11，即第二及第三個可能分為 5/11及6/11)</p>
+    <p>...............</p>
+    <p>若要終止程式，請按 AC。</p>
+    <p>
+        　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

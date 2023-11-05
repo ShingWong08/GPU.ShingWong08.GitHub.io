@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title>正弦及餘弦定律</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">正弦及餘弦定律</font>
+            </b></u></p>
+    <p>程式更新日期: 2014年8月31日</p>
+    <p>這個程式會根據輸入來計算:</p>
+    <p>
+        (1) 已知兩角及一邊(2 angles and 1 side)，其餘兩邊及第三個角</p>
+    <p>(2) 已知兩邊及一非夾角(2
+        sides and 1 non-included angle)，其餘二角及第三邊</p>
+    <p>(3) 已知兩邊及夾角
+        (2 sides and included angle)，求第三邊
+        ，其餘兩角及三角形面積</p>
+    <p>
+        (4) 已知三邊 (3 sides)，求三角及三角形的面積</p>
+    <p>
+        程式以0, 1, 2,
+        3來區分四個不同的情況，為方便記憶，<font color="#FF0000">餘弦定律</font>以輸入的邊數作為程式的編號，即是已知<font color="#FF0000">兩邊</font>及夾角用<font
+            color="#FF0000">2</font>代表，已知<font color="#FF0000">三邊</font>用<font color="#FF0000">3</font>代表，<font
+            color="#0000FF">正弦定律</font>則以<font color="#0000FF">0</font>及<font color="#0000FF">1</font>代表，<font
+            color="#0000FF">0</font>代表最後輸入為角度
+        (0形似角度的單位<sup>o</sup>)，<font color="#0000FF">1</font>代表最後輸入的為邊長
+        (1形狀似邊)。若果大家較喜歡舊版的輸入方法，舊版依然保留在網頁下方。</p>
+    <p>
+        <font color="#FF0000">注意:</font>
+        <font color="#0000FF">π<sup>r</sup></font>
+        是按 Shift EXP Shift Ans 2
+    </p>
+    <p>程式 (132 bytes，使用記憶為A, B ,C及D):</p>
+    <p>?→D: ?→A: ?→B: ?→C:&nbsp;If D&gt;1: Then</p>
+    <p>D=2 <font color="#FF0000">=&gt;</font> Pol( B - A cos( C , A sin( C→C◢</p>
+    <p>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup>
+        - A<sup>2</sup> ) ÷ <b>
+            <font color="#800080">( </font>
+        </b>2BC→D◢
+    </p>
+    <p>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> A<sup>-1</sup>( C - B cos( D◢ <font color="#0000FF">
+            <font face="Times New Roman">π</font><sup>r</sup>
+        </font>
+        - D - Ans:
+    </p>
+    <p>Else D <font color="#FF0000">=&gt; sin</font>
+        <font color="#FF0000"><sup>-1</sup>(</font>
+        B<sup>-1</sup>C sin( A→C◢ D=0 <font color="#FF0000">=&gt;</font>
+    </p>
+    <p>B sin( C ) ÷ sin( A◢ 1: While Ans:&nbsp;
+        <font color="#0000FF">π<sup>r</sup></font>
+        - A - C◢
+    </p>
+    <p>B sin( Ans ) ÷ sin( A◢ DC&gt;A <font color="#FF0000">=&gt;</font>
+        <font color="#0000FF">π<sup>r</sup></font> - C→C◢
+    </p>
+    <p>WhileEnd</p>
+    <p>
+        <font color="#FF0000">注意:</font> 只有計算正弦定律時才有機會有兩組解答。
+    </p>
+    <p>
+        <span lang="en">
+            註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
+            </b></font>
+        <span lang="en">
+            可以省略，程式長度可減1 byte。</span>
+    </p>
+    <p>
+        　</p>
+    <p>
+        例題1:
+        ∠A = 40<sup>o</sup>，a
+        = 5，∠B
+        = 60<sup>o</sup>，求b，∠C及c。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 0 EXE (正弦定律最後輸入為角度所以用0) </p>
+    <p>
+        40
+        EXE 5 EXE 60 EXE (顯示b為6.7365)</p>
+    <p>
+        EXE (顯示∠C為 80<sup>o</sup>) EXE (顯示c為7.6604)</p>
+    <p>
+        EXE (顯示0及WhileEnd表示計算已完結)</p>
+    <p>　</p>
+    <p>
+        例題2:
+        ∠A = 50<sup>o</sup>，a
+        = 10，b = 13，求∠B，∠C及c。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 1 EXE (正弦定律最後輸入為邊長所以用1) </p>
+    <p>
+        50 EXE 10 EXE 13 EXE
+        (顯示∠B為84.7832<sup>o</sup>)
+    </p>
+    <p>
+        EXE (顯示∠C為 45.2168<sup>o</sup>) EXE (顯示c為9.2655)</p>
+    <p>
+        EXE (顯示另一個∠B的解為95.2168<sup>o</sup>)</p>
+    <p>
+        EXE (顯示另一可能∠C為 34.7832<sup>o</sup>) EXE (顯示另一可能c為7.44699)</p>
+    <p>
+        請按 AC 終止程式</p>
+    <p>
+        　</p>
+    <p>
+        例題3:
+        ∠A =
+        150<sup>o</sup>，a
+        = 10，b = 6，求∠B，∠C及c。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 1 EXE (正弦定律最後輸入為邊長所以用1) </p>
+    <p>
+        150 EXE 10 EXE 6 EXE (顯示∠B為17.4576<sup>o</sup>)
+    </p>
+    <p>
+        EXE (顯示∠C為 12.5424<sup>o</sup>) EXE (顯示c為4.3432)</p>
+    <p>
+        EXE (顯示0及WhileEnd表示答案只有一組解答)</p>
+    <p>　</p>
+    <p>例題4:
+        a=4, b=5, ∠C=40<sup>o</sup>
+        ，求c及三角形面積。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按<font color="#FF0000"> </font>
+        2 EXE (餘弦定律己知兩邊所以用2)</p>
+    <p>
+        4 EXE 5 EXE 40 EXE (顯示c=3.2184) </p>
+    <p>
+        EXE (顯示∠A=53.024<sup>o</sup>)</p>
+    <p>
+        EXE (顯示∠B=86.976<sup>o</sup>)</p>
+    <p>
+        請按 AC 終止程式</p>
+    <p>　</p>
+    <p>例題5:
+        a=4, b=5, c=6，求∠C及三角形面積。</p>
+    <p>注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按 3 EXE
+        (餘弦定律己知三邊所以用3) </p>
+    <p>
+        4 EXE 5 EXE
+        6 EXE (顯示∠A=41.410<sup>o</sup>)</p>
+    <p>
+        EXE (顯示∠B=55.771<sup>o</sup>)</p>
+    <p>
+        EXE (顯示∠C=82.8192<sup>o</sup>)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

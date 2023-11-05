@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>泊松分佈(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">泊松分佈(II)</font>
+            </b></u></p>
+    <p>更新日期: 2014年8月31日</p>
+    <p>這個程式除了有泊松分佈(I)程式的功能外，還可以連續顯示每一項的概率<font color="#FF0000">(可以用作考試的中間步驟)</font>及計算各項概率的總和。</p>
+    <p>注意: <font color="#FF0000">e^( </font>是按 shift
+        e<sup>x</sup></p>
+    <p>程式 (68 bytes)</p>
+    <p>ClrMemory: ?→A: ?→B: Lbl 0: </p>
+    <p>A^( B ) ÷ ( B!<span lang="en"> </span>
+        <font color="#FF0000">e^( </font>
+        A→C: C<font color="#FF0000">M+</font>:&nbsp;
+        X=0 <font color="#FF0000">=&gt;</font> ?→C:
+    </p>
+    <p>C≧1 <font color="#FF0000">=&gt;</font> C→X: 1+B→B: X≧B
+        <font color="#FF0000">=&gt;</font> Goto
+        0: C <font color="#FF0000">=&gt;</font> X=0 <font color="#FF0000">=&gt;</font> Goto 0: M
+    </p>
+    <p>註1: 程式若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;X→0: M<font color="#FF0000">M-</font>
+        &quot;，而程式所使用的記憶為A，B，C，X及M。</p>
+    <p>
+        <span lang="en">
+            註2: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
+            </b></font>
+        <span lang="en">
+            可以省略，程式長度可減1 byte。</span>
+    </p>
+    <p>　</p>
+    <p>
+        例題1:
+        若X ~ Po(5)，求P(X=4)。</p>
+    <p>
+        按 Prog 1
+        再按 5 EXE 4 EXE (顯示答案為0.17547)</p>
+    <p>
+        <font face="新細明體" EN-US>程式執行完成後，請按AC中止程式。</font>
+    </p>
+    <p>　</p>
+    <p>
+        例題2:
+        若X ~ Po(5)，求P(4≦X≦6)。</p>
+    <p>
+        按 Prog 1 再按 5 EXE 4 EXE 6 EXE (顯示P(4≦X≦6)為0.49716)</p>
+    <p>
+        　</p>
+    <p>
+        例題3:
+        若X ~ Po(5)，求P(X=4)，P(X=5)，P(X=6)及P(4≦X≦6)。</p>
+    <p>
+        按 Prog 1
+        再按 5 EXE 4 EXE (顯示P(X=4)為0.17547)
+        EXE (顯示P(X=5)為0.17547)</p>
+    <p>
+        EXE (顯示P(X=6)為0.14622)
+        0 EXE (0表示計算完結，顯示P(4≦X≦6)為0.49716)</p>
+    <p>
+        　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>一元二次方程式(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">一元二次方程式(I)</font>
+            </b></u></p>
+    <p>更新日期: 2011年6月14日</p>
+    <p>這個程式可解一元二次方程(包括複數根)、亦可以計二次函數的最大/最小值及其對應的x值。另外若果輸入數據為整數(或分數)及答案為有理數時，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+    </p>
+    <p><b>
+            <font color="#FF0000">注意:若果你不用計複數根，為被免混淆及使用方便，建議輸入程式時選用COMP 模式。若要計複數根，
+                輸入程式時請選用複數模式(選擇新程式位置後按 2 選用CMPLX模式)，當執行程式時，程式會自動進入複數模式。</font>
+        </b></p>
+    <p>
+        <font color="#FF0000">注意</font> : 若果不想記存兩根，程式中<font color="#008000">綠色</font>部份可以不輸入。
+    </p>
+    <p>程式 (共42 或 <font color="#008000">38</font> bytes，使用記憶為A, B, C及M):</p>
+    <p>?→A: ?→B: ?→M: - B┘(2A→C: AC<sup>2</sup>
+        <font color="#FF0000">M-</font>:
+    </p>
+    <p>C+√( -M┘A<font color="#008000">→A</font>◢ 2C - Ans<font color="#008000">→B</font>
+    </p>
+    <p>　</p>
+    <p><a href="#Q1">其它不同的版本</a></p>
+    <p>　</p>
+    <p>
+        例題1:
+        解 x<sup>2</sup> - 7x +
+        12 = 0 </p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 1 EXE
+        - 7 EXE 12 EXE (顯示第一個實數根為4)
+        EXE (顯示第二個實數根為3)</p>
+    <p>
+        ∴ x = 4
+        或 x = 3</p>
+    <p>
+        &nbsp;&nbsp;</p>
+    <p>
+        例題2:
+        解 x<sup>2</sup> + 6x +
+        25 = 0</p>
+    <p>
+        假設程式是在複數模式中輸入</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 1 EXE 6 EXE 25 EXE
+        <strong>
+            <font color="#FF0000">( 此時計算機右上角出現R&lt;=&gt;I，表示為複數解)</font>
+        </strong>
+    </p>
+    <p>
+        (顯示第一個根的實數部為-3)
+        再按 Shift Re&lt;=&gt;Im (顯示第一個根虛數部為
+        4)</p>
+    <p>
+        EXE (顯示第二個根的實數部為-3)
+        再按 Shift Re&lt;=&gt;Im (顯示第二個根虛數部為
+        - 4)</p>
+    <p>
+        所以方程的解為 x = -3
+        ± 4i</p>
+    <p>
+        　</p>
+    <p>
+        按 RCL C、RCL
+        M 分別會顯示頂點
+        x、y (最大/最小點)座標的數值。</p>
+    <p>若果<font color="#008000">包含綠色程式碼</font>，程式執行完成後，按
+        RCL A、RCL B 分別會顯示兩個根的數值，</p>
+    <p>
+        <font color="#FF0000">注意:</font> 若果程式在comp Mode之下輸入，根又是複數(非實數根)，計數機會出現Math
+        error，不過
+    </p>
+    <p>
+        頂點的坐標依然會被儲存在記憶C及M之中。</p>
+    <p>
+        　</p>
+    <p>
+        <a href="factorize_1.htm">如何用這個程式計二次函數的因式分解</a>
+    </p>
+    <p>
+        <a href="complete_S.htm">頂點功能求配方法算式</a>
+    </p>
+    <p>
+        　</p>
+    <p>
+        <a name="Q1" id="Q1"></a><b>
+            <font color="#800080">附錄一元二次方程式的其它版</font>
+        </b>
+    </p>
+    <p>
+        1. <a href="quadratic_short.htm">簡短版</a> (32 或 34 bytes)</p>
+    <p>
+        2.
+        <a href="quadratic_1b.htm">有判別式的版本</a> (47 或 43 bytes)
+    </p>
+    <p>
+        3. <a href="quadratic1a.htm">可顯示未化簡根式版本</a> (42 bytes)&nbsp;&nbsp;&nbsp;&nbsp; </p>
+    <p>4. <a href="quadratic_4.htm">使用較小數目記憶版本</a> (37 至 41 bytes)</p>
+    <p>
+        5.
+        <a href="quadratic_1c.htm">程式其它版本(包括小數版)</a> (35 bytes 至 46 bytes)
+    </p>
+    <p>
+        6. <a href="quadratic_5.htm">程式特別版(準確度較高</a>) (43 至 55 bytes)&nbsp;</p>
+    <p>
+        7. <font color="#008000"><a href="quadratic2.htm">複數係數版</a></font>
+        (52 bytes)&nbsp;&nbsp; </p>
+    <p>
+        8. <a href="quadratic_step.htm">可顯示計算步驟(二次公式)版本</a> (46 - 50 bytes)</p>
+    <p>　</p>
+    <p><b>
+            <font color="#FF0000">附錄一元二次方程式根式版</font>
+        </b></p>
+    <p>
+        1. <a href="quadratic1a.htm">未化簡根式版本</a> (42 bytes)</p>
+    <p>
+        2.
+        <a href="quadratic_9.htm">可顯示簡化根式實根版本</a> (79 至 105 bytes)&nbsp;
+    </p>
+    <p>
+        3.
+        <a href="quadratic_10.htm">可顯示簡化根式複數根版本</a> (84 至 115 bytes)
+    </p>
+    <p>4. <a href="quadratic3.htm">可顯示簡化根式及頂點實根版本</a>
+        (80 至 104 bytes)</p>
+    <p>5. <a href="quadratic_3.htm">可顯示簡化根式及頂點複數根版本</a>
+        (80 至 118 bytes)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

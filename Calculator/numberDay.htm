@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>兩日期間日數</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">兩日期間日數</font>
+            </b></u></p>
+    <p>程式計算兩日期間的日數<strong>(包括最後一日，但不包括第一日)</strong>。
+        第二個程式較長，但可以輸入任何年份的日期(包括公元前(以負數形式輸入))。</p>
+    <p>程式編寫日期: 2007年9月8日 <font color="#0000FF">(更新日期: 2009年3月15日)</font>
+    </p>
+    <p>
+        第一個程式是依照網友<font color="#800000"> <b>SuperMANganese</b> </font>研究<a
+            href="http://webcal.forumcircle.com/viewtopic.php?t=1331">方法</a>將程式簡化。</p>
+    <p>
+        第一個程式 (81 bytes)</p>
+    <p>
+        ClrMemory: 1: While Ans: A→B: ?→Y: ?→M: ?→D:</p>
+    <p>
+        3<font color="#FF0000">M-</font>: 0&gt;M <font color="#FF0000">=&gt;</font> 12<font color="#FF0000">M+
+            =&gt;</font> Y - 1→Y: Fix 0: </p>
+    <p>
+        Rnd( 365.25Y - . 5) + D + Rnd(
+        30.6M→A:</p>
+    <p>
+        X=0→X: WhileEnd: Norm 1: A - B</p>
+    <p>
+        　</p>
+    <p>
+        第二個程式 (120 bytes，可以輸入任何年份的日期(包括公元前))</p>
+    <p>
+        <font color="#FF0000">注意: 第二個程式需要在 BASE 模式下執行，因此在選擇新程式位置後，按 3 選用BASE模式。</font>
+    </p>
+    <p>
+        ClrMemory: Dec: 1: While Ans: ?→Y: ?→M: </p>
+    <p>
+        ?→D: A<font face="新細明體">→B: </font>Y + 4800 + (()&gt;Y→Y: 3<font color="#FF0000">M-</font>: </p>
+    <p>
+        0&gt;M <font color="#FF0000">=&gt;</font>
+        12<font color="#FF0000">M+ =&gt; </font> Y - 1→Y:&nbsp; 365Y + D + </p>
+    <p>
+        (153M + 2) ÷ 5
+        + Y ÷ 4→A: Ans&gt;2331253 <font color="#FF0000">=&gt;</font> A + 38 </p>
+    <p>
+        - Y ÷ 100 + Y ÷ 400→A:
+        X=0→X: WhileEnd: A - B</p>
+    <p>　</p>
+    <p>
+        例題1:
+        計算2003年10月15日至2004年4月1日相差的日數。</p>
+    <p>
+        按 Prog 1 再按 2003
+        EXE 10 EXE 15 EXE 2004 EXE 4 EXE 1 EXE (顯示相差日數為169)</p>
+    <p>　</p>
+    <p>
+        例題2:
+        計算公元前2003年10月15日至2004年4月1日相差的日數。</p>
+    <p>
+        <font color="#FF0000">注意: 此例題只適用於第二個程式，由於基模式沒有負號，請用減號代替負號輸入負值。</font>
+    </p>
+    <p>
+        按 Prog 1 再按 - 2003
+        EXE 10 EXE 15 EXE 2004 EXE 4 EXE 1 EXE (顯示相差日數為1462982)</p>
+    <p>　</p>
+    <p>
+        註1: 輸入數值時 Y? 代表年(<font color="#FF0000">Y</font>ear)，M? 代表月(<font color="#FF0000">M</font>onth)，D?
+        代表日(<font color="#FF0000">D</font>ay)。 </p>
+    <p>
+        註2: 第一個程式輸入的日期範圍為1901-2099年。</p>
+    <p>
+        註3:
+        第二個程式可以輸入公元前的日期(以負值代表年份)，注意由於公曆的曆法原因，日期在1582年10月5日至1582年10月14日是不存在，所以輸入這個範圍的日期計算將不成立。日期在1582年10月15日或之後，程式自動假定日期是使用格里曆(Gregorian
+        calendar)，1582年10月4日或之前，其它則假定是使用儒略曆(Julian Calendar)。</p>
+    <p>
+        　</p>
+    <p>
+        參考資料:</p>
+    <p>
+        <a href="http://en.wikipedia.org/wiki/Julian_day">Julian day</a>
+    </p>
+    <p>
+        <a href="http://en.wikipedia.org/wiki/Julian_day">
+            http://en.wikipedia.org/wiki/Julian_day</a>
+    </p>
+    <p>
+        　</p>
+    <p>
+        <a href="http://www.nr.com/julian.html">Julian Day and Civil Date Calculator</a>
+    </p>
+    <p>
+        <a href="http://www.nr.com/julian.html">http://www.nr.com/julian.html</a>
+    </p>
+    <p>　
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

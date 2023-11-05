@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <title>聯立三元一次方程及行列式(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">聯立三元一次方程</font>
+            </b>
+            <font size="5"><b>(複數係數II及高考版)</b></font>
+        </u></p>
+    <p>更新日期: 2012年4月1日</p>
+    <p>
+        這個版本比第(I)加入了計算通解(無限多個解)及判斷是否無解的情況。另外這個程式亦可以計算實數係數時，常數項包含一個一次未知代數項，只要輸入一次程式即可求出答案，詳情請參看例題5及6。</p>
+    <p>另外若果不需要記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入。</p>
+    <p>程式 (186 bytes 或 <font color="#008000">182 bytes</font>)</p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>?→A: ?→B: B┘A→C: ?→Y: Y┘A→D: ?→X: X┘A→M:
+    </p>
+    <p>?→A: ?→B: 1┘(B - CA→B: ?→Y: B(DA - Y→Y: - D - CY→D: </p>
+    <p>?→X: B(X - MA→X: CX<font color="#FF0000">M-</font>: M→A: X→B: ?→A: ?→B: ?→C: A: ?→A: </p>
+    <p>If C + BY = - AnsD: Then A - BX - AnsM→C: ?→C: M◢ D◢ X◢ Y: Else</p>
+    <p>(A - BX - AnsM)┘(C + BY + AnsD→C: M + DC<font color="#008000">→A</font>◢ X +
+        YC<font color="#008000">→B</font>◢ C
+    </p>
+    <p>　</p>
+    <p><a href="simultaneousMethod.htm">如何使用聯立三元一次方程程式計算三階伴隨矩陣及逆矩陣</a></p>
+    <p>
+        　</p>
+    <p>
+        例題1:
+        解聯立方程 :</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE -1 EXE 2 EXE 5 EXE </p>
+    <p>1 EXE 3 EXE 1 EXE 10 EXE (顯示x=1) EXE (顯示y=2) EXE (顯示z=3)</p>
+    <p>　</p>
+    <p>例題2: 解以下聯立二元一次方程</p>
+    <p>
+        
+    </p>
+    <p>按
+        Prog 1&nbsp; 再按 </p>
+    <p>
+        1 EXE 1 EXE <font color="#FF0000">EXE</font> (不輸入 z的係數) 7 EXE</p>
+    <p>&nbsp;1 EXE -1 EXE <font color="#FF0000">EXE</font>
+        (不輸入 z的係數)1 EXE (顯示4)
+        EXE (顯示3)</p>
+    <p>
+        因此解答為 x = 4
+        及 y = 3. </p>
+    <p>程式執行完成後，請按AC中止程式</p>
+    <p>　</p>
+    <p>
+        例題3:
+        解聯立方程 :</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 - i EXE 2 + 3i EXE 3 + i EXE 21 + 16i EXE </p>
+    <p>2 + i EXE 5 - 2i EXE 4 + 2i EXE 8 + 8i EXE </p>
+    <p>3 + 2i EXE 1 + 3i EXE 4 - 3i EXE 34 + 18i EXE</p>
+    <p>
+        <strong>
+            <font color="#FF0000">( 此時計算機右上角出現R&lt;=&gt;I，表示為複數解)</font>
+        </strong>
+    </p>
+    <p>
+        (顯示x實數部為 1)
+        Shift Re&lt;=&gt;Im (顯示x虛數部為 2i)</p>
+    <p>
+        EXE
+        (顯示y實數部為 2)
+        Shift Re&lt;=&gt;Im (顯示y虛數部為 - 3i)</p>
+    <p>
+        EXE
+        (顯示z實數部為 3)
+        Shift Re&lt;=&gt;Im (顯示z虛數部為 4i)</p>
+    <p>即 x=1+2i, y=2-3i, z=3+4i </p>
+    <p>　</p>
+    <p>
+        例題4:
+        解聯立方程 :</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1
+        EXE -1 EXE 2 EXE 5 EXE 3 EXE </p>
+    <p>1
+        EXE 4 EXE 17 EXE (顯示行列式為0) EXE</p>
+    <p>(注意此時<b>
+            <font color="#FF0000">沒有Disp</font>
+        </b>，並且有<b>
+            <font color="#FF0000">?C</font>
+        </b>號，表示
+        可能是無解(判斷值≠0)或無限解(判斷值=0)，而這時的判斷值為0，表示方程組是有無限個解的情況)</p>
+    <p>EXE (顯示x的解，常數項為11/2) EXE (顯示x的解，t的係數為 -3/2，即是 x = 11/2 - 3t/2)</p>
+    <p>EXE (顯示y的解，常數項為1/2) EXE (顯示y的解，t的係數為 1/2，即是 x = 1/2 + t/2)</p>
+    <p>因此通解為: </p>
+    <p>x = 11/2 - 3t/2</p>
+    <p>y = 1/2 + t/2</p>
+    <p>&nbsp;z = t</p>
+    <p>　</p>
+    <p>
+        例題5:
+        解聯立方程 :</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE </p>
+    <p>1 EXE -1 EXE 2 EXE 5 + 2<font color="#FF0000">i</font> EXE (以i代表未知代數常數<font color="#FF0000">(只限常數項及未知代數為一次)
+        </font>)</p>
+    <p>1 EXE 3 EXE 1 EXE 10 - 2<font color="#FF0000">i</font> EXE<strong><span style="font-weight: 400">
+            </span></strong>(<strong style="font-weight: 400">
+            <font color="#FF0000">此時計算機右上角出現R&lt;=&gt;I，表示為複數解，</font>
+        </strong>顯示1)</p>
+    <p>Shift Re&lt;=&gt;Im (顯示1 i，即 x = 1 + k)</p>
+    <p>EXE (顯示2) Shift Re&lt;=&gt;Im(顯示-1 i，即 y = 2 - k) </p>
+    <p>EXE (顯示3) Shift Re&lt;=&gt;Im(顯示0 i，即 z = 3) </p>
+    <p>　</p>
+    <p>例題6: 當下列聯立方程是一致的(consistent)及有無限多個解時，求 k值。</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 4 EXE </p>
+    <p>1 EXE <font color="#FF0000">0</font> EXE 2 EXE 2 EXE 3 EXE 4 EXE 6 EXE
+        <font color="#FF0000">7i</font> EXE
+    </p>
+    <p>(注意此時<b>
+            <font color="#FF0000">沒有Disp</font>
+        </b>，並且有<b>
+            <font color="#FF0000">?C</font>
+        </b>號，表示
+        可能是無解(判斷值≠0)或無限解(判斷值=0)，顯示 - 14)</p>
+    <p>Shift Re&lt;=&gt;Im(顯示7 i，即判斷式 = - 14 + 7k) </p>
+    <p>所以無限個解(consistent)的條件為 - 14 + 7k = 0，即答案為 k = 2</p>
+    <p>程式執行完成後，請按AC中止程式</p>
+    <p>　</p>
+    <p>註1: 若程式有綠色程式碼，執行完成後及方程組有唯一的解時，x、y、z的值分別儲存在記憶A、B、C中。</p>
+    <p>註2: 若方程組為&nbsp;
+        a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z
+        = d<sub>1 , </sub>a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z = d<sub>2</sub>
+        , a<sub>3</sub>x + b<sub>3</sub>y + c<sub>3</sub>z
+        = d<sub>3</sub></p>
+    <p>解聯立三元一次方程的限制條件為: <font color="#FF0000">a<sub>1</sub>b<sub>2</sub>≠b<sub>1</sub>a<sub>2</sub>及a<sub>1</sub>≠0
+        </font>，若果出現Math error，代表違反限制條件
+        ，可以嘗試改變方程的輸入次序。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

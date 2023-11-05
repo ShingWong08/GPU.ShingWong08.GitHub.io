@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>三角形垂心</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">三角形垂心</font>
+            </b></u></p>
+    <p>更新日期: 2011年9月29日</p>
+    <p>已知三角形三頂點的坐標，程式可計算三角形垂心的坐標。另外程式一若果輸入數據為整數(或分數)，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+    </p>
+    <p>
+        <font color="#FF0000">注意</font> : 若果不想記存兩根，程式中<font color="#008000">綠色</font>部份可以不輸入。
+    </p>
+    <p>程式一 (75 bytes)</p>
+    <p>
+        <span class="Apple-style-span"
+            style="border-collapse: separate; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+            <span class="Apple-style-span">?</span></span><span class="Apple-style-span"><span class="Apple-style-span"
+                style="border-collapse: separate; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">→X:
+                ?→Y: ?→A: ?→B: ?→C: ?→D:<span class="Apple-converted-space">&nbsp;</span><br>
+                <br>
+                (X-C) ┘ (Y-D→M: Y - B: C + Ans( MA+B-MC-D ) ┘<span class="Apple-converted-space">&nbsp;</span><br>
+                <br>
+                ( A+AnsM-X</span>
+            <font color="#008000"><span class="Apple-style-span"
+                    style="border-collapse: separate; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">→X</span>
+            </font><span class="Apple-style-span"
+                style="border-collapse: separate; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">◢
+                B+AM-AnsM</span>
+            <font color="#008000"><span class="Apple-style-span"
+                    style="border-collapse: separate; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">→Y<span
+                        class="Apple-converted-space">&nbsp;</span></span></font><span class="Apple-style-span"
+                style="border-collapse: separate; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><br>
+                　</span>
+        </span>
+    </p>
+    <p>程式二由網友<span class="gen"><span class="postername">
+                <font color="#0000FF">
+                    roviury</font> 提供。
+            </span></span></p>
+    <p>
+        <font color="#FF0000">程式二需要在 CMPLX 模式下執行，因此在輸入程式前請先按 Mode 2。</font>
+    </p>
+    <p>程式二 (41 bytes)</p>
+    <p><span class="gen">?→A: ?→B: ?→C:&nbsp; arg(A - C) - arg( B - C:</span></p>
+    <p><span class="gen">B + C - A + 1∠Ans (B - A) i ÷ sin( Ans</span></p>
+    <p>
+        　</p> <span lang="en">
+        <p>例題: A、B及C三點的坐標分別為(4 , 3)、(0 , 0) 及 (4 , 0)，求三角形ABC的垂心的坐標。</p>
+    </span>
+    <p>
+        程式一按法:</p>
+    <p>按 Prog 1 再按 4 EXE 3 EXE 0 EXE 0 EXE 4 EXE 0 </p>
+    <p>EXE (顯示4) EXE (顯示0，所以垂心=(4, 0))</p>
+    <p>
+        　</p>
+    <p>
+        程式二按法:</p> <span lang="en">
+        <p>
+            按 Prog 1 再按 4 + 3 i EXE (以複數形式輸入座標) </p>
+        <p>
+            0 + 0 i EXE 4 + 0 i EXE (顯示實數部為4) </p>
+        <p>
+            Shift Re&lt;=&gt;Im (顯示虛數部為 0i，所以垂心=(4, 0))</p>
+    </span>
+    <p>　</p>
+    <p>
+        註1: 程式一若頭尾兩點的y坐標相同，程式有可能出現Math ERROR，可以嘗試改變點的先後次序。</p>
+    <p>註2: 使用程式二時，要注意若答案的x坐標為0(實數部)，答案會直接先顯示y坐標的值(虛數部(有 i字))</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

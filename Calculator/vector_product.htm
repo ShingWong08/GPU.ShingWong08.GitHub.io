@@ -1,0 +1,307 @@
+<html>
+
+<head>
+    <title>向量積</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">向量積</font>
+            </b></u></p>
+    <p>更新日期: 2011年5月29日</p>
+    <p>這個程式可以用作計算下列的問題:</p>
+    <p>● 向量積 (Vector product)</p>
+    <p>● 純量三重積 (Scalar triple product)</p>
+    <p>● 向量三重積 (Vector triple product)</p>
+    <p>● 三階矩陣行列式
+        (3x3 Determinant)</p>
+    <p>● 三階伴隨矩陣及逆矩陣
+        (Adjoint and Inverse of 3×3
+        matrix)</p>
+    <p>● 聯立二元一次方程
+        (Simultaneous Linear Equations in 2 unknowns)</p>
+    <p>● 聯立三元一次方程
+        (Simultaneous Linear Equations in 3 unknowns)</p>
+    <p>●聯立三元一次齊次方程通解(General solution of
+        Simultaneous Homogeneous &nbsp;Equations
+        in 3 unknows)</p>
+    <p>　</p>
+    <p>程式一 (65 bytes)</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font>
+        按 Shift 1 → 2)，而<font color="#FF0000">DT</font>是按<font color="#FF0000">M+</font>。</p>
+    <p>ClrStat: YA - DC <font color="#FF0000"><b>,</b></font> DB - XA <font color="#FF0000">DT</font>: A→D: </p>
+    <p>XC - BY→A: B→X: C→Y: <font color="#0000FF">Σx</font>→B: <font color="#0000FF">Σy</font>→C: </p>
+    <p>A: ?→A: ?→B: ?→C: AnsA+ <font color="#0000FF">Σx</font>B +<font color="#0000FF">Σy</font>C</p>
+    <p>　</p>
+    <p><span lang="en">程式</span>二<span lang="en"> (<font color="#FF0000">COMP Mode</font></span>或
+        <font color="#FF0000">CMPLX mode</font><span lang="en">，80 bytes)</span>
+    </p>
+    <p>注意:<span lang="en">
+        </span>
+        如要同時計算複數問題，請以複數模式輸入。</p>
+    <span lang="en">
+        <p>DB - XA→M: YA - DC→D: XC - BY→X: C→Y: </p>
+        <p>M→C: X→M: B→X: D→B: A→D: M→A: </p>
+        <p>?→A: B: ?→B: MA + AnsB→M:</p>
+        <p>C: ?→C: AnsC + M</p>
+    </span>
+    <p>　</p>
+    <p>
+        例題1:
+        計算 (i + 2j + 3k) × (
+        4i + 5j + 6k) </p>
+    <p>按
+        Prog 1 再按
+        1 EXE 2 EXE 3 EXE <font color="#FF0000">EXE</font> 4 EXE 5 EXE 6 EXE
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>
+        (顯示-3)
+        EXE (顯示6) EXE (顯示-3)</p>
+    <p>
+        所以(i + 2j + 3k) × ( 4i
+        + 5j + 6k) = -3i + 6j -3k</p>
+    <p>
+        　</p>
+    <p>例題2: 計算 (i + 2j + 3k) × ( 4i + 5j + 6k)•(2i - 3j +
+        7k)</p>
+    <p>按
+        Prog 1 再按
+        1 EXE 2 EXE 3 EXE <font color="#FF0000">EXE</font> 4 EXE 5 EXE 6 EXE
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>2 EXE - 3 EXE 7
+        EXE (顯示 - 45)</p>
+    <p>
+        所以(i + 2j + 3k) × ( 4i
+        + 5j + 6k)•(2i - 3j + 7k) = - 45</p>
+    <p>　</p>
+    <p>例題3: 計算 (i + 2j + 3k) × ( 4i + 5j + 6k) × (2i - 3j
+        + 7k)</p>
+    <p>按
+        Prog 1&nbsp; 再按
+        1 EXE 2 EXE 3 EXE <font color="#FF0000">EXE</font> 4 EXE 5 EXE 6 EXE
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>EXE EXE EXE
+        <font color="#FF0000">EXE</font> 2 EXE - 3 EXE 7 EXE
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>
+        (顯示
+        33) EXE (顯示
+        15) EXE (顯示 -
+        3)</p>
+    <p>
+        所以 (i + 2j + 3k) × (
+        4i + 5j + 6k) <span lang="en">× (2i - 3j + 7k) = 33i + 15j - 3k</p>
+    <p>　</p>
+    <p>例題4:
+        計算下列的行列式:　</p>
+    <p>
+        
+    </p>
+    <p>按
+        Prog 1 再按
+        1 EXE 2 EXE 3 EXE <font color="#FF0000">EXE</font> 7 EXE 8 EXE 9 EXE
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>6 EXE 5 EXE 2 EXE
+        (顯示答案為 12)</p>
+    <p>　</p>
+    <p>例題5: 計算下列矩陣的伴隨矩陣及逆矩陣。</p>
+    <p>
+    <p>按
+        Prog 1 (先輸入第二列及第三列的數據)</p>
+    <p>7 EXE 4 EXE 6 EXE
+        <font color="#FF0000">EXE</font> 8 EXE 9 EXE 7 EXE <font color="#FF0000">EXE</font>
+    </p>
+    <p>
+        <font color="#FF0000">注意</font>現在要記下第一及第二<font color="#0000FF">欄</font>的答案及同時輸入第一及二<font color="#0000FF">列
+        </font>數值
+    </p>
+    <p>(顯示 -26) 2 EXE (顯示
+        -1) 1 EXE (顯示 31) 3 EXE (顯示行列式為<font color="#0000FF"> 40</font>)
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>(顯示 20) 7 EXE (顯示
+        -10) 4 EXE (顯示 -10) 6 EXE (顯示行列式為<font color="#0000FF"> 40</font>)
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>(顯示 -6) EXE (顯示 9)
+        EXE (顯示 1)</p>
+    <p>因此，</p>
+    <p>
+    <p>
+    <p>計算完結後，按AC終止程式。</p>
+    <p>註: 在顯示第一及第二欄答案時，會同時顯示兩次行列式的值，若果數值不同，表示有輸入錯誤。</p>
+    <p>　</p>
+    <p><u><b>聯立二元一次方程式參考資料:</b></u></p>
+    <p>克萊瑪法則 (Cramer's rule)</p>
+    <p>
+    <p>&nbsp;
+    <p>
+    <p>　</p>
+    <p>例題6: 解以下聯立二元一次方程</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE - 7 EXE<font color="#FF0000">
+            EXE</font> 1 EXE - 1 EXE - 1 EXE<font color="#FF0000"> EXE </font>
+    </p>
+    <p>(顯示△x為 - 8) EXE (顯示△y為 - 6) EXE (顯示△為 - 2)</p>
+    <p>所以 x = (- 8)/(- 2) = 4, y = (- 6)/(- 2) =3</p>
+    <p>　</p>
+    <p><u><b>聯立三元一次方程式參考資料:</b></u></p>
+    <p>克萊瑪法則 (Cramer's rule)</p>
+    <p>
+    <p>
+    <p>
+    <p>
+        　</p>
+    <p>
+        例題7:
+        解聯立方程 :</p>
+    <p>
+    <p>
+        <font color="#FF0000">注意</font>輸入次序為:
+        3個x係數，3個y係數，3個z係數，3個常數，3個x係數，3個y係數
+    </p>
+    <p>
+        <font face="新細明體">按
+            Prog 1 再按 1 EXE 1 EXE 1 EXE
+            <font color="#FF0000">EXE</font> 1 EXE -1 EXE 3 EXE <font color="#FF0000">EXE</font>
+        </font>
+    </p>
+    <p>1 EXE 2 EXE 1 EXE (顯示△為 -&nbsp; 2)
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>6 EXE 5 EXE 10 EXE (顯示△x為 - 2)
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>1 EXE 1 EXE 1 EXE (<font color="#FF0000">注意</font>顯示 <font color="#FF0000"><b>-</b></font>△y為
+        4) <font color="#FF0000">EXE</font>
+    </p>
+    <p>1 EXE - 1 EXE 3 EXE (顯示△z為 - 6)</p>
+    <p>所以 x = (- 2)/(- 2) = 1, y = (<font color="#FF0000">-</font>
+        4)/(-2) = 2, z = (- 6)/(- 2) = 3</p>
+    <p>　</p>
+    <p>例題8: 求下列聯立方程的通解:</p>
+    <p>
+    <p>按
+        Prog 1 再按 1 EXE 1 EXE 1 EXE
+        <font color="#FF0000">EXE </font>1 EXE - 1 EXE 2 EXE<font color="#FF0000"> EXE</font>
+    </p>
+    <p>(顯示 3) EXE (顯示 - 1) EXE (顯示 - 2)</p>
+    <p>因此通解為 x = 3t,&nbsp; y = - t,&nbsp; z = - 2t </p>
+    <p>　</p>
+    <p>例題9:
+        計算下列的行列式:　</p>
+    <p>
+    </span>
+    <p>
+        <font color="#FF0000">只適用於複數模式輸入程式二</font>
+    </p>
+    <span lang="en">
+        <p>按
+            Prog 1 再按
+            1 + 2
+    </span>i <span lang="en">EXE 2 - i EXE 3 + 4i EXE <font color="#FF0000">EXE</font>
+    </span>
+    </p>
+    <p><span lang="en-us">4 - 3i</span><span lang="en"> EXE 5 + 2i EXE 1 + i EXE
+            <font color="#FF0000">EXE</font>
+    </p>
+    <p>2 + 3i EXE 4 - i EXE 5 + 2i EXE
+        (顯示實數部為 107) </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示虛數部為 31i)</p>
+    <p>
+        
+    </p>
+    <p>　</p>
+    <p>
+        例題10:
+        解聯立方程 :</p>
+    <p>
+    <p>
+        <font color="#FF0000">只適用於複數模式輸入程式二</font>
+    </p>
+    <p>
+        <font color="#FF0000">注意</font>輸入次序為:
+        3個x係數，3個y係數，3個z係數，3個常數，3個x係數，3個y係數
+    </p>
+    <p>
+        <font face="新細明體">按
+            Prog 1 再按 1 - i EXE 2 + i EXE 3 + 2i EXE
+            <font color="#FF0000">EXE</font>
+        </font>
+    </p>
+    <p>2 + 3i<font face="新細明體"> EXE 5 - 2i EXE 1 + 3i EXE <font color="#FF0000">EXE</font>
+        </font>
+    </p>
+    <p>3 + i EXE 4 + 2i EXE 4 - 3i EXE (顯示△實數部為 -138) </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示△虛數部為 -41i)
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>21 + 16i EXE 8 + 8i EXE 34 + 18i EXE (顯示△x實數部為 -56) </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示△x虛數部為 -317i)
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>
+        <font face="新細明體">1 - i EXE 2 + i EXE 3 + 2i EXE</font> (顯示 <b>
+            <font color="#FF0000">-</font>
+        </b> △y實數部為 399)
+    </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示<b>
+            <font color="#FF0000"> -</font>
+        </b> △y虛數部為 -332i)
+        <font color="#FF0000">EXE</font>
+    </p>
+    <p>2 + 3i<font face="新細明體"> EXE 5 - 2i EXE 1 + 3i EXE </font>(顯示△z實數部為 -250) </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示△</span>z<span lang="en">虛數部為 -675i) </p>
+    <p>所以 x = (- 56 -371i)/(- 138 - 41i) = 1 + i, </p>
+    <p>y = <b>
+            <font color="#FF0000">- </font>
+        </b>(399 - 332i)/(- 138 - 41i) = 2 -
+        3i, </p>
+    <p>z = (- 250 - 675i)/(- 138 - 41i) = 3 + 4i</p>
+    <p>　</p>
+    <p>註1: 紅色的<font color="#FF0000">EXE</font>表示不用輸入任何數字，若果你誤按數字，程式會終止，不過你只要再執行程式，繼續輸入未輸入的數據即可。</p>
+    <p>註2: 當執行<font color="#FF0000">程式</font>時，若果立即出現Math ERROR，表示被原先數字記憶影響(機會率非常低)，如果萬一出現上述情況，請先清除所有數字記憶
+        (按 Mode 1 Shift 9 1 EXE)，再執行程式。若果想完全被免上述情況出現，亦可以執行下列較長一點的</span>附錄<span lang="en">程式。</p>
+    </span>
+    <p>附錄<span lang="en">程式</span>一<span lang="en"> (<font color="#FF0000">REG Lin
+                Mode</font>，83 bytes)</span></p>
+    <p>Rec( 0 , 0: 0→C: 0→D: While 1: </p>
+    <p>ClrStat: YA - DC <font color="#FF0000"><b>,</b></font> DB - XA <font color="#FF0000">
+            DT</font>: A→D: </p>
+    <p>XC - BY→A: B→X: C→Y: <font color="#0000FF">Σx</font>→B: <font color="#0000FF">
+            Σy</font>→C: </p>
+    <p>A: ?→A: ?→B: ?→C: AnsA+ <font color="#0000FF">Σx</font>B +<font color="#0000FF">Σy</font>C◢
+        WhileEnd</p>
+    <p>　</p>
+    <p><span lang="en">程式</span>二<span lang="en"> (<font color="#FF0000">COMP Mode</font></span>或
+        <font color="#FF0000">CMPLX mode</font><span lang="en">，87 bytes)</span>
+    </p>
+    <p>附錄注意:<span lang="en">
+        </span>
+        如要同時計算複數問題，請以複數模式輸入。</p>
+    <span lang="en">
+        <p>ClrMemory: While 1: ?→A: B: ?→B: MA + AnsB→M:</p>
+        <p>C: ?→C: AnsC + M◢ DB - XA→M: YA - DC→D: </p>
+        <p>XC - BY→X: C→Y: M→C: X→M: B→X: D→B: </p>
+        <p>A→D: M→A: WhileEnd</p>
+    </span>
+    <p>　</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

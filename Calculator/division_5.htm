@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>綜合除法Synthetic division</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">綜合除法Synthetic division</font>
+            </b></u></p>
+    <p>程式由網友<span class="gen"><span class="postername">
+                <font color="#0000FF">
+                    roviury</font> 提供。
+            </span></span></p>
+    <p>程式編寫日期: 2014年2月5日</p>
+    <p>程式使用與綜合除法，可以計算一個 n次多項式除以一個一次多項式的商(n-1次多項式)及餘數。</p>
+    <p>程式原始版 (38 bytes)</p>
+    <p>?→A:?→B:-B┘A→X◢ 0→D: While 1: ?→C: C+D→C: CX→D: WhileEnd <br>
+        <br>
+        <br>
+        程式簡化版(36 bytes)<br>
+        ?→A:?→B:-B┘A→B: B→A: 0: While 1: ?→A: A+BAns→A: WhileEnd <br>
+        <br>
+        　
+    </p>
+    <p>
+        例題1: 計算 (2x4 + x3 + 3x2 + 4x + 5) ÷ (x + 2) 的商及餘數。<br>
+        <br>
+        由於被除數為4次多項式`，商為3次多項式。<br>
+        <br>
+        <br>
+        按 Prog 1&nbsp; 再按&nbsp; 1 EXE 2 EXE (先輸入除式的係數，顯示綜合除法左邊的除數 -2) <br>
+        <br>
+        2 EXE (顯示商 x<sup>3</sup> 的係數為2) 1 EXE (顯示商 x<sup>2</sup> 的係數為 - 3)<br>
+        <br>
+        3 EXE (顯示商 x的係數為9) 4 EXE (顯示商常數項的係數為 - 14)<br>
+        <br>
+        5 EXE (顯示餘數為33)<br>
+        <br>
+        由於33為餘數，程式計算完結，自行按AC離開<br>
+        <br>
+        故 (2x<sup>4</sup> + x<sup>3</sup> + 3x<sup>2</sup> + 4x + 5) ＝(x + 2)(2x<sup>3</sup>-3x<sup>2</sup>+9x-14)+33
+    </p>
+    <p>
+        　</p>
+    <p>
+        例題2: 計算 (48x5 -82x^4 +17x^2 -35x + 13) ÷ (8x - 3) 的商及餘數。<br>
+        <br>
+        本程式會視作 (48x5 -82x^4 +17x^2 -35x + 13) ÷ (x - 3/8) 進行計算 (公開試中很少出現ax+b的形式)<br>
+        <br>
+        <br>
+        按 Prog 1&nbsp; 再按 8 EXE -3 EXE
+    </p>
+    <p>
+        (先輸入除式的係數，或按 1 EXE -3┘8 EXE亦可，顯示綜合除法左邊的除數 3┘8)</p>
+    <p>
+        48 EXE (顯示商 x4 的係數為48) </p>
+    <p>
+        -82 EXE (顯示商 x3 的係數為 -64) </p>
+    <p>
+        0 EXE (顯示商 x2 的係數為-24)</p>
+    <p>
+        17 EXE (顯示商 x 的係數為8)</p>
+    <p>
+        -35 EXE (顯示商常數項的係數為 -32)<br>
+        <br>
+        13 EXE (顯示餘數為1)<br>
+        <br>
+        故 (48x<sup>5</sup> -82x<sup>4</sup> +17x<sup>2</sup> -35x + 13) = (x - 3/8)
+        (48x<sup>4</sup>-64x<sup>3</sup>-24x<sup>2</sup>+8-32)+1
+    </p>
+    <p>
+        即 (48x<sup>5</sup> -82x<sup>4</sup> +17x<sup>2</sup> -35x + 13) = (8x - 3)
+        (6x<sup>4</sup>-8x<sup>3</sup>-3x<sup>2</sup>+1-4)+1<br>
+        　</p>
+    <p>
+        <font color="#800080">附錄程式</font> (會多顯示綜合除法手計時中間倍數後的數字)<br>
+        <br>
+        ?→A: ?→B: -B┘A→B: B→A: 0: While 1: ?→A:BAns◢ A+Ans→A: WhileEnd
+    </p>
+    <p>
+        　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>
