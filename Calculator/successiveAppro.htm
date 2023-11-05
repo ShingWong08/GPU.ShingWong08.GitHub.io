@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>連續趨近法ADC</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">連續趨近法ADC</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年8月22日</p>
+    <p>程式 (83 bytes)</p>
+    <p>注意: <font color="#FF0000">10^(</font> 是按 SHIFT log</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C:</p>
+    <p>B ÷ (2^( A ) - 1→D: 9<font color="#FF0000">10^( </font>A→M:
+        Lbl 0: </p>
+    <p>A - 1→A: <font color="#FF0000">10^(</font> A <font color="#FF0000">M+</font>: M◢
+        X + 2^( A→X:</p>
+    <p>XD◢ Ans &gt; C <font color="#FF0000">=&gt;</font>
+        <font color="#FF0000">10^(</font> A
+        <font color="#FF0000">M-</font>
+        <font color="#FF0000">=&gt;</font> X - 2^( A→X:
+    </p>
+    <p>A <font color="#FF0000">=&gt;</font> Goto 0: M◢ XD</p>
+    <p>　</p>
+    <p>Example: A 4-bit successive approximation ADC has a full
+        range of voltage of 10V. Suppose analog input is 3.7V. Write down the sequence
+        of digital input to DAC of the converter and DAC output.</p>
+    <p>Press Prog 1&nbsp; 4 EXE 10 EXE 3.7 </p>
+    <p>EXE (read-out 9<font color="#FF0000">1000</font>) EXE
+        (read-out 5.3333)</p>
+    <p>EXE (read-out 9<font color="#FF0000">0100</font>) EXE
+        (read-out 2.6667) </p>
+    <p>EXE (read-out 9<font color="#FF0000">0110</font>) EXE
+        (read-out 4) </p>
+    <p>EXE (read-out 9<font color="#FF0000">0101</font>) EXE
+        (read-out 3.3333) </p>
+    <p>EXE (read-out 9<font color="#FF0000">0101</font>) EXE
+        (read-out 3.3333) </p>
+    <p>The sequence of digital input is 1000→ 0100→0110→0101→0101</p>
+    <p>The sequence of digital output is
+        5.333V→2.667V→4V→3.333V→3.333V</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>
