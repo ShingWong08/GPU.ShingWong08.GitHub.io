@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>Beta 函數(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">Beta 函數(I)(Beta Fucntion I)</font>
+            </b></u></p>
+    <p>程式編寫日期: 2014年8月1日</p>
+    <p>程式由網友&nbsp; <font color="#0000FF">Skwai</font>提供。</p>
+    <p>這個程式可以計算Beta函數B(x,y)的數值，亦可計算實數的伽瑪函數，大約能夠準確至有效數字九至十位。</p>
+    <p>注意: <font color="#FF0000">e^( </font>是按shift
+        e<sup>x</sup>。</p>
+    <p>程式一 (142 bytes，正實數因變數版本)</p>
+    <p>ClrMemory: ?→A: ?→B: 1→C: While M≠3 <font color="#FF0000">M+</font>: A + 3:<br>
+        <br>
+        ( Ans + . 85 )^( A - . 5 )<font color="#FF0000"> e^(</font> - Ans )( 1.071370357
+        + <br>
+        <br>
+        39.41066934 ÷ A - 35.55136409 ÷ ( A + 1 ) - . 0943944629 ÷ Ans + <br>
+        <br>
+        6.326951402 ÷ ( A + 2: Ans ÷ C→C: B = 0 <font color="#FF0000">=&gt;</font> Break: B
+        + A ( M≠2→A: WhileEnd: C
+    </p>
+    <p>　</p>
+    <p>註1:&nbsp; 輸入如 B ( 0.35 , 0 ) 時，視為計算Γ ( 0.35 )。程式一如只計算Beta函數，程式碼B = 0
+        <font color="#FF0000">=&gt;</font> Break: 可以不輸入，程式長度變為136 bytes。
+    </p>
+    <p>註2: 程式一 ClrMemory 改 M<font color="#FF0000">M-</font> 可以保留 D X Y 三個記憶。 </p>
+    <p>註3: 程式一答案記存在 C ，按 RCL C 可以顯示。</p>
+    <p>　</p>
+    <p>程式二 (165 bytes，實數因變數版本)</p>
+    <p>ClrMemory: ?→C: ?→D: 1→B: While M≠3<font color="#FF0000"> M+</font>: </p>
+    <p>Abs( C→A: Ans + 3: ( Ans + . 85 )^( A - . 5 ) ÷ <font color="#FF0000">e^(</font>
+        Ans )( 1.071370357 + <br>
+        <br>
+        39.41066934 ÷ A - 35.55136409 ÷ ( A + 1 ) + 6.326951402 ÷ ( A + 2<br>
+        <br>
+        ) - . 0943944629 ÷ ( A + 3 : If C &lt; 0: Then π ÷ ( Ans A sin( C
+        <font color="#0000FF">π<sup>r</sup></font> : IfEnd: <br>
+        <br>
+        Ans ÷ B→B: D = 0 <font color="#FF0000">=&gt;</font> Break: D + C ( M≠2→C: WhileEnd:
+        B
+    </p>
+    <p>　</p>
+    <p>註1:&nbsp; 輸入如 B ( 0.35 , 0 ) 時，視為計算Γ ( 0.35 )。程式二如只計算Beta函數，程式碼D = 0
+        <font color="#FF0000">=&gt;</font> Break: 可以不輸入，程式長度變為159 bytes。
+    </p>
+    <p>註2: 程式一 ClrMemory 改 M<font color="#FF0000">M-</font> 可以保留 X Y 二個記憶。 </p>
+    <p>註3: 程式一答案記存在 B ，按 RCL B 可以顯示。</p>
+    <p>　</p>
+    <p>例題1: 計算 B(1.2 , 2.3)的值。</p>
+    <p>按 Prog 1 再按 1.2 EXE 2.3 EXE (顯示答案為0.322336825)</p>
+    <p>　</p>
+    <p>例題2:
+        計算Γ(0.35)的值。</p>
+    <p>按
+        Prog 1 &nbsp;再按 0.35 EXE </p>
+    <p>
+        <font color="#FF0000">0 EXE</font>(計算伽瑪函數第二個輸入0，顯示答案為2.546146978)
+    </p>
+    <p>　</p>
+    <p>例題3: 計算Γ(-
+        0.35)的值。 </p>
+    <p>只限程式二</p>
+    <p>按
+        Prog 1 &nbsp;再按 - 0.35 EXE</p>
+    <p>
+        <font color="#FF0000">0 EXE</font>(計算伽瑪函數第二個輸入0，顯示答案為 -3.956557433)
+    </p>
+    <p>　</p>
+    <p>　</p>
+    <p>Beta 函數的參考資料:</p>
+    <p>1. <a href="http://en.wikipedia.org/wiki/Beta_function">Beta function -
+            Wikipedia, the free encyclopedia</a></p>
+    <p><a href="http://en.wikipedia.org/wiki/Beta_function">
+            http://en.wikipedia.org/wiki/Beta_function</a></p>
+    <p>2. <a href="http://mathworld.wolfram.com/BetaFunction.html">Beta Function --
+            from Wolfram MathWorld</a></p>
+    <p><a href="http://mathworld.wolfram.com/BetaFunction.html">
+            http://mathworld.wolfram.com/BetaFunction.html</a></p>
+    <p>
+        　</p>
+    <p>　</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

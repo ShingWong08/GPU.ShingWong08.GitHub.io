@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>老虎機II (Slot machine II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">老虎機II (Slot machine II)</font>
+            </b></u></p>
+    <p>程式更新日期: 2011年2月3日</p>
+    <p><a href="http://webcal.forumcircle.com/viewtopic.php?t=1340">程式初版</a>由網友<font color="#800080">望月</font>編寫及<a
+            href="http://webcal.forumcircle.com/viewtopic.php?t=1340">最後版本</a>由網友<font color="#800080">SuperMANganese
+        </font>及
+        <font color="#800080">roviury</font>修改。
+    </p>
+    <p>注意: <font color="#FF0000">E</font>是按 EXP 。</p>
+    <p>程式 (149 bytes)</p>
+    <p>
+        <font color="#FF0000">E</font>2→M◢ 1→X:
+        Lbl 0: M→D:
+    </p>
+    <p>log( M: ?→X: Fix 0: X- Rnd(X
+        <font color="#FF0000">=&gt;</font> Goto 0:
+    </p>
+    <p>X≧5 <font color="#FF0000">=&gt;</font> 5X&gt;M <font color="#FF0000">=&gt;</font>
+        Goto 0: X<font color="#FF0000">M-</font>: Rnd( 9Ran#→A◢</p>
+    <p>Rnd( 9Ran#→B◢ Rnd( 9Ran#→C◢ Norm 1: </p>
+    <p>ABC=0 <font color="#FF0000">=&gt;</font> 3X<font color="#FF0000">M+</font>:
+        ABC=1 <font color="#FF0000">=&gt;</font> 13X<font color="#FF0000">M+</font>: ABC=7<sup>3</sup>
+        <font color="#FF0000">=&gt;</font> 83X<font color="#FF0000">M+</font>:&nbsp;
+    </p>
+    <p>6X((A=B)+(A=C)+(B=C<font color="#FF0000">M+</font>: 1=Abs(A-B
+        <font color="#FF0000">=&gt;</font> 6X(2B-A=C<font color="#FF0000">M+</font>:
+    </p>
+    <p>M-D◢ M◢ Goto 0<br>
+        　</p>
+    <p>操作方法:</p>
+    <p>按 Prog 1 (先顯示本金 $100) EXE</p>
+    <p>&nbsp;<font color="#0000FF">1 EXE (輸入投注金額(註1))</p>
+    <p>EXE (顯示第一個拉出的數值(A值))</p>
+    <p>EXE (顯示第二個拉出的數值(B值))</p>
+    <p>EXE (顯示第三個拉出的數值(C值))</p>
+    <p>EXE (顯示該次的盈利或虧損)</p>
+    <p>EXE (顯示最後的本金)</font>
+    </p>
+    <p>程式會重複上述藍色的步驟，但本金為0時會顯示Math ERROR。</p>
+    <p>　</p>
+    <p>註1: 投注金額必須為整數，否則要重新輸入投注金額。投注金額最高限制為現時本金的五分之一，但本金小於$5時，則沒有五分之一的限制，但仍須輸入整數。</p>
+    <p>註2: 賠率的計算方法如下: (有重覆者，以較大賠率為準) <br>
+        <br>
+        有兩個數字一樣 + 5倍
+    </p>
+    <p>三個數中有0的話 + 2倍 </p>
+    <p>三個數為連續數 (例: 2,3,4 或 8,7,6 ,而不是 3,5,7 或 4,5,3) + 5倍 </p>
+    <p>三個數中有0的話 及 三個數為連續數 +8倍 </p>
+    <p>有兩個數字一樣 及 三個數中有0的話 + 8倍 </p>
+    <p>有三個數字一樣 + 17倍 </p>
+    <p>三個零 + 19倍 </p>
+    <p>三個一 + 30倍 </p>
+    <p>三個七 + 100倍</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

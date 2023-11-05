@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>質因子連乘式(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">質因子連乘式(II)</font>
+            </b></u></p>
+    <p align="left">程式是根據<font color="#FF0000">網友 3173137 提供</font><a
+            href="http://hk.geocities.com/kl_cheuk/3650P/primeFactor2.htm">fx-3650P版本的質因子連乘式(II)</a>程式修改以適合fx-50FH/50F
+        PLUS使用，與質因子連乘式(I)程式比較，這個版本的程式除了可以顯示質因子，還可以顯示質因子的冪數，所以較為方便。另外雖然第二個程式很長，但對於計算大因質子時，由於使用較佳的方法，速度會明顯比第一個程式快，有關第二個程式的計算原理，請參看附註2。
+    </p>
+    <p>
+        更新日期: 2014年8月31日</p>
+    <p>
+        注意: 藍色程式碼 <font color="#0000FF">&#730;</font> 是按 <font color="#FF0000"> <sup>
+                o,,,</sup></font>
+    </p>
+    <p>第一個程式 (100 bytes)</p>
+    <p>ClrMemory: ?→X: Fix 0: Lbl 0: 2 - (M=2 <font color="#FF0000">M+</font>: </p>
+    <p>MM&gt;X <font color="#FF0000">=&gt;</font> X→M: X - MRnd( X÷M
+        <font color="#FF0000">=&gt;</font> Goto 0:
+    </p>
+    <p>Lbl 1: X=MM^( Y )Rnd( X÷<b>
+            <font color="#800080"> (</font>
+        </b> MM^( Y <font color="#FF0000">=&gt;</font>
+        Y + 1→Y:</p>
+    <p>Ans <font color="#FF0000">=&gt;</font> Goto 1: M<font color="#0000FF">&#730;</font> + Y÷60<font color="#0000FF">
+            &#730;</font>◢ X÷M^( Y→X: </p>
+    <p>1→Y: X - 1 <font color="#FF0000">=&gt;</font>
+        Goto 0: Norm 1</p>
+    <p>
+        <span lang="en">
+            註1: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
+            </b></font>
+        <span lang="en">
+            可以省略，程式長度可減1 byte。</span>
+    </p>
+    <p>　</p>
+    <p>第二個程式 (292 bytes)</p>
+    <p>ClrMemory: ?→X: 2<font color="#FF0000">M+</font>: Fix 0: Lbl 0: </p>
+    <p>X=MM^( Y )Rnd( X÷<b>
+            <font color="#800080"> (</font>
+        </b> MM^( Y <font color="#FF0000">=&gt;</font> Y+1→Y:</p>
+    <p>Ans
+        <font color="#FF0000">=&gt;</font> Goto 0: Y <font color="#FF0000">=&gt;</font> M<font color="#0000FF">&#730;
+        </font>
+        + Y÷60<font color="#0000FF">&#730;</font>◢
+    </p>
+    <p>X÷M^( Y→X: X=1 <font color="#FF0000">=&gt;</font> Goto 7: 0→Y: 2 -
+        (M=2<font color="#FF0000">M+</font>:</p>
+    <p>M - 7 <font color="#FF0000">=&gt;</font> Goto 0: Lbl 1:</p>
+    <p>X=M Rnd( X÷M <font color="#FF0000">=&gt;</font> Goto 3: 4<font color="#FF0000">M+</font>:</p>
+    <p>X=M Rnd( X÷M <font color="#FF0000">=&gt;</font> Goto 3: 2<font color="#FF0000">M+</font>:</p>
+    <p>X=M Rnd( X÷M <font color="#FF0000">=&gt;</font> Goto 3: 4<font color="#FF0000">M+</font>:</p>
+    <p>X=M Rnd( X÷M <font color="#FF0000">=&gt;</font> Goto 3: 2<font color="#FF0000">M+</font>:</p>
+    <p>X=M Rnd( X÷M <font color="#FF0000">=&gt;</font> Goto 3: 4<font color="#FF0000">M+</font>:</p>
+    <p>X=M Rnd( X÷M <font color="#FF0000">=&gt;</font> Goto 3: 6<font color="#FF0000">M+</font>:</p>
+    <p>X=M Rnd( X÷M <font color="#FF0000">=&gt;</font> Goto 3: 2<font color="#FF0000">M+</font>:</p>
+    <p>X=M Rnd( X÷M <font color="#FF0000">=&gt;</font> Goto 3: 6<font color="#FF0000">M+</font>:</p>
+    <p>X≧MM <font color="#FF0000">=&gt;</font> Goto 1: X→M: Lbl 3:
+    </p>
+    <p>X=MM^( Y )Rnd( X÷<b>
+            <font color="#800080"> (</font>
+        </b> MM^( Y <font color="#FF0000">=&gt;</font> Y+1→Y:</p>
+    <p>Ans
+        <font color="#FF0000">=&gt;</font> Goto 3: M<font color="#0000FF">&#730;</font> + Y÷60<font color="#0000FF">
+            &#730;</font>◢ X÷M^( Y→X: 1→Y:
+    </p>
+    <p>7 + 30Rnd( M÷30 - . 7→M: X-1 <font color="#FF0000">=&gt;</font> Goto 1: Lbl 7: Norm 1</p>
+    <p>
+        <span lang="en">
+            註2: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
+            </b></font>
+        <span lang="en">
+            可以省略，程式長度可減2 bytes。</span>
+    </p>
+    <p>　</p>
+    <p>例題: 求 352的質因子連乘式。</p>
+    <p>按 Prog 1 再按 352 EXE (顯示 2&#730;5&#730;0，即是質因子為2<sup>5</sup>) </p>
+    <p>EXE (顯示 11&#730;1&#730;0，即是質因子為11<sup>1</sup>) ) EXE (顯示Norm 1表示計算完結)</p>
+    <p>所以 352 = 2<sup>5</sup> × 11</p>
+    <p>　</p>
+    <p>註1: 輸入的數值必須為正整數，否則計算會錯誤，程式計算的數值要小於 9999 9999 99。</p>
+    <p>註2: 第一個程式嘗試的因子為2及正奇數(不包括1)，第二個程式嘗試的因子為 2, 3, 5, 7+30n, 13+30n, 19+30n,
+        23+30n, 29+30n及31+30n (其中 n為0或正整數)，亦即是嘗試的因子除了2, 3, 5外，其它嘗試的奇數是不包括 3 及
+        5的倍數，所以若果不考慮開始的2, 3, 5因子，第一個程式每30個正數，要嘗試<font color="#FF0000">15個</font>數值，而第二個程式則每30個正數，只嘗試<font
+            color="#FF0000">8個</font>數值，所以第二個程式的速度會較快，特別是分解的數值包含一些數值大的質因子，第二個程式會明顯地比第一個程式快。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

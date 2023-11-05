@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>歐姆定律及電功率</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">歐姆定律及電功率</font>
+            </b></u></p>
+    <p>程式可以在已知歐姆定律及電功率公式其中兩個變(V、I、R及P)，計算其餘未知變數。</p>
+    <p>程式編寫日期: 2008年3月9日</p>
+    <p>程式 (80 bytes)</p>
+    <p>ClrMemory: ?<font face="新細明體">→A: ?→B: ?→C: ?→D: </font>
+    </p>
+    <p>
+        <font face="新細明體">A=0 <font color="#FF0000">=&gt;</font> BD
+            <font color="#FF0000">=&gt;</font> D<span lang="en">÷B</span>→A◢
+        </font>
+    </p>
+    <p>
+        <font face="新細明體">A=0 <font color="#FF0000">=&gt;</font> BC + √( CD→A◢</font>
+    </p>
+    <p>
+        <font face="新細明體">B=0 <font color="#FF0000">=&gt;</font> C <font color="#FF0000">
+                =&gt;</font> A<span lang="en">÷C→B◢</span></font>
+    </p>
+    <p><span lang="en">
+            <font face="新細明體">B=0 <font color="#FF0000">=&gt;</font> D÷A→B◢</font>
+        </span></p>
+    <p>C=0 <font color="#FF0000">=&gt;</font> A<span lang="en">
+            <font face="新細明體">÷B→C◢
+                AB→D</font>
+        </span></p>
+    <p>註1: 執行程式，輸入扇形變數的次序為電壓(V)、電流(I)、電阻(R)及電功率(P)，不輸入數值<font color="#FF0000">(必要)</font>
+        代表未知數，即直接按EXE即可，而答案會依照輸入未知數時(直接按EXE)的次序顯示。</p>
+    <p>註2: 程式使用標準的SI單位，電壓單位為伏特(V)，電流單位為安培(A)，電阻單位為歐姆(Ω)，功率單位為瓦特(W)。</p>
+    <p>註3: 程式不能計算變數為0或負數的情況。</p>
+    <p>　</p>
+    <p>例題1: 某燈泡的電壓及電流分別為220V及0.25A，計算電阻及電功率。</p>
+    <p>按 Prog 1 再按 220 EXE 0.25 EXE </p>
+    <p>
+        <font color="#FF0000">EXE EXE</font> (不輸入電阻及電功率，顯示電阻為 880 Ω)
+    </p>
+    <p>EXE (顯示電功率為 55 W)</p>
+    <p>　</p>
+    <p>例題2: 某燈泡的電壓及電阻分別為220V及880Ω，計算電流及電功率。</p>
+    <p>按 Prog 1 再按 220 EXE <font color="#FF0000">EXE</font> (不輸入電流) 880 EXE</p>
+    <p>
+        <font color="#FF0000">EXE</font> (不輸入電功率，顯示電流為 0.25 A)
+    </p>
+    <p>EXE (顯示電功率為 55 W)</p>
+    <p>　</p>
+    <p>例題3: 某燈泡的電壓及電功率分別為220V及55W，計算電流及電阻。</p>
+    <p>按 Prog 1 再按 220 EXE <font color="#FF0000">EXE EXE</font> (不輸入電流及電阻)</p>
+    <p>55 EXE (顯示電流為 0.25 A)</p>
+    <p>EXE (顯示電阻為 880 Ω)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p>例題4: 某燈泡的電流及電阻分別為0.25A及880Ω，計算電壓及電功率。</p>
+    <p>按 Prog 1 再按 <font color="#FF0000">EXE</font> (不輸入電壓) 0.25 EXE 880 EXE</p>
+    <p>
+        <font color="#FF0000">EXE</font> (不輸入電功率，顯示半電壓為220 V)
+    </p>
+    <p>EXE (顯示電功率為 55 W)</p>
+    <p>　</p>
+    <p>例題5: 某燈泡的電流及電功率分別為0.25A及55W，計算電壓及電阻。</p>
+    <p>按 Prog 1 再按 <font color="#FF0000">EXE</font> (不輸入電壓) 0.25 EXE
+        <font color="#FF0000">EXE</font> (不輸入電阻)
+    </p>
+    <p>55 EXE (顯示電壓為 220 V)</p>
+    <p>EXE (顯示電阻為 880 Ω)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p>例題5: 某燈泡的電阻及電功率分別為880Ω及55W，計算電壓及電流。</p>
+    <p>按 Prog 1 再按 <font color="#FF0000">EXE EXE</font> (不輸入電壓及電流) </p>
+    <p>880 EXE 55 EXE (顯示電壓為 220 V)</p>
+    <p>EXE (顯示電流為 0.25 A)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p>註: 程式執行完結後按 RCL A、RCL B、RCL C及RCL D可顯示電壓、電流、電阻及電功率的數值。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

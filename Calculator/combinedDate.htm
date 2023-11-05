@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>日期計算/兩日期間日數/星期天</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">日期計算/兩日期間日數/星期天</font>
+            </b></u></p>
+    <p>程式可以計算以下問題:</p>
+    <p>˙計算一個日期經過一段日數後(或前)的日期。</p>
+    <p>˙計算一個日期是屬於那個星期天。</p>
+    <p>
+        ˙計算兩日期間的日數<strong style="font-weight: 400">(包括最後一日，但不包括第一日）</strong>。</p>
+    <p>
+        <font color="#FF0000">程式需要在 BASE 模式下執行，因此在選擇新程式位置後，按 3 選用BASE模式。</font>
+    </p>
+    <p>程式編寫日期: 2007年9月17日</p>
+    <p>程式 (233 bytes)</p>
+    <p>ClrMemory: Dec: ?→X: Lbl 0: ?→Y: ?→M: ?→D: </p>
+    <p>14 - M: Ans ÷ 12→B: 4800 + Y - B→Y: </p>
+    <p>365Y + ( 153(12B + M - 3) + 2 ) ÷ 5 + D + Y ÷ 4 </p>
+    <p>- Y ÷ 100 + Y ÷ 400 + 2 - A→A: C <font color="#FF0000">=&gt;</font> A◢ X=1→C:</p>
+    <p>Ans <font color="#FF0000">=&gt;</font> Goto 0: X <font color="#FF0000">=&gt;</font>
+        A - A<span lang="en">÷7×7◢ ?→M: A - 3<font color="#FF0000">M+</font>:</span></p>
+    <p>146097→D: 4M + 3: Ans ÷ D→Y: DY ÷4 <font color="#FF0000">M-</font>: 4M + 3:</p>
+    <p>Ans ÷ 1461→B: 1461B ÷ 4 <font color="#FF0000">M-</font>: 5M + 2: Ans ÷ 153→A:</p>
+    <p>B + 100Y - 4800 + A ÷ 10◢ 3 + A - A ÷ 10 × 12◢</p>
+    <p>153A + 2: M + 1 - Ans ÷ 5</p>
+    <p>　</p>
+    <p>
+        例題1: 求2006年7月1日經過300天後的日期。</p>
+    <p>
+        Prog 1&nbsp; 再按 EXE (不輸入或輸入0代表日期計算)</p>
+    <p>
+        2006 EXE 7 EXE 1 EXE 300 EXE (顯示2007) EXE (顯示4) EXE (顯示27)</p>
+    <p>
+        所以日期為2007年4月27日</p>
+    <p>
+        計算完結後按 MODE 1 返回正常計算模式。</p>
+    <p>
+        　</p>
+    <p>
+        例題2: 求2006年7月1日經過300天<font color="#FF0000">前</font>的日期。</p>
+    <p>
+        Prog 1&nbsp; 再按 EXE (不輸入或輸入0代表日期計算)</p>
+    <p>
+        2006 EXE 7 EXE 1 EXE <font color="#FF0000"><b>-</b></font> 300 EXE
+        (注意輸入<font color="#FF0000">減號</font>代替負號，顯示2005) </p>
+    <p>
+        EXE (顯示9) EXE (顯示4)</p>
+    <p>
+        所以日期為2005年9月4日</p>
+    <p>
+        計算完結後按 MODE 1 返回正常計算模式。</p>
+    <p>
+        　</p>
+    <p>
+        例題3:
+        計算2003年10月15日至2004年4月1日相差的日數。</p>
+    <p>
+        按 Prog 1&nbsp; 再按 1 EXE (1代表計算兩日期間日數)</p>
+    <p>
+        2003 EXE 10 EXE 15 EXE 2004 EXE 4 EXE 1 EXE (顯示相差日數為169)</p>
+    <p>
+        計算完結後按 AC 終止程式，按MODE 1 返回正常計算模式。</p>
+    <p>
+        　</p>
+    <p>
+        例題4:
+        計算2004年12月31日是那個星期天。</p>
+    <p>
+        按 Prog 1&nbsp;&nbsp; 再按 2 EXE (2代表計算星期天)</p>
+    <p>
+        2004
+        EXE 12 EXE 31 EXE (顯示數值為5，即星期五)</p>
+    <p>
+        計算完結後按 AC 終止程式，按MODE 1 返回正常計算模式。</p>
+    <p>
+        　</p>
+    <p>
+        例題5:
+        計算2005年1月16日是那個星期天。</p>
+    <p>
+        按 Prog 1&nbsp; 再按 2 EXE (2代表計算星期天)</p>
+    <p>
+        2005
+        EXE 1 EXE 16 EXE (顯示數值為0，即星期日)</p>
+    <p>
+        計算完結後按 AC 終止程式，按MODE 1 返回正常計算模式。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>N次方根化簡(I)(整數版)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">N次方根化簡(I)(整數版)</font>
+            </b></u></p>
+    <p><b>
+            <font color="#0000FF">程式新版</font>
+        </b></p>
+    <p>簡介及程式特點: 程式可以化簡一個整數的平方根(將 <sup>n</sup>√a化簡為 b <sup>n</sup>√c，其中 a, b, c為正整數)。</p>
+    <p>第一個程式較為簡短，當答案平方根c值細小時速度很快(參看網頁尾附錄中第3項)，但c值大時速度變得相當慢(參看附錄中第2項)，較特別是這個版本亦可以計算非循小數平方根化簡問題。</p>
+    <p>第二個程式平均速度較第一個程式快，特別是答案為b <sup>n</sup>√c，c值大時速度比第一個程式快很多，但缺點是b值很大及c值細小時，速度頗慢(參看網頁尾附錄中第3項)。</p>
+    <p>
+        第三個及第四個程式平均速度比第二個程式快，克服了傳統這類平方根化簡程式的問題(同時改善了第一及第二程式在某些情況下特別慢的問題)。</p>
+    <p>　</p>
+    <p>更新日期: 2011年4月21日</p>
+    <p>第一個程式 (42 bytes，使用記憶A、B、C及M)</p>
+    <p>M<font color="#FF0000">M-</font>:
+        ?→C: ?→A: Sci 8: Lbl 0: 1<font color="#FF0000">M+</font>: </p>
+    <p>C <font color="#FF0000"><sup>x</sup>√(</font> A÷M→B: Ans - Rnd(Ans<font color="#FF0000">
+            =&gt;</font> Goto 0: </p>
+    <p>Norm 1: B◢ M</p>
+    <p>　</p>
+    <p>第二個程式(55 bytes，使用記憶A、B、C及D)</p>
+    <p>?→D: ?→A: Fix 0: Rnd( D <font color="#FF0000"><sup>x</sup>√( </font>A ) - . 5→B: Lbl 0:</p>
+    <p>A ÷ Ans^( D→C: Ans - Rnd( Ans <font color="#FF0000">
+            =&gt;</font> B - 1→B: </p>
+    <p>Ans <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: B◢ C</p>
+    <p>　</p>
+    <p>第三個程式(57 bytes，使用記憶A、B、C及D)</p>
+    <p>?→D: 1: ?→A: Fix 0: Lbl 0:
+    </p>
+    <p>Rnd(D <font color="#FF0000"><sup>x</sup>√(</font> A ÷ Ans ) - . 5→B:&nbsp;
+    </p>
+    <p>A ÷ B^( D→C: Ans - Rnd(Ans <font color="#FF0000">
+            =&gt;</font> Rnd( C + . 5
+    </p>
+    <p>
+        <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: B◢ C
+    </p>
+    <p> 　</p>
+    <p> 第四個程式(74 bytes，使用記憶A、B、C及M)</p>
+    <p>?→C: 0→B: ?→A: Fix 0: Lbl 0: Rnd(C <font color="#FF0000"><sup>x</sup>√(</font> A ÷ </p>
+    <p>Rnd( B + . 5 ) ) - . 5→M: A ÷ M^( C→B:
+    </p>
+    <p>Ans - Rnd( Ans <font color="#FF0000">
+            =&gt;</font> 1<font color="#FF0000">M- =&gt;</font> A ÷ M^( C→B:
+    </p>
+    <p>Ans - Rnd( Ans <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: M◢ B</p>
+    <p>　</p>
+    <p>註1: <font color="#FF0000">注意</font>若在程式執行中(顯示空白時)按AC終止程式，計數機會保持在小數零位(Fix
+        0)或有效數字8位(Sci 8)的設定。</p>
+    <p>註2: <font color="#FF0000">注意</font>除第一個程式方根數可輸入非循環小數外，其它程式輸入的數據為整數，否則程式計算不成立。</p>
+    <p>　</p>
+    <p>例題1: 化簡 <sup>3</sup>√40</p>
+    <p>
+        按 Prog 1 再按 3 EXE 40 EXE (顯示 2) EXE (顯示 5)</p>
+    <p>所以 <sup>3</sup>√40 = 2 <sup>3</sup>√5</p>
+    <p>　</p>
+    <p>例題2: 化簡 √18</p>
+    <p>
+        按 Prog 1 再按 2 EXE 18 EXE (顯示 3) EXE (顯示 2)</p>
+    <p>所以 √18 = 3√2</p>
+    <p>　</p>
+    <p>例題3: 化簡 √0.75 <b>
+            <font color="#FF0000">(只適用於第一個程式)</font>
+        </b></p>
+    <p>
+        按 Prog 1
+        再按 2 EXE 0.75 EXE (顯示 0.5) EXE (顯示 3)</p>
+    <p>所以 √0.75 = 0.5√3</p>
+    <p>　</p>
+    <p>附錄: 三個程式速度測試比較表 (以fx-50FH進行測試)</p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="79%" id="AutoNumber1"
+        bordercolorlight="#666666" bordercolordark="#000000">
+        <tr>
+            <td width="6%" align="center">編號
+            </td>
+            <td width="21%" align="center">計算項目
+            </td>
+            <td width="18%" align="center">第一個程式
+            </td>
+            <td width="18%" align="center">第二個程式
+            </td>
+            <td width="19%" align="center">第三個程式
+            </td>
+            <td width="45%" align="center">第四個程式
+            </td>
+        </tr>
+        <tr>
+            <td width="6%" align="center">1.
+            </td>
+            <td width="21%" align="center">√88=2√22
+            </td>
+            <td width="18%" align="center">約6秒
+            </td>
+            <td width="18%" align="center">約1秒
+            </td>
+            <td width="19%" align="center">約2秒
+            </td>
+            <td width="45%" align="center">約1秒
+            </td>
+        </tr>
+        <tr>
+            <td width="6%" align="center">2.
+            </td>
+            <td width="21%" align="center">√39988=2√9997
+            </td>
+            <td width="18%" align="center">約2880秒
+            </td>
+            <td width="18%" align="center">約19秒
+            </td>
+            <td width="19%" align="center">約26秒
+            </td>
+            <td width="45%" align="center">約19秒
+            </td>
+        </tr>
+        <tr>
+            <td width="6%" align="center">3.
+            </td>
+            <td width="21%" align="center">√70000=100√7
+            </td>
+            <td width="18%" align="center">約2秒
+            </td>
+            <td width="18%" align="center">約16秒
+            </td>
+            <td width="19%" align="center">約3秒
+            </td>
+            <td width="45%" align="center">約3秒
+            </td>
+        </tr>
+    </table>
+    <p>註3: 第1項測試為一般常見較簡單平方根化簡，第2及3項則測試計算大平根化簡情況，分為兩個情況，情況一為答案的平根數值大及情況二答案的整數部份數值大。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

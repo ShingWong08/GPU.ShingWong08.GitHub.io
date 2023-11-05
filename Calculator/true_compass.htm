@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>真方位角與羅盤方位角轉換</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">真方位角與羅盤方位角轉換</font>
+            </b></u></p>
+    <p>
+        <span class="Apple-style-span"
+            style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium; ">
+            <span class="Apple-style-span" style="font-family: 新細明體; ">程式編寫日期: 2007年12月21日</span></span>
+    </p>
+    <p>
+        <font color="#FF0000">注意:</font> π<sup>r</sup> 是按 SHIFT EXP SHIFT
+        Ans 2
+    </p>
+    <p>程式 (57 bytes，使用記憶A及B)</p>
+    <p>?→A: ?→B: A <font color="#FF0000">=&gt;</font> Goto 0: Fix 0: </p>
+    <p>Rnd( B ÷ 90 + . 5: Norm 1◢ Lbl 0:</p>
+    <p>180(Ans=4) - cos( π<sup>r</sup>Ans )(B - 180</p>
+    <p>(Ans≠1) cos( π<sup>r </sup>AnsA</p>
+    <p>註1:
+        輸入方向資料時，0表示沒有東南北方向資料，即輸入為真方位角，1代表東北(NE)，2代表東南(SE)，3代表西南(SW)，4代表西北(NW)。</p>
+    <p>註2: 為方便記憶上述數字的意思，1, 2, 3,
+        4的編排可理解為順時針由右上角(1:NE)至右下角(2:SE)至左下角(3:SW)至左上角(4:NW)。</p>
+    <p>　</p>
+    <p>例題1: 將真方位角 130°轉換為羅盤方位角。</p>
+    <p>按 Prog 1 再按 0 EXE (0代表沒有方向資料，即輸入為真方位角)</p>
+    <p>130 EXE (顯示2，代表東南) EXE (顯示角度為50°)</p>
+    <p>所以羅盤方位角為 S 50°E</p>
+    <p>　</p>
+    <p>例題2: 將真方位角 280°轉換為羅盤方位角。</p>
+    <p>按 Prog 1 再按 0 EXE (0代表沒有方向資料，即輸入為真方位角)</p>
+    <p>280 EXE (顯示4，代表西北) EXE (顯示角度為80°)</p>
+    <p>所以羅盤方位角為 N 80°W</p>
+    <p>　</p>
+    <p>例題3: 將羅盤方位角S 50°E轉換為真方位角。</p>
+    <p>按 Prog 1 再按 2 EXE (2代表東南SE)</p>
+    <p>50 EXE (顯示角度為130°)</p>
+    <p>所以真方位角為 130°</p>
+    <p>　</p>
+    <p>例題4: 將羅盤方位角N 80°W轉換為真方位角。</p>
+    <p>按 Prog 1 再按 4 EXE (4代表西北NW)</p>
+    <p>80 EXE (顯示角度為280°)</p>
+    <p>所以真方位角為 280°</p>
+    <p>　</p>
+    <p>註3: 注意輸入的角度範圍，真方位角為0≦θ&lt;360°，羅盤方位角為0≦θ≦90°。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>伽瑪函數(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">伽瑪函數(II)</font>
+            </b></u></p>
+    <p>程式更新日期: 2014年8月22日</p>
+    <p>程式由網友&nbsp; <font color="#0000FF">Skwai</font>提供。</p>
+    <p>這個程使用Lanczos
+        approximation的方法去計算伽瑪函數的值，能夠準確至有效數字九至十位，另外這個版本較特別之處是可以計算複數因變數的伽瑪函數。</p>
+    <p>　</p>
+    <p>注意: <font color="#FF0000">e^( </font>是按shift
+        e<sup>x</sup>。</p>
+    <p>程式 (194 bytes)</p>
+    <p>?→A: A ( 0 &gt; A ( A = Conjg ( A→C: Ans <font color="#FF0000">=&gt;</font> Abs(
+        Ans→A: <br>
+        <br>
+        Abs( A ) sin( arg( A→X: A - . 5 - i Ans→B: A + 3.85→M: <br>
+        <br>
+        Abs( Ans ) ^ ( B ) ÷ <font color="#FF0000">e ^ (</font>
+        <font color="#0000FF">π<sup>r-</sup></font><sup>1</sup>
+        X π arg( Ans: <br>
+        <br>
+        Ans ∠ ( B arg( M ) + π <sup>-1</sup> X <font color="#0000FF">π<sup>r</sup></font>
+        ln( Abs( M: <br>
+        <br>
+        Ans ÷ <font color="#FF0000">e^( </font>B + 3.5 ) ∠ <font color="#0000FF">X<sup>r</sup></font> <span lang="en">
+            <font color="#FF0000"> × </font>
+        </span>( 1.071370357 + <br>
+        <br>
+        39.41066934 ÷ A - 35.55136409 ÷ ( A + 1 ) + 6.326951402 ÷ ( A + 2<br>
+        <br>
+        ) - . 0943944629 ÷ ( A + 3: If C: Then π ÷ <b>
+            <font color="#800080">(</font>
+        </b> Ans A sin( C <font color="#0000FF">
+            π<sup>r</sup></font> : Else Ans
+    </p>
+    <p>
+        <span lang="en">
+            註1: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
+            </b></font>
+        <span lang="en">
+            可以省略，程式長度可減1 byte。</span>
+    </p>
+    <p>
+        註2: 如果是使用fx-50FH，上述程式中的乘號<span lang="en">
+            <font color="#FF0000"> ×</font>
+        </span>可以省略不輸入，程式長度可節省1 byte。</p>
+    <p>　</p>
+    <p>例題1:
+        計算Γ(0.35)的值。</p>
+    <p>按
+        Prog 1 &nbsp;再按 0.35 EXE (顯示答案為2.546146978)</p>
+    <p>　</p>
+    <p>例題2: 計算Γ(-
+        0.35)的值。 </p>
+    <p>按
+        Prog 1 &nbsp;再按 - 0.35 EXE (顯示答案為
+        -3.956557433)</p>
+    <p>　</p>
+    <p>例題3: 計算Γ(9 - 4i)的值。 </p>
+    <p>按
+        Prog 1 &nbsp;再按 9 - 4i EXE<strong>
+            <font color="#FF0000">( 此時計算機右上角出現R&lt;=&gt;I，表示為複數解)</font>
+        </strong></p>
+    <p>
+        (顯示實數部為-12180.57424)
+        再按 Shift Re&lt;=&gt;Im (顯示第一個根虛數部為
+        -10767.15471)</p>
+    <p>
+        即Γ(9 - 4i) = -12180.57424 - 10767.15471 i</p>
+    <p>　</p>
+    <p>註1: 對於正整數 n的伽瑪函數，可以利用計算機的乘階功能直接計算，即
+        Γ(n) = (n-1)!。</p>
+    <p>註2: 有關伽瑪函數的參考資料，可以參閱以下網址的資料:</p>
+    <p><a href="http://mathworld.wolfram.com/GammaFunction.html">
+            <font color="#0000FF">Gamma Function - from Wolfram MathWorld</font>
+        </a></p>
+    <p>
+        <a href="http://www.sosmath.com/calculus/improper/gamma/gamma.html">
+            <font color="#0000FF">Gamma Function</font>
+        </a>
+    </p>
+    <p>　</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

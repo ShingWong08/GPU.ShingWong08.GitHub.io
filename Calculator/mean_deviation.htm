@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>整合平均值及標準差</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">整合平均值及標準差</font>
+            </b></u></p>
+    <p>程式編寫日期: 2008年2月24日</p>
+    <p>程式可以將多組已知平均值及標準差的統計數據整合為一組平均值及標準差。輸入的標準差可以是樣本標準差或正常標準差。</p>
+    <p>程式 (70 bytes)</p>
+    <p>ClrMemory: ?→A: ?→B: While B: </p>
+    <p>?→C: ?→D: X + BC<sup>2</sup> + D<sup>2</sup>(B-A→X: B<font color="#FF0000">M+</font>:</p>
+    <p>BC + Y→Y: ?→B: WhileEnd: Y÷M◢ </p>
+    <p>√( (X - Y<sup>2 </sup>÷ M)<span lang="en"> ÷ </span>(M-A</p>
+    <p>　</p>
+    <p>
+        例題: 將下列的兩組數據整合為一組。</p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="51%" id="AutoNumber1"
+        bordercolorlight="#666666" bordercolordark="#000000">
+        <tr align="center">
+            <td width="25%">組別
+            </td>
+            <td width="25%">數量
+            </td>
+            <td width="25%">平均值
+            </td>
+            <td width="25%">總體標準差
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="25%">1
+            </td>
+            <td width="25%">30
+            </td>
+            <td width="25%">80
+            </td>
+            <td width="25%">15
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="25%">2
+            </td>
+            <td width="25%">40
+            </td>
+            <td width="25%">70
+            </td>
+            <td width="25%">10
+            </td>
+        </tr>
+        <tr align="center">
+            <td width="25%">3
+            </td>
+            <td width="25%">50
+            </td>
+            <td width="25%">60
+            </td>
+            <td width="25%">8
+            </td>
+        </tr>
+    </table>
+    <p>　</p>
+    <p>
+        若使用的是正常標準差:</p>
+    <p>
+        按 Prog 1
+        再按 EXE (不輸入數據表示使用正常標準差)</p>
+    <p>
+        30 EXE 80 EXE 15 EXE 40 EXE 70 EXE 10 EXE 50 EXE 60 EXE 8 EXE</p>
+    <p>
+        <font color="#FF0000">0</font> EXE (數量輸入<font color="#FF0000">0</font>表示已輸入所有數據，顯示平均值為68.33333333)
+    </p>
+    <p>
+        EXE (顯示正常標準差為13.42158295)</p>
+    <p>　</p>
+    <p>
+        若使用的是樣本標準差:</p>
+    <p>
+        按 Prog 1
+        再按 1 EXE (輸入1表示使用樣本標準差)</p>
+    <p>
+        30 EXE 80 EXE 15 EXE 40 EXE 70 EXE 10 EXE 50 EXE 60 EXE 8 EXE</p>
+    <p>
+        <font color="#FF0000">0</font> EXE (數量輸入<font color="#FF0000">0</font>表示已輸入所有數據，顯示平均值為68.33333333)
+    </p>
+    <p>
+        EXE (顯示樣本標準差為13.35603809)</p>
+    <p>　</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

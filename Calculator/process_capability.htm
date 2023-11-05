@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>製程能力指數 Process Capability</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">製程能力指數 Process Capability</font>
+            </b></u></p>
+    <p>更新日期: 2014年8月31日</p>
+    <p>這個程式不能單獨使用，要配合計數機的內置統計功能(SD模式)使用。</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">xσn</font> 按 shift 2 2 ，<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>為平均x
+        按 shift 2 1)</p>
+    <p>程式 (41 bytes)</p>
+    <p>?→A: ?→B: A - B→C: C<sup>-1</sup>Abs(A + B - 2<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>→A◢</p>
+    <p>C÷<b>
+            <font color="#800080"> ( </font>
+        </b>6<font color="#0000FF"> xσn</font>→B◢ B(1 - A→C</p>
+    <p>
+        <span lang="en">
+            註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
+            </b></font>
+        <span lang="en">
+            可以省略，程式長度可減1 byte。</span>
+    </p>
+    <p>　</p>
+    <p>例題: 若數據為 11, 12, 13, 16, 18，USL = 17 及 LSL =12，</p>
+    <p>求製程準確度C<sub>a</sub>、製程精確度C<sub>p</sub>及製程能力C<sub>pk</sub>。</p>
+    <p>按 MODE <font color="#FF0000">4</font>&nbsp;再按
+        11 <font color="#0000FF">DT</font> 12 <font color="#0000FF">DT</font> 13
+        <font color="#0000FF">DT</font> 16 <font color="#0000FF">DT</font> 18
+        <font color="#0000FF">DT </font>
+    </p>
+    <p>再按 Prog 1 再按 17
+        EXE 12 EXE (顯示C<sub>a</sub>為 0.2)</p>
+    <p>EXE (顯示C<sub>p</sub>為0.319569)
+        EXE (顯示C<sub>pk</sub>為0.255655)</p>
+    <p>完成計算後按 MODE 1
+        返回正常計算模式，C<sub>a</sub>、C<sub>p</sub>及C<sub>pk</sub>csh 分別儲存在記憶A、B及C。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

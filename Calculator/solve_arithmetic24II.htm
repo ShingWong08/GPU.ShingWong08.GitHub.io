@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>合24解答(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">合24解答(II)</font>
+            </b></u></p>
+    <p>程式由網友<font color="#0000FF">SuperMANganese</font>提供。</p>
+    <p>這個程式是網友參考<font color="#0000FF">3173137</font>編寫的<a
+            href="solve_arithmetic24.htm">合24解答(I)程式</a>改編而成，改善之處是可以嘗試所有可能性，包括第(I)版不能嘗試的情況(例如:
+        a - (b+(c×d)) , a - (b×c+d)
+        ,
+        ...等形式)，由於本程式於可以嘗試所有可能性，因此程式顯示無解則表示真正無解(第(I)版的無解可能不是真正的無解)，另一個之改善之處是找出一組解後，可以繼續嘗試找其它的解答，絕大多數情況下能找出所有解
+        。</p>
+    <p><br>
+        答案形式為
+        <font color="#FF0000">( (AXB) Y C ) Z D</font> ，其中A, B, C, D為數值，X, Y, Z為運算符號
+        ，程式會先顯示XYZ的值，再顯示A, B, C, D出現的順序(以八位數整數表示，例如: 01020312即A=01, B=02, C=03, D=12)。X,
+        Y, Z使用數字1, 2, 3, 4表示+,
+        - , ×, ÷ ，5表示 - 但被減數及減數的位置要對調，6表示 ÷
+        但被除數及除數的位置要對調。若果出現負數XYZ答案的形式為(AXB)Y(CZD)，詳情請看各例題。
+    </p>
+    <p>　</p>
+    <p>網友提供程式日期: 2009年6月27日</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF"> n</font> 按 Shift 1 3 )，<font size="1">E </font>是按 EXP，h是按
+        Shift 7 <font face="新細明體">→ 2</font>。</p>
+    <p>程式 (532 bytes)</p>
+    <p>?→A:
+        ?→B:
+        ?→C:
+        ?→D: Fix 0: FreqOn: <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>:
+        Goto 1: Lbl 0: </p>
+    <p>If <font color="#0000FF">n</font> - 2Rnd( <font color="#0000FF">n</font>÷2:
+        Then C→M: D→C: M→D: Goto 1:IfEnd:
+        B→M: </p>
+    <p>D→B: M→D: Lbl 1: 1→X: 1→Y: Lbl 3: A+B→M: X=2 <font color="#FF0000">=&gt;</font> A-B+h→M:
+    </p>
+    <p>X=3 <font color="#FF0000">=&gt;</font> AB→M: X=4 <font color="#FF0000">=&gt;</font> A÷B→M: Y=1 <font
+            color="#FF0000">=&gt;</font> M+C→M: Y=2 <font color="#FF0000">=&gt;</font> M-C→M:
+    </p>
+    <p>Y=3 <font color="#FF0000">=&gt;</font> MC→M: Y=4<font color="#FF0000">=&gt;</font> M÷C→M: Y=5<font
+            color="#FF0000">=&gt;</font> C-M→M: Y=6 <font color="#FF0000">=&gt;</font> C÷M→M:
+    </p>
+    <p>If Y-7: Then M+D=24 <font color="#FF0000">=&gt;</font> Goto 7: M-D = 24 <font color="#FF0000">=&gt;</font> 2
+        <font color="#FF0000">=&gt;</font> Goto 7:
+        MD=24 <font color="#FF0000">=&gt;</font> 3 <font color="#FF0000">=&gt;</font> Goto 7:
+    </p>
+    <p>M=24D <font color="#FF0000">=&gt;</font> 4 <font color="#FF0000">=&gt;</font> Goto 7:
+        D-M = 24 <font color="#FF0000">=&gt;</font> 5 <font color="#FF0000">=&gt;</font> Goto 7: D=24M <font
+            color="#FF0000">=&gt;</font> 6 <font color="#FF0000">=&gt;</font> Goto 7:
+    </p>
+    <p>Else -X→X: -1→Y:M+CD=24 <font color="#FF0000">=&gt;</font> -3 <font color="#FF0000">=&gt;</font> Goto 7: M+C÷D=24
+        <font color="#FF0000">=&gt;</font> -4 <font color="#FF0000">=&gt;</font> Goto 7:
+    </p>
+    <p>-2→Y:M-CD=24 <font color="#FF0000">=&gt;</font> -3 <font color="#FF0000">=&gt;</font> Goto 7: M-C÷D=24 <font
+            color="#FF0000">=&gt;</font> -4 <font color="#FF0000">=&gt;</font> Goto 7:
+    </p>
+    <p>-3→Y:24=M(C+D <font color="#FF0000">=&gt;</font> -1 <font color="#FF0000">=&gt;</font> Goto 7: 24=M(C-D <font
+            color="#FF0000">=&gt;</font> -2 <font color="#FF0000">=&gt;</font> Goto 7:
+    </p>
+    <p>-4→Y:M=24(C+D <font color="#FF0000">=&gt;</font> -1 <font color="#FF0000">=&gt;</font> Goto 7: M=24(C-D <font
+            color="#FF0000">=&gt;</font> -2 <font color="#FF0000">=&gt;</font> Goto 7:
+    </p>
+    <p>1-X→X: 0→Y: IfEnd: Lbl 9: Y+1→Y: X - 5 <font color="#FF0000">=&gt;</font> Goto 3: A→M: B→A:
+    </p>
+    <p>C→B: D→C: M→D: ; 4<sup>-1</sup> DT: <font color="#0000FF">n</font>=6 <font color="#FF0000">=&gt;</font>
+        137A<sup>-1</sup>
+        <font color="#0000FF">n</font><sup>-1</sup>→M: Ans <font color="#FF0000">=&gt;</font> MA<font color="#0000FF">n
+        </font>◢
+    </p>
+    <p>
+        <font color="#0000FF">n</font>=Rnd( <font color="#0000FF">n</font>
+        <font color="#FF0000">=&gt;</font> Goto 0: Goto 1: Lbl 7: Norm 1: <font size="1">E</font>2X + <font size="1">E
+        </font>1Y + Ans ◢
+    </p>
+    <p>
+        <font size="1">E</font>6A+ <font size="1">E</font>4B +<font size="1">E</font>2C +D◢ X&lt;0 <font
+            color="#FF0000">=&gt;</font> 1-X→X: Ans <font color="#FF0000">=&gt;</font> 0→Y: Fix 0: Goto 9
+    </p>
+    <p></p>
+    <p> 　</p>
+    <p> 註1:
+        程式會不斷嘗試不同的可能性(最多4224種可能)，所以計算時間可能會較長，另外若程式找不出解答， 最後會顯示137。</p>
+    <p>　</p>
+    <p> 例題1: 若四個數值分別為1, 3, 7, 6，求這四個數值合24的解答。</p>
+    <p> 按
+        Prog 1 再按 1 EXE 3 EXE 7 EXE </p>
+    <p> 6 EXE (顯示3<font color="#FF0000">5</font>3，代表運算符號順序為
+        ×, - , ×，要注意<font color="#FF0000">5</font>要將答案中被減數及減數對調位置答案)</p>
+    <p> EXE (顯示1030706(即<font color="#FF0000">0</font>1030706)，代表答數值的順序為1, 3, 7, 6)</p>
+    <p> 所以最後答案為 (7 - (1×3) ) × 6 。</p>
+    <p><br>
+        　</p>
+    <p> 例題2: 若四個數值分別為6, 7, 8, 9，求這四個數值合24的解答。</p>
+    <p> 按
+        Prog 1 再按 6 EXE 7 EXE 8 EXE </p>
+    <p> 9 EXE (顯示 - 342，代表運算符號順序為 ×,
+        ÷, -，負數代表是(A×B)÷(C-D)
+        的形式)</p>
+    <p> EXE (顯示6080907(即<font color="#FF0000">0</font>6080907)，代表答數值的順序為6, 9, 8, 7)</p>
+    <p> 所以最後答案為 (6×8)÷(9-7) </p>
+    <p> 註2: 這個例題第(I)版程式無法求得解答。</p>
+    <p>　</p>
+    <p> 例題3: 若四個數值分別為2, 5, 5, 10，求這四個數值合24的解答。</p>
+    <p> 按
+        Prog 1 再按 2 EXE 5 EXE 5 EXE </p>
+    <p> 10 EXE (顯示4<font color="#FF0000">5</font>3，代表運算符號為
+        ÷, -, ×，要注意<font color="#FF0000">5</font>要將答案中被減數及減數對調位置答案)</p>
+    <p> EXE (顯示1070306(即<font color="#FF0000">0</font>2100505)，代表答數值的順序為2, 10, 5, 5)</p>
+    <p> 所以最後答案為 (5 - (2 ÷10) ) × 5 。</p>
+    <p> 註3: 這個例題第(I)版程式無法求得解答。</p>
+    <p> 　</p>
+    <p> 例題4: 若四個數值分別為5, 6, 7, 10，求這四個數值合24的解答。</p>
+    <p> 按
+        Prog 1 再按 5 EXE 6 EXE 7 EXE </p>
+    <p> 10 EXE (顯示137表示無解)</p>
+    <p>　</p>
+    <p>註4: 有關合24遊戲的解答，可以參考以下網址:</p>
+    <p>
+        <a href="http://www.semple.edu.hk/mpn185/misc/math24/worksheet/main/worksheet.pdf">
+            http://www.semple.edu.hk/mpn185/misc/math24/worksheet/main/worksheet.pdf</a>
+    </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

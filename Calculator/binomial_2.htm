@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>正整數冪二項式定理(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">正整數冪二項式定理(II)</font>
+            </b></u></p>
+    <p>更新日期: 2014年8月21日</p>
+    <p>程式除了可以用作展開正整數冪二項式外，還可用作計算二項式某一項的係數值。</p>
+    <p>注意: 紅色 <font color="#FF0000">nCr</font> 是按 Shift ÷ 及計算機只會顯示粗體的C字。</p>
+    <p>程式 (39 bytes):</p>
+    <p>ClrMemory: ?→A:?→B:?→C: ?→M:</p>
+    <p>While 1:
+        C <font color="#FF0000">nCr</font> M<span lang="en">
+            <font color="#FF0000"> ×</font>
+        </span>B^(M)A^(C-M◢ 1<font color="#FF0000">M+</font>:
+        WhileEnd</p>
+    <p>註1: 如果是使用fx-50FH，上述程式中的乘號<span lang="en">
+            <font color="#FF0000"> ×</font>
+        </span>可以省略不輸入，程式長度可節省1 byte。</p>
+    <p>註2: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，而程式所使用的記憶為A，B，C及M。
+    </p>
+    <p>　</p>
+    <p>
+        例題1:
+        展開 (3x - 2y)<sup>4</sup></p>
+    <p>
+        &nbsp;按
+        Prog 1&nbsp; 再按
+        3 EXE - 2 EXE 4 EXE <font color="#FF0000">EXE</font>
+    </p>
+    <p>
+        (<font color="#FF0000">不輸入數值</font>，代表從頭展開多項式，顯示第一個係數為81)
+        EXE (顯示第二個係數為-216)
+    </p>
+    <p>
+        EXE (顯示第三個係數為216)
+        EXE (顯示第四個係數為-96)
+        EXE (顯示第五個係數為16)</p>
+    <p>EXE
+        (出現Error表示已完結)</p>
+    <p>
+        因此，(3x
+        - 2y)<sup>4</sup> = 81x<sup>4</sup> - 216x<sup>3</sup>y + 216x<sup>2</sup>y<sup>2</sup>
+        - 96xy<sup>3</sup> + 16y<sup>4</sup> </p>
+    <p>
+        　</p>
+    <p>
+        例題2: 計算 (3x + y)<sup>100</sup>多項式中 x<sup>3</sup>y<font color="#FF0000"><sup>97</sup></font>的係數。</p>
+    <p>
+        按
+        Prog 1&nbsp; 再按
+        3 EXE 1 EXE 100 EXE <font color="#FF0000">97</font> EXE (顯示答案為 4365900)</p>
+    <p>
+        計算完結按 AC 終止程式</p>
+    <p>
+        　</p>
+    <p>
+        註: 若最後輸入的數值為 a，代表展開多項式的第 a + 1項，亦相當於實際展開時第二項的 a 次方。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

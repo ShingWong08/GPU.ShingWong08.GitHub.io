@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>稜鏡計算</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">稜鏡計算</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年8月22日</p>
+    <p>程式可以計算以下情況:</p>
+    <p>1. 已知折射率n及頂角A計算最少偏向角d</p>
+    <p>2. 已知頂角A及最少偏向角d</p>
+    <p>3. 已知折射率n、頂角A及入射角i計算最後的折射角r及偏向角σ</p>
+    <p>程式 (64 bytes) </p>
+    <p>ClrMemory: ?→M: ?→A: </p>
+    <p>2 <font color="#FF0000">sin<sup>-1</sup>(</font> M sin( A<span lang="en">÷</span>2 )
+        ) - A→B: ?→B:</p>
+    <p>M=0 <font color="#FF0000">=&gt;</font> sin( (A+B)<span lang="en">÷</span>2 ) ÷ sin( A<span lang="en">÷</span>2◢
+    </p>
+    <p>
+        <font color="#FF0000">sin<sup>-1</sup>(</font> M sin(A -
+        <font color="#FF0000">sin<sup>-1</sup>(</font> sin( B )÷M◢
+    </p>
+    <p>Ans + B - A</p>
+    <p>註: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;Mem clear&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，而程式
+        長度增加 1 byte，所使用的記憶為A，B及M。</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">注意:</font> 以下例題在DEG 模式下執行程式
+    </p>
+    <p>例題1: 一玻璃稜鏡的折射率為1.5，稜鏡頂角為50°，求光線通過稜鏡的最少偏向角。</p>
+    <p>按 Prog 1 再按 1.5 EXE 50 EXE (顯示最少偏向角為28.6810°)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p>例題2: 一玻璃稜鏡頂角為50°，最少偏向角為28.681°，稜鏡的折射率。</p>
+    <p>按 Prog 1 再按 EXE (不輸入折射率代表計算折射率)</p>
+    <p>50 EXE 28.681 (顯示最少偏向角為1.5)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p>例題3: </p>
+    <p>一玻璃稜鏡的折射率為1.5，稜鏡頂角為50°，入射角為60°求光線通最後的折射角r及偏向角。</p>
+    <p>按 Prog 1 再按 1.5 EXE 50 EXE 60 EXE (顯示折射角為22.429°)</p>
+    <p>EXE (顯示偏向角為32.429°)</p>
+    <p>註: 若果在稜鏡內出現內全反射，程式則會出現Math ERROR。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

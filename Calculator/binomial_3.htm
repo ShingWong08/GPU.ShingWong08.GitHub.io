@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>二項式定理</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">二項式定理</font>
+            </b></u></p>
+    <p>更新日期: 2011年4月25日</p>
+    <p>程式計算
+        (ax + by)<sup>n</sup>
+        的展開式，而 n可以不是正整數。</p>
+    <p>若果輸入數據為整數或分數時，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+    </p>
+    <p>程式一 (39 bytes)</p>
+    <p>ClrMemory: ?→A:
+        ?→B: ?→C: A^( C→D◢
+    </p>
+    <p>While
+        A<font color="#FF0000">M+</font>: BCD┘M→D◢&nbsp;C
+        - 1→C: WhileEnd</p>
+    <p>註: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，
+        程式長度則變為 40 bytes，而使用的記憶為A，B，C，D及M。</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 )。</p>
+    <p>程式二 (38 bytes，使用記憶A,B,C)</p>
+    <p>ClrStat: ?→A: ?→B: ?→C: A^( C <font color="#FF0000">DT</font>:</p>
+    <p>While
+        Ans◢ B(C - <font color="#0000FF">n</font> + 1)Ans┘(A<font color="#0000FF">n</font>
+        <font color="#FF0000">DT</font>: WhileEnd
+    </p>
+    <p>　</p>
+    <p>
+        例題1:
+        展開 (1 - 3x)<sup>-2</sup></p>
+    <p>按
+        Prog 1&nbsp; 再按
+        1 EXE - 3 EXE - 2 EXE (顯示第一個係數為1)
+        EXE (顯示第二個係數為6)
+    </p>
+    <p>
+        EXE &nbsp;(顯示第三個係數為27)
+        EXE (顯示第四個係數為108)
+        EXE (顯示第五個係數為405)</p>
+    <p>
+        因此，(1
+        - 3x)<sup>-2</sup> = 1 + 6x + 27x<sup>2</sup> + 108x<sup>3</sup> + 405x<sup>4</sup>
+        +……….</p>
+    <p>
+        　</p>
+    <p>
+        例題2:
+        展開 (3x - 2y)<sup>4</sup></p>
+    <p>按
+        Prog 1&nbsp; 再按
+        3 EXE - 2 EXE 4 EXE (顯示第一個係數為81)
+        EXE (顯示第二個係數為-216)
+    </p>
+    <p>
+        EXE (顯示第三個係數為216)
+        EXE (顯示第四個係數為-96)
+        EXE (顯示第五個係數為16)</p>
+    <p>
+        EXE (顯示0，表示已完結
+        ，如程式一請按AC終止程式)
+    </p>
+    <p>
+        因此，(3x
+        - 2y)<sup>4</sup> = 81x<sup>4</sup> -&nbsp; 216x<sup>3</sup>y + 216x<sup>2</sup>y<sup>2</sup>
+        - 96xy<sup>3</sup> + 16y<sup>4</sup> </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

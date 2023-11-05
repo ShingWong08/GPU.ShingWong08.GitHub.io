@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Bessel Function of the first kind</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">第一類貝塞爾函數(Bessel Function of the first kind)</font>
+            </b></u></p>
+    <p>更新日期: 2014年8月1日</p>
+    <p>程式可以計第一類貝塞爾函數 J<sub>n</sub>(x) (Bessel Function of the first kind)，其中 n 為整數。</p>
+    <p>
+        <font color="#FF0000">注意:</font> π<sup>r</sup> 是按 SHIFT EXP SHIFT
+        Ans 2
+    </p>
+    <p>程式 (59 bytes)</p>
+    <p>ClrMemory: ?→A: ?→X: Lbl 0: M→C:</p>
+    <p>(X÷2)^( 2B + A) cos( π<sup>r</sup>B ) ÷<font color="#800080"><b> ( </b>
+        </font>B!<span lang="en"> </span>(B+A)!
+        <font color="#FF0000">M+</font>:
+    </p>
+    <p>B+1→B: M-C <font color="#FF0000">=&gt;</font> Goto 0: M</p>
+    <p>
+        <span lang="en">
+            註: 如果是使用fx-3650P II或fx-50FH II，上述程式中的</span>cos( π<sup>r</sup>B ) ÷<font color="#800080"><b>
+                ( </b></font>B!<span lang="en"> </span>(B+A)!
+        <font color="#FF0000">M+</font>:<span lang="en">可以簡化為
+        </span>
+        cos( π<sup>r</sup>B ) ÷<font color="#800080"><b> </b></font>B!<span lang="en"> </span>(B+A)!
+        <font color="#FF0000">M+</font>:<span lang="en">
+            ，可節省1 byte。</span>
+    </p>
+    <p>　</p>
+    <p>計算第一類貝塞爾函數 J<sub>3</sub>(1.3)的數值。</p>
+    <p>按
+        Prog 1 &nbsp;再按 3 EXE 1.3 EXE (顯示答案為0.041135825)</p>
+    <p>　</p>
+    <p>參考資料:</p>
+    <p><a href="http://zh.wikipedia.org/wiki/%E8%B4%9D%E5%A1%9E%E5%B0%94%E5%87%BD%E6%95%B0">
+            貝塞爾函數 -wikipedia</a></p>
+    <p>
+        <a href="http://www.mhtl.uwaterloo.ca/old/courses/me3532/js/bessel.html">
+            Bessel Fuction of the First Kind -- from Wolfarm MathWorld</a>
+    </p>
+    <p>
+        <a href="http://www.mhtl.uwaterloo.ca/old/courses/me3532/js/bessel.html">
+            Bessel Fuction Calculator</a>
+    </p>
+    <p>
+        　</p>
+    <p>　</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

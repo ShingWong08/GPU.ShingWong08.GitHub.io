@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>三角形內心</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">三角形內心</font>
+            </b></u></p>
+    <p>程式由網友<span class="gen"><span class="postername">
+                <font color="#0000FF">
+                    roviury</font> 提供。
+            </span></span></p>
+    <p>更新日期: 2011年9月29日</p>
+    <p>
+        程式一 (75 bytes)</p>
+    <p>
+        <font color="#FF0000">程式一需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2)。
+    </p>
+    <p>?→X: ?→Y: ?→A: ?→B: ?→C: ?→D:</p>
+    <p>FreqOn: X
+        <font color="#FF0000">,</font> Y <font color="#FF0000">; Pol(</font>A-C<font color="#FF0000"> ,</font> B-D
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>A <font color="#FF0000">,</font> B
+        <font color="#FF0000">; Pol(</font><span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>-C
+        <font color="#FF0000">,</font> <span style="text-decoration: overline">
+            <font color="#0000FF">y</font>
+        </span> -D) + 0<font color="#FF0000">Pol(</font><span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>-A
+        <font color="#FF0000">,</font> <span style="text-decoration: overline">
+            <font color="#0000FF">y</font>
+        </span>-B <font color="#FF0000">DT</font>:
+    </p>
+    <p>C <font color="#FF0000">,</font> D <font color="#FF0000">;</font> X
+        <font color="#FF0000">DT</font>: <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>◢ <span style="text-decoration: overline">
+            <font color="#0000FF">y</font>
+        </span>
+    </p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式二需要在 CMPLX 模式下執行，因此在輸入程式前請先按 Mode 2。</font>
+    </p>
+    <p>程式二 (61 bytes)</p>
+    <p><span class="gen">?→A: ?→B: ?→C: . 5 ( arg(A - C) - arg( B - C:</span></p>
+    <p><span class="gen">C + . 5 ( Abs(A - C) + Abs(B - C) - Abs(A - B) ) </span></p>
+    <p><span class="gen">cos( Ans )<sup>-1</sup>∠( Ans + arg(B - C</span></p>
+    <p>　</p>
+    <p>例題: A、B及C三點的坐標分別為(0 , 0)、(4 , 3) 及 (4 , 0)，求三角形ABC的內心的坐標。</p>
+    <p>程式一按法:</p>
+    <p>按 Prog 1 再按 0 EXE 0 EXE 4 EXE 3 EXE 4 EXE 0 EXE (顯示3) EXE (顯示1)</p>
+    <p>所以內心 = (3 , 1)</p>
+    <p>　</p>
+    <p>程式二按法:</p> <span lang="en">
+        <p>
+            按 Prog 1 再按 4 + 3 i EXE (以複數形式輸入座標) </p>
+        <p>
+            0 + 0 i EXE 4 + 0 i EXE (顯示實數部為3) </p>
+        <p>
+            Shift Re&lt;=&gt;Im (顯示虛數部為 1i，所以內心 = (3 , 1))</p>
+    </span>
+    <p>　</p>
+    <p>註: 使用程式二時，要注意若答案的x坐標為0(實數部)，答案會直接先顯示y坐標的值(虛數部(有 i字))</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

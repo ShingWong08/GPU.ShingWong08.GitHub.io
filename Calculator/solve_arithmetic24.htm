@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>合24解答</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">合24解答</font>
+            </b></u></p>
+    <p>程式由網友<font color="#0000FF">3173137</font>提供，程式會嘗試合24其中的1536種可能性，形式為
+        <font color="#FF0000">( (AXB) Y C ) Z D</font> ，其中A, B, C, D為數值，X, Y, Z為運算符號(+,
+        - , ×, ÷ 分別以1, 2, 3, 4表示)。
+    </p>
+    <p>網友編寫程式日期: 2009年5月16日</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF"> n</font> 按 Shift 1 3 <font color="#0000FF">Σx </font>
+        按 Shift 1 2 )，<font size="1">E </font>是按 EXP。</p>
+    <p>第一個程式 (360 bytes，數值可以是1-9)</p>
+    <p>Lbl 0: Norm 1: <font size="1">E</font>6A + <font size="1">E</font>5X + <font size="1">E</font>4B + <font
+            size="1">E</font>3Y + <font size="1">E</font>2C + <font size="1">E</font>1Ans + D→M: </p>
+    <p>?→M: Fix 0: Rnd( <font size="1">E</font>-3M - .5→A: M -<font size="1"> E</font>3A→M:
+        Rnd( <font size="1">E</font>-2M - . 5 →D: </p>
+    <p>M -<font size="1"> E</font>2D→M: Rnd( .1M - . 5→C: M-10C→B: FreqOn:
+        <font color="#FF0000">; </font>0 <font color="#FF0000">DT</font>:
+    </p>
+    <p>Lbl 1: If<font color="#0000FF"> Σx </font>- 2Rnd( <font color="#0000FF"> Σx</font>÷2:
+        Then C→M: D→C: M→D: Goto 3: IfEnd:</p>
+    <p>B→M :D→B: M→D: Lbl 3: 1→X: 1→Y: Lbl 7: A + B→M: </p>
+    <p>X=2 <font color="#FF0000">=&gt;</font> A-B→M: X=3 <font color="#FF0000">=&gt;</font>
+        AB→M: X=4 <font color="#FF0000">=&gt;</font> A÷B→M: </p>
+    <p>Y=1 <font color="#FF0000">=&gt;</font> M+C→M: Y=2 <font color="#FF0000">=&gt;</font>
+        M-C→M: Y=3 <font color="#FF0000">=&gt;</font> MC→M: </p>
+    <p>Y=4 <font color="#FF0000">=&gt;</font> M÷C→M: M+D=24 <font color="#FF0000">=&gt;</font>
+        Goto 0: M-D=24 <font color="#FF0000">=&gt;</font> 2 <font color="#FF0000">=&gt;</font>
+        Goto 0: </p>
+    <p>MD=24 <font color="#FF0000">=&gt;</font> 3 <font color="#FF0000">=&gt;</font> Goto
+        0: M=24D <font color="#FF0000">=&gt;</font> 4 <font color="#FF0000">=&gt;</font> Goto
+        0: X=4 <font color="#FF0000">=&gt;</font> Y+1→Y: </p>
+    <p>Ans <font color="#FF0000">=&gt;</font>
+        0→X: X+1→X: Y-5 <font color="#FF0000">=&gt;</font> Goto 7: A→M: B→A: C→B: D→C: </p>
+    <p>M→D: 4<sup>-1</sup>
+        <font color="#FF0000">DT</font>:<font color="#0000FF"> Σx</font>=6<font color="#FF0000">=&gt;</font>ln(
+        137 )÷<font color="#0000FF">n</font>→D: Ans <font color="#FF0000">
+            =&gt;</font> e^( <font color="#0000FF">n</font>D◢
+    </p>
+    <p>
+        <font color="#0000FF">
+            Σx</font>=Rnd( <font color="#0000FF">Σx</font>
+        <font color="#FF0000">=&gt;</font> Goto 1: Goto 3
+    </p>
+    <p> <br>
+        第二個程式(359 bytes，數值可以是1-13或1-99)</p>
+    <p>
+        <font size="1">E</font>6A+ <font size="1">E</font>4B +<font size="1">E</font>2C +D→M: ?→M:
+        Fix 0: Rnd( <font size="1">E</font>-6M - . 5→A:
+    </p>
+    <p>M - <font size="1">E</font>6A→M: Rnd( <font size="1">E</font>- 4M - . 5→D: M - <font size="1">E</font>4D→M: </p>
+    <p>Rnd( <font size="1">E</font>-2M - . 5→C: M - <font size="1">E</font>2C→B:
+        FreqOn: <font color="#FF0000">; </font>0 <font color="#FF0000">DT</font>: Lbl 0: </p>
+    <p>If<font color="#0000FF">
+            Σx </font>- 2Rnd(<font color="#0000FF">
+            Σx</font>÷2: Then C→M: D→C: M→D: Goto 1:IfEnd: </p>
+    <p>B→M: D→B: M→D: Lbl 1: 1→X: 1→Y: Lbl 3: A+B→M: X=2 <font color="#FF0000">=&gt;</font> A-B→M: </p>
+    <p>X=3 <font color="#FF0000">=&gt;</font> AB→M: X=4 <font color="#FF0000">=&gt;</font> A÷B→M:
+        Y=1 <font color="#FF0000">=&gt;</font> M+C→M: Y=2 <font color="#FF0000">=&gt;</font> M-C→M:</p>
+    <p>Y=3 <font color="#FF0000">=&gt;</font> MC→M: Y=4<font color="#FF0000">=&gt;</font> M÷C→M: M+D=24
+        <font color="#FF0000">=&gt;</font> Goto 7:
+    </p>
+    <p>M-D = 24 <font color="#FF0000">=&gt;</font> 2 <font color="#FF0000">=&gt;</font> Goto 7: MD=24 <font
+            color="#FF0000">=&gt;</font> 3 <font color="#FF0000">=&gt;</font> Goto 7: M=24D <font color="#FF0000">=&gt;
+        </font> 4 <font color="#FF0000">=&gt;</font> Goto 7:</p>
+    <p>X=4 <font color="#FF0000">=&gt;</font> Y+1→Y: Ans <font color="#FF0000">=&gt;</font> 0→X: X+1→X: Y - 5 <font
+            color="#FF0000">=&gt;</font> Goto 3: A→M: B→A: </p>
+    <p>C→B: D→C: M→D: 4<sup>-1</sup>
+        <font color="#FF0000">DT</font>:<font color="#0000FF">
+            Σx</font>=6 <font color="#FF0000">=&gt;</font> ln( 137 )÷<font color="#0000FF">n</font>→D:
+        Ans <font color="#FF0000">=&gt;</font> e^( <font color="#0000FF">n</font>D◢
+    </p>
+    <p>
+        <font color="#0000FF">
+            Σx</font>=Rnd(<font color="#0000FF">
+            Σx</font>
+        <font color="#FF0000">=&gt;</font> Goto 0: Goto 1: Lbl 7: Norm 1: <font size="1">E</font>2X + <font size="1">E
+        </font>1Y + Ans
+    </p>
+    <p> 註1: 注意+, - , ×, ÷ 程式分別以1, 2, 3,
+        4形式表示。</p>
+    <p> 註2:
+        程式會不斷嘗試不同的可能性(最多1536種可能)，所以計算時間可能會較長，另外若程式找不出解答， 最後會顯示137。</p>
+    <p> 註3: 程式找不出解答，依然有可能有解答存在。</p>
+    <p> <br>
+        例題: 若四個數值分別為6, 1, 3, 7，求這四個數值合24的解答。</p>
+    <p> 第一個程式操作方法</p>
+    <p> 按
+        Prog 1 再按 6137 EXE (顯示1372336，代表 ((1×7)-3) × 6是解答)</p>
+    <p> 　</p>
+    <p> 第二個程式操作方法</p>
+    <p> 按
+        Prog 1 再按</p>
+    <p> 06010307 EXE (以兩個位代表一個數值輸入，顯示323，代表運算符號順序多為 ×, -, ×)</p>
+    <p> EXE (顯示1070306(即<font color="#FF0000">0</font>1070306)，代表答數值的順序為1, 7, 3, 6)</p>
+    <p> 所以最後答案為 ((1×7)-3) × 6 。</p>
+    <p><br>
+        　</p>
+    <p>註4: 有關合24遊戲的解答，可以參考以下網址:</p>
+    <p>
+        <a href="http://www.semple.edu.hk/mpn185/misc/math24/worksheet/main/worksheet.pdf">
+            http://www.semple.edu.hk/mpn185/misc/math24/worksheet/main/worksheet.pdf</a>
+    </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>球體計算</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">球體計算 (Sphere calculation)</font>
+            </b></u></p>
+    <p>程式由網友<font color="#0000FF"> tony200910041</font> 提供。</p>
+    <p>更新日期: 2012年7月16日</p>
+    <p>程式可以在已知球體其中的<font color="#FF0000">最少</font>一個變數(半徑、表面面積、及體積)，計算未知變數。</p>
+    <p>
+        <font color="#FF0000">注意</font> : 若果不想記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入。
+    </p>
+    <p>程式一(51 或 <font color="#008000">55</font> bytes)</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C: 4π→D: </p>
+    <p>B <font color="#FF0000">=&gt;</font> √(B÷D→A◢ C <font color="#FF0000">=&gt;</font>
+        <font color="#FF0000"><sup>3</sup>√(</font>3C÷D→A◢
+    </p>
+    <p>B=0 <font color="#FF0000">=&gt;</font> DA<sup>2</sup>
+        <font color="#008000">→B</font>◢ DA<sup>3</sup>÷3<font color="#008000">→C</font>
+    </p>
+    <p>　</p>
+    <p>註1: 執行程式，輸入球體變數的次序為半徑、表面面積、體積，不輸入數值<font color="#FF0000">(必要)</font>代表未知數，即直接按EXE即可，而答案會依照輸入未知數時(直接按EXE)的次序顯示。
+    </p>
+    <p>註2: 程式不能計算變數為0或負數的情況。</p>
+    <p>註3: 程式如有綠色的程式碼，則半徑、表面面積、及體積會分別儲存在記憶A、B及C中。</p>
+    <p>　</p>
+    <p>例題1: 球體的半徑為5 cm，求球體的表面面積及體積。</p>
+    <p>按 Prog 1 再按 5 EXE </p>
+    <p>
+        <font color="#FF0000">EXE EXE</font> (不輸入面積及體積，顯示面積為314.16 cm<sup>2</sup> )
+    </p>
+    <p>EXE (顯示體積為 523.60 cm<sup>3</sup> )</p>
+    <p>　</p>
+    <p>例題2: 球體的表面面積為314.16 cm<sup>2</sup>，求球體的半徑及體積。</p>
+    <p>按 Prog 1 再按 <font color="#FF0000">EXE</font> (不輸入半徑) 314.16 EXE </p>
+    <p>
+        <font color="#FF0000">EXE</font> (不輸入體積，顯示半徑為5 cm)
+    </p>
+    <p>EXE (顯示體積為 523.60 cm<sup>3</sup> )</p>
+    <p>　</p>
+    <p>例題3: 球體的體積為523.60 cm<sup>2</sup>，求球體的半徑及面積。</p>
+    <p>按 Prog 1 再按 <font color="#FF0000">EXE EXE</font> (不輸入半徑及面積) </p>
+    <p>523.6 EXE (顯示半徑為5 cm)</p>
+    <p>EXE (顯示面積為314.16 cm<sup>2</sup> )</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

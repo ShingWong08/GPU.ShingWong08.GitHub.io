@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>三點求圓</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">三點求圓(I)</font>
+            </b></u></p>
+    <p>程式參考了網友<font color="#0000FF">roviury</font>意見進行修改。</p>
+    <p>更新日期: 2010年4月30日</p>
+    <p>
+        若已知圓周上三點的座標，程式可以計算圓心、半徑及圓方程。若果輸入數據為整數(或分數)時，圓心及圓方程的係數會以分數形式表示，半徑若為有理數(使用第二個程式)亦會以分數形式顯示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp;)。
+    </p>
+    <p>
+        <font color="#0000FF">第一個程式</font> (123 bytes)
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D:</p>
+    <p>(C - A) ┘(B - D→Y: B + D - YA - YC→X:</p>
+    <p>?→C: ?→D: (C - A) ┘(B - D→M:</p>
+    <p>B + D - MA - MC→B:</p>
+    <p>(B - X) ┘(2Y - 2M→A◢ M Ans + B┘2→B◢</p>
+    <p>
+        <font color="#FF0000">Pol(</font> A - C, B - D◢ -2A◢ -2B◢ A<sup>2</sup>
+        + B<sup>2 </sup>- X<sup>2 </sup>
+        <font color="#000000">&nbsp;</font>
+    </p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF">第二個程式</font> (分數版，131 bytes)
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D:</p>
+    <p>(C - A)┘(B - D→Y:
+        B + D - YA - YC→X:</p>
+    <p>?→C: ?→D: (C - A)┘ (B - D→M:</p>
+    <p>B + D - MA - MC→B: (B - X)┘(2Y - 2M→A◢ </p>
+    <p>M Ans + B┘2→B◢ √( (A - C)<sup>2</sup> + (B - D)<sup>2</sup>→X◢
+    </p>
+    <p>&nbsp;-2A◢ -2B◢ A<sup>2</sup>
+        + B<sup>2 </sup>- X<sup>2</sup> </p>
+    <p>　</p>
+    <p>
+        例題:
+        圓經過三點 (2,0)，(0,1)
+        及 (0,4)，求圓心,
+        半徑及圓的方程。</p>
+    <p>
+        按 Prog 1 再按 2 EXE 0 EXE 0 EXE 1 EXE 0 EXE 4 EXE (顯示2) EXE (顯示5/2, 即圓心為(2, 5/2))</p>
+    <p>
+        EXE (顯示半徑為5/2) EXE (顯示D為
+        -4) EXE (顯示E為
+        -5) = (顯示F為
+        4)</p>
+    <p>
+        所以圓的方程為:
+        x<sup>2</sup> + y<sup>2</sup> – 4x – 5y + 4 = 0</p>
+    <p>　</p>
+    <p>程式執行完成後，使用第一個程式可以按 RCL A, RCL B及RCL X分別顯示圓心的座標及半徑，使用第二個程式可以按 RCL
+        A及RCL B顯示圓心的座標。</p>
+    <p>　</p>
+    <p>
+        註: 若兩點的y坐標相同，程式有可能出現Math ERROR，解決的方法是將<font color="#FF0000">沒有相同y座標的點</font>作為第一點輸入即可。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

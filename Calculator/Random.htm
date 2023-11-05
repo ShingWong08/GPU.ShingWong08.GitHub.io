@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>隨機數 Random Number</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">隨機數 Random Number</font>
+            </b></u></p>
+    <p>更新日期: 2012年1月11日</p>
+    <p>統計學時常要使用隨機數，雖然fx-50FH 及 fx-50F PLUS都有內置的隨機數功能，但只能產生 0.000 至 0.999
+        (共1000個可能數值)，使用上較不方便。這個程式可以自設隨機整數的範圍，而且數目並沒有特別的限制(可以多於1000個可能數值)。</p>
+    <p>注意: <font size="1">E</font> 是按 EXP。</p>
+    <p>程式 (44 bytes，使用記憶A及B)</p>
+    <p>?→A: ?→B: While 1: Fix 0: Rnd( A - . 5 </p>
+    <p>+ (B - A + 1)(Ran# + <font size="1">E</font> -3Ran# + <font size="1">E</font>
+        -6Ran#:</p>
+    <p>Norm 1◢ WhileEnd</p>
+    <p>　</p>
+    <p>例題: 試產生多個由10001 至 20000間的隨機整數。</p>
+    <p>按 Prog 1 再按 10001 EXE 20000 EXE (顯示第一個隨機數)</p>
+    <p>EXE (顯示第二個隨機數)</p>
+    <p>EXE (顯示第三個隨機數)</p>
+    <p>.....................</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p>
+        <font color="#800080">附錄程式 </font>(由網友tony200910041提供)
+    </p>
+    <p>附錄程式較為簡短，亦可自定隨機整數的範圍，但要注意若果隨機數數目多於1000將會有一些數值永遠不會出現，少於1000時，各數出值的機會率可能比較不平均。</p>
+    <p>程式(32 bytes)</p>
+    <p>?→A: ?→B: While 1: Fix 0: A- . 5+ Rnd( Ran# (B - A + 1:</p>
+    <p>Norm 1◢ WhileEnd</p>
+    <p>　</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

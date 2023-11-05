@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <title>複數的N次方根</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">複數的N次方根</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年11月15日</p>
+    <p>程式可以計算複數的N次方根，亦可用作計算複數的<font color="#FF0000">實數</font>冪。</p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>注意: 紅色的<font color="#FF0000"><sup> r </sup></font>是按 shift Ans 2。</p>
+    <p>
+        <font color="#0000FF">第一個程式</font> (38 bytes，不顯示根的模數及輻角)
+    </p>
+    <p>ClrMemory: ?→A: ?→B: While B&gt;M: </p>
+    <p>B<font color="#FF0000"><sup>x</sup>√( </font>Abs(
+        A ) )∠( B<sup>-1</sup>(2Mπ<sup>
+            <font color="#FF0000">r</font>
+        </sup> + arg( A◢
+    </p>
+    <p>1<font color="#FF0000">M+</font>: WhileEnd</p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF">第二個程式</font> (41 bytes，同時顯示根的模數及輻角)
+    </p>
+    <p>ClrMemory: ?→A: ?→B: B<font color="#FF0000"><sup>x</sup>√( </font>Abs(
+        A→C◢ While B&gt;M:</p>
+    <p>B<sup>-1</sup>(2Mπ<sup>
+            <font color="#FF0000">r</font>
+        </sup> + arg(A◢
+        C∠Ans◢ 1<font color="#FF0000">M+</font>: WhileEnd</p>
+    <p>註: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，而程式
+        長度增加 1 byte，所使用的記憶為A，B及M。</p>
+    <p>　</p>
+    <p>注意以下所有例題都假設是在DEG單位下進行。</p>
+    <p>
+        <font color="#0000FF">例題1</font>:
+        計算 10(cos30<sup>o</sup>
+        + i sin30<sup>o</sup>) 的三次方根。
+    </p>
+    <p>
+        <font color="#FF0000">第一個程式的按法:</font>
+    </p>
+    <p>按
+        Prog 1&nbsp; 再按 10 Shift ∠ 30 EXE 3 EXE
+        (顯示第一個根的實數部為2.121703986)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font>&nbsp; (顯示第一個根的虛數部為0.374113657)</p>
+    <p>
+        EXE (顯示第二個根的實數部為 -1.384843925)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第二個根的虛數部為1.650392722)</p>
+    <p>
+        EXE (顯示第三個根的實數部為 -0.736860061)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第三個根的虛數部為-2.02450638)</p>
+    <p>
+        EXE (顯示0，程式亦計算完結)。</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">第二個程式的按法:</font>
+    </p>
+    <p>按
+        Prog 1&nbsp; 再按 10 Shift ∠ 30 EXE 3 EXE
+        (顯示<font color="#FF0000">所有</font>根的模數為2.15443469) </p>
+    <p>
+        EXE (顯示第一個根的輻角為 10)</p>
+    <p>
+        EXE (顯示第一個根的實數部為2.121703986)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font>&nbsp; (顯示第一個根的虛數部為0.374113657)</p>
+    <p>
+        EXE (顯示第二個根的輻角為 130)</p>
+    <p>
+        EXE (顯示第二個根的實數部為-1.384843925)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第二個根的虛數部為1.650392722)</p>
+    <p>
+        EXE (顯示第三個根的輻角為 250)</p>
+    <p>
+        EXE (顯示第三個根的實數部為-0.736860061)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第三個根的虛數部為-2.02450638)</p>
+    <p>
+        EXE (顯示0，程式亦計算完結)。</p>
+    <p>　</p>
+    <p>
+        所以三個根分別為 2.121703986 +
+        0.374113657i, -1.384843925 + 1.650392722i及-0.736860061
+        - 2.02450638i</p>
+    <p>
+        　</p>
+    <p>
+        <font color="#0000FF">例題2:</font>
+        計算 4 + 5i
+        的三次方根。
+    </p>
+    <p>
+        <font color="#FF0000">第一個程式的按法:</font>
+    </p>
+    <p>按
+        Prog 1&nbsp; 再按 4 + 5i EXE 3 EXE
+        (顯示第一個根的實數部為1.774720263)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第一個根的虛數部為0.546429525)</p>
+    <p>
+        EXE (顯示第二個根的實數部為-1.360581983)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第二個根的虛數部為1.26373807)</p>
+    <p>
+        EXE (顯示第三個根的實數部為-0.41413828)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第三個根的虛數部為-1.810167596)</p>
+    <p>
+        EXE (顯示0，程式亦計算完結)。</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">第二個程式的按法:</font>
+    </p>
+    <p>按
+        Prog 1&nbsp; 再按 4 + 5i EXE 3 EXE
+        (顯示<font color="#FF0000">所有</font>根的模數為1.856937597) </p>
+    <p>
+        EXE (顯示第一個根的輻角為 17.11339725)</p>
+    <p>
+        EXE (顯示第一個根的實數部為1.774720263)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第一個根的虛數部為0.546429525)</p>
+    <p>
+        EXE (顯示第二個根的輻角為 137.1133972)</p>
+    <p>
+        EXE (顯示第二個根的實數部為-1.360581983)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第二個根的虛數部為1.26373807)</p>
+    <p>
+        EXE (顯示第三個根的輻角為 257.1133972)</p>
+    <p>
+        EXE (顯示第三個根的實數部為-0.41413828)
+    </p>
+    <p>
+        Shift <font color="#FF0000">Re&lt;=&gt;Im</font> (顯示第三個根的虛數部為-1.810167596)</p>
+    <p>
+        EXE (顯示0，程式亦計算完結)。</p>
+    <p>　</p>
+    <p>
+        所以三個根分別為1.774720263 +
+        0.546429525i, -1.360581983 + 1.26373807i及-0.41413828
+        - 1.810167596i</p>
+    <p>
+        　</p>
+    <p>
+        <font color="#0000FF">例題3:</font> 計算&nbsp; (2
+        + 3i )<sup>5</sup>
+    </p>
+    <p>
+        <font color="#FF0000">第一個程式的按法:</font>
+    </p>
+    <p>按
+        Prog 1&nbsp; 再按 2
+        + 3i EXE&nbsp;5<font color="#FF0000"><sup>-1</sup></font> EXE (按<font color="#FF0000">
+            x</font><sup>
+            <font color="#FF0000">-1</font>
+        </sup>表示計實數指數，顯示實數部為 122)
+    </p>
+    <p>再按&nbsp;<font color="#FF0000">Re&lt;=&gt;Im</font>
+        (顯示虛數部為 -597 i) EXE (顯示0，程式亦計算完結)。</p>
+    <p>計算完結按 AC 終止程式</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">第二個程式的按法:</font>
+    </p>
+    <p>按
+        Prog 1&nbsp;再按 2
+        + 3i EXE&nbsp;5<font color="#FF0000"><sup>-1</sup></font> EXE (按<font color="#FF0000">
+            x</font><sup>
+            <font color="#FF0000">-1</font>
+        </sup>表示計實數指數，顯示模數為609.3381655)</p>
+    <p>EXE (顯示輻角為281.5496624) EXE (顯示實數部為
+        122) </p>
+    <p>再按&nbsp;<font color="#FF0000">Re&lt;=&gt;Im</font>
+        (顯示虛數部為 -597 i) </p>
+    <p>計算完結按 AC 終止程式</p>
+    <p>所以&nbsp;(2 + 3i)<sup>5</sup> =
+        122 - 597i</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

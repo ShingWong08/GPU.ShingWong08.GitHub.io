@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>畢氏定律</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">畢氏定律</font>
+            </b></u></p>
+    <p>程式編寫日期: 2012年2月13日</p>
+    <p>直角三角形的三邊分別為 a、b及c(斜邊)，若已知其中兩邊，程式除了會計算第三邊外，還會同時計算<font face="新細明體">∠A及∠B的值。</font>
+    </p>
+    <p>注意: <font color="#FF0000">cos<sup>-1</sup></font> 是按 SHIFT cos</p>
+    <p>程式一(63 bytes，有記存答案)</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C:</p>
+    <p>A=0 <font color="#FF0000">=&gt;</font> √( C<sup>2</sup> - B<sup>2</sup>→A◢</p>
+    <p>B=0 <font color="#FF0000">=&gt;</font> √( C<sup>2</sup> - A<sup>2</sup>→B◢</p>
+    <p>
+        <font color="#FF0000">Pol(</font> A, 1B: C=0 <font color="#FF0000">=&gt;</font>
+        X→C◢
+    </p>
+    <p>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> 0 ) - Y→X◢ Y
+    </p>
+    <p>　</p>
+    <p>程式二(55 bytes，沒有記存答案)</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C:</p>
+    <p>C <font color="#FF0000">=&gt;</font> √( C<sup>2</sup> - A<sup>2 </sup>- B<sup>2</sup>◢</p>
+    <p>
+        <font color="#FF0000">Pol(</font> A+Ans(A=0 , B+Ans(B=0:
+    </p>
+    <p>AB <font color="#FF0000">=&gt;</font> X◢</p>
+    <p>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> 0 ) - Y◢ Y
+    </p>
+    <p>　</p>
+    <p>註1: 顯示兩角時所用的單位與計數機角度單位設定相同，例如是DEG則會以度數單位表示角度。</p>
+    <p>註2: 程式一執行完結後，直角三角形的三邊及另外兩角分別儲存在記憶A, B, C, X及Y中。</p>
+    <p>　</p>
+    <p>例題1: ABC為直角三角形，∠C為90°、a=3及c=5，求 b 、∠A及∠B。</p>
+    <p>按 Prog 1 再按 3 EXE <font color="#FF0000">EXE</font> (第二個數不輸入數值代表計算b)</p>
+    <p>5 EXE (顯示b為4) EXE (顯示∠A為36.8699°) EXE (顯示∠B為53.1301°)</p>
+    <p>　</p>
+    <p>例題2: ABC為直角三角形，∠C為90°、a=3及b=4，求 c 、∠A及∠B。</p>
+    <p>按 Prog 1 再按 3 EXE 4 EXE </p>
+    <p>
+        <font color="#FF0000">EXE</font> (第三個數不輸入數值代表計算c，顯示c為5)
+    </p>
+    <p>EXE (顯示∠A為36.8699°) EXE (顯示∠B為53.1301°)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

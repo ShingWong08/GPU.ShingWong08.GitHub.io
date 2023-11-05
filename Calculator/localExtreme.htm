@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title></title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">相對極值(Local maxima or minima)</font>
+            </b></u></p>
+    <p>程式由網友roviury提供，程式使用計算微分近似值及牛頓法找尋函數相對極值(Local maxima/minima)的位置。</p>
+    <p>更新日期: 2011年4月29日</p>
+    <p>注意: <font size="1">E</font>是按 EXP。</p>
+    <p>程式(100 bytes，不包括綠色函數方程)</p>
+    <p>?→X: Lbl 0: M<font color="#FF0000">M-</font>: X→B:&nbsp; <font size="1">E</font>4 ÷ (X + (X=0→Y:</p>
+    <p>While Ans: <font color="#008000">X<SUP>3</SUP> - 2X - 1</font>→C: X + Y<SUP>-1</SUP>(1 -
+        3M→X:
+    </p>
+    <p>M=0 <font color="#FF0000">=&gt;</font> C→A: M=1
+        <font color="#FF0000">=&gt;</font> C→D: M≠2<font color="#FF0000">M+</font>: WhileEnd:
+    </p>
+    <p>2<SUP>-1</SUP>Y(D - C→M◢ Y<sup>2</sup>(D + C - 2A→C: B-M÷C→X◢ Goto 0
+    </p>
+    <p>　</p>
+    <p>註1: 綠色的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是函數方程(變數是X)，若果想計算其它方程，只要修改綠色的部份。</p>
+    <p>註2: 若果想知道近似值X是相對極大(local maxima)還是相對極小(local minima)，可按 AC終止程式後，按 RCL C
+        顯示第二導數f&quot;(x)的值，按 RCL A 則可顯示函數相對極大值/極小值。</p>
+    <p>註3: 若想程式每次顯示近似值答案前顯示第二導數，可以程式碼&quot;Y<sup>2</sup>(D + C - 2A→C:&quot;改為&quot;Y<sup>2</sup>(D
+        + C - 2A→C◢&quot;即可。</p>
+    <p>　</p>
+    <p>例題: 試求函數 f(x) = x<sup>3</sup> - 2x - 1在x=1附近相對極值的位置。</p>
+    <p>按 Prog 1 再按 1 EXE (顯示第一個第一導數f'(x)為1.000000001(斜率)) </p>
+    <p>EXE (顯示第一近似值x為0.833333331) </p>
+    <p>EXE (顯示第二個第一導數f'(x)為0.083333331(斜率))</p>
+    <p>EXE (顯示第二近似值x為0.816666664) </p>
+    <p>EXE (顯示第三個第一導數f'(x)為8.333283698<font face="新細明體"><span lang="en">×</span>10<sup>-4</sup></font>(斜率)) </p>
+    <p>EXE (顯示第二近似值x為0.816496597)</p>
+    <p>....... </p>
+    <p>　</p>
+    <p>正確答案為<font face="新細明體">√</font>(2/3)=0.81649658</p>
+    <p>　</p>
+    <p>
+        <font color="#800080"><b>附錄: 程式會先顯示函數值，再顯示一階導數，再顯示二階導數)</b></font>
+    </p>
+    <p>另一個版本程式(104 bytes，不包括綠色函數方程)</p>
+    <p>?→X: Lbl 0: M<font color="#FF0000">M-</font>: X→B:&nbsp; <font size="1">E</font>4 ÷ (X + (X=0→Y:</p>
+    <p>While Ans: <font color="#008000">X<SUP>3</SUP> - 2X - 1</font>→C: X + Y<SUP>-1</SUP>(1 -
+        3M→X:
+    </p>
+    <p>M=0 <font color="#FF0000">=&gt;</font> C→A: M=1
+        <font color="#FF0000">=&gt;</font> C→D: M≠2<font color="#FF0000">M+</font>: WhileEnd:
+    </p>
+    <p>2<SUP>-1</SUP>Y(D - C→M: Y<sup>2</sup>(D + C - 2A→C: B-M÷C→X◢ M◢ C◢ Goto 0
+    </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

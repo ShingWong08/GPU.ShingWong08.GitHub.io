@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>折射定律</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">折射定律</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年9月22日 最新更新日期: 2008年4月11日</p>
+    <p>˙程式使用折射定律(n<sub>1</sub> sin θ<sub>1</sub> = n<sub>2</sub> sin θ<sub>2</sub>
+        )進行計算，可計算折射率或角度(入射角或折射角)，計算時請先輸入包含未數介質的折射率及角度，若為未知數直接按 EXE 即可。</p>
+    <p>˙若果計算臨界角，只要順序輸入入射界質及折射界質的折射率即可，若為未知數直接按 EXE 即可。</p>
+    <p>第一個程式 (70 bytes)</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C: </p>
+    <p>C=0 <font color="#FF0000">=&gt;</font> A&gt;B <font color="#FF0000">=&gt; sin<sup>-1</sup>(<sup>
+            </sup></font>B÷A→D:</p>
+    <p>A=0 <font color="#FF0000">=&gt;</font> B ÷ sin( C→D:</p>
+    <p>B=0 <font color="#FF0000">=&gt;</font> A sin( C→D: ?→D: </p>
+    <p>A <font color="#FF0000">=&gt; sin<sup>-1</sup>(</font> A<sup>-1</sup>C sin( D◢</p>
+    <p>C sin( D ) ÷ sin B</p>
+    <p>　</p>
+    <p>第二個程式 (77 bytes，有記存答案)</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C: </p>
+    <p>C=0 <font color="#FF0000">=&gt;</font> A&gt;B <font color="#FF0000">=&gt; sin<sup>-1</sup>(<sup>
+            </sup></font>B÷A→D:</p>
+    <p>A=0 <font color="#FF0000">=&gt;</font> B ÷ sin( C→D:</p>
+    <p>B=0 <font color="#FF0000">=&gt;</font> A sin( C→D: ?→D: </p>
+    <p>If A: Then <font color="#FF0000">sin<sup>-1</sup>(</font> A<sup>-1</sup>C sin( D→X◢</p>
+    <p>Else C sin( D ) ÷ sin B→X</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">注意:</font> 以下例題要在 DEG Mode執行
+    </p>
+    <p>例題1: 一光線由空氣進入玻璃，空氣的折射率假設為1，入射角為45°
+        ，玻璃的折射角為28.13°，求玻璃的折射率。</p>
+    <p>注意先輸入包含未數介質的資料</p>
+    <p>
+        按 Prog 1
+        再按 <font color="#FF0000">EXE</font> (不輸入數值代表計算折射率) 28.13 EXE </p>
+    <p>1 EXE 45 EXE (再輸入已知介質的折射率及角度，顯示答案為 1.499779914)</p>
+    <p>　</p>
+    <p>例題2: 一光線由空氣進入玻璃，空氣的折射率假設為1，入射角為45°
+        ，玻璃的折射率為1.5，求折射角。</p>
+    <p>
+        注意先輸入包含未數介質的資料</p>
+    <p>
+        按 Prog 1 再按 1.5 EXE <font color="#FF0000">EXE</font> (不輸入數值代表計算角度)</p>
+    <p>1 EXE 45 EXE (再輸入已知介質的折射率及角度，顯示答案為 28.1255057°)</p>
+    <p>　</p>
+    <p>例題3: 一光線由玻璃入射空氣，玻璃的折射率為1.5，求臨界角。</p>
+    <p>按 Prog 1 再按 1.5 EXE (入射界質的折射率)</p>
+    <p>1 EXE (折射界質折射率，空氣為1)</p>
+    <p>
+        <font color="#FF0000">EXE</font> (不輸入數值表示計算臨界角，顯示臨界角為41.81&#730;)
+    </p>
+    <p>　</p>
+    <p>例題4: 一光線由水入射玻璃，水及玻璃的折射率分別為1.33及1.5，求臨界角。</p>
+    <p>按 Prog 1 再按 1.33 EXE (入射界質的折射率)</p>
+    <p>1.5 EXE (折射界質折射率) </p>
+    <p>
+        <font color="#FF0000">EXE</font> (顯示<font color="#FF0000">0</font>表示沒有臨界角，即光線由水射向玻璃沒有內全反射)
+    </p>
+    <p>　</p>
+    <p>例題5: 一光線由玻璃入射空氣，臨界角為41.81&#730;，求玻璃折射率。</p>
+    <p>按 Prog 1 再按 <font color="#FF0000">EXE</font> (不輸入數值代表計算入射界質的折射率)</p>
+    <p>1 EXE (折射界質折射率，空氣為1) </p>
+    <p>41.81 EXE (臨界角，顯示入射界質的折射率為1.5)</p>
+    <p>　</p>
+    <p>註: 若果使用第二個程式，計算完結後，使用折射定律計算的答案儲存在X記憶，計算有關臨界角問題的答案儲存在D記憶。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

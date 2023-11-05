@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>RSA加密及解密 Encryption and decryption by RSA algorithm</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">RSA加密及解密 Encryption and decryption by RSA algorithm</font>
+            </b></u></p>
+    <p>程式修改日期: 2014年8月31日</p>
+    <p>程式可以利用RSA演算法對一些數值進行加密或解密。</p>
+    <p>
+        <font color="#FF0000">程式需要在 BASE 模式下執行，因此在選擇新程式位置後，按 3 選用BASE模式。</font>
+    </p>
+    <p>程式 (79 bytes，使用記憶為A、B、C、D及M)</p>
+    <p>Dec:&nbsp; ?→A: ?→B: Lbl 0: 1→M: A→D: ?→C: While D: </p>
+    <p>C - C ÷ B<span lang="en">
+            <font color="#FF0000">×</font>
+        </span>B→C: D - D ÷ 2 × 2 <font color="#FF0000">=&gt;</font>
+        CM - CM ÷ B<span lang="en">
+            <font color="#FF0000">×</font>
+        </span>B→M: </p>
+    <p>D ÷ 2→D: Ans <font color="#FF0000">=&gt;</font>
+        CC→C: WhileEnd:
+        M→C: Goto 0</p>
+    <p>
+        註: 如果是使用fx-50FH，上述程式中紅色的乘號<span lang="en">
+            <font color="#FF0000"> ×</font>
+        </span>可以省略不輸入，程式長度可節省2 bytes。</p>
+    <p>　</p>
+    <p>例題: 已知RSA加密演算法的公鑰及私鑰分別為{5, 35}及{29, 35}，試將數值 12, 16, 22 及 5進加密及解密。</p>
+    <p>加密:</p>
+    <p>按 Prog 1 再按 5 EXE 35 EXE (輸入公鑰) </p>
+    <p>12 EXE (顯示17) 16 EXE (顯示11) 22 EXE (顯示22) 5 EXE (顯示10)</p>
+    <p>所以加密後的數值為 17, 11, 22, 10</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>解密:</p>
+    <p>按 Prog 1 再按 29 EXE 35 EXE (輸入私鑰) </p>
+    <p>17 EXE (顯示12) 11 EXE (顯示16) 22 EXE (顯示22) 10 EXE (顯示5)</p>
+    <p>所以解密後的數值為 12, 16, 22, 5</p>
+    <p>計算完結後按 AC 終止程式及按MODE 1 返回正常計算模式</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

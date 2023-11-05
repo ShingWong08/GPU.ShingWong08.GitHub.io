@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>多項式乘法(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">多項式乘法(II)</font>
+            </b></u></p>
+    <p>程式編寫日期: 2013年8月10日</p>
+    <p>程式可以計算一個二次或一次多項式乘以一個 n次多項式。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數<font color="#0000FF">Σx </font>按 Shift 1 2。</p>
+    <p>程式(71 bytes)</p>
+    <p>ClrStat: Rec( 0 , 0: ?→A: A <font color="#FF0000">DT</font>: ?→B: ?→C: ?→A:</p>
+    <p>For -1→M to A: CD+BX+<font color="#0000FF">Σx</font>Y→A: X→D: Y→X: A→Y: </p>
+    <p>?→Y: Next: CD + BX◢ CX</p>
+    <p>　</p>
+    <p>例題1: 展開且化簡 (x<sup>2</sup>
+        - 2 x + 3)(x<sup>3</sup> + 3x<sup>2</sup>
+        + 2x + 1)。</p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE - 2 EXE 3 EXE
+        (注意必須先輸入二次式)</p>
+    <p>再按 3 EXE (另一多項式最高次數)</p>
+    <p>1 EXE (顯示x<sup>5</sup>的係數為1) 3 EXE (顯示x<sup>4</sup>
+        的係數為 1) </p>
+    <p>2 EXE (顯示x<sup>3</sup>
+        的係數為 -1) 1 EXE
+        (顯示x<sup>2</sup>
+        的係數為 6)</p>
+    <p>EXE (顯示x
+        的係數為 4) EXE (顯示常數為 3)</p>
+    <p>　</p>
+    <p>例題2: 展開且化簡 (2 x + 3)(x<sup>3</sup>
+        + 3x<sup>2</sup>
+        + 2x + 1)。</p>
+    <p>按
+        Prog 1&nbsp; 再按 <font color="#FF0000">0</font>
+        EXE 2 EXE 3 EXE (必須先輸入一次式，第一個輸入<font color="#FF0000">0</font>表示沒有x<sup>2</sup>係數)</p>
+    <p>再按 3 EXE (另一多項式最高次數)</p>
+    <p>1 EXE (顯示x<sup>5</sup>的係數為0) 3 EXE (顯示x<sup>4</sup>
+        的係數為 2)</p>
+    <p>2 EXE (顯示x<sup>3</sup>
+        的係數為 9) 1 EXE
+        (顯示x<sup>2</sup>
+        的係數為 13)</p>
+    <p>EXE (顯示x
+        的係數為 8) EXE (顯示常數為 3)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>
