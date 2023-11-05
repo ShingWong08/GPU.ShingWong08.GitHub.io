@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>三角形的內心、重心 、垂心、外心、外心圓半徑及圓方程</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">三角形的內心、重心、垂心 、外心、外心圓半徑及圓方程</font>
+            </b></u></p>
+    <p>程式是參考網友 yuen 的<a href="5_centre.htm">程式</a>編寫。</p>
+    <p>已知三角形三頂點的坐標，程式可計算三角形的內心、重心 、垂心、外心、外心圓半徑及圓方程。另外為方便以假分數顯示，建議將計數機預先設定為假分數形式表示(按六次
+        Mode，再按 2 EXE )。</p>
+    <p>更新日期: 2012年1月11日</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font>
+        按 Shift 1 → 2<font color="#0000FF">，maxX</font> 按 shift 2 2 2，<font color="#0000FF">maxY</font>
+        按 shift 2 2 → 2，<font color="#0000FF">n</font> 按 Shift 1 3)。另外若果不計算外心圓半徑及圓方程，綠色的程式碼可以不輸入，程式長度則變為203 bytes。</p>
+    <p>程式 (227 bytes / <font color="#008000">197 bytes</font>)</p>
+    <p>FreqOn: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y:</p>
+    <p>X , Y ; <font color="#FF0000">Pol(</font> A-C , B-D <font color="#FF0000">DT</font>: </p>
+    <p>
+        <font color="#FF0000">Pol(</font>C-<font color="#0000FF">maxX</font>
+        , D-<font color="#0000FF">maxY</font>: √( (A - <font color="#0000FF">maxX</font>)<sup>2</sup>
+        + (B - <font color="#0000FF">maxY</font>)<sup>2</sup>→Y:
+    </p>
+    <span lang="en">
+        <p>(AX+CY+<font color="#0000FF">Σx</font>)┘(X+Y+<font color="#0000FF">n</font>◢ (BX+DY+<font color="#0000FF">Σy
+            </font>)┘(X+Y+<font color="#0000FF">n</font>◢</p>
+        <p>(A + C + <font color="#0000FF">maxX</font>)┘3◢ (B + D + <font color="#0000FF">
+                maxY</font>)┘3◢
+    </span>
+    (<font color="#0000FF">maxX</font> - A)┘(B - <font color="#0000FF">maxY</font>→M: </p>
+    <p>D - MC→X: (C - A)┘(B - D: (<font color="#0000FF">maxY</font> - Ans<font color="#0000FF"> maxX</font> - X)┘(M -
+        Ans→Y◢ </p>
+    <p>YM + X→M◢ (<span lang="en">A + C + </span>
+        <font color="#0000FF">maxX</font>
+        - Y)┘2<font color="#008000">→A</font>◢
+    </p>
+    <p>(<span lang="en">B + D + </span>
+        <font color="#0000FF">maxY</font>
+        - M)┘2<font color="#008000">→B◢ Pol( A - C, B - D◢ -2A◢ -2B◢ A<sup>2</sup>
+            + B<sup>2 </sup>&nbsp;- X<sup>2</sup></font>
+    </p>
+    <p>　</p>
+    <p>例題: A、B及C三點的坐標分別為(4 , 3)、(0 , 0) 及 (4 , 0)，求三角形ABC的內心、重心 、垂心、外心、外心圓半徑及外心圓方程。</p>
+    <p>按 Prog 1 再按 4 EXE 3 EXE 0 EXE 0 EXE 4 EXE 0 </p>
+    <p>EXE (顯示3) EXE (顯示1，所以內心 = (3 , 1))</p>
+    <p>EXE (顯示8/3) EXE (顯示1，所以重心=(8/3, 1))</p>
+    <p>EXE (顯示4) EXE (顯示0，所以垂心=(4, 0))</p>
+    <p>EXE (顯示2) EXE (顯示3/2，所以外心=(2, 3/2))</p>
+    <p>EXE (顯示外心圓半徑為2.5)</p>
+    <p>EXE (顯示 - 4) EXE (顯示 - 3) EXE (顯示 0)</p>
+    <p>所以外心圓方程為 x<sup>2</sup> + y<sup>2</sup> - 4x - 3y = 0</p>
+    <p>　</p>
+    <p>
+        註1: 若兩點的y坐標相同，程式有可能會出現Math ERROR，可以嘗試改變點的先後次序。</p>
+    <p>
+        註2: 外心亦是三點共圓的圓心。</p>
+    <p>
+        註3: 如果不計算重心，程式碼<span lang="en"> (A + C + <font color="#0000FF">Σx</font>)┘3◢ (B + D + <font color="#0000FF">
+                Σy</font>)┘3◢
+        </span>
+        可以省略。</p>
+    <p>
+        參考資料:</p>
+    <p>
+        <a href="http://agutie.homestead.com/files/center/nine_point_center_euler.html">
+            http://agutie.homestead.com/files/center/nine_point_center_euler.html</a>
+    </p>
+    <p>　</p>
+    <p>　</p>
+    <!--msthemeseparator-->
+    <p align="center">
+    <p>
+        <font color="#800080">附錄程式(三角形的內心、重心 、垂心、外心、九點心、外心圓半徑及圓方程)</font>
+    </p>
+    <p>
+        由網友 tony200910041提供</p>
+    <p>程式 (243 bytes)</p>
+    <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y:</p>
+    <p>X , Y ; <font color="#FF0000">Pol(</font> A-C , B-D <font color="#FF0000">DT</font>: </p>
+    <p>
+        <font color="#FF0000">Pol(</font>C-<font color="#0000FF">maxX</font>
+        , D-<font color="#0000FF">maxY</font>: √( (A - <font color="#0000FF">maxX</font>)<sup>2</sup>
+        + (B - <font color="#0000FF">maxY</font>)<sup>2</sup>→Y:
+    </p>
+    <span lang="en">
+        <p>(AX+CY+<font color="#0000FF">Σx</font>)┘(X+Y+M◢ (BX+DY+<font color="#0000FF">Σy</font>)┘(X+Y+M◢</p>
+        <p>(A + C + <font color="#0000FF">maxX</font>)┘3◢ (B + D + <font color="#0000FF">
+                maxY</font>)┘3◢
+    </span>
+    (<font color="#0000FF">maxX</font> - A)┘(B - <font color="#0000FF">maxY</font>→M: </p>
+    <p>D - MC→X: (C - A)┘(B - D: (<font color="#0000FF">maxY</font> - Ans<font color="#0000FF"> maxX</font> - X)┘(M -
+        Ans→Y◢ </p>
+    <p>YM + X→M◢ (<span lang="en">A + C + </span>
+        <font color="#0000FF">maxX</font>
+        - Y)┘2→A◢
+    </p>
+    <p>(<span lang="en">B + D + </span>
+        <font color="#0000FF">maxY</font>
+        - M)┘2→B◢ (Y + A)┘2◢ (M + B)┘2◢
+    </p>
+    <p>Pol( A - C, B - D◢ -2A◢ -2B◢ A<sup>2</sup>
+        + B<sup>2 </sup>&nbsp;- X<sup>2</sup></p>
+    <p>
+        　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>四階行列式</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">四階行列式</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年8月16日</p>
+    <p>程式可以計算一個 4×4
+        行列式的值。第二個程式除計算四階行列式的值外，還可以計算聯立三元一次方程(使用克萊瑪法則 (Cramer's rule))及方程式組行列式的值。</p>
+    <p>程式編寫日期: 2006年8月16日</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<font color="#0000FF">Σx</font>
+        按 shift 1 2)</p>
+    <p>
+        <font color="#0000FF">第一個程式</font> (193 bytes)
+    </p>
+    <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: ?→M: </p>
+    <p>1<b>
+            <font color="#FF0000"> ;</font>
+        </b> 2<sup>-1</sup>(AM - XC + AY - BX <font color="#FF0000">DT</font>:
+        -1<b>
+            <font color="#FF0000"> ;</font>
+        </b>
+        <font color="#0000FF">Σx</font>
+        - AY + BX <font color="#FF0000">DT</font>:
+    </p>
+    <p>A: ?→A: 0 <b>
+            <font color="#FF0000">;</font>
+        </b> Ans A - XD -
+        <font color="#0000FF">n</font>
+        <font color="#FF0000">DT</font>: BM - YC→X: BA - YD→Y:
+    </p>
+    <p>CA - MD→M: ?→A: ?→B: ?→C: ?→D: AX + C<font color="#0000FF">Σx</font> - B<font color="#0000FF">Σx<sup>2</sup>
+        </font>
+        <b>
+            <font color="#FF0000">;</font>
+        </b> 0 <font color="#FF0000">DT</font>:
+    </p>
+    <p>DX - CY + BM→X: C<font color="#0000FF">n</font> - AM - D<font color="#0000FF">Σx<sup>2</sup></font>→M: AY
+        + D<font color="#0000FF">Σx</font> - B<font color="#0000FF">n</font>→Y: </p>
+    <p><b>
+            <font color="#FF0000">;</font>
+        </b> 0
+        <font color="#FF0000">DT</font>: ?→D: ?→A: ?→B: ?→C: AnsC - DX - AM - BY
+    </p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF">第二個程式</font> (217 bytes)
+    </p>
+    <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: ?→M: </p>
+    <p>1<b>
+            <font color="#FF0000"> ;</font>
+        </b> 2<sup>-1</sup>(AM - XC + AY - BX <font color="#FF0000">DT</font>:
+        -1<b>
+            <font color="#FF0000"> ;</font>
+        </b>
+        <font color="#0000FF">Σx</font>
+        - AY + BX <font color="#FF0000">DT</font>:
+    </p>
+    <p>A: ?→A: 0 <b>
+            <font color="#FF0000">;</font>
+        </b> Ans A - XD -
+        <font color="#0000FF">n</font>
+        <font color="#FF0000">DT</font>: BM - YC→X: BA - YD→Y:
+    </p>
+    <p>CA - MD→M: ?→A: ?→B: ?→C: ?→D: AX + C<font color="#0000FF">Σx</font> - B<font color="#0000FF">Σx<sup>2</sup>
+        </font>
+        <b>
+            <font color="#FF0000">;</font>
+        </b> 0 <font color="#FF0000">DT</font>:
+    </p>
+    <p>DX - CY + BM→X: C<font color="#0000FF">n</font> - AM - D<font color="#0000FF">Σx<sup>2</sup></font>→M: AY
+        + D<font color="#0000FF">Σx</font> - B<font color="#0000FF">n</font>→Y: </p>
+    <p><b>
+            <font color="#FF0000">;</font>
+        </b> 0 <font color="#FF0000">DT</font>: Ans→D:
+        X┘D→A: M┘D→B: Y┘D→C:
+        D: ?→D:
+    </p>
+    <p>
+        ?→A: ?→B: ?→C: AnsC - DX - AM - BY</p>
+    <p>
+        　</p>
+    <p>
+        例題1: 計算以下行列式的值。</p>
+    <p>
+        
+    </p>
+    <p>
+        按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1
+        EXE -1 EXE 2 EXE 5 EXE </p>
+    <p>
+        1 EXE 3 EXE 1 EXE 10 EXE 4 EXE 3 EXE 2 EXE 1 EXE
+        (顯示答案為30)</p>
+    <p>
+        　</p>
+    <p>
+        例題2:
+        解聯立方程 :</p>
+    <p>
+    <p>
+        <font color="#FF0000">(只限第二個程式)</font>
+    </p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE
+        -1 EXE 2 EXE 5 EXE 1 EXE 3 EXE 1 EXE 10 EXE</p>
+    <p>(顯示方程組行列式為 -2) EXE (顯示x=1) EXE (顯示y=2) EXE (顯示z=3)</p>
+    <p>計算完結後按 AC或 EXE終止程式</p>
+    <p>註1: 按 RCL A、RCL B、RCL C及RCL D顯示三根及方程組行列式的值。</p>
+    <p>
+        　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

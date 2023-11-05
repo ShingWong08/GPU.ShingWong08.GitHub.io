@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>四階矩陣乘法 (4×4 matrix multiplication)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u>
+            <font size="5"><b>四階矩陣乘法 (4×4 matrix multiplication)</font></b>
+        </u></p>
+    <p>程式編寫日期: 2008年11月28日 修改日期: 2008年12月15日</p>
+    <p>程式可以計算一個 4 × 4 矩陣及另一個
+        4 × n 矩陣的乘積，其中
+        n是正整數。第一個程式限制為輸入數據
+        的&#32118;對值必須小於1000000的整數，否則計算有可能錯誤，而第二個程式的限制為輸入數據的&#32118;對值必須小於1000的三位小數(最多可以有三位小數)，否則計算有可能錯誤。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF"> n</font> 按 Shift 1 3 <font color="#0000FF">Σx </font>按 Shift 1 2，<font
+            color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">Σxy</font>
+        按 Shift 1 → 3)，FreqOn 按 Shift MODE
+        ← ← 1，<font size="1">E </font>是按 EXP 。</p>
+    <p>第一個程式 (299bytes，<font color="#FF0000">整數版</font>)</p>
+    <p>FreqOn: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
+    <p>
+        <font color="#FF0000">;</font> A + <font size="1">E</font> - 7B - 4
+        <font color="#FF0000">DT</font>: C + <font size="1">E</font> - 7D - 1
+        <font color="#FF0000">DT</font>: 1 <font color="#FF0000">,</font> X + <font size="1">E</font> - 7Y
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: 0 <font color="#FF0000">,</font> - <font color="#0000FF">Σy </font>
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>
+        <font color="#FF0000">,</font> A + <font size="1">E</font> - 7B
+        <font color="#FF0000">DT</font>: C + <font size="1">E</font> - 7D
+        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: X + <font size="1">E</font> - 7Y→X:
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D: A + <font size="1">E</font> - 7B→Y: C + <font size="1">E</font> -
+        7D→M:</p>
+    <p>While 1: ?→A: ?→B: ?→C: ?→D: Fix 0: </p>
+    <p>ARnd(<font color="#0000FF">n</font>)
+        + <font size="1">E</font>7B( <font color="#0000FF">n</font> - Rnd(<font color="#0000FF">n</font>)
+        ) + CRnd(<font color="#0000FF">Σx</font>) + <font size="1">E</font>7D( <font color="#0000FF">Σx</font> - Rnd(
+        <font color="#0000FF">Σx</font>◢
+    </p>
+    <p>ARnd(<font color="#0000FF">Σxy</font>) + <font size="1">E</font>7B( <font color="#0000FF">Σxy</font> - Rnd(<font
+            color="#0000FF">Σxy</font>)
+        ) + CRnd(<font color="#0000FF">Σy</font>) + <font size="1">E</font>7D( <font color="#0000FF">Σy</font> -
+        Rnd(<font color="#0000FF">Σy</font>◢ </p>
+    <p>
+        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: ARnd(Ans) + <font size="1">E</font>7B(
+        Ans - Rnd(Ans) ) + CRnd(X) + <font size="1">E</font>7D( X - Rnd(X◢
+    </p>
+    <p>ARnd(Y) + <font size="1">E</font>7B( Y - Rnd(Y) ) + CRnd(M) + <font size="1">E</font>7D(
+        M - Rnd(M: Norm 1◢ WhileEnd</p>
+    <p>　</p>
+    <p>第二個程式 (333bytes，<font color="#FF0000">三位小數版</font>)</p>
+    <p>FreqOn: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
+    <p>
+        <font color="#FF0000">;</font> A + <font size="1">E</font> - 10B - 4
+        <font color="#FF0000">DT</font>: C + <font size="1">E</font> - 10D - 1
+        <font color="#FF0000">DT</font>: 1 <font color="#FF0000">,</font> X + <font size="1">E</font> -
+        10Y
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: 0 <font color="#FF0000">,</font> - <font color="#0000FF">Σy </font>
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>
+        <font color="#FF0000">,</font> A + <font size="1">E</font> - 10B
+        <font color="#FF0000">DT</font>: C + <font size="1">E</font> - 10D
+        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: X + <font size="1">E</font> -
+        10Y→X:
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D: A + <font size="1">E</font> - 10B→Y: C + <font size="1">E</font>
+        - 10D→M:</p>
+    <p>While 1: ?→A: ?→B: ?→C: ?→D: Fix 3: </p>
+    <p>ARnd(<font color="#0000FF">n</font>)
+        + <font size="1">E</font>10B( <font color="#0000FF">n</font> - Rnd(<font color="#0000FF">n</font>)
+        ) + CRnd(<font color="#0000FF">Σx</font>) + <font size="1">E</font>10D( <font color="#0000FF">Σx</font> - Rnd(
+        <font color="#0000FF">Σx</font>:
+        Norm 1◢ Fix 3:
+    </p>
+    <p>ARnd(<font color="#0000FF">Σxy</font>) + <font size="1">E</font>10B( <font color="#0000FF">Σxy</font> - Rnd(<font
+            color="#0000FF">Σxy</font>)
+        ) + CRnd(<font color="#0000FF">Σy</font>) + <font size="1">E</font>10D( <font color="#0000FF">Σy</font> -
+        Rnd(<font color="#0000FF">Σy</font>: Norm 1◢ Fix 3:</p>
+    <p>
+        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: ARnd(Ans) + <font size="1">E</font>10B(
+        Ans - Rnd(Ans) ) + CRnd(X) + <font size="1">E</font>10D( X - Rnd(X: Norm 1◢ Fix
+        3:
+    </p>
+    <p>ARnd(Y) + <font size="1">E</font>10B( Y - Rnd(Y) ) + CRnd(M) + <font size="1">E</font>10D(
+        M - Rnd(M: Norm 1◢ WhileEnd</p>
+    <p>　</p>
+    <p>例題: 計算下列矩陣的乘積:</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 2 EXE 3 EXE 4 EXE 5
+        EXE 6 EXE 7 EXE </p>
+    <p>8 EXE 9 EXE 10 EXE 11 EXE 12 EXE 13 EXE 14
+        EXE 15 EXE 16 EXE </p>
+    <p>(第一個矩陣，由左至右，上至下輸入) </p>
+    <p>1 EXE 5 EXE 9 EXE 13 EXE (輸入第二個矩陣，第一欄的數據)</p>
+    <p>(顯示90) EXE (顯示202) EXE (顯示314) EXE (顯示426，這四個數值為答案的第一欄) </p>
+    <p>EXE 2 EXE 6 EXE 10 EXE 14 EXE (輸入第二個矩陣，第二欄的數據)</p>
+    <p>(顯示100) EXE (顯示228) EXE (顯示356) EXE (顯示484，這四個數值為答案的第二欄) </p>
+    <p>EXE 3 EXE 7 EXE 11 EXE 15 EXE (輸入第二個矩陣，第二欄的數據)</p>
+    <p>(顯示110) EXE (顯示254) EXE (顯示398) EXE (顯示542，這四個數值為答案的第二欄) </p>
+    <p>EXE 4 EXE 8 EXE 12 EXE 16 EXE (輸入第二個矩陣，第二欄的數據)</p>
+    <p>(顯示120) EXE (顯示280) EXE (顯示440) EXE (顯示600，這四個數值為答案的第二欄) </p>
+    <p>所以:</p>
+    <p>
+    <p>計算完結後請按 AC 終止程式。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+    <p>FreqOn: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
+    <p>A + <font size="1">E</font> - 7B , C + <font size="1">E</font> - 7D
+        <font color="#FF0000">;</font> X + <font size="1">E</font> - 7Y
+        <font color="#FF0000">DT</font>: ?→A:
+    </p>
+    <p>?→B: ?→C: ?→D: ?→X: ?→Y: A + <font size="1">E</font> - 7B→M:</p>
+    <p>C + <font size="1">E</font> - 7D→A: X + <font size="1">E</font> - 7Y→B: ?→C:
+        ?→D: </p>
+    <p>?→X: ?→Y: C + <font size="1">E</font> - 7D→C: X + <font size="1">E</font> -
+        7Y→D:</p>
+    <p>While 1: ?→X: ?→Y: X + <font size="1">E</font> - 7Y→X: ?→Y: Y:</p>
+    <p>?→Y: Ans + <font size="1">E</font> - 7Y→Y: Fix 0: Rnd(<font color="#0000FF">maxX</font>)Rnd(X)
+        + </p>
+    <p>
+        <font size="1">E</font>14( <font color="#0000FF">maxX</font> - Rnd(<font color="#0000FF">maxX</font>)
+        )( X - Rnd(X) ) + Rnd(<font color="#0000FF">maxY</font>)
+    </p>
+    <p>Rnd(Y) + <font size="1">E</font>14( <font color="#0000FF">maxY</font> - Rnd(<font color="#0000FF">maxY</font>)
+        )( Y - Rnd(Y◢ </p>
+    <p>Rnd(<font color="#0000FF">n</font>)Rnd(X) + <font size="1">E</font>14(
+        <font color="#0000FF">n</font> - Rnd(<font color="#0000FF">n</font>) )( X -
+        Rnd(X) ) +
+    </p>
+    <p>Rnd(M)Rnd(Y) + <font size="1">E</font>14( M - Rnd(M) )( Y - Rnd(Y◢ </p>
+    <p>Rnd(A)Rnd(X) + <font size="1">E</font>14( A - Rnd(A) )( X - Rnd(X) ) +</p>
+    <p>Rnd(B)Rnd(Y) + <font size="1">E</font>14( B - Rnd(B) )( Y - Rnd(Y◢ </p>
+    <p>Rnd(C)Rnd(X) + <font size="1">E</font>14( C - Rnd(C) )( X - Rnd(X) ) +</p>
+    <p>Rnd(D)Rnd(Y) + <font size="1">E</font>14( D - Rnd(D) )( Y - Rnd(Y:</p>
+    <p>Norm 1◢ WhileEnd</p>
+    <p>　</p>
+    <p>　</p>
+</body>
+
+</html>

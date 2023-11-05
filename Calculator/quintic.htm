@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>一元五次方程</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">一元五次方程</font>
+            </b></u></p>
+    <p>更新日期: 2012年12月3日</p>
+    <p>程式由S<font color="#0000FF">kwai</font> 提供及參考了<font color="#0000FF">roviury</font>意見修改。</p>
+    <p>程式可以計算一元五次方程式(quintic equations)的五個根(包括複數根)。</p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>程式 (307 bytes)</p>
+    <p>?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: π→M: <br>
+        <br>
+        While (AM^(5) + BM<sup>2 2</sup> + CM<sup>3</sup> + DM<sup>2</sup> + XM + Y) <br>
+        <br>
+        ÷ (5AM<sup>
+            <font color="#000000">2 2</font>
+        </sup> + 4BM<sup>3</sup> + 3CM<sup>2</sup>
+        + 2DM + X <font color="#FF0000">M-</font>: WhileEnd: <br>
+        <br>
+        M◢ B + AAns→B: C + AnsM→C: D + AnsM→D: X + AnsM→M: <br>
+        <br>
+        B┘(4A→B: C┘A - 6Ans<sup>2</sup>→C: D┘A - 4B<sup>3</sup> - 2AnsB→D: M┘A - B( B<sup>3</sup>
+        + BC + Ans→M:
+    </p>
+    <p>C<sup>2</sup> - 4Ans→X: 8C<sup>3</sup> - 9┘2( 2AnsC+3D<sup>2</sup>→Y:
+        4C<sup>2</sup> - 3X→M: √( Y<sup>2</sup> - Ans<sup>3</sup>: </p>
+    <p>Ans - Y - 2Ans( Ans=Y→Y: <font color="#FF0000"><sup>3</sup>√(</font> Abs( Ans
+        <font color="#FF0000">=&gt;</font> Ans∠( 3<sup>-1</sup>arg( Y ) + 5!<sup>o</sup> (π<sup>r</sup>
+        = arg( Y→Y:
+    </p>
+    <p>Abs(Ans <font color="#FF0000">=&gt;</font> Y + M┘Y: √( ( Ans - 2C)┘3→A: A
+        <font color="#FF0000">=&gt;</font> D┘Ans→X: For -1→D To 1 Step 2: <br>
+        <br>
+        √( 2DX - 2C-A<sup>2</sup>→M: ( Ans - AD )┘2 - B◢ Ans - M◢ Next
+    </p>
+    <p>　</p>
+    <p>例題1: 解 x<sup>5</sup> - 3x<sup>4</sup> - 23x<sup>3</sup> + 51x<sup>2</sup> +
+        94x - 120 = 0 </p>
+    <p>
+        按 Prog 1 再按 1 EXE - 3 EXE - 23 EXE 51 EXE 94 EXE - 120 EXE (顯示第一根為3)</p>
+    <p>
+        EXE (顯示第二個根為 5) EXE (顯示第三個根為 1)</p>
+    <p>
+        EXE (顯示第三個根為 - 2) EXE (顯示第五個根為 -4)</p>
+    <p>
+        計算完結按 AC 或 EXE 終止程式</p>
+    <p>
+        　</p>
+    <p>例題2: 解 3x<sup>5</sup> - 2x<sup>4</sup> - 22x<sup>3</sup> + 27x<sup>2</sup> -
+        10x + 24 = 0 </p>
+    <p>
+        按 Prog 1 再按 3 EXE -2 EXE -22 EXE 27 EXE -10 EXE 24 EXE (顯示第一根為2)</p>
+    <p>
+        EXE
+        <strong>
+            <font color="#FF0000">( 此時計算機右上角出現R&lt;=&gt;I，表示為複數解)</font>
+        </strong>
+    </p>
+    <p>
+        (顯示第二個根實數部為 -
+        0.101554) </p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第二個根虛數部為 0.838323 i)</p>
+    <p>
+        EXE (顯示第三個根的實數部為
+        - 0.101554)</p>
+    <p>
+        Shift Re&lt;=&gt;Im (顯示第三個根虛數部為
+        - 0.838323 i)</p>
+    <p>
+        EXE (顯示第四個根為1.86977)</p>
+    <p>
+        EXE (顯示第五個根為 - 3)</p>
+    <p>
+        計算完結按 AC 或 EXE 終止程式</p>
+    <p>
+        　</p>
+    <p>
+        註: 程式使用牛頓法計算第一個根的值，可能需要較長的時間，另外若果第一個根為重根，誤差可能會較大。</p>
+    <p>
+        　</p>
+    <p>
+        　</p>
+    <p>
+        　</p> <!--msthemeseparator-->
+    <p align="center">
+    <!--msthemeseparator-->
+    <p align="center">
+    <p>
+        　</p>
+    <p>
+        <b>
+            <font color="#0000FF">程式舊版</font>
+        </b>
+    </p>
+    <p>
+        　</p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>
+        <font color="#FF0000">注意</font> : 若果不需要記存方程的答案，程式中<font color="#008000">綠色</font>部份可以不輸入。
+    </p>
+    <p>程式 (350 / <font color="#008000">346</font> bytes)</p>
+    <p>?→X: ?→B: ?→C: ?→A: ?→D: ?→Y:
+        π→M:</p>
+    <p>While (XM^(5) + BM<sup>2 2</sup> + CM<sup>3</sup> + AM<sup>2</sup> + DM
+        + Y)</p>
+    <p>÷ (5XM<sup>2 2</sup> + 4BM<sup>3</sup> + 3CM<sup>2</sup>
+        + 2AM + D <font color="#FF0000">M-</font>: WhileEnd:</p>
+    <p>- (B┘X + M)┘4→B: C┘X - 4BM→C: A┘X + CM→A:</p>
+    <p>M→Y◢ 3B<sup>2 2</sup> - CB<sup>2</sup> - AB - D┘X - AM→M: </p>
+    <p>CB┘2 - 2B<sup>3</sup> + A┘4→A: B<sup>2</sup> - C┘6→C: </p>
+    <p>If A: Then A<sup>2</sup> - CM - C<sup>3</sup>: </p>
+    <p>Ans + √(Ans<sup>2</sup> + (M┘3
+        - C<sup>2</sup>)<sup>3</sup>→D: iD - iConjg( D <font color="#FF0000">=&gt;</font> 2<font color="#FF0000">
+            <sup>&nbsp; 3</sup>√(
+        </font>Abs(
+        D
+        ) ) </p>
+    <p>cos ( 3<sup>-1</sup> arg( D <font color="#FF0000">=&gt;</font> Goto
+        2: <font color="#FF0000"><sup>3</sup>√( </font>D) + <font color="#FF0000"><sup>3</sup>√(</font>2A<sup>2 </sup>
+        - 2CM - 2C<sup>3</sup> - D: Lbl 2: </p>
+    <p>√(Ans┘2 + C→M: 3C - M<sup>2</sup>→C: C + A÷M→A:</p>
+    <p>Else 3C→C: C + √( C<sup>2</sup> +
+        M→A: M<font color="#FF0000">M-</font>: IfEnd:&nbsp; 2C - A→C: </p>
+    <p>√( Abs( A <font color="#FF0000">=&gt;</font>
+        Ans∠ (&nbsp; . 5 arg (A: Ans - M + B→A◢ √( Abs( C<font color="#FF0000"> =&gt;</font>
+    </p>
+    <p>Ans∠ (&nbsp; . 5 arg (C:&nbsp; Ans + M + B→C◢ 2B - 2M - A<font color="#008000">→M</font>◢ </p>
+    <p>4B - A - Ans - C<font color="#008000">→B</font>&nbsp; </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

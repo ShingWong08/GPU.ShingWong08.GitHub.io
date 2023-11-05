@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <title>部份分式(III)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">部分分式(III)</font>
+            </b></u></p>
+    <p>
+        <font color="#FF0000">最新更新日期: 2011年6月16日</font>
+    </p>
+    <p>這個程式與<a href="partialFraction_2.htm">部分分式(II)</a>不同的是沒有預設某些係數為1，可以分解一個多項式分式為部
+        分分式(Partial
+        Fraction)，其中分子為是二次多項式
+        Ax<sup>2</sup>
+        + Bx + C，而分母為三次多項式，可以是
+        (ax + b)(cx + d)(ex + f)
+        或 (ax<sup>2</sup>
+        + bx + c)(dx + e)，其中 A, B, C,
+        a, b, c, d, e, f
+        均為實數。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font>
+        按 Shift 1 → 2)。</p>
+    <p>程式 (325 bytes)</p>
+    <p>ClrStat: ?→M: ?→A: ?→B: ?→C: ?→D: ?→X: M
+        <font color="#FF0000">=&gt;</font> Goto 0:
+    </p>
+    <p>AD→Y: A <font color="#FF0000">,</font> D <font color="#FF0000">DT</font>:
+        B┘A→A: C┘<font color="#0000FF">Σx</font>→B:
+        Goto 1: Lbl 0: MBD→Y:</p>
+    <p>B <font color="#FF0000">,</font> D <font color="#FF0000">DT</font>: A┘M→A:
+        C┘B→B: Lbl 1: X┘D→C: ?→D: D┘Y→D:</p>
+    <p>?→X: X┘Y→X: Y: ?→Y: Y┘Ans→Y: M <font color="#FF0000">=&gt;</font> Goto 2: (Y - CX + DC<sup>2</sup>)</p>
+    <p>┘(B - CA + C<sup>2</sup>→M:
+        <font color="#0000FF">Σx</font>(D -
+        M◢
+        <font color="#0000FF">Σx</font>X -
+        <font color="#0000FF">Σx</font>AM
+        - AnsC◢
+        <font color="#0000FF">Σy</font>M◢ Lbl 2:
+    </p>
+    <p>A - B <font color="#FF0000">=&gt;</font> Goto 3: C - A <font color="#FF0000">=&gt;</font>
+        Goto 4: M<sup>3</sup>(Y - AX + DA<sup>2</sup>◢ </p>
+    <p>M<sup>2</sup>(X - 2AD◢
+        MD◢ Lbl 3: M(Y - AX + DA<sup>2</sup>)┘(Ans(A - C◢ </p>
+    <p>
+        <font color="#0000FF">Σx</font>(Y - BX + DB<sup>2</sup>)┘((B - A)(B - C◢ <font color="#0000FF">Σy</font>(Y - CX
+        + DC<sup>2</sup>)┘((C - A)(C - B◢
+    </p>
+    <p>Lbl 4: M<sup>2</sup>(Y - AX + DA<sup>2</sup>)┘Ans◢ M(D - (Y - CX + DC<sup>2</sup>)┘(C - A)<sup>2</sup>◢ </p>
+    <p>
+        <font color="#0000FF">Σy</font>(D - Ans┘M
+    </p>
+    <p>注意: 程式以<font color="#FF0000">降冪的原則</font>輸入係數，答案出現的分子係數與<font color="#FF0000">輸入分母的因子次序一致</font>，若果分母輸入係數相同，答案則以
+        <font color="#FF0000">分母的冪降冪出現</font>。
+    </p>
+    <p>　</p>
+    <p>例題1: 將下列分式代為部分分式</p>
+    <p>
+    <p>按
+        Prog 1&nbsp;再按 </p>
+    <p>2 EXE - 3
+        EXE 3 EXE 4 EXE 4 EXE - 5 EXE </p>
+    <p>
+        (先輸入分母係數，因為分母為三次，冪數較高)</p>
+    <p>14
+        EXE 42 EXE - 86 EXE (分子係數，顯示第一項分式的分子為1)</p>
+    <p>EXE (顯示第二項分式的分子為 - 2) </p>
+    <p>EXE (顯示第三項分式的分子為 3)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>所以答案為:</p>
+    <p>
+    <p>　</p>
+    <p>例題2: 將下列分式代為部分分式</p>
+    <p>
+    <p>按
+        Prog 1&nbsp;再按 </p>
+    <p>2 EXE 3
+        EXE 2 EXE 3 EXE 3 EXE 4 EXE</p>
+    <p>
+        (分母因子係數，按降冪排列所以先輸入二次項，所以輸入兩次2及3)</p>
+    <p>- 6 EXE - 13 EXE - 7 EXE (分子係數，顯示分母(2x+3)<sup>2</sup>分母的分子為 2)</p>
+    <p>EXE (顯示分母(2x+3)的分子為 1) </p>
+    <p>EXE (顯示第三項分式的分子為 - 3)</p>
+    <p>所以答案為:</p>
+    <p>
+    <p>　</p>
+    <p>例題3: 將下列分式代為部分分式</p>
+    <p>
+    <p>按
+        Prog 1&nbsp;再按 </p>
+    <p>2 EXE 3
+        EXE 2 EXE 3 EXE 2 EXE 3 EXE(先輸入分母因子的係數)</p>
+    <p>4 EXE 18 EXE 14 EXE (分子係數，顯示分母(2x+3)<sup>3</sup>的分子為 - 4)</p>
+    <p>EXE (顯示分母(2x+3)<sup>2</sup>的分子為3) </p>
+    <p>EXE (顯示分母(2x+3)的分子為 1)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>所以答案為:</p>
+    <p>
+    <p>　</p>
+    <p>例題4: 將下列分式代為部分分式</p>
+    <p>
+    <p>按
+        Prog 1&nbsp;再按 0 EXE (<font color="#FF0000">注意</font>:
+        0表示分母不可以完全分解與部分分式(II)不同)</p>
+    <p>2 EXE 2
+        EXE 3 EXE 3 EXE 4 EXE </p>
+    <p>(輸入分母因子係數，按降冪所以先輸入二次項係數)</p>
+    <p>6 EXE 12 EXE 17 EXE (分子係數，顯示二次分母的分子x係數為 0)</p>
+    <p>EXE (顯示二次分母的分子常數項為 2) </p>
+    <p>EXE (顯示一次分母的分子為 3)</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>所以答案為:</p>
+    <p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+    <p>　</p> <!--msthemeseparator-->
+    <p align="center">
+    <!--msthemeseparator-->
+    <p align="center">
+    <p>
+        <font color="#0000FF"><b>程式舊版</b></font>
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>為平均x
+        按 shift 2 1)</p>
+    <p>程式 (325 bytes)</p>
+    <p>ClrStat: ?→M: ?→A: ?→B: ?→C: ?→D: ?→X: M
+        <font color="#FF0000">=&gt;</font> Goto 0:
+    </p>
+    <p>AD→Y: A <font color="#FF0000">;</font> D <font color="#FF0000">DT</font>:
+        B┘A→A: C┘<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>→B:
+        Goto 1: Lbl 0: MBD→Y:</p>
+    <p>B <font color="#FF0000">;</font> D <font color="#FF0000">DT</font>: A┘M→A:
+        C┘B→B: Lbl 1: X┘D→C: ?→D: D┘Y→D:</p>
+    <p>?→X: X┘Y→X: Y: ?→Y: Y┘Ans→Y: M <font color="#FF0000">=&gt;</font> Goto 2: (Y - CX + DC<sup>2</sup>)</p>
+    <p>┘(B - CA + C<sup>2</sup>→M:
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>(D -
+        M◢
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>X -
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>AM
+        - AnsC◢
+        <font color="#0000FF">n</font>M◢ Lbl 2:
+    </p>
+    <p>A - B <font color="#FF0000">=&gt;</font> Goto 3: C - A <font color="#FF0000">=&gt;</font>
+        Goto 4: M<sup>3</sup>(Y - AX + DA<sup>2</sup>◢ </p>
+    <p>M<sup>2</sup>(X - 2AD◢
+        MD◢ Lbl 3: M(Y - AX + DA<sup>2</sup>)┘(Ans(A - C◢ </p>
+    <p>
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>(Y - BX + DB<sup>2</sup>)┘((B - A)(B - C◢ <font color="#0000FF">n</font>(Y - CX + DC<sup>2</sup>)┘((C -
+        A)(C - B◢
+    </p>
+    <p>Lbl 4: M<sup>2</sup>(Y - AX + DA<sup>2</sup>)┘Ans◢ M(D - (Y - CX + DC<sup>2</sup>)┘(C - A)<sup>2</sup>◢ </p>
+    <p>
+        <font color="#0000FF">n</font>(D - Ans┘M
+    </p>
+    <p>注意: 程式以<font color="#FF0000">降冪的原則</font>輸入係數，答案出現的分子係數與<font color="#FF0000">輸入分母的因子次序一致</font>，若果分母輸入係數相同，答案則以
+        <font color="#FF0000">分母的冪降冪出現</font>。
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>聯立三元一次方程(高斯消去法) (Simultaneous Linear Equation in three unknowns by Gaussian elimination)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">聯立三元一次方程(高斯消去法)</font>
+            </b></u></p>
+    <p>更新日期: 2012年3月29日</p>
+    <p>程式利用高斯消去法(Gaussian Elimination)，計算及簡化方程式組所代表的3×4增廣矩陣(3×4
+        augmented matrix)，透過這個矩陣可直接得出聯立三元一次方程的唯一解，或很容易決斷無解或求得無限解的通解。</p>
+    <p>簡化增廣矩陣為:</p>
+    <p>
+    <p>程式會計算出a, b, c, d, e, f, g, h及i的值。</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>藍色的英文字為統計模式中的變數(<font color="#0000FF">maxX</font> 按 shift 2 2 2，<font color="#0000FF">maxY</font>
+        按 shift 2 2 → 2，<font color="#0000FF">n</font>
+        按 Shift 1 3)，FreqOn 按 Shift MODE ← ← 1。</p>
+    <p>程式(229 bytes)</p>
+    <p>Freqon: ?→M: ?→X: ?→Y: ?→A: X┘M
+        <font color="#FF0000">,</font> Y┘M <font color="#FF0000">; </font>A┘M<font color="#FF0000"> DT</font>:
+    </p>
+    <p>For 0→A To 1: X→B: Y→C: M→D: ?→M: ?→X: ?→Y:
+    </p>
+    <p>X - M<font color="#0000FF">maxX</font>→X: Y - M<font color="#0000FF">maxY</font>→Y: M: ?→M: M - Ans<font
+            color="#0000FF"> n</font>→M:
+        Next:</p>
+    <p>If B=0: Then X→B: C + Y→C: D + M→D: IfEnd: If B: Then C┘B→C:
+    </p>
+    <p>D┘B→D: 1→B: Y - XC→Y: M - XD→M: 0◢ Else <font color="#0000FF">maxX</font>◢ </p>
+    <p>Y=0 <font color="#FF0000">=&gt;</font> M + D→M: Y=0 <font color="#FF0000">=&gt;</font>
+        C→Y: IfEnd: If Y: Then M┘Y→M: </p>
+    <p>1→Y: D - CM→D: 0→C◢ Else <font color="#0000FF">maxY</font> - <font color="#0000FF">maxX</font>CB◢ </p>
+    <p>IfEnd: <font color="#0000FF">n</font> - <font color="#0000FF">maxX</font>DB - <font color="#0000FF">maxY</font>
+        MY◢ B◢ C◢ D◢
+        0◢ Y◢ M</p>
+    <p>　</p>
+    <p>例題1: 化簡下列方程組的增廣矩陣及因此解方程</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE -1 EXE 2 EXE 5 EXE </p>
+    <p>1 EXE 3 EXE 1 EXE 10 EXE (顯示0) EXE (顯示0) EXE (顯示1)</p>
+    <p>EXE (顯示1) EXE (顯示0) EXE (顯示2)</p>
+    <p>EXE (顯示0) EXE (顯示1) EXE (顯示3)</p>
+    <p>即化簡增廣矩陣為:</p>
+    <p>
+    <p>等價方程組為:</p>
+    <p>
+    <p>所以方程式的解為 x=1, y=2 及 z=3</p>
+    <p>　</p>
+    <p>例題2: 化簡下列方程組的增廣矩陣及因此解方程</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 0 EXE 10 EXE 5 EXE 3 EXE 1 EXE - 4 EXE -1 EXE </p>
+    <p>4 EXE 1 EXE 6 EXE 1 EXE (顯示0) EXE (顯示10) EXE (顯示5)</p>
+    <p>EXE (顯示1) EXE (顯示 - 34) EXE (顯示 -16)</p>
+    <p>EXE (顯示0) EXE (顯示0) EXE (顯示 -3)</p>
+    <p>即化簡增廣矩陣為:</p>
+    <p>
+    <p>等價方程組為:</p>
+    <p>
+    <p>由於 0= - 3表示方程組出現矛盾，所以方程組無解。</p>
+    <p>　</p>
+    <p>例題3: 化簡下列方程組的增廣矩陣及因此解方程</p>
+    <p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 2 EXE - 1 EXE 2 EXE 2 EXE 5 EXE 2 EXE -1 EXE </p>
+    <p>7 EXE 17 EXE 5 EXE - 1 EXE (顯示0) EXE (顯示 -9) EXE (顯示12)</p>
+    <p>EXE (顯示1) EXE (顯示 4) EXE (顯示 - 5)</p>
+    <p>EXE (顯示0) EXE (顯示0) EXE (顯示 0)</p>
+    <p>即化簡增廣矩陣為:</p>
+    <p>
+    <p>等價方程組為:</p>
+    <p>
+    <p>令 z=t，得通解為 x = 12 + 9t, y= - 5 - 4t 及 z = t (無限多組解)</p>
+    <p>　</p>
+    <p>例題4: 化簡下列方程組的增廣矩陣及因此解方程(以k表示)</p>
+    <p>
+    <p>因常數項包含一個一次未知代數項，可以分兩次執行程式(沒有k及有k常數)求出答案，再將答案整合即可。方程可寫為:</p>
+    <p>
+    <p>先計算沒有k常數</p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE -1 EXE 2 EXE 5 EXE </p>
+    <p>1 EXE 3 EXE 1 EXE 10 EXE (顯示0) EXE (顯示0) EXE (顯示1)</p>
+    <p>EXE (顯示1) EXE (顯示0) EXE (顯示2)</p>
+    <p>EXE (顯示0) EXE (顯示1) EXE (顯示3)</p>
+    <p>再計算有k常數</p>
+    <p>按
+        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 0 EXE 1 EXE -1 EXE 2 EXE 2 EXE </p>
+    <p>1 EXE 3 EXE 1 EXE - 2 EXE (顯示0) EXE (顯示0) EXE (顯示1，亦即是 k )</p>
+    <p>EXE (顯示1) EXE (顯示0) EXE (顯示-1，亦即是 - k )</p>
+    <p>EXE (顯示0) EXE (顯示1) EXE (顯示0，亦即是 0k )</p>
+    <p>即化簡增廣矩陣為:</p>
+    <p>
+    <p>所以方程解為 x = 1 + k, y = 2 - k, z = 3</p>
+    <p>　</p>
+    <p>註1: 程式限制為第一個輸入數值不能等於0，否則會出現Math ERROR。</p>
+    <p>註2: 例題4分兩次輸入的方法只適用於未知代數出現在常數項(最後的欄內)，若未知代數只出現在其它的欄內(例如:
+        z係數的欄)，方法未必適用，但依然可以將包含未知代數的欄調到取後變成最後的欄，以例題4的方法輸入化簡矩陣，但所求得的矩陣未必是完整解答。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

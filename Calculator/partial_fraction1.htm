@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>部份分式(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">部分式(I)</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年12月1日</p>
+    <p>
+        程式可以將一個分式(分母為二次多項式ax<span lang="en">&sup2;+bx+c</span>及分子為一次多項式Ax+B)分解為二個分母為一次多項式的分式。
+        第二個程式更可計算分母為(x+a)(x+b)的形式。另外若果輸入數據為整數(或分數)及答案為有理數時，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+    </p>
+    <p>
+        <font color="#FF0000">第一個程式</font> (84 bytes，使用記憶為A, B, C, X及Y)
+    </p>
+    <p>?→A: ?→B: ?→C: ?→X: ?→Y: </p>
+    <p>(B + √( B<sup>2</sup> - 4AC) )┘(2A→C◢ B┘A - Ans→B◢ </p>
+    <p>B≠C <font color="#FF0000">=&gt;</font> A(C - B→A: B≠C:</p>
+    <p>(XC^( Ans ) - YAns )┘A◢ (Y - XB)┘A</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">第二個程式</font> (100 bytes，可同時計算分母為(x+a)(x+b)形式，使用記憶為A, B, C, X及Y)
+    </p>
+    <p>?→A: ?→B: ?→C: ?→X: ?→Y: </p>
+    <p>A <font color="#FF0000">=&gt;</font> (B - √(B<span lang="en">&sup2; - 4AC) </span>
+        )┘(2A→C: </p>
+    <p>A <font color="#FF0000">=&gt;</font> B┘A - C→B◢ A <font color="#FF0000">=&gt;</font>
+        C◢ A=0 <font color="#FF0000">=&gt;</font> 1→A: </p>
+    <p>B≠C <font color="#FF0000">=&gt;</font> A(B - C→A: B≠C:</p>
+    <p>(XB^( Ans ) - YAns)┘A◢ (Y - XC)┘A</p>
+    <p>　</p>
+    <p>例題1: 將下列分式化為部分分式。</p>
+    <p>
+    <p>按
+        Prog 1&nbsp;再按 1 EXE 5 EXE 6 EXE (先輸入分母)
+    </p>
+    <p>5 EXE 11 EXE (顯示第一個分式分母為3)
+        EXE (顯示第二個分式分母為2)</p>
+    <p>EXE (顯示第一個分式分子為4) EXE
+        (顯示第二個分式分子為1)</p>
+    <p>所以</p>
+    <p>
+    <p>　</p>
+    <p>例題2: 將下列分式化為部分分式。</p>
+    <p>
+    <p>按
+        Prog 1&nbsp;再按 1 EXE 8 EXE 16 EXE (先輸入分母)
+    </p>
+    <p>2 EXE 11 EXE (顯示第一個分式分母為4)
+    </p>
+    <p>EXE
+        (顯示第二個分式分母為4，由於數值相同表示原式分母為完全平方)</p>
+    <p>EXE (顯示第一個分式分子為2) EXE
+        (顯示第二個分式分子為3)</p>
+    <p>所以</p>
+    <p>
+    <p>　</p>
+    <p>例題3: 將下列分式化為部分分式。</p>
+    <p>
+    <p>
+        <font color="#FF0000">只適用於第二個程式</font>
+    </p>
+    <p>按
+        Prog 1&nbsp;再按 0 EXE (0表示分母(x+a)(x+b)形式)</p>
+    <p>3 EXE 2 EXE (先輸入分母)
+    </p>
+    <p>5 EXE 11 EXE (顯示第一個分式分子為4) EXE
+        (顯示第二個分式分子為1)</p>
+    <p>所以</p>
+    <p>
+    <p>　</p>
+    <p>例題4: 將下列分式化為部分分式。</p>
+    <p>
+    <p>
+        <font color="#FF0000">只適用於第二個程式</font>
+    </p>
+    <p>按
+        Prog 1&nbsp;再按 0 EXE (0表示分母(x+a)(x+b)形式)</p>
+    <p>4 EXE 4 EXE (先輸入分母，相同數值表示分母為二次式)
+    </p>
+    <p>2 EXE 11 EXE (顯示第一個分式分母為4) )</p>
+    <p>EXE (顯示第一個分式分子為2) EXE
+        (顯示第二個分式分子為3)</p>
+    <p>所以</p>
+    <p>
+    <p>　</p>
+    <p>註1: 若果分母因子不是 (x+a)(x+b)形式，要自行轉化為合適形式輸入，例如: (3x+4) 可轉化為 3(x+4/3)輸入即可。</p>
+    <p>註2: 若果不用計算分母為ax<span lang="en">&sup2;+bx+c</span>形式可以使用以下附錄程式，程式會較為簡短。</p>
+    <p>
+        <font color="#0000FF">附錄程式</font> (42 bytes)
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D:</p>
+    <p>A=B <font color="#FF0000">=&gt;</font> C◢ (D-CA)┘(B - A+ (B=A◢</p>
+    <p>C - Ans</p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF">附錄程式</font>例題1: 將下列分式化為部分分式。
+    </p>
+    <p>
+    <p>按
+        Prog 1&nbsp;再按 3 EXE 2 EXE (先輸入分母) </p>
+    <p>5 EXE 11 EXE (顯示第一個分式分子為4) EXE
+        (顯示第二個分式分子為1)</p>
+    <p>所以</p>
+    <p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF">附錄程式</font>例題2: 將下列分式化為部分分式。
+    </p>
+    <p>
+    <p>按
+        Prog 1&nbsp;再按 4 EXE 4 EXE (先輸入分母，相同數值表示分母為二次式) </p>
+    <p>2 EXE 11 EXE (顯示第一個分式分母為4) )</p>
+    <p>EXE (顯示第一個分式分子為2) EXE
+        (顯示第二個分式分子為3)</p>
+    <p>所以</p>
+    <p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

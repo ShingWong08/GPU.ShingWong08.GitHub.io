@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>二階矩陣正整數冪(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">二階矩陣正整數冪(I)</font>
+            </b></u></p>
+    <p>
+        <font color="#0000FF"><b>程式新版</b></font>
+    </p>
+    <p>更新日期: 2011年12月29日</p>
+    <p>程式可以計算一個2×2矩陣的正整數冪及其逆矩陣(負整數冪)。
+        另外若果輸入數據為整數時，逆矩陣(負整數冪)答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+    </p>
+    <p>
+        另外網頁尾的附錄程式則只可以計算矩陣的正整冪，不能計算逆矩陣，但可以用作計算矩陣的連續數冪，即在顯示答案後，再輸入整數冪，程式會自動計算答案矩陣的正整數冪，這樣有可能可以減少程式重複計算的次數，因而加快運算的速度。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">maxX</font> 按 shift 2 2 2，<font color="#0000FF">maxY</font>
+        按 shift 2 2 → 2，<font color="#0000FF">n</font> 按 Shift 1 3)。</p>
+    <p>程式 (125 bytes)</p>
+    <p>FreqOn: ?→X: ?→Y: ?→C:?→B: X <b>
+            <font color="#FF0000">,</font>
+        </b> Y&nbsp; <b>
+            <font color="#FF0000">;</font>
+        </b>
+        C
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>Pol(1, 0: 0→C: 1→D: ?→M: While M: </p>
+    <p>
+        <font color="#0000FF">maxX</font> X+ <font color="#0000FF">maxY </font>C→A:
+        <font color="#0000FF">n</font>X + BC→C:
+        A→X:
+    </p>
+    <p>
+        <font color="#0000FF">maxX </font>Y + <font color="#0000FF">maxY </font>D→A:
+        <font color="#0000FF">n</font>Y + BD→D: A→Y:
+    </p>
+    <p>M - 1→M: WhileEnd: X◢ Y◢ C◢ D◢
+        <font color="#000000">1┘(XD - YC→A:</font>
+    </p>
+    <p>
+        <font color="#000000">DA◢ -YA◢ -CA◢ XA</font>
+    </p>
+    <p>註: 程式使用重複計算方法，所以冪數越大，計算時間越長。</p>
+    <p>　</p>
+    <p>例題: 計算以下矩陣及其逆矩陣:</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+    </p>
+    <p>按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE 3 EXE (顯示37)</p>
+    <p>EXE (顯示54) EXE (顯示81) EXE (顯示118) EXE (顯示 -59/4)</p>
+    <p>EXE (顯示 27/4) EXE (顯示 81/8) EXE (顯示 -37/8)</p>
+    <p>所以</p>
+    <p>
+    <p>
+        
+    </p>
+    <p>　</p>
+    <p>附錄程式</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">maxX</font> 按 shift 2 2 2，<font color="#0000FF">maxY</font>
+        按 shift 2 2 → 2，<font color="#0000FF">n</font> 按 Shift 1 3)。</p>
+    <p>程式 (108 bytes)</p>
+    <p>?→X: ?→Y: ?→C: ?→B: Lbl 0: FreqOn: X <b>
+            <font color="#FF0000">,</font>
+        </b> Y&nbsp; <b>
+            <font color="#FF0000">;</font>
+        </b>
+        C
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>Pol(1, 0: 0→C: 1→D: ?→M: While M: </p>
+    <p>
+        <font color="#0000FF">maxX</font> X+ <font color="#0000FF">maxY </font>C→A:
+        <font color="#0000FF">n</font>X + BC→C:
+        A→X:
+    </p>
+    <p>
+        <font color="#0000FF">maxX </font>Y + <font color="#0000FF">maxY </font>D→A:
+        <font color="#0000FF">n</font>Y + BD→D: A→Y:
+    </p>
+    <p>M - 1→M: WhileEnd: X◢ Y◢ C◢ D→B◢ Goto 0</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <title>對戰遊戲(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">對戰遊戲(I)</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">wimwim</font> 提供，網友 <font color="#0000FF">roviury</font>
+        提供簡化意見。</p>
+    <p>遊戲是玩家與電腦進行對戰，第二個程式較長(改進版)，電腦的實力亦較強。</p>
+    <p>程式更新日期: 2011年6月18日</p>
+    <p>注意: <font size="1">E </font>是按 EXP 。</p>
+    <p>第一個程式 (簡化版，515 bytes)</p>
+    <p>
+        <font size="1">E</font>2→C: Fix3:<font size="1"> E</font>3→Y: 2C→M: Y+M÷<font size="1">E</font>3◢ Y→D: M→X: D+X÷
+        <font size="1">E</font>3◢
+    </p>
+    <p>Lbl 0: ?→A: (A&gt;6) + (A≠1)(A≠3)(M&lt;C(7-A<font color="#FF0000"> =&gt; </font>Goto 0: Fix 0: Lbl 1:</p>
+    <p>
+        <font color="#FF0000">Rnd(</font> 6Ran#+.5→B: X=5C<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000">
+            =&gt; </font>Goto 1: 4C≦X<font color="#FF0000"> =&gt; </font>B=6<font color="#FF0000"> =&gt; </font>Goto 1:
+    </p>
+    <p>M-5C<font color="#FF0000"> =&gt; </font>B=4<font color="#FF0000"> =&gt; </font>X≦3C<font color="#FF0000"> =&gt;
+        </font> Goto
+        1: M=5C<font color="#FF0000"> =&gt; </font>B=1<font color="#FF0000"> =&gt;</font> Goto 1:</p>
+    <p>B=5<font color="#FF0000"> =&gt; </font>D=<font size="1">E</font>3<font color="#FF0000"> =&gt; </font>Goto 1: B=2
+        <font color="#FF0000"> =&gt; </font>X&lt;5C<font color="#FF0000"> =&gt; </font>Goto 1: B=4<font color="#FF0000">
+            =&gt; </font>X&lt;3C<font color="#FF0000"> =&gt;</font> Goto 1:
+    </p>
+    <p>B=5<font color="#FF0000"> =&gt; </font>X&lt;2C<font color="#FF0000"> =&gt; </font>Goto
+        1: Fix3: B◢ A=1<font color="#FF0000"> =&gt; </font>80<font color="#FF0000">M-</font>
+        <font color="#FF0000">=&gt; </font>B-4<font color="#FF0000"> =&gt; </font>
+        D-70→D:
+    </p>
+    <p>A=1<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>
+        14+D→D: A=2<font color="#FF0000"> =&gt; </font>5C<font color="#FF0000">M-</font>
+        <font color="#FF0000"> =&gt; </font>B-4<font color="#FF0000"> =&gt; </font>
+        D-5C→D:
+    </p>
+    <p>A=2<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>C+D→D: A=4<font color="#FF0000">
+            =&gt; </font>3C<font color="#FF0000">M-</font>: A=5<font color="#FF0000"> =&gt; </font>2C<font
+            color="#FF0000">M-</font>
+        <font color="#FF0000">=&gt; </font>C+Y→Y:
+    </p>
+    <p>B=1<font color="#FF0000"> =&gt; </font>A-4<font color="#FF0000"> =&gt; </font>Y-70→Y: B=1<font color="#FF0000">
+            =&gt; </font>X-80→X: B=2<font color="#FF0000"> =&gt; </font>A-4<font color="#FF0000"> =&gt; </font>Y-5C→Y:
+    </p>
+    <p>B=2<font color="#FF0000"> =&gt; </font>X-5C→X: B=4<font color="#FF0000"> =&gt; </font>X-3C→X: B=5<font
+            color="#FF0000">=&gt;</font>
+        C+D→D: B=5<font color="#FF0000">=&gt;</font>X-2C→X:</p>
+    <p>B=1<font color="#FF0000"> =&gt; </font>A=3 <font color="#FF0000">=&gt; </font>
+        14+Y→Y: B=2<font color="#FF0000"> =&gt; </font>A=3<font color="#FF0000"> =&gt;</font> C+Y→Y: A=6<font
+            color="#FF0000"> =&gt; </font>50<font color="#FF0000">M+</font>: </p>
+    <p>B=6<font color="#FF0000"> =&gt; </font>50+X→X: CM+:C+X→X: M&gt;5C<font color="#FF0000"> =&gt; </font>5C→M:
+        X&gt;5C<font color="#FF0000"> =&gt; </font>5C→X:</p>
+    <p>Y&gt;<font size="1">E</font>3<font color="#FF0000"> =&gt; </font>
+        <font size="1">E</font>3→Y:
+        D&gt;<font size="1">E</font>3<font color="#FF0000"> =&gt;</font>
+        <font size="1"> E</font>3→D: D&lt;0<font color="#FF0000"> =&gt; </font>0→D:Y&lt;0<font color="#FF0000"> =&gt;
+        </font>0→Y:Y+M÷<font size="1">E</font>3◢
+    </p>
+    <p>D+X÷<font size="1">E</font>3◢ DY <font color="#FF0000">=&gt; </font>Goto 0: D<font color="#FF0000"> =&gt; </font>
+        BAD◢ Y<font color="#FF0000">=&gt;</font>GD◢ Norm 1</p>
+    <p>　</p>
+    <p>第二個程式 (改進版，635 bytes)</p>
+    <p>
+        <font size="1">E</font>2→C: Fix3:<font size="1">&nbsp; E</font>3→Y: 2C→M: Y+M÷<font size="1">E</font>3◢ Y→D:
+        M→X: D+X÷<font size="1">E</font>3◢ Lbl 0:
+    </p>
+    <p>?→A: (A&gt;6) + (A≠1)(A≠3)(M&lt;C(7-A<font color="#FF0000"> =&gt; </font>Goto 0: Fix 0: Lbl
+        1: </p>
+    <p>Rnd( 6Ran#+.5→B: M-5C<font color="#FF0000"> =&gt; </font>X≦4C<font color="#FF0000">=&gt; </font>3C≦D<font
+            color="#FF0000"> =&gt; </font>B=4<font color="#FF0000"> =&gt; </font>Goto 1: </p>
+    <p>M-5C<font color="#FF0000"> =&gt; </font>B=4<font color="#FF0000"> =&gt;</font> Goto 1: D≦3C<font color="#FF0000">
+            =&gt; </font>3C≦X<font color="#FF0000"> =&gt; </font>B=6<font color="#FF0000"> =&gt; </font>Goto
+        1: </p>
+    <p>D≦2C<font color="#FF0000"> =&gt; </font>Y&gt;D<font color="#FF0000"> =&gt; </font>2C≦X<font color="#FF0000">
+            =&gt; </font>5→B: D≦C<font color="#FF0000"> =&gt; </font>D&gt;Y<font color="#FF0000"> =&gt; </font>1→B: </p>
+    <p>D≦C<font color="#FF0000"> =&gt; </font>X=5C<font color="#FF0000"> =&gt; </font>Y≦5C<font color="#FF0000"> =&gt;
+        </font>2→B: M-5C<font color="#FF0000"> =&gt; </font>X≦4C<font color="#FF0000"> =&gt; </font>D&lt;C<font
+            color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>Goto
+        1:</p>
+    <p>4C≦X<font color="#FF0000"> =&gt; </font>B=6<font color="#FF0000"> =&gt; </font>Goto 1: 3C≦Y<font color="#FF0000">
+            =&gt; </font>B=1<font color="#FF0000"> =&gt; </font>Goto 1: M=5C<font color="#FF0000"> =&gt; </font>D&lt;5C
+        <font color="#FF0000"> =&gt; </font>B=1<font color="#FF0000"> =&gt; </font>
+    </p>
+    <p>Goto 1: X=5C<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>Goto 1:
+        D&gt;7C<font color="#FF0000"> =&gt; </font>B=5<font color="#FF0000"> =&gt; </font>Goto 1: B=2<font
+            color="#FF0000"> =&gt; </font>X&lt;5C<font color="#FF0000"> =&gt;</font>
+    </p>
+    <p>Goto 1: B=4<font color="#FF0000"> =&gt; </font>X&lt;3C<font color="#FF0000"> =&gt; </font>Goto 1: B=5<font
+            color="#FF0000"> =&gt; </font>X&lt;2C<font color="#FF0000"> =&gt; </font>Goto
+        1: Fix3: B◢</p>
+    <p>A=1<font color="#FF0000"> =&gt; </font>80<font color="#FF0000">M-</font>
+        <font color="#FF0000">=&gt;</font>B-4<font color="#FF0000"> =&gt; </font>
+        D-70→D: A=1<font color="#FF0000">&nbsp; =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>
+        14+D→D:
+    </p>
+    <p>A=2<font color="#FF0000"> =&gt; </font>5C<font color="#FF0000">M-</font>
+        <font color="#FF0000">=&gt; </font>B-4<font color="#FF0000"> =&gt; </font>
+        D-5C→D: A=2<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>C+D→D:
+    </p>
+    <p>A=4<font color="#FF0000"> =&gt; </font>3C<font color="#FF0000">M-</font>: A=5<font color="#FF0000"> =&gt; </font>
+        2C<font color="#FF0000">M-</font>
+        <font color="#FF0000">=&gt; </font>C+Y→Y: B=1<font color="#FF0000"> =&gt; </font>A-4<font color="#FF0000"> =&gt;
+        </font>Y-70→Y:
+    </p>
+    <p>B=1<font color="#FF0000"> =&gt; </font>X-80→X: B=2<font color="#FF0000"> =&gt; </font>A-4<font color="#FF0000">
+            =&gt; </font>Y-5C→Y:</p>
+    <p>B=2<font color="#FF0000"> =&gt; </font>X-5C→X: B=4<font color="#FF0000"> =&gt; </font>X-3C→X: B=5<font
+            color="#FF0000"> =&gt; </font>C+D→D: B=5<font color="#FF0000"> =&gt; </font>X-2C→X: B=1<font
+            color="#FF0000"> =&gt; </font>A=3</p>
+    <p>
+        <font color="#FF0000">=&gt; </font>14+Y→Y: B=2<font color="#FF0000"> =&gt; </font>A=3<font color="#FF0000">
+            =&gt; </font>C+Y→Y: A=6<font color="#FF0000"> =&gt; </font>50<font color="#FF0000">M+</font>: B=6<font
+            color="#FF0000"> =&gt; </font>50+X→X: C<font color="#FF0000">M+</font>:
+    </p>
+    <p>C+X→X: M&gt;5C<font color="#FF0000"> =&gt; </font>5C→M: X&gt;5C<font color="#FF0000"> =&gt; </font>5C→X: Y&gt;
+        <font size="1">E</font>3<font color="#FF0000"> =&gt; </font>
+        <font size="1">E</font>3→Y:
+        D&gt;<font size="1">E</font>3<font color="#FF0000"> =&gt; </font>
+        <font size="1">E</font>3→D:
+    </p>
+    <p>D&lt;0<font color="#FF0000"> =&gt; </font>0→D: Y&lt;0<font color="#FF0000"> =&gt; </font>0→Y: Y+M÷<font size="1">
+            E</font>3◢ D+X÷<font size="1">E</font>3◢ DY <font color="#FF0000">=&gt; </font>Goto 0: D<font
+            color="#FF0000"> =&gt; </font>BAD◢</p>
+    <p>Y<font color="#FF0000"> =&gt; </font>GD◢ Norm 1</p>
+    <p>B=5 =&gt; X&lt;2C =&gt; Goto 1: Fix3: B◢<br>
+        <br>
+        A=1 =&gt; 80M- =&gt; B-4 =&gt; D-70→D: A=1 =&gt; B=3 =&gt; 14+D→D:<br>
+        <br>
+        A=2 =&gt; 5CM- =&gt; B-4 =&gt; D-5C→D: A=2 =&gt; B=3 =&gt; C+D→D: <br>
+        <br>
+        A=4 =&gt; 3CM-: A=5 =&gt; 2CM- =&gt; C+Y→Y:
+    </p>
+    <p>註1: 出招方式輸入1-6整數 <br>
+        1: 標準攻擊 (對方HP減70, 但己方MP減少 80) <br>
+        2: 必殺技 (對方HP減500, 但己方MP減少500) <br>
+        3: 防禦 (減少己方HP損失20%) <br>
+        4: 100%防禦 (己方HP不會有任何損失, 但己方MP減少300) <br>
+        5: 恢復HP (己方HP恢復100, 但己方MP減少200) <br>
+        6: 恢復MP (己方MP恢復50) <br>
+        　</p>
+    <p>註2: 每個回合 MP數值會自動增加100</p>
+    <p>註3:
+        當電腦的HP數值減少至0，而已方的HP大於0則獲勝(顯示GD)。當己方的HP數值減少至0，而電腦的HP大於0則戰敗(顯示BAD)。當電腦及己方的HP數值同時減少至0則表示打成平手，這時不會顯示GD或BAD，程式會直接終止(顯示Norm
+        1)。</p>
+    <p>　</p>
+    <p>操作示範:</p>
+    <p>按 Prog 1 (顯示1000.200，即玩家的HP為1000及MP為200)</p>
+    <p>EXE (顯示1000.200，即電腦的HP為1000及MP為200)</p>
+    <p>EXE (顯示A?表示輸入出招選擇(1-6的整數)，若果選用1)</p>
+    <p>1 EXE (顯示B表示電腦出招的選擇(1-6))</p>
+    <p>EXE (顯示己方的HP及MP)</p>
+    <p>EXE (顯示電腦的HP及MP)</p>
+    <p>.....繼續遊戲...</p>
+    <p>若果出現GD表示獲勝，若果出現BAD表示戰敗，若果沒有出現GD或BAD，而出現程式直接終止(顯示Norm 1)表示打成平手。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p> <!--msthemeseparator-->
+    <p align="center">
+    <!--msthemeseparator-->
+    <p align="center">
+    <p>　</p>
+    <p>
+        <font color="#0000FF">程式舊版</font>
+    </p>
+    <p>程式由網友 <font color="#0000FF">wimwim</font> 提供。</p>
+    <p>網友提供程式日期: 2009年6月12日</p>
+    <p>注意: <font size="1">E </font>是按 EXP 。</p>
+    <p>第一個程式 (簡化版，542 bytes)</p>
+    <p>
+        <font size="1">E</font>2→C: Fix3:<font size="1"> E</font>3→Y: 2C→M: Y+M÷<font size="1">E</font>3◢ Y→D: M→X: D+X÷
+        <font size="1">E</font>3◢
+    </p>
+    <p>Lbl 0: ?→A: A&gt;6<font color="#FF0000"> =&gt; </font>Goto
+        0: A=2<font color="#FF0000"> =&gt; </font>M&lt;5C<font color="#FF0000"> =&gt; </font>Goto 0: </p>
+    <p>A=4<font color="#FF0000"> =&gt; </font>M&lt;3C<font color="#FF0000"> =&gt; </font>Goto 0: A=5<font
+            color="#FF0000"> =&gt; </font>M&lt;2C<font color="#FF0000"> =&gt; </font>Goto 0: Fix 0: Lbl 1:</p>
+    <p>
+        <font color="#FF0000">Rnd(</font> 6Ran#+.5→B: X=5C<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000">
+            =&gt; </font>Goto 1: 4C≦X<font color="#FF0000"> =&gt; </font>B=6<font color="#FF0000"> =&gt; </font>Goto 1:
+    </p>
+    <p>M-5C<font color="#FF0000"> =&gt; </font>B=4<font color="#FF0000"> =&gt; </font>X≦3C<font color="#FF0000"> =&gt;
+        </font> Goto
+        1: M=5C<font color="#FF0000"> =&gt; </font>B=1<font color="#FF0000"> =&gt;</font> Goto 1:</p>
+    <p>B=5<font color="#FF0000"> =&gt; </font>D=<font size="1">E</font>3<font color="#FF0000"> =&gt; </font>Goto 1: B=2
+        <font color="#FF0000"> =&gt; </font>X&lt;5C<font color="#FF0000"> =&gt; </font>Goto 1: B=4<font color="#FF0000">
+            =&gt; </font>X&lt;3C<font color="#FF0000"> =&gt;</font> Goto 1:
+    </p>
+    <p>B=5<font color="#FF0000"> =&gt; </font>X&lt;2C<font color="#FF0000"> =&gt; </font>Goto
+        1: Fix3: B◢ A=1<font color="#FF0000"> =&gt; </font>B-4<font color="#FF0000"> =&gt; </font>D-70→D: A=1<font
+            color="#FF0000"> =&gt; </font>80<font color="#FF0000">M-</font>:</p>
+    <p>A=2<font color="#FF0000"> =&gt; </font>B-4<font color="#FF0000"> =&gt; </font>D-5C→D: A=2<font color="#FF0000">
+            =&gt; </font>5C<font color="#FF0000">M-</font>: A=1<font color="#FF0000"> =&gt; </font>B=3<font
+            color="#FF0000"> =&gt; </font>
+        14+D→D:</p>
+    <p>A=2<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>C+D→D: A=4<font color="#FF0000">
+            =&gt; </font>3C<font color="#FF0000">M-</font>: A=5<font color="#FF0000"> =&gt; </font>C+Y→Y: A=5<font
+            color="#FF0000"> =&gt; </font>2C<font color="#FF0000">M-</font>:</p>
+    <p>B=1<font color="#FF0000"> =&gt; </font>A-4<font color="#FF0000"> =&gt; </font>Y-70→Y: B=1<font color="#FF0000">
+            =&gt; </font>X-80→X: B=2<font color="#FF0000"> =&gt; </font>A-4<font color="#FF0000"> =&gt; </font>Y-5C→Y:
+    </p>
+    <p>B=2<font color="#FF0000"> =&gt; </font>X-5C→X: B=4<font color="#FF0000"> =&gt; </font>X-3C→X: B=5<font
+            color="#FF0000">=&gt;</font>
+        C+D→D: B=5<font color="#FF0000">=&gt;</font>X-2C→X:</p>
+    <p>B=1<font color="#FF0000"> =&gt; </font>A=3 <font color="#FF0000">=&gt; </font>
+        14+Y→Y: B=2<font color="#FF0000"> =&gt; </font>A=3<font color="#FF0000"> =&gt;</font> C+Y→Y: A=6<font
+            color="#FF0000"> =&gt; </font>50<font color="#FF0000">M+</font>: </p>
+    <p>B=6<font color="#FF0000"> =&gt; </font>50+X→X: CM+:C+X→X: M&gt;5C<font color="#FF0000"> =&gt; </font>5C→M:
+        X&gt;5C<font color="#FF0000"> =&gt; </font>5C→X:</p>
+    <p>Y&gt;<font size="1">E</font>3<font color="#FF0000"> =&gt; </font>
+        <font size="1">E</font>3→Y:
+        D&gt;<font size="1">E</font>3<font color="#FF0000"> =&gt;</font>
+        <font size="1"> E</font>3→D: D&lt;0<font color="#FF0000"> =&gt; </font>0→D:Y&lt;0<font color="#FF0000"> =&gt;
+        </font>0→Y:Y+M÷<font size="1">E</font>3◢
+    </p>
+    <p>D+X÷<font size="1">E</font>3◢ DY <font color="#FF0000">=&gt; </font>Goto 0: D<font color="#FF0000"> =&gt; </font>
+        BAD◢ Y<font color="#FF0000">=&gt;</font>GD◢ Norm 1</p>
+    <p>　</p>
+    <p>　</p>
+    <p>第二個程式 (改進版，662 bytes)</p>
+    <p>
+        <font size="1">E</font>2→C: Fix3:<font size="1">&nbsp; E</font>3→Y: 2C→M: Y+M÷<font size="1">E</font>3◢ Y→D:
+        M→X: D+X÷<font size="1">E</font>3◢ Lbl 0:
+    </p>
+    <p>?→A: A&gt;6<font color="#FF0000"> =&gt; </font>Goto
+        0: A=2<font color="#FF0000"> =&gt; </font>M&lt;5C<font color="#FF0000"> =&gt; </font>Goto 0: A=4<font
+            color="#FF0000"> =&gt; </font>M&lt;3C<font color="#FF0000"> =&gt; </font>Goto 0:</p>
+    <p>A=5<font color="#FF0000"> =&gt; </font>M&lt;2C<font color="#FF0000"> =&gt; </font>Goto 0: Fix 0: Lbl
+        1: Rnd( 6Ran#+.5→B: M-5C<font color="#FF0000"> =&gt; </font>X≦4C</p>
+    <p>
+        <font color="#FF0000">=&gt; </font>3C≦D<font color="#FF0000"> =&gt; </font>B=4<font color="#FF0000"> =&gt;
+        </font>Goto 1: M-5C<font color="#FF0000"> =&gt; </font>B=4<font color="#FF0000"> =&gt;</font> Goto 1: D≦3C<font
+            color="#FF0000"> =&gt; </font>3C≦X<font color="#FF0000"> =&gt;</font>
+    </p>
+    <p>B=6<font color="#FF0000"> =&gt; </font>Goto
+        1: D≦2C<font color="#FF0000"> =&gt; </font>Y&gt;D<font color="#FF0000"> =&gt; </font>2C≦X<font color="#FF0000">
+            =&gt; </font>5→B: D≦C<font color="#FF0000"> =&gt; </font>D&gt;Y<font color="#FF0000"> =&gt; </font>1→B: </p>
+    <p>D≦C<font color="#FF0000"> =&gt; </font>X=5C<font color="#FF0000"> =&gt; </font>Y≦5C<font color="#FF0000"> =&gt;
+        </font>2→B: M-5C<font color="#FF0000"> =&gt; </font>X≦4C<font color="#FF0000"> =&gt; </font>D&lt;C<font
+            color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>Goto
+        1:</p>
+    <p>4C≦X<font color="#FF0000"> =&gt; </font>B=6<font color="#FF0000"> =&gt; </font>Goto 1: 3C≦Y<font color="#FF0000">
+            =&gt; </font>B=1<font color="#FF0000"> =&gt; </font>Goto 1: M=5C<font color="#FF0000"> =&gt; </font>D&lt;5C
+        <font color="#FF0000"> =&gt; </font>B=1<font color="#FF0000"> =&gt; </font>
+    </p>
+    <p>Goto 1: X=5C<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>Goto 1:
+        D&gt;7C<font color="#FF0000"> =&gt; </font>B=5<font color="#FF0000"> =&gt; </font>Goto 1: B=2<font
+            color="#FF0000"> =&gt; </font>X&lt;5C<font color="#FF0000"> =&gt;</font>
+    </p>
+    <p>Goto 1: B=4<font color="#FF0000"> =&gt; </font>X&lt;3C<font color="#FF0000"> =&gt; </font>Goto 1: B=5<font
+            color="#FF0000"> =&gt; </font>X&lt;2C<font color="#FF0000"> =&gt; </font>Goto
+        1: Fix3: B◢A=1<font color="#FF0000"> =&gt;</font>
+    </p>
+    <p>B-4<font color="#FF0000"> =&gt; </font>D-70→D: A=1<font color="#FF0000"> =&gt; </font>80<font color="#FF0000">M-
+        </font>: A=2<font color="#FF0000"> =&gt; </font>B-4<font color="#FF0000"> =&gt; </font>D-5C→D: A=2<font
+            color="#FF0000"> =&gt; </font>5C<font color="#FF0000">M-</font>:</p>
+    <p>A=1<font color="#FF0000">&nbsp; =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>
+        14+D→D: A=2<font color="#FF0000"> =&gt; </font>B=3<font color="#FF0000"> =&gt; </font>C+D→D: A=4<font
+            color="#FF0000"> =&gt; </font>3C<font color="#FF0000">M-</font>: A=5<font color="#FF0000"> =&gt; </font>
+        C+Y→Y:</p>
+    <p>A=5<font color="#FF0000"> =&gt; </font>2C<font color="#FF0000">M-</font>: B=1<font color="#FF0000"> =&gt; </font>
+        A-4<font color="#FF0000"> =&gt; </font>Y-70→Y: B=1<font color="#FF0000"> =&gt; </font>X-80→X: B=2<font
+            color="#FF0000"> =&gt; </font>A-4<font color="#FF0000"> =&gt; </font>Y-5C→Y:</p>
+    <p>B=2<font color="#FF0000"> =&gt; </font>X-5C→X: B=4<font color="#FF0000"> =&gt; </font>X-3C→X: B=5<font
+            color="#FF0000"> =&gt; </font>C+D→D: B=5<font color="#FF0000"> =&gt; </font>X-2C→X: B=1<font
+            color="#FF0000"> =&gt; </font>A=3</p>
+    <p>
+        <font color="#FF0000">=&gt; </font>14+Y→Y: B=2<font color="#FF0000"> =&gt; </font>A=3<font color="#FF0000">
+            =&gt; </font>C+Y→Y: A=6<font color="#FF0000"> =&gt; </font>50<font color="#FF0000">M+</font>: B=6<font
+            color="#FF0000"> =&gt; </font>50+X→X: C<font color="#FF0000">M+</font>:
+    </p>
+    <p>C+X→X: M&gt;5C<font color="#FF0000"> =&gt; </font>5C→M: X&gt;5C<font color="#FF0000"> =&gt; </font>5C→X: Y&gt;
+        <font size="1">E</font>3<font color="#FF0000"> =&gt; </font>
+        <font size="1">E</font>3→Y:
+        D&gt;<font size="1">E</font>3<font color="#FF0000"> =&gt; </font>
+        <font size="1">E</font>3→D:
+    </p>
+    <p>D&lt;0<font color="#FF0000"> =&gt; </font>0→D: Y&lt;0<font color="#FF0000"> =&gt; </font>0→Y: Y+M÷<font size="1">
+            E</font>3◢ D+X÷<font size="1">E</font>3◢ DY <font color="#FF0000">=&gt; </font>Goto 0: D<font
+            color="#FF0000"> =&gt; </font>BAD◢</p>
+    <p>Y<font color="#FF0000"> =&gt; </font>GD◢ Norm 1</p>
+</body>
+
+</html>

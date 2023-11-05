@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>五階矩陣乘法 (5×5 matrix multiplication)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">五階矩陣乘法 (5×5 matrix multiplication)</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">SuperMANganese</font> 提供。</p>
+    <p>
+        <font color="#FF0000">注意: </font>程式不可以在fx-3650P II上使用。
+    </p>
+    <p>更新日期: 2014年8月22日</p>
+    <p>程式可以計算一個 5 × 5 矩陣及另一個 5 × n 矩陣的乘積，其中 n是正整數。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數，FreqOn 按 Shift MODE
+        ← ← 1，<font size="1">E </font>是按 EXP，G按 Shift 7 ← 3 。</p>
+    <p>程式 (579bytes)</p>
+    <p>FreqOn: ?→A: ?→B: A + <font size="1">E</font>-8B→A: ?→C: ?→D: C +
+        <font size="1">E</font>-8D→B:
+    </p>
+    <p>?→X: ?→Y: X + <font size="1">E</font>-8Y→C: 1 <font color="#FF0000">;</font>
+        . 5(A + B-2C <font color="#FF0000">DT</font>: -1 <font color="#FF0000">;</font>
+        . 5(A-B <font color="#FF0000">DT</font>: 1 , 1 <font color="#FF0000">;</font> C
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>?→M: ?→A: <font size="1">E</font>-50 , 1 <font color="#FF0000">;</font>
+        <font size="1">E</font>50(M + <font size="1">E</font>-8A-C <font color="#FF0000">
+            DT</font>: ?→B: ?→C: 0 , 1 ; -<font color="#0000FF">Σy</font> DT:
+    </p>
+    <p>?→D: ?→X: D + <font size="1">E</font>-8X→D: <font color="#FF0000">;</font> D
+        <font color="#FF0000">DT</font>: , <font size="1">E</font>-50
+        <font color="#FF0000">;</font>
+        <font size="1">E</font>50(B + <font size="1">E</font>-8C
+        - D <font color="#FF0000">DT</font>:
+    </p>
+    <p>?→Y: ?→M: Y + <font size="1">E</font>-8M - <font color="#0000FF">Σx<sup>2</sup></font>
+        : ?→A: <font size="1">E</font>-34 , 0 <font color="#FF0000">;</font>
+        <font size="1">E</font>68Ans <font color="#FF0000">DT</font>: ?→B:
+        <font size="1">E</font>-50 ; -<font size="1">E</font>50<font color="#0000FF">Σx</font>
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>?→C: <font color="#FF0000">;</font>
+        <font size="1">E</font>50(A +
+        <font size="1">E</font>-8B <font color="#FF0000">DT</font>: ?→D: 0
+        <font color="#FF0000">;</font> -<font color="#0000FF">n</font>
+        <font color="#FF0000">DT</font>: <font color="#FF0000">;</font> C +
+        <font size="1">E</font>-8D <font color="#FF0000">DT</font>:
+    </p>
+    <p>?→X: ?→Y: ?→M: ?→A: ?→B: ?→C: ?→D: X + <font size="1">E</font>-8Y→X: M +
+        <font size="1">E</font>-8A→Y:
+    </p>
+    <p>
+        <font size="1">E</font>18(B + G , <font size="1">E</font>18(C + G
+        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: D
+        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>:
+        While 1: ?→A: ?→B: ?→C: ?→D: ?→M: Fix 3:
+    </p>
+    <p>ARnd(<font color="#0000FF">Σx<sup>4</sup></font>) + <font size="1">E</font>8B(<font color="#0000FF">
+            Σx<sup>4</sup></font>-Rnd(<font color="#0000FF">Σx<sup>4</sup></font>)) + MRnd(<font color="#0000FF">
+            Σx<sup>2</sup>y</font>) + CRnd(<font color="#0000FF">Σx<sup>3</sup></font>) +
+        <font size="1">E</font>8D(<font color="#0000FF">Σx<sup>3</sup></font>-Rnd(<font color="#0000FF">Σx<sup>3</sup>
+        </font>
+        <font color="#008000">: Norm 1</font>◢
+        <font color="#008000">Fix 3:</font>
+    </p>
+    <p>BRnd(<font color="#0000FF">Σxy</font>) + <font size="1">E</font>8C(<font color="#0000FF">Σxy</font>-Rnd(<font
+            color="#0000FF">Σxy</font>)) +
+        <font size="1">E</font>8A(<font color="#0000FF">Σx<sup>2</sup>y</font>-Rnd(<font color="#0000FF">Σx<sup>2</sup>y
+        </font>)) +
+        DRnd(<font color="#0000FF">Σy</font>) + <font size="1">E</font>8M(<font color="#0000FF">Σy</font>-Rnd(<font
+            color="#0000FF">Σy</font>
+        <font color="#008000">: Norm 1</font>◢
+        <font color="#008000">Fix 3: </font>
+    </p>
+    <p>ARnd(<font color="#0000FF">Σy<sup>2</sup></font>) + <font size="1">E</font>8B(<font color="#0000FF">
+            Σy<sup>2</sup></font>-Rnd(<font color="#0000FF">Σy<sup>2</sup></font>)) + MRnd(<font color="#0000FF">Σx
+        </font>) + CRnd(<font color="#0000FF">Σx<sup>2</sup></font>) +
+        <font size="1">E</font>8D(<font color="#0000FF">Σx<sup>2</sup></font>-Rnd(<font color="#0000FF">Σx<sup>2</sup>
+        </font>
+        <font color="#008000">: Norm 1</font>◢
+        <font color="#008000">Fix 3: </font>
+    </p>
+    <p>BRnd(<font color="#0000FF">n</font>) + <font size="1">E</font>8C(<font color="#0000FF">n</font>Rnd(<font
+            color="#0000FF">n</font>))
+        + <font size="1">E</font>8A(<font color="#0000FF">Σx</font>-Rnd(<font color="#0000FF">Σx</font>)) + DRnd(X) +
+        <font size="1">E</font>8M(X-Rnd(X<font color="#008000">:
+            Norm 1</font>◢ <font color="#008000">Fix 3:</font>
+        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>:
+    </p>
+    <p>ARnd(Y) + <font size="1">E</font>8B(Y-Rnd(Y)) + MAns + CRnd(<font size="1">E</font>-18(<font color="#0000FF">minX
+        </font>
+        + <font color="#0000FF">maxX</font>)) + DRnd(<font size="1">E</font>-18(<font color="#0000FF">minY</font>
+        + <font color="#0000FF">maxY</font>: Norm 1◢ WhileEnd</p>
+    <p>　</p>
+    <p>例題: 計算</p>
+    <p>
+    <p>按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE 5 EXE 6 EXE 7 EXE 8 EXE 9 EXE 10 EXE </p>
+    <p>11 EXE 12 EXE 13 EXE 14 EXE 15 EXE 16 EXE 17 EXE 18 EXE 19 EXE 20 EXE </p>
+    <p>21 EXE 22 EXE 23 EXE 24 EXE 25 EXE (第一個矩陣，由左至右，上至下輸入) </p>
+    <p>25 EXE 24 EXE 23 EXE 22 EXE 21 EXE (輸入第二個矩陣，第一欄的數據) </p>
+    <p>(顯示335) EXE (顯示910) EXE (顯示1485) EXE (顯示2060) EXE (顯示2635) EXE (這五個數值為答案的第一欄) </p>
+    <p>20 EXE 19 EXE 18 EXE 17 EXE 16 EXE (輸入第二個矩陣，第二欄的數據) </p>
+    <p>(顯示260) EXE (顯示710) EXE (顯示1160) EXE (顯示1610) EXE (顯示2060) EXE (這五個數值為答案的第二欄) </p>
+    <p>15 EXE 14 EXE 13 EXE 12 EXE 11 EXE (輸入第二個矩陣，第三欄的數據) </p>
+    <p>(顯示185) EXE (顯示510) EXE (顯示835) EXE (顯示1160) EXE (顯示1485) EXE (這五個數值為答案的第三欄) </p>
+    <p>10 EXE 9 EXE 8 EXE 7 EXE 6 EXE (輸入第二個矩陣，第四欄的數據) </p>
+    <p>(顯示110) EXE (顯示310) EXE (顯示510) EXE (顯示710) EXE (顯示910) EXE (這五個數值為答案的第四欄) </p>
+    <p>5 EXE 4 EXE 3 EXE 2 EXE 1 EXE (輸入第二個矩陣，第五欄的數據) </p>
+    <p>(顯示35) EXE (顯示110) EXE (顯示185) EXE (顯示260) EXE (顯示335) EXE (這五個數值為答案的第五欄) <br>
+        <br>
+        所以
+    </p>
+    <p>
+    <p>註1: 第一個矩陣的數據輸入限制為有效數字最多七位。</p>
+    <p>註2.小數點後最多n位(預設為3位, 如欲修改, 請把fix 3 的3改作n) </p>
+    <p>註3: 若三位小數版, 則 -10000&lt;x&lt;10000 。整數版請將所有fix 3 改作fix 0，則
+        -10000000&lt;x&lt;10000000。若四位小數版，請將所有fix 3 改作fix 4，則 -1000&lt;x&lt;1000<span class="gensmall">，餘此類推。</span></p>
+    <p><span class="gensmall">註4: 若果是整數版綠色的程式碼亦可以不輸入，只要將第一個fix 3改作fix 0即可。</span></p>
+    <p><span class="gensmall">註5: </span>5x5矩陣 乘 5xn 矩陣，n最多可以是12，否則會出現datafull。 <br>
+        <span class="gensmall"><br>
+            <br>
+            　</span>
+    </p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+</body>
+
+</html>

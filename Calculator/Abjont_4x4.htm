@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>四階伴隨矩陣及行列式</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">四階伴隨矩陣及行列式</font>
+            </b></u></p>
+    <p>更新日期: 2015年10月22日</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，
+        <font color="#0000FF">Σxy</font>
+        按 Shift 1 → 3)。
+    </p>
+    <p>程式(669 bytes) </p>
+    <p>ClrStat: ?→A: ?→B: ?→C: 1 ; 2<sup>-1</sup>(A+B-2C DT: </p>
+    <p>- 1 ; 2<sup>-1</sup>(A-B DT: 1 , 1 <font face="新細明體" size="4">;</font> C DT: ?→D: </p>
+    <p>E-50 , 1 ; E50(D-C DT: ?→X: 0 , 1 ; -
+        Σy DT: ?→Y: </p>
+    <p>; Y DT: , E-50 ; E50(X - Y DT: ?→A: ?→B: ?→C:</p>
+    <p>E-34 , 0 ; E68(C-Σx<sup>2</sup> DT: E-50 ; - E50Σx
+        DT: </p>
+    <p>; E50B DT: 0 ; -n DT: ; A DT: ?→A: ?→B: ?→C: </p>
+    <p>?→D: ?→X: ?→Y: ?→M: Σy<sup>2</sup>BM - Σy<sup>2</sup>CY - AnM +</p>
+    <p>AΣxY + XnC - XΣxB ; 0 DT: AnsΣx<sup>4</sup> + ΣyΣx<sup>3</sup>(CY - BM) +</p>
+    <p>ΣyA(Σx<sup>2</sup>yM - ΣxyY) + ΣyX(ΣxyB - Σx<sup>2</sup>yC) +</p>
+    <p>Σx<sup>2</sup>Σx<sup>3</sup>(nM - ΣxY) + Σx<sup>2</sup>Σy<sup>2</sup>(ΣxyY -
+        Σx<sup>2</sup>yM) +</p>
+    <p>Σx<sup>2</sup>X(Σx<sup>2</sup>yΣx - Σxyn) + DΣx<sup>3</sup>(ΣxB - nC) +</p>
+    <p>DΣy<sup>2</sup>(Σx<sup>2</sup>yC - ΣxyB) + DA(Σxyn - Σx<sup>2</sup>yΣx◢ ; 0
+        DT: Ans◢</p>
+    <p>Σx<sup>3</sup>CY - Σx<sup>3</sup>BM + AΣx<sup>2</sup>yM - AΣxyY - XΣx<sup>2</sup>yC
+        + XΣxyB◢</p>
+    <p>Σx<sup>3</sup>nM - Σx<sup>3</sup>ΣxY - Σy<sup>2</sup>Σx<sup>2</sup>yM + Σy<sup>2</sup>ΣxyY
+        + XΣx<sup>2</sup>yΣx - XΣxyn◢</p>
+    <p>Σx<sup>3</sup>ΣxB - Σx<sup>3</sup>nC + Σy<sup>2</sup>Σx<sup>2</sup>yC - Σy<sup>2</sup>ΣxyB
+        - AΣx<sup>2</sup>yΣx + AΣxyn◢</p>
+    <p>ΣyCY - ΣyBM + Σx<sup>2</sup>nM - Σx<sup>2</sup>ΣxY - DnC + DΣxB◢</p>
+    <p>Σx<sup>4</sup>BM - Σx<sup>4</sup>CY - Σx<sup>2</sup>Σx<sup>2</sup>yM + Σx<sup>2</sup>ΣxyY
+        + DΣx<sup>2</sup>yC - DΣxyB◢</p>
+    <p>Σx<sup>4</sup>ΣxY - Σx<sup>4</sup>nM + ΣyΣx<sup>2</sup>yM - ΣyΣxyY - DΣx<sup>2</sup>yΣx
+        + DΣxyn◢</p>
+    <p>Σx<sup>4</sup>nC - Σx<sup>4</sup>ΣxB - ΣyΣx<sup>2</sup>yC + ΣyΣxyB + Σx<sup>2</sup>Σx<sup>2</sup>yΣx
+        - Σx<sup>2</sup>Σxyn◢</p>
+    <p>ΣyAM - ΣyCX - Σx<sup>2</sup>Σy<sup>2</sup>M + Σx<sup>2</sup>ΣxX + DΣy<sup>2</sup>C
+        - DΣxA◢</p>
+    <p>Σx<sup>4</sup>CX - Σx<sup>4</sup>AM + Σx<sup>2</sup>Σx<sup>3</sup>M - Σx<sup>2</sup>ΣxyX
+        - DΣx<sup>3</sup>C + DΣxyA◢</p>
+    <p>Σx<sup>4</sup>Σy<sup>2</sup>M - Σx<sup>4</sup>ΣxX - ΣyΣx<sup>3</sup>M +
+        ΣyΣxyX + DΣx<sup>3</sup>Σx - DΣxyΣy<sup>2</sup>◢</p>
+    <p>Σx<sup>4</sup>ΣxA - Σx<sup>4</sup>Σy<sup>2</sup>C + ΣyΣx<sup>3</sup>C -
+        ΣyΣxyA - Σx<sup>2</sup>Σx<sup>3</sup>Σx + Σx<sup>2</sup>ΣxyΣy<sup>2</sup>◢</p>
+    <p>ΣyBX - ΣyAY + Σx<sup>2</sup>Σy<sup>2</sup>Y - Σx<sup>2</sup>nX - DΣy<sup>2</sup>B
+        + DnA◢</p>
+    <p>Σx<sup>4</sup>AY - Σx<sup>4</sup>BX - Σx<sup>2</sup>Σx<sup>3</sup>Y + Σx<sup>2</sup>Σx<sup>2</sup>yX
+        + DΣx<sup>3</sup>B - DΣx<sup>2</sup>yA◢</p>
+    <p>Σx<sup>4</sup>nX - Σx<sup>4</sup>Σy<sup>2</sup>Y + ΣyΣx<sup>3</sup>Y - ΣyΣx<sup>2</sup>yX
+        - DΣx<sup>3</sup>n + DΣx<sup>2</sup>yΣy<sup>2</sup>◢</p>
+    <p>Σx<sup>4</sup>Σy<sup>2</sup>B - Σx<sup>4</sup>nA - ΣyΣx<sup>3</sup>B + ΣyΣx<sup>2</sup>yA
+        + Σx<sup>2</sup>Σx<sup>3</sup>n - Σx<sup>2</sup>Σx<sup>2</sup>yΣy<sup>2</sup></p>
+    <p>　</p>
+    <p>例題: 計算下列矩陣的伴隨矩陣及逆矩陣。</p>
+    <p>
+    <p>
+        <font face="新細明體">按
+            Prog 1&nbsp; 再按 2 EXE 3 EXE 4 EXE 5 EXE 9
+            EXE 3 EXE 1 EXE 2 EXE </font>
+    </p>
+    <p>4<font face="新細明體"> EXE 7 EXE 6 EXE 3 EXE 5
+            EXE 9 EXE 8 EXE 7 EXE (顯示行列式為192)</font>
+    </p>
+    <p>EXE (顯示 36) EXE (顯示24) EXE (顯示 36) EXE (顯示 - 48)</p>
+    <p>EXE (顯示 - 153) EXE (顯示 - 6) EXE (顯示 - 105) EXE (顯示 156)</p>
+    <p>EXE (顯示 161) EXE (顯示 - 10) EXE (顯示 177) EXE (顯示 - 188)</p>
+    <p>EXE (顯示 - 13) EXE (顯示2) EXE (顯示 - 93) EXE (顯示 76)</p>
+    <p>所以</p>
+    <p>
+    <p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

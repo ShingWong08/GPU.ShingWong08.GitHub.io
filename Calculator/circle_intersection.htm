@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>圓形與直線的交點</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">圓形與直線的交點(I)</font>
+            </b></u></p>
+    <p>更新日期: 2014年3月24日</p>
+    <p>若果輸入數據為整數(或分數)及答案為有理數時，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp;)。
+    </p>
+    <p>程式一 (107 bytes，有記存答案)</p>
+    <p>?→Y: ?→C: ?→D: C<sup>2</sup> + Y<sup>2</sup>→M: ?→X: ?→B:
+    </p>
+    <p>BCY - XC<sup>2</sup> + 2DY→X: ?→A:
+        D<sup>2</sup> + BCD + AC<sup>2</sup>→A: </p>
+    <p>(√(X<sup>2</sup> - 4AM) + X)┘(2M→A◢ (D - Ans Y)┘C→B◢ </p>
+    <p>X┘M - A→X◢ (D - Ans Y)┘C→Y</p>
+    <p>　</p>
+    <p>程式二 (97 bytes，沒有記存答案)</p>
+    <p>?→Y: ?→C: ?→D: C<sup>2</sup> + Y<sup>2</sup>→M: ?→X: ?→B:
+    </p>
+    <p>BCY - XC<sup>2</sup> + 2DY→X: ?→A:
+        D<sup>2</sup> + BCD + AC<sup>2</sup>→A: </p>
+    <p>For -1→B To 1 step 2: (X - B√(X<sup>2</sup> - 4AM))┘(2M◢ </p>
+    <p>(D - Ans Y)┘C◢ Next</p>
+    <p>　</p>
+    <p>
+        例題: 求直線3x
+        – y = 5 與圓
+        x<sup>2</sup> + y<sup>2</sup> – 8x – 4y + 15 = 0
+        的交點。</p>
+    <p>
+        按 Prog 1 再按 3 EXE -
+        1 EXE 5 EXE - 8 EXE -4 EXE 15 EXE (顯示3)
+    </p>
+    <p>
+        EXE (顯示4，即其中一交點為(3,4)) EXE (顯示2)
+        EXE (顯示1，即另一交點為(2,1))</p>
+    <p>　</p>
+    <p>程式一執行完成後，按 RCL A及RCL B顯示其中一點的坐標，按RCL X及RCLY顯示
+        另一點的坐標。</p>
+    <p>　</p>
+    <p>註: 程式二顯示第二點y座標後會多顯示一次才完結程式，只要忽略這個數值即可。</p>
+    <p>　</p>
+    <!--msthemeseparator-->
+    <p align="center">
+    <!--msthemeseparator-->
+    <p align="center">
+    <p>　</p>
+    <p>　</p>
+    <p>
+        <font color="#800080">附錄另一個版程式</font>，方程係數的形式為 y=ax+b及(x-c)<sup>2</sup> +
+        (y-d)<sup>2</sup> = r<sup>2</sup> 。
+    </p>
+    <p>
+        <font color="#800080">附錄程式 (98 bytes，有記存答案)</font>
+    </p>
+    <p>?→Y: ?→D: 1 + Y<sup>2</sup>→M: ?→X: ?→B: ?→A:
+    </p>
+    <p>D<sup>2</sup> - 2BD + X<sup>2</sup> + B<sup>2</sup> - A<sup>2</sup>→A: 2BY +
+        2X - 2DY→X: </p>
+    <p>(√(X<sup>2</sup> - 4AM) + X)┘(2M→A◢ D + Ans Y→B◢ </p>
+    <p>X┘M - A→X◢ D + Ans Y→Y</p>
+    <p>　</p>
+    <p>
+        <font color="#800080">附錄程式例題:</font> 求直線 y = 3x - 5 與圓 (x + 4)<sup>2</sup> + (y
+        + 2)<sup>2</sup> = (√5)<sup>2</sup>
+        的交點。
+    </p>
+    <p>
+        按 Prog 1 再按 3 EXE - 5 EXE 4 EXE 2 EXE √5 EXE (顯示3)
+    </p>
+    <p>
+        EXE (顯示4，即其中一交點為(3,4)) EXE (顯示2)
+        EXE (顯示1，即另一交點為(2,1))</p>
+    <p>　</p>
+    <p>程式一執行完成後，按 RCL A及RCL B顯示其中一點的坐標，按RCL X及RCLY顯示
+        另一點的坐標。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH 及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <title>三階伴隨矩陣/逆矩陣及行列式(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">三階伴隨矩陣/逆矩陣及行列式(II)</font>
+            </b></u></p>
+    <p>程式參考了網友<font color="#0000FF">roviury</font>意見進行修改。</p>
+    <p>更新日期: 2010年4月5日</p>
+    <p>這個版本的程式可以計算三階行列式、逆矩陣<font color="#FF0000">(預設值)</font>或伴隨矩陣(包括<font color="#FF0000">非奇異(non-singular)</font>
+        的伴隨矩陣)。逆矩陣的顯示形式與第一版的不同，程式亦較長，另外若果輸入的數值為整數，答案會以分數形式表示，
+        建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。若果不用計算三階伴隨矩陣，可以使用<a
+            href="Inverse_Matrix.htm">三階逆矩陣及行列式程式</a>。
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">maxX</font> 按 shift 2 2 2，<font color="#0000FF">maxY</font>
+        按 shift 2 2 → 2，<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，<font
+            color="#0000FF">n</font>
+        按 Shift 1 3)，FreqOn 按 Shift MODE ← ← 1。</p>
+    <p>第一個程式(可以顯示分數答案 148 bytes)</p>
+    <p>FreqOn: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
+    <p>?→M: B <b>
+            <font color="#FF0000">,</font>
+        </b> C&nbsp; <b>
+            <font color="#FF0000">;</font>
+        </b>
+        D
+        <font color="#FF0000">DT</font>:
+        ?→B: ?→C: ACX + B<font color="#0000FF">Σy</font> +
+    </p>
+    <p>YM<font color="#0000FF">maxX</font> - ABY - C<font color="#0000FF">Σx</font> -
+        XM<font color="#0000FF">maxY</font>→D: ?→D: 1┘D→D:</p>
+    <p>D(XC - BY◢ D(B<font color="#0000FF">maxY</font> - C<font color="#0000FF">maxX</font>◢
+        D(Y<font color="#0000FF">maxX</font> - X<font color="#0000FF">maxY</font>◢</p>
+    <p>D(YM - C<font color="#0000FF">n</font>◢ D(AC - M<font color="#0000FF">maxY</font>◢
+        D(<font color="#0000FF">Σy</font> - AY◢</p>
+    <p>D(B<font color="#0000FF">n</font> - XM◢ D(M<font color="#0000FF">maxX</font> -
+        AB◢ D(AX - <font color="#0000FF">Σx</font>
+    </p>
+    <p>　</p>
+    <p>第二個程式(不顯示分數答案 147 bytes)</p>
+    <p>FreqOn: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
+    <p>?→M: B <b>
+            <font color="#FF0000">,</font>
+        </b> C&nbsp; <b>
+            <font color="#FF0000">;</font>
+        </b>
+        D
+        <font color="#FF0000">DT</font>:
+        ?→B: ?→C: ACX + B<font color="#0000FF">Σy</font> +
+    </p>
+    <p>YM<font color="#0000FF">maxX</font> - ABY - C<font color="#0000FF">Σx</font> -
+        XM<font color="#0000FF">maxY</font>→D: ?→D: D<sup>-1</sup>→D:</p>
+    <p>D(XC - BY◢ D(B<font color="#0000FF">maxY</font> - C<font color="#0000FF">maxX</font>◢
+        D(Y<font color="#0000FF">maxX</font> - X<font color="#0000FF">maxY</font>◢</p>
+    <p>D(YM - C<font color="#0000FF">n</font>◢ D(AC - M<font color="#0000FF">maxY</font>◢
+        D(<font color="#0000FF">Σy</font> - AY◢</p>
+    <p>D(B<font color="#0000FF">n</font> - XM◢ D(M<font color="#0000FF">maxX</font> -
+        AB◢ D(AX - <font color="#0000FF">Σx</font>
+    </p>
+    <p>　</p>
+    <p><a href="Inverse_Matrix.htm">只計算三階逆矩陣及行列式版本</a> (142 / 141 bytes)</p>
+    <p>　</p>
+    <p>例題1: 計算下列矩陣的逆矩陣。</p>
+    <p>
+    <p>
+        <font face="新細明體">按
+            Prog 1 再按 2 EXE 1 EXE 3 EXE 7 EXE 4
+            EXE 6 EXE</font>
+    </p>
+    <p>&nbsp;8 EXE 9 EXE 7 EXE
+        (這時顯示<b>
+            <font color="#FF0000">?→D</font>
+        </b>及行列式的值 40) <font color="#FF0000">EXE </font>
+    </p>
+    <p>(不輸入數值表示計逆矩陣，顯示 -13/20) EXE (顯示 1/2) EXE (顯示 -3/20) EXE </p>
+    <p>(顯示 -1/40) EXE (顯示 -1/4) EXE (顯示 9/40) EXE </p>
+    <p>(顯示 31/40) EXE (顯示 -1/4) EXE (顯示 1/40) </p>
+    <p>因此，</p>
+    <p>
+    <p>計算完結後，請按Mode 1返回正常模式。</p>
+    <p>　</p>
+    <p>例題2: 計算下列矩陣的伴隨矩陣。</p>
+    <p>
+    <p>按
+        Prog 1 再按 2 EXE 1 EXE 3 EXE 7 EXE 4
+        EXE 6 EXE </p>
+    <p>8 EXE 9 EXE 7 EXE (這時顯示<b>
+            <font color="#FF0000">?→D</font>
+        </b>及行列式的值
+        40) <font color="#FF0000">1 EXE</font>
+    </p>
+    <p>(輸入1表示計算伴隨矩陣，顯示 -26) EXE (顯示 20) EXE (顯示 -6) EXE </p>
+    <p>(顯示 -1) EXE (顯示 -10) EXE (顯示 9) EXE </p>
+    <p>(顯示 31) EXE (顯示 -10) EXE (顯示 1) </p>
+    <p>因此，</p>
+    <p>
+    <p>計算完結後，請按Mode 1返回正常模式。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+    <p>　</p>
+    <hr>
+    <hr>
+    <p><b>
+            <font color="#0000FF">程式舊版</font>
+        </b></p>
+    <p>程式更新日期: 2008年3月15日</p>
+    <p>這個版本的程式可以計算三階行列式、逆矩陣<font color="#FF0000">(預設值)</font>或伴隨矩陣(包括<font color="#FF0000">非奇異(non-singular)</font>
+        的伴隨矩陣)。逆矩陣的顯示形式與第一版的不同，程式亦較長，另外若果輸入的數值為整數，答案會以分數形式表示，
+        建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。若果不用計算三階伴隨矩陣，可以使用<a
+            href="../../backup/casio.fx-50FH/Inverse_Matrix.htm">三階逆矩陣及行列式程式</a>。
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">maxX</font> 按 shift 2 2 2，<font color="#0000FF">maxY</font>
+        按 shift 2 2 → 2，<font color="#0000FF">n</font> 按 Shift 1 3)。</p>
+    <p>第一個程式(可以顯示分數答案 164 bytes)</p>
+    <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
+    <p>?→M: B <b>
+            <font color="#FF0000">,</font>
+        </b> C&nbsp; <b>
+            <font color="#FF0000">;</font>
+        </b>
+        D
+        <font color="#FF0000">DT</font>:
+        ?→B: ?→C: ACX + BD<font color="#0000FF">maxY</font> +
+    </p>
+    <p>YM<font color="#0000FF">maxX</font> - ABY - CD<font color="#0000FF">maxX</font> -
+        XM<font color="#0000FF">maxY</font>→D: ?→D:</p>
+    <p>(XC - BY)┘D◢ (B<font color="#0000FF">maxY</font> - C<font color="#0000FF">maxX</font>)┘D◢
+        (Y<font color="#0000FF">maxX</font> - X<font color="#0000FF">maxY</font>)┘D◢</p>
+    <p>(YM - C<font color="#0000FF">n</font>)┘D◢ (AC - M<font color="#0000FF">maxY</font>)┘D◢
+        (<font color="#0000FF">n maxY</font> - AY)┘D◢</p>
+    <p>(B<font color="#0000FF">n</font> - XM)┘D◢ (M<font color="#0000FF">maxX</font> -
+        AB)┘D◢ (AX - <font color="#0000FF">n maxX</font>)┘D </p>
+    <p>　</p>
+    <p>第二個程式(不顯示分數答案 155 bytes)</p>
+    <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: </p>
+    <p>?→Y: ?→M: B <b>
+            <font color="#FF0000">,</font>
+        </b> C <b>
+            <font color="#FF0000">;</font>
+        </b>
+        D
+        <font color="#FF0000">DT</font>: ?→B: ?→C: ACX + BD<font color="#0000FF">maxY</font> +
+    </p>
+    <p>YM<font color="#0000FF">maxX</font> - ABY - CD<font color="#0000FF">maxX</font> -
+        XM<font color="#0000FF">maxY</font>→D: ?→D:</p>
+    <p>D<sup>-1</sup>(XC - BY◢ D<sup>-1</sup>(B<font color="#0000FF">maxY</font> - C<font color="#0000FF">maxX</font>◢
+        D<sup>-1</sup>(Y<font color="#0000FF">maxX</font> - X<font color="#0000FF">maxY</font>◢</p>
+    <p>D<sup>-1</sup>(YM - C<font color="#0000FF">n</font>◢ D<sup>-1</sup>(AC - M<font color="#0000FF">maxY</font>)◢
+        D<sup>-1</sup>(<font color="#0000FF">n maxY</font> - AY◢</p>
+    <p>D<sup>-1</sup>(B<font color="#0000FF">n</font> - XM◢ D<sup>-1</sup>(M<font color="#0000FF">maxX</font>
+        - AB◢ D<sup>-1</sup>(AX - <font color="#0000FF">n maxX</font>
+    </p>
+    </body>
+
+</html>

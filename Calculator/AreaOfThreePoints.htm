@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title></title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">三點求三角形面積</font>
+            </b></u></p>
+    <p>程式二及程式三由網友 <font color="#800080">roviury</font>提供。</p>
+    <p>更新日期: 2012年5月16日</p>
+    <p>程式一 (45 bytes，使用記憶為A, B, C, X, Y及D)</p>
+    <p>?→A: ?→B: ?→C: ?→X: ?→Y: ?→D:</p>
+    <p>Abs( AX+CD+YB-CB-YX-AD )<sup> </sup>┘2</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式二需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式
+            ，而坐標資料會以複數形式輸入。</font>
+    </p>
+    <p>程式二(33 bytes，使用記憶為A, B及C)</p>
+    <p>?→A:?→B:?→C: </p>
+    <p>AConjg(B)+BConjg(C)+CConjg(A:</p>
+    <p>4<sup>-1</sup>Abs(Ans-Conjg(Ans </p>
+    <p><br>
+        <br>
+        <font color="#FF0000">程式三需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式，而坐標資料會以複數形式輸入。</font>
+    </p>
+    <p>程式三(33 bytes，使用記憶為A, B及C)</p>
+    <p>?→A:?→B:?→C: B-A:</p>
+    <p>. 5Abs( Ans(C-A) sin( arg( Ans<span lang="en">÷</span>(C-A</p>
+    <p>　</p>
+    <p>
+        例題:
+        己知三點分別為(2,3)，(4,5)及(3,7)，求三角形面積。</p>
+    <p>
+        程式一的按法:</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 2 EXE 3 EXE 4 EXE 5
+        EXE 3 EXE 7 EXE (顯示面積為3)</p>
+    <p>
+        　</p>
+    <p>
+        程式二或程式三的按法:</p>
+    <p>
+        按 Prog 1&nbsp; 再按 2 + 3i EXE 4 + 5i EXE 3 + 7i EXE (顯示面積為3)</p>
+    <p>　</p>
+    <!--msthemeseparator-->
+    <p align="center">
+    <p>
+        <font color="#800080">附錄: 程式計算數學原理</font> (由網友<font color="#0000FF">roviury</font>提供)
+    </p>
+    <p>
+        程式2: <br>
+        A=a+bi <br>
+        B=c+di <br>
+        C=e+fi <br>
+        AConjg(B)=(a+bi)(c-di)=ac+bd+bci-dai <br>
+        Im( AConjg(B) ) = bc-da <br>
+        Im( BConjg(C) ) = de-fc <br>
+        Im( CConjg(A) ) = fa-be <br>
+        Im( AConjg(B)+BConjg(C)+CConjg(A) ) = bc+de+fa-da-fc-be <br>
+        (abs. prevent closewise input) <br>
+        <br>
+        程式3: <br>
+        arg( (B-A)/(C-A) ) = BA與CA的夾角 <br>
+        |B-A| = AB的長度 <br>
+        |(B-A)(C-A)sin [ arg( (B-A)/(C-A) ) ] | <br>
+        =|B-A||C-A||sin[ arg( (B-A)/(C-A) ) ] ( 在象限I,II, sin 必為正 )<br>
+        　
+    </p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

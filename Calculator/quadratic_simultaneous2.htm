@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>一元二次及聯立二元一次方程(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">一元二次及聯立二元一次方程(II)</font>
+            </b></u></p>
+    <p>更新日期: 2011年3月8日</p>
+    <p>這個程式可以解一元二次方程(包括複數根)，亦可以解聯立二元一次方程，而且使用記憶數目較少。由於將兩個程式整合為一，所以可節省一個程式位置。
+        另外若果輸入數據為整數(或分數)及答案為有理數時，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>
+        <font color="#FF0000">注意</font> : 若果不需要記存聯立二元一次方程的答案，程式中<font color="#008000">綠色</font>部份可以不輸入。
+    </p>
+    <p>程式 (82 / <font color="#008000">80</font> bytes，使用記憶A, B, C及D)</p>
+    <p>?→A: ?→D: -D┘A→D: ?→C: C┘A→C:</p>
+    <p>D┘2 + √(D<sup>2</sup>┘4 - C→A: D - Ans→B:?→A: </p>
+    <p>?→B: A: ?→A: (A - AnsC)┘(B + AnsD→B:</p>
+    <p>C + DAns<font color="#008000">→A</font>◢ B</p>
+    <p>
+        　</p>
+    <p>
+    <p>例題1: 解 x<sup>2</sup> - 7x +
+        12 = 0 </p>
+    <p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE
+        - 7 EXE 12 EXE (顯示第一個實數根為 4) </p>
+    <p>
+        EXE (顯示第二個實數根為 3)
+    <p>
+    <p>∴ x = 4 或 x = 3</p>
+    <p>
+        計算完結後按AC 終止程式，兩根的數值分別儲存在記憶A及B。</p>
+    <p>
+        　</p>
+    <p>
+    <p>例題2: 解 x<sup>2</sup> + 6x +
+        25 = 0</p>
+    <p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 6 EXE 25 EXE
+        <strong>
+            <font color="#FF0000">( 此時計算機右上角出現R&lt;=&gt;I，表示為複數解)</font>
+        </strong>
+    <p>
+    <p>(顯示第一個根的實數部為-3)
+        再按 Shift Re&lt;=&gt;Im (顯示第一個根虛數部為
+        4)</p>
+    <p>
+        EXE (顯示第二個根的實數部為-3)
+        再按 Shift Re&lt;=&gt;Im (顯示第二個根虛數部為
+        - 4)</p>
+    <p>
+    <p>所以方程的解為 x = -3
+        ± 4i</p>
+    <p>
+        計算完結後按AC 終止程式，兩根的數值分別儲存在記憶A及B。</p>
+    <p>
+        　</p>
+    <p>
+    <p>例題3: 解聯立方程
+        :</p>
+    <p>
+        &nbsp;
+    <p>
+    <p>按 Prog 1&nbsp;
+        再按 1 EXE 1 EXE 7 EXE 1
+        EXE - 1 EXE 1 EXE (顯示4)
+        EXE (顯示3)</p>
+    <p>
+    <p>因此解答為 x = 4 及 y = 3. </p>
+    <p>程式執行完成後，按
+        RCL A及RCL B分別顯示x的值及y的值。</p>
+    <p>註: 第一個輸入的係數不可以是零。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

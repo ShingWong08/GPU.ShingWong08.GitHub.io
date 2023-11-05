@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <title>三階矩陣整數冪</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">三階矩陣整數冪(I)</font>
+            </b></u></p>
+    <p>程式是由網友<font color="#0000FF">SuperMANganese</font>提供。</p>
+    <p>程式一可以計算一個3×3矩陣的正整數冪(n&gt;0)。</p>
+    <p>程式二同樣可以計算一個3×3矩陣的正整數冪，冪數包括零(n≧0)，程式二亦較程式一簡短一些，但運算時間會稍長一點。</p>
+    <p>程式三可以計算一個3×3矩陣的整數冪，即冪數包括零及負整數，速度與程式二相若，另外程式三亦計算三階行列式、逆矩陣及伴隨矩陣。</p>
+    <p>程式更新日期: 2011年11月8日</p>
+    <p>程式一(447 bytes，正整數冪數 n&gt;0) </p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>?→A: ?→D: ?→M: ?→X: <font size="1">E</font>5A+X+Ai→A: ?→B:<font size="1"> E</font>-5D+<font size="1">E</font>
+        5B+Bi→B: ?→Y: </p>
+    <p>M+<font size="1">E</font>-5Y→C:
+        D+Mi→D: Y+Xi→X: ?→M: A+<font size="1">E</font>-5M→A:
+        ?→Y: B+Y→B: </p>
+    <p>M+Yi→Y: ?→M: C+<font size="1">E</font>5M+Mi→C:
+        ?→M: Fix 0: 3M-3:
+        If Ans: Then </p>
+    <p>Lbl 1: For 0→M To 0 Step Ans:
+        . 5(B+Conjg(B:Rnd(<font size="1">E</font>-5Ans)(D+Conjg(D)) - </p>
+    <p>i(Rnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans) )(D-Conjg(D)) +&nbsp;
+        <font size="1">E</font>5(Ans-Rnd(Ans))(A-Conjg(A<font color="#FF0000">M+</font>:
+    </p>
+    <p>. 5(C+Conjg(C:<font size="1">E</font>5i(Ans-Rnd(Ans))(D+Conjg(D)) +
+        Rnd(<font size="1">E</font>-5Ans)(D-Conjg(D)) + </p>
+    <p>Rnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans))(A-Conjg(A<font color="#FF0000">M+</font>:
+        . 5(A+Conjg(A: 2Ans + </p>
+    <p>iRnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans))(D+Conjg(D)) +&nbsp;
+        <font size="1">E</font>5(Ans-Rnd(Ans))(D-Conjg(D)) +
+    </p>
+    <p>Rnd(<font size="1">E</font>-5Ans)(A-Conjg(A→A:
+        X→D: Y→X: . 5M→Y: . 5A→M: B→A: C→B: </p>
+    <p>M→C:
+        0→M: Next: M-1 <font color="#FF0000">=&gt;</font> Goto 1: IfEnd: Norm 1: - .
+        5i→M: Ans(A-Conjg(A◢ <br>
+        <br>
+        . 5(D+Conjg(D◢ i(Ans-D◢ M(X-Conjg(X◢ M(B-Conjg(B◢ <br>
+        <br>
+        .5(X+Conjg(X◢ . 5(Y+Conjg(Y◢ i(Ans-Y◢ M(C-Conjg(C<br>
+        　
+    </p>
+    <p>
+        <br>
+        <br>
+        程式二(426 bytes，整數冪數 n≧0)
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>ClrMemory:?→A: ?→B: ?→C:<font size="1"> E</font>5A+B+<font size="1">E</font>-5C+i→A:
+        ?→B: ?→C: ?→M:</p>
+    <p>
+        <font size="1">E</font>-5B+<font size="1">E</font>5C+M+i→B:
+        ?→C: ?→M: C: ?→C:<font size="1"> E</font>-5M+Ans+<font size="1">E</font>5C+i→C:
+        ?→M: Fix 0: 3M:
+    </p>
+    <p>If Ans: Then Lbl 1: For 0→M To 0 Step Ans:
+        . 5(B+Conjg(B:Rnd(<font size="1">E</font>-5Ans)</p>
+    <p>(D+Conjg(D)) -
+        i(Rnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans))(D-Conjg(D)) +
+        <font size="1">E</font>5(Ans-Rnd(Ans))
+    </p>
+    <p>(A-Conjg(A<font color="#FF0000">M+</font>:
+        . 5(C+Conjg(C:<font size="1">E</font>5i(Ans-Rnd(Ans))(D+Conjg(D)) +
+        Rnd(<font size="1">E</font>-5Ans)</p>
+    <p>(D-Conjg(D)) +
+        Rnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans))(A-Conjg(A<font color="#FF0000">M+</font>:
+        . 5(A+Conjg(A:</p>
+    <p>2Ans + iRnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans))(D+Conjg(D)) +
+        <font size="1">E</font>5(Ans-Rnd(Ans))(D-Conjg(D)) +
+    </p>
+    <p>Rnd(<font size="1">E</font>-5Ans)(A-Conjg(A→A:
+        X→D: Y→X: . 5M→Y: . 5A→M: B→A: C→B: M→C: </p>
+    <p>0→M: Next: M-1 <font color="#FF0000">=&gt;</font> Goto 1: IfEnd: Norm 1:
+        - . 5i(A-Conjg(A◢ - . 5i(X-Conjg(X◢</p>
+    <p>. 5(Y+Conjg(Y◢
+        . 5(D+Conjg(D◢ - . 5i(B-Conjg(B◢ - . 5i(Y-Conjg(Y◢ </p>
+    <p>- . 5i(D-Conjg(D◢ . 5(X+Conjg(X◢ - . 5i(C-Conjg(C <br>
+        <br>
+        <br>
+        <br>
+        程式三(668 bytes，任何整數冪n)
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式。</font>
+    </p>
+    <p>ClrMemory:?→A: ?→B: ?→C:<font size="1"> E</font>5A+B+<font size="1">E</font>-5C+i→A:
+        ?→B: ?→C: ?→M:</p>
+    <p>
+        <font size="1">E</font>-5B+<font size="1">E</font>5C+M+i→B:
+        ?→C: ?→M: C: ?→C:<font size="1"> E</font>-5M+Ans+<font size="1">E</font>5C+i→C:
+        ?→M: Fix 0:
+    </p>
+    <p>Abs( 3M:
+        If Ans: Then Lbl 1: For 0→M To 0 Step Ans:
+        . 5(B+Conjg(B:Rnd(<font size="1">E</font>-5Ans)</p>
+    <p>(D+Conjg(D)) -
+        i(Rnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans))(D-Conjg(D)) +
+        <font size="1">E</font>5(Ans-Rnd(Ans))
+    </p>
+    <p>(A-Conjg(A<font color="#FF0000">M+</font>:
+        . 5(C+Conjg(C:<font size="1">E</font>5i(Ans-Rnd(Ans))(D+Conjg(D)) +
+        Rnd(<font size="1">E</font>-5Ans)</p>
+    <p>(D-Conjg(D)) +
+        Rnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans))(A-Conjg(A<font color="#FF0000">M+</font>:
+        . 5(A+Conjg(A:</p>
+    <p>2Ans + iRnd(Ans-<font size="1">E</font>5Rnd(<font size="1">E</font>-5Ans))(D+Conjg(D)) +
+        <font size="1">E</font>5(Ans-Rnd(Ans))(D-Conjg(D)) +
+    </p>
+    <p>Rnd(<font size="1">E</font>-5Ans)(A-Conjg(A→A:
+        X→D: Y→X: . 5M→Y: . 5A→M: B→A: C→B: M→C: </p>
+    <p>0→M: Next: M-1 <font color="#FF0000">=&gt;</font> Goto 1: IfEnd: Norm 1: M<font color="#FF0000">M-</font>:
+        - . 5i(A-Conjg(A→A◢</p>
+    <p>- . 5i(X-Conjg(X◢ . 5(Y-Conjg(Y<font color="#FF0000">M+</font>: Y-Ans→Y◢
+        . 5(D+Conjg(D[M+]◢</p>
+    <p>i(Ans-D→D: - . 5i(B-Conjg(B→B◢ - . 5i(M-Conjg(M◢
+        D◢ . 5(X+Conjg(X◢</p>
+    <p>- . 5i(C-Conjg(C→C◢ M+Conjg(M: ABC-YBD + 4<sup>-1</sup>(YAns(X+Conjg(X)) - </p>
+    <p>D(X-Conjg(X))(M-Conjg(M))
+        + Ai(M-Conjg(M))(X+Conjg(X)) + CAnsi(X-Conjg(X◢ </p>
+    <p>BC + 4<sup>-1</sup>i(M-Conjg(M))(X+Conjg(X◢
+        . 5(M+Conjg(M: - CAns-Di(M-Ans◢ </p>
+    <p>-BD + 4<sup>-1</sup>(M+Conjg(M))(X+Conjg(X◢
+        . 5(X+Conjg(X:YAns+Ci(X-Ans◢ AC-YD◢ </p>
+    <p>. 5(X+Conjg(X: -AAns - Di(X-Ans◢
+        -BY - 4<sup>-1</sup>(X-Conjg(X))(M-Conjg(M◢ </p>
+    <p>. 5(M+Conjg(M:Y Ans + Ai(M-Ans◢
+        AB + 4<sup>-1</sup>(M+Conjg(M))i(X-Conjg(X</p>
+    <p>註1: 程式三會先找出正整數冪的矩陣，然後再找出其逆矩陣。</p>
+    <p>註2: 原矩陣中的數字須為整數，輸入範圍: -50000&lt;x&lt;50000。</p>
+    <p>　</p>
+    <p>例題1: 計算 </p>
+    <p>
+        <br>
+        按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE 5 EXE 6 EXE 7 EXE 8 EXE 9 EXE 2 EXE <br>
+        <br>
+        (顯示30) EXE (顯示36) EXE (顯示42) EXE (顯示66) EXE (顯示 81) <br>
+        <br>
+        EXE (顯示 96) EXE (顯示 102) EXE (顯示 126) EXE (顯示 150) <br>
+        <br>
+        所以答案為
+    </p>
+    <p>
+    <p><br>
+        例題2: 計算 </p>
+    <p>
+        <br>
+        按 Prog 1 再按 3 EXE 5 EXE 4 EXE 8 EXE 0 EXE 7 EXE 1 EXE 6 EXE 2 EXE 9 EXE <br>
+        <br>
+        (顯示1580876851) EXE (顯示1545817735) EXE (顯示1731636235) EXE (顯示1820264835) EXE (顯示
+        1743178616) <br>
+        <br>
+        EXE (顯示 1985285770) EXE (顯示 1249213485) EXE (顯示 1235213845) EXE (顯示 1371541616)
+        <br>
+        <br>
+        所以答案為
+    </p>
+    <p>
+    <p>例題3(只限程式三): 計算 </p>
+    <p>
+        <br>
+        按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE 5 EXE 4 EXE 3 EXE 2 EXE 1 EXE -2 EXE <br>
+        <br>
+        EXE EXE EXE EXE EXE EXE EXE EXE EXE (忽略正數冪的答案矩陣) (顯示64，矩陣行列式) EXE <br>
+        <br>
+        (顯示90) EXE (顯示-144) EXE (顯示74) EXE (顯示-72) EXE (顯示 128) <br>
+        <br>
+        EXE (顯示 -72) EXE (顯示 74) EXE (顯示 -144) EXE (顯示 90) <br>
+        <br>
+        所以答案為 <br>
+        <br>
+        
+    </p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

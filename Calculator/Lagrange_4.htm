@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>四點拉格朗日插值多項式</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">四點拉格朗日插值多項式(II)</font>
+            </b></u></p>
+    <p>更新日期: 2012年5月11日</p>
+    <p>程式由網友<font color="#0000FF">roviury</font>提供。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Quad 模式下執行，因此在選擇新程式位置後，按 5 → 2 選用REG Quad模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>為平均x
+        按 shift 2 1 1，<span style="text-decoration: overline">
+            <font color="#0000FF">y</font>
+        </span>為平均x
+        按 shift 2 1 → 1，，<font color="#0000FF">a</font> 按 Shift
+        2 1→ → 1，<font color="#0000FF">b</font>
+        按 Shift 2 1→ →&nbsp; 2，<font color="#0000FF">c</font> 按 Shift 2 1→ →&nbsp; 3<font face="Times New Roman"
+            color="#0000FF">，&#375;</font>
+        <font color="#0000FF"> </font>按 Shift
+        2 1 <font face="新細明體">← 2</font>)。
+    </p>
+    <p>第一個程式 (65<font color="#008000"> </font>bytes)</p>
+    <p>?→A: ?→B: ClrStat: Lbl 1: ?→C:</p>
+    <p>?→D: C - A: Ans , Ans<sup>-1</sup>(D - B <font color="#FF0000">DT</font>:
+        <font color="#0000FF">n</font>&lt;3 <font color="#FF0000">=&gt;</font> Goto 1:
+    </p>
+    <p>
+        <font color="#0000FF">c</font>◢ <font color="#0000FF">b</font> - 3AnsA◢
+        <font color="#0000FF">a</font> - <font color="#0000FF">b</font>A+ AnsA◢ B - A(-A<font face="Times New Roman"
+            color="#0000FF">&#375;</font>
+    </p>
+    <p>　</p>
+    <p>第二個程式 (82 bytes，程式亦可以計算三點拉朗日格插值多項式)</p>
+    <p>?→A: ?→B: 1: ClrStat: While Ans: ?→C: C - A: </p>
+    <p>If Ans: Then ?→D: Ans , Ans<sup>-1</sup>(D - B <font color="#FF0000">DT</font>:
+        A→C:</p>
+    <p>Else <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>
+        , <span style="text-decoration: overline">
+            <font color="#0000FF">y</font>
+        </span>
+        <font color="#FF0000">DT</font>: IfEnd:
+        <font color="#0000FF">n</font>&lt;3: WhileEnd:
+    </p>
+    <p>
+        <font color="#0000FF">c</font>◢ <font color="#0000FF">b</font> - 3AnsA◢
+        <font color="#0000FF">a</font> - <font color="#0000FF">b</font>A+ AnsA◢ B - A(-A<font face="Times New Roman"
+            color="#0000FF">&#375;</font>
+    </p>
+    <p>
+        　</p>
+    <p>
+        例題1:
+        求 (0 , - 4), (1 , - 4)、(2
+        , 2)
+        及 (3 , 26)四點的拉格朗日插值多項式。</p>
+    <p>按
+        Prog 1&nbsp; 再按 0 EXE - 4 EXE 1 EXE - 4
+        EXE 2 EXE 2 EXE 3 EXE 26 EXE</p>
+    <p>
+        (顯示x<sup>3</sup>的係數為2)
+        EXE (顯示x<sup>2</sup>的係數為
+        -3)
+    </p>
+    <p>
+        EXE (顯示x的係數為
+        1) EXE (顯示常數項為
+        - 4)</p>
+    <p>
+        所以拉格朗日插值多項式為 2x<sup>3</sup>
+        -&nbsp;3x<sup>2</sup>
+        + x - 4</p>
+    <p>計算完結後按 MODE 1
+        返回正常計算模式。</p>
+    <p>
+        　</p>
+    <p>
+        例題2:
+        求過點 (0 , 5), (1 , 4)
+        及 (-1 , 10)三點的拉格朗日插值多項式。</p>
+    <p>
+        <font color="#FF0000">注意: 只適用於第二個程式</font>
+    </p>
+    <p>
+        按 Prog 1
+        再按 0 EXE
+        5 EXE 1 EXE 4 EXE </p>
+    <p>
+        - 1 EXE 10 EXE <font color="#FF0000">EXE</font> (<font color="#FF0000">不輸入數值</font>代表計算三點拉格朗日插值多項式
+        ，顯示x<sup>3</sup>的係數為0) </p>
+    <p>
+        EXE (顯示x<sup>2</sup>的係數為 2)
+        EXE (顯示x的係數為
+        -3)
+        EXE (顯示常數項為5)</p>
+    <p>
+        所以拉格朗日插值多項式為 &nbsp;2x<sup>2</sup>
+        - 3x + 5</p>
+    <p>計算完結後按 MODE 1
+        返回正常計算模式。</p>
+    <p>　</p>
+    <p>註:
+        基於計算方法本身限制，輸入的四點中有任何兩點的x座標相同，程式會出現 Math
+        ERROR，不過若果第三點的x值與第四點的x值相等時，第二個程式會自動假定是計算三點拉格朗日插值多項式，因此亦不能輸入第四點的y值。</p>
+    <p>　</p>
+    <!--msthemeseparator-->
+    <p align="center">
+    <p>
+        <font color="#800080">附錄: 程式計算數學原理</font> (由網友<font color="#0000FF">roviury</font>原創設計及提供)
+    </p>
+    <p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

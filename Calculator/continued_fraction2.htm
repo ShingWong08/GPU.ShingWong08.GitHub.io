@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>平方根連續分式</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">平方根連續分式</font>
+            </b></u></p>
+    <p>更新日期: 2011年2月3日</p>
+    <p>程式一用作計算平方根(√x + y) / z的連續分式，其中x為非完全平方的正整數，y及z整數。利用這個程式亦可以計算平方根或分數的連續分式。與<a
+            href="continued_fraction.htm">連續分式程式</a>比較，這個程式雖然只能計算特定形式的連續分式，但改善了誤差的問題，若果輸入的數值不是很大，誤差是0，亦即是無論計幾多項(循環)亦不會出現誤差。
+    </p>
+    <p>
+        程式二只能計算平方根的連續分式，但平方根的連續分式可以表達成[整數 ;
+        重複部份]，程式較特別之處是可以找出整數及重複部份，亦即是找到整個重複部份程式會自動終止。</p>
+    <p>　</p>
+    <p>
+        程式一 (68 bytes，使用記憶A、B及C)</p>
+    <p>
+        ?→A: ?→B: ?→C: C√( A→A: BC→B: C<sup>2</sup>→C: </p>
+    <p>
+        While 1: Fix 0: Rnd( (A + B) ÷ C - . 5: Norm 1◢ </p>
+    <p>
+        AnsC - B→B: C<sup>-1</sup>(A<sup>2</sup>
+        - Ans<sup>2</sup>→C: WhileEnd</p>
+    <p>
+        　</p>
+    <p>
+        程式二 (60 bytes，使用記憶A、X、Y及M)</p>
+    <p>
+        ?→A: <font color="#FF0000">Pol(</font> 1 , 0: M<font color="#FF0000">M-</font>:
+        Fix 0: While M- 2: </p>
+    <p>
+        X=1<font color="#FF0000">M+</font>:
+        Rnd( X<sup>-1</sup>(√( A ) + Y) - . 5◢</p>
+    <p>
+        AnsX - Y→Y: X<sup>-1</sup>(A - Ans<sup>2</sup>→X: </p>
+    <p>
+        WhileEnd: Norm 1</p>
+    <p>
+        　</p>
+    <p>
+        註: 連續分式的形式如下:</p>
+    <p>
+        
+    </p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式一</font>例題1: 計算以下算式的連續分式
+    </p>
+    <p>
+    <p>按 Prog 1 再按 2 EXE 1 EXE 2 EXE (顯示1) </p>
+    <p>EXE (顯示4)
+        EXE (顯示1) EXE (顯示4) ....</p>
+    <p>
+        所以答案為</p>
+    <p>
+        
+    </p>
+    <p>
+        　</p>
+    <p>
+        <font color="#FF0000">程式一</font>例題2:
+        以連續分式表示 25/16
+        值。
+    </p>
+    <p>
+        按 Prog 1 再按
+        0 EXE 25 EXE 16 EXE (顯示1)
+        EXE (顯示1) EXE (顯示1) </p>
+    <p>
+        EXE (顯示3) EXE
+        (顯示2) EXE (顯示Math ERROR表示計算完結)</p>
+    <p>
+        所以答案為</p>
+    <p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式一</font>例題3:
+        以連續分式表示 √2
+        。
+    </p>
+    <p>
+        按 Prog 1 &nbsp;再按
+        2 EXE 0 EXE
+        1 EXE (顯示1) EXE (顯示2) EXE (顯示2) </p>
+    <p>
+        EXE (顯示2) ........... </p>
+    <p>
+        所以答案為</p>
+    <p>
+    <p>
+        　</p>
+    <p>
+        <font color="#FF0000">程式二</font>例題: 試找出√14的連續分式。
+    </p>
+    <p>
+        按 Prog 1 再按 14 EXE (顯示整數部份為 3)</p>
+    <p>
+        EXE (顯示 1) EXE (顯示 2) EXE (顯示 1) EXE (顯示6)</p>
+    <p>
+        EXE (顯示<font color="#FF0000">Norm 1</font>及<font color="#FF0000">0</font>表示計算完結，亦即是重複部份為
+        1 , 2, 1, 6 )</p>
+    <p>
+        所以√14 = [ 3; 1, 2, 1, 6, .....]</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>五階矩陣平方 (Square of a 5×5 matrix)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">五階矩陣平方 (Square of a 5×5 matrix)</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">SuperMANganese</font> 提供。</p>
+    <p>網友提供程式日期: 2009年8月9日</p>
+    <p>程式可以計算一個五階矩陣的平方。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數，FreqOn 按 Shift MODE
+        ← ← 1，<font size="1">E </font>是按 EXP，G按 Shift 7 ← 3 。</p>
+    <p>程式 (240 bytes)</p>
+    <p>FreqOn: Lbl 1: 1 <font color="#FF0000">DT</font>: 0→X:
+        For 1→M To 5: ?→Y: </p>
+    <p>
+        <font size="1">E</font>3X-5<font size="1">E</font>2+Y→X: Next:
+        <font size="1">E</font>-12X→X: A→Y: <font color="#0000FF">Σx</font>≧5
+        <font color="#FF0000">=&gt;</font> Goto 2:
+    </p>
+    <p>B→A: C→B: D→C: X→D: Goto 1:
+        Lbl 2: <font color="#0000FF">Σy</font>: ClrStat: </p>
+    <p>, Ans+1 <font color="#FF0000">DT</font>:
+        Fix 0: Lbl 3: (5<font size="1">E</font>2+Rnd(Y+ . 5))(5<font size="1">E</font>2+Rnd(A+ . 5 , 0
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>Rnd(Y+ . 5: <font size="1">E</font>3(Y-Ans+<font size="1">E</font>-15Ans→Y:
+        Rnd(A+ . 5: <font size="1">E</font>3(A-Ans+<font size="1">E</font>-15Ans→M: </p>
+    <p>B→A: C→B: D→C: X→D: M→X: <font color="#0000FF">n</font>≦5 <font color="#FF0000">=&gt;</font> Goto 3:
+        Norm 1: <font color="#0000FF">Σx</font>◢ </p>
+    <p>
+        <font color="#0000FF">Σy</font>&lt;5 <font color="#FF0000">=&gt;</font> Goto 2:
+        D=Y <font color="#FF0000">=&gt;</font> X→Y: C=Y <font color="#FF0000">=&gt;</font> D→Y: B=Y
+        <font color="#FF0000">=&gt;</font> C→Y:
+    </p>
+    <p>A=Y <font color="#FF0000">=&gt;</font> B→Y:
+        , -5 <font color="#FF0000">DT</font>: Goto 2 </p>
+    <p>　</p>
+    <p>註: 原矩陣的數據須為整數，而且 -400&lt;x&lt;400,<br>
+        　</p>
+    <p>例題: 計算</p>
+    <p>
+    <p>按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE 5 EXE 6 EXE 7 EXE 8 EXE 9 EXE 10 EXE </p>
+    <p>11 EXE 12 EXE 13 EXE 14 EXE 15 EXE 16 EXE 17 EXE 18 EXE 19 EXE 20 EXE </p>
+    <p>21 EXE 22 EXE 23 EXE 24 EXE 25 EXE </p>
+    <p>(顯示215) EXE (顯示230) EXE (顯示245) EXE (顯示260) EXE (顯示275) EXE </p>
+    <p>(顯示490) EXE (顯示530) EXE (顯示570) EXE (顯示610) EXE (顯示650) EXE </p>
+    <p>(顯示765) EXE (顯示830) EXE (顯示895) EXE (顯示960) EXE (顯示1025) EXE </p>
+    <p>(顯示1040) EXE (顯示1130) EXE (顯示1220) EXE (顯示1310) EXE (顯示1400) EXE </p>
+    <p>(顯示1315) EXE (顯示1430) EXE (顯示1545) EXE (顯示1660) EXE (顯示1775) <br>
+        <br>
+        所以
+    </p>
+    <p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+</body>
+
+</html>

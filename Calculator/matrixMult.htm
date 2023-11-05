@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <title>三階伴隨矩陣/逆矩陣/行列式及矩陣乘法</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">三階伴隨矩陣/逆矩陣/行列式及矩陣乘法</font>
+            </b></u></p>
+    <p>更新日期: 2010年4月22日</p>
+    <p>
+        這個程式將兩個程式(三階矩陣乘法及三階隨矩陣/逆矩陣及行列式(I)合併為一，所以可以節省一個程式位置，合併後程式總長度亦略為節省一些。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">n</font> 按 shift 1 3 ，<font
+            color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">Σxy</font>
+        按 Shift 1 → 3)，FreqOn 按 Shift MODE ← ← 1。</p>
+    <p>程式(200 bytes)</p>
+    <p>FreqOn: ?→M: ?→A: <b>
+            <font color="#FF0000">;</font>
+        </b> A - 3 <font color="#FF0000">DT</font>:
+        ?→B: B - 1 <font color="#FF0000">DT</font>: </p>
+    <p>?→C: 1 <b>,</b> C <font color="#FF0000">DT</font>: ?→D:&nbsp; 0 <b>,</b> D - C
+        <font color="#FF0000">DT</font>: ?→A: ?→B:
+    </p>
+    <p>?→C: ?→D: ?→X: If M: Then <font color="#0000FF">n</font>AX + D<font color="#0000FF">Σxy</font>
+        <font color="#0000FF">Σy</font> +
+    </p>
+    <p>
+        <font color="#0000FF">Σx</font>BC - <font color="#0000FF">n</font>DB - <font color="#0000FF">
+            ΣxΣy</font>X - <font color="#0000FF">Σxy</font>CA◢ XA - BD◢
+    </p>
+    <p>
+        <font color="#0000FF">Σxy</font>D - <font color="#0000FF">Σx</font>X◢ <font color="#0000FF">
+            Σx</font>B - <font color="#0000FF">Σxy</font>A◢ BC - <font color="#0000FF">Σy</font>X◢
+        <font color="#0000FF">n</font>X - <font color="#0000FF">Σxy</font>C◢
+    </p>
+    <p>
+        <font color="#0000FF">ΣxyΣy</font> - <font color="#0000FF">n</font>B◢ <font color="#0000FF">Σy</font>D -
+        AC◢ <font color="#0000FF">Σx</font>C - <font color="#0000FF">n</font>D◢
+        <font color="#0000FF">n</font>A - <font color="#0000FF">ΣxΣy</font>:
+    </p>
+    <p>Else X <b>
+            <font color="#FF0000">;</font>
+        </b> 0 <font color="#FF0000">DT</font>:
+        While 1: ?→X: ?→Y: ?→M: </p>
+    <p>X<font color="#0000FF">n</font> + Y<font color="#0000FF">Σx</font>
+        + M<font color="#0000FF">Σxy</font>◢ X<font color="#0000FF">Σy</font> + YA + MB◢
+        <b>
+            <font color="#FF0000">;</font>
+        </b> 0
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>XC + YD + MAns◢ WhileEnd</p>
+    <p>　</p>
+    <p>例題1: 計算下列矩陣的乘積:</p>
+    <p>
+    <p>
+        <font face="新細明體">按
+            Prog 1&nbsp; 再按 <font color="#FF0000">0
+                EXE</font> (0代表計算三階矩陣乘法)</font>
+    </p>
+    <p>
+        <font face="新細明體">1 EXE 2 EXE 3 EXE 3 EXE 2
+            EXE 1 EXE 4 EXE 5 EXE 6 EXE</font>
+    </p>
+    <p>(第一個矩陣，由左至右，上至下輸入) </p>
+    <p>1 EXE 3 EXE 2 EXE (輸入第二個矩陣，第一欄的數據)</p>
+    <p>(顯示13) EXE (顯示11) EXE (顯示31，這三個數值為答案的第一欄) </p>
+    <p>EXE 2 EXE 1 EXE 1 EXE (輸入第二個矩陣，第二欄的數據)</p>
+    <p>(顯示7) EXE (顯示9) EXE (顯示19，這三個數值為答案的第二欄)</p>
+    <p>EXE 1 EXE 3 EXE 3 EXE (輸入第二個矩陣，第三欄的數據)</p>
+    <p>(顯示16) EXE (顯示12) EXE (顯示37，這三個數值為答案的第三欄)</p>
+    <p>所以:</p>
+    <p>
+    <p>計算完結後，請按AC 終止程式，按 MODE 1返回正常模式。</p>
+    <p>　</p>
+    <p>例題2: 計算下列矩陣的伴隨矩陣及逆矩陣。</p>
+    <p>
+    <p>
+        <font face="新細明體">按
+            Prog 1&nbsp; 再按 <font color="#FF0000">1
+                EXE</font> (1代表計算三階伴隨矩陣及行列式)</font>
+    </p>
+    <p>
+        <font face="新細明體">2 EXE 1 EXE 3 EXE 7 EXE 4
+            EXE 6 EXE 8 EXE 9 EXE 7 EXE </font>(顯示行列式的值為40)
+    </p>
+    <p>EXE (顯示 -26) EXE (顯示 20) EXE (顯示 -6) </p>
+    <p>EXE (顯示 -1) EXE (顯示 -10) EXE (顯示 9) </p>
+    <p>EXE (顯示 31) EXE (顯示 -10) EXE (顯示 1) </p>
+    <p>因此，</p>
+    <p>
+    <p>
+    <p>計算完結後，請按Mode 1返回正常模式。</p>
+    <p>　</p>
+    <p>程式限制:計算矩陣乘法時，輸入的數據&#32118;對值必須為小於100000的整數，若果望計算矩陣乘法(準確版)可以輸入小數，請使附錄的第二個程式，但程式會較長。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <hr>
+    <hr>
+    <p>
+        <font color="#0000FF"><b>舊</b></font><b>
+            <font color="#0000FF">版程式: </font>
+        </b>
+    </p>
+    <p>程式編寫日期: 2007年10月17日 更新日期: 2008年2月9日</p>
+    <p>程式限制: 計算矩陣乘法時，輸入的數據&#32118;對值必須為小於100000的整數，若果望計算矩陣乘法(準確版)可以輸入小數，請使用第二個程式，但程式會較長。</p>
+    <p>第一個程式(221 bytes)</p>
+    <p>ClrStat: ?→M: ?→A: A-1 <font color="#FF0000">DT</font>:
+        ?→B: 1 , B <font color="#FF0000">DT</font>:</p>
+    <p>?→C: 0 , C - <font color="#0000FF">Σy</font>
+        <font color="#FF0000">DT</font>: ?→A: ?→B: ?→C: ?→D: ?→X:
+    </p>
+    <p>?→Y: M <font color="#FF0000">=&gt;</font> Goto 0: B + <font size="1">E</font>
+        - 6C→B: Y <font color="#FF0000"><b>;</b></font> 0 <font color="#FF0000">DT</font>:
+        Lbl 1:</p>
+    <p>?→C: ?→Y: ?→M: <font color="#0000FF">Σx</font>C +
+        <font color="#0000FF">Σxy</font>Y + <font color="#0000FF">Σy</font>M◢ Fix 0:&nbsp;
+    </p>
+    <p>Rnd( B: Norm 1: CA + Y Ans + <font size="1">E </font>6M(B
+        - Ans◢ <font color="#FF0000"><b>;</b></font> 0 DT: </p>
+    <p>DC + YX + M Ans◢ Goto 1: Lbl 0: <font color="#0000FF">Σx</font>BY
+        + AX<font color="#0000FF">Σy</font> +</p>
+    <p>D<font color="#0000FF">Σxy</font>C - BD<font color="#0000FF">Σy</font>
+        - XC<font color="#0000FF">Σx</font> - <font color="#0000FF">Σxy</font>AY◢
+        BY - CX◢ </p>
+    <p>
+        <font color="#0000FF">Σy</font>X - <font color="#0000FF">Σxy</font>Y◢
+        <font color="#0000FF">Σxy</font>C - <font color="#0000FF">Σy</font>B◢ CD - AY◢
+        <font color="#0000FF">Σx</font>Y - <font color="#0000FF">Σy</font>D◢
+    </p>
+    <p>
+        <font color="#0000FF">Σy</font>A - <font color="#0000FF">Σx</font>C◢
+        AX - BD◢ <font color="#0000FF">Σxy</font>D - <font color="#0000FF">Σx</font>X◢
+        <font color="#0000FF">Σx</font>B - <font color="#0000FF">Σxy</font>A
+    </p>
+    <p>　</p>
+    <p>第二個程式(計算矩陣乘法時可輸入小數，245 bytes)</p>
+    <p>ClrStat: ?<font face="新細明體">→M: </font>-1 <font color="#FF0000">DT</font>: ?→A:
+        1 , A
+        <font color="#FF0000">DT</font>: ?→B: B
+        , 0 <font color="#FF0000">DT</font>: ?→C:
+    </p>
+    <p>0 , C -<font color="#0000FF"> Σy</font>
+        <font color="#FF0000">DT</font>: ?→A: ?→B: ?→Y: ?→X: ?→C: ?→D:
+        M <font color="#FF0000">=&gt;</font> Goto 0:
+    </p>
+    <p>
+        <font size="1">E</font> 60D→D: <font size="1">E</font> - 60Y , X
+        <font color="#FF0000">; </font>0 <font color="#FF0000">DT</font>: Lbl 1: ?→X: ?→M: ?→Y:
+    </p>
+    <p>X<font color="#0000FF">Σxy</font> + M<font color="#0000FF">Σx</font>
+        +Y<font color="#0000FF">Σy</font>◢ <font color="#FF0000">;</font> 0
+        <font color="#FF0000">DT</font>: XA + MB + <font size="1">E</font> 60AnsY◢
+    </p>
+    <p>MC + <font size="1">E</font> - 60DY→M: <font color="#0000FF">Σy</font>→Y: <font color="#FF0000">;</font>
+        1 <font color="#FF0000">DT</font>: <font color="#0000FF">Σy</font> - Y→Y: YX +M◢
+        <font color="#FF0000">;</font> -1 <font color="#FF0000">DT</font>:
+    </p>
+    <p>Goto 1: Lbl 0: <font color="#0000FF">Σxy</font>BD - CY<font color="#0000FF">Σxy</font>
+        + AC<font color="#0000FF">Σy</font> + Y<font color="#0000FF">Σx</font>X
+        - BX<font color="#0000FF">Σy</font> - AD<font color="#0000FF">Σx</font>◢
+    </p>
+    <p>
+        <font face="新細明體">BD - YC◢ <font color="#0000FF">Σy</font>C -
+            <font color="#0000FF">Σx</font>D◢
+            <font color="#0000FF">Σx</font>Y
+            - <font color="#0000FF">Σy</font>B◢ XY - AD◢ <font color="#0000FF">Σxy</font>D
+            - <font color="#0000FF">Σy</font>X◢
+        </font>
+    </p>
+    <p>
+        <font face="新細明體">
+            <font color="#0000FF">Σy</font>A - <font color="#0000FF">
+                Σxy</font>Y◢ AC - BX◢ <font color="#0000FF">Σx</font>X
+            - <font color="#0000FF">Σxy</font>C◢ <font color="#0000FF">Σxy</font>B -
+            <font color="#0000FF">Σx</font>A
+        </font>
+    </p>
+</body>
+
+</html>

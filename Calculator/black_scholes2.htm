@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>柏力克-舒爾斯期權定價(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">柏力克-舒爾斯期權定價(II)</font>
+            </b></u></p>
+    <p>程式編寫日期: 2014年8月1日</p>
+    <p>程式會依照下列公式，輸入S, K, σ(%), r(%), T, δ(%)，計算Δ<sub>call</sub>, Δ<sub>put</sub>,
+        C 及 P。</p>
+    <p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<font color="#0000FF">maxX</font> 按 shift
+        2 2 2，<font color="#0000FF">maxY</font> 按 shift 2 2 → 2)， <font color="#FF0000">e^( </font>是按shift
+        e<sup>x</sup>，<font size="1">E</font>是按 EXP，FreqOn 按 Shift MODE ← ← 1。</p>
+    <p>程式 (239 bytes)</p>
+    <p>FreqOn: ?→A: ?→B: ?→C: ?→D:&nbsp; C ÷ <font size="1">E</font> 2→C: D ÷ <font size="1">E</font>
+        2→D: ?→X: ?→Y: X <font color="#FF0000">,</font> Y ÷ <font size="1">E</font> 2
+        <font color="#FF0000">;</font> A <font color="#FF0000">DT</font>:
+    </p>
+    <p>( ln( <font color="#0000FF">n</font>÷B
+        ) + ( D - <font color="#0000FF">maxY</font> + C<sup>2 </sup>÷ 2)
+        <font color="#0000FF">maxX</font> )
+        ÷ <font color="#800080"><b>(</b></font> C√( <font color="#0000FF">maxX</font>→A:
+    </p>
+    <p>Ans - C√( <font color="#0000FF">maxX</font>→M:
+        0→X: Lbl 2: C→Y: 1 ÷ (1 + . 231642Abs( A: </p>
+    <p>
+        <font size="1">E</font> - 7 √( <font color="#FF0000">e^(</font>
+        - A<sup>2</sup> ) )( 1274148Ans - 1422484Ans<sup>2</sup> + 7107069Ans<sup>3</sup>
+        -
+    </p>
+    <p>7265760Ans<sup>2 2</sup> + 5307027Ans^( 5→C: A&gt;0 <font color="#FF0000">=&gt;</font>
+        1 - C→C: M→A: </p>
+    <p>X=0→X: Ans <font color="#FF0000">=&gt;</font> Goto 2: Y<font color="#FF0000">e^(</font>
+        - <font color="#0000FF">maxY maxX</font>→A◢ Ans -
+        <font color="#FF0000">e^(</font> - <font color="#0000FF">maxY maxX</font>◢
+    </p>
+    <p>
+        <font color="#0000FF">n</font>A - BC<font color="#FF0000">e^(</font> -
+        D<font color="#0000FF">maxX</font>◢
+        Ans - <font color="#0000FF">n</font>
+        <font color="#FF0000">e^(</font> -
+        <font color="#0000FF">maxY maxX</font> ) + B ÷ <font color="#FF0000">e^(</font>
+        <font color="#0000FF">maxX </font>D
+    </p>
+    <p>
+        <span lang="en">
+            註: 如果是使用fx-3650P II或fx-50FH II，上述程式(第二行)中的</span>
+        <font color="#0000FF"> maxX</font> )
+        ÷ <font color="#800080"><b>(</b></font> C√( <font color="#0000FF">maxX</font>→A:&nbsp;
+        <span lang="en">
+            可以簡化為
+        </span>
+        <font color="#0000FF">maxX</font> )
+        ÷ C√( <font color="#0000FF">maxX</font>→A:<span lang="en">&nbsp;，可節省1 byte。</span>
+    </p>
+    <p>　</p>
+    <p>例題: S=50, K=40, σ=30%, r=8%, T=1, δ=10%, 求Δ<sub>call</sub>, Δ<sub>put</sub>,
+        C 及 P。</p>
+    <p>按 Prog 1 再按 50 EXE 40 EXE 30 EXE 8 EXE 1 EXE 10 EXE (顯示Δ<sub>call</sub>為0.720180647)</p>
+    <p>EXE (顯示Δ<sub>put</sub>為 - 0.18465677) EXE (顯示C為10.1265606) EXE
+        (顯示P為1.809343554) </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>
