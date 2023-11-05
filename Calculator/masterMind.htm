@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>機妙算(MindMaster)遊戲<< /title>
+            <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">機妙算(MindMaster)遊戲 I</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年9月17日</p>
+    <p>
+        <font color="#0000FF">第一個程式</font> (154 bytes)
+    </p>
+    <p>ClrMemory: Fix 0: Lbl 0: Rnd( 9<font color="#FF0000">Ran#</font>→A:</p>
+    <p>Rnd( 9<font color="#FF0000">Ran#</font>→B: Rnd( 9<font color="#FF0000">Ran#</font>→C:</p>
+    <p>Rnd( 9<font color="#FF0000">Ran#</font>→D: (A - B)(A - C)(A - D)(B - C)</p>
+    <p>(B - D)(C - D)=0 <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: Lbl 1:</p>
+    <p>X + 1→X: ?→Y: 10(Y=A<font color="#FF0000">M+</font>: Y=B<font color="#FF0000">M+</font>:
+        Y=C<font color="#FF0000">M+</font>:</p>
+    <p>Y=D<font color="#FF0000">M+</font>: D→Y: A→D: B→A: C→B: Y→C: 0→Y: </p>
+    <p>X - 4 <font color="#FF0000">=&gt;</font> Goto 1: 0→X: M<font color="#FF0000">M-</font>◢
+        Ans - 40 <font color="#FF0000">=&gt;</font> Goto 1: π</p>
+    <p>　</p>
+    <p>
+        <font color="#0000FF">第二個程式</font> (166 bytes)
+    </p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx</font> 按 shift 1 2 )</p>
+    <p>ClrStat: Fix 0: Lbl 0: Rnd( 9<font color="#FF0000">Ran#</font>→A:</p>
+    <p>Rnd( 9<font color="#FF0000">Ran#</font>→B: Rnd( 9<font color="#FF0000">Ran#</font>→C:</p>
+    <p>Rnd( 9<font color="#FF0000">Ran#</font>→D: (A - B)(A - C)(A - D)(B - C)</p>
+    <p>(B - D)(C - D)=0 <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: Lbl 2:
+        <font color="#FF0000">Rec(</font>0, 0: Lbl 1:
+    </p>
+    <p>X + 1→X: ?→M: Y + 10(M=A)+(M=B)+(M=C)+</p>
+    <p>(M=D→Y: D→M: A→D: B→A: C→B: M→C: 0→M: </p>
+    <p>X - 4 <font color="#FF0000">=&gt;</font> Goto 1: 1 <font color="#FF0000">DT</font>:
+        Y◢&nbsp; Ans - 40 <font color="#FF0000">=&gt;</font> Goto 2: <font color="#0000FF">
+            Σx</font>
+    </p>
+    <p>　</p>
+    <p>按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE (1, 2, 3,
+        4為猜測的數值，這時會顯示一個提示數值，十位的數值代表位置及數值正確，個位數值代表數值正確但位置錯誤)</p>
+    <p>再輸入其它猜測數值，直至猜中四個數值為止，若果是第一個程式，最後會顯示π值。若果是第二個程式，最後會顯示猜測的總次數。</p>
+    <p>　</p>
+    <p>若果使用第二個程式，遊戲完結後，請按Mode 1返回正常模式。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

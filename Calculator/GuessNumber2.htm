@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>猜數字遊戲</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">猜數字遊戲</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">
+            lugia249</font> 提供，玩家輸入三個不同整數(1-30)，猜測電腦的攪珠結果。</p>
+    <p>更新日期: 2011年1月27日</p>
+    <p>注意: Ans<sup>o</sup> 是按 Ans&nbsp; <font color="#0000FF"> <sup>
+                o,,,</sup></font>
+    </p>
+    <p>程式 (182 bytes)</p>
+    <p>M<font color="#FF0000">M-</font>: While 1: M◢ 5<font color="#FF0000">M-</font>:
+        ?→A: ?→B: ?→C: Fix 0: </p>
+    <p>Rnd(30<font color="#FF0000">Ran#</font> + . 5→D: Lbl 1: Rnd(30<font color="#FF0000">Ran#</font>
+        + . 5→X:</p>
+    <p>X=D <font color="#FF0000">=&gt;</font> Goto 1: Rnd(30<font color="#FF0000">Ran#</font> + . 5→Y: Y=D
+        <font color="#FF0000">=&gt;</font> Goto 1:
+    </p>
+    <p>Y=X <font color="#FF0000">=&gt;</font> Goto 1: D+X÷60+Y÷60<sup>2</sup>: Norm 2: Ans<sup>o</sup>◢</p>
+    <p>25( (D=A) + (D=B) + (D=C) + (X=A) + (X=B) + </p>
+    <p>(X=C) + (Y=A) + (Y=B) + (Y=C<font color="#FF0000">M+</font>:</p>
+    <p>A+B+C=D+X+Y <font color="#FF0000">=&gt;</font> ABC=DXY <font color="#FF0000">=&gt;</font> 225<font
+            color="#FF0000">M+</font>:
+        WhileEnd</p>
+    <p>註: 每猜一次數字後，程式會&#25255;除 $5 作為下注費用，若果猜中一些數字或三個數字全部猜中，則按下列規則獲得獎金。</p>
+    <p>(i) 猜中其中一個數字，獎金為$25 (實際贏 $20)</p>
+    <p>(ii) 猜中其中二個數字，獎金為$50 (實際贏 $45)</p>
+    <p>(iii) 猜中三個數字(全中)，獎金為$300 (實際贏 $295)<br>
+        　</p>
+    <p>　</p>
+    <p>操作示範:</p>
+    <p>1. 先按 Prog 1 執行程式，這時會顯示M及0表示現有的總金額。</p>
+    <p>2. 再輸入三個不同1至30的整數(猜測的數值)，例如按 23 EXE 24 EXE 25EXE。</p>
+    <p>3. 程式會以度分秒形式顯示三個數值的攪珠結果，假定是24, 23,
+        21則會顯示24<sup>o</sup>23<sup>o</sup>21</p>
+    <p>4. 再按 EXE 會顯示M值 45 (假設猜中兩個數值，所以現有總金額變為 $45)</p>
+    <p>5. 再按 EXE 會繼續下一次猜數值遊戲，若不想繼續遊戲可按 AC 終止程式，否則將由步驟2
+        開始再重複進行遊戲。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>因式定理(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">因式定理(I)</font>
+            </b></u></p>
+    <p>更新日期: 2013年2月14日</p>
+    <p>
+        程式可以協助以因式定理嘗試將三次函數分解，程式首先是函數計算，可以嘗試以不同數值計算函數值，直至函數值為0(即找到一次因式)，程式會再用長除法計算出二次因式。</p>
+    <p>
+        <font color="#FF0000">注意</font>二次因式<font color="#FF0000">有可能</font>
+        可以繼續分解為兩個一次因式，這方面請另行計算，當然可以使用二次函數因式分解及一元二次方程程式或使用一元二次方程(I)程式協助找出。
+    </p>
+    <p>注意若果不用記存答案，綠色的程式碼可以不輸入。</p>
+    <p>程式 (<font color="#008000">51 bytes</font> / 55 bytes)</p>
+    <p>?→A: ?→B: ?→C: ?→D: 1: While Ans:</p>
+    <p>?→X: AX<sup>3</sup> + BX<sup>2</sup> + CX + D◢ WhileEnd:</p>
+    <p>A◢ B + XAns<font color="#008000">→B</font>◢ C + XAns<font color="#008000">→C</font>
+    </p>
+    <p>　</p>
+    <p>例題: 試用因式定理因式分解 x<sup>3</sup> + 2x<sup>2</sup> - 6x - 4</p>
+    <p>按 Prog 1 再按 1 EXE 2 EXE - 6 EXE - 4 EXE (輸入三次函數的係數)</p>
+    <p>1 EXE (嘗試 x=1，顯示f(1)為 - 7)</p>
+    <p>EXE - 1 EXE (嘗試 x= - 1，顯示f(-1)為 3)</p>
+    <p>EXE&nbsp; 2 EXE (嘗試 x= 2，顯示f(2)為 0，所以 x - 2為因式)</p>
+    <p>EXE (顯示二次因式x<sup>2</sup>的係數為 1)</p>
+    <p>EXE (顯示二次因式x的係數為 4)</p>
+    <p>EXE (顯示二次因式常數項為 2)</p>
+    <p>所以 x<sup>3</sup> + 2x<sup>2</sup> - 6x - 4 = (x - 2)(x<sup>2</sup> + 4x + 2)</p>
+    <p>
+        <font color="#FF0000">注意</font>二次因式<font color="#FF0000">有可能</font>可以繼續分解為兩個一次因子式，這方面請另行計算。
+    </p>
+    <p>若果程式有輸入綠色程式碼，計算完結後可以按 RCL A、RCL B及RCL C分別顯示二次因式的係數。</p>
+    <p>　</p>
+    <p>
+        參考資料: </p>
+    <p>
+        因式定理: 若 f(a)=0，則 (x - a)是多項式的因式。</p>
+    <p>　</p>
+    <p>
+        附錄: 附錄程式一在上述程式尾加入了程式碼，可以計算二次因式方程的解，因而令程式可以計算簡單一元三次方程式的實根。</p>
+    <p>
+        附錄程式二則改為分別輸入a值的整數分子(b)及分母(c)，其中b/c為最簡分數，程式會假定(cx - b)為多項式的因式(不是原來的 (x -
+        b/c))，並由此求出另一個二次多項式。</p>
+    <p>注意若果不用記存答案，綠色的程式碼可以不輸入。</p>
+    <p>
+        <font color="#FF0000">附錄程式一</font> (<font color="#008000">78 bytes</font> / 84
+        bytes)
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D: 1: While Ans:</p>
+    <p>?→X: AX<sup>3</sup> + BX<sup>2</sup> + CX + D◢ </p>
+    <p>WhileEnd: A◢ B + XAns→B◢</p>
+    <p>C + XAns<font color="#008000">→C</font>◢ B<sup>2</sup> - 4AnsA:</p>
+    <p>(-B + √( Ans ) )┘(2A<font color="#008000">→D</font>◢ -B┘A - Ans<font color="#008000">→Y</font>
+    </p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">附錄程式一</font>例題: 試用因式定理因式分解 x<sup>3</sup> + 2x<sup>2</sup>
+        - 6x - 4
+    </p>
+    <p>按 Prog 1 再按 1 EXE 2 EXE - 6 EXE - 4 EXE (輸入三次函數的係數)</p>
+    <p>1 EXE (嘗試 x=1，顯示f(1)為 - 7)</p>
+    <p>EXE - 1 EXE (嘗試 x= - 1，顯示f(-1)為 3)</p>
+    <p>EXE&nbsp; EXE (嘗試 x= 2，顯示f(2)為 0，所以 x=2 為第一個解)</p>
+    <p>EXE (顯示二次因式x<sup>2</sup>的係數為 1)</p>
+    <p>EXE (顯示二次因式x的係數為 4)</p>
+    <p>EXE (顯示二次因式常數項為 2)</p>
+    <p>EXE (顯示第二個解為 -0.585786437)</p>
+    <p>EXE (顯示第三個解為 -3.414213562)</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">附錄程式二</font>由網友<font color="#0000FF">z241600</font>提供 (<font color="#008000">67
+            bytes</font> / 73
+        bytes)
+    </p>
+    <p>?→A: ?→B: ?→C: ?→D: 1: While Ans:</p>
+    <p>?→Y: ?→X: X┘Y: AAns<sup>3</sup> + BAns<sup>2</sup> + CAns + D◢ </p>
+    <p>WhileEnd: A<span lang="en">÷</span><span lang="en">X</span>
+        <font color="#008000">→A</font><span lang="en">◢</span>
+        X<sup>-1</sup>(B&nbsp; + YAns<font color="#008000">→B</font>◢
+    </p>
+    <p>X<sup>-1</sup>(C + YAns<font color="#008000">→C</font>
+    </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

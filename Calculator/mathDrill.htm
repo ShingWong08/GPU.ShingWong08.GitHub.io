@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>數學操練</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">數學操練</font>
+            </b></u></p>
+    <p>更新日期: 2011年1月5日</p>
+    <p>
+        程式用作操練兩個數的四則運算(加、減、乘及除)，加、減及乘的兩數範圍為0至20整數，若為除數運算，被除數範圍為1至200整數，除數範圍為1至20整數，而答案亦為整數。</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>
+        <font color="#FF0000">注意</font> : <font color="#FF0000"> <sup>o</sup></font> 是按 <sup>
+            <b>o,,,</b></sup>，<font size="1">E</font> 是按 EXP，而藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx</font> 按 shift 1
+        2 )，<sup> </sup>
+    </p>
+    <p>程式 (167 bytes)</p>
+    <p>ClrStat: <font color="#FF0000">Rec(</font> 0, 0: ?→A: A <font color="#FF0000">DT</font>: Lbl 0: Fix 0:</p>
+    <p>Rnd( 4 <font color="#FF0000">Ran#</font> + . 5→A: Rnd( 20
+        <font color="#FF0000">Ran#</font>→B: Lbl 1:
+    </p>
+    <p>Rnd( 20 <font color="#FF0000">Ran#</font>→C: A=4 <font color="#FF0000">=&gt;</font> C=0 <font color="#FF0000">
+            =&gt;</font> Goto 1: Norm 1: </p>
+    <p>A=4 <font color="#FF0000">=&gt;</font> BC→B: B<sup>o</sup> + A÷60<font color="#FF0000"><sup>o</sup></font> +
+        C÷60<sup>2</sup>
+        <font color="#FF0000"><sup>o</sup></font>→M:
+        ?→M:
+    </p>
+    <p>Y+1→Y: A=1 <font color="#FF0000">=&gt;</font> B+C→D: A=2 <font color="#FF0000">=&gt;</font> B-C→D: </p>
+    <p>A=3 <font color="#FF0000">=&gt;</font> BC→D: A=4 <font color="#FF0000">=&gt;</font> B÷C→D: D=M <font
+            color="#FF0000">=&gt;</font> X+1→X: </p>
+    <p>D-M <font color="#FF0000">=&gt;</font> D◢ <font color="#0000FF">Σx</font>&gt;Y <font color="#FF0000">=&gt;</font>
+        Goto 0: X<sup>o</sup>◢ <font size="1">E</font>2 X÷Y</p>
+    <p>　</p>
+    <p>註: 程式會以度分秒形式顯示要計算的算式，度值及秒值代表要運算的兩數，分值代表要運算的形式，1代表加，2代表減，3代表乘、4代表除，例如: 20<sup>
+            o </sup>4 <sup>o</sup> 5 代表的算式為 20 ÷ 5，若果分值出現0，表示度值顯示的是總共答對的題數。</p>
+    <p>操作示範:</p>
+    <p>按 Prog 1 再按 2 EXE (輸入要作答的題數，這時會顯示要計算的問題，假設是20<sup> o
+        </sup>4 <sup>o</sup> 5)</p>
+    <p>再按 4 EXE (輸入答案，由於答案正確會直接顯另一條要計算的問題，假設是12<sup> o </sup>1 <sup>o</sup> 13)</p>
+    <p>再按 24 EXE (輸入答案，由於答案錯誤，會顯示正確答案 25)</p>
+    <p>再按 EXE (由於已計算兩條問題，程式顯示 1<sup> o </sup>0 <sup>o</sup> 0表示總共答對一題)</p>
+    <p>再按 EXE (顯示答對的百分率為50)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

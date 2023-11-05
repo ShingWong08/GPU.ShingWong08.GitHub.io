@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title></title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">漸近線(I) (Asymptote I)</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">roviury</font> 提供。</p>
+    <p>這個程式可以用作幫助驗証某個位置是否函數的垂直漸近線，亦會嘗試找出斜漸近線 (oblique
+        asymptote)，但要注意找出的漸近線可能存在誤差，亦未必一定正確只能作為參考之用。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>程式編寫日期: 2011年6月8日</p>
+    <p>注意: <font color="#FF0000">10^( </font>是按 SHIFT log</p>
+    <p>程式 (107 bytes，不包括綠色函數方程)</p>
+    <p>?→C: 0→B: ClrStat: For 0→M To 9: </p>
+    <p>M(M≦2 <font color="#FF0000">=&gt;</font> Y◢ M≧3 <font color="#FF0000">=&gt;</font> X , Y
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>If M=5+3B:Then b◢ a◢ r◢ ClrStat: 1→B: IfEnd:</p>
+    <p>(M=0)(C+E-7)+(M=1)(C-E-7)+</p>
+    <p>(M≧2)cos(π<sup>r</sup>B)<font color="#FF0000">10^(</font>M+5-3B→X:</p>
+    <p>
+        <font color="#008000">Abs(X)(3X+17)÷(X-4</font>→Y:Next <br>
+        　
+    </p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>程式二第二個輸入數值(A)不輸入或輸入0代表正常計算，若果輸入1則會跳過驗証垂直漸近線，若果輸入2則會跳過驗証垂直漸近線及計算x→+∞時的斜漸近線。</p>
+    <p>注意: <font color="#FF0000">10^( </font>是按 SHIFT log</p>
+    <p>程式二 (136 bytes，不包括綠色函數方程)</p>
+    <p>?→C: 0→A: ?→A: A=2→B: <font color="#FF0000">Pol(</font> 1,0 : </p>
+    <p>ClrStat: For 2A+B→M To 9: Ans≠Y <font color="#FF0000">=&gt;</font> Goto 1:</p>
+    <p>M(M≦2 <font color="#FF0000">=&gt;</font> Y◢ M≧3 <font color="#FF0000">=&gt;</font> X , Y
+        <font color="#FF0000">DT</font>:
+    </p>
+    <p>If M=5+3B:Then b◢ a◢ r◢ ClrStat: 1→B: IfEnd:</p>
+    <p>Lbl 1: (M=0)(C+E-7)+(M=1)(C-E-7)+</p>
+    <p>(M≧2)cos(π<sup>r</sup>B)<font color="#FF0000">10^(</font>M+5-3B→X:</p>
+    <p>
+        <font color="#008000">Abs(X)(3X+17)÷(X-4</font>→Y:Next
+    </p>
+    <p>　</p>
+    <p>註1: 綠色的 <font color="#008000">Abs(X)(3X+17)÷(X-4 </font>是函數方程(變數是X，亦可以使用Ans作為變數)，若果想計算其它函數的積分，只要修改綠色的部份。</p>
+    <p>註2: 斜漸近線 (oblique asymptote)可能不存在，程或有可能會出現 MATH ERROR，而且斜率及Y-截距亦未必準確。</p>
+    <p>註3: 可信度的&#32118;對值越近1表示越可信)</p>
+    <p>註4: 只需找斜漸近線，可隨意輸入數值或直接EXE，忽略最初兩個答案即可，最後顯示完答案後沒有DISP。</p>
+    <p>　</p>
+    <p>例題1: y=f(x)=|x|(3x+17)/(x-4)，驗証x=4是否垂直漸近線及找斜漸近線。</p>
+    <p>
+        <font color="#FF0000">程式一按法:</font>
+    </p>
+    <p>按 Prog 1 再按 4 EXE (顯示x→4+時函數的參考值為1160000041 )</p>
+    <p>EXE (顯示x→4-時函數的參考值為-1159999959 )</p>
+    <p>EXE (顯示x→+∞時斜漸近線的斜率為3)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的Y-截距為29.0000116)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的可信度為1)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的斜率為-3)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的Y-截距為-28.9999885)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的可信度為 -1) </p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式二按法:</font>
+    </p>
+    <p>注意: 程式二第二個輸入數值(A)不輸入或輸入0代表正常計算，若果輸入1則會跳過驗証垂直漸近線，若果輸入2則會跳過驗証垂直漸近線及計算x→+∞時的斜漸近線。</p>
+    <p>按 Prog 1 再按 4 EXE <font color="#FF0000">EXE</font> (顯示x→4+時函數的參考值為1160000041 )</p>
+    <p>EXE (顯示x→4-時函數的參考值為-1159999959 )</p>
+    <p>EXE (顯示x→+∞時斜漸近線的斜率為3)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的Y-截距為29.0000116)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的可信度為1)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的斜率為-3)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的Y-截距為-28.9999885)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的可信度為 -1) </p>
+    <p>　</p>
+    <p>例題2: y=f(x)=(x<sup>4</sup> - 7x<sup>3</sup> - 19x<sup>2</sup> + 163x - 210) /
+        (x<sup>3</sup> - 2x<sup>2</sup> - 2x - 3)，求斜漸近線。</p>
+    <p>
+        <font color="#FF0000">程式一按法:</font>
+    </p>
+    <p>按 Prog 1 再按 EXE EXE (隨意輸入數及忽略最初兩個答案)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的斜率為1)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的Y-截距為-5.00000281)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的可信度為1)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的斜率為1)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的Y-截距為-5)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的可信度為 1) </p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">程式二按法:</font>
+    </p>
+    <p>注意: 程式二第二個輸入數值(A)不輸入代表正常計算，若果輸入1則會跳過驗証垂直漸近線及計算x→+∞時的斜漸近線。</p>
+    <p>按 Prog 1 再按 EXE <font color="#FF0000">EXE</font> EXE (隨意輸入第一個數及忽略最初兩個答案)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的斜率為1)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的Y-截距為-5.00000281)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的可信度為1)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的斜率為1)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的Y-截距為-5)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的可信度為 1) </p>
+    <p>　</p>
+    <p>例題3: y=(2X<sup>
+            <font color="#000000">2</font>
+        </sup>-14X+25)e^(2X)，求斜漸近線。</p>
+    <p>
+        <font color="#FF0000">只適用於程式二</font>
+    </p>
+    <p>先將程式中的綠色函數方程改為(2X^2-14X+25)e^(2X)</p>
+    <p>按 Prog 1 再按 EXE <font color="#FF0000">EXE</font> EXE (隨意輸入第一個數及忽略最初兩個答案)</p>
+    <p>EXE (顯示Math ERROR，表示x→+∞時斜漸近線可能不存在)</p>
+    <p>再按 AC&nbsp; 按 Prog 1 再按 EXE <font color="#FF0000">2 EXE</font>
+        (輸入2則跳過驗証垂直漸近線及計算x→+∞時的斜漸近線)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的斜率為1)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的Y-截距為-5)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的可信度為 1) </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

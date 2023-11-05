@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>聯立同餘式(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">聯立同餘式(I)</font>
+            </b></u></p>
+    <p>更新日期: 2014年8月21日</p>
+    <p>程式可以求整數論中聯立同餘式(simultaneous linear congruences) 的解，程式會計算最小正值解及通解。
+        程式沒有使用中國餘數定律的限制，即是<font color="#FF0000">沒有任何兩個除數有互質關係的限制</font>
+        ，而且可以直接輸同餘數數值代替餘數，甚至可以計算各種負數情況。若果只計算中國餘數定理的簡單問題，可以使用較簡單<a href="C_remainder.htm">孫子定理程式(58
+            bytes)</a>。不過程式與使用中國餘定理程式相同，在計算較大除數時，例如: 計算 聯立同餘式X&#8803;123 (mod 9877) 及 X&#8803;923 (mod
+        8979)時， 速度可能會非常慢，基本上可以說無法求得答案，若果希望同時克服這方面的問題，請使用<a href="congruences2.htm">聯立同餘式(II)程式</a>。</p>
+    <p>
+        <font color="#FF0000">程式需要在 BASE 模式下執行，因此在選擇新程式位置後，按 3 選用BASE模式。</font>
+    </p>
+    <p>程式 (128 bytes，使用記憶為A、B、C、D、X及M)</p>
+    <p>Dec: ?→M: ?→B: 0&gt;B <font color="#FF0000">=&gt;</font> - B→B: M÷B<span lang="en">
+            <font color="#FF0000">×</font>
+        </span>B<font color="#FF0000">M-</font>:
+    </p>
+    <p>B(0&gt;M<font color="#FF0000">M+</font>: While 1: ?→C: ?→D:
+        C<font color="#FF0000">M-</font>: 0&gt;D <font color="#FF0000">=&gt;</font> - D→D: </p>
+    <p>Lbl 1: M - M÷D<span lang="en">
+            <font color="#FF0000">×</font>
+        </span>D <font color="#FF0000">=&gt;</font> B<font color="#FF0000">M+
+            =&gt;</font> Goto 1: C<font color="#FF0000">M+</font>: B→C: </p>
+    <p>D→X: Lbl 2: X→A: C - C÷X<span lang="en">
+            <font color="#FF0000">×</font>
+        </span>X→X: Ans <font color="#FF0000">=&gt;</font>
+        A→C: </p>
+    <p>Ans <font color="#FF0000">=&gt;</font> Goto 2: BD÷A→B: Ans→D: M→C: WhileEnd</p>
+    <span lang="en">
+        <p>註: 如果是使用fx-50FH，上述程式中的乘號<font color="#FF0000"> ×</font>可以省略不輸入，程式長度可節省3 bytes。</p>
+    </span>
+    <p>　</p>
+    <p>例題1: 計算以下聯立同餘式(除數間亦可以是不是互質):</p>
+    <p>x ≡ 4 (mod 5)</p>
+    <p>x ≡ 1 (mod 3)</p>
+    <p>x ≡ 9 (mod 10)</p>
+    <p>按 Prog 1&nbsp; 4 EXE 5 EXE 1 EXE 3 EXE 9 EXE 10 EXE (顯示19) EXE (顯示30)</p>
+    <p>所以最小的正值為19，通解 = 19 + 30n</p>
+    <p>計算完結按MODE 1終止程式及返回comp MODE</p>
+    <p>　</p>
+    <p>例題2: 計算以下聯立同餘式:</p>
+    <p>x ≡ 4 (mod 5)</p>
+    <p>x ≡ 1 (mod 3)</p>
+    <p>x ≡ 9 (mod 10)</p>
+    <p>x ≡ 2 (mod 7)</p>
+    <p>x ≡ 7 (mod 12)</p>
+    <p>按 Prog 1 再按 4 EXE 5 EXE 1 EXE 3 EXE 9 EXE 10 EXE 2 EXE 7 EXE </p>
+    <p>7 EXE 12 EXE (顯示79) EXE (顯示420)</p>
+    <p>所以最小的正值為79，通解 = 79 + 420n</p>
+    <p>計算完結按MODE 1終止程式及返回comp MODE</p>
+    <p>　</p>
+    <p>註1: 若果要輸入負數，請用減號代替負號。</p>
+    <p>註2: 若果方程無解，計算機會不停運算(空白)，請按AC終止程式。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

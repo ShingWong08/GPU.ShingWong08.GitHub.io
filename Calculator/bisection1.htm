@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>半分法</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">半分法</font>
+            </b></u></p>
+    <p>程式編寫日期: 2008年1月4日</p>
+    <p>第一個程式 (最少33 bytes，使用記憶為A，B，C及X)</p>
+    <p>?→X: <font color="#008000">X<sup>3</sup> - 2X - 1</font>→C: C&gt;0
+        <font color="#FF0000">=&gt;</font> X→A: 0&gt;C <font color="#FF0000">=&gt;</font> X→B:
+    </p>
+    <p>2<sup>-1</sup>( A + B→X: C</p>
+    <p>　</p>
+    <p>第二個程式 (最少58 bytes，可顯示<font color="#FF0000">根的範圍</font>。)</p>
+    <p>ClrMemory: Lbl 0: ?→X: <font color="#008000">X<sup>3</sup> - 2X - 1</font>→C◢
+        CM≧0 <font color="#FF0000">=&gt;</font> X→A: </p>
+    <p>0&gt;CM <font color="#FF0000">=&gt;</font> X→B: M=0 <font color="#FF0000">=&gt;</font>
+        C→M: Ans <font color="#FF0000">=&gt;</font> Goto 0: A◢ B◢</p>
+    <p>2<sup>-1</sup>( A + B→X: Goto 0</p>
+    <p><a href="bisection2.htm">第一個程式及第二個程式更簡短版本</a> (31 bytes 及 35 bytes)</p>
+    <p>　</p>
+    <p>註1: 綠色的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是函數方程(變數是X)，若果想計算其它
+        方程，只要修改綠色的部份。</p>
+    <p align="left">註2: 使用第二個程式，若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>
+        &quot;，而程式所使用記憶為A，B，C，X及M。</p>
+    <p>註3: 當計數顯示<font color="#FF0000">?</font>時表示為近似值 (最初的兩個數值需要輸入)，當沒有<font color="#FF0000">?</font>並顯示<font
+            color="#FF0000">Disp</font>表示為對應的函數值。</p>
+    <p>註4: 第一個程式若果因按錯鍵而使程式中止，請再執行程式即可，程式將會接著先前的計算。</p>
+    <p>　</p>
+    <p>例題:
+        解 x<sup>3</sup>
+        – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
+    <p>
+        <font color="#FF0000">第一個程式的按法:</font>
+    </p>
+    <p>
+        按 Prog 1
+        再按 1 EXE (顯示 f(1)的值為 - 2) <font color="#FF0000">EXE</font> 2 EXE (顯示
+        f(2)的值為3)</p>
+    <p>
+        EXE
+        (顯示第一個近似值為1.5) EXE (顯示 f(1.5)的值為 -0.625)</p>
+    <p>
+        EXE (顯示第二個近似值為1.75) EXE (顯示 f(1.75)的值為 0.859375)</p>
+    <p>
+        EXE (顯示第三個近似值為1.625) EXE (顯示 f(1.625)的值為
+        0.041015625)</p>
+    <p>…………(直至要求的&#20950;確度)</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">第二個程式的按法:</font>
+    </p>
+    <p>
+        按 Prog 1
+        再按 1 EXE (顯示 f(1)的值為 - 2) <font color="#FF0000">EXE</font> 2 EXE (顯示
+        f(2)的值為3)</p>
+    <p>
+        EXE (顯示1) EXE (顯示2，表示根的範圍為1&lt;X&lt;2)</p>
+    <p>
+        EXE (顯示第一個近似值為1.5) EXE (顯示 f(1.5)的值為 -0.625)</p>
+    <p>
+        EXE (顯示1.5) EXE (顯示2，表示根的範圍為1.5&lt;X&lt;2)</p>
+    <p>
+        EXE (顯示第二個近似值為1.75) EXE (顯示 f(1.75)的值為 0.859375)</p>
+    <p>
+        EXE (顯示1.5) EXE (顯示1.75，表示根的範圍為1.5&lt;X&lt;1.75)</p>
+    <p>
+        EXE (顯示第三個近似值為1.625) EXE (顯示 f(1.625)的值為
+        0.041015625)</p>
+    <p>…………(直至要求的&#20950;確度)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

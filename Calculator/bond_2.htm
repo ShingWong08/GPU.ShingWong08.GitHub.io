@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>債券計算</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">債券計算</font>
+            </b></u></p>
+    <p>更新日期: 2014年8月1日</p>
+    <p>注意: <font color="#FF0000">E</font>是按 EXP 。</p>
+    <p>程式 (208 bytes)</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
+    <p>C ÷ (<font color="#FF0000">E</font>2Y→C: D ÷ <font color="#800080"><b>( </b></font>
+        <font color="#FF0000">E</font>2Y→D: (1 + D)^( X→M:
+    </p>
+    <p>A=0 <font color="#FF0000">=&gt;</font> BM<sup>-1</sup>(1 + D<sup>-1</sup>C(M
+        - 1◢ </p>
+    <p>B=0 <font color="#FF0000">=&gt;</font> AM ÷ (1
+        + D<sup>-1</sup>C(M - 1◢</p>
+    <p>C=0 <font color="#FF0000">=&gt;</font>
+        <font color="#FF0000">E</font>2(AM ÷ B - 1)D&nbsp; ÷ (M - 1◢
+    </p>
+    <p>X=0 <font color="#FF0000">=&gt;</font> BC ÷ D <font color="#FF0000">=&gt;</font>
+        log( 1 + D , (B - Ans) ÷ (AM - Ans◢</p>
+    <p>. 06→M: While Ans: 1+ M: (AB<sup>-1</sup>Ans^( X ) - 1 - C(Ans^( X ) - 1) ÷ M)</p>
+    <p>M<sup>2</sup>Ans ÷ (X + CX + Ans(CAns^( X ) - C+ X(Ans - 2 - C<font color="#FF0000">M-</font>:
+        WhileEnd:</p>
+    <p>
+        <font color="#FF0000">E</font>2YM
+    </p>
+    <p>　</p>
+    <p>註1: 計算債券年收益率，程式使用牛頓法計算答案，由於可能需要較多計算，計算時間可能會較長。</p>
+    <p>註2: 每年付息頻率必需輸入數值，否則計算不成立。</p>
+    <p>
+        <span lang="en">
+            註3: 如果是使用fx-3650P II或fx-50FH II，上述程式(第二行)中的
+        </span>
+        D ÷ <font color="#800080"><b>( </b></font>
+        <font color="#FF0000">E</font>2Y→D:&nbsp;
+        <span lang="en">
+            可以簡化為
+        </span>
+        D ÷ <font color="#FF0000">E</font>2Y→D:<span lang="en">，可節省1 byte。</span>
+    </p>
+    <p>　</p>
+    <p>例題1: 2000年1月1日，XYZ公司購買一4年期債券，票面價值為 $100000，息票利率為 8%，債券每年支付息票一次，年收益為10%，求債券現值。</p>
+    <p>按
+        Prog 1 再按 EXE (不輸入第一個數值代表計算現值)</p>
+    <p>100000 EXE (票面值)</p>
+    <p>8 EXE (息票利率) </p>
+    <p>10 EXE (年收益率)</p>
+    <p>4 EXE (付息總次數) </p>
+    <p>1 EXE (每年支付利息頻率，顯示債券現值 $93660)</p>
+    <p>　</p>
+    <p>例題2: 2000年1月1日，XYZ公司購買一4年期債券，債券現值為$93660，息票利率為 8%，債券每年支付息票一次，年收益為10%，求債券票面值。</p>
+    <p>按
+        Prog 1 再按 93660EXE (債券現值)</p>
+    <p>EXE (不輸入第二個數值代表計算票面值) </p>
+    <p>8 EXE (息票利率) </p>
+    <p>10 EXE (年收益率)</p>
+    <p>4 EXE (付息總次數) </p>
+    <p>1 EXE (每年支付利息頻率，顯示債券票面值 $100000)</p>
+    <p>　</p>
+    <p>例題3: 2000年1月1日，XYZ公司購買一4年期債券，債券現值為$93660，票面價值為
+        $100000，債券每年支付息票一次，年收益為10%，求息票利率。</p>
+    <p>按
+        Prog 1 再按 93660EXE (債券現值)</p>
+    <p>100000 EXE (票面值)</p>
+    <p>EXE (不輸入第三個數值代表計算息票利率) </p>
+    <p>10 EXE (年收益率)</p>
+    <p>4 EXE (付息總次數) </p>
+    <p>1 EXE (每年支付利息頻率，顯示息票利率為 8%)</p>
+    <p>　</p>
+    <p>例題4: 2000年1月1日，XYZ公司購買一4年期債券，債券現值為$93660，票面價值為 $100000，息票利率為
+        8%，債券每年支付息票一次，求息票利率。</p>
+    <p>按
+        Prog 1 再按 93660EXE (債券現值)</p>
+    <p>100000 EXE (票面值)</p>
+    <p>8 EXE (息票利率) </p>
+    <p>EXE (不輸入第四個數值代表計算年收益率)</p>
+    <p>4 EXE (付息總次數) </p>
+    <p>1 EXE (每年支付利息頻率，顯示收益率為 10%)</p>
+    <p>　</p>
+    <p>例題5: 2000年1月1日，XYZ公司購買一債券，債券現值為$93660，票面價值為 $100000，息票利率為
+        8%，債券每年支付息票一次，年收益為10%，求付息總次數。</p>
+    <p>按
+        Prog 1 再按 93660EXE (債券現值)</p>
+    <p>100000 EXE (票面值)</p>
+    <p>8 EXE (息票利率) </p>
+    <p>10 EXE (年收益率)</p>
+    <p>EXE (不輸入第五個數值代表計算付息總次數) </p>
+    <p>1 EXE (每年支付利息頻率，顯示付息總次數 4)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

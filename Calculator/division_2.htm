@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>多項式除法(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">多項式除法(II)</font>
+            </b></u></p>
+    <p>更新日期: 2012年11月8日</p>
+    <p>程式計算一個n次多項式除以一個一次多項式所得的商式及餘數。另外若果輸入係數為整數或分數，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
+        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
+    </p>
+    <p>注意紅色的<font color="#FF0000">M-</font>是按 SHIFT <font color="#FF0000">M+</font>
+    </p>
+    <p>程式 (39 bytes，使用記憶為A，B，Y及M)</p>
+    <p>0: ?→A: ?→B: ?→M: While M≧0<font color="#FF0000">M-</font>: </p>
+    <p>?→Y: (Y - BAns)┘A→Y: WhileEnd: AY</p>
+    <p>　</p>
+    <p>例題: 計算 (2x<sup>4</sup> + x<sup>3</sup>
+        + 3x<sup>2</sup> + 4x + 5)
+        ÷
+        (x + 2) 的商及餘數。<br>
+        <br>
+        按
+        Prog 1&nbsp; 再按 1 EXE 2 EXE
+        (先輸入除式的係數)
+    </p>
+    <p>4 EXE (輸入被除多項式的最高次數)</p>
+    <p>2 EXE (顯示商 x<sup>3</sup>
+        的係數為2) 1 EXE (顯示商 x<sup>2</sup>
+        的係數為 - 3) </p>
+    <p>3 EXE&nbsp;(顯示商 x的係數為9)
+        4 EXE&nbsp;(顯示商常數項的係數為 - 14)</p>
+    <p>5 EXE (顯示餘數為33)</p>
+    <p>
+        所以商為2x<sup>3</sup> - 3x<sup>2</sup> + 9x -
+        14，餘數為33。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>圓族 (Family of circles)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">圓族 (Family of circles)</font>
+            </b></u></p>
+    <p>程式由網友<font color="#0000FF">wimwim</font>提供。</p>
+    <p>網友提供程式日期: 2009年6月20日</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>注意: e 是按 ALPHA ln，藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font>
+        按 Shift 1 → 2)。</p>
+    <p>程式 (198 bytes)</p>
+    <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: X <font color="#FF0000">,</font> D
+        <span style="color: red">DT</span>: ?→Y:
+    </p>
+    <p>e→M: ?→M: If M=e: Then (A<sup>2</sup> - AD + B<sup>2</sup> - B<font color="#0000FF">Σx
+        </font>- 2C + 2Y)</p>
+    <p>┘(2C - 2Y + X<sup>2</sup> +D<sup>2</sup> - AD - BX→M◢ Else ?→X: e→D: </p>
+    <p>?→D: D-e <font color="#FF0000">=&gt;</font> (MA + XB - 2D)┘(2D - X<span style="color: blue">Σx
+        </span>- M<span style="color: blue">Σy</span>→M◢ </p>
+    <p>D=e <font color="#FF0000">=&gt;</font> -(M<sup>2</sup> +X<sup>2</sup> + AM + BX
+        + C)┘(M<sup>2</sup> +X<sup>2</sup> +<span style="color: blue"> Σy</span>M +<span style="color: blue">
+            Σx</span>X + Y→M◢ </p>
+    <p>IfEnd: 1+M→X: (A+<span style="color: blue">Σy</span>M)┘X◢ (B+<span style="color: blue">Σx</span>M)┘X◢
+        (C+YM)┘X <br>
+        　</p>
+    <p>例題1: 兩圓方程為</p>
+    <p>C<sub>1</sub>: x<sup>2</sup> + y<sup>2</sup> - 4x - 5y + 4 = 0 及 </p>
+    <p>C<sub>1</sub>: x<sup>2</sup> + y<sup>2</sup> - 5x - 7y + 6 = 0，</p>
+    <p>若以C<sub>1</sub>及C<sub>2</sub>的共弦作為一圓的直徑，求該圓的方程。</p>
+    <p>設所求圓方程為 x<sup>2</sup> + y<sup>2</sup> - 4x - 5y + 4 + k(x<sup>2</sup> + y<sup>2</sup>
+        - 5x - 7y + 6) = 0</p>
+    <p>按 Prog 1 再按 - 4 EXE - 5 EXE 4 EXE - 5 EXE - 7 EXE </p>
+    <p>6 EXE <font color="#FF0000">EXE</font> (<font color="#FF0000">不輸入數值</font>表示再沒有任何資料輸入，顯示-2┘3，即k=
+        - 2/3) </p>
+    <p>EXE (顯示 - 2) EXE (顯示 - 1) EXE (顯示0，即圓方程為x<sup>2</sup> + y<sup>2</sup> - 2x -
+        y = 0) </p>
+    <p><br>
+        例題2: 兩圓方程為</p>
+    <p>C<sub>1</sub>: x<sup>2</sup> + y<sup>2</sup> + 2x + 3y - 7 = 0 及 </p>
+    <p>C<sub>1</sub>: x<sup>2</sup> + y<sup>2</sup> + 3x - 2y - 1 = 0，</p>
+    <p>若圓通過上述兩圓的交點及點(1,2)，求圓方程。</p>
+    <p>設所求圓方程為 x<sup>2</sup> + y<sup>2</sup> + 2x + 3y - 7 + k(x<sup>2</sup> + y<sup>2</sup>
+        + 3x - 2y - 1) = 0</p>
+    <p>按 Prog 1 再按 2 EXE 3 EXE - 7 EXE 3 EXE - 2 EXE - 1 EXE </p>
+    <p>1 EXE 2 EXE <font color="#FF0000">EXE</font> (<font color="#FF0000">不輸入數值</font>表示再沒有任何資料輸入，顯示-2，即k=
+        -2)</p>
+    <p>EXE (顯示4) EXE (顯示-7) EXE
+        (顯示5，即圓方程為x<sup>2</sup> + y<sup>2</sup> + 4x - 7y + 5 = 0) </p>
+    <p>　</p>
+    <p>例題3: 兩圓方程為</p>
+    <p>C<sub>1</sub>: x<sup>2</sup> + y<sup>2</sup> - 4x + 2y = 0 及 </p>
+    <p>C<sub>1</sub>: x<sup>2</sup> + y<sup>2</sup> - 2y - 4 = 0，</p>
+    <p>若圓通過上述兩圓的交點且直線 2x + 4y - 1 = 0通過該圓的圓心，求圓方程。</p>
+    <p>設所求圓方程為 x<sup>2</sup> + y<sup>2</sup> - 4x + 2y + k(x<sup>2</sup> + y<sup>2</sup> - 2y -
+        4) = 0</p>
+    <p>按 Prog 1 再按 - 4 EXE 2 EXE 0 EXE 0 EXE -2 EXE -4 EXE </p>
+    <p>2 EXE 4 EXE - 1 EXE (顯示1┘3，即k為1/3) </p>
+    <p>EXE (顯示-3) EXE (顯示1) EXE (顯示- 1,即圓方程為x<sup>2</sup> + y<sup>2</sup> - 3x + y -
+        1 = 0)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

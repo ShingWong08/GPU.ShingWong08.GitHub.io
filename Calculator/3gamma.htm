@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>伽瑪、雙伽瑪及三伽瑪函數</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">伽瑪、雙伽瑪及三伽瑪函數</font>
+            </b></u></p>
+    <p>程式更新日期: 2014年7月30日</p>
+    <p>程式由網友&nbsp; <font color="#0000FF">Skwai</font>提供。</p>
+    <p>注意: <font color="#FF0000">e^( </font>是按shift
+        e<sup>x</sup>。若果不想記存兩根，程式中<font color="#008000">綠色</font>部份可以不輸入。</p>
+    <p>程式 (195 或 <font color="#008000">191</font> bytes</p>
+    <p>ClrMemory: ?→X: 1: While Ans: Abs( X→C: C + 3: <br>
+        <br>
+        ( Ans + . 85 )^( C - . 5 )<font color="#FF0000">e^(</font> - Ans )( 1.071370357
+        + <br>
+        <br>
+        39.41066934 ÷ C - 35.55136409 ÷ ( C + 1 ) - . 0943944629 ÷ Ans + <br>
+        <br>
+        6.326951402 ÷ ( C + 2→C: 0 &gt; X <font color="#FF0000">=&gt;</font> - π ÷ ( C X sin(
+        X π<sup>r</sup>→C: <br>
+        <br>
+        X + <font size="1">E</font> - 4 ( 1 - 3 M→X: D→A: B→D: C→B: M ≠ 2
+        <font color="#FF0000">M+</font> : WhileEnd: <br>
+        <br>
+        A◢ 5 <font size="1">E</font> 3 A<sup>-1</sup>( D - C<font color="#008000">→B</font>◢
+        <font size="1">E</font> 8A<sup>-1</sup>( D + C - 2 A ) - Ans<sup>2</sup>
+        <font color="#008000">→C</font><br>
+        　
+    </p>
+    <p>註: 如果是使用fx-3650P II或fx-50FH II，上述程式碼中 - π ÷ <font color="#FF0000">(</font> C X sin(
+        X π<sup>r</sup>→C: 可以簡化為 - π ÷ C X sin(
+        X π<sup>r</sup>→C: 可節省1 byte。</p>
+    <p>　</p>
+    <p>限制：只支援約 | X | &lt; 56 . 629（ - 56 . 629 &lt; X &lt; 56 . 629 ） 的情況。當 X 很小時（ - 2 &lt; X &lt;
+        2 ），準確度十分高（ 9 ~ 10 位有效數字）。</p>
+    <p>但一般言； X 越大，準確度越低。</p>
+    <p>Gamma 的準確度十分高（ 9 ~ 10 位有效數字）；</p>
+    <p>Digamma 的準確度一般（ 5 ~ 7 位有效數字）；</p>
+    <p>Trigamma 的準確度極低（ 2 ~ 3 位有效數字）。</p>
+    <p>　</p>
+    <p>例題:
+        計算伽瑪函數Γ(0.35)、雙伽瑪函數Ψ(0.35)及三伽瑪函數Ψ<sub>1</sub>(0.35)的值。</p>
+    <p>按
+        Prog 1 &nbsp;再按 0.35 EXE (顯示伽瑪函數Γ(0.35)為2.546146978)</p>
+    <p>EXE (顯示雙伽瑪函數Ψ(0.35)為-2.971071131)</p>
+    <p>EXE (顯示三伽瑪函數Ψ<sub>1</sub>(0.35)為9.240458817)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>二項分佈(I)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">二項分佈(I)</font>
+            </b></u></p>
+    <p>程式是由網友<font color="#0000FF">王者再臨</font>提供。</p>
+    <p>更新日期: 2014年8月1日</p>
+    <p>注意: <font color="#FF0000"><sub>n</sub>C<sub>r </sub> </font>是按 shift ÷</p>
+    <p>第一個程式 (51 bytes)</p>
+    <p>ClrMemory: ?→A: ?→B: ?→C: C→D: ?→D:</p>
+    <p>For C→C To D: A <font color="#FF0000"><sub>n</sub>C<sub>r</sub></font> C<span lang="en">
+            <font color="#FF0000">
+                × </font>
+        </span>B<font color="#FF0000">^(</font>C) (1-B)<font color="#FF0000">^(</font>A-C
+        <font color="#FF0000">M+</font>:
+    </p>
+    <p>Next: M</p>
+    <p>　</p>
+    <p>第二個程式 (52 bytes，使用記憶為A, B, C, D及M)</p>
+    <p>M<font color="#FF0000">M-</font>: ?→A: ?→B: ?→C: C→D: ?→D:</p>
+    <p>For C→C To D: A <font color="#FF0000"><sub>n</sub>C<sub>r</sub></font> C<span lang="en">
+            <font color="#FF0000">
+                × </font>
+        </span>B<font color="#FF0000">^(</font>C) (1-B)<font color="#FF0000">^(</font>A-C
+        <font color="#FF0000">M+</font>:
+    </p>
+    <p>Next: M</p>
+    <p>　</p>
+    <p>程式三是由網友<font color="#0000FF">roviury</font>提供。</p>
+    <p>第三個程式 (81 bytes，程式較長但計算項數很多時速度較快)</p>
+    <p>?→X: ?→Y: ?→A: A→B: ?→B: </p>
+    <p>X <font color="#FF0000"><sub>n</sub>C<sub>r</sub></font> A<span lang="en">
+            <font color="#FF0000">
+                ×</font>
+        </span> Y<font color="#FF0000">^(</font>A)(1-Y)<font color="#FF0000">^(</font>X-A→C:
+        Y<span lang="en">÷</span>(1-Y→Y:</p>
+    <p>C→M: For A+1→A To B: CY<span lang="en">÷</span>A(X-A+1→C:</p>
+    <p>C<font color="#FF0000">M+</font>: Next: M</p>
+    <p>　</p>
+    <p>註1: 第二個程式較第一個程式長1 byte，但可以保留一些記憶用作儲存數據。</p>
+    <p>
+        註2: 如果是使用fx-50FH，上述三個程式中的乘號<span lang="en">
+            <font color="#FF0000"> ×</font>
+        </span>可以省略不輸入，程式長度可節省1 byte。</p>
+    <p>　</p>
+    <p>例題1:
+        若X ~ Bin(9,0.5)，求P(X=4)。</p>
+    <p>按 Prog 1&nbsp; 再按 9 EXE 0.5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.24609)</p>
+    <p></p>
+    <p>　</p>
+    <p></p>
+    <p>例題2:
+        若X ~ Bin(9,0.5)，求P(4≦X≦6)。</p>
+    <p>按 Prog 1&nbsp;
+        再按 9 EXE 0.5 EXE 4 EXE
+        6 EXE&nbsp; (顯示答案為0.65625)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

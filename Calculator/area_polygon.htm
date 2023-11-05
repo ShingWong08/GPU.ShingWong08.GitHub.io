@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>多邊形面積(邊及夾角)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">多邊形面積(邊及夾角)</font>
+            </b></u></p>
+    <p>若已知多邊形的N - 1個邊長及N-2個內角，程式可以計算多邊形的面積及最後一邊的長度。</p>
+    <p>程式編寫日期: 2014年7月30日</p>
+    <p>程式 (109 bytes)</p>
+    <p>ClrMemory: ?→Y: While 1: ?→A: ?→B: A - X→A:</p>
+    <p>A&gt;2π<sup>r</sup>
+        <font color="#FF0000">=&gt;</font> A - 2π<sup>r</sup>→A:&nbsp; √( Y<sup>2</sup> + B<sup>2</sup> - 2YB cos(A→C:
+    </p>
+    <p>2<sup>-1</sup>YB sin(A<font color="#FF0000">M+</font>: <font color="#FF0000">cos<sup>-1</sup>(</font>
+        (B<sup>2</sup> + C<sup>2</sup>
+        - Y<sup>2</sup>) <span lang="en">÷ (2BC→X: </span></p>
+    <p> <span lang="en">(A&lt;0) + (A&gt;π<sup>r</sup>
+            <font color="#FF0000">=&gt;</font> -X→X: M→A: C→B: C→Y: WhileEnd
+        </span></p>
+    <p><span lang="en">&nbsp;</span></p>
+    <p>註1: 如果是使用fx-3650P II或fx-50FH II，上述程式碼中 (B<sup>2</sup> + C<sup>2</sup>
+        - Y<sup>2</sup>) <span lang="en">÷ <font color="#FF0000">(</font>2BC→X: </span>&nbsp;可以簡化為 (B<sup>2</sup> +
+        C<sup>2</sup>
+        - Y<sup>2</sup>) <span lang="en">÷ 2BC→X: </span>&nbsp;可節省1 byte。</p>
+    <p>註2: 順序輸入數據，第一邊長、第一邊及第二邊的內角、第二邊長、第二邊及第三邊的內角、第三邊長 .....，當輸入至第N-1邊後顯示面積及第N邊長度。</p>
+    <p>註3: 輸入的邊長及內角必須順多相連，否則計算不成立。</p>
+    <p>註4: 注意輸入的夾角是內角，而內角是可以大於180<sup>o</sup>。</p>
+    <p>　</p>
+    <p>例題1: 一五邊形，其中四個邊及三個內角順序為 2、30<sup>o</sup>、2、300<sup>o</sup>、2、30<sup>o</sup>及2，求五邊形的面積及第五邊的長度。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1再按 2 EXE 30 EXE 2 EXE 300 EXE 2 EXE </p>
+    <p>
+        30 EXE 2 EXE (顯示面積為2.26795) EXE (顯示第五邊的長度為2)</p>
+    <p>計算完後，
+        請按 AC 終止程式</p>
+    <p>　</p>
+    <p>例題2:
+        a=4, b=5, ∠C=40<sup>o</sup>
+        ，求三角形面積及c。</p>
+    <p>
+        注意:要在DEG
+        Mode執行</p>
+    <p>
+        按 Prog 1
+        再按<font color="#FF0000"> </font>
+        4 EXE 40 EXE 5 EXE (顯示面積為6.42788) EXE (顯示c為3.21842)</p>
+    <p>計算完後，
+        請按 AC 終止程式</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

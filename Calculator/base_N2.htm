@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>n(2-16)進數與10進數間轉換</title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">n(2-16)進數與10進數間轉換</font>
+            </b></u></p>
+    <p>更新日期: 2011年4月27日</p>
+    <p>
+        <font color="#FF0000">程式需要在 BASE 模式下執行，因此在選擇新程式位置後，按 3 選用BASE模式。</font>
+    </p>
+    <p>程式 (77 bytes)</p>
+    <p>ClrMemory: Hex: ?→D: ?→A: 10→B: 1→Y:</p>
+    <p>If D: Then A→B : 10→A: Dec: IfEnd: ?→C: While Ans: </p>
+    <p>Dec: C÷B→X: Y(C - BX <font color="#FF0000">M+</font>:&nbsp;
+        AY→Y: X→C:</p>
+    <p>WhileEnd: D <font color="#FF0000">=&gt;</font> Hex:
+        M </p>
+    <p>注意: 輸入的數值必須為正整數。n進制的n值可以是2至16，數位大於9，用A, B, C, D, E, F基數的數值代表10至15的數值(例如: A是按
+        <font color="#FF0000">(-)</font>)，若果要計算16進數問題，輸入進制數值時，請輸入<b>
+            <font color="#FF0000">10</font>
+        </b>。
+    </p>
+    <p>　</p>
+    <p>例題1: 將二進制 11001 以十進制表示。</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 0 EXE (0代表n進數轉換為10進數)</p>
+    <p>
+        2 EXE (輸入n值) 11001 EXE (顯示25)</p>
+    <p>所以 11001<sub>2</sub> =&nbsp; 25<sub>10</sub> </p>
+    <p>　</p>
+    <p>例題2: 將十進制 25 以十六進制表示。</p>
+    <p>
+        按 Prog 1&nbsp;
+        再按 1 EXE (1代表10進數轉換為n進數)</p>
+    <p>
+        <b>
+            <font color="#FF0000">10</font>
+        </b>
+        EXE (輸入n值，<font color="#FF0000">10</font>代表輸入的數值為16進制)
+    </p>
+    <p>
+        25 EXE (顯示19)</p>
+    <p>所以&nbsp; 25<sub>10</sub> = 19<sub>16</sub> </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

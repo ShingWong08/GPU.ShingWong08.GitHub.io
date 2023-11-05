@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>衝擊反應 Impulse response</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">衝擊反應 Impulse response</font>
+            </b></u></p>
+    <p>程式修改日期: 2008年3月3日</p>
+    <p>程式 (38 bytes，不包綠色函數方程)</p>
+    <p>ClrMemory: 1→X: While 1: <font color="#008000">X - 0.5Y + 2A</font>→D◢</p>
+    <p>B→C: A→B: D→A: Y→M: X→Y: 0→X: WhileEnd</p>
+    <p>　</p>
+    <p>註: 綠色的 <font color="#008000">X - 0.5Y + 2A</font>是函數方程，若果想計算
+        其它問題，只要修改綠色的部份，修改時注變數A代表 y[n-1]，變數B代表 y[n-2]，變數C代表 y[n-3]，y[n-4]
+        或之前的項假設不存在，變數X代表 x[n]，變數Y代表 x[n-1]，變數M代表 x[n-2]，x[n-3]或之前的項假設不存在。</p>
+    <p>　</p>
+    <p>Example: A filter is described by the following difference equation:</p>
+    <p>y[n] = x[n] - 0.5 x[n-1] + 2 y[n-1]</p>
+    <p>Evaluate the impulse response of the filter (i.e. evaluate y[0], y[1], y[2],
+        y[3], y[4], y[5]). </p>
+    <p>Press Prog 1 (read-out: 1) EXE (read-out: 1.5) EXE (read-out: 3)</p>
+    <p>EXE (read-out: 6) EXE (read-out: 12) EXE (read-out: 24) </p>
+    <p>　</p>
+    <p>Therefore, the result is:</p>
+    <p>y[0] = 1</p>
+    <p>y[1] = 1.5</p>
+    <p>y[2] = 3</p>
+    <p>y[3] = 6</p>
+    <p>y[4] = 12</p>
+    <p>y[5] = 24</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

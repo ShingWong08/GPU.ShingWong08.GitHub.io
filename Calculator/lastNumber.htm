@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>最後數值</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">最後數值</font>
+            </b></u></p>
+    <p>程式編寫日期: 2008年3月10日</p>
+    <p>遊戲目的是要避免成為最後輸入數值者(敗方)。程式會先產生一個隨機的整數A(18-27)，遊戲由兩名玩家輪流輸入數值，數值可以是 1, 2 或
+        3，每一次輸入數值後，原先的整數會減以輸入的數值成為新的整數，當最後輸入數值令整數A變成0或負數者為敗方，這時計算機會出現Math ERROR。</p>
+    <p>程式 (64 bytes)</p>
+    <p>ClrMemory: Fix 0: 18 + Rnd( 9<font color="#FF0000">Ran#</font>→A: </p>
+    <p>Norm 1: Ans→B: While 1: ?→A:</p>
+    <p>A<sup>3</sup> - 6A<sup>2</sup> + 11A - 6 <font color="#FF0000">=&gt;</font> log(
+        0: B - A→B:</p>
+    <p>log( B: B→A: M=0→M: WhileEnd</p>
+    <p>　</p>
+    <p>操作方法:</p>
+    <p>1. 先按 Prog 1 執行程式，顯示<font color="#FF0000">A?</font>及現時整數數值；</p>
+    <p>2. 第一位現家輸入 1、2或3的數值再按 EXE，這時會顯示<font color="#FF0000">A?</font>及現時整數數值；</p>
+    <p>3. 第二位現家輸入 1、2或3的數值再按 EXE，這時會顯示<font color="#FF0000">A?</font>及現時整數數值；</p>
+    <p>4. 不斷重複步驟2及3，直至最後輸入數值出現Math ERROR者為敗方。</p>
+    <p>　</p>
+    <p>註1: 沒有M的細字代表由第一位玩家輸入數值，有M細字代表由第二位玩家輸入數值。</p>
+    <p>註2: 出現Math ERROR時，沒有M細字代表第一位玩家為敗方，相反有M細字代表第二位玩家為敗方。</p>
+    <p>註3: 若果輸入的數值不是1、2或3，會立即出現Math ERROR，亦即是立即成為敗方。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>柏力克-舒爾斯期權定價</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">柏力克-舒爾斯期權定價(I)</font>
+            </b></u></p>
+    <p>程式編寫日期: 2014年8月1日</p>
+    <p>程式根據柏力克-舒爾斯期權定價模式計算認購期權及認沽期權的理論值。</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>為平均x
+        按 shift 2 1)， <font color="#FF0000">e^( </font>是按shift
+        e<sup>x</sup>，<font size="1">E</font>是按 EXP。</p>
+    <p>程式 (共309 bytes)</p>
+    <p>FreqOn: 0→X: Lbl 0: ?→Y: ?→M: ?→D: M + 1→M:</p>
+    <p>M≧4 <font color="#FF0000">=&gt;</font> Goto 1: Y - 1→Y: 12 + M→M:
+        Lbl 1: Fix 0:</p>
+    <p>Rnd( 365.25Y - . 5 ) + D + Rnd( 30.6001M - . 5→C:
+        Norm 1: </p>
+    <p>X=0→X: Ans <font color="#FF0000">=&gt;</font> C→B: Ans <font color="#FF0000">=&gt;</font> Goto
+        0: </p>
+    <p>?→A: ( C - B) ÷ 365 <b>
+            <font color="#FF0000">;</font>
+        </b> A
+        <font color="#FF0000">DT</font>: ?→B: ?→C: ?→D: C ÷ <font size="1">E</font> 2→C:
+    </p>
+    <p>D ÷ <font size="1">E</font> 2→D:
+        ( ln( <font color="#0000FF">n</font>┘B ) + ( C + D<sup>2 </sup>÷ 2)
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span> )
+        ÷ <font color="#800080"><b>( </b></font>D√( <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>→A:
+    </p>
+    <p>Ans - D√( <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>→M:
+        Lbl 2: D→Y: 1 ÷ (1 + . 231642Abs( A: </p>
+    <p>
+        <font size="1">E</font> - 7 √( <font color="#FF0000">e^(</font>
+        - A<sup>2</sup> ) )( 1274148Ans - 1422484Ans<sup>2</sup> + 7107069Ans<sup>3</sup>
+        -
+    </p>
+    <p>7265760Ans<sup>2 2</sup> + 5307027Ans^( 5→D: A&gt;0 <font color="#FF0000">=&gt;</font>
+        1 - D→D: M→A: </p>
+    <p>X=0→X: Ans <font color="#FF0000">=&gt;</font> Goto 2:
+        <font color="#0000FF">n</font>Y - BD<font color="#FF0000">e^(</font> - C<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>◢
+        Ans - <font color="#0000FF">n</font> + B ÷ <font color="#FF0000">e^(</font>
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>C
+    </p>
+    <p>
+        <span lang="en">
+            註: 如果是使用fx-3650P II或fx-50FH II，上述程式(第六行)中的</span>( C + D<sup>2 </sup>÷ 2)
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span> )
+        ÷ <font color="#800080"><b>(</b></font> D√( <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>→A:
+        <span lang="en">
+            可以簡化為
+        </span>
+        ( C + D<sup>2 </sup>÷ 2)
+        <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span> )
+        ÷ D√( <span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>→A:<span lang="en">&nbsp;，可節省1 byte。</span>
+    </p>
+    <p>　</p>
+    <p>例題:
+        若正股價為$50，期權產品的行使價為$45，無風險年利率為6%，波幅為44.72%，計算日為2006年7月1日，到期日為2006年10月1日，求認購期權及認沽期權的理論值。</p>
+    <p>按 Prog 1&nbsp; 2006 EXE 7 EXE 1 EXE (計算日)</p>
+    <p>2006 EXE 10 EXE 1 EXE (到期日)</p>
+    <p>50 EXE (正股現價) 45 (行使價) 6 EXE (年利率)</p>
+    <p>44.72 EXE (波幅，顯示認購期權值為 $7.6426)</p>
+    <p>EXE (顯示認沽期權值為 $1.9672)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>聯立同餘式(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">聯立同餘式(II)</font>
+            </b></u></p>
+    <p>更新日期: 2011年1月22日</p>
+    <p>程式可以求整數論中聯立同餘式(simultaneous linear congruences) 的解，程式計算解的最小正值及通解。
+        與第(I)版比較，這個程式克服了<a href="congruences1.htm">第(I)版</a>或者是使用<a
+            href="C_remainder.htm">中國餘數定理的程式</a>在計算較大除數時，速度很慢的問題。
+        另外在聯立同餘式無解的情況下會顯示Math ERROR，而不是<a href="congruences1.htm">第(I)版</a>長時間顯示空白。</p>
+    <p>更新日期: 2011年3月21日</p>
+    <p>
+        <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
+    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span>為平均x
+        按 shift 2 1)</p>
+    <p>程式(159 bytes):</p>
+    <p>0→A: 1→B: While 1: ClrStat: ?→C: </p>
+    <p>?→D: C-A ; Abs( D <font color="#FF0000">DT</font>: B→M:
+        <font color="#FF0000">Pol(</font>
+        <font color="#0000FF">n</font> , 0: 1→D:
+        Lbl 1:
+    </p>
+    <p>D→C: Y→D: Fix 0: C - D Rnd( M÷X - . 5→Y: </p>
+    <p>M- X Rnd( M÷X
+        - . 5→C: Ans
+        <font color="#FF0000">=&gt;</font> X→M:
+    </p>
+    <p>Ans <font color="#FF0000">
+            =&gt;</font> C→X: Ans <font color="#FF0000">=&gt;</font> Goto 1: (Abs( <span
+            style="text-decoration: overline">
+            <font color="#0000FF">x</font>
+        </span><sup>
+        </sup>)<sup> </sup>÷X)<sub>
+            <font color="#FF0000">n</font>
+        </sub>
+        <font color="#FF0000">C<sub>r</sub></font>
+        0:
+    </p>
+    <p>A + D<font color="#0000FF"><span style="text-decoration: overline">x</span></font>B÷X→C:
+        <font color="#0000FF">n</font>B÷X→B: Ans→D:
+    </p>
+    <p>C - B Rnd( C÷B - . 5: Norm 1: Ans - B(Ans=B→A:
+    </p>
+    <p>Ans→C: WhileEnd</p>
+    <p>　</p>
+    <p>例題1: 計算以下大除數的聯立同餘式。</p>
+    <p>M ≡ 123 (mod 9877)</p>
+    <p>M ≡ 923 (mod 8979)</p>
+    <p>按 Prog 1&nbsp; 再按&nbsp; 123 EXE 9877 EXE </p>
+    <p>923 EXE 8979 (顯示79016123) EXE (顯示88685583)</p>
+    <p>所以最小的正值為79016123，通解 = 79016123 + 88685583n</p>
+    <p>註: 若果使用<a href="C_remainder.htm">中國餘數定理</a>或<a href="congruences1.htm">聯立同餘式(I)</a>計算，時間會非常長，基本上可以說不能求出解答。</p>
+    <p>　</p>
+    <p>例題2: 計算以下聯立同餘式:</p>
+    <p>M ≡ 4 (mod 5)</p>
+    <p>M ≡ 1 (mod 3)</p>
+    <p>M ≡ 9 (mod 10)</p>
+    <p>按 Prog 1&nbsp;再按&nbsp; 4 EXE 5 EXE 1 EXE 3 EXE 9 EXE 10 EXE (顯示19) EXE (顯示30)</p>
+    <p>所以最小的正值為19，通解 = 19 + 30n</p>
+    <p>　</p>
+    <p>例題3: 計算以下聯立同餘式:</p>
+    <p>M ≡ 4 (mod 5)</p>
+    <p>M ≡ 1 (mod 3)</p>
+    <p>M ≡ 9 (mod 10)</p>
+    <p>M ≡ 2 (mod 7)</p>
+    <p>M ≡ 7 (mod 12)</p>
+    <p>按 Prog 1&nbsp;再按 4 EXE 5 EXE 1 EXE 3 EXE 9 EXE 10 EXE 2 EXE 7 EXE </p>
+    <p>7 EXE 12 EXE (顯示79) EXE (顯示420)</p>
+    <p>所以最小的正值為79，通解 = 79 + 420n</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p> 　</p>
+    <p><a href="C_remainder.htm">孫子定理</a> (中國餘數定理Chinese Remainder Theorem) (59
+        bytes)</p>
+    <p><a href="congruences1.htm">聯立同餘式(I)</a></p>
+    <p>　</p>
+    <p>有關聯立同餘式的參考資料:</p>
+    <p><a href="http://www.edp.ust.hk/previous/math/history/5/5_4/5_4_5.htm">孫子定理</a></p>
+    <p><a href="http://mathworld.wolfram.com/LinearCongruenceEquation.html">
+            simultaneous linear congruences</a></p>
+    <p>　</p>
+</body>
+
+</html>

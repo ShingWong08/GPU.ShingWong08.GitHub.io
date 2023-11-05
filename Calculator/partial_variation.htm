@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>部分變</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">部分變</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年10月29日</p>
+    <p>程式可以求出部分變問題中的方程(方程中兩個常數值)。</p>
+    <p>程式(97bytes)</p>
+    <p>注意若果不用記存答案，綠色的程式碼可以不輸入，程式長度則變為93 bytes。</p>
+    <p>?→M: ?→A: ?→B: ?→C: C^( A→D:</p>
+    <p>M=2 <font color="#FF0000">=&gt;</font> ?→C: C^( B→X:
+        ?→Y: ?→C: </p>
+    <p>C^( A→A: M=2 <font color="#FF0000">=&gt;</font> ?→C:
+        C^( B→B: ?→C:</p>
+    <p>DB - AX→M: M<sup>-1</sup>(YB - CX<font color="#008000">→X</font>◢
+    </p>
+    <p>M<sup>-1</sup>(DC - AY<font color="#008000">→Y</font>
+    </p>
+    <p>　</p>
+    <p>註: 輸入部分函數的冪時，若平方根或N次方根以分數形式表示，例如:
+        平方根用1/2表示冪，若為反變關係(Inverse)，用負值表示冪，若部分為常數，則用0表示冪。</p>
+    <p>　</p>
+    <p>例題1: y一部分為常數，另一部分隨 x 的平方根而正變。若 x=1時，y=5；若 x=4時，y=7。 以x表示 y。</p>
+    <p>按 Prog 1 再按 1 EXE (輸入<font color="#FF0000">因變數</font>的數目，由於只有x所以輸入1)</p>
+    <p>0 EXE (輸入第一部分變數函數，0表示為常數)</p>
+    <p>1┘2 EXE (輸入第二部分變數函數，以分數1/2表示平方根)</p>
+    <p>1 EXE 5 EXE (輸第一組已知數據)</p>
+    <p>4 EXE 7 EXE (輸入第二組已數據，顯示第一個常數值 3)</p>
+    <p>EXE (顯示第二個常數為2)</p>
+    <p>所以 y = 3 + 2√x</p>
+    <p>　</p>
+    <p>例題2: z 一部分隨 x的平方根而正變，另一部分隨 y
+        而反變。當x=4及y=60時，z=1；當x=25及y=30時，z=3。以 x及y表示 z。</p>
+    <p>按 Prog 1 再按 2 EXE (輸入<font color="#FF0000">因變數</font>的數目，由於有x及y所以輸入2)</p>
+    <p>1┘2 EXE (輸入第一部分變數函數，以分數1/2表示平方根)</p>
+    <p>- 1 EXE (輸入第二部分變數函數，以 - 1表示反變)</p>
+    <p>4 EXE 60 EXE 1 EXE (輸第一組已知數據)</p>
+    <p>25 EXE 30 EXE 3 EXE (輸入第二組已數據，顯示第一個常數值 1)</p>
+    <p>EXE (顯示第二個常數為 - 60)</p>
+    <p>所以 z = √x - 60 / y</p>
+    <p>　</p>
+    <p>計算完結後，若果包含綠色程式碼的程式，可以按 RCL X 及 RCL Y 顯示兩個常數的值。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

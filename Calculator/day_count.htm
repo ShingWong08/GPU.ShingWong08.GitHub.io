@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>30/360日數計算法</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">30/360日數計算法</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年11月7日</p>
+    <p>程式使用30/360日數計算法(PSA)計算兩日期間的日數。</p>
+    <p>程式 (106 bytes，使用記憶A, B, C, D, Y, M)</p>
+    <p>?→Y: ?→M: ?→D: ?→A: ?→B: ?→C:</p>
+    <p>Fix 0:<span lang="en"> Y - 4Rnd( </span>Y<span lang="en">÷4: Norm 1: </span></p>
+    <p><span lang="en">Ans(D=28) + (D=29: (D=31) + </span></p>
+    <p><span lang="en">(M=2)Ans <font color="#FF0000">=&gt;</font> 30</span>→D: C=31
+        <font color="#FF0000">=&gt;</font> D=30 <font color="#FF0000">=&gt;</font> 30→C:
+    </p>
+    <p>360(A - Y) + 30(B - M) + C - D</p>
+    <p>　</p>
+    <p>例題: 試使用30/360日數計算法(PSA)，計算2004年2月29日至2005年3月31日相差的日數。</p>
+    <p>按 Prog 1 再按 2004 EXE 2 EXE 29 EXE 2005 EXE 3 EXE 31 EXE (顯示相差日數為390)</p>
+    <p>　</p>
+    <p>
+        註1: 程式計算範圍1901年至2099年</p>
+    <p>
+        註2: 30/360 日數計算法(PSA)，假定一年只有360日，一個月只有30日，有關計算方法的詳情可以參考以下網址的資料:</p>
+    <p>
+        <a href="http://www.duke.edu/~charvey/Classes/ba350_1997/pricing/daycount.htm">
+            http://www.duke.edu/~charvey/Classes/ba350_1997/pricing/daycount.htm</a>
+    </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>孫子定理</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">孫子定理</font>
+            </b></u></p>
+    <p>更新日期: 2011年8月21日</p>
+    <p>程式可以計算孫子定理(中國餘數定理Chinese Remainder
+        Theorem)的問題，程式會計算最小正值解及其通解。要注意這個定理的限制條件，就是任何兩個除數必須為<font color="#FF0000">互質關係</font>
+        ，否則計算不成立。若果希望計算更一般情況下的聯立同餘式問題，請使用<a href="congruences1.htm">聯立同餘式(I)</a>及<a
+            href="congruences2.htm">聯立同餘式(II)</a>程式進行計算。</p>
+    <p>程式 (58 bytes，使用記憶A, B, C及M)</p>
+    <p>
+        <font color="#FF0000">程式需要在 BASE 模式下執行，因此在選擇新程式位置後，按 3 選用BASE模式。</font>
+    </p>
+    <p>Dec: ?→M: ?→C: While 1: ?→A: ?→B:</p>
+    <p>A<font color="#FF0000">M-</font>: Lbl 1: M - M÷B<span lang="en">
+            <font color="#FF0000">×</font>
+        </span>B
+        <font color="#FF0000">=&gt;</font> C<font color="#FF0000">M+</font>
+        <font color="#FF0000">=&gt;</font> Goto 1:
+    </p>
+    <p>A<font color="#FF0000">M+</font>: BC→C: Ans→B: M→A: WhileEnd</p>
+    <span lang="en">
+        <p>註: 如果是使用fx-50FH，上述程式中的乘號<font color="#FF0000"> ×</font>可以省略不輸入，程式長度可節省1 byte。</p>
+    </span>
+    <p>　</p>
+    <p>例題1: 一正整數被3除餘2；被5除餘3；被7除餘2，求這個的最少值。</p>
+    <p>按 Prog 1 再按&nbsp; 2 EXE 3 EXE 3 EXE 5 EXE 2 EXE 7 EXE
+        (顯示答案為23) EXE (顯示105)</p>
+    <p>所以通解 = 23 + 105n</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p>例題2: 計算以下聯立同餘式: </p>
+    <p>x ≡ 1 (mod 2)</p>
+    <p>x ≡ 2 (mod 3)</p>
+    <p>x ≡ 3 (mod 5)</p>
+    <p>x ≡ 2 (mod 7)</p>
+    <p>x ≡ 3 (mod 11)</p>
+    <p>按 Prog 1 再按 EXE 2 EXE 2 EXE 3 EXE 3 EXE 5 EXE 2 EXE 7 EXE </p>
+    <p>3 EXE 11 EXE (顯示答案為443) EXE (顯示2310)</p>
+    <p>所以通解 =
+        443 + 2310n</p>
+    <p>計算完結後按 AC 終止程式</p>
+    <p>　</p>
+    <p>注意: 輸入的任意兩個除數必須為<b>
+            <font color="#FF0000">互質</font>
+        </b>，否則計算的解可能不是最小的解。</p>
+    <p>註: 若果計算大除數問題，時間可能會很長，這是定理本身的缺點，建議使用<a href="congruences2.htm">聯立同餘式(II)</a>程式。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    <p>　</p>
+    <p>相關程式:</p>
+    <p><a href="congruences1.htm">聯立同餘式(I)</a></p>
+    <p><a href="congruences2.htm">聯立同餘式(II)</a></p>
+    <p>有關聯立同餘式的參考資料:</p>
+    <p><a href="http://www.edp.ust.hk/previous/math/history/5/5_4/5_4_5.htm">孫子定理</a></p>
+    <p><a href="http://mathworld.wolfram.com/LinearCongruenceEquation.html">
+            simultaneous linear congruences</a></p>
+</body>
+
+</html>

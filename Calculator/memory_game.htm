@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>記憶遊戲</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">記憶遊戲(I)</font>
+            </b></u></p>
+    <p>程式由網友<span class="gen"><span class="postername">
+                <font color="#0000FF">
+                    tonylcc1995</font>
+            </span></span>提供。</p>
+    <p>更新日期: 2011年2月3日</p>
+    <p>注意: <font size="1">E </font>是按 EXP 。</p>
+    <p>程式一(47 bytes)</p>
+    <p>ClrMemory: While A=B<font color="#FF0000">M+</font>:
+        M◢ Fix 0:</p>
+    <p>Rnd( ( . 5 + Ran# )(B + <font size="1">E</font>3MM→B:</p>
+    <p>Norm 1◢ ?→A: WhileEnd: </p>
+    <p>M◢ B◢ A ◢ 0<sup>-1</sup> </p>
+    <p>　</p>
+    <p>程式二(110 bytes，可設定機會次數及開始時的關數)</p>
+    <p>ClrMemory: While (C≦0) + (C≧21: ?→C: WhileEnd:</p>
+    <p>While (M≦0) + (M≧<font size="1">E</font>3: ?→M: WhileEnd: 1<font color="#FF0000">M-</font>:</p>
+    <p>Lbl 0: C≦0 <font color="#FF0000">=&gt;</font> 0<sup>-1</sup>: 0→B: 1<font color="#FF0000">M+</font>:
+        M◢ Fix 0:</p>
+    <p>Rnd( ( . 5 + Ran# )(B + <font size="1">E</font>3MM→B: Norm 1◢ ?→A: </p>
+    <p>A=B <font color="#FF0000">=&gt;</font> Goto 0: C-1→C◢ M◢ B◢ A◢ Goto 0</p>
+    <p>　</p>
+    <p>程式一遊戲玩法及示範:</p>
+    <p>按 Prog 1 (這時顯示關數M為1)</p>
+    <p>EXE (這時會顯示一個記憶數字，假設是123) </p>
+    <p>EXE (顯示A?表示輸入要記憶數字)</p>
+    <p>123 EXE (輸入記憶數字，由於正確再顯示新關數M為2)</p>
+    <p>EXE (顯示另一個記憶數字，假設是4567)</p>
+    <p>EXE (顯示A?表示輸入要記憶數字)</p>
+    <p>4568 EXE (輸入記憶數字，由於答錯顯示M為2(顯示錯誤時的關數))</p>
+    <p>EXE (顯示B及4567(記憶數字) )</p>
+    <p>EXE (顯示A及4568(你輸入的數字) )</p>
+    <p>EXE (顯示Math ERROR表示遊戲結束)</p>
+    <p>　</p>
+    <p>程式二遊戲玩法及示範:</p>
+    <p>按 Prog 1 </p>
+    <p>再按 2 EXE (輸入2表示只有2次機會(你可以輸入1至20的數值))</p>
+    <p>1 EXE (輸入1表示開始時的關數為1(你可以輸入1至999的數值)，這時顯示關數M為1)</p>
+    <p>EXE (這時會顯示一個記憶數字，假設是123) </p>
+    <p>EXE (顯示A?表示輸入要記憶數字)</p>
+    <p>123 EXE (輸入記憶數字，由於正確再顯示新關數M為2)</p>
+    <p>EXE (顯示另一個記憶數字，假設是4567)</p>
+    <p>EXE (顯示A?表示輸入要記憶數字)</p>
+    <p>4568 EXE (輸入記憶數字，由於答錯顯示C為1(即還有多1次機會))</p>
+    <p>EXE (顯示M為2(顯示錯誤時的關數))</p>
+    <p>EXE (顯示B及4567(記憶數字) )</p>
+    <p>EXE (顯示A及4568(你輸入的數字) )</p>
+    <p>EXE (顯示遊戲的關數M為2)</p>
+    <p>EXE (顯示另一個記憶數字，假設是7653)</p>
+    <p>EXE (顯示A?表示輸入要記憶數字)</p>
+    <p>7633 EXE (輸入記憶數字，由於答錯顯示C為0(即沒有機會了))</p>
+    <p>EXE (顯示M為2(顯示錯誤時的關數))</p>
+    <p>EXE (顯示B及7653(記憶數字) )</p>
+    <p>EXE (顯示A及7633(你輸入的數字) )</p>
+    <p>EXE (顯示Math ERROR表示遊戲結束)</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

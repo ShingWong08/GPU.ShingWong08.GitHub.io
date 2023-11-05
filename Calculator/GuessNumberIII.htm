@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>估數字(III)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">估數字(III)</font>
+            </b></u></p>
+    <p>網友提供程式日期: 2009年7月30日</p>
+    <p>程式由網友 <font color="#0000FF">SuperMANganese</font> 提供。
+        這個版本加入了防作弊的特點，另外亦可以自定隨機數的最大整數值，遊戲的目的是要找出這個隨機數字，每次估數字前會顯示該數值的可能範圍，若果估的數字正確，會顯示所用的總次(六十進數的值)。</p>
+    <p>注意: <font size="1">E</font> 是按 EXP，而 M<sup>o</sup> 是按 ALPHA MR&nbsp; <font color="#0000FF"> <sup>
+                o,,,</sup></font>
+    </p>
+    <p>程式 (132 bytes)</p>
+    <p>?→D: Ran# + <font size="1">E</font>-3Ran# + <font size="1">E</font>-6Ran#:
+        Fix 0:</p>
+    <p>Rnd(2+Ans(D-3→Y: Norm 1: 1→C: 0→M: </p>
+    <p>Lbl 1: FreqOn:<font size="1"> E</font>9<font color="#FF0000"> DT</font>: -Ans<font color="#FF0000"> DT</font>: Y
+        <font color="#FF0000">;</font> 0<font color="#FF0000"> DT</font>: C◢
+    </p>
+    <p>D◢ Rec(0,0: ?→X: <font color="#FF0000">;</font> 0<font color="#FF0000"> DT</font>: Ans→Y: 1+M→M: </p>
+    <p>X≧D <font color="#FF0000">=&gt;</font> Goto 1: C≧X <font color="#FF0000">=&gt;</font> Goto
+        1: X <font color="#FF0000">nCr</font> 1: </p>
+    <p>X&gt;Y <font color="#FF0000">=&gt;</font> X→D : Ans <font color="#FF0000">=&gt;</font> Goto 1: Y&gt;X
+        <font color="#FF0000">=&gt;</font> X→C:
+    </p>
+    <p>Ans <font color="#FF0000">=&gt;</font> Goto 1: M<sup>o</sup></p>
+    <p>　</p>
+    <p>操作示範(假定要估的數值是924):</p>
+    <p>按 Prog 1 再按 1000 EXE (表示要產生1-1000的隨機數及顯示1) </p>
+    <p>EXE (顯示1000，表示答案為1-1000的整數) </p>
+    <p>EXE 777 EXE (假設估777及顯示777) EXE (顯示1000，表示答案為777-1000的整數) </p>
+    <p>950 EXE (假設估950及顯示888) EXE (顯示950，表示答案為888-950的整數)</p>
+    <p>924 EXE (假設估924，顯示4<sup>o</sup>0<sup>o</sup>0，表示4次估中答案)</p>
+    <p>　</p>
+    <p>註1: 輸入數字非整數會MATH ERROR；輸入數字超出範圍，會重新顯示範圍及要求重新輸入，但會當作估一次。 </p>
+    <p>註2: 如想知道答案，在顯示可能範圍時終止程式，再按按 RCL Y 可顯示答案。 </p>
+    <p>註3: 3650可能會datafull，此時按1(editoff)即可。</p>
+    <p>註4: 隨機機範圍可由1~3至1~1000000000。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

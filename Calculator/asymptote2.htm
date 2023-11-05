@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title></title>
+    <meta name="Microsoft Theme" content="indust 011">
+    <p align="center"><u><b>
+                <font size="5">漸近線(II) (Asymptote II)</font>
+            </b></u></p>
+    <p>程式由網友 <font color="#0000FF">roviury</font> 提供。</p>
+    <p>這個程式可以用作嘗試找出斜漸近線 (oblique
+        asymptote) 或水平漸近線(horizontal asymptote)，但要注意找出的漸近線可能存在誤差，亦未必一定正確只能作為參考之用。</p>
+    <p>
+        <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
+    </p>
+    <p>程式編寫日期: 2011年11月8日</p>
+    <p>注意: <font color="#FF0000">10^( </font>是按 SHIFT log</p>
+    <p>程式(73 bytes，不包括綠色函數方程)</p>
+    <p>0→C: ?→C: Lbl 1: ClrStat: C+1→C:<font size="1"> E</font>7cos(Cπ<sup>r</sup>→X:
+        Goto 9:</p>
+    <p>Lbl 0: X , Ans <font color="#FF0000">DT</font>: 5X→X: <font color="#0000FF">n</font>≠<font color="#800080">3
+        </font>
+        <font color="#FF0000">=&gt;</font> Goto 9: b◢
+        <span style="text-decoration: overline">
+            <font color="#0000FF">y</font>
+        </span> -Ans&nbsp;
+        <font color="#0000FF"><span style="text-decoration: overline">x</span></font>◢&nbsp;
+        <font color="#800080">r^(n-1◢ </font>Goto 1:
+    </p>
+    <p>Lbl 9: <font color="#008000">Abs(X)(3X+17)</font>
+        <font color="#008080"><span lang="en">÷</span></font>
+        <font color="#008000">(X-4</font>:
+        Goto 0
+    </p>
+    <p>　</p>
+    <p>註1: 綠色的 <font color="#008000">Abs(X)(3X+17)÷(X-4 </font>是函數方程(變數是X，亦可以使用Ans作為變數)，若果想計算其它函數的積分，只要修改綠色的部份。</p>
+    <p>註2: 斜漸近線 (oblique asymptote)可能不存在，程式有可能會出現 MATH ERROR，而且斜率及Y-截距亦未必準確。</p>
+    <p>註3: 可信度的&#32118;對值越近1表示越可信。</p>
+    <p>註4: 紫色數值 3 可以是 2, 3, 4, 5, 6, ......，但數值2時，可信度不適合使用。 </p>
+    <p>註5: 若果不想計算可信度，紫色的<font color="#800080"> r^(n-1◢</font>可以不輸入。</p>
+    <p>　</p>
+    <p>例題: y=f(x)=|x|(3x+17)/(x-4)，找出斜漸近線。</p>
+    <p>按 Prog 1 再按 EXE (不輸入或輸入0代表先計x→-∞，顯示斜漸近線的斜率為-3)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的Y-截距為-29)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的可信度為 -1) </p>
+    <p>EXE (顯示x→+∞時斜漸近線的斜率為3)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的Y-截距為29)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的可信度為1)</p>
+    <p>　</p>
+    <p>
+        <font color="#FF0000">另一個按法:</font>
+    </p>
+    <p>按 Prog 1 再按 1 EXE (輸入1代表先計x→+∞，顯示x斜漸近線的斜率為3)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的Y-截距為29)</p>
+    <p>EXE (顯示x→+∞時斜漸近線的可信度為1)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的斜率為-3)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的Y-截距為-29)</p>
+    <p>EXE (顯示x→-∞時斜漸近線的可信度為 -1) </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+    </body>
+
+</html>

@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>估數字(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">估數字(II)</font>
+            </b></u></p>
+    <p>更新日期: 2011年2月3日</p>
+    <p>程式由網友 <a href="http://webcal.forumcircle.com/viewtopic.php?t=1490">提供</a>，
+        計算機會隨機產生一個1-1000的整數，遊戲的目的是要找出這個數字，每次估數字前會顯示該數值的可能範圍(以小數形式表示)，若果估的數字正確，會顯示所用的總次(六十進數的值)。</p>
+    <p>注意: <font size="1">E</font> 是按 EXP，而 M<sup>o</sup> 是按 ALPHA MR&nbsp; <font color="#0000FF"> <sup>
+                o,,,</sup></font>
+    </p>
+    <p>程式 (64 bytes)</p>
+    <p>ClrMemory: Fix 4: 1+<font size="1">E</font>3
+        <font color="#FF0000">Ran#</font>→B: 1→X:<font size="1"> E</font>3→Y:
+    </p>
+    <p>While A≠B<font color="#FF0000">M+</font>: X+Y÷<font size="1">E</font>4→A: ?→A:
+        A&gt;B <font color="#FF0000">=&gt;</font>A→Y: </p>
+    <p>A&lt;B <font color="#FF0000">=&gt;</font> A→X: WhileEnd: Norm 1: M<sup>o</sup><br>
+        　</p>
+    <p>操作示範(假定要估的數值是924):</p>
+    <p>按 Prog 1 (顯示1.1000表示答案為1-1000的整數) </p>
+    <p>777 EXE (假設估777，顯示777.1000表示答案為777-1000的整數)</p>
+    <p>950 EXE (假設估950，顯示888.0950表示答案為888-950的整數)</p>
+    <p>924 EXE (假設估924，顯示4<sup>o</sup>0<sup>o</sup>0，表示4次估中答案)</p>
+    <p>　</p>
+    <p>註: 執行程式後，若未能估中答案，中途按 AC 或 ON 雖可終止程式，但計算機會保留在Fix 4(小數四位的設定)，請自行按SHIFT MODE 3 1
+        (Norm 1) 取消小數四位的設定。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

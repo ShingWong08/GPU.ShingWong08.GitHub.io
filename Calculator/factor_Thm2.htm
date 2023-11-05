@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>因式定理(II)</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">因式定理(II)</font>
+            </b></u></p>
+    <p>程式編寫日期: 2007年10月24日</p>
+    <p>
+        程式可以協助以因式定理嘗試將四次
+        或以下多項式分解，程式首先是函數計算，可以嘗試以不同數值計算函數值，直至函數值為0(即找到一次因式)，程式會再用長除法計算出低一次冪的多項式。計算出低一次冪多項式後，可以繼續使用程式，以因式定理<font
+            color="#FF0000">嘗試</font>進一步分解多項式(若果有簡單一次因子存在)，直至變為一次多項式為止。</p>
+    <p>注意若果不用記存答案，綠色的程式碼可以不輸入。</p>
+    <p>程式 (91 bytes，使用記憶為A, B, C, D, X及Y)</p>
+    <p>?→A: ?→B: ?→C: ?→D: ?→Y: Lbl 0:</p>
+    <p>?→X: BX<sup>3</sup> + CX<sup>2</sup> + DX + Y + AX^( 4◢ </p>
+    <p>Ans <font color="#FF0000">=&gt;</font> Goto 0: A◢ B + XAns→B◢</p>
+    <p>C + XAns→C◢ D + XAns→Y◢ C→D:</p>
+    <p>B→C: A→B: 0→A: Goto 0</p>
+    <p>　</p>
+    <p>例題1: 試用因式定理分解 2x<sup>4</sup> + x<sup>3</sup> - 16x<sup>2</sup> + 3x + 18</p>
+    <p>按 Prog 1 再按 2 EXE 1 EXE - 16 EXE 3 EXE 18 EXE (輸入四次多項式係數)</p>
+    <p>1 EXE (嘗試 x=1，顯示f(1)為 8)</p>
+    <p>EXE - 1 EXE (嘗試 x= - 1，顯示f(-1)為0，所以 x + 1為因式)</p>
+    <p>EXE (顯示另一因式x<sup>3</sup>係數為2) EXE (顯示另一因式x<sup>2</sup>係數為 -1)</p>
+    <p>EXE (顯示另一因式x係數為 - 15) EXE (顯示另一因式常數項為 18)</p>
+    <p>所以 2x<sup>4</sup> + x<sup>3</sup> - 16x<sup>2</sup> + 3x + 18 = (x + 1)(2x<sup>3</sup>
+        - x<sup>2</sup> - 15 + 18)</p>
+    <p>EXE - 1 EXE (再嘗試 x= - 1，新三次函數值為30)</p>
+    <p>EXE 2 EXE (嘗試 x= 2，新三次函數值為0，所以 x - 2為因式)</p>
+    <p>EXE (顯示另一因式x<sup>3</sup>係數為0) EXE (顯示另一因式x<sup>2</sup>係數為 2)</p>
+    <p>EXE (顯示另一因式x係數為 3) EXE (顯示另一因式常數項為 -9)</p>
+    <p>所以 2x<sup>3</sup> - x<sup>2</sup> - 15 + 18 = (x - 2)(2x<sup>2</sup> + 3x -
+        9)</p>
+    <p>EXE 3 EXE (再嘗試 x= 3，新二次函數值為18)</p>
+    <p>EXE - 3 EXE (嘗試 x= - 3，新二次函數值為0，所以 x + 3為因式)</p>
+    <p>EXE (顯示另一因式x<sup>3</sup>係數為0) EXE (顯示另一因式x<sup>2</sup>係數為 0)</p>
+    <p>EXE (顯示另一因式x係數為 2) EXE (顯示另一因式常數項為 -3)</p>
+    <p>所以 2x<sup>2</sup> + 3x - 9 = (x + 3)(2x - 3)</p>
+    <p>　</p>
+    <p>因此，2x<sup>4</sup> + x<sup>3</sup> - 16x<sup>2</sup> + 3x + 18 = (x + 1) (x -
+        2)(x + 3)(2x - 3)</p>
+    <p>計算完結後按 AC終止程式。</p>
+    <p>　</p>
+    <p>例題2: 試用因式定理因式分解 x<sup>3</sup> + 2x<sup>2</sup> - 6x - 4</p>
+    <p>按 Prog 1 再按 0 EXE 1 EXE 2 EXE - 6 EXE - 4 EXE (輸入四次多項式係數)</p>
+    <p>1 EXE (嘗試 x=1，顯示f(1)為 - 7)</p>
+    <p>EXE - 1 EXE (嘗試 x= - 1，顯示f(-1)為 3)</p>
+    <p>EXE&nbsp; 2 EXE (嘗試 x= 2，顯示f(2)為 0，所以 x - 2為因式)</p>
+    <p>EXE (顯示二次因式x<sup>2</sup>的係數為 1)</p>
+    <p>EXE (顯示二次因式x的係數為 4)</p>
+    <p>EXE (顯示二次因式常數項為 2)</p>
+    <p>所以 x<sup>3</sup> + 2x<sup>2</sup> - 6x - 4 = (x - 2)(x<sup>2</sup> + 4x + 2)</p>
+    <p>註: x<sup>2</sup> + 4x + 2 不能再分解出<font color="#FF0000">簡單一次因子</font>。</p>
+    <p>　</p>
+    <p>計算完結後按 AC終止程式。</p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>

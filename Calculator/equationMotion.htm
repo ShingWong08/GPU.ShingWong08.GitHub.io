@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>運動公式</title>
+    <meta name="Microsoft Theme" content="indust 011">
+
+<body>
+    <p align="center"><u><b>
+                <font size="5">運動公式</font>
+            </b></u></p>
+    <p>更新日期: 2014年8月22日</p>
+    <p>這個程式可在已知運動公式中三個變數，計算另外兩個未知變數的數值。這些變數輸入的順序為末速度 Final velocity v, 初速度 Initial
+        velocity u, 加速度 Acceleration a, 位移 Displacement s 及 時間 time
+        t，變數出現次序與香港會考所提供的公式出現的順序一樣，即是 v = u + at,&nbsp; s = .......。 </p>
+    <p>現時很多同類運動公式程式，在計算類似例題2有兩組答解的情況，只會得出一組解答，答案可能不是所需要的或缺少一組解答，<font color="#FF0000">
+            本程式沒有這方面的問題，會將所有可能解答都顯示出來，當出現兩組解答時，是否兩組解答同時成立，請自行判斷。</font>另外程式亦容許輸入四個已知變數，這時本程式則只會顯示一個未知變數答案。</p>
+    <p>
+        <font color="#FF0000">注意:</font> e 是按 ALPHA ln
+    </p>
+    <p>程式 (220 bytes)</p>
+    <p>e: ?→Y: ?→X: ?→A: ?→B: ?→D: </p>
+    <p>XY=e<sup>2</sup>
+        <font color="#FF0000">=&gt;</font> D÷B + AB÷2→Y◢ AB=e<sup>2</sup>
+        <font color="#FF0000">=&gt;</font>
+        . 5 D<sup> -1</sup>(Y<sup>2</sup> - X<sup>2</sup>→A◢
+    </p>
+    <p>YA=e<sup>2</sup>
+        <font color="#FF0000">=&gt;</font> 2D÷B - X→Y◢ XA=e<sup>2</sup>
+        <font color="#FF0000">
+            =&gt;</font> 2D÷B - Y→X◢
+    </p>
+    <p>If YB=e<sup>2</sup>: Then √(X<sup>2</sup> + 2AD→C◢ A<sup>-1</sup>(C - X→M◢
+    </p>
+    <p>-C→Y◢ IfEnd: If XB=e<sup>2</sup>: Then √(Y<sup>2</sup> - 2AD→C◢
+    </p>
+    <p>A<sup>-1</sup>(Y - C→M◢ -C→X◢ IfEnd: A=e<font color="#FF0000"> =&gt;</font> B<sup>-1</sup>(Y
+        - X→A◢
+    </p>
+    <p>Y=e<font color="#FF0000"> =&gt;</font> X + AB→Y◢ X=e<font color="#FF0000">
+            =&gt;</font> Y - AB→X◢
+    </p>
+    <p>B=e<font color="#FF0000"> =&gt;</font> A<sup>-1</sup>(Y - X→B◢ D=e <font color="#FF0000">=&gt;</font>
+        . 5B(X + Y→D◢ Norm 1</p>
+    <p>　</p>
+    <p>註1: 計算機變數 Y? 代表輸入末速度 Final velocity, X? 代表輸入初速度 Initial velocity,
+        <font color="#FF0000">A</font>? 代表輸入加速度 <font color="#FF0000">A</font>cceleration,
+        B? 代表輸入時間 Time, <font color="#FF0000">D</font>? 代表輸入位移<font color="#FF0000"> D</font>isplacement，未知的數值輸入
+        Ans即可，計算結果會順序顯示未知數。
+        計算完結後輸入已知數據及答案亦會保留在上述變數記憶中，但要注意若有兩組答案時(即總共顯示四個答案)，另一組末速度或初速度的儲存在C記憶，而時間值答案則儲存在M記憶
+        。
+    </p>
+    <p>註2: 注意運動公式<font color="#FF0000">(已知三個變數時)</font>有可能會有兩組答案，兩組答案可能同時成立，請自行按實際情況判斷。</p>
+    <p>註3: 若果輸入四個已知變數時，程式只會根據其中三個已知變數計算及顯示唯一的未知變數。</p>
+    <p>　</p>
+    <p>例題1: 一汽車在8秒的時間由靜止加速至4ms<sup>-1</sup>，求加速度及在8秒內所行的距離。</p>
+    <p>按 Prog 1&nbsp;再按 4 EXE 0 EXE Ans EXE (Ans代表加速度為未知數) 8 EXE Ans EXE (Ans代表位移為未知數，顯示加速度為
+        0.5 ms<sup>-2</sup>) EXE (顯示 距離為 16 m) <font color="#FF0000">EXE</font> (出現 Norm 1表示計算完結，程式亦終止)</p>
+    <p>　</p>
+    <p>例題2: 一石頭被向上拋，初速度為20 ms<sup>-1</sup>，求石頭在位移為5 m時，所用的時間及速度 (設 g = 10ms<sup>-2</sup>)。</p>
+    <p>按 Prog 1 再按 Ans EXE 20 EXE - 10 EXE Ans EXE 5 EXE (顯示第一組可能末速度為 17.32 ms<sup>-1</sup>)</p>
+    <p>EXE (顯示第一組可能的時間為0.2680 s) </p>
+    <p>EXE (顯示第二組可能的末速度為 -17.32 ms<sup>-1</sup>)</p>
+    <p>EXE (顯示第二組可能的時間為3.732 s)</p>
+    <p>
+        <font color="#FF0000">EXE</font> (出現Norm 1表示計算完結，程式亦終止)
+    </p>
+    <p>　</p>
+    <p><a href="fx-50F_Plus.htm">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
+</body>
+
+</html>
