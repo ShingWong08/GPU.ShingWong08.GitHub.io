@@ -10,95 +10,71 @@
             </b></u></p>
     <p>程式一及二是參考<a href="http://webcal.freetzi.com/3650P/trigonometricEquation.html">論壇網友
             、roviury及SuperMANganese的程式</a>編寫及修改，程式三由網友<font color="#0000FF">roviury</font>提供。程式可以解簡單三角方程(正弦、餘弦及正切)，
-        程式一可以計算出0°≦θ &lt; 360°範圍的兩個解。程式二可以0°≦θ &lt; n°範圍個解(n為正數)。程式三可以改善了之版本在特殊情況下會出現解答二次的問題，但程式會
-        增長小許。</p>
+        程式一可以計算出0°≦θ &lt; 360°範圍的兩個解。程式二可以0°≦θ &lt; n°範圍個解(n為正數)。程式三可以改善了之版本在特殊情況下會出現解答二次的問題，但程式會 增長小許。</p>
     <p>程式更新日期: 2014年8月31日</p>
     <p>
         <font face="Times New Roman">
             <font color="#FF0000">注意:</font>
             <font color="#0000FF">π</font>
         </font>
-        <font color="#0000FF"><sup>r</sup></font>
-        是按 Shift EXP Shift Ans 2，<font color="#FF0000">nCr</font> 按 Shift ÷
+        <font color="#0000FF"><sup>r</sup></font> 是按 Shift EXP Shift Ans 2，<font color="#FF0000">nCr</font> 按 Shift ÷
     </p>
     <p>程式一 (58 bytes，可計算 0°≦θ &lt; 360° 範圍，使用記憶A, B, C)</p>
     <p>?→A: ?→B: <font color="#FF0000">tan<sup>-1</sup>(</font> B→C: A=0 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">sin<sup>-1</sup>(</font>
-        B→C:
+        <font color="#FF0000">sin<sup>-1</sup>(</font> B→C:
     </p>
     <p>A=1 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">cos<sup>-1</sup>(</font>
-        B→C: C≧0
-        <font color="#FF0000">=&gt;</font> C◢
+        <font color="#FF0000">cos<sup>-1</sup>(</font> B→C: C≧0 <font color="#FF0000">=&gt;</font> C◢
     </p>
-    <p>
-        2 <font color="#FF0000">nCr</font> A<span lang="en">
+    <p> 2 <font color="#FF0000">nCr</font> A<span lang="en">
             <font color="#FF0000"> ×</font>
         </span>
         <font color="#0000FF" face="Times New Roman"> π</font>
-        <font color="#0000FF"><sup>r</sup></font> - C cos(
-        <font color="#0000FF" face="Times New Roman">π</font>
+        <font color="#0000FF"><sup>r</sup></font> - C cos( <font color="#0000FF" face="Times New Roman">π</font>
         <font color="#0000FF"><sup>r</sup></font>(A=2◢ 2<font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font>
-        + C
+        <font color="#0000FF"><sup>r</sup></font> + C
     </p>
     <p>　</p>
     <p>程式二 (75 bytes，計算 0°≦θ &lt; n° 範圍，使用記憶A, B, C)</p>
     <p>?→A: ?→B: <font color="#FF0000">tan<sup>-1</sup>(</font> B→C: A=0 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">sin<sup>-1</sup>(</font>
-        B→C:
+        <font color="#FF0000">sin<sup>-1</sup>(</font> B→C:
     </p>
     <p>A=1 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">cos<sup>-1</sup>(</font>
-        B→C: C≧0
-        <font color="#FF0000">=&gt;</font> C◢
+        <font color="#FF0000">cos<sup>-1</sup>(</font> B→C: C≧0 <font color="#FF0000">=&gt;</font> C◢
     </p>
-    <p>
-        2 <font color="#FF0000">nCr</font> A<font color="#0000FF" face="Times New Roman"> </font><span lang="en">
+    <p> 2 <font color="#FF0000">nCr</font> A<font color="#0000FF" face="Times New Roman"> </font><span lang="en">
             <font color="#FF0000"> × </font>
         </span>
         <font color="#0000FF" face="Times New Roman"> π</font>
-        <font color="#0000FF"><sup>r</sup></font> - C cos(
-        <font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font>(A=2→B◢
-        While 1:
+        <font color="#0000FF"><sup>r</sup></font> - C cos( <font color="#0000FF" face="Times New Roman">π</font>
+        <font color="#0000FF"><sup>r</sup></font>(A=2→B◢ While 1:
     </p>
-    <p>
-        2<font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font>
-        + C→C◢ 2<font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font>
-        + B→B◢ WhileEnd
+    <p> 2<font color="#0000FF" face="Times New Roman">π</font>
+        <font color="#0000FF"><sup>r</sup></font> + C→C◢ 2<font color="#0000FF" face="Times New Roman">π</font>
+        <font color="#0000FF"><sup>r</sup></font> + B→B◢ WhileEnd
     </p>
     <p>　</p>
     <p>程式三 (87 bytes，計算 0°≦θ &lt; n° 範圍，使用記憶A, B, C)</p>
     <p>?→A: ?→B: <font color="#FF0000">tan<sup>-1</sup>(</font> B→C: A=0 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">sin<sup>-1</sup>(</font>
-        B→C:
+        <font color="#FF0000">sin<sup>-1</sup>(</font> B→C:
     </p>
     <p>A=1 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">cos<sup>-1</sup>(</font>
-        B→C: C≧0
-        <font color="#FF0000">=&gt;</font> C◢ B<sup>2</sup> - 1 + <font color="#FF0000">
-            sin<sup>-1</sup>(</font>A=2 <font color="#FF0000">=&gt;</font>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> B→C: C≧0 <font color="#FF0000">=&gt;</font> C◢ B<sup>2</sup> - 1
+        + <font color="#FF0000"> sin<sup>-1</sup>(</font>A=2 <font color="#FF0000">=&gt;</font>
     </p>
     <p>2 <font color="#FF0000">nCr</font> A <span lang="en">
             <font color="#FF0000"> × </font>
         </span>
         <font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font> - C cos(
-        <font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font>(A=2◢
-        While 1: Ans<font face="新細明體">→B:</font>
+        <font color="#0000FF"><sup>r</sup></font> - C cos( <font color="#0000FF" face="Times New Roman">π</font>
+        <font color="#0000FF"><sup>r</sup></font>(A=2◢ While 1: Ans<font face="新細明體">→B:</font>
     </p>
     <p>2<font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font>
-        + C→C◢ B <font color="#FF0000">=&gt;</font> 2<font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font>
-        + B◢ WhileEnd
+        <font color="#0000FF"><sup>r</sup></font> + C→C◢ B <font color="#FF0000">=&gt;</font> 2<font color="#0000FF"
+            face="Times New Roman">π</font>
+        <font color="#0000FF"><sup>r</sup></font> + B◢ WhileEnd
     </p>
-    <p>
-        註: 如果是使用fx-50FH，上述三個程式中紅色的乘號<span lang="en">
+    <p> 註: 如果是使用fx-50FH，上述三個程式中紅色的乘號<span lang="en">
             <font color="#FF0000"> ×</font>
         </span>可以省略不輸入，程式長度可節省2 bytes。</p>
     <p>　</p>
@@ -118,10 +94,8 @@
     <p>註: 程式一可能會顯示第三個解，這個解不在0°≦x &lt; 360°的範圍內，只要忽略即可，或者在顯示第二個解後而程式又未終止時，按AC終止程式亦可。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
-    <p>　</p>
-    <!--msthemeseparator-->
-    <p align="center">
-    <!--msthemeseparator-->
+    <p>　</p> <!--msthemeseparator-->
+    <p align="center"> <!--msthemeseparator-->
     <p align="center">
     <p>　</p>
     <p>
@@ -133,24 +107,19 @@
             <font color="#FF0000">注意:</font>
             <font color="#0000FF">π</font>
         </font>
-        <font color="#0000FF"><sup>r</sup></font>
-        是按 Shift EXP Shift Ans 2
+        <font color="#0000FF"><sup>r</sup></font> 是按 Shift EXP Shift Ans 2
     </p>
     <p>程式 (88 bytes)</p>
-    <p>ClrMemory: ?→A: ?→B: 0&gt;B <font color="#FF0000">=&gt;</font> A - 1
-        <font color="#FF0000">=&gt;</font> 1<font color="#FF0000">M+</font>:
-    </p>
+    <p>ClrMemory: ?→A: ?→B: 0&gt;B <font color="#FF0000">=&gt;</font> A - 1 <font color="#FF0000">=&gt;</font> 1<font
+            color="#FF0000">M+</font>: </p>
     <p>A=0 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">sin<sup>-1</sup>(</font>
-        B→C: A=1 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">cos<sup>-1</sup>(</font>
-        B→C:
+        <font color="#FF0000">sin<sup>-1</sup>(</font> B→C: A=1 <font color="#FF0000">=&gt;</font>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> B→C:
     </p>
-    <p>A=2 <font color="#FF0000">=&gt; tan<sup>-1</sup>(</font> B→C: Lbl 0: M(A≠2: C cos(
-        <font color="#0000FF">π<sup>r</sup></font> Ans )
-    </p>
-    <p>+ <font color="#0000FF">π<sup>r</sup></font> M(1 + (A=1◢ D=0→D: Ans
-        <font color="#FF0000">=&gt;</font>1<font color="#FF0000">M+</font>
+    <p>A=2 <font color="#FF0000">=&gt; tan<sup>-1</sup>(</font> B→C: Lbl 0: M(A≠2: C cos( <font color="#0000FF">
+            π<sup>r</sup></font> Ans ) </p>
+    <p>+ <font color="#0000FF">π<sup>r</sup></font> M(1 + (A=1◢ D=0→D: Ans <font color="#FF0000">=&gt;</font>1<font
+            color="#FF0000">M+</font>
         <font color="#FF0000">=&gt;</font> Goto 0
     </p>
     <p>　</p>

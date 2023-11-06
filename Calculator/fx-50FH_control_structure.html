@@ -10,16 +10,14 @@
             </b></u></p>
     <p>更新日期: 2010年4月28日</p>
     <p align="left">fx-50FH 加入了以下類似高階電腦語言基本的結構性控制指令(Control Structure Command): <font color="#0000FF">While ~ WhileEnd
-        </font>、<font color="#0000FF">If ~ Then ~ Else ~ IfEnd</font>、<font color="#0000FF">For
-            ~ To ~ Step ~ Next</font>指令，亦有程序控制指令 <font color="#0000FF">Break</font>，
-        程式指令豐富了不少，以下是這些指令的用法說明及例子。</p>
+        </font>、<font color="#0000FF">If ~ Then ~ Else ~ IfEnd</font>、<font color="#0000FF">For ~ To ~ Step ~ Next
+        </font>指令，亦有程序控制指令 <font color="#0000FF">Break</font>， 程式指令豐富了不少，以下是這些指令的用法說明及例子。</p>
     <p align="left">　</p>
     <p align="left"><b>(I) If ~ Then (~Else) ~ IfEnd</b></p>
-    <p align="left">語法: If <font color="#0000FF">條件表示式</font>: <font color="#800080">
-            Then 條件為真時執行的程式</font>: <font color="#FF0000">Else 條件為假時執行的程式</font>: IfEnd</p>
+    <p align="left">語法: If <font color="#0000FF">條件表示式</font>: <font color="#800080"> Then 條件為真時執行的程式</font>: <font
+            color="#FF0000">Else 條件為假時執行的程式</font>: IfEnd</p>
     <p>說明: </p>
-    <p>˙If Then Else
-        指令可以根據條件表示式控制那些程式執行或不執行，若果If之後藍色條件表示式為真，就會執行Then之後紫色的程式，若條件表示式為假時，就會執行Else之後紅色的程式。</p>
+    <p>˙If Then Else 指令可以根據條件表示式控制那些程式執行或不執行，若果If之後藍色條件表示式為真，就會執行Then之後紫色的程式，若條件表示式為假時，就會執行Else之後紅色的程式。</p>
     <p>˙紅色 Else 部份可以按需要自行決定是否省略。</p>
     <p>˙IfEnd表示If結構完結位置，一般If語句必須包含IfEnd，若果省略了IfEnd是不會導致Syntax ERROR，但可能會出現意想不到的結果</p>
     <p>例子1: ?→A: If A=0: Then 2◢ IfEnd: 4</p>
@@ -32,8 +30,7 @@
     <p>(ii) 執行程式及A輸入1，由於A=0為假，所以顯示3(Else部份程式)，再顯示4(IfEnd後程式)</p>
     <p>　</p>
     <p><b>(II) While ~ WhileEnd</b></p>
-    <p>語法: While <font color="#0000FF">條件表示式</font>: <font color="#800080">
-            條件表示式為真時執行的程式</font>: WhileEnd</p>
+    <p>語法: While <font color="#0000FF">條件表示式</font>: <font color="#800080"> 條件表示式為真時執行的程式</font>: WhileEnd</p>
     <p>說明: </p>
     <p>˙若果藍色條件表示式為真，就會執行紫色部份程式，執行完成紫色部程式後會再次重新執行整個While結構。</p>
     <p>˙若果藍色條件表示式為假，就不會執行紫色部份程式，只會執行WhileEnd之後的程式。</p>
@@ -46,8 +43,7 @@
     <p><b>(III) For ~ To ~ Step ~ Next</b></p>
     <p>語法: For<font color="#0000FF"> 開始值 → 控制記憶</font>
         <font color="#008000">To 結束值</font>
-        <font color="#FF0000">Step 增加值</font>: <font color="#800080">變數記憶末超越結束值時執行程式</font>:
-        Next
+        <font color="#FF0000">Step 增加值</font>: <font color="#800080">變數記憶末超越結束值時執行程式</font>: Next
     </p>
     <p>說明: </p>
     <p>(i) 首先將開始值儲存在控制記憶中(藍色)，再定義結束值(綠色)及每次增加值(紅色)。</p>
@@ -58,25 +54,21 @@
     <p>例子: <font color="#FF00FF">For 3→A To 5 Step 2:</font> A<sup>2</sup>◢ Next: A</p>
     <p>說明:</p>
     <p>執行程式，程式首先將開始值3儲存在控制記憶A中，再定義結束值及每次增加值分別為5及2(桃紅色程式)，</p>
-    <p>接著計算機內部檢查控制記憶(3)是否超越結束值(5)，由於3≦5未超越結束值，所以會執行A<sup>2</sup>◢ 顯示
-        9的答案，接著控制記憶會依照增加值增加2，亦即是A變為5，</p>
-    <p>接著計算機內部檢查控制記憶(5)是否超越結束值(5)，由於5≦5未超越結束值，所以會執行A<sup>2</sup>◢ 顯示
-        25的答案，接著控制記憶會依照增加值增加2，亦即是A變為7，</p>
-    <p>接著計算機內部檢查控制記憶(7)是否超越結束值(5)，由於7&gt;5超越結束值，不會執行A<sup>2</sup>◢
-        ，只會執行Next之後的程式，顯示A的數值為7。</p>
+    <p>接著計算機內部檢查控制記憶(3)是否超越結束值(5)，由於3≦5未超越結束值，所以會執行A<sup>2</sup>◢ 顯示 9的答案，接著控制記憶會依照增加值增加2，亦即是A變為5，</p>
+    <p>接著計算機內部檢查控制記憶(5)是否超越結束值(5)，由於5≦5未超越結束值，所以會執行A<sup>2</sup>◢ 顯示 25的答案，接著控制記憶會依照增加值增加2，亦即是A變為7，</p>
+    <p>接著計算機內部檢查控制記憶(7)是否超越結束值(5)，由於7&gt;5超越結束值，不會執行A<sup>2</sup>◢ ，只會執行Next之後的程式，顯示A的數值為7。</p>
     <p>　</p>
     <p><b>(IV) Break</b></p>
     <p>語法: 一般會配合Then、Else或=&gt;指令一起使用。</p>
     <p>說明: Break指令的作用是強制中斷For或While的循環，當執行Break指令後，程式會直接執行Next或WhileEnd之後的程式。</p>
-    <p>例子: 1→A: While A&gt;0: <font color="#0000FF">?→A: If A=2: Then Break: IfEnd: A<sup>2</sup>◢</font>
-        WhileEnd: A</p>
+    <p>例子: 1→A: While A&gt;0: <font color="#0000FF">?→A: If A=2: Then Break: IfEnd: A<sup>2</sup>◢</font> WhileEnd: A
+    </p>
     <p>說明:</p>
-    <p>執行程式，由於A最初為1，A&gt;0為真，執行藍色程式碼，接著A輸入2(接 2 EXE)，由於A=2為真，會執行Break指令，所以While
-        控制結構內餘下的程式 A<sup>2</sup>◢ 不會執行，程式會直接執行WhileEnd之後程式，所以會顯示A的數值(2)。</p>
+    <p>執行程式，由於A最初為1，A&gt;0為真，執行藍色程式碼，接著A輸入2(接 2 EXE)，由於A=2為真，會執行Break指令，所以While 控制結構內餘下的程式 A<sup>2</sup>◢
+        不會執行，程式會直接執行WhileEnd之後程式，所以會顯示A的數值(2)。</p>
     <p>　</p>
     <p>註: 條件表示式不一定包含關係運算子(=、≠、&gt;、≧、&lt;、≦)，亦可以是一個代數算式，條件表示式最後數值若為<font color="#FF0000">非零的實數</font>
-        ，則代表條件為真，若條件表式最後數值為零，則代表條件為假，若條件表示的最係值為複數(複數模式時)，則會出現Math
-        ERROR。</p>
+        ，則代表條件為真，若條件表式最後數值為零，則代表條件為假，若條件表示的最係值為複數(複數模式時)，則會出現Math ERROR。</p>
     <p>　</p>
     <p><a href="../../../../EL506V/fx-50F_plus/fx-50F_Plus.html">CASIO fx-50FH 及 fx-50F PLUS程式集</a></p>
     <p>　</p>

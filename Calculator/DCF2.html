@@ -10,51 +10,33 @@
             </b></u></p>
     <p>更新日期: 2014年8月20日</p>
     <p>程式可以計算貼現現金流 (Discounted cash flow: DCF) 問題，
-        較第(I)改善之處是可以輸入連續相同現金流的頻數(可開啟頻數輸入)，因此不需要重複輸入大量相同的現金流，頻數預設值為1，但要注意輸入的現金流必須依時間順序輸入，
-        而且不能刪除錯誤的現金流。</p>
+        較第(I)改善之處是可以輸入連續相同現金流的頻數(可開啟頻數輸入)，因此不需要重複輸入大量相同的現金流，頻數預設值為1，但要注意輸入的現金流必須依時間順序輸入， 而且不能刪除錯誤的現金流。</p>
     <p>程式 (75 bytes)</p>
     <p>ClrMemory: ?→A: ?→B: </p>
     <p>1+B%÷Abs( A→B: ?→M: While 1: </p>
     <p>1→D: ?→C: 0&gt;A <font color="#FF0000">=&gt;</font> ?→D: X + D→X:</p>
     <p>C(B^( D ) - 1)<span lang="en">÷<b>
                 <font color="#800080"> (</font>
-            </b> B^( X )(B - 1<font color="#FF0000">M+</font>: M→C:
-            WhileEnd</span></p>
-    <p>
-        <span lang="en">
-            註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
-            </b></font>
-        <span lang="en">
-            可以省略，程式長度可減1 byte。</span>
-    </p>
+            </b> B^( X )(B - 1<font color="#FF0000">M+</font>: M→C: WhileEnd</span></p>
+    <p> <span lang="en"> 註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>( </b></font> <span
+            lang="en"> 可以省略，程式長度可減1 byte。</span> </p>
     <p>　</p>
     <p>例題1: 一公司以$20000購買一機器，以下為每年年結時可以節省的金額:</p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" id="AutoNumber1"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
-            <td width="20%" align="center">年
-            </td>
-            <td width="20%" align="center">1
-            </td>
-            <td width="20%" align="center">2
-            </td>
-            <td width="20%" align="center">3
-            </td>
-            <td width="20%" align="center">4
-            </td>
+            <td width="20%" align="center">年 </td>
+            <td width="20%" align="center">1 </td>
+            <td width="20%" align="center">2 </td>
+            <td width="20%" align="center">3 </td>
+            <td width="20%" align="center">4 </td>
         </tr>
         <tr>
-            <td width="20%" align="center">金額
-            </td>
-            <td width="20%" align="center">$5000
-            </td>
-            <td width="20%" align="center">$7500
-            </td>
-            <td width="20%" align="center">$9000
-            </td>
-            <td width="20%" align="center">$11000
-            </td>
+            <td width="20%" align="center">金額 </td>
+            <td width="20%" align="center">$5000 </td>
+            <td width="20%" align="center">$7500 </td>
+            <td width="20%" align="center">$9000 </td>
+            <td width="20%" align="center">$11000 </td>
         </tr>
     </table>
     <p>假設年折現率 (Discount rate)為10%，試計算凈現值。</p>
@@ -62,64 +44,45 @@
     <p>- 20000 EXE (輸入最初投資CF<sub>o</sub>，負數代表支出)</p>
     <p>5000 EXE (正數代表收入) 7500 EXE 9000 EXE 11000 EXE (顯示凈現值為 $5018.78)</p>
     <p>計算完結後按 AC 終止程式</p>
-    <p>
-        　</p>
-    <p>
-        例題2: 一租約為期36個月，按照以下按排月初付款。</p>
+    <p> 　</p>
+    <p> 例題2: 一租約為期36個月，按照以下按排月初付款。</p>
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="45%" id="AutoNumber2"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
-            <td width="47%" align="center">付款月數
-            </td>
-            <td width="53%" align="center">付款數量
-            </td>
+            <td width="47%" align="center">付款月數 </td>
+            <td width="53%" align="center">付款數量 </td>
         </tr>
         <tr>
-            <td width="47%" align="center">4
-            </td>
-            <td width="53%" align="center">$ 0
-            </td>
+            <td width="47%" align="center">4 </td>
+            <td width="53%" align="center">$ 0 </td>
         </tr>
         <tr>
-            <td width="47%" align="center">8
-            </td>
-            <td width="53%" align="center">$ 5000
-            </td>
+            <td width="47%" align="center">8 </td>
+            <td width="53%" align="center">$ 5000 </td>
         </tr>
         <tr>
-            <td width="47%" align="center">3
-            </td>
-            <td width="53%" align="center">$ 0
-            </td>
+            <td width="47%" align="center">3 </td>
+            <td width="53%" align="center">$ 0 </td>
         </tr>
         <tr>
-            <td width="47%" align="center">9
-            </td>
-            <td width="53%" align="center">$ 6000
-            </td>
+            <td width="47%" align="center">9 </td>
+            <td width="53%" align="center">$ 6000 </td>
         </tr>
         <tr>
-            <td width="47%" align="center">2
-            </td>
-            <td width="53%" align="center">$ 0
-            </td>
+            <td width="47%" align="center">2 </td>
+            <td width="53%" align="center">$ 0 </td>
         </tr>
         <tr>
-            <td width="47%" align="center">10
-            </td>
-            <td width="53%" align="center">$ 7000
-            </td>
+            <td width="47%" align="center">10 </td>
+            <td width="53%" align="center">$ 7000 </td>
         </tr>
     </table>
+    <p> 假設年折現率 (Discount rate)為10%，試計算凈現值。</p>
     <p>
-        假設年折現率 (Discount rate)為10%，試計算凈現值。</p>
-    <p>
-        <font color="#FF0000">注意:</font> 由於題目指明是月初付款，因此第一個現金流要當作最初投資(CF<sub>o</sub>)輸入，餘下的三個現金流則為
-        $0 ，即是頻數為3)
+        <font color="#FF0000">注意:</font> 由於題目指明是月初付款，因此第一個現金流要當作最初投資(CF<sub>o</sub>)輸入，餘下的三個現金流則為 $0 ，即是頻數為3)
     </p>
     <p>按 Prog 1 再按 <font color="#FF0000"><b>-</b></font> 12 EXE (每年複利計算期數，12代表月結算，<font color="#FF0000">負數</font>代表使用
-        <font color="#FF0000">頻數輸入方法</font>)
-    </p>
+        <font color="#FF0000">頻數輸入方法</font>) </p>
     <p>10 EXE (年折現率)</p>
     <p>0 EXE (輸入最初投資CF<sub>o</sub>)</p>
     <p>0 EXE 3 EXE 5000 EXE 8 EXE 0 EXE 3 EXE 6000 EXE 9 EXE 0 EXE 2 EXE</p>

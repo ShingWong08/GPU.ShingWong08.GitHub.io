@@ -17,86 +17,49 @@
         <font color="#FF0000">注意</font> : 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span
             style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>為平均x
-        按 shift 2 1，而
-        <span lang="en">
+        </span>為平均x 按 shift 2 1，而 <span lang="en">
             <font size="1">E </font>是按
         </span> EXP)
     </p>
-    <p>
-        程式 (286 bytes)</p>
-    <p>
-        ClrStat: ?→Y: ?→M: ?→D: ?→X: ?→A: ?→B: </p>
-    <p>
-        X - Y <font color="#FF0000"><b>;</b></font> X <font color="#FF0000">DT</font>:
-        ?→X: Y - (A≧M→C: A≧M <font color="#FF0000">=&gt;</font> X=2 <font color="#FF0000">
-            =&gt;</font>
+    <p> 程式 (286 bytes)</p>
+    <p> ClrStat: ?→Y: ?→M: ?→D: ?→X: ?→A: ?→B: </p>
+    <p> X - Y <font color="#FF0000"><b>;</b></font> X <font color="#FF0000">DT</font>: ?→X: Y - (A≧M→C: A≧M <font
+            color="#FF0000">=&gt;</font> X=2 <font color="#FF0000"> =&gt;</font>
         <font color="#0000FF">n</font>→C:
     </p>
     <p><span lang="en">Fix 0: C - 4Rnd( C÷4: Ans(B=28) + (B=29:</span></p>
     <p><span lang="en-us">(B=31) + (A=2)Ans</span><span lang="en">
             <font color="#FF0000">=&gt;</font> 30→B:
-        </span>D=31 <font color="#FF0000">=&gt;</font>
-        B=30 <font color="#FF0000">=&gt;</font> 30→D: </p>
-    <p>360→C:
-        C<span style="text-decoration: overline">
+        </span>D=31 <font color="#FF0000">=&gt;</font> B=30 <font color="#FF0000">=&gt;</font> 30→D: </p>
+    <p>360→C: C<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span> + 30(A
-        - M) + B - D→A:
-        <span lang="en">C÷X→D: A <font color="#FF0000">=&gt;</font> A÷D - . 5: </span>
+        </span> + 30(A - M) + B - D→A: <span lang="en">C÷X→D: A <font color="#FF0000">=&gt;</font> A÷D - . 5: </span>
     </p>
-    <p>
-        <span lang="en">Rnd( Ans→M: Norm 1: A - DM→B: Ans
-            <font color="#FF0000">=&gt;</font> M+1→M:
-        </span>
-    </p>
-    <p><span lang="en-us">B=0 <font color="#FF0000">=&gt;</font> D→B: </span>
-        <span lang="en">?→C: ?→A: ?→Y: C÷X→C: Y÷<b>
+    <p> <span lang="en">Rnd( Ans→M: Norm 1: A - DM→B: Ans <font color="#FF0000">=&gt;</font> M+1→M: </span> </p>
+    <p><span lang="en-us">B=0 <font color="#FF0000">=&gt;</font> D→B: </span> <span lang="en">?→C: ?→A: ?→Y: C÷X→C:
+            Y÷<b>
                 <font color="#800080"> (</font>
             </b>
             <font size="1"> E </font>2X→Y:
-        </span>
-    </p>
-    <p>
-        <span lang="en">B÷D→B: C(1-B→X◢ 1≧M <font color="#FF0000">=&gt;</font> - X + (A+C)
-            ÷(1+BY◢ </span>
-    </p>
-    <p>
-        <span lang="en">1 + Y→Y: - X + AY^(1-M-B) + C(Y^( -M ) - 1)÷ <b>
+        </span> </p>
+    <p> <span lang="en">B÷D→B: C(1-B→X◢ 1≧M <font color="#FF0000">=&gt;</font> - X + (A+C) ÷(1+BY◢ </span> </p>
+    <p> <span lang="en">1 + Y→Y: - X + AY^(1-M-B) + C(Y^( -M ) - 1)÷ <b>
                 <font color="#800080">(</font>
-            </b> Y^( B )(Y<sup>-1</sup>-1 </span>
+            </b> Y^( B )(Y<sup>-1</sup>-1 </span> </p>
+    <p> <span lang="en"> 註3: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>( </b></font> <span
+            lang="en"> 可以省略，程式長度可減2 bytes。</span> </p>
+    <p> 　</p>
+    <p> 例題: 一債券每半年支付息票一次，1債券購買日期為2006年6月12日，償還日期為2007年12月31日，息票利率為 7%，每$100票面價值的&#36174;回價值為$100，年收益為8%，計算債券的累計利息及購買價格。
     </p>
-    <p>
-        <span lang="en">
-            註3: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
-            </b></font>
-        <span lang="en">
-            可以省略，程式長度可減2 bytes。</span>
-    </p>
-    <p>
-        　</p>
-    <p>
-        例題: 一債券每半年支付息票一次，1債券購買日期為2006年6月12日，償還日期為2007年12月31日，息票利率為
-        7%，每$100票面價值的&#36174;回價值為$100，年收益為8%，計算債券的累計利息及購買價格。</p>
-    <p>
-        按
-        Prog 1 再按 2006 EXE 6 EXE 12 EXE (購買日期)</p>
-    <p>
-        2007 EXE 12 EXE 31 EXE (償還日期)</p>
-    <p>
-        2 EXE (每年息票支付數，即1代表1年一次，2代表半年一次)</p>
-    <p>
-        7 EXE (息票利率)</p>
-    <p>
-        100 EXE (每$100票面價值的&#36174;回價值)</p>
-    <p>
-        8 EXE (年收益，顯示累計利息為 $ 3.15)</p>
-    <p>
-        EXE (顯示價格為 $ 98.56)</p>
-    <p>
-        　</p>
-    <p>
-        註: 程式計算範圍1901年至2099年</p>
+    <p> 按 Prog 1 再按 2006 EXE 6 EXE 12 EXE (購買日期)</p>
+    <p> 2007 EXE 12 EXE 31 EXE (償還日期)</p>
+    <p> 2 EXE (每年息票支付數，即1代表1年一次，2代表半年一次)</p>
+    <p> 7 EXE (息票利率)</p>
+    <p> 100 EXE (每$100票面價值的&#36174;回價值)</p>
+    <p> 8 EXE (年收益，顯示累計利息為 $ 3.15)</p>
+    <p> EXE (顯示價格為 $ 98.56)</p>
+    <p> 　</p>
+    <p> 註: 程式計算範圍1901年至2099年</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

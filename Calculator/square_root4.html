@@ -12,17 +12,14 @@
     <p>更新日期: 2014年8月31日 </p>
     <p>程式 (162 bytes) </p>
     <p>?→Y: Ans→D: Abs( D^( Y→A: Ans→B: 0→X: 1→M: Fix 0: </p>
-    <p>While Ans: Rnd( A→C: A - C <font color="#FF0000">=&gt;</font> Ans<sup>-1</sup>→A: XC +
-        M→C:</p>
+    <p>While Ans: Rnd( A→C: A - C <font color="#FF0000">=&gt;</font> Ans<sup>-1</sup>→A: XC + M→C:</p>
     <p>X→M: C→X: Sci 9: Rnd( BX→C: Fix 0: Ans - Rnd( Ans: </p>
     <p>WhileEnd: 0→B: Abs( CX^(Y - 1→A: Lbl 0: </p>
-    <p>Rnd( - . 5 + Y <font color="#FF0000"><sup>x</sup>√(</font> A ÷ Rnd( B +
-        . 5→M: A ÷ M^( Y→B: </p>
-    <p>Ans - Rnd( Ans <font color="#FF0000">
-            =&gt;</font> 1<font color="#FF0000">M- =&gt;</font> A ÷ M^( Y→B: Ans - Rnd( Ans </p>
+    <p>Rnd( - . 5 + Y <font color="#FF0000"><sup>x</sup>√(</font> A ÷ Rnd( B + . 5→M: A ÷ M^( Y→B: </p>
+    <p>Ans - Rnd( Ans <font color="#FF0000"> =&gt;</font> 1<font color="#FF0000">M- =&gt;</font> A ÷ M^( Y→B: Ans - Rnd(
+        Ans </p>
     <p>
-        <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: M┘( D Abs(D<sup>-1</sup>)
-        Abs(X◢ B
+        <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: M┘( D Abs(D<sup>-1</sup>) Abs(X◢ B
     </p>
     <p>　</p>
     <p>例題1: 將計數機的 tan 30°的數值以平方根形式表示。</p>
@@ -31,31 +28,22 @@
     <p>所以 tan 30° = (1/3)√3</p>
     <p>　</p>
     <p>例題2: 化簡 <sup>3</sup>√(8/9)</p>
-    <p>
-        按 <sup>3</sup>√( 8÷9 EXE Prog 1 再按 3 EXE (3表示計算3次方根 ，顯示 2/3) EXE (顯示 3)</p>
+    <p> 按 <sup>3</sup>√( 8÷9 EXE Prog 1 再按 3 EXE (3表示計算3次方根 ，顯示 2/3) EXE (顯示 3)</p>
     <p>所以 <sup>3</sup>√(8/9) = (2/3) <sup>3</sup>√3</p>
     <p>　</p>
     <p>例題3: 化簡 (√8) / 400</p>
-    <p>按 √( 8 ) ÷ 400 EXE Prog 1
-        再按 (2表示計算平方根，顯示 1/200) EXE (顯示 2)</p>
+    <p>按 √( 8 ) ÷ 400 EXE Prog 1 再按 (2表示計算平方根，顯示 1/200) EXE (顯示 2)</p>
     <p>所以 (√8) / 400 = (√2) / 200</p>
     <p>現時不少同類程式在計算例3問題時，雖然答案分母只有200，不算很大，但速度己非常慢，甚至可以說無法求得答案(fx-3650P所需時間超過30分鐘，時間實在太長)，因此
         很可能會誤會是無法轉化為平方根形式，本程式克服了這方面問題，能夠很快得出正確答案。</p>
-    <p>
-        　</p>
-    <p>
-        例題4:
-        將0.75化為分數。&nbsp;</p>
-    <p>
-        按 0.75 EXE Prog 1 再按 1 EXE (1表示計算簡單分數，顯示3┘4，即是3/4）</p>
+    <p> 　</p>
+    <p> 例題4: 將0.75化為分數。&nbsp;</p>
+    <p> 按 0.75 EXE Prog 1 再按 1 EXE (1表示計算簡單分數，顯示3┘4，即是3/4）</p>
     <p>　</p>
     <p>註1: 若果小數不能轉化為 (a/b)<sup> n</sup>√c的形式(其中a,b及c為整數)，程式會長時間顯示空白，這時請按AC終止程式。<font color="#FF0000">注意</font>
-        若在程式執行中(顯示空白時)按AC終止程式，計數機會保持在小數零位(Fix
-        0)的設定。</p>
-    <p>註2: 這個程式改為以答案記憶(Ans)輸入數值，與傳統使字母記憶輸入不同，主要是考慮到一般算式運算不是在程式中進行，而且可以先觀察算式計算結果Ans，在有需要情況下才執行程式
-        (答案為整數、分數或簡單小數等情況(例如: sin
-        30=0.5)，那麼根本就不需要使用程式進行轉化為平方根，減慢運算速度)。若果希望程式改為傳統字母記憶輸入，可以將程式開始的 &quot;Ans→D&quot; 改為
-        &quot;?→D&quot;即可。</p>
+        若在程式執行中(顯示空白時)按AC終止程式，計數機會保持在小數零位(Fix 0)的設定。</p>
+    <p>註2: 這個程式改為以答案記憶(Ans)輸入數值，與傳統使字母記憶輸入不同，主要是考慮到一般算式運算不是在程式中進行，而且可以先觀察算式計算結果Ans，在有需要情況下才執行程式 (答案為整數、分數或簡單小數等情況(例如:
+        sin 30=0.5)，那麼根本就不需要使用程式進行轉化為平方根，減慢運算速度)。若果希望程式改為傳統字母記憶輸入，可以將程式開始的 &quot;Ans→D&quot; 改為 &quot;?→D&quot;即可。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

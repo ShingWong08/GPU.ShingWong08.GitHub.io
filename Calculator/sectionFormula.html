@@ -9,20 +9,15 @@
                 <font size="5">分界點、距離、斜率及y-截距</font>
             </b></u></p>
     <p>更新日期: 2015年3月24日</p>
-    <p>建議將計數機預先設定為假分數形式表示(按
-        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。第二個程式由於沒有使用
-        <font color="#FF0000">Pol(</font> 及 <font color="#FF0000">tan(</font>
-        功能，所以若果輸入數據為整數(或分數)及答案為有理數時，距離、斜率及y-截距亦能以分數形式表示。
-    </p>
+    <p>建議將計數機預先設定為假分數形式表示(按 <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。第二個程式由於沒有使用 <font color="#FF0000">
+            Pol(</font> 及 <font color="#FF0000">tan(</font> 功能，所以若果輸入數據為整數(或分數)及答案為有理數時，距離、斜率及y-截距亦能以分數形式表示。 </p>
     <p>
         <font color="#FF0000">注意</font> : 若果不用記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入。
     </p>
     <p>第一個程式 (<font color="#008000">60 bytes</font> / 68 bytes)</p>
     <p>?→C: ?→D: ?→A: ?→B: C-A→C: D-B→D: ?→M:</p>
     <p>1<font color="#FF0000">M+</font>: A + C┘M<font color="#008000">→A</font>◢ B + D┘M<font color="#008000">→B</font>◢
-        <font color="#FF0000">Pol(</font> C, D
-        )◢
-    </p>
+        <font color="#FF0000">Pol(</font> C, D )◢ </p>
     <p>tan( Y<font color="#008000">→M</font>◢ B - Ans A<font color="#008000">→C</font>
     </p>
     <p>　</p>
@@ -35,62 +30,38 @@
     <p>D┘C<font color="#008000">→M</font>◢ B - Ans A<font color="#008000">→C</font>
     </p>
     <p>　</p>
-    <p>
-        例題1:
-        已知兩點A(-6,4)及B(3,-8)，求把線段AB內分為1:2的點P(x,y)，AB兩點的距離及直線
-        AB 的斜率。</p>
-    <p>按 Prog 1
-        再按 -6 EXE 4 EXE 3 EXE
-        -8 EXE 1┘ 2 EXE (可以輸入算式或真確值，顯示x為
-        -3) </p>
-    <p>
-        EXE (顯示y為0，即是P=(-3,0))
-        EXE (顯示距離為15) EXE (顯示斜率為 - 4/3)</p>
-    <p>
-        EXE (顯示y-截距為 - 4)</p>
-    <p>
-        　</p>
+    <p> 例題1: 已知兩點A(-6,4)及B(3,-8)，求把線段AB內分為1:2的點P(x,y)，AB兩點的距離及直線 AB 的斜率。</p>
+    <p>按 Prog 1 再按 -6 EXE 4 EXE 3 EXE -8 EXE 1┘ 2 EXE (可以輸入算式或真確值，顯示x為 -3) </p>
+    <p> EXE (顯示y為0，即是P=(-3,0)) EXE (顯示距離為15) EXE (顯示斜率為 - 4/3)</p>
+    <p> EXE (顯示y-截距為 - 4)</p>
+    <p> 　</p>
     <p>例題2: 三點A(-6,4)，B(-3,0)及P(x,y)共線，若P為<font color="#800080">外分點</font>及AP:BP=3:2，求P點座標及AB的直線方程。</p>
     <p>注意: 由於計算<font color="#800080">外</font>分點，所以輸入比值是要加<font color="#800080">負號</font>。</p>
-    <p>按 Prog 1
-        再按 -6 EXE 4 EXE -3 EXE 0 EXE <b>
+    <p>按 Prog 1 再按 -6 EXE 4 EXE -3 EXE 0 EXE <b>
             <font color="#800080">-</font>
         </b> 3┘ 2 EXE (可以輸入算式或真確值，顯示x為 3) </p>
-    <p>
-        EXE (顯示y為 - 8，即是P=(3,-8))
-        EXE (顯示距離為5) EXE (顯示斜率為 - 4/3)</p>
-    <p>
-        EXE (顯示y-截距為 - 4)</p>
-    <p>所以 P =
-        (3,- 8) 及直線方程為 y = - 4x/3 – 4&nbsp; </p>
+    <p> EXE (顯示y為 - 8，即是P=(3,-8)) EXE (顯示距離為5) EXE (顯示斜率為 - 4/3)</p>
+    <p> EXE (顯示y-截距為 - 4)</p>
+    <p>所以 P = (3,- 8) 及直線方程為 y = - 4x/3 – 4&nbsp; </p>
     <p>　</p>
-    <p>若有綠色程式碼，程式執行完成後，按 RCL A顯示分界點的x值，RCL B顯示分界點的y值， RCL X顯示兩點的距離，RCL
-        M顯示直線的斜率，RCL
-        Y顯示直線與X-軸的夾角，RCL C顯示y截距。</p>
+    <p>若有綠色程式碼，程式執行完成後，按 RCL A顯示分界點的x值，RCL B顯示分界點的y值， RCL X顯示兩點的距離，RCL M顯示直線的斜率，RCL Y顯示直線與X-軸的夾角，RCL C顯示y截距。</p>
     <p>　</p>
-    <p>　</p>
-    <!--msthemeseparator-->
+    <p>　</p> <!--msthemeseparator-->
     <p align="center">
     <p><b>
             <font color="#800080">附錄程式</font>
-        </b> (REG模式 54 bytes 或
-        <font color="#008000">58 bytes</font>)
-    </p>
+        </b> (REG模式 54 bytes 或 <font color="#008000">58 bytes</font>) </p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
     <p>FreqOn: ?→A: ?→B: ?→C: ?→D: ?→X: A , B <font color="#FF0000">DT</font>: </p>
     <p>C , D <b>
             <font color="#FF0000">;</font>
-        </b> X <font color="#FF0000">DT</font>:
-        <span style="text-decoration: overline">
+        </b> X <font color="#FF0000">DT</font>: <span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>◢
-        <span style="text-decoration: overline">
+        </span>◢ <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>◢
-        Pol( A-C , B-D◢
-    </p>
+        </span>◢ Pol( A-C , B-D◢ </p>
     <p>tan(Y<font color="#008000">→M</font>◢ B-AnsA<font color="#008000">→C </font>
     </p>
     <p>　</p>

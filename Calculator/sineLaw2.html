@@ -10,185 +10,96 @@
             </b></u></p>
     <p>程式編寫日期: 2007年12月21日 更新日期: 2008年2月26日</p>
     <p>這個程式會根據輸入來計算:</p>
-    <p>
-        (1) 已知兩角及一邊(2 angles and 1 side)，其餘兩邊及第三個角</p>
-    <p>(2) 已知兩邊及一非夾角(2
-        sides and 1 non-included angle)，其餘二角及第三邊</p>
-    <p>
-        註1: 若果較習慣使用程式編號區分情況的朋友，可以使用網頁尾<a href="#Q1">附錄程式(有程式編號的版本
-            71 bytes)</a>。</p>
+    <p> (1) 已知兩角及一邊(2 angles and 1 side)，其餘兩邊及第三個角</p>
+    <p>(2) 已知兩邊及一非夾角(2 sides and 1 non-included angle)，其餘二角及第三邊</p>
+    <p> 註1: 若果較習慣使用程式編號區分情況的朋友，可以使用網頁尾<a href="#Q1">附錄程式(有程式編號的版本 71 bytes)</a>。</p>
     <p>　</p>
     <p>
         <font color="#FF0000">注意:</font>
-        <font color="#0000FF">π</font><sup>r</sup>
-        是按 Shift EXP Shift Ans 2
+        <font color="#0000FF">π</font><sup>r</sup> 是按 Shift EXP Shift Ans 2
     </p>
     <p>程式 (71 bytes，使用記憶為A, B及C):</p>
     <p>?→A: ?→B: ?→C: C&lt;0 <font color="#FF0000">=&gt;</font> - B sin( C ) ÷ sin( A◢</p>
     <p>C≧0 <font color="#FF0000">=&gt; sin</font>
-        <font color="#FF0000"><sup>-1</sup>(</font><sup> </sup>
-        B<sup>-1</sup>C sin( A→C◢ 1: While Ans:
+        <font color="#FF0000"><sup>-1</sup>(</font><sup> </sup> B<sup>-1</sup>C sin( A→C◢ 1: While Ans:
     </p>
     <p>
-        <font color="#0000FF">π<sup>r</sup></font>
-        - A - Abs( C◢ B sin( Ans ) ÷ sin( A◢
+        <font color="#0000FF">π<sup>r</sup></font> - A - Abs( C◢ B sin( Ans ) ÷ sin( A◢
     </p>
     <p>C&gt;A <font color="#FF0000">=&gt;</font>
         <font color="#0000FF">π<sup>r</sup></font> - C→C◢ WhileEnd
     </p>
-    <p>
-        　</p>
-    <p>
-        例題1:
-        ∠A = 40<sup>o</sup>，a
-        = 5，∠B
-        = 60<sup>o</sup>，求b，∠C及c。</p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 40
-        EXE 5 EXE <font color="#FF0000">-</font> 60 EXE </p>
-    <p>
-        (<font color="#FF0000">注意:
-            第三個</font>數值為<font color="#FF0000">負值</font>代表輸入的是<font color="#FF0000">角</font>，顯示b為6.7365)</p>
-    <p>
-        EXE (顯示∠C為 80<sup>o</sup>) EXE (顯示c為7.6604)</p>
-    <p>
-        EXE (顯示0表示計算已完結)</p>
+    <p> 　</p>
+    <p> 例題1: ∠A = 40<sup>o</sup>，a = 5，∠B = 60<sup>o</sup>，求b，∠C及c。</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 40 EXE 5 EXE <font color="#FF0000">-</font> 60 EXE </p>
+    <p> (<font color="#FF0000">注意: 第三個</font>數值為<font color="#FF0000">負值</font>代表輸入的是<font color="#FF0000">角</font>
+        ，顯示b為6.7365)</p>
+    <p> EXE (顯示∠C為 80<sup>o</sup>) EXE (顯示c為7.6604)</p>
+    <p> EXE (顯示0表示計算已完結)</p>
     <p>　</p>
-    <p>
-        例題2:
-        ∠A = 50<sup>o</sup>，a
-        = 10，b = 13，求∠B，∠C及c。</p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 50 EXE 10 EXE 13 EXE
-        (顯示∠B為84.7832<sup>o</sup>)
-    </p>
-    <p>
-        EXE (顯示∠C為 45.2168<sup>o</sup>) EXE (顯示c為9.2655)</p>
-    <p>
-        EXE (顯示另一個∠B的解為95.2168<sup>o</sup>)</p>
-    <p>
-        EXE (顯示另一可能∠C為 34.7832<sup>o</sup>) EXE (顯示另一可能c為7.44699)</p>
-    <p>
-        請按 AC 終止程式</p>
-    <p>
-        　</p>
-    <p>
-        例題3:
-        ∠A =
-        150<sup>o</sup>，a
-        = 10，b = 6，求∠B，∠C及c。</p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 150 EXE 10 EXE 6
-        EXE (顯示∠B為17.4576<sup>o</sup>)
-    </p>
-    <p>
-        EXE (顯示∠C為 12.5424<sup>o</sup>) EXE (顯示c為4.3432)</p>
-    <p>
-        EXE (顯示0表示答案只有一組解答)</p>
+    <p> 例題2: ∠A = 50<sup>o</sup>，a = 10，b = 13，求∠B，∠C及c。</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 50 EXE 10 EXE 13 EXE (顯示∠B為84.7832<sup>o</sup>) </p>
+    <p> EXE (顯示∠C為 45.2168<sup>o</sup>) EXE (顯示c為9.2655)</p>
+    <p> EXE (顯示另一個∠B的解為95.2168<sup>o</sup>)</p>
+    <p> EXE (顯示另一可能∠C為 34.7832<sup>o</sup>) EXE (顯示另一可能c為7.44699)</p>
+    <p> 請按 AC 終止程式</p>
+    <p> 　</p>
+    <p> 例題3: ∠A = 150<sup>o</sup>，a = 10，b = 6，求∠B，∠C及c。</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 150 EXE 10 EXE 6 EXE (顯示∠B為17.4576<sup>o</sup>) </p>
+    <p> EXE (顯示∠C為 12.5424<sup>o</sup>) EXE (顯示c為4.3432)</p>
+    <p> EXE (顯示0表示答案只有一組解答)</p>
     <p>　</p>
-    <p>
-        　</p>
-    <!--msthemeseparator-->
+    <p> 　</p> <!--msthemeseparator-->
     <p align="center">
     <p>
         <font color="#0000FF"><a name="Q1" id="Q1"></a>附錄: 有程式編號版本</font>
     </p>
     <p>
         <font color="#FF0000">注意:</font>
-        <font color="#0000FF">π<sup>r</sup></font>
-        是按 Shift EXP Shift Ans 2
+        <font color="#0000FF">π<sup>r</sup></font> 是按 Shift EXP Shift Ans 2
     </p>
     <p>附錄程式 (71 bytes，使用記憶為A, B, C及D):</p>
-    <p>?→D: ?→A: ?→B: ?→C: <font color="#FF0000">cos<sup>-1</sup>(</font> D <font color="#FF0000">=&gt;</font>
-        B sin( C ) ÷ sin( A◢</p>
+    <p>?→D: ?→A: ?→B: ?→C: <font color="#FF0000">cos<sup>-1</sup>(</font> D <font color="#FF0000">=&gt;</font> B sin( C
+        ) ÷ sin( A◢</p>
     <p>D <font color="#FF0000">=&gt; sin</font>
-        <font color="#FF0000"><sup>-1</sup>(</font><sup> </sup>
-        B<sup>-1</sup>C sin( A→C◢ 1: While Ans:
-        <font color="#0000FF">π<sup>r</sup></font>
-        - A - C◢
+        <font color="#FF0000"><sup>-1</sup>(</font><sup> </sup> B<sup>-1</sup>C sin( A→C◢ 1: While Ans: <font
+            color="#0000FF">π<sup>r</sup></font> - A - C◢
     </p>
     <p>B sin( Ans ) ÷ sin( A◢ CD&gt;A <font color="#FF0000">=&gt;</font>
         <font color="#0000FF">π<sup>r</sup></font> - C→C◢ WhileEnd
     </p>
+    <p> 　</p>
     <p>
-        　</p>
-    <p>
-        <font color="#FF0000">附錄程式</font>例題1:
-        ∠A = 40<sup>o</sup>，a
-        = 5，∠B
-        = 60<sup>o</sup>，求b，∠C及c。
+        <font color="#FF0000">附錄程式</font>例題1: ∠A = 40<sup>o</sup>，a = 5，∠B = 60<sup>o</sup>，求b，∠C及c。
     </p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 0 EXE (0代表以兩角及一邊計算，最後輸入數據為角度)</p>
-    <p>
-        40
-        EXE 5 EXE 60 EXE (顯示b為6.7365)</p>
-    <p>
-        EXE (顯示∠C為 80<sup>o</sup>) EXE (顯示c為7.6604)</p>
-    <p>
-        EXE (顯示0表示計算已完結)</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 0 EXE (0代表以兩角及一邊計算，最後輸入數據為角度)</p>
+    <p> 40 EXE 5 EXE 60 EXE (顯示b為6.7365)</p>
+    <p> EXE (顯示∠C為 80<sup>o</sup>) EXE (顯示c為7.6604)</p>
+    <p> EXE (顯示0表示計算已完結)</p>
     <p>　</p>
     <p>
-        <font color="#FF0000">附錄程式</font>例題2:
-        ∠A = 50<sup>o</sup>，a
-        = 10，b = 13，求∠B，∠C及c。
+        <font color="#FF0000">附錄程式</font>例題2: ∠A = 50<sup>o</sup>，a = 10，b = 13，求∠B，∠C及c。
     </p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 1 EXE (1代表以兩邊及一角計算，最後輸入數據為邊長)</p>
+    <p> 50 EXE 10 EXE 13 EXE (顯示∠B為84.7832<sup>o</sup>) </p>
+    <p> EXE (顯示∠C為 45.2168<sup>o</sup>) EXE (顯示c為9.2655)</p>
+    <p> EXE (顯示另一個∠B的解為95.2168<sup>o</sup>)</p>
+    <p> EXE (顯示另一可能∠C為 34.7832<sup>o</sup>) EXE (顯示另一可能c為7.44699)</p>
+    <p> 請按 AC 終止程式</p>
+    <p> 　</p>
     <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (1代表以兩邊及一角計算，最後輸入數據為邊長)</p>
-    <p>
-        50 EXE 10 EXE 13 EXE
-        (顯示∠B為84.7832<sup>o</sup>)
+        <font color="#FF0000">附錄程式</font>例題3: ∠A = 150<sup>o</sup>，a = 10，b = 6，求∠B，∠C及c。
     </p>
-    <p>
-        EXE (顯示∠C為 45.2168<sup>o</sup>) EXE (顯示c為9.2655)</p>
-    <p>
-        EXE (顯示另一個∠B的解為95.2168<sup>o</sup>)</p>
-    <p>
-        EXE (顯示另一可能∠C為 34.7832<sup>o</sup>) EXE (顯示另一可能c為7.44699)</p>
-    <p>
-        請按 AC 終止程式</p>
-    <p>
-        　</p>
-    <p>
-        <font color="#FF0000">附錄程式</font>例題3:
-        ∠A =
-        150<sup>o</sup>，a
-        = 10，b = 6，求∠B，∠C及c。
-    </p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (1代表以兩邊及一角計算，最後輸入數據為邊長)</p>
-    <p>
-        150 EXE 10 EXE 6
-        EXE (顯示∠B為17.4576<sup>o</sup>)
-    </p>
-    <p>
-        EXE (顯示∠C為 12.5424<sup>o</sup>) EXE (顯示c為4.3432)</p>
-    <p>
-        EXE (顯示0表示答案只有一組解答)</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 1 EXE (1代表以兩邊及一角計算，最後輸入數據為邊長)</p>
+    <p> 150 EXE 10 EXE 6 EXE (顯示∠B為17.4576<sup>o</sup>) </p>
+    <p> EXE (顯示∠C為 12.5424<sup>o</sup>) EXE (顯示c為4.3432)</p>
+    <p> EXE (顯示0表示答案只有一組解答)</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

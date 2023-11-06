@@ -16,68 +16,40 @@
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF"> n</font> 按 Shift 1 3， <font color="#0000FF">Σx </font>按 Shift 1 2，
-        <font color="#0000FF">Σx<sup>2</sup> </font>按 Shift 1
-        3，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">Σxy</font>
-        按 Shift 1 → 3)，FreqOn 按 Shift MODE ← ← 1。
-    </p>
-    <p>Lbl 0: FreqOn: <font size="1">E</font>50→M: ?→A: ?→B: ?→C: 1 ; . 5(A+B-2C
-        <font color="#FF0000">DT</font>:
-    </p>
-    <p>- 1 ; . 5(A-B <font color="#FF0000">DT</font>: 1 , 1 ; C
-        <font color="#FF0000">DT</font>: ?→D: M<sup>-1</sup> , 1 ; M(D-C
-        <font color="#FF0000">DT</font>: ?→X:
-    </p>
-    <p>0 , 1 ; - <font color="#0000FF">Σy</font> DT: ?→Y: ; Y <font color="#FF0000">
-            DT</font>: , M<sup>-1</sup> ; M(X - Y <font color="#FF0000">DT</font>: ?→D: ?→X: </p>
+        <font color="#0000FF">Σx<sup>2</sup> </font>按 Shift 1 3，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，<font
+            color="#0000FF">Σxy</font> 按 Shift 1 → 3)，FreqOn 按 Shift MODE ← ← 1。 </p>
+    <p>Lbl 0: FreqOn: <font size="1">E</font>50→M: ?→A: ?→B: ?→C: 1 ; . 5(A+B-2C <font color="#FF0000">DT</font>: </p>
+    <p>- 1 ; . 5(A-B <font color="#FF0000">DT</font>: 1 , 1 ; C <font color="#FF0000">DT</font>: ?→D: M<sup>-1</sup> , 1
+        ; M(D-C <font color="#FF0000">DT</font>: ?→X: </p>
+    <p>0 , 1 ; - <font color="#0000FF">Σy</font> DT: ?→Y: ; Y <font color="#FF0000"> DT</font>: , M<sup>-1</sup> ; M(X -
+        Y <font color="#FF0000">DT</font>: ?→D: ?→X: </p>
     <p>?→Y: M<sup>-1</sup>, 0; M(X-<font color="#0000FF">Σx</font>
         <font color="#FF0000">DT</font>: 0 ; -<font color="#0000FF"> n</font>
-        <font color="#FF0000">DT</font>: ; D <font color="#FF0000">DT</font>: ?→M: 2; 0
-        <font color="#FF0000">DT</font>: M: <br>
-        <br>
-        Lbl 1: For 2→M To Ans: <font color="#0000FF">Σx<sup>4</sup></font>A +
-        <font color="#0000FF">Σxy</font>B + <font color="#0000FF">n</font>C→D:
-        <font color="#0000FF">Σx<sup>3</sup></font>A+ <font color="#0000FF">Σy</font>B +
-        <font color="#0000FF">Σx</font>C→X:
+        <font color="#FF0000">DT</font>: ; D <font color="#FF0000">DT</font>: ?→M: 2; 0 <font color="#FF0000">DT</font>:
+        M: <br> <br> Lbl 1: For 2→M To Ans: <font color="#0000FF">Σx<sup>4</sup></font>A + <font color="#0000FF">Σxy
+        </font>B + <font color="#0000FF">n</font>C→D: <font color="#0000FF">Σx<sup>3</sup></font>A+ <font
+            color="#0000FF">Σy</font>B + <font color="#0000FF">Σx</font>C→X:
     </p>
     <p>
-        <font color="#0000FF">Σx<sup>2</sup>y</font>A + <font color="#0000FF">Σy<sup>2</sup></font>B
-        + YC→C : X→B : D→A: Next: A◢ B◢ C◢ ; 0<font color="#FF0000">DT:</font>
+        <font color="#0000FF">Σx<sup>2</sup>y</font>A + <font color="#0000FF">Σy<sup>2</sup></font>B + YC→C : X→B : D→A:
+        Next: A◢ B◢ C◢ ; 0<font color="#FF0000">DT:</font>
     </p>
-    <p>Ans - 1; 0<font color="#FF0000">DT</font>: Ans&lt;0<font color="#FF0000"> =&gt;
-        </font>Goto 0: ;0<font color="#FF0000"> DT</font>: If Ans: Then
-        <font color="#0000FF">Σxy</font>→A: <font color="#0000FF">Σy</font>→B:
-    </p>
+    <p>Ans - 1; 0<font color="#FF0000">DT</font>: Ans&lt;0<font color="#FF0000"> =&gt; </font>Goto 0: ;0<font
+            color="#FF0000"> DT</font>: If Ans: Then <font color="#0000FF">Σxy</font>→A: <font color="#0000FF">Σy</font>
+        →B: </p>
     <p>
-        <font color="#0000FF">Σy<sup>2</sup></font>→C: Else <font color="#0000FF">n</font>→A:<font color="#0000FF">
-            Σx</font>→B: Y→C: IfEnd: M - 1: Goto 1
+        <font color="#0000FF">Σy<sup>2</sup></font>→C: Else <font color="#0000FF">n</font>→A:<font color="#0000FF"> Σx
+        </font>→B: Y→C: IfEnd: M - 1: Goto 1
     </p>
     <p>　</p>
     <p>例題1: 計算 </p>
+    <p> <br> 按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE 5 EXE 6 EXE 7 EXE 8 EXE 9 EXE 2 EXE <br> <br> (顯示30) EXE (顯示36) EXE
+        (顯示42) EXE (顯示66) EXE (顯示 81) <br> <br> EXE (顯示 96) EXE (顯示 102) EXE (顯示 126) EXE (顯示 150) <br> <br> 所以答案為 </p>
     <p>
-        <br>
-        按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE 5 EXE 6 EXE 7 EXE 8 EXE 9 EXE 2 EXE <br>
-        <br>
-        (顯示30) EXE (顯示36) EXE (顯示42) EXE (顯示66) EXE (顯示 81) <br>
-        <br>
-        EXE (顯示 96) EXE (顯示 102) EXE (顯示 126) EXE (顯示 150) <br>
-        <br>
-        所以答案為
-    </p>
-    <p>
-    <p><br>
-        例題2: 計算 </p>
-    <p>
-        <br>
-        按 Prog 1 再按 3 EXE 5 EXE 4 EXE 8 EXE 0 EXE 7 EXE 1 EXE 6 EXE 2 EXE 9 EXE <br>
-        <br>
-        (顯示1580876851) EXE (顯示1545817735) EXE (顯示1731636235) EXE (顯示1820264835) EXE (顯示
-        1743178616) <br>
-        <br>
-        EXE (顯示 1985285770) EXE (顯示 1249213485) EXE (顯示 1235213845) EXE (顯示 1371541616)
-        <br>
-        <br>
-        所以答案為
-    </p>
+    <p><br> 例題2: 計算 </p>
+    <p> <br> 按 Prog 1 再按 3 EXE 5 EXE 4 EXE 8 EXE 0 EXE 7 EXE 1 EXE 6 EXE 2 EXE 9 EXE <br> <br> (顯示1580876851) EXE
+        (顯示1545817735) EXE (顯示1731636235) EXE (顯示1820264835) EXE (顯示 1743178616) <br> <br> EXE (顯示 1985285770) EXE (顯示
+        1249213485) EXE (顯示 1235213845) EXE (顯示 1371541616) <br> <br> 所以答案為 </p>
     <p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

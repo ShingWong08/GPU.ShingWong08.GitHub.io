@@ -12,105 +12,56 @@
             <font color="#FF0000">程式更新日期: 2011年5月4日</font>
         </b></p>
     <p>程式參考了網友<font color="#800080"> roviury </font>的意見進行修改。</p>
-    <p>程式是利用文憑試查表的數據及文憑試使用的線性比例方法(Linear
-        Interpolation)計算反查的結果，因此<font color="#FF0000">能確保與文憑試標準答案相同</font>。</p>
-    <p>注意: <font color="#FF0000">e^(</font>是按shift
-        e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
+    <p>程式是利用文憑試查表的數據及文憑試使用的線性比例方法(Linear Interpolation)計算反查的結果，因此<font color="#FF0000">能確保與文憑試標準答案相同</font>。</p>
+    <p>注意: <font color="#FF0000">e^(</font>是按shift e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
     <p>程式一 (156 bytes，使用記憶A, B, C, Y及M)</p>
-    <p>?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup>
-        -
+    <p>?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup> - </p>
+    <p>9Ans + 64→M:&nbsp; M→Y: Fix 4: Lbl 0: B→A: </p>
+    <p>2 ÷ (2 + . 4633M: Rnd( . 5 - <font size="1">E</font> - 4 <font color="#FF0000">e^(</font> - . 5M<sup>2</sup> )Ans
     </p>
-    <p>9Ans + 64→M:&nbsp; M→Y: Fix 4: Lbl 0: B→A:
-    </p>
-    <p>2 ÷ (2 + . 4633M: Rnd( . 5 -
-        <font size="1">E</font> - 4 <font color="#FF0000">e^(</font>
-        - . 5M<sup>2</sup> )Ans
-    </p>
-    <p>(1274 - 1422Ans + Ans<sup>2 </sup>
-        (7107 - 7266Ans
-        + 5307Ans<sup>2</sup>→B:
-    </p>
-    <p>(M=Y) + (A=B <font color="#FF0000">=&gt;</font> . 01 -
-        . 02(B&gt;C <font color="#FF0000">
-            M+ =&gt; </font>Goto 0:
+    <p>(1274 - 1422Ans + Ans<sup>2 </sup> (7107 - 7266Ans + 5307Ans<sup>2</sup>→B: </p>
+    <p>(M=Y) + (A=B <font color="#FF0000">=&gt;</font> . 01 - . 02(B&gt;C <font color="#FF0000"> M+ =&gt; </font>Goto 0:
     </p>
     <p>Norm 1: Y + (Y - M)(C - A) ÷ (A - B</p>
     <p>　</p>
     <p>程式二 (簡短版 149 bytes，使用記憶A, B, C, Y及M)</p>
-    <p>?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup>
-        -
+    <p>?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup> - </p>
+    <p>9Ans + 64→M: M→Y: Fix 4: Lbl 0: B→A: </p>
+    <p>2 ÷ (2 + . 4633M: Rnd( . 5 - <font size="1">E</font> - 4 <font color="#FF0000">e^(</font> - . 5M<sup>2</sup> )Ans
     </p>
-    <p>9Ans + 64→M: M→Y: Fix 4: Lbl 0: B→A:
-    </p>
-    <p>2 ÷ (2 + . 4633M: Rnd( . 5 -
-        <font size="1">E</font> - 4 <font color="#FF0000">e^(</font>
-        - . 5M<sup>2</sup> )Ans
-    </p>
-    <p>(1274 - 1422Ans + Ans<sup>2 </sup>
-        (7107 - 7266Ans
-        + 5307Ans<sup>2</sup>→B:
-    </p>
-    <p>M=Y <font color="#FF0000">=&gt;</font> . 01 -
-        . 02(B&gt;C <font color="#FF0000">
-            M+ =&gt; </font>Goto 0:
-    </p>
+    <p>(1274 - 1422Ans + Ans<sup>2 </sup> (7107 - 7266Ans + 5307Ans<sup>2</sup>→B: </p>
+    <p>M=Y <font color="#FF0000">=&gt;</font> . 01 - . 02(B&gt;C <font color="#FF0000"> M+ =&gt; </font>Goto 0: </p>
     <p>Norm 1: Y + (Y - M)(C - A) ÷ (A - B</p>
     <p>　</p>
     <p>程式三 (155 bytes，使用記憶A, B, C, Y及M)</p>
-    <p>?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup>
-        -
+    <p>?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup> - </p>
+    <p>9Ans + 64→M: M→Y: Fix 4: 0: Lbl 0: B→A: </p>
+    <p>2 ÷ (2 + . 4633M: Rnd( . 5 - <font size="1">E</font> - 4Ans <font color="#FF0000">e^(</font> - . 5M<sup>2</sup> )
     </p>
-    <p>9Ans + 64→M: M→Y: Fix 4: 0: Lbl 0: B→A:
-    </p>
-    <p>2 ÷ (2 + . 4633M: Rnd( . 5 -
-        <font size="1">E</font> - 4Ans <font color="#FF0000">e^(</font>
-        - . 5M<sup>2</sup> )
-    </p>
-    <p>(1274 - 1422Ans + Ans<sup>2 </sup>
-        (7107 - 7266Ans
-        + 5307Ans<sup>2</sup>→B:
-    </p>
-    <p>M=Y <font color="#FF0000">=&gt;</font> B≠C <font color="#FF0000">=&gt;</font> . 01 -
-        . 02(B&gt;C <font color="#FF0000">
-            M+ =&gt; </font>Goto 0:
-    </p>
+    <p>(1274 - 1422Ans + Ans<sup>2 </sup> (7107 - 7266Ans + 5307Ans<sup>2</sup>→B: </p>
+    <p>M=Y <font color="#FF0000">=&gt;</font> B≠C <font color="#FF0000">=&gt;</font> . 01 - . 02(B&gt;C <font
+            color="#FF0000"> M+ =&gt; </font>Goto 0: </p>
     <p>Norm 1: C - B <font color="#FF0000">=&gt;</font> Ans(Y - M) ÷ (A - B: M + Ans</p>
     <p>　</p>
     <p>註1:程式輸入概率範圍為 0&lt; P&lt; 0.5，否則程式可能會出現Math error或不能正常運作。</p>
     <p>註2: 反查的概率P&gt;0.4973時(考試出現的機會應該不大)，查表可能會出現多於一個答案，這時程式二及程式三可能會出現Math
-        ERROR(現時很多同類程式的限制)，程式一則解決了這方面問題，可以顯示其中一個正確答案。例如: 反查P=0.4990，查表可得的答案分別為 Z=3.08,
-        Z=3.09 或 Z=3.10，程式二會出現Math
-        ERROR，程式一則顯示答案為Z=3.08。其實若果使用程式二，而反查的P值是表有的(即P值不多於4位小數)，在Math ERROR後，可以自行按 AC RCL
-        M 或 RCL Y 顯示可能的答案。</p>
+        ERROR(現時很多同類程式的限制)，程式一則解決了這方面問題，可以顯示其中一個正確答案。例如: 反查P=0.4990，查表可得的答案分別為 Z=3.08, Z=3.09 或 Z=3.10，程式二會出現Math
+        ERROR，程式一則顯示答案為Z=3.08。其實若果使用程式二，而反查的P值是表有的(即P值不多於4位小數)，在Math ERROR後，可以自行按 AC RCL M 或 RCL Y 顯示可能的答案。</p>
     <p>註3: 程式三計算直接從表查得的數據速度會較快一些。</p>
     <p>　</p>
-    <p>例題1: 若P(0≦
-        Z≦x)
-        = 0.3907，求 x 的值，其中
-        Z ~ N(0, 1)。</p>
-    <p>
-        按 Prog 1
-        再按 0.3907 EXE (顯示答案為 1.23)</p>
-    <p>
-        註5: 得出的答案若果<font color="#FF0000">不多於兩位小數</font>(表的Z位數)，
-        表示直接查表求得答案，因此不需要任何考試的計算步驟。</p>
+    <p>例題1: 若P(0≦ Z≦x) = 0.3907，求 x 的值，其中 Z ~ N(0, 1)。</p>
+    <p> 按 Prog 1 再按 0.3907 EXE (顯示答案為 1.23)</p>
+    <p> 註5: 得出的答案若果<font color="#FF0000">不多於兩位小數</font>(表的Z位數)， 表示直接查表求得答案，因此不需要任何考試的計算步驟。</p>
     <p>　</p>
-    <p>例題2: 若P(0≦
-        Z≦x)
-        = 0.3，求 x 的值，其中
-        Z ~ N(0, 1)>。</p>
-    <p>
-        按 Prog 1
-        再按 0.3 EXE (顯示答案為 0.841785714)</p>
-    <p>
-        註4: 答案<font color="#0000FF">多於兩位小數</font>，表示答案不能直接查表求得，要使用線性比例方法(Linear
-        Interpolation)求出答案， 按 <font color="#0000FF">RCL A</font> 及<font color="#0000FF">RCL B</font>可以顯示計算步驟所要的概率
-        值(0.2995及0.3023)，再按 <font color="#0000FF">RCL Y</font>及<font color="#0000FF">RCL
-            M</font>則顯示兩個X值(0.84及0.85)，由於一般考試可能需要詳細步驟，你亦可以直接使用這些數值作為考試步驟的數據。</p>
+    <p>例題2: 若P(0≦ Z≦x) = 0.3，求 x 的值，其中 Z ~ N(0, 1)>。</p>
+    <p> 按 Prog 1 再按 0.3 EXE (顯示答案為 0.841785714)</p>
+    <p> 註4: 答案<font color="#0000FF">多於兩位小數</font>，表示答案不能直接查表求得，要使用線性比例方法(Linear Interpolation)求出答案， 按 <font
+            color="#0000FF">RCL A</font> 及<font color="#0000FF">RCL B</font>可以顯示計算步驟所要的概率 值(0.2995及0.3023)，再按 <font
+            color="#0000FF">RCL Y</font>及<font color="#0000FF">RCL M</font>
+        則顯示兩個X值(0.84及0.85)，由於一般考試可能需要詳細步驟，你亦可以直接使用這些數值作為考試步驟的數據。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-3650P II及fx-50FH II程式集</a></p> <!--msthemeseparator-->
-    <p align="center">
-    <!--msthemeseparator-->
+    <p align="center"> <!--msthemeseparator-->
     <p align="center">
     <p>　</p>
     <p>　</p>
@@ -118,106 +69,67 @@
         <font color="#0000FF"><b>舊版程式</b></font>
     </p>
     <p>程式更新日期: 2010年1月5日</p>
-    <p>程式是利用高考查表的數據及高考使用的線性比例方法(Linear
-        Interpolation)計算反查的結果，因此<font color="#FF0000">能確保與高考標準答案相同</font>。</p>
-    <p>注意: <font color="#FF0000">e^(</font>是按shift
-        e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
+    <p>程式是利用高考查表的數據及高考使用的線性比例方法(Linear Interpolation)計算反查的結果，因此<font color="#FF0000">能確保與高考標準答案相同</font>。</p>
+    <p>注意: <font color="#FF0000">e^(</font>是按shift e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
     <p>程式一 (164 bytes)</p>
-    <p>ClrMemory: ?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup>
-        -
-    </p>
-    <p>9Ans + 64→M: Fix 4: 1: While Ans: B→A: M→Y:
-    </p>
-    <p>D <font color="#FF0000">=&gt;</font> . 01 -
-        . 02(B&gt;C <font color="#FF0000">
-            M+</font>: 1 ÷ (1 + . 23165M:
-    </p>
-    <p>Rnd( . 5 -
-        <font size="1">E</font> - 4√( <font color="#FF0000">e^(</font>
-        - M<sup>2</sup> ) )Ans(1274 - 1422Ans + Ans<sup>2 </sup>
-    </p>
-    <p>(7107 - 7266Ans
-        + 5307Ans<sup>2</sup>→B: (D=0) + (A=B→D: WhileEnd:
-    </p>
+    <p>ClrMemory: ?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup> - </p>
+    <p>9Ans + 64→M: Fix 4: 1: While Ans: B→A: M→Y: </p>
+    <p>D <font color="#FF0000">=&gt;</font> . 01 - . 02(B&gt;C <font color="#FF0000"> M+</font>: 1 ÷ (1 + . 23165M: </p>
+    <p>Rnd( . 5 - <font size="1">E</font> - 4√( <font color="#FF0000">e^(</font> - M<sup>2</sup> ) )Ans(1274 - 1422Ans +
+        Ans<sup>2 </sup> </p>
+    <p>(7107 - 7266Ans + 5307Ans<sup>2</sup>→B: (D=0) + (A=B→D: WhileEnd: </p>
     <p>Norm 1: Y + (Y - M)(C - A) ÷ (A - B</p>
     <p>　</p>
     <p>程式二 (簡短版，157 bytes)</p>
-    <p>ClrMemory: ?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup>
-        -
-    </p>
-    <p>9Ans + 64→M: Fix 4: 1: While Ans: B→A: M→Y:
-    </p>
-    <p>D <font color="#FF0000">=&gt;</font> . 01 -
-        . 02(B&gt;C <font color="#FF0000">
-            M+</font>: 1 ÷ (1 + . 23165M:
-    </p>
-    <p>Rnd( . 5 -
-        <font size="1">E</font> - 4√( <font color="#FF0000">e^(</font>
-        - M<sup>2</sup> ) )Ans(1274 - 1422Ans + Ans<sup>2 </sup>
-    </p>
-    <p>(7107 - 7266Ans
-        + 5307Ans<sup>2</sup>→B: D=0→D: WhileEnd:
-    </p>
+    <p>ClrMemory: ?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup> - </p>
+    <p>9Ans + 64→M: Fix 4: 1: While Ans: B→A: M→Y: </p>
+    <p>D <font color="#FF0000">=&gt;</font> . 01 - . 02(B&gt;C <font color="#FF0000"> M+</font>: 1 ÷ (1 + . 23165M: </p>
+    <p>Rnd( . 5 - <font size="1">E</font> - 4√( <font color="#FF0000">e^(</font> - M<sup>2</sup> ) )Ans(1274 - 1422Ans +
+        Ans<sup>2 </sup> </p>
+    <p>(7107 - 7266Ans + 5307Ans<sup>2</sup>→B: D=0→D: WhileEnd: </p>
     <p>Norm 1: Y + (Y - M)(C - A) ÷ (A - B</p>
     <p>註1:程式輸入概率範圍為 0&lt; P&lt; 0.5，否則程式可能會出現Math error或不能正常運作。</p>
     <p>註2: 若果想保留一個記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;0→D&quot;，而程式所使用的記憶為A、B、C、D、X及M。</p>
-    <p>註3: 反查的概率P&gt;0.4973時，查表可能會出現多於一個答案，這時程式二可能會出現Math
-        ERROR(現時很多同類程式的限制)，程式一則解決了這方面問題，可以顯示其中一個正確答案。例如: 反查P=0.4990，查表可得的答案分別為 Z=3.08,
-        Z=3.09 或 Z=3.10，程式二會出現Math
-        ERROR，程式一則顯示答案為Z=3.08。其實若果使用程式二，而反查的P值是表有的(即P值不多於4位小數)，在Math ERROR後，可以自行按 AC RCL
-        M 或 RCL Y 顯示可能的答案。</p>
-    <p>　</p>
-    <!--msthemeseparator-->
+    <p>註3: 反查的概率P&gt;0.4973時，查表可能會出現多於一個答案，這時程式二可能會出現Math ERROR(現時很多同類程式的限制)，程式一則解決了這方面問題，可以顯示其中一個正確答案。例如:
+        反查P=0.4990，查表可得的答案分別為 Z=3.08, Z=3.09 或 Z=3.10，程式二會出現Math
+        ERROR，程式一則顯示答案為Z=3.08。其實若果使用程式二，而反查的P值是表有的(即P值不多於4位小數)，在Math ERROR後，可以自行按 AC RCL M 或 RCL Y 顯示可能的答案。</p>
+    <p>　</p> <!--msthemeseparator-->
     <p align="center">
     <p>　</p>
     <p>
         <font color="#0000FF"><b>舊版程式</b></font>
     </p>
     <p>程式編寫日期: 2008年1月27日</p>
-    <p>程式是利用高考查表的數據及高考使用的正比例方法(Linear
-        Interpolation)計算反查的結果，因此<font color="#FF0000">能確保與高考標準答案相同</font>。第
-        一個程式雖然較短
+    <p>程式是利用高考查表的數據及高考使用的正比例方法(Linear Interpolation)計算反查的結果，因此<font color="#FF0000">能確保與高考標準答案相同</font>。第 一個程式雖然較短
         ，但因使用了牛頓迭代法(重覆計算方法)，所以速度比第二個程式慢很多。</p>
-    <p>注意: <font color="#FF0000">e^(</font>是按shift
-        e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
+    <p>注意: <font color="#FF0000">e^(</font>是按shift e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
     <p>
         <font color="#800080">第一個程式</font> (204 bytes)
     </p>
     <p>ClrMemory: ?→C: Lbl 0: Fix 2: Rnd( M→M: B→A: M→Y:</p>
-    <p>Lbl 1: 1 ÷ (1 + . 231642M: . 5 - <font size="1">E</font> - 7√(<font color="#FF0000"> e^(</font> - M<sup>2</sup>
-        ) )(1274148Ans </p>
+    <p>Lbl 1: 1 ÷ (1 + . 231642M: . 5 - <font size="1">E</font> - 7√(<font color="#FF0000"> e^(</font> - M<sup>2</sup> )
+        )(1274148Ans </p>
     <p>- 1422484Ans<sup>2</sup> + 7107069Ans<sup>3</sup> -7265760Ans<sup>2 2</sup> + 5307027Ans^( 5→B:</p>
-    <p>X=0 <font color="#FF0000">=&gt;</font> √( 2π )√( <font color="#FF0000">e^( </font>M<sup>2</sup>
-        ) )(B
-        - C<font color="#FF0000">M-</font>
-        <font color="#FF0000">=&gt;</font> M→A: Ans <font color="#FF0000">=&gt;</font> Goto
-        1:
+    <p>X=0 <font color="#FF0000">=&gt;</font> √( 2π )√( <font color="#FF0000">e^( </font>M<sup>2</sup> ) )(B - C<font
+            color="#FF0000">M-</font>
+        <font color="#FF0000">=&gt;</font> M→A: Ans <font color="#FF0000">=&gt;</font> Goto 1:
     </p>
-    <p>X=0→X: Ans <font color="#FF0000">=&gt;</font> Goto 0: Fix 4: Rnd(
-        B→B: . 01<font color="#FF0000">M+</font>: </p>
-    <p>B&gt;C <font color="#FF0000">=&gt;</font> .02<font color="#FF0000">M-</font>: D=0→D:
-        Ans <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: </p>
-    <p>M + (M - Y)(C - A) ÷
-        (A - B</p>
+    <p>X=0→X: Ans <font color="#FF0000">=&gt;</font> Goto 0: Fix 4: Rnd( B→B: . 01<font color="#FF0000">M+</font>: </p>
+    <p>B&gt;C <font color="#FF0000">=&gt;</font> .02<font color="#FF0000">M-</font>: D=0→D: Ans <font color="#FF0000">
+            =&gt;</font> Goto 0: Norm 1: </p>
+    <p>M + (M - Y)(C - A) ÷ (A - B</p>
     <p>　</p>
     <p>
         <font color="#800080">第二個程式 </font>(221 bytes)
     </p>
-    <p>ClrMemory: ?→C: . 5 - C: √( ln( Ans<sup>2 -1</sup>: Fix 2: Rnd( Ans - (2515517 +
-    </p>
-    <p>802853Ans + 10328Ans<sup>2</sup>) ÷ ( <font size="1">E</font> 6
-        + 1432788Ans + 189269Ans<sup>2</sup> +
-    </p>
+    <p>ClrMemory: ?→C: . 5 - C: √( ln( Ans<sup>2 -1</sup>: Fix 2: Rnd( Ans - (2515517 + </p>
+    <p>802853Ans + 10328Ans<sup>2</sup>) ÷ ( <font size="1">E</font> 6 + 1432788Ans + 189269Ans<sup>2</sup> + </p>
     <p>1308Ans<sup>3</sup>→M: Lbl 0: B→A: M→Y: Fix 4: 1 ÷ (1 + . 231642M: </p>
-    <p>Rnd( . 5 -
-        <font size="1">E</font> - 7√( <font color="#FF0000">e^(</font>
-        - M<sup>2</sup> ) ) ( 1274148Ans - 1422484Ans<sup>2</sup> + 7107069Ans<sup>3</sup>
-    </p>
-    <p>- 7265760Ans<sup>2 2</sup> + 5307027Ans^( 5→B: . 01<font color="#FF0000">M+</font>:
-        B&gt;C <font color="#FF0000">
+    <p>Rnd( . 5 - <font size="1">E</font> - 7√( <font color="#FF0000">e^(</font> - M<sup>2</sup> ) ) ( 1274148Ans -
+        1422484Ans<sup>2</sup> + 7107069Ans<sup>3</sup> </p>
+    <p>- 7265760Ans<sup>2 2</sup> + 5307027Ans^( 5→B: . 01<font color="#FF0000">M+</font>: B&gt;C <font color="#FF0000">
             =&gt;</font> . 02<font color="#FF0000">M-</font>: </p>
-    <p>D=0→D: Ans <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: M + (M - Y)(C - A)
-        ÷ (A - B</p>
+    <p>D=0→D: Ans <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: M + (M - Y)(C - A) ÷ (A - B</p>
     <p>　</p>
     <p>註1: 兩個程式輸入概率範圍為 0&lt; P&lt; 0.5，否則程式可能會出現Math error或不能正常運作。</p>
     <p>註2: <font color="#FF0000">第二個程式</font>若果想保留一個記憶用作儲存臨時數據，可將程式中&quot;Mem

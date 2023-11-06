@@ -12,17 +12,13 @@
         <p>第一個程式較短，由於使用直接計算方法，速度很快，但準確度較低 (誤差小於4.5x10<sup>-4</sup>)。第二個程式則較長，而且使用牛頓法計算出答案的近似值，由於要重覆計算，程式的速度會較慢，但準確度卻很高。
             <font color="#FF0000"><b>注意</b></font>由於高考應用數學及高考數學與統計所用的方法是查表，所以準確度不及這些程式，若果希望與高考的標準答案完全一樣(包括正比例方法<span
                 class="postbody">
-                <font size="3">Linear
-                    Interpolation</font>)，請使用<a href="standardnormal_6.html">高考反查標準常態分佈準確版程式</a>。
-        </p>
+                <font size="3">Linear Interpolation</font>)，請使用<a href="standardnormal_6.html">高考反查標準常態分佈準確版程式</a>。 </p>
         <p>注意: <font size="1">E </font>是按 EXP。</p>
         <p>
             <font color="#FF0000">第一個程式</font> (70 bytes，使用記憶為M)
         </p>
-        <p>?→M: . 5<font color="#FF0000">M-</font>: √( ln( M<sup>2 -1</sup>: Ans - (2515517 +
-            802853Ans +</p>
-        <p>10328Ans<sup>2</sup>) ÷ ( <font size="1">E</font> 6
-            + 1432788Ans + 189269Ans<sup>2</sup> +</p>
+        <p>?→M: . 5<font color="#FF0000">M-</font>: √( ln( M<sup>2 -1</sup>: Ans - (2515517 + 802853Ans +</p>
+        <p>10328Ans<sup>2</sup>) ÷ ( <font size="1">E</font> 6 + 1432788Ans + 189269Ans<sup>2</sup> +</p>
         <p>1308Ans<sup>3</sup> </p>
         <p>　</p>
         <p></p>
@@ -32,31 +28,23 @@
         <p>ClrMemory: ?→A: Lbl 0: 1 ÷ (1 + . 2316419M:</p>
         <p>. 31938153Ans - . 356563782Ans<sup>2</sup> + Ans<sup>3</sup>(1.78147794 -</p>
         <p>1.82125598Ans + 1.33027443An
-    </span><span style="font-family: 新細明體">s<sup>2</sup>
-        )</span>- √( 2π<font color="#FF0000">e^( </font>M<sup>2</sup>
-    ) ) (</p>
-    <p>. 5 - A<font color="#FF0000">M+</font>: B - M <font color="#FF0000">=&gt;</font>
-        M→B: Ans <font color="#FF0000">=&gt;</font> Goto 0: M </p>
+    </span><span style="font-family: 新細明體">s<sup>2</sup> )</span>- √( 2π<font color="#FF0000">e^( </font>M<sup>2</sup> )
+    ) (</p>
+    <p>. 5 - A<font color="#FF0000">M+</font>: B - M <font color="#FF0000">=&gt;</font> M→B: Ans <font color="#FF0000">
+            =&gt;</font> Goto 0: M </p>
     <p>　</p>
     <p></p>
     <p>註1: 兩個程式輸入概率範圍為 0≦ P&lt; 0.5，否則程式可能會出現Math error或不能正常運作。</p>
     <p>註2: 第二個程式若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>
         &quot;，而程式所使用的記憶為A，B及M。</p>
-    <p>註3: 注意第二個程式可能需要較長時才可以計算出答案。</p>
-    </span> <span lang="EN-US" style="font-family: 新細明體"> <span lang="EN-US" style="font-family: 新細明體">
+    <p>註3: 注意第二個程式可能需要較長時才可以計算出答案。</p> </span> <span lang="EN-US" style="font-family: 新細明體"> <span lang="EN-US"
+            style="font-family: 新細明體">
             <p></p>
             <p></p>
             <p>　</p>
-            <p>例題: 若P(0≦
-                Z≦x)
-                = 0.3，求 x 的值，其中
-                Z ~ N(0, 1)。</p>
-            <p>
-                按 Prog 1
-                再按 0.3 EXE
-                (第一個程式顯示0.841456717，而第二個程式則顯示0.841621042)</p>
-        </span>
-    </span>
+            <p>例題: 若P(0≦ Z≦x) = 0.3，求 x 的值，其中 Z ~ N(0, 1)。</p>
+            <p> 按 Prog 1 再按 0.3 EXE (第一個程式顯示0.841456717，而第二個程式則顯示0.841621042)</p>
+        </span> </span>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

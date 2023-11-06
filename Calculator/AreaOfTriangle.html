@@ -11,76 +11,46 @@
     <p>程式可以計算下列兩種情況下的三角形面積:</p>
     <p>(i) 已知三角形的兩邊及夾角</p>
     <p>(ii) 己知三角形的三邊 (希羅公式)</p>
-    <p>
-        註1: 若果較習慣使用程式編號區分情況的朋友，可以使用網頁尾<a href="#Q1">附錄程式一(有程式編號
-            的版本 43 bytes)</a>。其實兩邊及夾角的情況，計算較簡單，亦可以不用程式，若果只需要計算希羅公式問題，可以使用計算機<a href="FMLA03_heron.html">內置希羅公式</a>。</p>
+    <p> 註1: 若果較習慣使用程式編號區分情況的朋友，可以使用網頁尾<a href="#Q1">附錄程式一(有程式編號 的版本 43
+            bytes)</a>。其實兩邊及夾角的情況，計算較簡單，亦可以不用程式，若果只需要計算希羅公式問題，可以使用計算機<a href="FMLA03_heron.html">內置希羅公式</a>。</p>
     <p>　</p>
     <p>程式 (39 bytes，使用記憶A、B及C)</p>
     <p>?→A: ?→B: ?→C: 2<sup>-1</sup>AB sin( C◢</p>
-    <p>4<sup>-1</sup>√( 4B<sup>2</sup>C<sup>2</sup> - (A<sup>2</sup> - B<sup>2</sup>
-        - C<sup>2</sup>)<sup>2</sup></p>
+    <p>4<sup>-1</sup>√( 4B<sup>2</sup>C<sup>2</sup> - (A<sup>2</sup> - B<sup>2</sup> - C<sup>2</sup>)<sup>2</sup></p>
     <p>　</p>
-    <p>例題1:
-        a=4, b=5, ∠C=40<sup>o</sup>
-        ，求三角形面積。</p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1&nbsp;
-        再按<font color="#FF0000"> </font>
-        4 EXE 5 EXE 40 EXE (顯示面積為6.4279)</p>
-    <p>
-        計算完結後按AC終程式。</p>
+    <p>例題1: a=4, b=5, ∠C=40<sup>o</sup> ，求三角形面積。</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1&nbsp; 再按<font color="#FF0000"> </font> 4 EXE 5 EXE 40 EXE (顯示面積為6.4279)</p>
+    <p> 計算完結後按AC終程式。</p>
     <p>　</p>
-    <p>例題2:
-        a=4, b=5, c=6，求三角形面積。</p>
-    <p>
-        按 Prog 1 再按 4 EXE 5 EXE
-        6EXE
-        <font color="#FF0000">EXE</font> (<font color="#FF0000">必要</font>，按<font color="#FF0000">EXE</font>忽略一個數值
-        代表以三邊計算面積，顯示面積為9.9216)
-    </p>
-    <p>註2: 若果輸入的三邊不能構成三角形，程式會出現Math
-        ERROR。</p>
+    <p>例題2: a=4, b=5, c=6，求三角形面積。</p>
+    <p> 按 Prog 1 再按 4 EXE 5 EXE 6EXE <font color="#FF0000">EXE</font> (<font color="#FF0000">必要</font>，按<font
+            color="#FF0000">EXE</font>忽略一個數值 代表以三邊計算面積，顯示面積為9.9216) </p>
+    <p>註2: 若果輸入的三邊不能構成三角形，程式會出現Math ERROR。</p>
     <p>　</p>
     <p>附錄 : </p>
     <p><a name="Q1" id="Q1"></a>附錄程式一(有程式編號版本 43 bytes，使用記憶A、B、C及D)</p>
     <p>?→D: ?→A: ?→B: ?→C: </p>
-    <p>D <font color="#FF0000">=&gt;&nbsp; cos<sup>-1</sup>(</font> (A<sup>2</sup>
-        + B<sup>2</sup> - C<sup>2</sup> ) ÷ ( 2AB→C:</p>
+    <p>D <font color="#FF0000">=&gt;&nbsp; cos<sup>-1</sup>(</font> (A<sup>2</sup> + B<sup>2</sup> - C<sup>2</sup> ) ÷ (
+        2AB→C:</p>
     <p>2<sup>-1</sup>AB sin( C</p>
-    <p>註1: 如果是使用fx-3650P II或fx-50FH II，上述程式碼中 (A<sup>2</sup>
-        + B<sup>2</sup> - C<sup>2</sup> ) ÷ <font color="#FF0000">(</font> 2AB→C: 可以簡化為 (A<sup>2</sup>
-        + B<sup>2</sup> - C<sup>2</sup> ) ÷ 2AB→C: 可節省1 byte。</p>
+    <p>註1: 如果是使用fx-3650P II或fx-50FH II，上述程式碼中 (A<sup>2</sup> + B<sup>2</sup> - C<sup>2</sup> ) ÷ <font color="#FF0000">(
+        </font> 2AB→C: 可以簡化為 (A<sup>2</sup> + B<sup>2</sup> - C<sup>2</sup> ) ÷ 2AB→C: 可節省1 byte。</p>
     <p>　</p>
     <p>
-        <font color="#FF0000">附錄程式</font>例題1:
-        a=4, b=5, ∠C=40<sup>o</sup>
-        ，求三角形面積。
+        <font color="#FF0000">附錄程式</font>例題1: a=4, b=5, ∠C=40<sup>o</sup> ，求三角形面積。
     </p>
-    <p>
-        注意:要在DEG Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 0 EXE (0代表以兩邊及夾角計算面積)</p>
-    <p>
-        4 EXE 5 EXE 40 EXE (顯示面積為6.4279)</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 0 EXE (0代表以兩邊及夾角計算面積)</p>
+    <p> 4 EXE 5 EXE 40 EXE (顯示面積為6.4279)</p>
     <p>　</p>
     <p>
-        <font color="#FF0000">附錄程式</font>例題2:
-        a=4, b=5, c=6，求三角形面積。
+        <font color="#FF0000">附錄程式</font>例題2: a=4, b=5, c=6，求三角形面積。
     </p>
-    <p>
-        附錄程式一按法:</p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (1代表以三邊計算面積)</p>
-    <p>
-        4 EXE 5 EXE
-        6EXE (顯示面積為9.9216)</p>
-    <p>
-        　</p>
+    <p> 附錄程式一按法:</p>
+    <p> 按 Prog 1 再按 1 EXE (1代表以三邊計算面積)</p>
+    <p> 4 EXE 5 EXE 6EXE (顯示面積為9.9216)</p>
+    <p> 　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     </body>
 

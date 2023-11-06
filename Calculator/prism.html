@@ -15,17 +15,16 @@
     <p>3. 已知折射率n、頂角A及入射角i計算最後的折射角r及偏向角σ</p>
     <p>程式 (64 bytes) </p>
     <p>ClrMemory: ?→M: ?→A: </p>
-    <p>2 <font color="#FF0000">sin<sup>-1</sup>(</font> M sin( A<span lang="en">÷</span>2 )
-        ) - A→B: ?→B:</p>
+    <p>2 <font color="#FF0000">sin<sup>-1</sup>(</font> M sin( A<span lang="en">÷</span>2 ) ) - A→B: ?→B:</p>
     <p>M=0 <font color="#FF0000">=&gt;</font> sin( (A+B)<span lang="en">÷</span>2 ) ÷ sin( A<span lang="en">÷</span>2◢
     </p>
     <p>
-        <font color="#FF0000">sin<sup>-1</sup>(</font> M sin(A -
-        <font color="#FF0000">sin<sup>-1</sup>(</font> sin( B )÷M◢
+        <font color="#FF0000">sin<sup>-1</sup>(</font> M sin(A - <font color="#FF0000">sin<sup>-1</sup>(</font> sin( B
+        )÷M◢
     </p>
     <p>Ans + B - A</p>
-    <p>註: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;Mem clear&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，而程式
-        長度增加 1 byte，所使用的記憶為A，B及M。</p>
+    <p>註: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;Mem clear&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，而程式 長度增加 1
+        byte，所使用的記憶為A，B及M。</p>
     <p>　</p>
     <p>
         <font color="#FF0000">注意:</font> 以下例題在DEG 模式下執行程式

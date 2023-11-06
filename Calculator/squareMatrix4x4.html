@@ -10,28 +10,21 @@
             </b></u></p>
     <p>程式編寫日期: 2014年6月22日</p>
     <p>
-        <font color="#FF0000">程式需要在 REG Quad 模式下執行，因此在選擇新程式位置後，按 5
-            → 2 選用REG Quad模式。</font>
+        <font color="#FF0000">程式需要在 REG Quad 模式下執行，因此在選擇新程式位置後，按 5 → 2 選用REG Quad模式。</font>
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF"> n</font> 按 Shift 1 3 <font color="#0000FF">Σx </font>按 Shift 1 2，<font
-            color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">Σxy</font>
-        按 Shift 1 → 3)，FreqOn 按 Shift MODE
+            color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">Σxy</font> 按 Shift 1 → 3)，FreqOn 按 Shift MODE
         ← ← 1，<font size="1">E </font>是按 EXP 。</p>
     <p>程式 (376 bytes)</p>
     <p>FreqOn: ?→A: ?→B: ?→C: 1 ; 2<sup>-1</sup>(A+B-2C <font color="#FF0000">DT</font>: </p>
-    <p>- 1 ; 2<sup>-1</sup>(A-B <font color="#FF0000">DT</font>: 1 , 1
-        ; C
-        <font color="#FF0000">DT</font>: ?→D:
-    </p>
+    <p>- 1 ; 2<sup>-1</sup>(A-B <font color="#FF0000">DT</font>: 1 , 1 ; C <font color="#FF0000">DT</font>: ?→D: </p>
     <p>
-        <font size="1">E</font>-50 , 1 ; <font size="1">E</font>50(D-C
-        <font color="#FF0000">DT</font>: ?→X: 0 , 1 ; - <font color="#0000FF">
-            Σy</font>
+        <font size="1">E</font>-50 , 1 ; <font size="1">E</font>50(D-C <font color="#FF0000">DT</font>: ?→X: 0 , 1 ; -
+        <font color="#0000FF"> Σy</font>
         <font color="#FF0000">DT</font>: ?→Y:
     </p>
-    <p>; Y <font color="#FF0000">DT</font>: , <font size="1">E</font>-50 ;
-        <font size="1">E</font>50(X - Y <font color="#FF0000">DT</font>: ?→A: ?→B: ?→C:
-    </p>
+    <p>; Y <font color="#FF0000">DT</font>: , <font size="1">E</font>-50 ; <font size="1">E</font>50(X - Y <font
+            color="#FF0000">DT</font>: ?→A: ?→B: ?→C: </p>
     <p>
         <font size="1">E</font>-34 , 0 ; <font size="1">E</font>68(C-<font color="#0000FF">Σx<sup>2</sup></font>
         <font color="#FF0000">DT</font>: <font size="1">E</font>-50 ; - <font size="1">E</font>50<font color="#0000FF">
@@ -39,91 +32,74 @@
         <font color="#FF0000">DT</font>:
     </p>
     <p>; <font size="1">E</font>50B <font color="#FF0000">DT</font>: 0 ; -<font color="#0000FF">n</font>
-        <font color="#FF0000">DT</font>: ; A <font color="#FF0000">DT</font>:&nbsp; ?→A:
-        ?→B: ?→C:
+        <font color="#FF0000">DT</font>: ; A <font color="#FF0000">DT</font>:&nbsp; ?→A: ?→B: ?→C:
     </p>
     <p>?→D: ?→X: ?→Y: ?→M: </p>
     <p>
-        <font color="#0000FF">Σx<sup>4</sup> Σx<sup>4</sup> </font>+ <font color="#0000FF">Σx<sup>3 </sup>Σy </font>
-        + <font color="#0000FF">Σx<sup>2</sup>y Σx<sup>2 </sup></font>+ <font color="#0000FF">Σxy </font>
-        D◢
+        <font color="#0000FF">Σx<sup>4</sup> Σx<sup>4</sup> </font>+ <font color="#0000FF">Σx<sup>3 </sup>Σy </font> +
+        <font color="#0000FF">Σx<sup>2</sup>y Σx<sup>2 </sup></font>+ <font color="#0000FF">Σxy </font> D◢
     </p>
     <p>
         <font color="#0000FF">Σx<sup>4</sup> Σx<sup>3</sup> </font>+ <font color="#0000FF">Σx<sup>3 </sup>
-            Σy<sup>2</sup> </font>
-        + <font color="#0000FF">Σx<sup>2</sup>y </font>A + <font color="#0000FF">Σxy </font>
+            Σy<sup>2</sup> </font> + <font color="#0000FF">Σx<sup>2</sup>y </font>A + <font color="#0000FF">Σxy </font>
         X◢
     </p>
     <p>
-        <font color="#0000FF">Σx<sup>4</sup> Σx<sup>2</sup>y </font>+ <font color="#0000FF">Σx<sup>3 </sup>
-            n </font>
-        + <font color="#0000FF">Σx<sup>2</sup>y </font>B + <font color="#0000FF">Σxy </font>
-        Y◢
+        <font color="#0000FF">Σx<sup>4</sup> Σx<sup>2</sup>y </font>+ <font color="#0000FF">Σx<sup>3 </sup> n </font> +
+        <font color="#0000FF">Σx<sup>2</sup>y </font>B + <font color="#0000FF">Σxy </font> Y◢
     </p>
     <p>
-        <font color="#0000FF">Σx<sup>4</sup> Σxy </font>+ <font color="#0000FF">Σx<sup>3 </sup>Σx </font>
-        + <font color="#0000FF">Σx<sup>2</sup>y </font>C + <font color="#0000FF">Σxy </font>
-        M◢
+        <font color="#0000FF">Σx<sup>4</sup> Σxy </font>+ <font color="#0000FF">Σx<sup>3 </sup>Σx </font> + <font
+            color="#0000FF">Σx<sup>2</sup>y </font>C + <font color="#0000FF">Σxy </font> M◢
     </p>
     <p>
-        <font color="#0000FF">Σy Σx<sup>4</sup> </font>+ <font color="#0000FF">Σy<sup>2 </sup>Σy </font>+
-        <font color="#0000FF">n Σx<sup>2 </sup></font>+ <font color="#0000FF">Σx </font>
-        D◢
+        <font color="#0000FF">Σy Σx<sup>4</sup> </font>+ <font color="#0000FF">Σy<sup>2 </sup>Σy </font>+ <font
+            color="#0000FF">n Σx<sup>2 </sup></font>+ <font color="#0000FF">Σx </font> D◢
     </p>
     <p>
         <font color="#0000FF">Σy Σx<sup>3</sup> </font>+ <font color="#0000FF">Σy<sup>2 </sup>Σy<sup>2</sup> </font>+
-        <font color="#0000FF">n </font>A + <font color="#0000FF">Σx </font>
-        X◢
+        <font color="#0000FF">n </font>A + <font color="#0000FF">Σx </font> X◢
     </p>
     <p>
-        <font color="#0000FF">Σy Σx<sup>2</sup>y </font>+ <font color="#0000FF">Σy<sup>2 </sup>
-            n </font>+ <font color="#0000FF">n </font>B + <font color="#0000FF">Σx </font>
-        Y◢
+        <font color="#0000FF">Σy Σx<sup>2</sup>y </font>+ <font color="#0000FF">Σy<sup>2 </sup> n </font>+ <font
+            color="#0000FF">n </font>B + <font color="#0000FF">Σx </font> Y◢
     </p>
     <p>
-        <font color="#0000FF">Σy Σxy </font>+ <font color="#0000FF">Σy<sup>2 </sup>Σx </font>+
-        <font color="#0000FF">n </font>C + <font color="#0000FF">Σx </font>
-        M◢
+        <font color="#0000FF">Σy Σxy </font>+ <font color="#0000FF">Σy<sup>2 </sup>Σx </font>+ <font color="#0000FF">n
+        </font>C + <font color="#0000FF">Σx </font> M◢
     </p>
     <p>
-        <font color="#0000FF">Σx<sup>2</sup> Σx<sup>4</sup> </font>+ A<font color="#0000FF"><sup> </sup>Σy
-        </font>+ B <font color="#0000FF">Σx<sup>2 </sup></font>+ CD◢
+        <font color="#0000FF">Σx<sup>2</sup> Σx<sup>4</sup> </font>+ A<font color="#0000FF"><sup> </sup>Σy </font>+ B
+        <font color="#0000FF">Σx<sup>2 </sup></font>+ CD◢
     </p>
     <p>
         <font color="#0000FF">Σx<sup>2</sup> Σx<sup>3</sup> </font>+ A<font color="#0000FF"><sup> </sup>Σy<sup>2</sup>
         </font>+ BA+ CX◢
     </p>
     <p>
-        <font color="#0000FF">Σx<sup>2</sup> Σx<sup>2</sup>y </font>+ A<font color="#0000FF"><sup> </sup>
-            n </font>+ BB+ CY◢
+        <font color="#0000FF">Σx<sup>2</sup> Σx<sup>2</sup>y </font>+ A<font color="#0000FF"><sup> </sup> n </font>+ BB+
+        CY◢
     </p>
     <p>
-        <font color="#0000FF">Σx<sup>2</sup> Σxy </font>+ A<font color="#0000FF"><sup> </sup>
-            Σx </font>+ BC+ CM◢
+        <font color="#0000FF">Σx<sup>2</sup> Σxy </font>+ A<font color="#0000FF"><sup> </sup> Σx </font>+ BC+ CM◢
     </p>
-    <p>D<font color="#0000FF"> Σx<sup>4</sup> </font>+ X<font color="#0000FF"><sup> </sup>Σy
-        </font>+ Y <font color="#0000FF">Σx<sup>2 </sup></font>+ MD◢</p>
-    <p>D<font color="#0000FF"> Σx<sup>3</sup> </font>+ X<font color="#0000FF"><sup> </sup>Σy<sup>2</sup>
-        </font>+ YA+ MX◢</p>
-    <p>D<font color="#0000FF"> Σx<sup>2</sup>y </font>+ X<font color="#0000FF"><sup> </sup>
-            n </font>+ YB+ MY◢</p>
-    <p>D<font color="#0000FF"> Σxy </font>+ X<font color="#0000FF"><sup> </sup>Σx
-        </font>+ YC+ MM</p>
+    <p>D<font color="#0000FF"> Σx<sup>4</sup> </font>+ X<font color="#0000FF"><sup> </sup>Σy </font>+ Y <font
+            color="#0000FF">Σx<sup>2 </sup></font>+ MD◢</p>
+    <p>D<font color="#0000FF"> Σx<sup>3</sup> </font>+ X<font color="#0000FF"><sup> </sup>Σy<sup>2</sup> </font>+ YA+
+        MX◢</p>
+    <p>D<font color="#0000FF"> Σx<sup>2</sup>y </font>+ X<font color="#0000FF"><sup> </sup> n </font>+ YB+ MY◢</p>
+    <p>D<font color="#0000FF"> Σxy </font>+ X<font color="#0000FF"><sup> </sup>Σx </font>+ YC+ MM</p>
     <p>　</p>
     <p>例題: 計算下列矩陣</p>
     <p>
-    <p>按
-        Prog 1&nbsp; 再按 1 EXE 2 EXE 3 EXE 4 EXE 5
-        EXE 6 EXE 7 EXE </p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 2 EXE 3 EXE 4 EXE 5 EXE 6 EXE 7 EXE </p>
     <p>8 EXE 9 EXE 10 EXE 11 EXE 12 EXE 13 EXE 14 EXE 15 EXE 16 </p>
     <p>EXE (顯示90) EXE (顯示100) EXE (顯示110) EXE (顯示120)</p>
     <p>EXE (顯示202) EXE (顯示228) EXE (顯示254) EXE (顯示280)</p>
     <p>EXE (顯示314) EXE (顯示356) EXE (顯示398) EXE (顯示440)</p>
     <p>EXE (顯示426) EXE (顯示484) EXE (顯示542) EXE (顯示600)</p>
     <p>所以</p>
-    <p>
-        
-    </p>
+    <p> </p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

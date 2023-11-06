@@ -13,48 +13,23 @@
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">a</font>按shift
-        2 1→ →1，<font color="#0000FF">b</font>按shift 2 1 → →2，<font color="#0000FF">DT</font>按
-        <font color="#FF0000">M+</font>)
-    </p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">a</font>按shift 2 1→ →1，<font color="#0000FF">b</font>按shift 2 1 → →2，
+        <font color="#0000FF">DT</font>按 <font color="#FF0000">M+</font>) </p>
     <p>程式一 (36 bytes，使用記憶A, B, C)</p>
-    <p>
-        ClrStat: Lbl 0: ?→A: ?→B: ?→C: B÷A , C÷A
-        <font color="#0000FF">DT</font>:
+    <p> ClrStat: Lbl 0: ?→A: ?→B: ?→C: B÷A , C÷A <font color="#0000FF">DT</font>: </p>
+    <p> n≠2 <font color="#FF0000">=&gt;</font> Goto 0: <font color="#0000FF">a</font>◢ <font color="#0000FF">b</font>
     </p>
-    <p>
-        n≠2 <font color="#FF0000">=&gt;</font> Goto 0: <font color="#0000FF">a</font>◢
-        <font color="#0000FF">b</font>
-    </p>
-    <p>
-        　</p>
+    <p> 　</p>
     <p>程式二(35 bytes，使用記憶A, B, C, D)</p>
-    <p>
-        ClrStat: For 0→D To 1: ?→A: ?→B: ?→C: B÷A , C÷A
-        <font color="#0000FF">DT</font>:
+    <p> ClrStat: For 0→D To 1: ?→A: ?→B: ?→C: B÷A , C÷A <font color="#0000FF">DT</font>: </p>
+    <p> Next: <font color="#0000FF">a</font>◢ <font color="#0000FF">b</font>
     </p>
-    <p>
-        Next: <font color="#0000FF">a</font>◢
-        <font color="#0000FF">b</font>
-    </p>
-    <p>
-        　</p>
-    <p>
-        例題:
-        解聯立方程
-        :</p>
-    <p>
-        &nbsp;
-    <p>
-        按 Prog 1&nbsp;
-        再按 1 EXE 1 EXE 7 EXE 1
-        EXE - 1 EXE 1 EXE (顯示4)
-        EXE (顯示3)</p>
-    <p>
-        因此解答為 x = 4
-        及 y = 3. </p>
-    <p>程式執行完成後，按shift
-        2 1 → →1及shift 2 1 → →2分別顯示x及y的值。</p>
+    <p> 　</p>
+    <p> 例題: 解聯立方程 :</p>
+    <p> &nbsp;
+    <p> 按 Prog 1&nbsp; 再按 1 EXE 1 EXE 7 EXE 1 EXE - 1 EXE 1 EXE (顯示4) EXE (顯示3)</p>
+    <p> 因此解答為 x = 4 及 y = 3. </p>
+    <p>程式執行完成後，按shift 2 1 → →1及shift 2 1 → →2分別顯示x及y的值。</p>
     <p>計算完結後可按 MODE 1 返回正常計算模式</p>
     <p>　</p>
     <p>註: 程式的限制為方程的x係數不可是零。</p>

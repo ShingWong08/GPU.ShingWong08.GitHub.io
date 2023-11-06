@@ -16,77 +16,63 @@
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font>
-        按 Shift 1 → 2，<font color="#0000FF">n</font> 按 Shift 1 3，<font color="#0000FF">minX</font>
-        按 Shift 2 2 1)，<font size="1">E </font>是按 EXP。</p>
-    <p>FreqOn: Rad: <font color="#FF0000">; </font>8 <font color="#FF0000">DT</font>: 1→C: 4→D:
-        For 1→X To 9 Step 2: </p>
-    <p>1111X+11cos( πX◢ ?→A: ?→B: D-A-B→D:
-        A+B=0 <font color="#FF0000">=&gt;</font>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，
+        <font color="#0000FF">n</font> 按 Shift 1 3，<font color="#0000FF">minX</font> 按 Shift 2 2 1)，<font size="1">E
+        </font>是按 EXP。</p>
+    <p>FreqOn: Rad: <font color="#FF0000">; </font>8 <font color="#FF0000">DT</font>: 1→C: 4→D: For 1→X To 9 Step 2:
+    </p>
+    <p>1111X+11cos( πX◢ ?→A: ?→B: D-A-B→D: A+B=0 <font color="#FF0000">=&gt;</font>
     </p>
     <p>0, 0 <font color="#FF0000">;</font> X-<font color="#0000FF">n</font>-1<font color="#FF0000"> DT</font>: A+B=0
-        <font color="#FF0000">=&gt;</font> Goto 1:
-        If A+B&gt;C: Then A+B→C:
-    </p>
-    <p>X+(A&lt;B) cos( πX:
-        Ans , Ans+cos( πAns)(1≧Abs(A-B<font color="#FF0000"> DT</font>: </p>
+        <font color="#FF0000">=&gt;</font> Goto 1: If A+B&gt;C: Then A+B→C: </p>
+    <p>X+(A&lt;B) cos( πX: Ans , Ans+cos( πAns)(1≧Abs(A-B<font color="#FF0000"> DT</font>: </p>
     <p>Else CD=1 <font color="#FF0000">=&gt;</font> Y, M<font color="#FF0000"> DT</font>: Y→M: X+(A≦B) cos( πX→Y: </p>
-    <p>A+B=2 <font color="#FF0000">=&gt;</font> X+(A&lt;B)cos(πX→M:IfEnd:
-        Lbl 1: D≦0 <font color="#FF0000">=&gt;</font> Break:Next: </p>
+    <p>A+B=2 <font color="#FF0000">=&gt;</font> X+(A&lt;B)cos(πX→M:IfEnd: Lbl 1: D≦0 <font color="#FF0000">=&gt;</font>
+        Break:Next: </p>
     <p>- (<font color="#0000FF">Σx</font>≠<font color="#0000FF">Σy </font>
         <font color="#FF0000">;</font> 0<font color="#FF0000"> DT</font>: C=1 <font color="#FF0000">=&gt;</font> 0, 0
         <font color="#FF0000">;</font>
         <font color="#0000FF"> Σy</font>-<font color="#0000FF">n</font>
-        <font color="#FF0000"> DT</font>:
-        11<font size="1">E</font>2<font color="#0000FF">Σx</font>+11n◢
+        <font color="#FF0000"> DT</font>: 11<font size="1">E</font>2<font color="#0000FF">Σx</font>+11n◢
     </p>
-    <p>?→A: ?→B:A+B+1→X:
-        <font color="#0000FF">Σy</font>=<font color="#0000FF">Σx </font>+cos( π<font color="#0000FF">Σx </font>
+    <p>?→A: ?→B:A+B+1→X: <font color="#0000FF">Σy</font>=<font color="#0000FF">Σx </font>+cos( π<font color="#0000FF">Σx
+        </font>
         <font color="#FF0000">=&gt;</font> A-B+2→X:
     </p>
     <p>Ans <font color="#FF0000">=&gt;</font> 0,<font color="#0000FF"> Σx</font>-<font color="#0000FF">Σy</font>
-        <font color="#FF0000"> DT</font>:
-        cos( π<font color="#0000FF">Σx</font>)(A=0, cos( π<font color="#0000FF">Σy</font>)(B=0)(A≠2<font
-            color="#FF0000"> DT</font>:
+        <font color="#FF0000"> DT</font>: cos( π<font color="#0000FF">Σx</font>)(A=0, cos( π<font color="#0000FF">Σy
+        </font>)(B=0)(A≠2<font color="#FF0000"> DT</font>:
     </p>
     <p>X=1 <font color="#FF0000">=&gt;</font>
         <font color="#0000FF">Σy</font>-<font color="#0000FF">Σx </font>,<font color="#0000FF"> Σx</font>-<font
             color="#0000FF">Σy</font>
-        <font color="#FF0000"> DT</font>:
-        If C+D≧3: Then <font color="#0000FF">Σx </font>→M:
+        <font color="#FF0000"> DT</font>: If C+D≧3: Then <font color="#0000FF">Σx </font>→M:
     </p>
     <p>D<font color="#FF0000">=&gt;</font>
-        <font color="#0000FF">Σx </font>+cos(π<font color="#0000FF">Σx </font>→M:
-        C+D≧4 <font color="#FF0000">=&gt;</font>
+        <font color="#0000FF">Σx </font>+cos(π<font color="#0000FF">Σx </font>→M: C+D≧4 <font color="#FF0000">=&gt;
+        </font>
         <font color="#0000FF">Σx</font>+cos( π<font color="#0000FF">Σx</font>)(C+2<font color="#0000FF">minX</font>≦2→Y:
     </p>
-    <p>IfEnd:
-        If X≧2: Then M+cos( πM→A:<font color="#0000FF"> Σx </font>→M: A-<font color="#0000FF">Σx</font>, 0<font
+    <p>IfEnd: If X≧2: Then M+cos( πM→A:<font color="#0000FF"> Σx </font>→M: A-<font color="#0000FF">Σx</font>, 0<font
             color="#FF0000"> DT</font>: IfEnd: </p>
     <p>If X≧3: Then Y+cos(πY→A:<font color="#0000FF">Σy</font>→Y:0,A-<font color="#0000FF">Σy</font>
-        <font color="#FF0000"> DT</font>:IfEnd:
-        While 1:
+        <font color="#FF0000"> DT</font>:IfEnd: While 1:
     </p>
     <p>
         <font size="1">E</font>3Y+<font size="1">E</font>2M+<font size="1">E</font>1<font color="#0000FF">Σx </font>+
-        <font color="#0000FF">Σy</font>◢ ?→A: ?→B:
-        If A+B&lt;4: Then
+        <font color="#0000FF">Σy</font>◢ ?→A: ?→B: If A+B&lt;4: Then
     </p>
     <p>Y+cos( πY→A: cos( π<font color="#0000FF">Σx </font>
-        <font color="#FF0000"> DT</font>:
-        <font color="#0000FF">Σx </font>→Y: A-<font color="#0000FF">Σx </font>
+        <font color="#FF0000"> DT</font>: <font color="#0000FF">Σx </font>→Y: A-<font color="#0000FF">Σx </font>
         <font color="#FF0000"> DT</font>: 2B→B: IfEnd:
     </p>
     <p>B≧2 <font color="#FF0000">=&gt;</font>
         <font color="#0000FF">Σy</font>-<font color="#0000FF">Σx </font>,<font color="#0000FF">Σx </font>-<font
             color="#0000FF">Σy</font>
-        <font color="#FF0000"> DT</font>:
-        If (<font color="#0000FF">Σx </font>=<font color="#0000FF">Σy</font>)+(B=4: Then M→A:Y→M:
+        <font color="#FF0000"> DT</font>: If (<font color="#0000FF">Σx </font>=<font color="#0000FF">Σy</font>)+(B=4:
+        Then M→A:Y→M:
     </p>
-    <p>A→Y:IfEnd:WhileEnd <br>
-        <br>
-        　
-    </p>
+    <p>A→Y:IfEnd:WhileEnd <br> <br> 　 </p>
     <p></p>
     <p>用法示範 (假設答案是0137) :</p>
     <p>按 Prog 1 (顯示1100,表示要猜1100) </p>
@@ -96,15 +82,10 @@
     <p>(顯示5544) 0 EXE 0 EXE </p>
     <p>(顯示7766) 0 EXE 1 EXE </p>
     <p>(顯示1144) 1 EXE 0 EXE </p>
-    <p>(顯示0137) (即答案是0137) <br>
-        &nbsp;<br>
-        　</p>
-    <p>註1: 此程式若在不重複版使用，請注意有些mastermind程式(例如mastermind(I))不能正確判斷重複的情況，請在第二行及第八行的
-        ?→B:後加上程式碼 .5(B-A→B: 即可使用。</p>
-    <p>註2: 請留意程式執行後會變成Rad模式，按 Shift MODE 1 可返回Deg模式。若果 不想這樣的話, 可刪去第一行的 Rad:
-        並在每一個π後加上細 r (按shift Ans 2))。</p>
-    <p>註3: 理論上程式可在九步內得解答，當然這不一定是最快的解法，但基於計數機的限制，故採用這個有系統的解法。<br>
-        　</p>
+    <p>(顯示0137) (即答案是0137) <br> &nbsp;<br> 　</p>
+    <p>註1: 此程式若在不重複版使用，請注意有些mastermind程式(例如mastermind(I))不能正確判斷重複的情況，請在第二行及第八行的 ?→B:後加上程式碼 .5(B-A→B: 即可使用。</p>
+    <p>註2: 請留意程式執行後會變成Rad模式，按 Shift MODE 1 可返回Deg模式。若果 不想這樣的話, 可刪去第一行的 Rad: 並在每一個π後加上細 r (按shift Ans 2))。</p>
+    <p>註3: 理論上程式可在九步內得解答，當然這不一定是最快的解法，但基於計數機的限制，故採用這個有系統的解法。<br> 　</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

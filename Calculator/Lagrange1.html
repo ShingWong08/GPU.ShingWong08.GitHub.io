@@ -12,48 +12,32 @@
     <p>
         <font color="#FF0000">程式需要在 REG Quad 模式下執行，因此在選擇新程式位置後，按 5 → 2選用REG Quad模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n </font>按 Shift 1 3，<font color="#0000FF">a</font> 按 Shift
-        2 1→ → 1，<font color="#0000FF">b</font>
-        按 Shift 2 1→ →&nbsp; 2，<font color="#0000FF">c</font>
-        按 Shift 2 1→ →&nbsp; 3)。</p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n </font>按 Shift 1 3，<font color="#0000FF">a</font> 按 Shift 2 1→ → 1，
+        <font color="#0000FF">b</font> 按 Shift 2 1→ →&nbsp; 2，<font color="#0000FF">c</font> 按 Shift 2 1→ →&nbsp; 3)。
+    </p>
     <p>　</p>
     <p>程式一 (30 bytes，使用記憶A及B)</p>
     <p>ClrStat: Lbl 0: ?→A: ?→B: A <b>
             <font color="#FF0000">,</font>
         </b> B <font color="#FF0000">DT</font>: 3 -<font color="#0000FF"> n</font>
-        <font color="#FF0000">=&gt;</font> Goto 0: <font color="#0000FF">c</font>◢
-        <font color="#0000FF">b</font> ◢ <font color="#0000FF">a</font>
+        <font color="#FF0000">=&gt;</font> Goto 0: <font color="#0000FF">c</font>◢ <font color="#0000FF">b</font> ◢
+        <font color="#0000FF">a</font>
     </p>
     <p>　</p>
     <p>程式二 (29 bytes，使用記憶A、B及C)</p>
     <p>ClrStat: For 0→C To 2: ?→A: ?→B: A <b>
             <font color="#FF0000">,</font>
-        </b> B <font color="#FF0000">DT</font>:
-        Next: <font color="#0000FF">c</font>◢
-        <font color="#0000FF">b</font> ◢ <font color="#0000FF">a</font>
+        </b> B <font color="#FF0000">DT</font>: Next: <font color="#0000FF">c</font>◢ <font color="#0000FF">b</font> ◢
+        <font color="#0000FF">a</font>
     </p>
     <p>　</p>
-    <p>
-        例題:
-        求過點 (0 , 5), (1 , 4)
-        及 (-1 , 10)三點的拉格朗日插值多項式。</p>
-    <p>
-        按 Prog 1
-        再按 0 EXE
-        5 EXE 1 EXE 4 EXE - 1 EXE 10 EXE</p>
-    <p>
-        (顯示x<sup>2</sup>的係數為2)
-    </p>
-    <p>
-        EXE (顯示x的係數為
-        -3) </p>
-    <p>
-        EXE (顯示常數項為5)</p>
-    <p>
-        所以拉格朗日插值多項式為 &nbsp;2x<sup>2</sup>
-        - 3x + 5</p>
-    <p>計算完結後按 MODE 1
-        返回正常計算模式。</p>
+    <p> 例題: 求過點 (0 , 5), (1 , 4) 及 (-1 , 10)三點的拉格朗日插值多項式。</p>
+    <p> 按 Prog 1 再按 0 EXE 5 EXE 1 EXE 4 EXE - 1 EXE 10 EXE</p>
+    <p> (顯示x<sup>2</sup>的係數為2) </p>
+    <p> EXE (顯示x的係數為 -3) </p>
+    <p> EXE (顯示常數項為5)</p>
+    <p> 所以拉格朗日插值多項式為 &nbsp;2x<sup>2</sup> - 3x + 5</p>
+    <p>計算完結後按 MODE 1 返回正常計算模式。</p>
     <p>　</p>
     <p>註:多項式的係數儲存在統計模式變數c、b及a。</p>
     <p>　</p>

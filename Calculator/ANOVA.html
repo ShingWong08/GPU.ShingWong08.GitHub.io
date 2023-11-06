@@ -6,49 +6,40 @@
     <p align="center"><u><b>
                 <font size="5">單因子變異分析 (One way analysis of variance (ANOVA))</font>
             </b></u></p>
-    <p>程式可以計算單因子變異分析中的處理平方和 Sum of square for treatments (SST)、誤差平方和 Sum of square
-        for Errors (SSE)、處理平均方 Mean square for treatments (MST)、誤差平均方 Mean square for
-        Errors (MSE)及 F 值。</p>
+    <p>程式可以計算單因子變異分析中的處理平方和 Sum of square for treatments (SST)、誤差平方和 Sum of square for Errors (SSE)、處理平均方 Mean square
+        for treatments (MST)、誤差平均方 Mean square for Errors (MSE)及 F 值。</p>
     <p>程式編寫日期: 2008年5月8日</p>
     <p>
         <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx<sup>2</sup></font> 按 Shift 1 1，<font color="#0000FF">Σx</font>
-        按 Shift 1 2，<font color="#0000FF">n</font> 按 shift 1 3 ，<font color="#0000FF">xσ<sub>n</sub></font>
-        按 shift 2 2)</p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx<sup>2</sup></font> 按 Shift 1 1，<font color="#0000FF">Σx</font> 按
+        Shift 1 2，<font color="#0000FF">n</font> 按 shift 1 3 ，<font color="#0000FF">xσ<sub>n</sub></font> 按 shift 2 2)
+    </p>
     <p>程式 (117 bytes)</p>
     <p>0→A: 0→B: 0→M: <font color="#FF0000">Rec(</font> 0 , 0: ?→C: While C:</p>
     <p>ClrStat: Lbl 0: ?→D: D <font color="#FF0000">DT</font>: C-<font color="#0000FF">n</font>
         <font color="#FF0000">=&gt;</font> Goto 0:
     </p>
-    <p>A + <font color="#0000FF">Σx<sup>2</sup></font>→A: X + <font color="#0000FF">
-            Σx</font>→X: B + <font color="#0000FF">n xσ<sub>n</sub></font><sup>2</sup>→B:
-    </p>
+    <p>A + <font color="#0000FF">Σx<sup>2</sup></font>→A: X + <font color="#0000FF"> Σx</font>→X: B + <font
+            color="#0000FF">n xσ<sub>n</sub></font><sup>2</sup>→B: </p>
     <p>M + C→M: Y + 1→Y: ?→C: WhileEnd: </p>
     <p>A - X<sup>2</sup> ÷ M - B→A◢ B◢ A ÷ (Y - 1→C◢</p>
     <p>B ÷ (M - Y→D◢ C ÷ D→X</p>
     <p>　</p>
     <p>例題: 試計算下列數據的處理平方和(SST)、誤差平方和(SSE)、處理平均方(MST)、誤差平均方(MSE)及F值。</p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="28%" id="AutoNumber1"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
-            <td width="34%" align="center">第一組
-            </td>
-            <td width="66%" align="center">1, 2, 3
-            </td>
+            <td width="34%" align="center">第一組 </td>
+            <td width="66%" align="center">1, 2, 3 </td>
         </tr>
         <tr>
-            <td width="34%" align="center">第二組
-            </td>
-            <td width="66%" align="center">2, 3, 4, 5
-            </td>
+            <td width="34%" align="center">第二組 </td>
+            <td width="66%" align="center">2, 3, 4, 5 </td>
         </tr>
         <tr>
-            <td width="34%" align="center">第三組
-            </td>
-            <td width="66%" align="center">1, 3, 5
-            </td>
+            <td width="34%" align="center">第三組 </td>
+            <td width="66%" align="center">1, 3, 5 </td>
         </tr>
     </table>
     <p>按 Prog 1 再按 3 EXE (第一組數據的數目) 1 EXE 2 EXE 3 EXE (第一組數據)</p>

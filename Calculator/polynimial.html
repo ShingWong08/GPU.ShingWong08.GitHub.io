@@ -25,60 +25,34 @@
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx</font>按 shift 1 2)</p>
     <p>ClrStat: ?→A: A <font color="#FF0000">DT</font>: ?→B: ?→C: ?→D: ?→X:</p>
-    <p>?→Y: ?→M: ?→A: <font color="#0000FF">Σx</font>X◢ <font color="#0000FF">Σx</font>Y
-        +BX◢ <font color="#0000FF">Σx</font>M +BY + CX◢</p>
+    <p>?→Y: ?→M: ?→A: <font color="#0000FF">Σx</font>X◢ <font color="#0000FF">Σx</font>Y +BX◢ <font color="#0000FF">Σx
+        </font>M +BY + CX◢</p>
     <p>
         <font color="#0000FF">Σx</font>A + DX + BM + CY◢ BA + DY + CM◢ CA + DM◢ DA
     </p>
     <p>　</p>
     <p>註: 若果想計算較低次的多項式的乘積，只要輸入0作為高次的係數即可。</p>
     <p>　</p>
-    <p>例題: 展開且化簡 (3x<sup>2</sup>
-        + 2x + 1)(x<sup>2</sup>
-        - 2 x + 3)。<br>
-        <br>
+    <p>例題: 展開且化簡 (3x<sup>2</sup> + 2x + 1)(x<sup>2</sup> - 2 x + 3)。<br> <br>
         <font color="#FF0000">第一個程式按法:</font>
     </p>
-    <p>按
-        Prog 1&nbsp; 再按 3 EXE 2 EXE 1 EXE 1 EXE -
+    <p>按 Prog 1&nbsp; 再按 3 EXE 2 EXE 1 EXE 1 EXE - 2 EXE 3 EXE</p>
+    <p>(顯示x<sup>4</sup> 的係數為 3) EXE (顯示x<sup>3</sup> 的係數為 -4) EXE (顯示x<sup>2</sup> 的係數為 6) </p>
+    <p>(顯示x 的係數為 4) EXE (顯示常數為 3)<br> <br> &nbsp;<font color="#FF0000">第二個程式按法:</font>
+    </p>
+    <p>按 Prog 1&nbsp; 再按 <font color="#FF0000">0</font> EXE 3 EXE 2 EXE 1 EXE<font color="#FF0000"> 0</font> EXE 1 EXE -
         2 EXE 3 EXE</p>
-    <p>(顯示x<sup>4</sup>
-        的係數為 3) EXE (顯示x<sup>3</sup>
-        的係數為 -4) EXE (顯示x<sup>2</sup>
-        的係數為 6) </p>
-    <p>(顯示x
-        的係數為 4) EXE (顯示常數為 3)<br>
-        <br>
-        &nbsp;<font color="#FF0000">第二個程式按法:</font>
-    </p>
-    <p>按
-        Prog 1&nbsp; 再按 <font color="#FF0000">0</font>
-        EXE 3 EXE 2 EXE 1 EXE<font color="#FF0000"> 0</font> EXE 1 EXE - 2 EXE 3 EXE</p>
-    <p>(顯示x<sup>6</sup>
-        的係數為 0) EXE (顯示x<sup>5</sup>
-        的係數為 0) EXE</p>
-    <p>(顯示x<sup>4</sup>
-        的係數為 3) EXE (顯示x<sup>3</sup>
-        的係數為 - 4) EXE (顯示x<sup>2</sup>
-        的係數為 6) </p>
-    <p>(顯示x
-        的係數為 4) EXE (顯示常數為 3)</p>
+    <p>(顯示x<sup>6</sup> 的係數為 0) EXE (顯示x<sup>5</sup> 的係數為 0) EXE</p>
+    <p>(顯示x<sup>4</sup> 的係數為 3) EXE (顯示x<sup>3</sup> 的係數為 - 4) EXE (顯示x<sup>2</sup> 的係數為 6) </p>
+    <p>(顯示x 的係數為 4) EXE (顯示常數為 3)</p>
     <p>　</p>
-    <p>因此 &nbsp;(3x<sup>2</sup>
-        + 2x + 1)(x<sup>2</sup>
-        - 2 x + 3) = 3x<sup>4</sup>
-        - 4x<sup>3</sup>
-        + 6x<sup>2</sup>
-        + 4x + 3<br>
-        <br>
-        　
-    </p>
+    <p>因此 &nbsp;(3x<sup>2</sup> + 2x + 1)(x<sup>2</sup> - 2 x + 3) = 3x<sup>4</sup> - 4x<sup>3</sup> + 6x<sup>2</sup> +
+        4x + 3<br> <br> 　 </p>
     <p>　</p>
     <p><b>
             <font color="#800080">附錄程式</font>
         </b></p>
-    <p>
-        若果希望顯示答案時同有那一項係數的指示，大家可以略為修改程式，但程式的長度會增長，以下的例子是第一個程式的修改版本，當顯示答案時，第一行的計算式會提示是那一項的係數，例如:
+    <p> 若果希望顯示答案時同有那一項係數的指示，大家可以略為修改程式，但程式的長度會增長，以下的例子是第一個程式的修改版本，當顯示答案時，第一行的計算式會提示是那一項的係數，例如:
         AnsX<sup>2</sup>即表示答案是x<sup>2</sup>的係數，Ans則表示是常數項。</p>
     <p>程式(72 bytes)</p>
     <p>?→A: ?→B: ?→C: ?→D: ?→Y: ?→M:</p>

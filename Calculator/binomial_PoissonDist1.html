@@ -11,117 +11,75 @@
     <p>程式是參考網友<font color="#0000FF">王者再臨</font>編寫二項分佈程式，修改原有舊程式。</p>
     <p>更新日期: 2014年8月1日</p>
     <p>注意: <span lang="en">
-            <font color="#FF0000"><sub>n</sub>C<sub>r </sub></font>
-            是按 shift ÷，<font color="#FF0000">e^( </font>是按shift
+            <font color="#FF0000"><sub>n</sub>C<sub>r </sub></font> 是按 shift ÷，<font color="#FF0000">e^( </font>是按shift
             e<sup>x</sup></p>
     <p>程式 (81 bytes)</p>
-    <p>ClrMemory: ?→A: ?→B: B <font color="#FF0000">=&gt;</font> 1&gt;B<font color="#FF0000">
-            =&gt;</font> B→D: Ans <font color="#FF0000">=&gt;</font> ?→B:</p>
+    <p>ClrMemory: ?→A: ?→B: B <font color="#FF0000">=&gt;</font> 1&gt;B<font color="#FF0000"> =&gt;</font> B→D: Ans
+        <font color="#FF0000">=&gt;</font> ?→B:</p>
     <p>B→C: ?→C: For B→B To C: D <font color="#FF0000">=&gt;</font> A <font color="#FF0000"><sub>n</sub>C<sub>r</sub>
-        </font>
-        B<font color="#FF0000"> ×</font> D^( B )(1-D)^(A-B
-        <font color="#FF0000">M+</font>:
-    </p>
-    <p>D=0 <font color="#FF0000">=&gt;</font> A^( B ) ÷ <font color="#800080"><b>(</b></font>
-        B!
-        <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: Next: M
-    </p>
+        </font> B<font color="#FF0000"> ×</font> D^( B )(1-D)^(A-B <font color="#FF0000">M+</font>: </p>
+    <p>D=0 <font color="#FF0000">=&gt;</font> A^( B ) ÷ <font color="#800080"><b>(</b></font> B! <font color="#FF0000">
+            e^( </font>A <font color="#FF0000">M+</font>: Next: M </p>
     <p>　</p>
     <p>另一個更簡短的程式，但要注意輸入數據先後次序及方法有不同。</p>
     <p>程式 (69 bytes)</p>
     <p>ClrMemory: ?→A: ?→B: B→C: ?→C: ?→D: </p>
-    <p>For B→B To C: D <font color="#FF0000">=&gt;</font> A <font color="#FF0000"><sub>n</sub>C<sub>r</sub></font>
-        B <font color="#FF0000">× </font>D^( B ) (1-D)^(A-B
-        <font color="#FF0000">M+</font>:
-    </p>
+    <p>For B→B To C: D <font color="#FF0000">=&gt;</font> A <font color="#FF0000"><sub>n</sub>C<sub>r</sub></font> B
+        <font color="#FF0000">× </font>D^( B ) (1-D)^(A-B <font color="#FF0000">M+</font>: </p>
     <p>D=0 <font color="#FF0000">=&gt;</font> A^( B ) ÷ <b>
             <font color="#800080">(</font>
-        </b>
-        B!
-        <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: Next: M
-    </p>
+        </b> B! <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: Next: M </p>
     <p>　</p>
     <p>註1: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;0→D: M<font color="#FF0000">M-</font>
         :&quot;，而使用的記憶為A，B，C，D及M。</p>
     <p>註2: 如果是使用fx-50FH，上述兩個程式中的乘號<font color="#FF0000"> ×</font>可以省略不輸入，程式長度可節省1 byte。</p>
     <p>註3: 如果是使用fx-3650P II或fx-50FH II，上述兩個程式中的A^( B ) ÷ <b>
-            <font color="#800080">(
-            </font>
-        </b>B!
-        <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: 可以簡化為 A^( B ) ÷
-        B!
-        <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: ，可節省1 byte。
-    </p>
+            <font color="#800080">( </font>
+        </b>B! <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: 可以簡化為 A^( B ) ÷ B! <font
+            color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: ，可節省1 byte。 </p>
     <p>　</p>
     <p>　</p>
-    <p>
-        例題1:
-        若X ~ Bin(9,0.5)，求P(X=4)。</p>
+    <p> 例題1: 若X ~ Bin(9,0.5)，求P(X=4)。</p>
     <p>
         <font color="#FF0000">第一個程式的按法:</font>
     </p>
-    <p>
-        按 Prog 1 再按 9 EXE 0.5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.24609)</p>
+    <p> 按 Prog 1 再按 9 EXE 0.5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.24609)</p>
     <p>
         <font color="#FF0000">第二個程式的按法:</font>
     </p>
-    <p>
-        按 Prog 1 再按 9 EXE 4 EXE EXE (不輸入</span>第三個<span lang="en">數值代表只計算一項)</p>
-    <p>
-        0.5 EXE (顯示答案為0.24609)</p>
-    <p>
-        　</p>
-    <p>
-        例題2:
-        若X ~ Bin(9,0.5)，求P(4≦X≦6)。</p>
+    <p> 按 Prog 1 再按 9 EXE 4 EXE EXE (不輸入</span>第三個<span lang="en">數值代表只計算一項)</p>
+    <p> 0.5 EXE (顯示答案為0.24609)</p>
+    <p> 　</p>
+    <p> 例題2: 若X ~ Bin(9,0.5)，求P(4≦X≦6)。</p>
     <p>
         <font color="#FF0000">第一個程式的按法:</font>
     </p>
-    <p>
-        按 Prog 1
-        再按 9 EXE 0.5 EXE 4 EXE
-        6 EXE (顯示答案為0.65625)</p>
+    <p> 按 Prog 1 再按 9 EXE 0.5 EXE 4 EXE 6 EXE (顯示答案為0.65625)</p>
     <p>
         <font color="#FF0000">第二個程式的按法:</font>
     </p>
-    <p>
-        按 Prog 1
-        再按 9 EXE 4 EXE 6 EXE
-        0.5 EXE (顯示答案為0.65625)</p>
+    <p> 按 Prog 1 再按 9 EXE 4 EXE 6 EXE 0.5 EXE (顯示答案為0.65625)</p>
     <p>　</p>
-    <p>
-        例題3:
-        若X ~ Po(5)，求P(X=4)。</p>
+    <p> 例題3: 若X ~ Po(5)，求P(X=4)。</p>
     <p>
         <font color="#FF0000">第一個程式的按法:</font>
     </p>
-    <p>
-        按 Prog 1 再按 5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.17547)</p>
+    <p> 按 Prog 1 再按 5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.17547)</p>
     <p>
         <font color="#FF0000">第二個程式的按法:</font>
     </p>
-    <p>
-        按 Prog 1
-        再按 5 EXE 4 EXE EXE (</span>不<span lang="en">輸入第三個數值代表只計算一項)</p>
-    <p>
-        EXE (不輸</span>最後數值<span lang="en">代表計算計泊松分佈，顯示答案為0.17547)</p>
+    <p> 按 Prog 1 再按 5 EXE 4 EXE EXE (</span>不<span lang="en">輸入第三個數值代表只計算一項)</p>
+    <p> EXE (不輸</span>最後數值<span lang="en">代表計算計泊松分佈，顯示答案為0.17547)</p>
     <p>　</p>
-    <p>
-        例題4:
-        若X ~ Po(5)，求P(4≦X≦6)。</p>
+    <p> 例題4: 若X ~ Po(5)，求P(4≦X≦6)。</p>
     <p>
         <font color="#FF0000">第一個程式的按法:</font>
     </p>
-    <p>
-        按 Prog 1
-        再按 5 EXE 4 EXE 6 EXE (顯示P(4≦X≦6)為0.49716)</p>
+    <p> 按 Prog 1 再按 5 EXE 4 EXE 6 EXE (顯示P(4≦X≦6)為0.49716)</p>
     <p>
         <font color="#FF0000">第二個程式的按法:</font>
     </p>
-    <p>
-        按 Prog 1
-        再按 5 EXE 4 EXE 6 EXE
-        EXE (不輸入最後數值代表計泊松分佈，顯示P(4≦X≦6)為0.49716)</p>
+    <p> 按 Prog 1 再按 5 EXE 4 EXE 6 EXE EXE (不輸入最後數值代表計泊松分佈，顯示P(4≦X≦6)為0.49716)</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

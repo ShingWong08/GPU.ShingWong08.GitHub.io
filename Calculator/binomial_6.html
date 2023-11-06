@@ -12,36 +12,29 @@
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">maxX</font> 按 shift 2 2 2，<font color="#0000FF">maxY</font>
-        按 shift 2 2 → 2，<font color="#0000FF">n</font> 按 Shift 1 3)。</p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">maxX</font> 按 shift 2 2 2，<font color="#0000FF">maxY</font> 按 shift 2 2
+        → 2，<font color="#0000FF">n</font> 按 Shift 1 3)。</p>
     <p>程式 (133 bytes)</p>
-    <p>ClrStat: ?→A: ?→B: ?→C: A , B <font color="#FF0000"><b>;</b></font> C
-        <font color="#FF0000">DT</font>:
-    </p>
+    <p>ClrStat: ?→A: ?→B: ?→C: A , B <font color="#FF0000"><b>;</b></font> C <font color="#FF0000">DT</font>: </p>
     <p>?→A: ?→B: ?→C: ?→D: Lbl 0: Fix 0: 0→M: ?→X: </p>
-    <p>For 0→Y To D: (C - A)<sup>-1</sup>(<font color="#0000FF">maxY</font>D - X - Y(<font color="#0000FF">maxY</font>
-        - C: </p>
+    <p>For 0→Y To D: (C - A)<sup>-1</sup>(<font color="#0000FF">maxY</font>D - X - Y(<font color="#0000FF">maxY</font> -
+        C: </p>
     <p>If (Ans≦Y)(Ans≧0)(Ans=Rnd(Ans: Then M + </p>
     <p>Y<font color="#FF0000"> nCr </font>Ans<span lang="en">
-            <font color="#FF0000">
-                ×</font>
-        </span>D<font color="#FF0000">
-            nCr </font>Y<span lang="en">
+            <font color="#FF0000"> ×</font>
+        </span>D<font color="#FF0000"> nCr </font>Y<span lang="en">
             <font color="#FF0000"> ×</font>
         </span>
-        <font color="#0000FF">maxX</font>^(D - Y)
-        B^(Y - Ans)
+        <font color="#0000FF">maxX</font>^(D - Y) B^(Y - Ans)
     </p>
     <p>
         <font color="#0000FF"> n</font>^(Ans→M: IfEnd: Next: Norm 1: M◢ Goto 0
     </p>
     <p>註: 如果是使用fx-50FH，上述程式中的乘號<span lang="en">
             <font color="#FF0000"> ×</font>
-        </span>可以省略不輸入，程式長度可節省2 bytes。<br>
-        　</p>
+        </span>可以省略不輸入，程式長度可節省2 bytes。<br> 　</p>
     <p>例題: 試展開 (2 - 3x + 4x&sup2;)&sup3;，求常數項及x&sup3;項的係數。</p>
-    <p>∵ (2 - 3x + 4x&sup2;)&sup3;=(2x<sup>0</sup> - 3x<sup>1</sup>
-        + 4x<sup>2</sup>)<sup>3</sup></p>
+    <p>∵ (2 - 3x + 4x&sup2;)&sup3;=(2x<sup>0</sup> - 3x<sup>1</sup> + 4x<sup>2</sup>)<sup>3</sup></p>
     <p>按 Prog 1 再按 2 EXE 0 EXE - 3 EXE 1 EXE 4 EXE 2 EXE 3 EXE </p>
     <p>0 EXE (冪數0代表計算常數，顯示常數項為8)</p>
     <p>EXE 3 EXE (顯示x&sup3;項的係數為 -&nbsp; 171)</p>

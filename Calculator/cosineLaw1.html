@@ -10,107 +10,58 @@
             </b></u></p>
     <p>程式編寫日期: 2014年8月21日</p>
     <p>這個程式會根據輸入來計算:</p>
-    <p>
-        (1) 已知三邊 (3 sides)，求第三邊的對角</p>
-    <p>(2) 已知兩邊及夾角
-        (2 sides and included angle)，求第三邊</p>
-    <p>
-        註1: 若果較習慣使用程式編號區分情況的朋友，可以使用網頁尾<a href="#Q1">附錄程式(有程式編號 的版本 47 bytes)</a>。</p>
+    <p> (1) 已知三邊 (3 sides)，求第三邊的對角</p>
+    <p>(2) 已知兩邊及夾角 (2 sides and included angle)，求第三邊</p>
+    <p> 註1: 若果較習慣使用程式編號區分情況的朋友，可以使用網頁尾<a href="#Q1">附錄程式(有程式編號 的版本 47 bytes)</a>。</p>
     <p>　</p>
     <p>程式 (45 bytes，使用記憶為A, B及C)</p>
     <p>?→A: ?→B: ?→C: C&gt;0 <font color="#FF0000">=&gt;</font>
-        <font color="#FF0000">cos<sup>-1</sup>(</font>
-        (A<sup>2</sup> + B<sup>2</sup> - C<sup>2</sup> ) ÷ <b>
-            <font color="#800080">(
-            </font>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> (A<sup>2</sup> + B<sup>2</sup> - C<sup>2</sup> ) ÷ <b>
+            <font color="#800080">( </font>
         </b>2AB◢ √(A<sup>2</sup> + B<sup>2</sup> - 2AB cos( C
     </p>
-    <p>
-        <span lang="en">
-            註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
-            </b></font>
-        <span lang="en">
-            可以省略，程式長度可減1 byte。</span>
-    </p>
+    <p> <span lang="en"> 註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>( </b></font> <span
+            lang="en"> 可以省略，程式長度可減1 byte。</span> </p>
     <p>　</p>
-    <p>例題1:
-        a=4, b=5, ∠C=40<sup>o</sup>
-        ，求c。</p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按<font color="#FF0000"> </font>
-        4 EXE 5 EXE <font color="#FF0000">
-            <b>- </b>
-        </font>40 EXE (<font color="#FF0000">注意負值</font>代表輸入的是<font color="#FF0000">角</font>，顯示答案為c=3.2184)</p>
+    <p>例題1: a=4, b=5, ∠C=40<sup>o</sup> ，求c。</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按<font color="#FF0000"> </font> 4 EXE 5 EXE <font color="#FF0000"> <b>- </b> </font>40 EXE (<font
+            color="#FF0000">注意負值</font>代表輸入的是<font color="#FF0000">角</font>，顯示答案為c=3.2184)</p>
     <p></p>
     <p>　</p>
-    <p>例題2:
-        a=4, b=5, c=6，求∠C。</p>
-    <p>注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 4 EXE 5 EXE 6EXE (顯示答案為∠C=82.8192<sup>o</sup>)</p>
-    <p>
-        程式計算完成後，請按AC中止程式
-        。</p>
-    <p>
-        　</p>
-    <p>註2: 若果輸入的三邊不能構成三角形，程式會出現Math
-        ERROR。</p>
+    <p>例題2: a=4, b=5, c=6，求∠C。</p>
+    <p>注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 4 EXE 5 EXE 6EXE (顯示答案為∠C=82.8192<sup>o</sup>)</p>
+    <p> 程式計算完成後，請按AC中止程式 。</p>
+    <p> 　</p>
+    <p>註2: 若果輸入的三邊不能構成三角形，程式會出現Math ERROR。</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
-    <p>
-        　</p> <!--msthemeseparator-->
+    <p> 　</p> <!--msthemeseparator-->
     <p align="center">
     <p>
         <font color="#0000FF"><a name="Q1" id="Q1"></a>附錄: 有程式編號版本</font>
     </p>
     <p>附錄程式(47 bytes，使用記憶為A, B, C及D)</p>
-    <p>?→D: ?→A: ?→B: ?→C: D <font color="#FF0000">=&gt; cos<sup>-1</sup>(</font>
-        (A<sup>2</sup> + B<sup>2</sup> - C<sup>2</sup> ) ÷ <b>
-            <font color="#800080">(
-            </font>
+    <p>?→D: ?→A: ?→B: ?→C: D <font color="#FF0000">=&gt; cos<sup>-1</sup>(</font> (A<sup>2</sup> + B<sup>2</sup> -
+        C<sup>2</sup> ) ÷ <b>
+            <font color="#800080">( </font>
         </b>2AB◢ √(A<sup>2</sup> + B<sup>2</sup> - 2AB cos( C</p>
-    <p>
-        <span lang="en">
-            註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
-            </b></font>
-        <span lang="en">
-            可以省略，程式長度可減1 byte。</span>
-    </p>
+    <p> <span lang="en"> 註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>( </b></font> <span
+            lang="en"> 可以省略，程式長度可減1 byte。</span> </p>
     <p>　</p>
     <p>
-        <font color="#FF0000">附錄程式</font>例題1:
-        a=4, b=5, ∠C=40<sup>o</sup>
-        ，求c。
+        <font color="#FF0000">附錄程式</font>例題1: a=4, b=5, ∠C=40<sup>o</sup> ，求c。
     </p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 0 EXE (0代表最後輸入的數據為角度(0相似度數° )
-        )</p>
-    <p>
-        4 EXE 5 EXE
-        40 EXE (顯示答案為c=3.2184)</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 0 EXE (0代表最後輸入的數據為角度(0相似度數° ) )</p>
+    <p> 4 EXE 5 EXE 40 EXE (顯示答案為c=3.2184)</p>
     <p></p>
     <p>
-        <font color="#FF0000">附錄程式</font>例題2:
-        a=4, b=5, c=6，求∠C。
+        <font color="#FF0000">附錄程式</font>例題2: a=4, b=5, c=6，求∠C。
     </p>
-    <p>注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (1代表
-        最後輸入的數據為邊長) </p>
-    <p>
-        4 EXE 5 EXE
-        6EXE (顯示答案為∠C=82.8192<sup>o</sup>)</p>
+    <p>注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 1 EXE (1代表 最後輸入的數據為邊長) </p>
+    <p> 4 EXE 5 EXE 6EXE (顯示答案為∠C=82.8192<sup>o</sup>)</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

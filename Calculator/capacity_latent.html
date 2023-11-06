@@ -19,15 +19,13 @@
     <p>ml資料組: 輸入資料組時順序輸入質量(m)及比潛熱(l)後，第三個變數不輸入(直接EXE)，即可完這組資料輸入。</p>
     <p>E資料組: 輸入資料組時輸入能量資料(E)後，第二個變數不輸入(直接EXE)，即可完這組資料輸入。</p>
     <p>　</p>
-    <p>2. 將所有數據輸入係照上述分組方法輸入，若果是需要計算的未知變數，請輸入Ans即可。當完成所有資料組數據輸入後，不輸入資料組第一個變數(直接按
-        EXE)即可，程式會顯示最後計算答案。</p>
+    <p>2. 將所有數據輸入係照上述分組方法輸入，若果是需要計算的未知變數，請輸入Ans即可。當完成所有資料組數據輸入後，不輸入資料組第一個變數(直接按 EXE)即可，程式會顯示最後計算答案。</p>
     <p>　</p>
     <p>註1: 輸入各資料組第一個變數時，計算機會有輸入M的提示(?M)，輸入每組資料第一個變數時請核對是否有這個提示，以減少輸入錯誤的機會。</p>
     <p>註2: 各組資料組沒有特定的輸入次序，但建議有系統地將各組資料輸入，避免因輸入遺漏而令計算錯誤。</p>
     <p>註3: 注意<b>
             <font color="#FF0000">程式中比潛熱資料是有正負的分別</font>
-        </b>，若果該物質物態改變內能增加為正(例如:
-        汽化及熔解)，相反為負(例如: 凝固及凝結)。</p>
+        </b>，若果該物質物態改變內能增加為正(例如: 汽化及熔解)，相反為負(例如: 凝固及凝結)。</p>
     <p>註4: 程式只可以計算一個未知變數，因此大多數情況只輸入一次Ans，但某些特別情況計算(只限相同質量或相同最後&#28201;度的情況)，需要輸入多於一次Ans，有關計算情況可以參考例題3及例題6。</p>
     <p>　</p>
     <p>
@@ -36,109 +34,91 @@
     <p>
         <font color="#FF0000">注意</font> : 藍色符號(<font color="#0000FF">e</font> 按 <b>
             <font color="#FF0000">ALPHA</font>
-        </b> e<sup>x</sup>，<font color="#0000FF"> n</font>
-        按 SHIFT 1 3 ，<font color="#0000FF">Σx</font> 按 SHIFT 1 2)
+        </b> e<sup>x</sup>，<font color="#0000FF"> n</font> 按 SHIFT 1 3 ，<font color="#0000FF">Σx</font> 按 SHIFT 1 2)
     </p>
     <p>程式 (256 bytes)</p>
-    <p>ClrStat: Rec( 0 , 0: Lbl 0: <font color="#0000FF">e</font>→A:
-        <font color="#0000FF">e</font>→B: 0→C: <font color="#0000FF">e</font>→M:
-    </p>
+    <p>ClrStat: Rec( 0 , 0: Lbl 0: <font color="#0000FF">e</font>→A: <font color="#0000FF">e</font>→B: 0→C: <font
+            color="#0000FF">e</font>→M: </p>
     <p>π: ?→M: M- <font color="#0000FF">e</font>
-        <font color="#FF0000">=&gt;</font> π
-        <font color="#FF0000">=&gt;</font> ?→C: C<font color="#FF0000">=&gt;</font> π
-        <font color="#FF0000">=&gt;</font> ?→A: A- <font color="#0000FF">e</font>
+        <font color="#FF0000">=&gt;</font> π <font color="#FF0000">=&gt;</font> ?→C: C<font color="#FF0000">=&gt;</font>
+        π <font color="#FF0000">=&gt;</font> ?→A: A- <font color="#0000FF">e</font>
         <font color="#FF0000">=&gt;</font> π <font color="#FF0000">=&gt;</font> ?→B:
     </p>
-    <p>A- π <font color="#FF0000">=&gt;</font> B- π <font color="#FF0000">=&gt;</font> C-
-        π <font color="#FF0000">=&gt;</font> M- π <font color="#FF0000">=&gt;</font> Y + M(C=0)(M≠<font color="#0000FF">
-            e</font>)
-        - MC(A=<font color="#0000FF">e</font>) </p>
-    <p>- MC(B - A→Y: M=π <font color="#FF0000">=&gt;</font> C≠0→D: Ans <font color="#FF0000">=&gt;</font> D=1
-        <font color="#FF0000">=&gt;</font> X + C(B - A + (A=<font color="#0000FF">e</font>→X:
-    </p>
+    <p>A- π <font color="#FF0000">=&gt;</font> B- π <font color="#FF0000">=&gt;</font> C- π <font color="#FF0000">=&gt;
+        </font> M- π <font color="#FF0000">=&gt;</font> Y + M(C=0)(M≠<font color="#0000FF"> e</font>) - MC(A=<font
+            color="#0000FF">e</font>) </p>
+    <p>- MC(B - A→Y: M=π <font color="#FF0000">=&gt;</font> C≠0→D: Ans <font color="#FF0000">=&gt;</font> D=1 <font
+            color="#FF0000">=&gt;</font> X + C(B - A + (A=<font color="#0000FF">e</font>→X: </p>
     <p>If B=π: Then 4→D: Y + MC( A(A≠<font color="#0000FF">e</font>) + (A=<font color="#0000FF">e</font>→Y:</p>
-    <p>X + MC→X: IfEnd: A=π
-        <font color="#FF0000">=&gt;</font> 3→D: Ans <font color="#FF0000">=&gt;</font> B ; MC
-        <font color="#FF0000">DT</font>:
-    </p>
-    <p>C=π <font color="#FF0000">=&gt;</font> 2→D: Ans <font color="#FF0000">
-            =&gt;</font> M(B - A + (<font color="#0000FF">e</font>=A <font color="#FF0000">DT</font>:
-        M- <font color="#0000FF">e</font>
+    <p>X + MC→X: IfEnd: A=π <font color="#FF0000">=&gt;</font> 3→D: Ans <font color="#FF0000">=&gt;</font> B ; MC <font
+            color="#FF0000">DT</font>: </p>
+    <p>C=π <font color="#FF0000">=&gt;</font> 2→D: Ans <font color="#FF0000"> =&gt;</font> M(B - A + (<font
+            color="#0000FF">e</font>=A <font color="#FF0000">DT</font>: M- <font color="#0000FF">e</font>
         <font color="#FF0000">=&gt;</font> Goto 0:
     </p>
-    <p>D=1 <font color="#FF0000">=&gt;</font> Y÷X◢ D=2
-        <font color="#FF0000">=&gt;</font> Y÷<font color="#0000FF">Σx</font>◢ D=3
-        <font color="#FF0000">=&gt;</font>
-        <font color="#0000FF">n</font><sup>-1</sup>(<font color="#0000FF">Σx</font>
-        - Y◢
+    <p>D=1 <font color="#FF0000">=&gt;</font> Y÷X◢ D=2 <font color="#FF0000">=&gt;</font> Y÷<font color="#0000FF">Σx
+        </font>◢ D=3 <font color="#FF0000">=&gt;</font>
+        <font color="#0000FF">n</font><sup>-1</sup>(<font color="#0000FF">Σx</font> - Y◢
     </p>
     <p>D <font color="#FF0000">=&gt;</font> Y÷X◢ - Y</p>
     <p>　</p>
-    <p>例題1: 水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的沸點為100&#730;C，一加熱器總共提供510800 J
-        能量，將0.2 kg 30&#730;C的水加熱至完全汽化為100&#730;C的水蒸汽，求水的汽化比潛熱。</p>
+    <p>例題1: 水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的沸點為100&#730;C，一加熱器總共提供510800 J 能量，將0.2 kg
+        30&#730;C的水加熱至完全汽化為100&#730;C的水蒸汽，求水的汽化比潛熱。</p>
     <p>按 Prog 1 再按 510800 EXE (加熱器提供的熱能) EXE (不輸入表示之前輸入為能量E)</p>
     <p>0.2 EXE (水的質量) 4200 EXE (水的比熱容量) 30 EXE (水的最初&#28201;度) 100 EXE (水的最後&#28201;度)</p>
     <p>0.2 EXE (水汽化為水蒸汽的質量) Ans EXE (輸入Ans表示計算比潛熱) EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
     <p>EXE (第一項不輸入表示沒有其它資料，顯示比潛熱為 2260000 J kg<sup>-1</sup>)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>　</p>
-    <p>例題2: 水的汽化比潛熱為 2.26×10<sup>6</sup> J kg<sup>-1</sup>，水的沸點為100&#730;C，一加熱器總共提供510800
-        J 能量，將0.2 kg 30&#730;C的水加熱至完全汽化為100&#730;C的水蒸汽，求水的比熱容量。</p>
+    <p>例題2: 水的汽化比潛熱為 2.26×10<sup>6</sup> J kg<sup>-1</sup>，水的沸點為100&#730;C，一加熱器總共提供510800 J 能量，將0.2 kg
+        30&#730;C的水加熱至完全汽化為100&#730;C的水蒸汽，求水的比熱容量。</p>
     <p>按 Prog 1 再按 510800 EXE (加熱器提供的熱能) EXE (不輸入表示之前輸入為能量E)</p>
     <p>0.2 EXE (水的質量) Ans EXE (輸入Ans表示計算比熱容量) 30 EXE (水的最初&#28201;度) 100 EXE (水的最後&#28201;度)</p>
-    <p>0.2 EXE (水汽化為水蒸汽的質量) 2.26 <font color="#FF0000">EXP</font> 6 EXE (水的汽化比潛熱)
-        EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
+    <p>0.2 EXE (水汽化為水蒸汽的質量) 2.26 <font color="#FF0000">EXP</font> 6 EXE (水的汽化比潛熱) EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
     <p>EXE (第一項不輸入表示沒有其它資料，顯示比熱容量為4200 J kg<sup>-1</sup>K<sup>-1</sup>)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>　</p>
-    <p>例題3: 水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的汽化比潛熱為 2.26×10<sup>6</sup>
-        J kg<sup>-1</sup>，水的沸點為100&#730;C，一加熱器總共提供510800 J 能量，將m kg
-        30&#730;C的水加熱至完全汽化為100&#730;C的水蒸汽，求m的數值。</p>
+    <p>例題3: 水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的汽化比潛熱為 2.26×10<sup>6</sup> J
+        kg<sup>-1</sup>，水的沸點為100&#730;C，一加熱器總共提供510800 J 能量，將m kg 30&#730;C的水加熱至完全汽化為100&#730;C的水蒸汽，求m的數值。</p>
     <p>注意: 由於未知數質量m，同時在比熱容量及比潛熱公式出現，所以有兩組未知數資料都要輸入Ans。</p>
     <p>按 Prog 1 再按 510800 EXE (加熱器提供的熱能) EXE (不輸入表示之前輸入為能量E)</p>
     <p>Ans EXE (輸入Ans表示計算水的質量) 4200 EXE (水比熱容量) 30 EXE (水的最初&#28201;度) 100 EXE (水的最後&#28201;度)</p>
-    <p>Ans EXE (輸入Ans表示計算水汽化為水蒸汽的質量) 2.26 <font color="#FF0000">EXP</font> 6 EXE
-        (水的汽化比潛熱) EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
+    <p>Ans EXE (輸入Ans表示計算水汽化為水蒸汽的質量) 2.26 <font color="#FF0000">EXP</font> 6 EXE (水的汽化比潛熱) EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
     <p>EXE (第一項不輸入表示沒有其它資料，顯示質量為 0.2 kg)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>　</p>
-    <p>例題4: 水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的汽化比潛熱為 2.26×10<sup>6</sup>
-        J kg<sup>-1</sup>，水的沸點為100&#730;C，一加熱器總共提供510800 J 能量，將0.2 kg
-        的水加熱至完全汽化為水蒸汽，求水的最初&#28201;度。</p>
+    <p>例題4: 水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的汽化比潛熱為 2.26×10<sup>6</sup> J
+        kg<sup>-1</sup>，水的沸點為100&#730;C，一加熱器總共提供510800 J 能量，將0.2 kg 的水加熱至完全汽化為水蒸汽，求水的最初&#28201;度。</p>
     <p>按 Prog 1 再按 510800 EXE (加熱器提供的熱能) EXE (不輸入表示之前輸入為能量E)</p>
     <p>0.2 EXE (水的質量) 4200 EXE (水比熱容量) Ans EXE (輸入Ans表示計算水的最初&#28201;度) 100 EXE (水的最後&#28201;度)</p>
-    <p>0.2 EXE (水汽化為水蒸汽的質量) 2.26 <font color="#FF0000">EXP</font> 6 EXE (水的汽化比潛熱)
-        EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
+    <p>0.2 EXE (水汽化為水蒸汽的質量) 2.26 <font color="#FF0000">EXP</font> 6 EXE (水的汽化比潛熱) EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
     <p>EXE (第一項不輸入表示沒有其它資料，顯示水的最後&#28201;度為30&#730;C)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>　</p>
-    <p>例題5: 水的質量為0.2kg，&#28201;度為30&#730;C，水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的汽代比潛熱為
-        2.26×10<sup>6</sup> J kg<sup>-1</sup>，求發熱器需要多少能量才可以將水加熱至完全變為100&#730;C的水蒸汽。</p>
+    <p>例題5: 水的質量為0.2kg，&#28201;度為30&#730;C，水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的汽代比潛熱為 2.26×10<sup>6</sup> J
+        kg<sup>-1</sup>，求發熱器需要多少能量才可以將水加熱至完全變為100&#730;C的水蒸汽。</p>
     <p>按 Prog 1 再按 Ans EXE (輸入Ans表示計算熱能) EXE (不輸入表示之前輸入為能量E)</p>
     <p>0.2 EXE (水的質量) 4200 EXE (水的比熱容量) 30 EXE (水的最初&#28201;度) 100 EXE (水的最後&#28201;度)</p>
-    <p>0.2 EXE (水汽化為水蒸汽的質量) 2.26 <font color="#FF0000">EXP</font> 6 EXE (水的汽化比潛熱)
-        EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
+    <p>0.2 EXE (水汽化為水蒸汽的質量) 2.26 <font color="#FF0000">EXP</font> 6 EXE (水的汽化比潛熱) EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
     <p>EXE (第一項不輸入表示沒有其它資料，顯示熱能為 510800 J )</p>
     <p>　</p>
-    <p>例題6: 0.2 kg 0&#730;C 的冰塊加入 5 kg 90&#730;C 液體A中混合，冰的熔解比潛熱為3.36×10<sup>5</sup>
-        J kg<sup>-1</sup>，水的比熱容為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，液體A的比熱容為
-        2000 J kg<sup>-1</sup>K<sup>-1</sup>，假設沒有任何熱能散失於環境中，求混合物的最終&#28201;度。</p>
+    <p>例題6: 0.2 kg 0&#730;C 的冰塊加入 5 kg 90&#730;C 液體A中混合，冰的熔解比潛熱為3.36×10<sup>5</sup> J kg<sup>-1</sup>，水的比熱容為 4200 J
+        kg<sup>-1</sup>K<sup>-1</sup>，液體A的比熱容為 2000 J kg<sup>-1</sup>K<sup>-1</sup>，假設沒有任何熱能散失於環境中，求混合物的最終&#28201;度。</p>
     <p>按 Prog 1 再按</p>
-    <p>0.2 EXE (冰熔化為水的質量) 3.36 <font color="#FF0000">EXP</font> 5 EXE (冰的熔解比潛熱) EXE
-        (不輸入表示之前輸入為比潛熱相關資料)</p>
+    <p>0.2 EXE (冰熔化為水的質量) 3.36 <font color="#FF0000">EXP</font> 5 EXE (冰的熔解比潛熱) EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
     <p>0.2 EXE (水的質量) 4200 EXE (水的比熱容量) 0 EXE (水的最初&#28201;度) Ans EXE (輸入Ans表示計算水的最後&#28201;度)</p>
     <p>5 EXE (液體A的質量) 2000 EXE (液體A比熱容量) 90 EXE (液體A最初&#28201;度) Ans EXE (輸入Ans表示計算液體A的最後&#28201;度)</p>
     <p>EXE (第一項不輸入表示沒有其它資料，顯示最終&#28201;度為76.82656827&#730;C )</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>　</p>
-    <p>例題7: 水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的汽代比潛熱為
-        2.26×10<sup>6</sup> J kg<sup>-1</sup>，0.2kg 100&#730;C水蒸汽，求100&#730;C水蒸汽轉變為80&#730;C的水時所釋放的熱能。</p>
+    <p>例題7: 水的比熱容量為 4200 J kg<sup>-1</sup>K<sup>-1</sup>，水的汽代比潛熱為 2.26×10<sup>6</sup> J kg<sup>-1</sup>，0.2kg
+        100&#730;C水蒸汽，求100&#730;C水蒸汽轉變為80&#730;C的水時所釋放的熱能。</p>
     <p>按 Prog 1 再按 Ans EXE (輸入Ans表示計算熱能) EXE (不輸入表示之前輸入為能量E)</p>
     <p>0.2 EXE (水的質量) 4200 EXE (水的比熱容量) 100 EXE (水的最初&#28201;度) 80 EXE (水的最後&#28201;度)</p>
     <p>0.2 EXE (水汽化為水蒸汽的質量) <b>
             <font color="#FF0000">-</font>
-        </b>&nbsp; 2.26 <font color="#FF0000">EXP</font>
-        6 EXE (比潛熱，注意是<font color="#FF0000">負數</font>因為物態改變為<font color="#FF0000">凝結</font>) </p>
+        </b>&nbsp; 2.26 <font color="#FF0000">EXP</font> 6 EXE (比潛熱，注意是<font color="#FF0000">負數</font>因為物態改變為<font
+            color="#FF0000">凝結</font>) </p>
     <p>EXE (不輸入表示之前輸入為比潛熱相關資料)</p>
     <p>EXE (第一項不輸入表示沒有其它資料，顯示熱能為 - 468800 J )</p>
     <p>負數答案表示損失能量，即釋放的熱能為 468800 J</p>

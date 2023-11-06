@@ -1,14 +1,12 @@
 <html>
 
 <head>
-    <title>經驗貝氏信度模型(Empirical Bayes Estimation for
-        the Buhlmann-Straub Model</title>
+    <title>經驗貝氏信度模型(Empirical Bayes Estimation for the Buhlmann-Straub Model</title>
     <meta name="Microsoft Theme" content="indust 011">
 
 <body>
     <p align="center"><u><b>
-                <font size="5">經驗貝氏信度模型(Empirical Bayes Estimation for
-                    the Buhlmann-Straub Model)</font>
+                <font size="5">經驗貝氏信度模型(Empirical Bayes Estimation for the Buhlmann-Straub Model)</font>
             </b></u></p>
     <p>更新寫日期: 2015年2月11日</p>
     <p>
@@ -16,87 +14,55 @@
     </p>
     <p>
         <font color="#FF0000">注意</font> : 藍色的英文字為統計模式中的變數(<font color="#0000FF"> n</font> 按 Shift 1 3， <font
-            color="#0000FF">Σx </font>按 Shift 1 2， <font color="#0000FF">Σx<sup>2</sup> </font>按 Shift 1
-        3，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">σx</font>
-        按
-        SHIFT 2 1 2，<span style="text-decoration: overline">
+            color="#0000FF">Σx </font>按 Shift 1 2， <font color="#0000FF">Σx<sup>2</sup> </font>按 Shift 1 3，<font
+            color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">σx</font> 按 SHIFT 2 1 2，<span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>為平均x
-        按 shift 2 1 1)，FreqOn 按 Shift MODE ← ← 1。
+        </span>為平均x 按 shift 2 1 1)，FreqOn 按 Shift MODE ← ← 1。
     </p>
     <p>程式 (222 bytes)</p>
     <p>FreqOn: 0→M: ?→A: 0→C: Lbl 0: 0→D: Rec( 0, 0:</p>
     <p>While A: ?→B: X + A→X: Y + B→Y: C + B<sup>2</sup><span lang="en">÷A→C:</span></p>
     <p><span lang="en">D - 2B→D: 1 + M→M: B÷A→A: </span>?→A: WhileEnd:</p>
-    <p>X◢ Y<span lang="en">÷X→Y◢ Ans , X ; X <font color="#FF0000">DT</font>: M - 1
-            + <font size="1">E</font>-9→M:</span></p>
-    <p>C + DY + XY<sup>2</sup>→C: ?→A: A <font color="#FF0000">=&gt;</font> Goto 0:
-        <font color="#0000FF"><span style="text-decoration: overline">x</span></font>→X◢
-    </p>
-    <p>Fix 0: Rnd(M→A: Norm 1: C<span lang="en">÷A→Y◢ <font size="1">E</font>9(M -
-            A→M:</span></p>
+    <p>X◢ Y<span lang="en">÷X→Y◢ Ans , X ; X <font color="#FF0000">DT</font>: M - 1 + <font size="1">E</font>
+            -9→M:</span></p>
+    <p>C + DY + XY<sup>2</sup>→C: ?→A: A <font color="#FF0000">=&gt;</font> Goto 0: <font color="#0000FF"><span
+                style="text-decoration: overline">x</span></font>→X◢ </p>
+    <p>Fix 0: Rnd(M→A: Norm 1: C<span lang="en">÷A→Y◢ <font size="1">E</font>9(M - A→M:</span></p>
     <p><span lang="en">
-            <font color="#0000FF">n σx</font> <sup>2</sup> - YM + Y: Ans
-            ÷ (<font color="#0000FF">n</font> - <font color="#0000FF">n</font><sup>-1</sup>
+            <font color="#0000FF">n σx</font> <sup>2</sup> - YM + Y: Ans ÷ (<font color="#0000FF">n</font> - <font
+                color="#0000FF">n</font><sup>-1</sup>
         </span>
-        <font color="#0000FF">Σy</font><span lang="en">◢
-            Y ÷ Ans→C◢</span>
+        <font color="#0000FF">Σy</font><span lang="en">◢ Y ÷ Ans→C◢</span>
     </p>
-    <p><span lang="en-us">ClrStat: While M: M - 1→M: </span>?→A: ?→B: A
-        <span lang="en">÷ (A + C→D◢</span>
-    </p>
-    <p><span lang="en">B<b> ;</b> D <font color="#FF0000">DT</font>: BD + X - XD◢
-            WhileEnd: </span>
+    <p><span lang="en-us">ClrStat: While M: M - 1→M: </span>?→A: ?→B: A <span lang="en">÷ (A + C→D◢</span> </p>
+    <p><span lang="en">B<b> ;</b> D <font color="#FF0000">DT</font>: BD + X - XD◢ WhileEnd: </span>
         <font color="#0000FF"><span style="text-decoration: overline">x</span></font>
     </p>
     <p>　</p>
     <p>
-    <p>
-        Press Prog 1&nbsp;&nbsp; </p>
-    <p>
-        40 EXE 8000 EXE (read-out: A? and <font color="#008000">200</font>) </p>
-    <p>
-        50 EXE 11000 EXE (read-out: A? and <font color="#008000">220</font>) </p>
-    <p>
-        70 EXE 15000 EXE (read-out: A? and <font color="#008000">214.2857143</font>) </p>
-    <p>
-        0 EXE (0 represent end of first group, read-out: <font color="#FF0000">160</font>)</p>
-    <p>
-        EXE (read-out: <font color="#FF0000">212.5</font>)</p>
-    <p>
-        EXE 100 EXE 20000 EXE (read-out: A? and <font color="#008000">200</font>) </p>
-    <p>
-        120 EXE 24000 EXE (read-out: A? and <font color="#008000">200</font>) </p>
-    <p>
-        115 EXE 19000 EXE (read-out: A? and <font color="#008000">165.2173913</font>) </p>
-    <p>
-        0 EXE (0 represent end of second group, read-out: <font color="#FF0000">335</font>)</p>
-    <p>
-        EXE (read-out: <font color="#FF0000">188.0597015</font>)</p>
-    <p>
-        EXE 0 EXE (0 represent No other group, read-out: <font color="#FF0000">
-            195.959596</font>)</p>
-    <p>
-        EXE (read-out: <font color="#FF0000">25163.73876</font>)</p>
-    <p>
-        EXE (read-out: <font color="#FF0000">182.4695929</font>)</p>
-    <p>
-        EXE (read-out: <font color="#FF0000">137.9064772</font>)</p>
-    <p>
-        EXE 160 EXE 212.5 EXE (read-out: <font color="#FF0000">0.537081306</font>)</p>
-    <p>
-        EXE (read-out: <font color="#FF0000">204.8431378</font>)</p>
-    <p>
-        EXE 335 EXE 188.0597015 EXE (read-out: <font color="#FF0000">0.708385306</font>)</p>
-    <p>
-        EXE (read-out: <font color="#FF0000">190.3634268</font>)</p>
-    <p>
-        EXE (read-out: <font color="#FF0000">198.5990667</font>)</p>
-    <p>
-        　</p>
-    <p>
-        
-    </p>
+    <p> Press Prog 1&nbsp;&nbsp; </p>
+    <p> 40 EXE 8000 EXE (read-out: A? and <font color="#008000">200</font>) </p>
+    <p> 50 EXE 11000 EXE (read-out: A? and <font color="#008000">220</font>) </p>
+    <p> 70 EXE 15000 EXE (read-out: A? and <font color="#008000">214.2857143</font>) </p>
+    <p> 0 EXE (0 represent end of first group, read-out: <font color="#FF0000">160</font>)</p>
+    <p> EXE (read-out: <font color="#FF0000">212.5</font>)</p>
+    <p> EXE 100 EXE 20000 EXE (read-out: A? and <font color="#008000">200</font>) </p>
+    <p> 120 EXE 24000 EXE (read-out: A? and <font color="#008000">200</font>) </p>
+    <p> 115 EXE 19000 EXE (read-out: A? and <font color="#008000">165.2173913</font>) </p>
+    <p> 0 EXE (0 represent end of second group, read-out: <font color="#FF0000">335</font>)</p>
+    <p> EXE (read-out: <font color="#FF0000">188.0597015</font>)</p>
+    <p> EXE 0 EXE (0 represent No other group, read-out: <font color="#FF0000"> 195.959596</font>)</p>
+    <p> EXE (read-out: <font color="#FF0000">25163.73876</font>)</p>
+    <p> EXE (read-out: <font color="#FF0000">182.4695929</font>)</p>
+    <p> EXE (read-out: <font color="#FF0000">137.9064772</font>)</p>
+    <p> EXE 160 EXE 212.5 EXE (read-out: <font color="#FF0000">0.537081306</font>)</p>
+    <p> EXE (read-out: <font color="#FF0000">204.8431378</font>)</p>
+    <p> EXE 335 EXE 188.0597015 EXE (read-out: <font color="#FF0000">0.708385306</font>)</p>
+    <p> EXE (read-out: <font color="#FF0000">190.3634268</font>)</p>
+    <p> EXE (read-out: <font color="#FF0000">198.5990667</font>)</p>
+    <p> 　</p>
+    <p> </p>
     <p>
     <p>　</p>
     <p>Reference:</p>

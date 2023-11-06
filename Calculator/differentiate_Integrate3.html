@@ -11,16 +11,10 @@
     <p>更新日期: 2014年2月11日</p>
     <p>注意: <font size="1">E</font> 是按 EXP。</p>
     <p>程式 (126 bytes，不包括兩個函數方程式)</p>
-    <p>ClrMemory: ?→Y: ?→X: If <font color="#FF0000">cos<sup>-1</sup>(</font> Y:
-        Then <font size="1">E</font> 4→Y: </p>
-    <p>While Ans:
-        <font color="#008000">X<sup>3</sup>
-            - 2X - 1</font>→C: X + Y<sup>-1</sup>(1 - 3M→X:
-    </p>
-    <p>M=0
-        <font color="#FF0000">=&gt;</font> C→A◢ M<font face="新細明體">≠</font>2<font color="#FF0000">M+ =&gt;</font>
-        C→D: WhileEnd:
-    </p>
+    <p>ClrMemory: ?→Y: ?→X: If <font color="#FF0000">cos<sup>-1</sup>(</font> Y: Then <font size="1">E</font> 4→Y: </p>
+    <p>While Ans: <font color="#008000">X<sup>3</sup> - 2X - 1</font>→C: X + Y<sup>-1</sup>(1 - 3M→X: </p>
+    <p>M=0 <font color="#FF0000">=&gt;</font> C→A◢ M<font face="新細明體">≠</font>2<font color="#FF0000">M+ =&gt;</font>
+        C→D: WhileEnd: </p>
     <p>. 5Y(D - C→B◢ Y<sup>2</sup>(D + C - 2A→C: </p>
     <p>Else ?→Y: ?→A: A<sup>-1</sup>(Y-X→Y: </p>
     <p>For 0→B To A:<font color="#008000"> </font>
@@ -30,35 +24,25 @@
     <p>　</p>
     <p>註1: 綠色是計算微分的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是函數方程(變數是X)，若果想計算其它方程，只要修改綠色的部份。</p>
     <p>註2: 紫色的 <font color="#800080">ln( x</font>
-        <font color="#008000"> </font>是
-        計算<font color="#800080">定積分(梯形法則)</font>的函數方程(變數是X)，若果想計算其它函數的積分，只要修改紫色的部份。
+        <font color="#008000"> </font>是 計算<font color="#800080">定積分(梯形法則)</font>的函數方程(變數是X)，若果想計算其它函數的積分，只要修改紫色的部份。
     </p>
-    <p>註3: 在微分或積分三角函數時,須在函數的角加入弧度(radian)數單位<font color="#FF0000"><sup>r</sup></font>(按
-        SHIFT Ans 2)，例如: sin(X<sup>r</sup> 或 cos((π+X<sup>3</sup>)<sup>r</sup>),或在開始
-        執行程式前時先設定為Rad(按 SHIFT MODE 2 )，否則計算錯誤。</p>
+    <p>註3: 在微分或積分三角函數時,須在函數的角加入弧度(radian)數單位<font color="#FF0000"><sup>r</sup></font>(按 SHIFT Ans 2)，例如:
+        sin(X<sup>r</sup> 或 cos((π+X<sup>3</sup>)<sup>r</sup>),或在開始 執行程式前時先設定為Rad(按 SHIFT MODE 2 )，否則計算錯誤。</p>
     <p>　</p>
     <p>例題1: 計算 f(x) = x<sup>3</sup> - 2x - 1 在 x = 1的第一及第二導數的近似值。</p>
     <p>
-        <font face="新細明體">按
-            Prog 1&nbsp; 再按 EXE (不輸入或輸入0代表計算微分)</font>
+        <font face="新細明體">按 Prog 1&nbsp; 再按 EXE (不輸入或輸入0代表計算微分)</font>
     </p>
     <p>
-        <font face="新細明體">1 EXE (顯示 f(1)為 -2) EXE
-            (顯示f'(1)為1.00000001) EXE (顯示f''(1)為6)</font>
+        <font face="新細明體">1 EXE (顯示 f(1)為 -2) EXE (顯示f'(1)為1.00000001) EXE (顯示f''(1)為6)</font>
     </p>
     <p>　</p>
     <p>計算完結後，按 RCL A、RCL B及RCL C分別顯示函數值、第一導數及第二導數的近似值。</p>
     <p>　</p>
-    <p>例題2: 利用梯形法則，區間數目為10，計算
-        
-    </p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (輸入1代表計算積分)</p>
-    <p>
-        1 EXE 2 EXE 10 EXE (顯示答案為0.385877936)</p>
-    <p>
-        　</p>
+    <p>例題2: 利用梯形法則，區間數目為10，計算 </p>
+    <p> 按 Prog 1 再按 1 EXE (輸入1代表計算積分)</p>
+    <p> 1 EXE 2 EXE 10 EXE (顯示答案為0.385877936)</p>
+    <p> 　</p>
     <p>
         <font color="#FF0000">注意:</font> 梯形法則的區間數目必為<font color="#FF0000">正整數</font>
     </p>
@@ -66,8 +50,7 @@
     <p><b>
             <font color="#800080">附錄程式(由網友roviury提供)</font>
         </b></p>
-    <p>附錄程式的函數方程較接程式底部，較方便修改函數方程，只要進入程式編輯模式後，按 <font face="新細明體">↓
-            則可直接到達程式最尾的位置，因此可以較快找到要修改函數的位置，但程式速度會較慢小許。</font>
+    <p>附錄程式的函數方程較接程式底部，較方便修改函數方程，只要進入程式編輯模式後，按 <font face="新細明體">↓ 則可直接到達程式最尾的位置，因此可以較快找到要修改函數的位置，但程式速度會較慢小許。</font>
     </p>
     <p>　</p>
     <p><b>
@@ -75,53 +58,38 @@
         </b></p>
     <p>　</p>
     <p>附錄程式(<font color="#008000">142</font>/148 bytes，不包括紫色的函數方程，程式自然離開)</p>
-    <p>?→D: ?→X: D <font color="#FF0000">=&gt;</font>
-        ?→Y: </p>
+    <p>?→D: ?→X: D <font color="#FF0000">=&gt;</font> ?→Y: </p>
     <p>
-        <font size="1">E</font>- 4(X+(X=0→C: D<font color="#FF0000"> =&gt; </font>D<sup>-1</sup>(Y
-        - X→C: 0→M:
+        <font size="1">E</font>- 4(X+(X=0→C: D<font color="#FF0000"> =&gt; </font>D<sup>-1</sup>(Y - X→C: 0→M:
     </p>
     <p>For 0→B To D+3: If D: Then Ans - . 5Ans(B<sup>2</sup>=BD<font color="#FF0000">M+</font>: </p>
-    <p>B&lt;D <font color="#FF0000">=&gt;</font> Goto 0: CM<font color="#008000">→A</font>:
-        Break: IfEnd: Ans→Y: </p>
-    <p>If B=3: Then A◢ .5C<sup>-1</sup>(Y - M<font color="#008000">→B</font>◢ C<sup>2
-            -1</sup>(M + Y - 2A<font color="#008000">→C</font>: Break: IfEnd: </p>
-    <p>A→M: Y→A: -1: Lbl 0: X+C(B+Ans: <font color="#800080">Ans<sup>3</sup> - 2Ans - 1</font>:
-        Next</p>
-    <p>註1: 紫色<font color="#800080">Ans<sup>3</sup> - 2Ans - 1</font>是函數方程(變數是Ans)，若果想計算其它方程，只要修改
-        紫色的部份。</p>
-    <p>註2: 在微分或積分三角函數時,須在函數的角加入弧度(radian)數單位<font color="#FF0000"><sup>r</sup></font>(按
-        SHIFT Ans 2)，例如: sin(Ans<sup>r</sup> 或 cos((π+Ans<sup>3</sup>)<sup>r</sup>),或在開始
-        執行程式前時先設定為Rad(按 SHIFT MODE 2 )，否則計算錯誤。</p>
+    <p>B&lt;D <font color="#FF0000">=&gt;</font> Goto 0: CM<font color="#008000">→A</font>: Break: IfEnd: Ans→Y: </p>
+    <p>If B=3: Then A◢ .5C<sup>-1</sup>(Y - M<font color="#008000">→B</font>◢ C<sup>2 -1</sup>(M + Y - 2A<font
+            color="#008000">→C</font>: Break: IfEnd: </p>
+    <p>A→M: Y→A: -1: Lbl 0: X+C(B+Ans: <font color="#800080">Ans<sup>3</sup> - 2Ans - 1</font>: Next</p>
+    <p>註1: 紫色<font color="#800080">Ans<sup>3</sup> - 2Ans - 1</font>是函數方程(變數是Ans)，若果想計算其它方程，只要修改 紫色的部份。</p>
+    <p>註2: 在微分或積分三角函數時,須在函數的角加入弧度(radian)數單位<font color="#FF0000"><sup>r</sup></font>(按 SHIFT Ans 2)，例如:
+        sin(Ans<sup>r</sup> 或 cos((π+Ans<sup>3</sup>)<sup>r</sup>),或在開始 執行程式前時先設定為Rad(按 SHIFT MODE 2 )，否則計算錯誤。</p>
     <p>　</p>
     <p>
         <font color="#FF0000">附錄程式例題1</font>: 計算 f(x) = x<sup>3</sup> - 2x - 1 在 x = 1的第一及第二導數的近似值。
     </p>
     <p>
-        <font face="新細明體">按
-            Prog 1&nbsp; 再按 EXE (輸入0代表計算微分)</font>
+        <font face="新細明體">按 Prog 1&nbsp; 再按 EXE (輸入0代表計算微分)</font>
     </p>
     <p>
-        <font face="新細明體">1 EXE (顯示 f(1)為 -2) EXE
-            (顯示f'(1)為1.00000001) EXE (顯示f''(1)為6)</font>
+        <font face="新細明體">1 EXE (顯示 f(1)為 -2) EXE (顯示f'(1)為1.00000001) EXE (顯示f''(1)為6)</font>
     </p>
     <p>　</p>
     <p>計算完結後，按 RCL A、RCL B及RCL C分別顯示函數值、第一導數及第二導數的近似值。</p>
     <p>　</p>
     <p>
         <font color="#FF0000">附錄程式例題2</font>: 利用梯形法則，區間數目為10，計算
-        
     </p>
-    <p>
-        先將程式中的綠色函數方程改為 ln( Ans</p>
-    <p>
-        再重新執行程式，
-        按 Prog 1
-        再按 10 EXE (輸入區間數目)</p>
-    <p>
-        1 EXE 2 EXE (顯示答案為0.385877936)</p>
-    <p>
-        　</p>
+    <p> 先將程式中的綠色函數方程改為 ln( Ans</p>
+    <p> 再重新執行程式， 按 Prog 1 再按 10 EXE (輸入區間數目)</p>
+    <p> 1 EXE 2 EXE (顯示答案為0.385877936)</p>
+    <p> 　</p>
     <p>
         <font color="#FF0000">注意:</font> 梯形法則的區間數目必為<font color="#FF0000">正整數</font>
     </p>

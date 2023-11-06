@@ -9,65 +9,40 @@
                 <font size="5">外點至圓的切線斜率</font>
             </b></u></p>
     <p>更新日期: 2012年4月16日</p>
-    <p>第二個程式較長，但若果輸入數據為整數(或分數)及答案為有理數時，答案會以分數形式表示建議將計數機預先設定為假分數形式表示(按
-        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp;)。
-    </p>
+    <p>第二個程式較長，但若果輸入數據為整數(或分數)及答案為有理數時，答案會以分數形式表示建議將計數機預先設定為假分數形式表示(按 <font color="#FF0000">SHIFT SETUP → → 2</font>
+        &nbsp;)。 </p>
     <p>程式一參考了網友<font color="#000080">Phil xie</font>意見進行修改。</p>
     <p>
-        <font color="#FF0000">注意:</font> 90<sup>o</sup>是按
-        90 SHIFT Ans 1。
+        <font color="#FF0000">注意:</font> 90<sup>o</sup>是按 90 SHIFT Ans 1。
     </p>
     <p>第一個程式 (77 bytes，使用記憶為A, B, X, Y及M)</p>
     <p>?→M: ?→X: ?→Y: ?→A: ?→B:</p>
     <p>
-        <font color="#FF0000">sin<sup>-1</sup>(</font> √( M<sup>2</sup> + X<sup>2</sup>
-        - 4Y) ÷ <font color="#FF0000">Pol(</font> M+2A , X+2B→M:
+        <font color="#FF0000">sin<sup>-1</sup>(</font> √( M<sup>2</sup> + X<sup>2</sup> - 4Y) ÷ <font color="#FF0000">
+            Pol(</font> M+2A , X+2B→M:
     </p>
-    <p>Y<font color="#FF0000">M+</font>: If 90<sup>o</sup>≠Abs( M: Then tan( M◢ B - Ans
-        A◢ IfEnd:</p>
+    <p>Y<font color="#FF0000">M+</font>: If 90<sup>o</sup>≠Abs( M: Then tan( M◢ B - Ans A◢ IfEnd:</p>
     <p>tan( 2Y - M◢ B - Ans A</p>
     <p>　</p>
     <p>第二個程式 (123 bytes，使用記憶為A, B, C, D, X, Y及M)</p>
     <p>?→D: ?→A: ?→M: ?→X: ?→Y:</p>
-    <p>4AY + 4Y<sup>2</sup> - D<sup>2</sup> + 4M→B: 4DX + 4X<sup>2</sup> - A<sup>2</sup>
-        + 4M→M:</p>
+    <p>4AY + 4Y<sup>2</sup> - D<sup>2</sup> + 4M→B: 4DX + 4X<sup>2</sup> - A<sup>2</sup> + 4M→M:</p>
     <p>2AD+ 4AX + 4DY + 8XY→D:</p>
     <p>If M: Then (D + √( D<sup>2</sup> - 4BM) )┘( 2M→A◢&nbsp; Y - AX<font color="#008000">→B</font>◢</p>
-    <p>D┘M - A<font color="#008000">→C</font>◢ Else B┘D→<font color="#008000">C</font>◢
-        IfEnd: Y - AnsX<font color="#008000">→D</font>
+    <p>D┘M - A<font color="#008000">→C</font>◢ Else B┘D→<font color="#008000">C</font>◢ IfEnd: Y - AnsX<font
+            color="#008000">→D</font>
     </p>
     <p>　</p>
-    <p>
-        例題1:
-        求從外點(0,2)至圓x<sup>2
-        </sup>+ y<sup>2</sup> – 2x + 2y –
-        3 = 0的兩條切線的斜率。</p>
-    <p>
-        按 Prog 1 再按 - 2 EXE
-        2 EXE - 3 EXE 0 EXE 2 EXE (顯示切線斜率為
-        -1/2)</p>
-    <p>
-        EXE (顯示切線y截距為 2) EXE (顯示另一切線斜率為2)
-        EXE (顯示另一切線y截距為 2)</p>
-    <p>
-        　</p>
-    <p>
-        例題2:
-        求圓x<sup>2 </sup>+ y<sup>2</sup>
-        + 2x + 8y + 12 = 0上一點(-3,-3)的切線斜率。</p>
-    <p>
-        按 Prog 1 再按 2 EXE 8
-        EXE 12 EXE -3 EXE - 3 EXE (顯示切線斜率為2)</p>
-    <p>
-        EXE (顯示切線y截距為 3) EXE (顯示切線斜率為2)
-        EXE (顯示切線y截距為 3)</p>
-    <p>
-        兩組解答相同表示這點在圓之上</p>
-    <p>
-        　</p>
-    <p>
-        註1:第二個程式執行完成後，按 RCL A及RCL B顯示切線的斜率及y-截距，按RCL
-        C及RCL D顯示另一切線的斜率及y-截距。若不記存答案綠色的程式碼可以不輸入，第二個程式長度變為115 bytes。</p>
+    <p> 例題1: 求從外點(0,2)至圓x<sup>2 </sup>+ y<sup>2</sup> – 2x + 2y – 3 = 0的兩條切線的斜率。</p>
+    <p> 按 Prog 1 再按 - 2 EXE 2 EXE - 3 EXE 0 EXE 2 EXE (顯示切線斜率為 -1/2)</p>
+    <p> EXE (顯示切線y截距為 2) EXE (顯示另一切線斜率為2) EXE (顯示另一切線y截距為 2)</p>
+    <p> 　</p>
+    <p> 例題2: 求圓x<sup>2 </sup>+ y<sup>2</sup> + 2x + 8y + 12 = 0上一點(-3,-3)的切線斜率。</p>
+    <p> 按 Prog 1 再按 2 EXE 8 EXE 12 EXE -3 EXE - 3 EXE (顯示切線斜率為2)</p>
+    <p> EXE (顯示切線y截距為 3) EXE (顯示切線斜率為2) EXE (顯示切線y截距為 3)</p>
+    <p> 兩組解答相同表示這點在圓之上</p>
+    <p> 　</p>
+    <p> 註1:第二個程式執行完成後，按 RCL A及RCL B顯示切線的斜率及y-截距，按RCL C及RCL D顯示另一切線的斜率及y-截距。若不記存答案綠色的程式碼可以不輸入，第二個程式長度變為115 bytes。</p>
     <p>註2: 若果程式只顯示一組解答或出現Math ERROR，表示另一切線為垂直線。若果兩組解答相同表示點在圓之上。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>

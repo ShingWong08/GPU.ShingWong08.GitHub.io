@@ -19,58 +19,43 @@
     <p>● 可計聯立三元一次方程及其方程組行列式</p>
     <p>● 若聯立三元一次方程有無限解，可以顯示方程組的通解</p>
     <p>● 可以直接從兩條聯立三元一次方程找出其通解，因此可以作為解方程的步驟</p>
-    <p>● 分數版，輸入係數為整數，答案會以分數形式表示，建建議將計數機預先設定為假分數形式表示(按
-        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
-    </p>
+    <p>● 分數版，輸入係數為整數，答案會以分數形式表示，建建議將計數機預先設定為假分數形式表示(按 <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。 </p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
     <p>
-        <font color="#FF0000">注意</font> : 若果不用記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入
-        ，第一個程式長度變為<font color="#008000">168 bytes</font>，第二個程式則為<font color="#008000">170
-            byes</font>。藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span
-            style="text-decoration: overline">
+        <font color="#FF0000">注意</font> : 若果不用記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入 ，第一個程式長度變為<font
+            color="#008000">168 bytes</font>，第二個程式則為<font color="#008000">170 byes</font>。藍色的英文字為統計模式中的變數(<font
+            color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>為平均x
-        按 shift 2 1 1，<span style="text-decoration: overline">
+        </span>為平均x 按 shift 2 1 1，<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>為平均y
-        按 shift 2 1 → 1)，FreqOn 按 Shift MODE ← ← 1。
+        </span>為平均y 按 shift 2 1 → 1)，FreqOn 按 Shift MODE ← ← 1。
     </p>
     <p>　</p>
     <p>第一個程式 (<font color="#008000">167 bytes</font> 或 171 bytes)</p>
     <p>FreqOn: ?→D: ?→C: ?→B: ?→A: ?→X: ?→Y: ?→M: </p>
     <p>DY - CX <b>
             <font color="#0000FF">,</font>
-        </b> BX - DM <font color="#0000FF">
-            <b>;</b>
-        </font>CM -
-        BY <font color="#FF0000">DT</font>: ?→X: </p>
-    <p>CX - AY→Y: AM - BX→M: Lbl 0: M┘<font color="#0000FF">n</font>→D:
-        Y┘<font color="#0000FF">n</font>→C:</p>
+        </b> BX - DM <font color="#0000FF"> <b>;</b> </font>CM - BY <font color="#FF0000">DT</font>: ?→X: </p>
+    <p>CX - AY→Y: AM - BX→M: Lbl 0: M┘<font color="#0000FF">n</font>→D: Y┘<font color="#0000FF">n</font>→C:</p>
     <p><span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>┘<font color="#0000FF">n</font>→B:
-        <span style="text-decoration: overline">
-            <font color="#0000FF">
-                x</font>
-        </span>┘<font color="#0000FF">n</font>→A: ?→D: ?→C: ?→B: ?→A:
-    </p>
+        </span>┘<font color="#0000FF">n</font>→B: <span style="text-decoration: overline">
+            <font color="#0000FF"> x</font>
+        </span>┘<font color="#0000FF">n</font>→A: ?→D: ?→C: ?→B: ?→A: </p>
     <p>A<font color="#0000FF">n</font> - CM - BY→A: D<font color="#0000FF">n</font> + C<span
             style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span> + B<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>→D◢ A<sup>2 </sup>
-        = - D<sup>2</sup>
-        <font color="#FF0000">=&gt;</font>
-        Goto 0:
+        </span>→D◢ A<sup>2 </sup> = - D<sup>2</sup>
+        <font color="#FF0000">=&gt;</font> Goto 0:
     </p>
     <p>A┘D→A◢ (M + <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span>A)┘<font color="#0000FF">n</font>
-        <font color="#008000">→B</font>◢ (Y +
-        <span style="text-decoration: overline">
+        <font color="#008000">→B</font>◢ (Y + <span style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>A)┘<font color="#0000FF">n</font>
         <font color="#008000">→C</font>
@@ -80,94 +65,58 @@
     <p>FreqOn: ?→D: ?→C: ?→B: ?→A: D: ?→D: ?→X: ?→Y: </p>
     <p>AnsX - CD <b>
             <font color="#0000FF">,</font>
-        </b> BD - AnsY <font color="#0000FF">
-            <b>;</b>
-        </font>CY - BX <font color="#FF0000">DT</font>: ?→D: </p>
+        </b> BD - AnsY <font color="#0000FF"> <b>;</b> </font>CY - BX <font color="#FF0000">DT</font>: ?→D: </p>
     <p>CD - AX→X: AY - BD→Y: Lbl 0: Y┘<font color="#0000FF">n</font>→D: X┘<font color="#0000FF">n</font>→C:</p>
     <p><span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>┘<font color="#0000FF">n</font>→B:
-        <span style="text-decoration: overline">
-            <font color="#0000FF">
-                x</font>
-        </span>┘<font color="#0000FF">n</font>→A: ?→D: ?→C: ?→B: ?→A:
-    </p>
+        </span>┘<font color="#0000FF">n</font>→B: <span style="text-decoration: overline">
+            <font color="#0000FF"> x</font>
+        </span>┘<font color="#0000FF">n</font>→A: ?→D: ?→C: ?→B: ?→A: </p>
     <p>A<font color="#0000FF">n</font> - CY - BX→A: D<font color="#0000FF">n</font> + C<span
             style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span> + B<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>→D◢ A<sup>2 </sup>
-        = - D<sup>2</sup>
-        <font color="#FF0000">=&gt;</font>
-        Goto 0:
+        </span>→D◢ A<sup>2 </sup> = - D<sup>2</sup>
+        <font color="#FF0000">=&gt;</font> Goto 0:
     </p>
     <p>A┘D→A◢ (Y + <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span>A)┘<font color="#0000FF">n</font>
-        <font color="#008000">→B</font>◢ (X +
-        <span style="text-decoration: overline">
+        <font color="#008000">→B</font>◢ (X + <span style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>A)┘<font color="#0000FF">n</font>
         <font color="#008000">→C</font>
     </p>
     <p>　</p>
-    <p><a href="simultaneous4G.html">程式另一版本</a>(169 - 175 bytes) :將通解由預設 x=t改為
-        z=t，較接近習慣的用法，操作上容易一點。</p>
+    <p><a href="simultaneous4G.html">程式另一版本</a>(169 - 175 bytes) :將通解由預設 x=t改為 z=t，較接近習慣的用法，操作上容易一點。</p>
     <p><a href="simultaneousMethod.html">如何使用聯立三元一次方程程式計算三階伴隨矩陣及逆矩陣</a></p>
+    <p> 例題1: 解聯立方程 :</p>
     <p>
-        例題1:
-        解聯立方程 :</p>
-    <p>
-    <p>按
-        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE
-        -1 EXE 2 EXE 5 EXE 1 EXE 3 EXE 1 EXE 10 EXE</p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE -1 EXE 2 EXE 5 EXE 1 EXE 3 EXE 1 EXE 10 EXE</p>
     <p>(顯示方程組行列式為 -2) EXE (顯示x=1) EXE (顯示y=2) EXE (顯示z=3)</p>
-    <p>程式若有綠色程式碼，執行完成後，按
-        RCL A 、RCL B、RCL C及RCL D分別顯示x、y、z的值及方程組行列式的值。</p>
+    <p>程式若有綠色程式碼，執行完成後，按 RCL A 、RCL B、RCL C及RCL D分別顯示x、y、z的值及方程組行列式的值。</p>
     <p>　</p>
     <p>例題2: 解以下聯立二元一次方程</p>
-    <p>
-        
-    </p>
-    <p>按
-        Prog 1&nbsp; 再按 </p>
-    <p>
-        EXE (不輸入數值) 1 EXE 1 EXE 7 EXE</p>
-    <p>EXE (不輸入數值) 1 EXE -1 EXE 1 EXE (顯示4)
-        EXE (顯示3)</p>
-    <p>
-        因此解答為 x = 4
-        及 y = 3. </p>
+    <p> </p>
+    <p>按 Prog 1&nbsp; 再按 </p>
+    <p> EXE (不輸入數值) 1 EXE 1 EXE 7 EXE</p>
+    <p>EXE (不輸入數值) 1 EXE -1 EXE 1 EXE (顯示4) EXE (顯示3)</p>
+    <p> 因此解答為 x = 4 及 y = 3. </p>
     <p>程式執行完成後，請按AC中止程式</p>
     <p>x的值、y的值及方程組行列式的值分別儲存於記憶D、C及n中。</p>
     <p>　</p>
-    <p>例題3:
-        計算下列的行列式:　</p>
+    <p>例題3: 計算下列的行列式:　</p>
+    <p> </p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 2 EXE 3 EXE EXE (不輸入數值)</p>
+    <p> 7 EXE 8 EXE 9 EXE EXE (不輸入數值)</p>
+    <p> 6 EXE 5 EXE 2 EXE EXE (不輸入數值，最後顯示行列式的值為12)</p>
+    <p> 程式若有綠色程式碼，執行完成後，請按AC中止程式。行列式的值儲存於記憶D。</p>
+    <p> 　</p>
+    <p> 例題4: 解聯立方程 :</p>
     <p>
-        
-    </p>
-    <p>按
-        Prog 1&nbsp; 再按
-        1 EXE 2 EXE 3 EXE EXE (不輸入數值)</p>
-    <p>
-        7 EXE 8 EXE 9 EXE EXE (不輸入數值)</p>
-    <p>
-        6 EXE 5 EXE 2 EXE EXE
-        (不輸入數值，最後顯示行列式的值為12)</p>
-    <p>
-        程式若有綠色程式碼，執行完成後，請按AC中止程式。行列式的值儲存於記憶D。</p>
-    <p>
-        　</p>
-    <p>
-        例題4:
-        解聯立方程 :</p>
-    <p>
-    <p>按
-        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1
-        EXE -1 EXE 2 EXE 5 EXE 3 EXE </p>
-    <p>1
-        EXE 4 EXE 17 EXE (顯示行列式為0) EXE</p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE -1 EXE 2 EXE 5 EXE 3 EXE </p>
+    <p>1 EXE 4 EXE 17 EXE (顯示行列式為0) EXE</p>
     <p>(注意此時<b>
             <font color="#FF0000">沒有Disp</font>
         </b>，並且有<b>
@@ -184,16 +133,11 @@
     <p>&nbsp;z = <font color="#800000">11/3</font>
         <font color="#800080">- 2t/3</font>
     </p>
-    <p>程式執行完成後，請按AC中止程式。
-        y,z的常數項及y,z的係數分別儲存在記憶D, C, B, A中。</p>
+    <p>程式執行完成後，請按AC中止程式。 y,z的常數項及y,z的係數分別儲存在記憶D, C, B, A中。</p>
     <p>　</p>
     <p>例題5: 求下列聯立方程的通解:</p>
-    <p>
-        
-    </p>
-    <p>按
-        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE
-        -1 EXE 2 EXE 5 EXE</p>
+    <p> </p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE -1 EXE 2 EXE 5 EXE</p>
     <p>(注意此時有<b>
             <font color="#FF0000">?D</font>
         </b>號，顯示y的解，常數項為<font color="#800000">7/3</font>)</p>
@@ -208,20 +152,14 @@
     <p>&nbsp;z = <font color="#800000">11/3</font>
         <font color="#800080">- 2t/3</font>
     </p>
-    <p>程式執行完成後，請按AC中止程式。y,z的常數項及y,z的係數分別儲存在記憶D,
-        C, B, A中。</p>
-    <p>註: 若方程組為&nbsp;
-        a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z
-        = d<sub>1 , </sub>a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z = d<sub>2</sub>
-        , a<sub>3</sub>x + b<sub>3</sub>y + c<sub>3</sub>z
-        = d<sub>3</sub></p>
-    <p>程式的限制條件為: <font color="#FF0000">
-            b<sub>1</sub>c<sub>2</sub>≠b<sub>2</sub>c<sub>1</sub></font>
+    <p>程式執行完成後，請按AC中止程式。y,z的常數項及y,z的係數分別儲存在記憶D, C, B, A中。</p>
+    <p>註: 若方程組為&nbsp; a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z = d<sub>1 , </sub>a<sub>2</sub>x + b<sub>2</sub>y
+        + c<sub>2</sub>z = d<sub>2</sub> , a<sub>3</sub>x + b<sub>3</sub>y + c<sub>3</sub>z = d<sub>3</sub></p>
+    <p>程式的限制條件為: <font color="#FF0000"> b<sub>1</sub>c<sub>2</sub>≠b<sub>2</sub>c<sub>1</sub></font>
     </p>
-    <p> 注意: 如果程式在輸入第二條方程後出現錯誤 Math ERROR，代表違反限制條件為:
-        <font color="#FF0000">b<sub>1</sub>c<sub>2</sub>≠b<sub>2</sub>c<sub>1</sub></font>，
-        若果是計算聯立三元一次問題，請改為先輸入第三組方程即可。如果程式在輸入第三條方程後出現錯誤 Math ERROR，代表方程組方程無解。
-    </p>
+    <p> 注意: 如果程式在輸入第二條方程後出現錯誤 Math ERROR，代表違反限制條件為: <font color="#FF0000">
+            b<sub>1</sub>c<sub>2</sub>≠b<sub>2</sub>c<sub>1</sub></font>， 若果是計算聯立三元一次問題，請改為先輸入第三組方程即可。如果程式在輸入第三條方程後出現錯誤
+        Math ERROR，代表方程組方程無解。 </p>
     <p> 　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     <p>　</p> <!--msthemeseparator-->
@@ -234,43 +172,32 @@
         <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
     </p>
     <p></p>
-    <p>注意: 若果不用記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入，程式長度變為<font color="#008000">170
-            bytes</font>。藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span
-            style="text-decoration: overline">
+    <p>注意: 若果不用記存答案，程式中<font color="#008000">綠色</font>部份可以不輸入，程式長度變為<font color="#008000">170 bytes</font>
+        。藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>為平均x
-        按 shift 2 1)</p>
+        </span>為平均x 按 shift 2 1)</p>
     <p></p>
     <p>程式 (<font color="#008000">170 bytes</font> 或 174 bytes)</p>
     <p>ClrStat: ?→D: ?→C: ?→B: ?→A: ?→X: ?→Y: ?→M: </p>
-    <p>DY - CX <font color="#0000FF">; </font>CM -
-        BY <font color="#FF0000">DT</font>: BX - DM→X: ?→D: </p>
+    <p>DY - CX <font color="#0000FF">; </font>CM - BY <font color="#FF0000">DT</font>: BX - DM→X: ?→D: </p>
     <p>CD - AY→Y: AM - BD→M: Lbl 0: M┘<font color="#0000FF">n</font>→D: </p>
-    <p>Y┘<font color="#0000FF">n</font>→C: X┘<font color="#0000FF">n</font>→B:
-        <span style="text-decoration: overline">
-            <font color="#0000FF">
-                x</font>
-        </span>┘<font color="#0000FF">n</font>→A: ?→D: ?→C: ?→B:
-    </p>
-    <p>?→A: A<font color="#0000FF">n</font>
-        - CM - BY→A: D<font color="#0000FF">n</font> + CX + B<span style="text-decoration: overline">
+    <p>Y┘<font color="#0000FF">n</font>→C: X┘<font color="#0000FF">n</font>→B: <span style="text-decoration: overline">
+            <font color="#0000FF"> x</font>
+        </span>┘<font color="#0000FF">n</font>→A: ?→D: ?→C: ?→B: </p>
+    <p>?→A: A<font color="#0000FF">n</font> - CM - BY→A: D<font color="#0000FF">n</font> + CX + B<span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>→D◢ </p>
-    <p>A<sup>2 </sup>
-        + D<sup>2</sup>=0 <font color="#FF0000">=&gt;</font>
-        Goto 0: A┘D→A◢ </p>
+    <p>A<sup>2 </sup> + D<sup>2</sup>=0 <font color="#FF0000">=&gt;</font> Goto 0: A┘D→A◢ </p>
     <p>(M + XA)┘<font color="#0000FF">n</font>
-        <font color="#008000">→B</font>◢ (Y
-        + <span style="text-decoration: overline">
+        <font color="#008000">→B</font>◢ (Y + <span style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>A)┘<font color="#0000FF">n</font>
-        <font color="#008000">→C
-        </font>
+        <font color="#008000">→C </font>
     </p>
     <p>　</p>
     <p><a href="simultaneous4D.html">程式小數版</a> (164 - 170 bytes)</p>
-    <p><a href="simultaneous4G.html">程式另一版本</a>(168 - 174 bytes) :將通解由預設 x=t改為
-        z=t，較接近習慣的用法，操作上容易一點。</p>
+    <p><a href="simultaneous4G.html">程式另一版本</a>(168 - 174 bytes) :將通解由預設 x=t改為 z=t，較接近習慣的用法，操作上容易一點。</p>
     <p><a href="simultaneousMethod.html">如何使用聯立三元一次方程程式計算三階伴隨矩陣及逆矩陣</a></p>
 </body>
 

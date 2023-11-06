@@ -7,55 +7,40 @@
                 <font size="5">n(2-15)進數與16進數間轉換</font>
             </b></u></p>
     <p>更新日期: 2011年2月3日</p>
-    <p>程式可以計算n(2-15)進數與16進數間的轉換，由於計數機內置了2, 8, 10, 16進數間的轉換功能，因此其實是可以計算n(2-15)進數與2,
-        8及10進數間的轉換，當由n進數轉為16進數，顯示16進數時，只要按BIN 或 OCT 或 DEC
-        轉換即可，相反將數值轉化為n進數時，只要在輸入16進數時，先按 BIN 或 OCT 或 DEC 再輸入即可。</p>
+    <p>程式可以計算n(2-15)進數與16進數間的轉換，由於計數機內置了2, 8, 10, 16進數間的轉換功能，因此其實是可以計算n(2-15)進數與2, 8及10進數間的轉換，當由n進數轉為16進數，顯示16進數時，只要按BIN
+        或 OCT 或 DEC 轉換即可，相反將數值轉化為n進數時，只要在輸入16進數時，先按 BIN 或 OCT 或 DEC 再輸入即可。</p>
     <p>
         <font color="#FF0000">程式需要在 BASE 模式下執行，因此在選擇新程式位置後，按 3 選用BASE模式。</font>
     </p>
     <p>程式 (53 bytes)</p>
     <p>ClrMemory: Hex: ?→A: ?→B: ?→C: 1→Y: </p>
-    <p>While C: C÷B→X: Y(C-BX <font color="#FF0000">M+</font>:
-        AY→Y: </p>
+    <p>While C: C÷B→X: Y(C-BX <font color="#FF0000">M+</font>: AY→Y: </p>
     <p>X→C: WhileEnd: M→A: M</p>
-    <p>注意: 輸入的數值必須為正整數。n進制的n值可以是2至16，數位大於9，用A, B, C, D, E, F基數的數值代表10至15的數值(例如: A是按
-        <font color="#FF0000">(-)</font>)，若果要計算16進數問題，輸入進制數值時，請輸入<b>
+    <p>注意: 輸入的數值必須為正整數。n進制的n值可以是2至16，數位大於9，用A, B, C, D, E, F基數的數值代表10至15的數值(例如: A是按 <font color="#FF0000">(-)</font>
+        )，若果要計算16進數問題，輸入進制數值時，請輸入<b>
             <font color="#FF0000">10</font>
-        </b>。
-    </p>
+        </b>。 </p>
     <p>註: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;Mem clear&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，而程式使用的記憶為A、B、X、Y及M。
     </p>
     <p>　</p>
     <p>例題1: 將十二進制 25 以十六進制表示。</p>
-    <p>
-        按 Prog 1&nbsp;
-        再按 C EXE (C為基數數值，代表十二進數) 10 EXE (10代表十六進數)</p>
-    <p>
-        25 EXE (顯示答案為1d)</p>
+    <p> 按 Prog 1&nbsp; 再按 C EXE (C為基數數值，代表十二進數) 10 EXE (10代表十六進數)</p>
+    <p> 25 EXE (顯示答案為1d)</p>
     <p>所以 25<sub>12</sub> = 1D<sub>2</sub> </p>
     <p>計算完結後按 MODE 1 返回正常計算模式。</p>
     <p>　</p>
     <p>例題2: 將十六進制 1D 以十二進制表示。</p>
-    <p>
-        按 Prog 1&nbsp;
-        再按 10 EXE (10代表十六進數) C EXE (C為基數數值，代表十二進數)</p>
-    <p>
-        1D EXE (顯示答案為25)</p>
+    <p> 按 Prog 1&nbsp; 再按 10 EXE (10代表十六進數) C EXE (C為基數數值，代表十二進數)</p>
+    <p> 1D EXE (顯示答案為25)</p>
     <p>所以 1D<sub>16</sub> = 25<sub>12</sub> </p>
     <p>計算完結後按 MODE 1 返回正常計算模式。</p>
     <p>　</p>
     <p>例題3: 將十進制 25 以二進制表示。</p>
-    <p>
-        按 Prog 1&nbsp;
-        再按 10 <font color="#008000">EXE</font>
-        (10代表十六進數) 2 EXE (2代表二進數)</p>
-    <p>
-        按 <font color="#008000">DEC</font> 25 EXE (按 DEC
-        將16進制數值改為10進制，顯示答案為11001)</p>
+    <p> 按 Prog 1&nbsp; 再按 10 <font color="#008000">EXE</font> (10代表十六進數) 2 EXE (2代表二進數)</p>
+    <p> 按 <font color="#008000">DEC</font> 25 EXE (按 DEC 將16進制數值改為10進制，顯示答案為11001)</p>
     <p>所以 25<sub>10</sub> = 11001<sub>2</sub> </p>
     <p>另一個按法:</p>
-    <p>按 Prog 1 再按 A EXE (A為基數數值，代表10進數) 10 <font color="#008000">EXE</font>
-        (10代表十六進數)</p>
+    <p>按 Prog 1 再按 A EXE (A為基數數值，代表10進數) 10 <font color="#008000">EXE</font> (10代表十六進數)</p>
     <p>按 25 EXE <font color="#008000">BIN</font> (顯示答案11001)</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>

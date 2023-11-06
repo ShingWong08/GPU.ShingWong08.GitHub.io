@@ -7,74 +7,54 @@
                 <font size="5">三角形的重心、垂心、外心 、九點心及內心</font>
             </b></u></p>
     <p>程式由網友<span class="gen"><span class="postername">
-                <font color="#0000FF">
-                    roviury</font> 提供。
+                <font color="#0000FF"> roviury</font> 提供。
             </span></span></p>
-    <p>已知三角形三頂點的坐標，程式可計算三角形的重心 、垂心、外心、九點心及內心的坐標。另外為方便以假分數顯示，建議將計數機預先設定為假分數形式表示(按六次
-        Mode，再按 2 EXE )。</p>
+    <p>已知三角形三頂點的坐標，程式可計算三角形的重心 、垂心、外心、九點心及內心的坐標。另外為方便以假分數顯示，建議將計數機預先設定為假分數形式表示(按六次 Mode，再按 2 EXE )。</p>
     <p>更新日期: 2012年2月1日&nbsp; </p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>為平均x
-        按 shift 2 1 1，<span style="text-decoration: overline">
+        </span>為平均x 按 shift 2 1 1，<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>為平均y
-        按 shift 2 1 → 1)，FreqOn 按 Shift MODE ← ← 1。</p>
+        </span>為平均y 按 shift 2 1 → 1)，FreqOn 按 Shift MODE ← ← 1。</p>
     <p>程式(191 bytes)</p>
-    <p>?→X: ?→Y: ?→A: ?→B: ?→C: ?→D: (A+C+X)┘3◢ <br>
-        <br>
-        (B+D+Y)┘3◢ FreqOn: X <font color="#FF0000">,</font> Y <font color="#FF0000">;</font>
-        <font color="#FF0000">Pol(</font>A-C , B-D <font color="#FF0000">DT</font>: <br>
-        <br>
-        (<span style="text-decoration: overline">
+    <p>?→X: ?→Y: ?→A: ?→B: ?→C: ?→D: (A+C+X)┘3◢ <br> <br> (B+D+Y)┘3◢ FreqOn: X <font color="#FF0000">,</font> Y <font
+            color="#FF0000">;</font>
+        <font color="#FF0000">Pol(</font>A-C , B-D <font color="#FF0000">DT</font>: <br> <br> (<span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-C)
-        ┘ (<span style="text-decoration: overline">
+        </span>-C) ┘ (<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span>-D→Y: <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>
-        - B: C + Ans(YA+B-YC-D) ┘ <br>
-        <br>
-        (A+AnsY-<span style="text-decoration: overline">
+        </span> - B: C + Ans(YA+B-YC-D) ┘ <br> <br> (A+AnsY-<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>→X◢
-        B+AY-XY→Y◢ (A+C+<span style="text-decoration: overline">
+        </span>→X◢ B+AY-XY→Y◢ (A+C+<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-X)┘2→M◢
-        <br>
-        <br>
-        (B+D+<span style="text-decoration: overline">
+        </span>-X)┘2→M◢ <br> <br> (B+D+<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-Y)┘2◢
-        Ans+Y→Y: (M+X)┘2◢ Y┘2◢
+        </span>-Y)┘2◢ Ans+Y→Y: (M+X)┘2◢ Y┘2◢
     </p>
     <p>A <font color="#FF0000">,</font> B <font color="#FF0000">;</font>
         <font color="#FF0000">Pol(</font><span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-C
-        , <span style="text-decoration: overline">
+        </span>-C , <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>
-        -D) + 0<font color="#FF0000">Pol(</font><span style="text-decoration: overline">
+        </span> -D) + 0<font color="#FF0000">Pol(</font><span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-A
-        , <span style="text-decoration: overline">
+        </span>-A , <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-B
-        <font color="#FF0000">DT</font>: C <font color="#FF0000">,</font> D
-        <font color="#FF0000">;</font> X <font color="#FF0000">DT</font>: <span style="text-decoration: overline">
+        </span>-B <font color="#FF0000">DT</font>: C <font color="#FF0000">,</font> D <font color="#FF0000">;</font> X
+        <font color="#FF0000">DT</font>: <span style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>◢ <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span>
     </p>
     <p>　</p>
-    <p>例題: A、B及C三點的坐標分別為(4 , 3)、(0 , 0) 及 (4 , 0)，求三角形ABC的內心、重心、垂心
-        、外心及九點心坐標。</p>
+    <p>例題: A、B及C三點的坐標分別為(4 , 3)、(0 , 0) 及 (4 , 0)，求三角形ABC的內心、重心、垂心 、外心及九點心坐標。</p>
     <p>按 Prog 1 再按 4 EXE 3 EXE 0 EXE 0 EXE 4 EXE 0 </p>
     <p>EXE (顯示8/3) EXE (顯示1，所以重心=(8/3, 1))</p>
     <p>EXE (顯示4) EXE (顯示0，所以垂心=(4, 0))</p>
@@ -82,71 +62,47 @@
     <p>EXE (顯示3) EXE (顯示3/4，所以九點心=(3, 3/4))</p>
     <p>EXE (顯示3) EXE (顯示1，所以內心 = (3 , 1))</p>
     <p>　</p>
-    <p>
-        註1: 若兩點的y坐標相同，程式有可能會出現Math ERROR，可以嘗試改變點的先後次序。</p>
-    <p>
-        註2: 外心亦是三點共圓的圓心。</p>
+    <p> 註1: 若兩點的y坐標相同，程式有可能會出現Math ERROR，可以嘗試改變點的先後次序。</p>
+    <p> 註2: 外心亦是三點共圓的圓心。</p>
     <p>　</p>
-    <p>
-        參考資料:</p>
-    <p>
-        <a href="http://agutie.homestead.com/files/center/nine_point_center_euler.html">
-            http://agutie.homestead.com/files/center/nine_point_center_euler.html</a>
-    </p>
-    <p>　</p>
-    <!--msthemeseparator-->
+    <p> 參考資料:</p>
+    <p> <a href="http://agutie.homestead.com/files/center/nine_point_center_euler.html">
+            http://agutie.homestead.com/files/center/nine_point_center_euler.html</a> </p>
+    <p>　</p> <!--msthemeseparator-->
     <p align="center">
     <p>
         <font color="#800080">附錄程式一(只計算垂心、外心、九點心版本)</font>
     </p>
     <p>?→X: ?→Y: ?→A: ?→B: ?→C: ?→D: </p>
     <p>FreqOn: X <font color="#FF0000">,</font> Y <font color="#FF0000">;</font>
-        <font color="#FF0000">Pol(</font>A-C , B-D <font color="#FF0000">DT</font>: <br>
-        <br>
-        (<span style="text-decoration: overline">
+        <font color="#FF0000">Pol(</font>A-C , B-D <font color="#FF0000">DT</font>: <br> <br> (<span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-C)
-        ┘ (<span style="text-decoration: overline">
+        </span>-C) ┘ (<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span>-D→Y: <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>
-        - B: C + Ans(YA+B-YC-D) ┘ <br>
-        <br>
-        (A+AnsY-<span style="text-decoration: overline">
+        </span> - B: C + Ans(YA+B-YC-D) ┘ <br> <br> (A+AnsY-<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>→X◢
-        B+AY-XY→Y◢ (A+C+<span style="text-decoration: overline">
+        </span>→X◢ B+AY-XY→Y◢ (A+C+<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-X)┘2→M◢
-        <br>
-        <br>
-        (B+D+<span style="text-decoration: overline">
+        </span>-X)┘2→M◢ <br> <br> (B+D+<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-Y)┘2◢
-        (M+X)┘2◢ (B+D+<span style="text-decoration: overline">
+        </span>-Y)┘2◢ (M+X)┘2◢ (B+D+<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span>+Y)┘4
     </p>
     <p>　</p>
     <p>　</p>
     <p>
-        <font color="#800080">附錄程式二(由網友tony200910041及Skwai提供，順序計算重心、垂心、外心、外心圓半徑、內心及九點心
-            的複數版本)</font>
+        <font color="#800080">附錄程式二(由網友tony200910041及Skwai提供，順序計算重心、垂心、外心、外心圓半徑、內心及九點心 的複數版本)</font>
     </p>
     <p>
-        <font color="#FF0000">附錄程式二需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式
-            ，而坐標資料會以複數形式輸入及顯示答案。</font>
+        <font color="#FF0000">附錄程式二需要在 CMPLX 模式下執行，因此在選擇新程式位置後，按 2 選用CMPLX模式 ，而坐標資料會以複數形式輸入及顯示答案。</font>
     </p>
-    <p>?→A: ?→B: ?→C: A + B + C→X: 3<sup>-1</sup>Ans◢ arg( A - C ) - arg( B - C→Y:
-        <br>
-        <br>
-        C+i ( B - A ) tan( 90<sup>o</sup> - Y→M◢ . 5( X - Ans<font color="#FF0000">M+</font>◢
-    </p>
-    <p>Abs( A - Ans◢ . 5M◢ Abs( A - C )- Abs(A - B: <br>
-        <br>
-        C + . 5( B - C + 1∠ arg( B - C )Ans )( 1 + i tan( .5Y
-    </p>
+    <p>?→A: ?→B: ?→C: A + B + C→X: 3<sup>-1</sup>Ans◢ arg( A - C ) - arg( B - C→Y: <br> <br> C+i ( B - A ) tan(
+        90<sup>o</sup> - Y→M◢ . 5( X - Ans<font color="#FF0000">M+</font>◢ </p>
+    <p>Abs( A - Ans◢ . 5M◢ Abs( A - C )- Abs(A - B: <br> <br> C + . 5( B - C + 1∠ arg( B - C )Ans )( 1 + i tan( .5Y </p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     </body>

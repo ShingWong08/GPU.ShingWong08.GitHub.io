@@ -14,80 +14,50 @@
         <font color="#0000FF">第一個程式</font> (最少 51 bytes)
     </p>
     <p>ClrMemory: ?→M: Lbl 0: C→A: <font color="#008000">M<sup>3</sup> - 2M - 1</font>→C: </p>
-    <p>B=0→B: Ans <font color="#FF0000">
-            =&gt;</font>
-        <font size="1">E</font><sup>
-        </sup>- 7<font color="#FF0000"> M+ =&gt;</font> Goto
-        0:
+    <p>B=0→B: Ans <font color="#FF0000"> =&gt;</font>
+        <font size="1">E</font><sup> </sup>- 7<font color="#FF0000"> M+ =&gt;</font> Goto 0:
     </p>
     <p>
-        <font size="1">E</font><sup> </sup>- 7( 1
-        + A ÷ (C
-        - A<font color="#FF0000"> M-</font>: M◢ Goto 0
+        <font size="1">E</font><sup> </sup>- 7( 1 + A ÷ (C - A<font color="#FF0000"> M-</font>: M◢ Goto 0
     </p>
     <p>　</p>
     <p>
         <font color="#0000FF">第二個程式</font> (最少 60 bytes)
     </p>
     <p>ClrMemory: ?→M: Lbl 0: C→A: <font color="#008000">M<sup>3</sup> - 2M - 1</font>→C: </p>
-    <p>B=0→B: Ans <font color="#FF0000">
-            =&gt;</font>
+    <p>B=0→B: Ans <font color="#FF0000"> =&gt;</font>
         <font size="1">E</font> - 7 (M + (M=0→X:
     </p>
-    <p>Ans
-        <font color="#FF0000">=&gt;</font> X<font color="#FF0000">M+ =&gt; </font>Goto 0:
-    </p>
-    <p>X + AX ÷ (C - A<font color="#FF0000">
-            M-</font>: M◢ Goto 0</p>
+    <p>Ans <font color="#FF0000">=&gt;</font> X<font color="#FF0000">M+ =&gt; </font>Goto 0: </p>
+    <p>X + AX ÷ (C - A<font color="#FF0000"> M-</font>: M◢ Goto 0</p>
     <p>　</p>
     <p>註1: 綠色的<font color="#008000">M<sup>3</sup> - 2M - 1</font>是函數方程(變數是M)，若果想計算其它方程，只要修改綠色的部份。</p>
     <p>註2: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;B→0&quot;，第一個程式所使用的記憶為A，B，C及M，第二個程式所使用的記憶為A，B，C，X及M。</p>
-    <p>
-        註3:本程式是用近似值的方法去計微分值，所以與真正的牛頓法會有小小分別。</p>
-    <p>註4: 第一個程式的△x = 10<sup>-7</sup>，而第二個程式使用變動形式的△x，因此適應能力較強，而△x的決定方法為(i)
-        當x≠0時，△x= (10<sup>-7</sup>) x，(ii) 當x=0時，△x= 10<sup>-7</sup>。</p>
+    <p> 註3:本程式是用近似值的方法去計微分值，所以與真正的牛頓法會有小小分別。</p>
+    <p>註4: 第一個程式的△x = 10<sup>-7</sup>，而第二個程式使用變動形式的△x，因此適應能力較強，而△x的決定方法為(i) 當x≠0時，△x= (10<sup>-7</sup>) x，(ii) 當x=0時，△x=
+        10<sup>-7</sup>。</p>
     <p>　</p>
-    <p>
-        例題:
-        用牛頓法計算方程式 x<sup>3</sup>
-        – 2x – 1 = 0 的其中一個根，以1為開始的數值
-        。&nbsp; </p>
+    <p> 例題: 用牛頓法計算方程式 x<sup>3</sup> – 2x – 1 = 0 的其中一個根，以1為開始的數值 。&nbsp; </p>
     <p>
         <font color="#FF0000">第一個程式按法:</font>
     </p>
-    <p>
-        按 Prog 1&nbsp;
-        再按 1 EXE (顯示第1個近似值為3)</p>
-    <p>
-        EXE (顯示第2個近似值為2.2)</p>
-    <p>
-        EXE (顯示第3個近似值為1.780830671)</p>
-    <p>
-        EXE (顯示第4個近似值為1.636303212)</p>
-    <p>
-        EXE (顯示第5個近似值為1.61830458)</p>
-    <p>
-        EXE (顯示第6個近似值為1.618034049)</p>
-    <p>
-        ………</p>
+    <p> 按 Prog 1&nbsp; 再按 1 EXE (顯示第1個近似值為3)</p>
+    <p> EXE (顯示第2個近似值為2.2)</p>
+    <p> EXE (顯示第3個近似值為1.780830671)</p>
+    <p> EXE (顯示第4個近似值為1.636303212)</p>
+    <p> EXE (顯示第5個近似值為1.61830458)</p>
+    <p> EXE (顯示第6個近似值為1.618034049)</p>
+    <p> ………</p>
     <p>
         <font color="#FF0000">第二個程式按法:</font>
     </p>
-    <p>
-        按 Prog 1&nbsp;
-        再按 1 EXE (顯示第1個近似值為3)</p>
-    <p>
-        EXE (顯示第2個近似值為2.2)</p>
-    <p>
-        EXE (顯示第3個近似值為1.780830717)</p>
-    <p>
-        EXE (顯示第4個近似值為1.636303226)</p>
-    <p>
-        EXE (顯示第5個近似值為1.618304581)</p>
-    <p>
-        EXE (顯示第6個近似值為1.618034049)</p>
-    <p>
-        ………</p>
+    <p> 按 Prog 1&nbsp; 再按 1 EXE (顯示第1個近似值為3)</p>
+    <p> EXE (顯示第2個近似值為2.2)</p>
+    <p> EXE (顯示第3個近似值為1.780830717)</p>
+    <p> EXE (顯示第4個近似值為1.636303226)</p>
+    <p> EXE (顯示第5個近似值為1.618304581)</p>
+    <p> EXE (顯示第6個近似值為1.618034049)</p>
+    <p> ………</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

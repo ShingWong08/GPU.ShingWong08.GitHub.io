@@ -22,177 +22,119 @@
         <font>
             <font color="#FF0000">注意:</font>
             <font color="#0000FF">π</font><sup>r</sup>
-        </font>
-        是按 Shift EXP Shift Ans 2。
+        </font> 是按 Shift EXP Shift Ans 2。
     </p>
     <p>程式一 (163 bytes)</p>
-    <p>?→A : ?→B : ?→C: M<font color="#FF0000">M- </font>: While A&lt;0: -A→A : <br>
-        <br>
-        C&gt;0<font color="#FF0000">M+ =&gt;</font>
+    <p>?→A : ?→B : ?→C: M<font color="#FF0000">M- </font>: While A&lt;0: -A→A : <br> <br> C&gt;0<font color="#FF0000">M+
+            =&gt;</font>
         <font color="#FF0000">sin<sup>-1</sup>(</font>CA<sup>
             <font color="#000000">-1</font>
-        </sup>sin(B→C
-        : C→D : -π<sup>r</sup> - B - C→C :
+        </sup>sin(B→C : C→D : -π<sup>r</sup> - B - C→C :
     </p>
     <p>D→B : WhileEnd : B&lt;0 <font color="#FF0000">=&gt;</font> Asin(B)÷sin(B+C→B : 1 : </p>
-    <p>While Ans: C&lt;0 <font color="#FF0000">=&gt;</font> Pol( B - A cos( C , A sin( C→C
-        : <br>
-        <br>
-        A◢ B◢ C◢ <font color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup>
-        - A<sup>2</sup>) ÷ <b>
+    <p>While Ans: C&lt;0 <font color="#FF0000">=&gt;</font> Pol( B - A cos( C , A sin( C→C : <br> <br> A◢ B◢ C◢ <font
+            color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup> - A<sup>2</sup>) ÷ <b>
             <font color="#800080">(</font>
-        </b> 2BC→D◢
-    </p>
+        </b> 2BC→D◢ </p>
     <p>
-        <font color="#FF0000">cos<sup>-1</sup>(</font> A<sup>-1</sup>(C - B cos( D→X◢
-        π<sup>r</sup> - D - X→Y◢
+        <font color="#FF0000">cos<sup>-1</sup>(</font> A<sup>-1</sup>(C - B cos( D→X◢ π<sup>r</sup> - D - X→Y◢
     </p>
     <p>. 5BC sin( D◢ MX&gt;D<font color="#FF0000">M- =&gt;</font> D-X→C: WhileEnd</p>
     <p>　</p>
     <p>程式二 (154 bytes，較短但較慢一點)</p>
-    <p>?→A : ?→B : ?→X: M<font color="#FF0000">M-</font> : While A&lt;0: -A→A : <br>
-        <br>
-        X&gt;0<font color="#FF0000">M+ =&gt; sin<sup>-1</sup>(</font>XA<sup>
+    <p>?→A : ?→B : ?→X: M<font color="#FF0000">M-</font> : While A&lt;0: -A→A : <br> <br> X&gt;0<font color="#FF0000">M+
+            =&gt; sin<sup>-1</sup>(</font>XA<sup>
             <font color="#000000">-1</font>
-        </sup>sin(B→X : X→D : -π<sup>r</sup>
-        - B - X→X :
-    </p>
-    <p>D→B : WhileEnd : B&lt;0 <font color="#FF0000">=&gt;</font> Asin(B)÷sin(B+X→B : <br>
-        <br>
-        X&gt;0 <font color="#FF0000">=&gt; cos<sup>-1</sup>(</font> (A<sup>2</sup> + B<sup>2</sup>
-        - X<sup>2</sup>) ÷ <b>
+        </sup>sin(B→X : X→D : -π<sup>r</sup> - B - X→X : </p>
+    <p>D→B : WhileEnd : B&lt;0 <font color="#FF0000">=&gt;</font> Asin(B)÷sin(B+X→B : <br> <br> X&gt;0 <font
+            color="#FF0000">=&gt; cos<sup>-1</sup>(</font> (A<sup>2</sup> + B<sup>2</sup> - X<sup>2</sup>) ÷ <b>
             <font color="#800080">( </font>
-        </b>2AB→X : Abs(X→D :
-    </p>
+        </b>2AB→X : Abs(X→D : </p>
     <p>While Ans: A◢ B◢ Pol( B - Acos(D , Asin(D◢ Y◢ </p>
-    <p>π<sup>r</sup> - D - Y→C◢ D ◢ . 5BX sin(Y◢ MC&gt;Y<font color="#FF0000">M- =&gt;</font>
-        C-Y→D: WhileEnd</p>
+    <p>π<sup>r</sup> - D - Y→C◢ D ◢ . 5BX sin(Y◢ MC&gt;Y<font color="#FF0000">M- =&gt;</font> C-Y→D: WhileEnd</p>
     <p>註1: 最少要有三個已知變數(邊或角)及最少包括一已知邊，否則無法計算。</p>
     <p>註2: 輸入的資料若不能構成三角形，則會出現異常結果(例如: 0，負數，角度大於或等於180<sup>o</sup>，Math ERROR)。 </p>
-    <p>註3:
-        若多於三個己知變數，可任意選取其中三個已知變數輸入，但要注意有可能出現兩組解答(ASS情況)，若出現這種情況，其中一組不是要找的答案，請用未輸入的已知變數核對清楚那組答案是
-        否正確。</p>
+    <p>註3: 若多於三個己知變數，可任意選取其中三個已知變數輸入，但要注意有可能出現兩組解答(ASS情況)，若出現這種情況，其中一組不是要找的答案，請用未輸入的已知變數核對清楚那組答案是 否正確。</p>
     <p>註4: 角的資料以負值形式輸入，邊的資料若有已知對應角存在請以負值輸入，否則邊以正值輸入。</p>
     <p>註5: 程式一計算完結後按 RCL A, RCL B, RCL C, RCL D, RCL X, RCL Y 可依次序再顯示三邊及三角
-        ，若有兩組解答只再顯示第二組解答(如要提取第一組記憶請在顯示時第一組面積時按AC終止程式即可)。程式二計算完結後按 RCL A, RCL B, RCL X, RCL
-        Y, RCL C, RCL D 可依次序再顯示三邊及三角
+        ，若有兩組解答只再顯示第二組解答(如要提取第一組記憶請在顯示時第一組面積時按AC終止程式即可)。程式二計算完結後按 RCL A, RCL B, RCL X, RCL Y, RCL C, RCL D 可依次序再顯示三邊及三角
         ，若有兩組解答只再顯示第二組解答(如要提取第一組記憶請在顯示時第一組面積時按AC終止程式即可)。</p>
     <p>註6: 計算完結後會顯示0，若顯示整個三角形資料後出現非0的數值，表示有另一個可能的三角形存在(第二組解答)。</p>
-    <p>
-        <span lang="en">
-            註7: 如果是使用fx-3650P II或fx-50FH II，上述兩個程式中</span>紫色的開括號 <font color="#800080"><b>(
-            </b></font>
-        <span lang="en">
-            可以省略，程式長度可減1 byte。</span>
-    </p>
+    <p> <span lang="en"> 註7: 如果是使用fx-3650P II或fx-50FH II，上述兩個程式中</span>紫色的開括號 <font color="#800080"><b>( </b></font>
+        <span lang="en"> 可以省略，程式長度可減1 byte。</span> </p>
     <p>　</p>
     <A=>
-        <p>例題1:
-            a=4, b=5, c=6，求∠A、∠B、∠C及三角形面積。</p>
-        </a>
+        <p>例題1: a=4, b=5, c=6，求∠A、∠B、∠C及三角形面積。</p> </a>
         <p>
-        <A=>
-            <p>注意:要在DEG Mode執行</p>
-            <p>按 Prog 1 再按 4 EXE 5 EXE 6 EXE (顯示a為4)</p>
-            <p>EXE (顯示b為5) EXE (顯示c為6)</p>
-            <p>EXE (顯示∠A=41.410<sup>o</sup>) EXE (顯示∠B=55.771<sup>o</sup>) </p>
-            <p>EXE (顯示∠C=82.8192<sup>o</sup>) EXE (顯示面積為9.9216)</p>
-            <p>EXE (顯示WhileEnd及0表示計算完結)</p>
-            <p>
-                　</p>
-            <p>例題2:
-                a=4, b=5, ∠C=40<sup>o</sup>
-                ，求∠A、∠B、c及三角形面積。</p>
-            </a>
-            <p>
             <A=>
                 <p>注意:要在DEG Mode執行</p>
-                <p>按 Prog 1 再按 4 EXE 5 EXE - 40 EXE (顯示a為4)</p>
-                <p>EXE (顯示b為5) EXE (顯示c為3.2184)</p>
-                <p>EXE (顯示∠A=53.024<sup>o</sup>) EXE (顯示∠B=86.976<sup>o</sup>)&nbsp;</p>
-                <p>EXE (顯示∠C=40<sup>o</sup>) EXE (顯示面積為6.4279) </p>
+                <p>按 Prog 1 再按 4 EXE 5 EXE 6 EXE (顯示a為4)</p>
+                <p>EXE (顯示b為5) EXE (顯示c為6)</p>
+                <p>EXE (顯示∠A=41.410<sup>o</sup>) EXE (顯示∠B=55.771<sup>o</sup>) </p>
+                <p>EXE (顯示∠C=82.8192<sup>o</sup>) EXE (顯示面積為9.9216)</p>
                 <p>EXE (顯示WhileEnd及0表示計算完結)</p>
-                <p>　</p>
-                <p><span class="Apple-style-span">
-                        <span style="font-family: 新細明體; letter-spacing: normal">例</span></span><span
-                        class="Apple-style-span"
-                        style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><span
-                            class="Apple-style-span" style="font-family: 新細明體; line-height: 15px; text-align: left">題3:
-                            ∠A = 40<sup>o</sup>, c = 5, ∠B = 40<sup>o</sup></span></span>，求 a、b、∠C及三角形面積。</p>
-                </a>
+                <p> 　</p>
+                <p>例題2: a=4, b=5, ∠C=40<sup>o</sup> ，求∠A、∠B、c及三角形面積。</p> </a>
                 <p>
-                <a=>
-                    <p>注意:要在DEG Mode執行</p>
-                    <p>
-                        按 Prog 1 再按 5 EXE - 40 EXE - 40 EXE (顯示c為 5) </p>
-                    <p>
-                        EXE (顯示a為 3.2635) EXE (顯示b為 3.2635) </p>
-                    <p>
-                        EXE (顯示∠C為100<sup>o</sup>) EXE (顯示∠A為40<sup>o</sup>)&nbsp;</p>
-                    <p>
-                        EXE (顯示∠B為40<sup>o</sup>)&nbsp;EXE (顯示面積為5.2444)&nbsp;</p>
-                    <p>EXE (顯示WhileEnd及0表示計算完結)</p>
-                    </a>
-                    <p>
-                        　</p>
-                    <p>
-                        例題4:
-                        ∠A = 40<sup>o</sup>，a
-                        = 5，∠B
-                        = 60<sup>o</sup>，求b，∠C及c。</p>
-                    </a>
-                    <p>
-                        
-                    </p>
                     <A=>
                         <p>注意:要在DEG Mode執行</p>
-                        <p>按 Prog 1 再按 - 5 EXE - 40 EXE - 60 EXE (顯示a為5)</p>
-                        <p>EXE (顯示b為6.7365) EXE (顯示c為7.6604)</p>
-                        <p>EXE (顯示∠A為 40<sup>o</sup>) EXE (顯示∠B為 60<sup>o</sup>) </p>
-                        <p>EXE (顯示∠C為 80<sup>o</sup>) EXE (顯示面積為16.5853)</p>
+                        <p>按 Prog 1 再按 4 EXE 5 EXE - 40 EXE (顯示a為4)</p>
+                        <p>EXE (顯示b為5) EXE (顯示c為3.2184)</p>
+                        <p>EXE (顯示∠A=53.024<sup>o</sup>) EXE (顯示∠B=86.976<sup>o</sup>)&nbsp;</p>
+                        <p>EXE (顯示∠C=40<sup>o</sup>) EXE (顯示面積為6.4279) </p>
                         <p>EXE (顯示WhileEnd及0表示計算完結)</p>
+                        <p>　</p>
+                        <p><span class="Apple-style-span"> <span
+                                    style="font-family: 新細明體; letter-spacing: normal">例</span></span><span
+                                class="Apple-style-span"
+                                style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><span
+                                    class="Apple-style-span"
+                                    style="font-family: 新細明體; line-height: 15px; text-align: left">題3: ∠A =
+                                    40<sup>o</sup>, c = 5, ∠B = 40<sup>o</sup></span></span>，求 a、b、∠C及三角形面積。</p> </a>
                         <p>
-                            　</p>
-                        <p>
-                            例題5:
-                            ∠A =
-                            150<sup>o</sup>，a
-                            = 10，b = 6，求∠B，∠C及c。</p>
-                        <p>
-                            
-                        </p>
-                        <p>注意:要在DEG Mode執行</p>
-                        <p>按 Prog 1 再按 - 10 EXE - 150 EXE 6 EXE (顯示a為10)&nbsp; </p>
-                        <p>EXE (顯示b為6) EXE (顯示c為4.3432) </p>
-                        <p>EXE (顯示∠A為 150<sup>o</sup>) EXE (顯示∠B為17.4576<sup>o</sup>) </p>
-                        <p>EXE (顯示∠C為 12.5424<sup>o</sup>) EXE (顯示面積為6.51486)</p>
-                        <p>EXE (顯示WhileEnd及0表示計算完結)</p>
-                        <p>
-                            　</p>
-                        <p>
-                            例題6:
-                            ∠A = 50<sup>o</sup>，a
-                            = 10，b = 13，求∠B，∠C及c。</p>
-                        </a>
-                        <p>
-                            
-                        </p>
-                        <A=>
-                            <p>注意:要在DEG Mode執行</p>
-                            <p>按 Prog 1 再按 -10 EXE -50 EXE 13 EXE (顯示a為10)</p>
-                            <p>EXE (顯示b為13) EXE (顯示c為9.2655) </p>
-                            <p>EXE (顯示∠A為 50<sup>o</sup>) EXE (顯示∠B為84.7832<sup>o</sup>) </p>
-                            <p>EXE (顯示∠C為 45.2168<sup>o</sup>) EXE (顯示面積為46.1355)</p>
-                            <p>EXE (程式未終止及顯示另一組答案，a為10) </p>
-                            <p>EXE (顯示b為13) EXE (顯示c為7.44699) </p>
-                            <p>EXE (顯示∠A為 50<sup>o</sup>) EXE (顯示∠B為95.2168<sup>o</sup>) </p>
-                            <p>EXE (顯示∠C為 34.7832<sup>o</sup>) EXE (顯示面積為37.0807) </p>
-                            <p>EXE (顯示WhileEnd及0表示計算完結)</p>
-                            <p>　</p>
-                            <p>
-                                </a>
-                                <a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a>
-                            </p>
+                            <a=>
+                                <p>注意:要在DEG Mode執行</p>
+                                <p> 按 Prog 1 再按 5 EXE - 40 EXE - 40 EXE (顯示c為 5) </p>
+                                <p> EXE (顯示a為 3.2635) EXE (顯示b為 3.2635) </p>
+                                <p> EXE (顯示∠C為100<sup>o</sup>) EXE (顯示∠A為40<sup>o</sup>)&nbsp;</p>
+                                <p> EXE (顯示∠B為40<sup>o</sup>)&nbsp;EXE (顯示面積為5.2444)&nbsp;</p>
+                                <p>EXE (顯示WhileEnd及0表示計算完結)</p> </a>
+                                <p> 　</p>
+                                <p> 例題4: ∠A = 40<sup>o</sup>，a = 5，∠B = 60<sup>o</sup>，求b，∠C及c。</p> </a>
+                                <p> </p>
+                                <A=>
+                                    <p>注意:要在DEG Mode執行</p>
+                                    <p>按 Prog 1 再按 - 5 EXE - 40 EXE - 60 EXE (顯示a為5)</p>
+                                    <p>EXE (顯示b為6.7365) EXE (顯示c為7.6604)</p>
+                                    <p>EXE (顯示∠A為 40<sup>o</sup>) EXE (顯示∠B為 60<sup>o</sup>) </p>
+                                    <p>EXE (顯示∠C為 80<sup>o</sup>) EXE (顯示面積為16.5853)</p>
+                                    <p>EXE (顯示WhileEnd及0表示計算完結)</p>
+                                    <p> 　</p>
+                                    <p> 例題5: ∠A = 150<sup>o</sup>，a = 10，b = 6，求∠B，∠C及c。</p>
+                                    <p> </p>
+                                    <p>注意:要在DEG Mode執行</p>
+                                    <p>按 Prog 1 再按 - 10 EXE - 150 EXE 6 EXE (顯示a為10)&nbsp; </p>
+                                    <p>EXE (顯示b為6) EXE (顯示c為4.3432) </p>
+                                    <p>EXE (顯示∠A為 150<sup>o</sup>) EXE (顯示∠B為17.4576<sup>o</sup>) </p>
+                                    <p>EXE (顯示∠C為 12.5424<sup>o</sup>) EXE (顯示面積為6.51486)</p>
+                                    <p>EXE (顯示WhileEnd及0表示計算完結)</p>
+                                    <p> 　</p>
+                                    <p> 例題6: ∠A = 50<sup>o</sup>，a = 10，b = 13，求∠B，∠C及c。</p> </a>
+                                    <p> </p>
+                                    <A=>
+                                        <p>注意:要在DEG Mode執行</p>
+                                        <p>按 Prog 1 再按 -10 EXE -50 EXE 13 EXE (顯示a為10)</p>
+                                        <p>EXE (顯示b為13) EXE (顯示c為9.2655) </p>
+                                        <p>EXE (顯示∠A為 50<sup>o</sup>) EXE (顯示∠B為84.7832<sup>o</sup>) </p>
+                                        <p>EXE (顯示∠C為 45.2168<sup>o</sup>) EXE (顯示面積為46.1355)</p>
+                                        <p>EXE (程式未終止及顯示另一組答案，a為10) </p>
+                                        <p>EXE (顯示b為13) EXE (顯示c為7.44699) </p>
+                                        <p>EXE (顯示∠A為 50<sup>o</sup>) EXE (顯示∠B為95.2168<sup>o</sup>) </p>
+                                        <p>EXE (顯示∠C為 34.7832<sup>o</sup>) EXE (顯示面積為37.0807) </p>
+                                        <p>EXE (顯示WhileEnd及0表示計算完結)</p>
+                                        <p>　</p>
+                                        <p> </a> <a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F
+                                                PLUS 程式集</a> </p>
 </body>
 
 </html>

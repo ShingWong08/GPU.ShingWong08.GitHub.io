@@ -9,48 +9,28 @@
                 <font size="5">反查卡方分佈</font>
             </b></u></p>
     <p>程式編寫日期: 2010年1月7日 </p>
-    <p>注意: <font color="#FF0000">e^( </font>是按shift
-        e<sup>x</sup>。</p>
+    <p>注意: <font color="#FF0000">e^( </font>是按shift e<sup>x</sup>。</p>
+    <p> 程式 (145 bytes)</p>
     <p>
-        程式 (145 bytes)</p>
-    <p>
-        <font color="#FF0000">Pol(</font> . 5 , 0: M<font color="#FF0000">M-</font>:
-        ?→A: ?→B: Fix 0: Lbl 0: A→D:
+        <font color="#FF0000">Pol(</font> . 5 , 0: M<font color="#FF0000">M-</font>: ?→A: ?→B: Fix 0: Lbl 0: A→D:
     </p>
+    <p> (1+Y)<sup>-1</sup> + X - 2X(B&gt;M: Ans<sup>-1</sup> - 1→Y:&nbsp;X÷2→X:</p>
     <p>
-        (1+Y)<sup>-1</sup> + X - 2X(B&gt;M: Ans<sup>-1</sup> - 1→Y:&nbsp;X÷2→X:</p>
-    <p>
-        <font color="#FF0000">e^(</font> - . 5Y→C: D - 2Rnd( D÷2 <font color="#FF0000">=&gt;</font> C√( 2Y÷π→C:
-        D→M:
+        <font color="#FF0000">e^(</font> - . 5Y→C: D - 2Rnd( D÷2 <font color="#FF0000">=&gt;</font> C√( 2Y÷π→C: D→M:
     </p>
-    <p>
-        While
-        M≧2: YC÷M→C: 2<font color="#FF0000">M-</font>: WhileEnd:
-        C→M:
-    </p>
-    <p>
-        While C&gt; <font size="1">E</font> - 7M: D + 2→D: CY÷D→C:</p>
-    <p>
-        C<font color="#FF0000">M+</font>: WhlieEnd: X &gt; <font size="1">E</font> - 7
-        <font color="#FF0000">=&gt;</font> Goto 0: Norm 1: Y
-    </p>
-    <p>
-        　</p>
-    <p>
-        例題1: 若卡方分佈 (chi-square distribution)的自由度為2及P(0≦t≦x)=0.77687，求x。</p>
-    <p>
-        Prog 1 再按 2 EXE 0.77687EXE (顯示x為3)</p>
-    <p>
-        註: 計算時間大約30秒</p>
+    <p> While M≧2: YC÷M→C: 2<font color="#FF0000">M-</font>: WhileEnd: C→M: </p>
+    <p> While C&gt; <font size="1">E</font> - 7M: D + 2→D: CY÷D→C:</p>
+    <p> C<font color="#FF0000">M+</font>: WhlieEnd: X &gt; <font size="1">E</font> - 7 <font color="#FF0000">=&gt;
+        </font> Goto 0: Norm 1: Y </p>
+    <p> 　</p>
+    <p> 例題1: 若卡方分佈 (chi-square distribution)的自由度為2及P(0≦t≦x)=0.77687，求x。</p>
+    <p> Prog 1 再按 2 EXE 0.77687EXE (顯示x為3)</p>
+    <p> 註: 計算時間大約30秒</p>
     <p>　</p>
-    <p>
-        例題2: 若卡方分佈 (chi-square distribution)的自由度為5及P(0≦t≦x)=0.30001，求x。</p>
-    <p>
-        Prog 1 再按 5 EXE 0.30001 EXE (顯示x為3)</p>
-    <p>
-        註: 計算時間大約31秒</p>
-    <p>
-        　</p>
+    <p> 例題2: 若卡方分佈 (chi-square distribution)的自由度為5及P(0≦t≦x)=0.30001，求x。</p>
+    <p> Prog 1 再按 5 EXE 0.30001 EXE (顯示x為3)</p>
+    <p> 註: 計算時間大約31秒</p>
+    <p> 　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>
 

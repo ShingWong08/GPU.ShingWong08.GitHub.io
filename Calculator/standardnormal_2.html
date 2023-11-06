@@ -12,14 +12,12 @@
     <p>第一個程式較短，但準確度較低，誤差小於0.00003。第二個程式較長，但準確度很高，能夠準確至小數7位，誤差則小於7.5 x 10<sup>-8</sup>
         。考高考的朋友注意：高考所用的標準常能分佈表準確至小數4位，若果用第一個程式以四位小數四捨五入，有機會與查表的數值有0.0001的差別，故不建議應用於高考。若果希望使用高考查表所得相同數據，再配合正比例的方法求出答案，建議使用<a
             href="standardnormal_5.html">高考準確版程式</a>。</p>
-    <p>注意: <font color="#FF0000">e^(</font>是按shift
-        e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
+    <p>注意: <font color="#FF0000">e^(</font>是按shift e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
     <p>
         <font color="#FF0000">第一個程式 </font>(41 bytes / <font color="#008000">50 bytes</font>，使用記憶為A):
     </p>
-    <p>?→A: <font color="#FF0000">e^( </font>- A<sup>2</sup>: . 5√( 1 - 30<sup>-1</sup>
-        (7√( Ans ) + 7Ans + πAnsA<sup>2</sup>
-        ÷ 4 </p>
+    <p>?→A: <font color="#FF0000">e^( </font>- A<sup>2</sup>: . 5√( 1 - 30<sup>-1</sup> (7√( Ans ) + 7Ans +
+        πAnsA<sup>2</sup> ÷ 4 </p>
     <p>+ 16Ans^( 2 - √( 2 <font color="#008000">◢ . 5 - Ans ◢ 1 - Ans</font>
     </p>
     <p>
@@ -27,56 +25,31 @@
     </p>
     <p>　</p>
     <p>
-        <font color="#FF0000">第二個程式</font> (92 bytes / <font color="#008000">101
-            bytes</font>，使用記憶為A)
+        <font color="#FF0000">第二個程式</font> (92 bytes / <font color="#008000">101 bytes</font>，使用記憶為A)
     </p>
-    <p>?→A: 1 ÷ (1 + . 2316419Abs( A: . 5
-        - <font size="1">E</font> -9&nbsp; <font color="#FF0000">e^(</font> - . 5A<sup>2</sup>
-        )(</p>
-    <p>127414795Ans - 142248368Ans<sup>2</sup> + Ans<sup>3</sup>(710706870
-        -</p>
+    <p>?→A: 1 ÷ (1 + . 2316419Abs( A: . 5 - <font size="1">E</font> -9&nbsp; <font color="#FF0000">e^(</font> - .
+        5A<sup>2</sup> )(</p>
+    <p>127414795Ans - 142248368Ans<sup>2</sup> + Ans<sup>3</sup>(710706870 -</p>
     <p>726576013Ans + 530702714Ans<sup>2</sup>
-        <font color="#008000">◢ . 5 -
-            Ans ◢ 1 - Ans</font>
+        <font color="#008000">◢ . 5 - Ans ◢ 1 - Ans</font>
     </p>
     <p>
         <font color="#008000">註:</font> 若果不想同時計算P(Z≧X)及P(Z≦X)，綠色的程式碼可以略去。
     </p>
     <p>　</p>
-    <p>例題: 計算 P(0≦
-        Z≦1)、P(Z≧1)
-        及 P(Z≦1)，其中
-        Z ~ N(0, 1)。</p>
+    <p>例題: 計算 P(0≦ Z≦1)、P(Z≧1) 及 P(Z≦1)，其中 Z ~ N(0, 1)。</p>
     <p>
         <font color="#FF0000">第一個程式按法:</font>
     </p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (顯示P(0≦
-        Z≦1)為0.34136382)</p>
-    <p>
-        EXE
-        (顯示P(Z≧1)為0.158636179)
-        EXE
-        (顯示P(Z≦1)為0.84136382)</p>
+    <p> 按 Prog 1 再按 1 EXE (顯示P(0≦ Z≦1)為0.34136382)</p>
+    <p> EXE (顯示P(Z≧1)為0.158636179) EXE (顯示P(Z≦1)為0.84136382)</p>
     <p>
         <font color="#FF0000">第二個程式按法:</font>
     </p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (顯示P(0≦
-        Z≦1)為0.341344741)</p>
-    <p>
-        EXE
-        (顯示P(Z≧1)為0.158655259)
-        EXE
-        (顯示P(Z≦1)為0.841344741)</p>
+    <p> 按 Prog 1 再按 1 EXE (顯示P(0≦ Z≦1)為0.341344741)</p>
+    <p> EXE (顯示P(Z≧1)為0.158655259) EXE (顯示P(Z≦1)為0.841344741)</p>
     <p>　</p>
-    <p>註: 如果輸入的數值X
-        為負數，程式會計算P(X≦
-        Z≦0)，然後順序計算P(Z
-        ≦ X)及P(Z
-        ≧ X)。</p>
+    <p>註: 如果輸入的數值X 為負數，程式會計算P(X≦ Z≦0)，然後順序計算P(Z ≦ X)及P(Z ≧ X)。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

@@ -9,51 +9,40 @@
                 <font size="5">混合物溫度(II)</font>
             </b></u></p>
     <p>更新日期: 2014年8月31日</p>
-    <p>程式可以計算N個物體的混合問題，計算其中一個未知數(混合最後溫度(final temperature)、其中一混合物未混合前的質量(mass)、比熱容量/熱容量(specific
-        heat capacity/heat capacity)或最初溫度(inital temperature)。</p>
+    <p>程式可以計算N個物體的混合問題，計算其中一個未知數(混合最後溫度(final temperature)、其中一混合物未混合前的質量(mass)、比熱容量/熱容量(specific heat capacity/heat
+        capacity)或最初溫度(inital temperature)。</p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
     <p>
         <font color="#FF0000">注意</font> : 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font
-            color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">Σxy</font>
-        按 Shift 1 → 3)，e 是按 ALPHA ln。
+            color="#0000FF">Σy</font> 按 Shift 1 → 2，<font color="#0000FF">Σxy</font> 按 Shift 1 → 3)，e 是按 ALPHA ln。
     </p>
     <p>程式 (133 bytes)</p>
     <p>ClrStat: Rec( 0 , 0: e: ?→A: ?→M: ?→C:</p>
-    <p>?→B: M <font color="#FF0000"><b>,</b></font> C <font color="#FF0000">DT</font>:
-        While 1: ?→M: ?→C: ?→D:</p>
+    <p>?→B: M <font color="#FF0000"><b>,</b></font> C <font color="#FF0000">DT</font>: While 1: ?→M: ?→C: ?→D:</p>
     <p>MC + X→X: MCD + Y→Y: (Y - XA) ÷ (A - B→C:</p>
     <p>
         <font color="#0000FF">Σx</font>=e <font color="#FF0000">=&gt;</font> C÷<font color="#0000FF">Σy</font>→M: <font
             color="#0000FF">Σy</font>=e <font color="#FF0000">=&gt;</font> C÷<font color="#0000FF">Σx</font>→M:
     </p>
-    <p>B=e <font color="#FF0000">=&gt;</font> (XA - Y + <font color="#0000FF">Σxy</font>A) ÷
-        <b>
+    <p>B=e <font color="#FF0000">=&gt;</font> (XA - Y + <font color="#0000FF">Σxy</font>A) ÷ <b>
             <font color="#800080">(</font>
         </b>
         <font color="#0000FF">Σxy</font>→M:
     </p>
     <p>A=e <font color="#FF0000">=&gt;</font> (<font color="#0000FF">Σxy</font>B + Y) ÷ (<font color="#0000FF">Σxy
-        </font> + X→M:
-        WhileEnd</p>
-    <p>
-        <span lang="en">
-            註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
-            </b></font>
-        <span lang="en">
-            可以省略，程式長度可減1 byte。</span>
-    </p>
+        </font> + X→M: WhileEnd</p>
+    <p> <span lang="en"> 註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>( </b></font> <span
+            lang="en"> 可以省略，程式長度可減1 byte。</span> </p>
     <p>　</p>
     <p>操作說明: </p>
-    <p>1.
-        先輸入最後混合溫度，再依次序順輸入各物體未混合前的質量、比熱容量及最初溫度，但要注意若果計算物體未混合前的物理量，該組物體的物理量要首先輸入，而未知物理量以Ans輸入。</p>
+    <p>1. 先輸入最後混合溫度，再依次序順輸入各物體未混合前的質量、比熱容量及最初溫度，但要注意若果計算物體未混合前的物理量，該組物體的物理量要首先輸入，而未知物理量以Ans輸入。</p>
     <p>2. 若果資料是熱容量亦可以計算，只要質量輸入1及將熱容量當作比熱容量輸入即可。</p>
     <p>3. 程式假定<font color="#FF0000">沒有熱能損失於環境之</font>中，亦假定原先物體<font color="#FF0000">沒有物態的改變</font>，否則程式不適用。</p>
     <p>　</p>
-    <p>例題1: 液體A的質量、比熱容量及溫度分別 2 kg、 3000 J kg<sup>-1</sup>K<sup>-1</sup>
-        及20&#730;C，水的質量、比熱容量及溫度分別 1 kg、 4200 J kg<sup>-1</sup>K<sup>-1</sup>
-        及100&#730;C，若液體A與水混合，試計算混合後的溫度。</p>
+    <p>例題1: 液體A的質量、比熱容量及溫度分別 2 kg、 3000 J kg<sup>-1</sup>K<sup>-1</sup> 及20&#730;C，水的質量、比熱容量及溫度分別 1 kg、 4200 J
+        kg<sup>-1</sup>K<sup>-1</sup> 及100&#730;C，若液體A與水混合，試計算混合後的溫度。</p>
     <p>按 Prog 1 再按 <font color="#FF0000">Ans</font> EXE (表示計算混合後溫度)</p>
     <p>2 EXE 3000 EXE 20 EXE </p>
     <p>1 EXE 4200 EXE 100 EXE (顯示混合後溫度為52.94&#730;C)</p>
@@ -64,20 +53,17 @@
         kg<sup>-1</sup>K<sup>-1</sup>)</p>
     <p>按 Prog 1 再按<font color="#FF0000"> Ans</font> EXE (Ans表示計算混合後溫度)</p>
     <p>
-        <font color="#FF0000">1</font> EXE <font color="#FF0000">21</font>
-        EXE 30 EXE (注意銅杯的資料是熱容量不是比熱容量，所以質量要輸入1)
+        <font color="#FF0000">1</font> EXE <font color="#FF0000">21</font> EXE 30 EXE (注意銅杯的資料是熱容量不是比熱容量，所以質量要輸入1)
     </p>
     <p>0.2 EXE 3045 EXE 30 EXE</p>
     <p>0.1 EXE 4200 EXE 50 EXE (顯示混合後溫度為 38&#730;C)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>　</p>
-    <p>例題3: 液體A的比熱容量及溫度分別 3000 J kg<sup>-1</sup>K<sup>-1</sup>
-        及20&#730;C，水的質量、比熱容量及溫度分別 1 kg、 4200 J kg<sup>-1</sup>K<sup>-1</sup>
-        及100&#730;C，若液體A與水混合，混合後的溫度為 52.94&#730;C，求液體A的質量。</p>
+    <p>例題3: 液體A的比熱容量及溫度分別 3000 J kg<sup>-1</sup>K<sup>-1</sup> 及20&#730;C，水的質量、比熱容量及溫度分別 1 kg、 4200 J
+        kg<sup>-1</sup>K<sup>-1</sup> 及100&#730;C，若液體A與水混合，混合後的溫度為 52.94&#730;C，求液體A的質量。</p>
     <p>按 Prog 1 再按 52.94 EXE (混合後溫度)</p>
     <p>
-        <font color="#FF0000">Ans</font> EXE (Ans表示計算質量) 3000 EXE 20 EXE
-        (注意由於計算液體A的質量，這組資料首輸入)
+        <font color="#FF0000">Ans</font> EXE (Ans表示計算質量) 3000 EXE 20 EXE (注意由於計算液體A的質量，這組資料首輸入)
     </p>
     <p>1 EXE 4200 EXE 100 EXE (顯示液體A質量為 2 kg)</p>
     <p>計算完結後按 AC 終止程式</p>
@@ -85,13 +71,11 @@
     <p>例題4: 液體A的質量及溫度分別 2 kg及20&#730;C，水的質量、比熱容量及溫度分別 1 kg、 4200 J kg<sup>-1</sup>K<sup>-1</sup>
         及100&#730;C，若液體A與水混合，混合後的溫度為 52.94&#730;C，求液體A的比熱容量。</p>
     <p>按 Prog 1 再按 52.94 EXE (混合後溫度)</p>
-    <p>2 EXE <font color="#FF0000">Ans</font> EXE (Ans表示計算比熱容量) 20 EXE
-        (注意由於計算液體A的比熱容量，這組資料首輸入)</p>
+    <p>2 EXE <font color="#FF0000">Ans</font> EXE (Ans表示計算比熱容量) 20 EXE (注意由於計算液體A的比熱容量，這組資料首輸入)</p>
     <p>1 EXE 4200 EXE 100 EXE (顯示液體A比熱容量為 3000 J kg<sup>-1</sup>K<sup>-1</sup> )</p>
     <p>　</p>
     <p>例題5: 液體A的質量及比熱容量分別 2 kg及3000 J kg<sup>-1</sup>K<sup>-1</sup>，水的質量、比熱容量及溫度分別 1 kg、 4200 J
-        kg<sup>-1</sup>K<sup>-1</sup>
-        及100&#730;C若液體A與水混合，混合後的溫度為 52.94&#730;C，求液體A最初的溫度。</p>
+        kg<sup>-1</sup>K<sup>-1</sup> 及100&#730;C若液體A與水混合，混合後的溫度為 52.94&#730;C，求液體A最初的溫度。</p>
     <p>按 Prog 1 再按 52.94 EXE (混合後溫度)</p>
     <p>2 EXE 3000 EXE <font color="#FF0000">Ans</font> EXE (Ans表示計算最初溫度，注意由於計算液體A的最初溫度，這組資料首輸入)</p>
     <p>1 EXE 4200 EXE 100 EXE (顯示液體A最初溫度為 20&#730;C )</p>

@@ -12,29 +12,22 @@
     <p>程式可計算一個函數的第一、第二、第三及第四導數的近似值。不過要留意第四導數的準確會較低。</p>
     <p>
         <font color="#FF0000">注意:</font>
-        <font color="#0000FF">π<sup>r</sup></font>
-        是按 Shift EXP Shift Ans 2
+        <font color="#0000FF">π<sup>r</sup></font> 是按 Shift EXP Shift Ans 2
     </p>
     <p>程式 (最少122 bytes)</p>
-    <p>ClrMemory: ?→X: Lbl 0: <font color="#008000">X + ln( X</font> →Y: M=0<font color="#FF0000">
-            =&gt;</font> Y→A◢</p>
-    <p>M=1<font color="#FF0000"> =&gt;</font> Y→B: M=2<font color="#FF0000"> =&gt;</font>
-        Y→C: M=3<font color="#FF0000"> =&gt;</font> Y→D: 1<font color="#FF0000">M+</font>: </p>
-    <p>M cos(
-        <font color="#0000FF">π<sup>r</sup></font>M )
-        ÷ 128 + X→X: M≠5 <font color="#FF0000">=&gt;</font> Goto 0: 64(C - B◢
-    </p>
+    <p>ClrMemory: ?→X: Lbl 0: <font color="#008000">X + ln( X</font> →Y: M=0<font color="#FF0000"> =&gt;</font> Y→A◢</p>
+    <p>M=1<font color="#FF0000"> =&gt;</font> Y→B: M=2<font color="#FF0000"> =&gt;</font> Y→C: M=3<font color="#FF0000">
+            =&gt;</font> Y→D: 1<font color="#FF0000">M+</font>: </p>
+    <p>M cos( <font color="#0000FF">π<sup>r</sup></font>M ) ÷ 128 + X→X: M≠5 <font color="#FF0000">=&gt;</font> Goto 0:
+        64(C - B◢ </p>
     <p>4^( 7 )(C - 2A + B◢ 4^( 10 )(Y - 2C + 2B - D◢</p>
     <p>4^( 14 )(Y - 4C + 6A - 4B + D</p>
     <p>註: 綠色的<font color="#008000">X + ln( X</font>是函數方程(變數是X)，若果想計算其它方程，只要修改綠色的部份。</p>
     <p>　</p>
     <p>例題: 計算 f(x) = x + ln x 在 x = 2的第一、第二、第三及第四導數的近似值。</p>
-    <p>按
-        Prog 1 再按 2 EXE (顯示 f(2)為
-        2.693147181) </p>
+    <p>按 Prog 1 再按 2 EXE (顯示 f(2)為 2.693147181) </p>
     <p>EXE (顯示f'(2)為1.500002543) </p>
-    <p>EXE (顯示f''(2)為
-        -0.250001907)</p>
+    <p>EXE (顯示f''(2)為 -0.250001907)</p>
     <p>EXE (顯示f<sup>
             <font size="2" color="#000000">(3)</font>
         </sup>(2)為 0.250011451)</p>

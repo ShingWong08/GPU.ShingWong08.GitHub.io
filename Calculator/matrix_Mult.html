@@ -11,32 +11,23 @@
     <p>更新日期: 2011年6月1日</p>
     <p>程式可以計算一個 3 × 3 <b>
             <font color="#FF0000">整數</font>
-        </b>矩陣及另一個
-        3 × n矩陣的乘積，其中
-        n是正整數。程式<b>
+        </b>矩陣及另一個 3 × n矩陣的乘積，其中 n是正整數。程式<b>
             <font color="#FF0000">沒有整數的限制</font>
         </b>，第一個程式較短，但準確度低一點，第二個程式準確度很高，但程式較長一點。</p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，
-        <font color="#0000FF">Σxy</font>
-        按 Shift 1 → 3)。
-    </p>
+        <font color="#0000FF">Σxy</font> 按 Shift 1 → 3)。 </p>
     <p><b>
             <font color="#008000">第一個程式(精簡版，113 byes)</font>
         </b></p>
-    <p>FreqOn: ?→A: <font color="#FF0000">;</font> A - 3 <font color="#FF0000">DT</font>:
-        ?→B: B - 1 <font color="#FF0000">DT</font>:</p>
-    <p>?→C:&nbsp; 1 , C <font color="#FF0000">DT</font>: ?→D:&nbsp; 0 , D - C
-        <font color="#FF0000">DT</font>: ?→X:
-    </p>
-    <p>X <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: ?→Y: ?→M:
-        ?→D: ?→X: While 1:</p>
-    <p>?→A: ?→B: ?→C: A<font color="#0000FF">n</font> + B<font color="#0000FF">Σx</font>
-        + C<font color="#0000FF">Σxy</font>◢ <font color="#FF0000">;</font> 0
-        <font color="#FF0000">DT</font>:
-    </p>
+    <p>FreqOn: ?→A: <font color="#FF0000">;</font> A - 3 <font color="#FF0000">DT</font>: ?→B: B - 1 <font
+            color="#FF0000">DT</font>:</p>
+    <p>?→C:&nbsp; 1 , C <font color="#FF0000">DT</font>: ?→D:&nbsp; 0 , D - C <font color="#FF0000">DT</font>: ?→X: </p>
+    <p>X <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: ?→Y: ?→M: ?→D: ?→X: While 1:</p>
+    <p>?→A: ?→B: ?→C: A<font color="#0000FF">n</font> + B<font color="#0000FF">Σx</font> + C<font color="#0000FF">Σxy
+        </font>◢ <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: </p>
     <p>A<font color="#0000FF">Σy</font> + BAns + CY◢ AM + BD + CX◢ WhileEnd</p>
     <p>程式限制: <b>
             <font color="#FF0000">
@@ -47,27 +38,20 @@
     <p><b>
             <font color="#008000">第二個程式(準確版，125 byes)</font>
         </b></p>
-    <p>FreqOn: <font color="#FF0000">;</font> - 5 <font color="#FF0000">DT</font>:
-        -1 <font color="#FF0000">DT</font>: ?→A: 1 , A <font color="#FF0000">DT</font>:
-        ?→B: </p>
-    <p>B , 0 <font color="#FF0000">DT</font>: ?→C:&nbsp; 0 , -A
-        <font color="#FF0000">DT</font>: , C <font color="#FF0000">DT</font>: ?→D:&nbsp;
-        , 0 <font color="#FF0000">;</font> D <font color="#FF0000">DT</font>:
+    <p>FreqOn: <font color="#FF0000">;</font> - 5 <font color="#FF0000">DT</font>: -1 <font color="#FF0000">DT</font>:
+        ?→A: 1 , A <font color="#FF0000">DT</font>: ?→B: </p>
+    <p>B , 0 <font color="#FF0000">DT</font>: ?→C:&nbsp; 0 , -A <font color="#FF0000">DT</font>: , C <font
+            color="#FF0000">DT</font>: ?→D:&nbsp; , 0 <font color="#FF0000">;</font> D <font color="#FF0000">DT</font>:
     </p>
-    <p>?→X: X <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: ?→Y:
-        ?→M: ?→D: ?→X: While 1: </p>
-    <p>?→A: ?→B: ?→C: A<font color="#0000FF">Σxy</font> + B<font color="#0000FF">Σx</font>
-        + C<font color="#0000FF">Σy</font>◢ <font color="#FF0000">;</font> 0
-        <font color="#FF0000">DT</font>:
-    </p>
+    <p>?→X: X <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: ?→Y: ?→M: ?→D: ?→X: While 1: </p>
+    <p>?→A: ?→B: ?→C: A<font color="#0000FF">Σxy</font> + B<font color="#0000FF">Σx</font> + C<font color="#0000FF">Σy
+        </font>◢ <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: </p>
     <p>A<font color="#0000FF">n</font> + BAns + CY◢ AM + BD + CX◢ WhileEnd</p>
     <p>程式限制: 無特別限制。</p>
     <p>　</p>
     <p>例題: 計算下列矩陣的乘積:</p>
     <p>
-    <p>按
-        Prog 1&nbsp; 再按 1 EXE 2 EXE 3 EXE 3 EXE 2
-        EXE 1 EXE 4 EXE 5 EXE 6 EXE</p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 2 EXE 3 EXE 3 EXE 2 EXE 1 EXE 4 EXE 5 EXE 6 EXE</p>
     <p>(第一個矩陣，由左至右，上至下輸入) </p>
     <p>1 EXE 3 EXE 2 EXE (輸入第二個矩陣，第一欄的數據)</p>
     <p>(顯示13) EXE (顯示11) EXE (顯示31，這三個數值為答案的第一欄) </p>

@@ -9,26 +9,21 @@
                 <font size="5">牛頓法(II)</font>
             </b></u></p>
     <p>程式由網友<span class="gen"><span class="postername">
-                <font color="#0000FF">
-                    roviury</font> 提供。
+                <font color="#0000FF"> roviury</font> 提供。
             </span></span></p>
     <p>牛頓法(II)程式會使用一個合適<font face="新細明體">△值計算近似值，亦可以避免函數一階導數為0問題(f'(x)=0)，程式會自動選取足夠準確度，不用經過很多中間很多近似值答案，直接得出最後答案。</p>
     <p>程式編寫日期: 2011年2月28日</p>
     <p>注意: <font size="1">E</font>是按 EXP。</p>
     <p>程式一(89 bytes，不包括綠色的函數方程)</p>
-    <p>?→X: <font size="1">E</font>-15→C: M<font color="#FF0000">M-</font>: Lbl 0:
-        <font color="#008000">X<sup>3</sup>-2X-1</font>→D: M<font color="#FF0000">M- =&gt;</font>
-        Goto 1:
-    </p>
+    <p>?→X: <font size="1">E</font>-15→C: M<font color="#FF0000">M-</font>: Lbl 0: <font color="#008000">
+            X<sup>3</sup>-2X-1</font>→D: M<font color="#FF0000">M- =&gt;</font> Goto 1: </p>
     <p>D=0 <font color="#FF0000">=&gt;</font> X◢ D→B: 1<font color="#FF0000">M+</font>: X+C→X: Goto 0: Lbl 1: If B=D:
     </p>
     <p>Then 4C+5C<sup>2</sup>→C: Else X + DC÷ (B-D→X: . 8C→C: IfEnd: Goto 0</p>
     <p>　</p>
     <p>程式二(97 bytes，不包括綠色的函數方程，綠色函數方程變數可用X或Ans)</p>
-    <p>?→X: <font size="1">E</font>-15→C: M<font color="#FF0000">M-</font>: X: Lbl 0:
-        <font color="#008000">X<sup>3</sup>-2X-1</font>→D: M<font color="#FF0000">M- =&gt;</font>
-        Goto 1:
-    </p>
+    <p>?→X: <font size="1">E</font>-15→C: M<font color="#FF0000">M-</font>: X: Lbl 0: <font color="#008000">
+            X<sup>3</sup>-2X-1</font>→D: M<font color="#FF0000">M- =&gt;</font> Goto 1: </p>
     <p>D=0 <font color="#FF0000">=&gt;</font> X◢ D→B: 1<font color="#FF0000">M+</font>: X+C→X: Goto 0: Lbl 1: If B=D:
     </p>
     <p>Then 4C+5C<sup>2</sup>→C: X: Else . 8C→C: X + DC÷ 1.25(B-D→X:</p>
@@ -36,17 +31,10 @@
     <p>　</p>
     <p>註1: 綠色的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是函數方程(變數是X，若果是程式二變數亦可以使用<span
             lang="en-us">Ans</span>)，若果想計算其它方程，只要修改綠色的部份。</p>
-    <p>
-        註2: 本程式是用近似值的方法去計微分值，所以有可能與真正的牛頓法會有小小分別。</p>
-    <p>註3: 若果希望計算複數根，可將程式改為在複數模式輸入，輸入後只要初始值為a+bi (a可為0)，但不能計算實根。<br>
-        　</p>
-    <p>
-        例題:
-        用牛頓法計算方程式 x<sup>3</sup>
-        – 2x – 1 = 0 的其中一個根，以1為開始的數值
-        。&nbsp; </p>
-    <p>
-        按 Prog 1&nbsp; 再按 1 EXE (顯示答案為1.618033989)</p>
+    <p> 註2: 本程式是用近似值的方法去計微分值，所以有可能與真正的牛頓法會有小小分別。</p>
+    <p>註3: 若果希望計算複數根，可將程式改為在複數模式輸入，輸入後只要初始值為a+bi (a可為0)，但不能計算實根。<br> 　</p>
+    <p> 例題: 用牛頓法計算方程式 x<sup>3</sup> – 2x – 1 = 0 的其中一個根，以1為開始的數值 。&nbsp; </p>
+    <p> 按 Prog 1&nbsp; 再按 1 EXE (顯示答案為1.618033989)</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

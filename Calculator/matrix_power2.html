@@ -8,93 +8,67 @@
     <p align="center"><u><b>
                 <font size="5">二階矩陣正整數冪(II)</font>
             </b></u></p>
-    <p>程式是由網友SuperMANganese提供，程式可以計算一個2×2矩陣的正整數冪。
-        這個程式的速度比第(I)版快，特別是計算較大正整數冪時，很明顯比第(I)版快很多。</p>
+    <p>程式是由網友SuperMANganese提供，程式可以計算一個2×2矩陣的正整數冪。 這個程式的速度比第(I)版快，特別是計算較大正整數冪時，很明顯比第(I)版快很多。</p>
     <p>網更新日期: 2011年12月30日</p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，
-        <font color="#0000FF">n</font>
-        按 Shift 1 3)，要特別留意<font color="#0000FF">Σx</font>
+        <font color="#0000FF">n</font> 按 Shift 1 3)，要特別留意<font color="#0000FF">Σx</font>
         <font color="#FF0000"><sup>2</sup></font>
-        <font color="#0000FF"> </font>
-        是先按出統計變數<font color="#0000FF">Σx</font>，然後再按平方鍵 x<sup>2</sup>，而不是直接按出統計變數<font color="#0000FF">Σx<sup>2</sup>
-        </font>。
+        <font color="#0000FF"> </font> 是先按出統計變數<font color="#0000FF">Σx</font>，然後再按平方鍵 x<sup>2</sup>，而不是直接按出統計變數<font
+            color="#0000FF">Σx<sup>2</sup> </font>。
     </p>
     <p>程式 (202 bytes)</p>
     <p>FreqOn: ?→A: ?→X: ?→Y: ?→D: ?→M: </p>
-    <p>Y→B: D→C: A÷M <font color="#FF0000">,</font> X÷M <font color="#FF0000">;</font>
-        M <font color="#FF0000">DT</font>: 1→A: </p>
+    <p>Y→B: D→C: A÷M <font color="#FF0000">,</font> X÷M <font color="#FF0000">;</font> M <font color="#FF0000">DT</font>
+        : 1→A: </p>
     <p>Rec( 0 ,&nbsp; 0: 1→D: Fix 0: While 1: </p>
-    <p>If .5<font color="#0000FF">n</font>-Rnd(.5<font color="#0000FF">n</font>: Then
-        BA+CY→M:
-        <font color="#0000FF">Σx</font>A+<font color="#0000FF">Σy</font>Y→A:
-    </p>
-    <p>M→Y:
-        <font color="#0000FF">Σx</font>X+<font color="#0000FF">Σy</font>D→M: BX+CD→D: M→X:
-    </p>
-    <p>n≦1<font color="#FF0000"> =&gt; </font>Break: IfEnd:
-        B<font color="#0000FF">Σx</font>+CB→M:
-        Rnd(- .5<font color="#0000FF">n</font>: </p>
+    <p>If .5<font color="#0000FF">n</font>-Rnd(.5<font color="#0000FF">n</font>: Then BA+CY→M: <font color="#0000FF">Σx
+        </font>A+<font color="#0000FF">Σy</font>Y→A: </p>
+    <p>M→Y: <font color="#0000FF">Σx</font>X+<font color="#0000FF">Σy</font>D→M: BX+CD→D: M→X: </p>
+    <p>n≦1<font color="#FF0000"> =&gt; </font>Break: IfEnd: B<font color="#0000FF">Σx</font>+CB→M: Rnd(- .5<font
+            color="#0000FF">n</font>: </p>
     <p>Ans<sup>-1</sup>(<font color="#0000FF">Σx</font>
-        <font color="#FF0000"><sup>2</sup></font> +
-        B<font color="#0000FF">Σy</font> -
-        <font color="#0000FF">Σx</font> , Ans<sup>-1</sup>(<font color="#0000FF">ΣxΣy</font> +
-        <font color="#0000FF">Σy</font>C- <font color="#0000FF">Σy</font> ; Ans
-        <font color="#FF0000">DT</font>:
+        <font color="#FF0000"><sup>2</sup></font> + B<font color="#0000FF">Σy</font> - <font color="#0000FF">Σx</font> ,
+        Ans<sup>-1</sup>(<font color="#0000FF">ΣxΣy</font> + <font color="#0000FF">Σy</font>C- <font color="#0000FF">Σy
+        </font> ; Ans <font color="#FF0000">DT</font>:
     </p>
-    <p>If B: Then <font color="#0000FF">Σx</font> + B<sup>2 -1</sup>(2MBC - M<sup>2</sup>→C:
-        Else C<sup>2</sup>→C: IfEnd:</p>
-    <p>M→B: WhileEnd:
-        Norm 1: A◢ X◢ Y◢ D </p>
-    <p> <br>
-        註1: 冪數越大時，計算時間會較長。</p>
-    <p>註2: 程式限制為冪數小2<sup>26</sup>，若果希望同時計算逆矩陣(負整數冪數)，可在程式尾加入程式碼<font face="新細明體">
-        </font>
+    <p>If B: Then <font color="#0000FF">Σx</font> + B<sup>2 -1</sup>(2MBC - M<sup>2</sup>→C: Else C<sup>2</sup>→C:
+        IfEnd:</p>
+    <p>M→B: WhileEnd: Norm 1: A◢ X◢ Y◢ D </p>
+    <p> <br> 註1: 冪數越大時，計算時間會較長。</p>
+    <p>註2: 程式限制為冪數小2<sup>26</sup>，若果希望同時計算逆矩陣(負整數冪數)，可在程式尾加入程式碼<font face="新細明體"> </font>
         <font color="#008000">
             <font face="新細明體">◢ 1┘(</font>AD - XY→B:
         </font>
     </p>
     <p>
         <font color="#008000">DB◢ -XB◢ -YB◢ AB</font>
-        <font color="#000000">，程式長度則變為
-            230 bytes。</font>
+        <font color="#000000">，程式長度則變為 230 bytes。</font>
     </p>
     <p>註3: 程式原理 --- 此程式使用對冪數m分解為由2的冪數組成，</p>
-    <p>即m=a<sub>0</sub> 2<sup>0</sup>+ a<sub>1</sub> 2<sup>1</sup> + a<sub>2</sub> 2<sup>2
-        </sup>+ ...+ a<sub>k</sub> 2<sup>k</sup> ，其中a<sub>0</sub> , a<sub>1</sub> , ...
-        , a<sub>k</sub> = 0 或 1 及 a<sup>k</sup> ≦m。</p>
-    <p>例如: 100=2<sup>2</sup> + 2<sup>5 </sup>+2<sup>6</sup> ，
-        而矩陣P的正整數冪 P<sup>m</sup> = (P^( a<sub>0</sub> 2<sup>0</sup> ))(P^( a<sub>1</sub> 2<sup>1</sup> ))(P^(
-        a<sub>2</sub>
-        2<sup>2</sup> ))...(P^( a<sub>k</sub> 2<sup>k</sup> )) <br>
-        例如: P<sup>100</sup> =(P<sup>4</sup>)(P<sup>32</sup> )(P<sup>64</sup>) ，
-        此程式利用此方法計算P<sup>m</sup>，
-        對任何正整數ｍ，此程式進行矩陣乘法運算的次數≦ 1+2(lnx)/(ln2)，
-        對一些較大的正整數m會運算會明顯比第(I)版快。 <br>
-        　</p>
+    <p>即m=a<sub>0</sub> 2<sup>0</sup>+ a<sub>1</sub> 2<sup>1</sup> + a<sub>2</sub> 2<sup>2 </sup>+ ...+ a<sub>k</sub>
+        2<sup>k</sup> ，其中a<sub>0</sub> , a<sub>1</sub> , ... , a<sub>k</sub> = 0 或 1 及 a<sup>k</sup> ≦m。</p>
+    <p>例如: 100=2<sup>2</sup> + 2<sup>5 </sup>+2<sup>6</sup> ， 而矩陣P的正整數冪 P<sup>m</sup> = (P^( a<sub>0</sub> 2<sup>0</sup>
+        ))(P^( a<sub>1</sub> 2<sup>1</sup> ))(P^( a<sub>2</sub> 2<sup>2</sup> ))...(P^( a<sub>k</sub> 2<sup>k</sup> ))
+        <br> 例如: P<sup>100</sup> =(P<sup>4</sup>)(P<sup>32</sup> )(P<sup>64</sup>) ， 此程式利用此方法計算P<sup>m</sup>，
+        對任何正整數ｍ，此程式進行矩陣乘法運算的次數≦ 1+2(lnx)/(ln2)， 對一些較大的正整數m會運算會明顯比第(I)版快。 <br> 　</p>
     <p>例題1: 計算</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
     <p>按 Prog 1 再按 1 EXE 2 EXE 3 EXE 4 EXE 3 EXE (顯示37)</p>
     <p>EXE (顯示54) EXE (顯示81) EXE (顯示118) </p>
     <p>所以</p>
     <p>
-    <p>
-        　</p>
-    <p>
-        例題2: 計算</p>
-    <p>
-        　　　
+    <p> 　</p>
+    <p> 例題2: 計算</p>
+    <p> 　　　
     <p>按 Prog 1 再按 1 EXE 0 EXE 0 EXE 1EXE 2009 EXE (顯示1)</p>
     <p>EXE (顯示0) EXE (顯示0) EXE (顯示1)</p>
     <p>所以</p>
     <p>
     <p>註4: 計算例題2，本程式計算時間大約為17秒，若果改用第(I)版(舊版本)，計算時間則大約為810秒。</p>
-    <p>
-        　</p>
+    <p> 　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>
 

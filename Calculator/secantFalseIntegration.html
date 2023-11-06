@@ -9,103 +9,65 @@
                 <font size="5">正割法、試位法、梯形及辛卜生法則定積分</font>
             </b></u></p>
     <p>更新日期: 2011年5月27日</p>
-    <p>
-        程式可以計算正割法、試位法、梯形法則或辛卜生法則定積分問題。第二個程式雖然長一點，但函數的修改部份接近程式的開始位置，因此較容易及快速修改函數，使整體速度加快。</p>
+    <p> 程式可以計算正割法、試位法、梯形法則或辛卜生法則定積分問題。第二個程式雖然長一點，但函數的修改部份接近程式的開始位置，因此較容易及快速修改函數，使整體速度加快。</p>
     <p>第一個程式 (144 bytes，不包括兩個函數方程式)</p>
     <p>ClrMemory: ?→Y: Y&gt;1 <font color="#FF0000">=&gt;</font> Goto 1: While 1: ?→X: <font color="#008000">
-            X<sup>3</sup>
-            - 2X - 1</font>→C<font color="#0000FF">◢ </font>
+            X<sup>3</sup> - 2X - 1</font>→C<font color="#0000FF">◢ </font>
     </p>
-    <p>If 0≧YC: Then C→M: X→A: Else
-        C→D: X→B: IfEnd: </p>
-    <p>(AD - BM) ÷ (D
-        - M→X: Y=0 <font color="#FF0000">=&gt;</font> M→D: Ans
-        <font color="#FF0000">=&gt;</font> A→B: WhileEnd:
-    </p>
+    <p>If 0≧YC: Then C→M: X→A: Else C→D: X→B: IfEnd: </p>
+    <p>(AD - BM) ÷ (D - M→X: Y=0 <font color="#FF0000">=&gt;</font> M→D: Ans <font color="#FF0000">=&gt;</font> A→B:
+        WhileEnd: </p>
     <p>Lbl 1: ?→A: ?→B: ?→C: C<sup>-1</sup>(B-A→B: For 0→D To C: A + BD→X:</p>
     <p>
-        <font color="#800080">ln( X</font>: Ans(3 - cos(
-        π<sup>r</sup>YD ) - (D<sup>2</sup>=DC<font color="#FF0000">M+
+        <font color="#800080">ln( X</font>: Ans(3 - cos( π<sup>r</sup>YD ) - (D<sup>2</sup>=DC<font color="#FF0000">M+
         </font>: Next: BM÷Y
     </p>
     <p>　</p>
     <p>第二個程式 (164 bytes，不包括綠色函數方程式)</p>
-    <p>Goto 1: Lbl 0:<font color="#008000"> X<sup>3</sup>
-            - 2X - 1</font>: If Y&lt;2: Then Ans→C<font color="#0000FF">◢ </font>
+    <p>Goto 1: Lbl 0:<font color="#008000"> X<sup>3</sup> - 2X - 1</font>: If Y&lt;2: Then Ans→C<font color="#0000FF">◢
+        </font>
     </p>
-    <p>0≧YC <font color="#FF0000">=&gt;</font> C→M: Ans<font color="#FF0000"> =&gt;</font> X→A:
-        YC&gt;0 <font color="#FF0000">=&gt;</font>
-        C→D: Ans <font color="#FF0000">=&gt;</font> X→B: </p>
-    <p>(AD - BM) ÷ (D
-        - M→X: Y=0 <font color="#FF0000">=&gt;</font> M→D: Ans
-        <font color="#FF0000">=&gt;</font> A→B: ?→X: Goto 0:
-    </p>
+    <p>0≧YC <font color="#FF0000">=&gt;</font> C→M: Ans<font color="#FF0000"> =&gt;</font> X→A: YC&gt;0 <font
+            color="#FF0000">=&gt;</font> C→D: Ans <font color="#FF0000">=&gt;</font> X→B: </p>
+    <p>(AD - BM) ÷ (D - M→X: Y=0 <font color="#FF0000">=&gt;</font> M→D: Ans <font color="#FF0000">=&gt;</font> A→B:
+        ?→X: Goto 0: </p>
     <p>Lbl 1: ClrMemory: ?→Y: ?→X: Y&lt;2 <font color="#FF0000">=&gt;</font> Goto 0: ?→A: ?→B: </p>
-    <p>B<sup>-1</sup>(A-X→A: Goto 0: Else C + Ans(3 - cos(
-        π<sup>r</sup>YM ) - (M<sup>2</sup>=MB→C: </p>
+    <p>B<sup>-1</sup>(A-X→A: Goto 0: Else C + Ans(3 - cos( π<sup>r</sup>YM ) - (M<sup>2</sup>=MB→C: </p>
     <p>X+A→X: B&gt;M<font color="#FF0000">M+ =&gt;</font> Goto 0: AC÷Y</p>
     <p>　</p>
     <p>註1: 若果是第一個程式，綠色的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是計算<font color="#008000">正割法或試位法</font>
-        的函數方程(變數是X)，
-        紫色的 <font color="#800080">ln( x</font>
-        <font color="#008000"> </font>是
-        計算<font color="#800080">梯形及辛卜生法則</font>的函數方程(變數是X)，若果想計算其它方程，只要修改綠色或紫色的部份即可。
+        的函數方程(變數是X)， 紫色的 <font color="#800080">ln( x</font>
+        <font color="#008000"> </font>是 計算<font color="#800080">梯形及辛卜生法則</font>的函數方程(變數是X)，若果想計算其它方程，只要修改綠色或紫色的部份即可。
     </p>
-    <p>註2: 若果是第二個程式，綠色的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是計算的函數方程(變數是X)，若果想計算其它方程，只要修改綠色的部份
-        即可。</p>
+    <p>註2: 若果是第二個程式，綠色的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是計算的函數方程(變數是X)，若果想計算其它方程，只要修改綠色的部份 即可。</p>
     <p>註3: 若果使用第一個程式，修改積分函數在程式較後位置，因此在進入程式編輯模式(Edit Mode)後，請按向下鍵↓，浮標可以直接跳至程式的最後位置，由最後位置可以較快找到修改的函數。</p>
-    <p>註4: 若果不想顯示計算正割法或試位計算過程的函數值，可將程式中藍色的<font color="#0000FF">◢ </font>修改為
-        <font color="#FF0000">: </font>。
-    </p>
+    <p>註4: 若果不想顯示計算正割法或試位計算過程的函數值，可將程式中藍色的<font color="#0000FF">◢ </font>修改為 <font color="#FF0000">: </font>。 </p>
     <p>註5: 計算正割法或試位法顯示近似值會有<font color="#FF0000">?</font>，當沒有<font color="#FF0000">?</font>並顯示<font color="#FF0000">Disp
         </font>表示為對應的函數值。</p>
-    <p>註6: 計算正割法或試位法時，若果函數值為零，表示對應的x值已是計數機能計算出的最準確的答案，可按 AC
-        終止程式，若再繼續執行程式，有可能出現Math ERROR。</p>
+    <p>註6: 計算正割法或試位法時，若果函數值為零，表示對應的x值已是計數機能計算出的最準確的答案，可按 AC 終止程式，若再繼續執行程式，有可能出現Math ERROR。</p>
     <p>　</p>
-    <p>例題1:
-        用正割法解 x<sup>3</sup>
-        – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
-    <p>
-        按 Prog 1
-        再按 <font color="#FF0000">EXE</font> (輸入0或直接按EXE，表示使用正割法程式)</p>
-    <p>
-        1 EXE (顯示
-        f(1)的值為 - 2) <font color="#FF0000">EXE</font> (沒有?無法輸入數值，再按一下EXE)</p>
-    <p>
-        2 EXE (顯示 f(2)的值為 3)</p>
+    <p>例題1: 用正割法解 x<sup>3</sup> – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
+    <p> 按 Prog 1 再按 <font color="#FF0000">EXE</font> (輸入0或直接按EXE，表示使用正割法程式)</p>
+    <p> 1 EXE (顯示 f(1)的值為 - 2) <font color="#FF0000">EXE</font> (沒有?無法輸入數值，再按一下EXE)</p>
+    <p> 2 EXE (顯示 f(2)的值為 3)</p>
     <p>EXE (顯示第1近似值1.4)</p>
     <p>EXE (顯示f(1.4)的值為-1.056)</p>
     <p>EXE (顯示第2近似值1.556213)</p>
     <p>EXE (顯示f(1.556213)的值為-0.343591)</p>
     <p>EXE (顯示第3近似值1.631554)</p>
-    <p>EXE (顯示f(1.631554)的值為
-        0.0800355)</p>
+    <p>EXE (顯示f(1.631554)的值為 0.0800355)</p>
     <p>…………</p>
-    <p>若將程式中藍色的<font color="#0000FF">◢ </font>修改為
-        <font color="#FF0000">: </font>，那麼不顯示函數值，而按法如下:
-    </p>
-    <p>
-        按 Prog 1
-        再按 <font color="#FF0000">EXE</font> (輸入0或直接按EXE，表示使用正割法程式)</p>
-    <p>
-        1 EXE 2 EXE (顯示第1近似值1.4)</p>
+    <p>若將程式中藍色的<font color="#0000FF">◢ </font>修改為 <font color="#FF0000">: </font>，那麼不顯示函數值，而按法如下: </p>
+    <p> 按 Prog 1 再按 <font color="#FF0000">EXE</font> (輸入0或直接按EXE，表示使用正割法程式)</p>
+    <p> 1 EXE 2 EXE (顯示第1近似值1.4)</p>
     <p>EXE (顯示第2近似值1.556213)</p>
     <p>EXE (顯示第3近似值1.631554)</p>
     <p>…………</p>
     <p>　</p>
-    <p>例題2:
-        用試位法解
-        x<sup>3</sup> – 2x – 1 =
-        0, 1 &lt; x &lt; 2。</p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (輸入1表示使用試位法程式)</p>
-    <p>
-        1 EXE (顯示
-        f(1)的值為 - 2) <font color="#FF0000">EXE</font>
-        (沒有?無法輸入數值，再按一下EXE)</p>
-    <p>
-        2 EXE (顯示 f(2)的值為 3)</p>
+    <p>例題2: 用試位法解 x<sup>3</sup> – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
+    <p> 按 Prog 1 再按 1 EXE (輸入1表示使用試位法程式)</p>
+    <p> 1 EXE (顯示 f(1)的值為 - 2) <font color="#FF0000">EXE</font> (沒有?無法輸入數值，再按一下EXE)</p>
+    <p> 2 EXE (顯示 f(2)的值為 3)</p>
     <p>EXE (顯示第1近似值為1.4)</p>
     <p>EXE (顯示f(1.4)的值為-1.056)</p>
     <p>EXE (顯示第2近似值為1.556213)</p>
@@ -117,39 +79,24 @@
     <p>EXE (顯示第5近似值為1.616972)</p>
     <p>EXE (顯示f(1.616972)的值為-0.0062106)</p>
     <p>…………………</p>
-    <p>若將程式中藍色的<font color="#0000FF">◢ </font>修改為
-        <font color="#FF0000">: </font>，那麼不顯示函數值，而按法如下:
-    </p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (輸入1表示使用試位法程式)</p>
-    <p>
-        1 EXE 2 EXE (顯示第1近似值為1.4)</p>
+    <p>若將程式中藍色的<font color="#0000FF">◢ </font>修改為 <font color="#FF0000">: </font>，那麼不顯示函數值，而按法如下: </p>
+    <p> 按 Prog 1 再按 1 EXE (輸入1表示使用試位法程式)</p>
+    <p> 1 EXE 2 EXE (顯示第1近似值為1.4)</p>
     <p>EXE (顯示第2近似值為1.556213)</p>
     <p>EXE (顯示第3近似值為1.601817)</p>
     <p>EXE (顯示第4近似值為1.613872)</p>
     <p>EXE (顯示第5近似值為1.616972)</p>
     <p>…………………</p>
     <p>　</p>
-    <p>例題3: 利用梯形法則，區間數目為10，計算
-        
-    </p>
+    <p>例題3: 利用梯形法則，區間數目為10，計算 </p>
     <p>若果使用第二個程式，請先將綠色程式碼修改為 <font color="#008000">ln( X</font>。</p>
-    <p>
-        再
-        按 Prog 1 再按&nbsp; <font color="#FF0000">2 EXE</font> (輸入2代表計算梯形法則)</p>
-    <p>
-        1 EXE 2 EXE 10 EXE (顯示答案為0.385877936)</p>
+    <p> 再 按 Prog 1 再按&nbsp; <font color="#FF0000">2 EXE</font> (輸入2代表計算梯形法則)</p>
+    <p> 1 EXE 2 EXE 10 EXE (顯示答案為0.385877936)</p>
     <p>　</p>
-    <p>例題4: 利用辛卜生法則，區間數目為10，計算
-        
-    </p>
+    <p>例題4: 利用辛卜生法則，區間數目為10，計算 </p>
     <p>若果使用第二個程式，請先將綠色程式碼修改為 <font color="#008000">ln( X</font>。</p>
-    <p>
-        再
-        按 Prog 1 再按 <font color="#FF0000">3 EXE</font> (3代表計辛卜生法則)</p>
-    <p>
-        1 EXE 2 EXE 10 EXE (顯示答案為0.386293403)</p>
+    <p> 再 按 Prog 1 再按 <font color="#FF0000">3 EXE</font> (3代表計辛卜生法則)</p>
+    <p> 1 EXE 2 EXE 10 EXE (顯示答案為0.386293403)</p>
     <p>　</p>
     <p>
         <font color="#FF0000">注意:</font> 梯形法則的區間數目必為<font color="#FF0000">正整數</font>，而辛卜生法則的區間數目必為<font color="#FF0000">

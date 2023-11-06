@@ -6,15 +6,12 @@
 
 <body>
     <p align="center"><u><b>
-                <font size="6">
-                    程式的整合方法</font>
+                <font size="6"> 程式的整合方法</font>
             </b></u></p>
     <p>　</p>
     <p>
-        <font size="4">相信大家都知道fx-50FH / fx-50F PLUS只有四個程式的位置，很多人會問有沒有方法可以輸入多過4個程式。答案是有方法，就是將不同的程式給一個編號(例如:
-            0, 1, 2,
-            3 , 4)，因此程式可以根據輸入的數值，決定執行那個程式，但要注意程式680位元的限制。你可以使用Goto指令或If 指令或While
-            指令去組織及整合程式，但要注意使用各種指令的一些限制。</font>
+        <font size="4">相信大家都知道fx-50FH / fx-50F PLUS只有四個程式的位置，很多人會問有沒有方法可以輸入多過4個程式。答案是有方法，就是將不同的程式給一個編號(例如: 0, 1, 2, 3 ,
+            4)，因此程式可以根據輸入的數值，決定執行那個程式，但要注意程式680位元的限制。你可以使用Goto指令或If 指令或While 指令去組織及整合程式，但要注意使用各種指令的一些限制。</font>
     </p>
     <p><b>
             <font size="5">(A) GOTO 指令程式整合方法</font>
@@ -26,11 +23,9 @@
             <font color="#800080" size="5">方案一:</font>
         </b></p>
     <p>
-        <font size="4">?→Y: Y=1 <font color="#008000">=&gt;</font> Goto 1: Y=2
-            <font color="#008000">=&gt;</font> Goto 2:
-        </font>
+        <font size="4">?→Y: Y=1 <font color="#008000">=&gt;</font> Goto 1: Y=2 <font color="#008000">=&gt;</font> Goto
+            2: </font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber1"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -44,7 +39,6 @@
             <font color="#FF0000">: Goto 0 :</font> Lbl 1:
         </font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber2"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -58,7 +52,6 @@
             <font color="#FF0000">: Goto 0 :</font> Lbl 2:
         </font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber3"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -71,10 +64,9 @@
         <font color="#FF0000" size="4">: Lbl 0</font>
     </p>
     <p>
-        <font size="4">這個方案最大優點為簡單，很多不同現有的程式可以直接進行整合，缺短點相信大家都想到，就是每整合多一個程式，除了增加程式本身的長度外，還要額外加入的程式碼去控制程式的流程。紅色的程式碼
-            <font color="#FF0000">: Goto 0 :</font> 可以改為◢，而最後紅色程式碼 <font color="#FF0000">:
-                Lbl 0</font> 亦可以省略，這樣程式會較為簡短，不過每個程式就不會自動終止，需要自行按AC終止程式。
-        </font>
+        <font size="4">這個方案最大優點為簡單，很多不同現有的程式可以直接進行整合，缺短點相信大家都想到，就是每整合多一個程式，除了增加程式本身的長度外，還要額外加入的程式碼去控制程式的流程。紅色的程式碼 <font
+                color="#FF0000">: Goto 0 :</font> 可以改為◢，而最後紅色程式碼 <font color="#FF0000">: Lbl 0</font>
+            亦可以省略，這樣程式會較為簡短，不過每個程式就不會自動終止，需要自行按AC終止程式。 </font>
     </p>
     <p>　</p>
     <p><b>
@@ -83,7 +75,6 @@
     <p>
         <font size="4">?→Y:</font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="23%" id="AutoNumber4"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -93,11 +84,9 @@
         </tr>
     </table>
     <p>
-        <font size="4">Y=1 <font color="#008000">=&gt;</font> Goto 1: Y=2
-            <font color="#008000">=&gt;</font> Goto 2:
+        <font size="4">Y=1 <font color="#008000">=&gt;</font> Goto 1: Y=2 <font color="#008000">=&gt;</font> Goto 2:
         </font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber5"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -111,7 +100,6 @@
             <font color="#FF0000">: Goto 0 :</font> Lbl 1:
         </font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber6"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -125,7 +113,6 @@
             <font color="#FF0000">: Goto 0 :</font> Lbl 2:
         </font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber7"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -138,11 +125,9 @@
         <font color="#FF0000" size="4">: Lbl 0</font>
     </p>
     <p>　</p>
-    <p>
-        各個程式間會有一些相同的部分，這些部分不一定要重複編寫，如果安排恰當，甚至可以節省程式空間，程式間的相似程度越大，節省的空間越多，一般情況下，大多數程式都有輸入變數的部分，這些部分通常可以經修改後變成相同的部分(修改為相同的數字記憶)。雖然有這種好處，不過要對程式有基本認識，才可以恰當將程式修改及整合。同方案一相同，紅色的程式碼
-        <font color="#FF0000">: Goto 0 :</font> 可以改為◢，而最後紅色程式碼 <font color="#FF0000">:
-            Lbl 0</font> 亦可以省略，這樣程式會較為簡短，不過每個程式就不會自動終止，需要自行按AC終止程式。
-    </p>
+    <p> 各個程式間會有一些相同的部分，這些部分不一定要重複編寫，如果安排恰當，甚至可以節省程式空間，程式間的相似程度越大，節省的空間越多，一般情況下，大多數程式都有輸入變數的部分，這些部分通常可以經修改後變成相同的部分(修改為相同的數字記憶)。雖然有這種好處，不過要對程式有基本認識，才可以恰當將程式修改及整合。同方案一相同，紅色的程式碼
+        <font color="#FF0000">: Goto 0 :</font> 可以改為◢，而最後紅色程式碼 <font color="#FF0000">: Lbl 0</font>
+        亦可以省略，這樣程式會較為簡短，不過每個程式就不會自動終止，需要自行按AC終止程式。 </p>
     <p>　</p>
     <p>Goto方案的限制及注意事項:</p>
     <p>若要整合的程式包含Goto及Lbl的組合，要注意上述Goto及Lbl編號與各個要整合程式的Goto及Lbl編號有沒有相同的情況，若有則會有衝突，只要在程式中改用其它沒有使用的Goto及Lbl編號組合即可。</p>
@@ -154,7 +139,6 @@
         <font color="#800080">(I) 二合一程式</font>
     </p>
     <p>?→Y: If Y: Then </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber9"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -164,7 +148,6 @@
         </tr>
     </table>
     <p>: Else</p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber10"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -173,11 +156,10 @@
             </td>
         </tr>
     </table>
-    <p>這是一個很簡單二合一程式方法，比Goto指令更簡潔及更容易，但使用時要注意If及While本身是有限制，就是在一個If的結構內是不能再使用If語句，所以要整合的程式若包含有If
-        的語句，就會出現Syntax ERROR，解決的方法可以參考以下情況</p>
+    <p>這是一個很簡單二合一程式方法，比Goto指令更簡潔及更容易，但使用時要注意If及While本身是有限制，就是在一個If的結構內是不能再使用If語句，所以要整合的程式若包含有If 的語句，就會出現Syntax
+        ERROR，解決的方法可以參考以下情況</p>
     <p>(1) 若果只有一個程式要整合的程式有If 語句(假設是程式編號0的程式)，那麼可以使用以下方法</p>
     <p>?→Y: <font color="#FF0000">If</font> Y: Then </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber11"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -188,7 +170,6 @@
     </table>
     <p>◢ <font color="#FF0000">IfEnd:</font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber12"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -200,7 +181,6 @@
     <p>現在程式編號0的If語句就不是在控制整合的If語句之內(紅色)，所以程式可以正常執行，但程式編號1執行完結後是不會自動終止程式，要自行按 AC 終止。</p>
     <p>(2) 若果兩個要程式都有If 語句，可以嘗試用While語句取代控制的If語句，即程式改為</p>
     <p>?→Y: While Y: </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber13"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -211,7 +191,6 @@
     </table>
     <p>◢ <font color="#FF0000">WhileEnd :</font>
     </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber14"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -220,13 +199,11 @@
             </td>
         </tr>
     </table>
-    <p>
-        雖然這個方法可以解決兩個要整合程式有If語句的問題，但是While語句亦有本身的限制，就是While的結構內是不能再用While或For語句，所以最後可能要使用Goto指令方法才可以完全將問題解決。</p>
+    <p> 雖然這個方法可以解決兩個要整合程式有If語句的問題，但是While語句亦有本身的限制，就是While的結構內是不能再用While或For語句，所以最後可能要使用Goto指令方法才可以完全將問題解決。</p>
     <p>
         <font color="#800080">(II) If / while 三個或以上整合方法</font>
     </p>
     <p>?→Y: If Y=1: Then </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber15"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -237,7 +214,6 @@
     </table>
     <p>◢ IfEnd:</p>
     <p>If Y=2: Then</p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber17"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -247,7 +223,6 @@
         </tr>
     </table>
     <p>◢ Else</p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber16"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -259,7 +234,6 @@
     <p>　</p>
     <p>另一個寫法</p>
     <p>?→Y: While Y=1:</p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber18"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -270,7 +244,6 @@
     </table>
     <p>◢ WhileEnd: </p>
     <p>While Y=2: </p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber19"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -280,7 +253,6 @@
         </tr>
     </table>
     <p>◢ WhileEnd:</p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="17%" id="AutoNumber20"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
@@ -291,21 +263,16 @@
     </table>
     <p>與二合一的情況相同，這個N合一方法同樣有If / While的限制。</p>
     <p>註: 若各個程式間會有一些相同的部分，這些部分不一定要重複編寫，可以參考Goto指令方案二的方法，作出適當安排以節省程式空間。</p>
-    <p>
-        　</p>
+    <p> 　</p>
     <p>
         <font size="4">
-            <font color="#FF0000">注意:</font> 若果需要整合的程式包含 <font color="#FF0000">ClrMemory:</font>
-            程式碼，請將 <font color="#FF0000">ClrMemory:</font>
-            程式碼移至整合後程式的最前位置，否則程式可能無法正常運作，另外若果多於兩個要整合的程式包含<font color="#FF0000">ClrMemory:</font>
-            程式碼，整合的程式只要一個<font color="#FF0000"> ClrMemory:</font> 程式碼就可以。
+            <font color="#FF0000">注意:</font> 若果需要整合的程式包含 <font color="#FF0000">ClrMemory:</font> 程式碼，請將 <font
+                color="#FF0000">ClrMemory:</font> 程式碼移至整合後程式的最前位置，否則程式可能無法正常運作，另外若果多於兩個要整合的程式包含<font color="#FF0000">
+                ClrMemory:</font> 程式碼，整合的程式只要一個<font color="#FF0000"> ClrMemory:</font> 程式碼就可以。
         </font>
     </p>
-    <p>
-        　</p>
-    <p>
-        <a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></a>
-    </p>
+    <p> 　</p>
+    <p> <a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></a> </p>
     <p>　</p>
 </body>
 

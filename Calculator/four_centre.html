@@ -9,8 +9,7 @@
                 <font size="5">三角形重心、垂心、外心及內心(I)</font>
             </b></u></p>
     <p>程式由網友<span class="gen"><span class="postername">
-                <font color="#0000FF">
-                    roviury</font> 提供。
+                <font color="#0000FF"> roviury</font> 提供。
             </span></span>已知三角形三頂點的坐標，程式可計算三角形的重心、垂心、外心及內心的坐標。</p>
     <p>更新程式日期: 2010年7月12日</p>
     <p>
@@ -18,28 +17,20 @@
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>為平均x
-        按 shift 2 1 1，<span style="text-decoration: overline">
+        </span>為平均x 按 shift 2 1 1，<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>為平均y
-        按 shift 2 1 → 1)，FreqOn 按 Shift MODE ← ← 1。</p>
+        </span>為平均y 按 shift 2 1 → 1)，FreqOn 按 Shift MODE ← ← 1。</p>
     <p>程式一 (171bytes，分數版(重心、垂心、外心較大機會直接得出分數答案))</p>
     <p>?→X: ?→Y: ?→A: ?→B: ?→C: ?→D: (A+C+X)┘3◢ </p>
-    <p>(B+D+Y)┘3◢ FreqOn: X
-        <font color="#FF0000">,</font> Y <font color="#FF0000">; Pol(</font>A-C<font color="#FF0000"> ,</font> B-D
-        <font color="#FF0000">DT</font>:
-    </p>
+    <p>(B+D+Y)┘3◢ FreqOn: X <font color="#FF0000">,</font> Y <font color="#FF0000">; Pol(</font>A-C<font
+            color="#FF0000"> ,</font> B-D <font color="#FF0000">DT</font>: </p>
     <p>(<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-C)
-        ┘ (<span style="text-decoration: overline">
+        </span>-C) ┘ (<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-D→Y:
-        <span style="text-decoration: overline">
+        </span>-D→Y: <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span> - B: C + Ans(YA+B-YC-D)
-        ┘
-    </p>
+        </span> - B: C + Ans(YA+B-YC-D) ┘ </p>
     <p>(A+AnsY-<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>→X◢ B+AY-XY→Y◢ (A+C+<span style="text-decoration: overline">
@@ -47,124 +38,95 @@
         </span>-X)<font face="新細明體">┘2</font>◢ </p>
     <p>(B+D+<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-Y)<font face="新細明體">┘2</font>◢
-        A <font color="#FF0000">,</font> B
-        <font color="#FF0000">; Pol(</font><span style="text-decoration: overline">
+        </span>-Y)<font face="新細明體">┘2</font>◢ A <font color="#FF0000">,</font> B <font color="#FF0000">; Pol(</font>
+        <span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-C
-        <font color="#FF0000">,</font> <span style="text-decoration: overline">
+        </span>-C <font color="#FF0000">,</font> <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span> -D) + 0<font color="#FF0000">Pol(</font><span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-A
-        <font color="#FF0000">,</font> <span style="text-decoration: overline">
+        </span>-A <font color="#FF0000">,</font> <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-B <font color="#FF0000">DT</font>:
-    </p>
-    <p>C <font color="#FF0000">,</font> D <font color="#FF0000">;</font> X
-        <font color="#FF0000">DT</font>: <span style="text-decoration: overline">
+        </span>-B <font color="#FF0000">DT</font>: </p>
+    <p>C <font color="#FF0000">,</font> D <font color="#FF0000">;</font> X <font color="#FF0000">DT</font>: <span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>◢ <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span><br>
-        　
-    </p>
+        </span><br> 　 </p>
     <p>程式二 (167bytes，小數版)</p>
     <p>?→X: ?→Y: ?→A: ?→B: ?→C: ?→D: 3<sup>-1</sup>(A+C+X◢ </p>
     <p>3<sup>-1</sup>(B+D+Y◢ FreqOn: X <font color="#FF0000">,</font> Y <font color="#FF0000">; Pol(</font>A-C<font
-            color="#FF0000"> ,</font> B-D
-        <font color="#FF0000">DT</font>:&nbsp;
-    </p>
+            color="#FF0000"> ,</font> B-D <font color="#FF0000">DT</font>:&nbsp; </p>
     <p>(<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>-C) ÷ (<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-D→Y:
-        <span style="text-decoration: overline">
+        </span>-D→Y: <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span> - B: C + Ans(YA+B-YC-D) ÷
-    </p>
+        </span> - B: C + Ans(YA+B-YC-D) ÷ </p>
     <p>(A+AnsY-<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>→X◢ B+AY-XY→Y◢
-        . 5(A+C+<span style="text-decoration: overline">
+        </span>→X◢ B+AY-XY→Y◢ . 5(A+C+<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>-X◢ </p>
     <p>. 5(B+D+<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-Y◢
-        A <font color="#FF0000">,</font> B
-        <font color="#FF0000">; Pol(</font><span style="text-decoration: overline">
+        </span>-Y◢ A <font color="#FF0000">,</font> B <font color="#FF0000">; Pol(</font><span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-C
-        <font color="#FF0000">,</font> <span style="text-decoration: overline">
+        </span>-C <font color="#FF0000">,</font> <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span> -D) + 0<font color="#FF0000">Pol(</font><span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-A
-        <font color="#FF0000">,</font> <span style="text-decoration: overline">
+        </span>-A <font color="#FF0000">,</font> <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-B <font color="#FF0000">DT</font>:
-    </p>
-    <p>C <font color="#FF0000">,</font> D <font color="#FF0000">;</font> X
-        <font color="#FF0000">DT</font>: <span style="text-decoration: overline">
+        </span>-B <font color="#FF0000">DT</font>: </p>
+    <p>C <font color="#FF0000">,</font> D <font color="#FF0000">;</font> X <font color="#FF0000">DT</font>: <span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>◢ <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>
-    </p>
+        </span> </p>
     <p>　</p>
     <p>程式三 (159bytes，小數簡化版)</p>
     <p>?→A: ?→B: ?→X: ?→Y: ?→C: ?→D: 3<sup>-1</sup>(A+C+X◢ </p>
     <p>3<sup>-1</sup>(B+D+Y◢ FreqOn: X <font color="#FF0000">,</font> Y <font color="#FF0000">; Pol(</font>B-D<font
-            color="#FF0000"> ,</font>
-        A-C
-        <font color="#FF0000">DT</font>:&nbsp;
-    </p>
-    <p>tan(Y→Y: B -
-        <span style="text-decoration: overline">
+            color="#FF0000"> ,</font> A-C <font color="#FF0000">DT</font>:&nbsp; </p>
+    <p>tan(Y→Y: B - <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span>: C + Ans(Y<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>+<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-YC-D) ÷
-    </p>
+        </span>-YC-D) ÷ </p>
     <p>(<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>+AnsY-A→X◢
-        <span style="text-decoration: overline">
+        </span>+AnsY-A→X◢ <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span>+<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>Y-XY→Y◢
-        . 5(A+C+<span style="text-decoration: overline">
+        </span>Y-XY→Y◢ . 5(A+C+<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-X◢
-    </p>
+        </span>-X◢ </p>
     <p>. 5(B+D+<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-Y◢
-        A <font color="#FF0000">,</font> B
-        <font color="#FF0000">; Pol(</font><span style="text-decoration: overline">
+        </span>-Y◢ A <font color="#FF0000">,</font> B <font color="#FF0000">; Pol(</font><span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-C
-        <font color="#FF0000">,</font> <span style="text-decoration: overline">
+        </span>-C <font color="#FF0000">,</font> <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
         </span> -D) + 0<font color="#FF0000">Pol(</font><span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>-A
-        <font color="#FF0000">,</font> <span style="text-decoration: overline">
+        </span>-A <font color="#FF0000">,</font> <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>-B <font color="#FF0000">DT</font>:
-    </p>
-    <p>C <font color="#FF0000">,</font> D <font color="#FF0000">;</font> X
-        <font color="#FF0000">DT</font>: <span style="text-decoration: overline">
+        </span>-B <font color="#FF0000">DT</font>: </p>
+    <p>C <font color="#FF0000">,</font> D <font color="#FF0000">;</font> X <font color="#FF0000">DT</font>: <span
+            style="text-decoration: overline">
             <font color="#0000FF">x</font>
         </span>◢ <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>
-    </p>
+        </span> </p>
     <p>　</p>
     <p>例題: A、B及C三點的坐標分別為(4 , 3)、(0 , 0) 及 (4 , 0)，求三角形ABC的重心、垂心、外心及內心的坐標。</p>
     <p>按 Prog 1 再按 4 EXE 3 EXE 0 EXE 0 EXE 4 EXE 0 </p>
@@ -172,46 +134,31 @@
     <p>EXE (顯示4) EXE (顯示0，所以垂心=(4, 0))</p>
     <p>EXE (顯示2) EXE (顯示3/2，所以外心=(2, 3/2))</p>
     <p>EXE (顯示3) EXE (顯示1，所以內心 = (3 , 1))</p>
-    <p>
-        　</p>
-    <p>
-        註1: 若兩點的y坐標相同，程式有可能會出現Math ERROR，只要改為輸入第一點及第三點的y坐標不同即可。</p>
-    <p>
-        註2: 外心亦是三點共圓的圓心。</p>
-    <p>
-        　</p>
-    <p>
-        參考資料:</p>
-    <p>
-        <a href="http://agutie.homestead.com/files/center/nine_point_center_euler.html">
-            http://agutie.homestead.com/files/center/nine_point_center_euler.html</a>
-    </p>
+    <p> 　</p>
+    <p> 註1: 若兩點的y坐標相同，程式有可能會出現Math ERROR，只要改為輸入第一點及第三點的y坐標不同即可。</p>
+    <p> 註2: 外心亦是三點共圓的圓心。</p>
+    <p> 　</p>
+    <p> 參考資料:</p>
+    <p> <a href="http://agutie.homestead.com/files/center/nine_point_center_euler.html">
+            http://agutie.homestead.com/files/center/nine_point_center_euler.html</a> </p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     <p>　</p>
-    <p>　</p>
-    <!--msthemeseparator-->
-    <p align="center">
-    <!--msthemeseparator-->
+    <p>　</p> <!--msthemeseparator-->
+    <p align="center"> <!--msthemeseparator-->
     <p align="center">
     <p>
         <font color="#0000FF">程式舊版</font>
     </p>
     <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y:</p>
-    <p>X , Y
-        <font color="#FF0000">DT</font>: (A + C + X)┘3◢ (B + D + Y)┘3◢
-    </p>
+    <p>X , Y <font color="#FF0000">DT</font>: (A + C + X)┘3◢ (B + D + Y)┘3◢ </p>
     <p>(X - A)┘(B - Y→M: D - MC→X: (C - A)┘(B - D→Y:</p>
-    <p>(<font color="#0000FF">Σy</font> - Y<font color="#0000FF">Σx</font> - X)┘(M -
-        Y→Y◢ AnsM + X→M◢ </p>
-    <p>(A + C + <font color="#0000FF">Σx</font> - Y)┘2◢ (B + D +
-        <font color="#0000FF">Σy</font> - M)┘2◢
-    </p>
+    <p>(<font color="#0000FF">Σy</font> - Y<font color="#0000FF">Σx</font> - X)┘(M - Y→Y◢ AnsM + X→M◢ </p>
+    <p>(A + C + <font color="#0000FF">Σx</font> - Y)┘2◢ (B + D + <font color="#0000FF">Σy</font> - M)┘2◢ </p>
     <p>
         <font color="#FF0000">Pol(</font> A-C , B-D→M: <font color="#FF0000">Pol(</font>C-<font color="#0000FF">Σx
-        </font>
-        , D-<font color="#0000FF">Σy</font>: √( (A - <font color="#0000FF">Σx</font>)<sup>2</sup>
-        + (B - <font color="#0000FF">Σy</font>)<sup>2</sup>→Y:
+        </font> , D-<font color="#0000FF">Σy</font>: √( (A - <font color="#0000FF">Σx</font>)<sup>2</sup> + (B - <font
+            color="#0000FF">Σy</font>)<sup>2</sup>→Y:
     </p>
     <p>(AX+CY+<font color="#0000FF">Σx</font>M)┘(X+Y+M◢ (BX+DY+<font color="#0000FF">Σy</font>M)┘(X+Y+M</p>
 </body>

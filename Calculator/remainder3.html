@@ -9,28 +9,25 @@
                 <font size="5">正整數冪餘數(I)</font>
             </b></u></p>
     <p>更新日期: 2014年8月31日</p>
-    <p>這個程式可以計算一個正整數的正整數冪的餘數 (X<sup>a</sup> mod b，其中X，a及b為正整數)，不過若果除數大於46341，
-        程式有可能無法計算出答案(出現Math ERROR)，若要計算更多情況的餘數，請使用 <a href="remainder4.html">正整數冪餘數(II)</a> 程式。</p>
+    <p>這個程式可以計算一個正整數的正整數冪的餘數 (X<sup>a</sup> mod b，其中X，a及b為正整數)，不過若果除數大於46341， 程式有可能無法計算出答案(出現Math ERROR)，若要計算更多情況的餘數，請使用
+        <a href="remainder4.html">正整數冪餘數(II)</a> 程式。</p>
     <p>
         <font color="#FF0000">程式需要在 BASE 模式下執行，因此在選擇新程式位置後，按 3 選用BASE模式。</font>
     </p>
     <p>程式 (61 bytes，使用記憶為A、B、C及M)</p>
     <p>Dec: 1→C: ?→M: ?→A: ?→B: </p>
     <p>While A: M ÷ BB<font color="#FF0000">M-</font>: </p>
-    <p>A - A ÷ 2 × 2 <font color="#FF0000">=&gt;</font> CM -
-        CM ÷ B<span lang="en">
+    <p>A - A ÷ 2 × 2 <font color="#FF0000">=&gt;</font> CM - CM ÷ B<span lang="en">
             <font color="#FF0000">×</font>
         </span>B→C: </p>
     <p>A ÷ 2→A: MM→M: WhileEnd: C</p>
     <p>　</p>
-    <p>註1: 程式沒有防錯誤功能，因此未執行程式前，若記憶A、B及C儲存的數值大於基數模式的接受範圍，執行程式及輸入數值時會出現Math
-        ERROR，這時只要再按 SHIFT 9 1 EXE清除記憶，再執行程式即可，若果不想這樣做，可在程式最前加入編碼 &quot;<font color="#0000FF">ClrMemory:</font>
-        &quot;，程式長度則多 2 bytes。</p>
-    <p>註2: 若果計算X<sup>a</sup> mod b，<font color="#FF0000">程式</font>的限制條件為 0≦X ≦
-        2147483647，0≦a ≦ 2147483647 及 0≦b ≦46341，若果 b &gt; 46341時，亦可以嘗試輸入計算，因為有可能可以計算出答案。</p>
+    <p>註1: 程式沒有防錯誤功能，因此未執行程式前，若記憶A、B及C儲存的數值大於基數模式的接受範圍，執行程式及輸入數值時會出現Math ERROR，這時只要再按 SHIFT 9 1
+        EXE清除記憶，再執行程式即可，若果不想這樣做，可在程式最前加入編碼 &quot;<font color="#0000FF">ClrMemory:</font> &quot;，程式長度則多 2 bytes。</p>
+    <p>註2: 若果計算X<sup>a</sup> mod b，<font color="#FF0000">程式</font>的限制條件為 0≦X ≦ 2147483647，0≦a ≦ 2147483647 及 0≦b
+        ≦46341，若果 b &gt; 46341時，亦可以嘗試輸入計算，因為有可能可以計算出答案。</p>
     <p>註3: 第一個程式當計算冪為1或0時，b值的限制變為 1≦b ≦ 2147483647</p>
-    <p>
-        註4: 如果是使用fx-50FH，上述程式中紅色的乘號<span lang="en">
+    <p> 註4: 如果是使用fx-50FH，上述程式中紅色的乘號<span lang="en">
             <font color="#FF0000"> ×</font>
         </span>可以省略不輸入，程式長度可節省1 byte。</p>
     <p>　</p>

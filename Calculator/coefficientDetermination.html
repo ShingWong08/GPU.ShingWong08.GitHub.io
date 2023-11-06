@@ -11,90 +11,63 @@
     <p><b>
             <font color="#FF0000">程式更新日期: 2014年1月12日 </font>
         </b></p>
-    <p>程式可以計算統計數據的決定係數Coefficient of Determination，回歸平方和Sum of squares for
-        regression及殘差平方和Sum of squrares for error。</p>
+    <p>程式可以計算統計數據的決定係數Coefficient of Determination，回歸平方和Sum of squares for regression及殘差平方和Sum of squrares for error。
+    </p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx<sup>2</sup> </font>按 Shift 1 1，<font color="#0000FF">Σx</font>
-        按 Shift 1 2，<font color="#0000FF">n</font>
-        按 Shift 1 3，，<font color="#0000FF">a</font> 按 SHIFT 2 1 <b>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx<sup>2</sup> </font>按 Shift 1 1，<font color="#0000FF">Σx</font> 按
+        Shift 1 2，<font color="#0000FF">n</font> 按 Shift 1 3，，<font color="#0000FF">a</font> 按 SHIFT 2 1 <b>
             <font color="#FF0000">→</font>
         </b>&nbsp;<b>
             <font color="#FF0000">→</font>
-        </b> 1，<font color="#0000FF">b</font>
-        按 SHIFT 2 1 <b>
+        </b> 1，<font color="#0000FF">b</font> 按 SHIFT 2 1 <b>
             <font color="#FF0000">→</font>
         </b>&nbsp;<b>
             <font color="#FF0000">→</font>
-        </b>
-        2，<font color="#0000FF">r</font> 按 SHIFT 2 1 <b>
+        </b> 2，<font color="#0000FF">r</font> 按 SHIFT 2 1 <b>
             <font color="#FF0000">→</font>
         </b>&nbsp;<b>
             <font color="#FF0000">→</font>
-        </b>
-        3，，<span style="text-decoration: overline">
+        </b> 3，，<span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span>
-        按 SHIFT 2 1 <b>
+        </span> 按 SHIFT 2 1 <b>
             <font color="#FF0000">→</font>
         </b>&nbsp;1，<font color="#0000FF">σy</font> 按 SHIFT 2 1 <b>
             <font color="#FF0000">→</font>
         </b>&nbsp;2 )</p>
-    <p>
-        程式 (25 bytes)</p>
-    <p>
-        <span style="text-decoration: overline">
+    <p> 程式 (25 bytes)</p>
+    <p> <span style="text-decoration: overline">
             <font color="#0000FF">y</font>
-        </span> -
-        <font color="#0000FF">a</font>: <font color="#0000FF">n</font> Ans<sup>2</sup> -
-        2 Ans <font color="#0000FF">b</font>
-        <font color="#0000FF">Σx</font>+
-        <font color="#0000FF">b</font><sup>2</sup>
-        <font color="#0000FF">Σx<sup>2</sup></font>◢
-        <font color="#0000FF">n σy</font><sup>2</sup> - Ans◢ <font color="#0000FF">r</font><sup>2</sup>&nbsp;
+        </span> - <font color="#0000FF">a</font>: <font color="#0000FF">n</font> Ans<sup>2</sup> - 2 Ans <font
+            color="#0000FF">b</font>
+        <font color="#0000FF">Σx</font>+ <font color="#0000FF">b</font><sup>2</sup>
+        <font color="#0000FF">Σx<sup>2</sup></font>◢ <font color="#0000FF">n σy</font><sup>2</sup> - Ans◢ <font
+            color="#0000FF">r</font><sup>2</sup>&nbsp;
     </p>
-    <p>
-        註: 若計算機為fx-50FH，字附<font color="#0000FF">σy</font>則變為<font color="#0000FF">yσn</font>。</p>
-    <p>
-        　</p>
-    <p>
-        例題:
-        找出下列數據的決定係數，回歸平方和Sum of squares for regression及殘差平方和。</p>
-
+    <p> 註: 若計算機為fx-50FH，字附<font color="#0000FF">σy</font>則變為<font color="#0000FF">yσn</font>。</p>
+    <p> 　</p>
+    <p> 例題: 找出下列數據的決定係數，回歸平方和Sum of squares for regression及殘差平方和。</p>
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" id="AutoNumber1"
         align="left" bordercolorlight="#666666" bordercolordark="#000000">
         <tr align="center">
-            <td width="12%"> x
-            </td>
-            <td width="12%">5
-            </td>
-            <td width="12%">6
-            </td>
-            <td width="12%">7
-            </td>
-            <td width="13%">8
-            </td>
+            <td width="12%"> x </td>
+            <td width="12%">5 </td>
+            <td width="12%">6 </td>
+            <td width="12%">7 </td>
+            <td width="13%">8 </td>
         </tr>
         <tr align="center">
-            <td width="12%">y
-            </td>
-            <td width="12%">1.1
-            </td>
-            <td width="12%">2
-            </td>
-            <td width="12%">2.9
-            </td>
-            <td width="13%">4.2
-            </td>
+            <td width="12%">y </td>
+            <td width="12%">1.1 </td>
+            <td width="12%">2 </td>
+            <td width="12%">2.9 </td>
+            <td width="13%">4.2 </td>
         </tr>
     </table>
-    <p>
-        　</p>
-    <p>
-        　</p>
-    <p>
-        先使用計算機內置線性回歸功能輸入上述數據，有關輸入方法詳情可參看<a href="stat2.html">回歸計算</a>。</p>
+    <p> 　</p>
+    <p> 　</p>
+    <p> 先使用計算機內置線性回歸功能輸入上述數據，有關輸入方法詳情可參看<a href="stat2.html">回歸計算</a>。</p>
     <p>按 Prog 1 (顯示回歸平方和為5.202) EXE (顯示殘差平方和為0.048) EXE (顯示決定係數為0.990857142)</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>

@@ -11,28 +11,24 @@
     <p>
         <font color="#0000FF"><b>程式新版 </b></font>(舊版保留在網頁下方)
     </p>
-    <p>程式可以計算梯形法則或辛卜生法則定積分問題。第二個程式雖然長一點，但函數的修改部份接近程式的開始位置，因此較容易及快速修改函數，使整體速度加快。
-        注意新版方程變數使用X，與舊版使用Ans不同。</p>
+    <p>程式可以計算梯形法則或辛卜生法則定積分問題。第二個程式雖然長一點，但函數的修改部份接近程式的開始位置，因此較容易及快速修改函數，使整體速度加快。 注意新版方程變數使用X，與舊版使用Ans不同。</p>
     <p>程式編寫日期: 2009年2月16日</p>
     <p>
         <font color="#FF0000">注意:</font>
-        <font face="Times New Roman">π<sup>r</sup> 是按 SHIFT EXP SHIFT
-            Ans 2</font>
+        <font face="Times New Roman">π<sup>r</sup> 是按 SHIFT EXP SHIFT Ans 2</font>
     </p>
     <p>
         <font color="#0000FF">第一個程式</font> (69 bytes，不包括綠色函數方程)
     </p>
     <p>ClrMemory: ?→B: ?→X: ?→Y: </p>
     <p>?→A: A<sup>-1</sup>(Y-X→Y: For 0→C To A:<font color="#008000"> ln( X</font>: </p>
-    <p>Ans(3 - cos(
-        π<sup>r</sup>BC ) - (C<sup>2</sup>=CA<font color="#FF0000">M+</font>: </p>
+    <p>Ans(3 - cos( π<sup>r</sup>BC ) - (C<sup>2</sup>=CA<font color="#FF0000">M+</font>: </p>
     <p>X+Y→X: Next: YM÷( 2+B</p>
     <p>　</p>
     <p>
         <font color="#0000FF">第二個程式</font> (83 bytes，不包括綠色函數方程)
     </p>
-    <p>Goto 1: Lbl 0:<font color="#008000"> ln( X</font>: C + Ans(3 - cos(
-        π<sup>r</sup>BM ) - (M<sup>2</sup>=MA→C: </p>
+    <p>Goto 1: Lbl 0:<font color="#008000"> ln( X</font>: C + Ans(3 - cos( π<sup>r</sup>BM ) - (M<sup>2</sup>=MA→C: </p>
     <p>X+Y→X: A&gt;M<font color="#FF0000">M+ =&gt;</font> Goto 0: YC÷( 2+B◢</p>
     <p>Lbl 1: ClrMemory: ?→B: ?→X: ?→Y: ?→A: </p>
     <p>A<sup>-1</sup>(Y-X→Y: Goto 0</p>
@@ -42,28 +38,15 @@
     <p>註3: 若果想保留一些記憶用作儲存臨時數據，第一個可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>&quot;，
         第二個程式將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>: 0→B&quot;，而程式所使用的記憶為A，B，C，X，Y及M。</p>
     <p>　</p>
-    <p>例題1: 利用梯形法則，區間數目為10，計算
-        
-    </p>
-    <p>
-        按 Prog 1&nbsp;
-        再按&nbsp; <font color="#FF0000">0 EXE</font> (輸入0代表計算梯形法則)</p>
-    <p>
-        1 EXE 2 EXE 10 EXE (顯示答案為0.385877936)</p>
-    <p>
-        若果是第二個程式計算完結後，請按 AC 終止程式。</p>
+    <p>例題1: 利用梯形法則，區間數目為10，計算 </p>
+    <p> 按 Prog 1&nbsp; 再按&nbsp; <font color="#FF0000">0 EXE</font> (輸入0代表計算梯形法則)</p>
+    <p> 1 EXE 2 EXE 10 EXE (顯示答案為0.385877936)</p>
+    <p> 若果是第二個程式計算完結後，請按 AC 終止程式。</p>
     <p>　</p>
-    <p>例題2: 利用辛卜生法則，區間數目為10，計算
-        
-    </p>
-    <p>
-        按 Prog 1
-        再按 <font color="#FF0000">1
-            EXE</font> (1代表計辛卜生法則)</p>
-    <p>
-        1 EXE 2 EXE 10 EXE (顯示答案為0.386293403)</p>
-    <p>
-        若果是第二個程式計算完結後，請按 AC 終止程式。</p>
+    <p>例題2: 利用辛卜生法則，區間數目為10，計算 </p>
+    <p> 按 Prog 1 再按 <font color="#FF0000">1 EXE</font> (1代表計辛卜生法則)</p>
+    <p> 1 EXE 2 EXE 10 EXE (顯示答案為0.386293403)</p>
+    <p> 若果是第二個程式計算完結後，請按 AC 終止程式。</p>
     <p>　</p>
     <p>
         <font color="#FF0000">注意:</font> 梯形法則的區間數目必為<font color="#FF0000">正整數</font>，而辛卜生法則的區間數目必為<font color="#FF0000">
@@ -80,13 +63,12 @@
     </p>
     <p>程式編寫日期: 2008年2月12日</p>
     <p>
-        <font color="#FF0000">注意:</font> π<sup>r</sup> 是按 SHIFT EXP SHIFT
-        Ans 2
+        <font color="#FF0000">注意:</font> π<sup>r</sup> 是按 SHIFT EXP SHIFT Ans 2
     </p>
     <p>程式 (68 bytes，不包括綠色函數方程)</p>
     <p>ClrMemory: ?→X: ?→A: ?→B: ?→C: C<sup>-1</sup>(B-A→D:</p>
-    <p>For 0→B To C: A + BD: <font color="#008000"> ln( Ans</font>: Ans(3 - cos(
-        π<sup>r</sup>BX ) - (B<sup>2</sup>=BC<font color="#FF0000">M+</font>: </p>
+    <p>For 0→B To C: A + BD: <font color="#008000"> ln( Ans</font>: Ans(3 - cos( π<sup>r</sup>BX ) - (B<sup>2</sup>=BC
+        <font color="#FF0000">M+</font>: </p>
     <p>Next: DM÷( 2+X</p>
     <p>註1: 綠色的 <font color="#008000">ln( Ans </font>是函數方程(變數是Ans)，若果想計算其它函數的積分，只要修改綠色的部份。</p>
     <p>註2: 若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory&quot;改為&quot;M<font color="#FF0000">M-</font>

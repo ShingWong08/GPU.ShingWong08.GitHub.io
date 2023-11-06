@@ -14,56 +14,32 @@
         </b>
         <font color="#FF0000"><b>，程式比版本I短很多，但速度較慢。</b></font>
     </p>
-    <p>程式是利用文憑試查表的數據及文憑試使用的線性比例方法(Linear
-        Interpolation)計算反查的結果，因此<font color="#FF0000">能確保與文憑試標準答案相同</font>。</p>
-    <p>注意: <font color="#FF0000">e^(</font>是按shift
-        e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
+    <p>程式是利用文憑試查表的數據及文憑試使用的線性比例方法(Linear Interpolation)計算反查的結果，因此<font color="#FF0000">能確保與文憑試標準答案相同</font>。</p>
+    <p>注意: <font color="#FF0000">e^(</font>是按shift e<sup>x</sup>，<font size="1">E </font>是按 EXP。</p>
     <p>程式一 (113 bytes，使用記憶A, B, C, Y及M)</p>
-    <p>?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup>
-        -
-    </p>
-    <p>9Ans + 64→M:&nbsp; M→Y: Fix 4: Lbl 0: B→A:
-    </p>
-    <p>Rnd(√(2π)<sup>-1</sup>&#643;( √( <font color="#FF0000">e^(</font> -X<sup>2</sup>
-        , 0 , M→B:
-    </p>
-    <p>(M=Y) + (A=B <font color="#FF0000">=&gt;</font> . 01 -
-        . 02(B&gt;C <font color="#FF0000">
-            M+ =&gt; </font>Goto 0:
+    <p>?→C: ln( 1 - 4C<sup>2 </sup>: Fix 2: Rnd(√( - Ans - 8 + √( Ans<sup>2</sup> - </p>
+    <p>9Ans + 64→M:&nbsp; M→Y: Fix 4: Lbl 0: B→A: </p>
+    <p>Rnd(√(2π)<sup>-1</sup>&#643;( √( <font color="#FF0000">e^(</font> -X<sup>2</sup> , 0 , M→B: </p>
+    <p>(M=Y) + (A=B <font color="#FF0000">=&gt;</font> . 01 - . 02(B&gt;C <font color="#FF0000"> M+ =&gt; </font>Goto 0:
     </p>
     <p>Norm 1: Y + (Y - M)(C - A) ÷ (A - B</p>
     <p>　</p>
     <p>註1:程式輸入概率範圍為 0&lt; P&lt; 0.5，否則程式可能會出現Math error或不能正常運作。</p>
     <p>註2: 反查的概率P&gt;0.4973時(考試出現的機會應該不大)，查表可能會出現多於一個答案，這時程式二及程式三可能會出現Math
-        ERROR(現時很多同類程式的限制)，程式一則解決了這方面問題，可以顯示其中一個正確答案。例如: 反查P=0.4990，查表可得的答案分別為 Z=3.08,
-        Z=3.09 或 Z=3.10，程式二會出現Math
-        ERROR，程式一則顯示答案為Z=3.08。其實若果使用程式二，而反查的P值是表有的(即P值不多於4位小數)，在Math ERROR後，可以自行按 AC RCL
-        M 或 RCL Y 顯示可能的答案。</p>
+        ERROR(現時很多同類程式的限制)，程式一則解決了這方面問題，可以顯示其中一個正確答案。例如: 反查P=0.4990，查表可得的答案分別為 Z=3.08, Z=3.09 或 Z=3.10，程式二會出現Math
+        ERROR，程式一則顯示答案為Z=3.08。其實若果使用程式二，而反查的P值是表有的(即P值不多於4位小數)，在Math ERROR後，可以自行按 AC RCL M 或 RCL Y 顯示可能的答案。</p>
     <p>註3: 程式三計算直接從表查得的數據速度會較快一些。</p>
     <p>　</p>
-    <p>例題1: 若P(0≦
-        Z≦x)
-        = 0.3907，求 x 的值，其中
-        Z ~ N(0, 1)。</p>
-    <p>
-        按 Prog 1
-        再按 0.3907 EXE (顯示答案為 1.23)</p>
-    <p>
-        註5: 得出的答案若果<font color="#FF0000">不多於兩位小數</font>(表的Z位數)，
-        表示直接查表求得答案，因此不需要任何考試的計算步驟。</p>
+    <p>例題1: 若P(0≦ Z≦x) = 0.3907，求 x 的值，其中 Z ~ N(0, 1)。</p>
+    <p> 按 Prog 1 再按 0.3907 EXE (顯示答案為 1.23)</p>
+    <p> 註5: 得出的答案若果<font color="#FF0000">不多於兩位小數</font>(表的Z位數)， 表示直接查表求得答案，因此不需要任何考試的計算步驟。</p>
     <p>　</p>
-    <p>例題2: 若P(0≦
-        Z≦x)
-        = 0.3，求 x 的值，其中
-        Z ~ N(0, 1)>。</p>
-    <p>
-        按 Prog 1
-        再按 0.3 EXE (顯示答案為 0.841785714)</p>
-    <p>
-        註4: 答案<font color="#0000FF">多於兩位小數</font>，表示答案不能直接查表求得，要使用線性比例方法(Linear
-        Interpolation)求出答案， 按 <font color="#0000FF">RCL A</font> 及<font color="#0000FF">RCL B</font>可以顯示計算步驟所要的概率
-        值(0.2995及0.3023)，再按 <font color="#0000FF">RCL Y</font>及<font color="#0000FF">RCL
-            M</font>則顯示兩個X值(0.84及0.85)，由於一般考試可能需要詳細步驟，你亦可以直接使用這些數值作為考試步驟的數據。</p>
+    <p>例題2: 若P(0≦ Z≦x) = 0.3，求 x 的值，其中 Z ~ N(0, 1)>。</p>
+    <p> 按 Prog 1 再按 0.3 EXE (顯示答案為 0.841785714)</p>
+    <p> 註4: 答案<font color="#0000FF">多於兩位小數</font>，表示答案不能直接查表求得，要使用線性比例方法(Linear Interpolation)求出答案， 按 <font
+            color="#0000FF">RCL A</font> 及<font color="#0000FF">RCL B</font>可以顯示計算步驟所要的概率 值(0.2995及0.3023)，再按 <font
+            color="#0000FF">RCL Y</font>及<font color="#0000FF">RCL M</font>
+        則顯示兩個X值(0.84及0.85)，由於一般考試可能需要詳細步驟，你亦可以直接使用這些數值作為考試步驟的數據。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-3650P II及fx-50FH II程式集</a></p>
 </body>

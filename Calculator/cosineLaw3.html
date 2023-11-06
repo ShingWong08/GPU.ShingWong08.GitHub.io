@@ -10,106 +10,68 @@
             </b></u></p>
     <p>更新日期: 2014年8月21日</p>
     <p>這個程式會根據輸入來計算:</p>
-    <p>
-        (1) 已知三邊 (3 sides)，求三角及三角形的面積</p>
-    <p>(2) 已知兩邊及夾角
-        (2 sides and included angle)，求第三邊
-        ，其餘兩角及三角形面積</p>
+    <p> (1) 已知三邊 (3 sides)，求三角及三角形的面積</p>
+    <p>(2) 已知兩邊及夾角 (2 sides and included angle)，求第三邊 ，其餘兩角及三角形面積</p>
     <p>註1: 程式保留M記憶沒有使用。</p>
-    <p>
-        註2: 若果較習慣使用程式編號區分情況的朋友，可以使用網頁尾<a href="#Q1">附錄程式(有程式編號
-            的版本 87 或 91 bytes)</a>。</p>
+    <p> 註2: 若果較習慣使用程式編號區分情況的朋友，可以使用網頁尾<a href="#Q1">附錄程式(有程式編號 的版本 87 或 91 bytes)</a>。</p>
     <p>程式編寫日期: 2011年4月12日</p>
     <p>
         <font color="#FF0000">注意:</font>
-        <font color="#0000FF">π<sup>r</sup></font>
-        是按 Shift EXP Shift Ans 2
+        <font color="#0000FF">π<sup>r</sup></font> 是按 Shift EXP Shift Ans 2
     </p>
     <p>
         <font color="#0000FF">第一個程式</font> (78 bytes，使用記憶為A, B, C, D, X及Y):
     </p>
-    <p>?→A: ?→B: ?→C: C<font face="新細明體">≧0</font>→D<font face="新細明體">: Ans
-            <font color="#FF0000">=&gt;</font> <b>-</b>
+    <p>?→A: ?→B: ?→C: C<font face="新細明體">≧0</font>→D<font face="新細明體">: Ans <font color="#FF0000">=&gt;</font> <b>-</b>
         </font>
-        <font color="#FF0000">cos<sup>-1</sup>(</font> (A<sup>2</sup>
-        + B<sup>2</sup> - C<sup>2</sup> ) ÷ <b>
+        <font color="#FF0000">cos<sup>-1</sup>(</font> (A<sup>2</sup> + B<sup>2</sup> - C<sup>2</sup> ) ÷ <b>
             <font color="#800080">( </font>
         </b>2AB→C:
     </p>
     <p>
-        <font color="#FF0000"> Pol(</font> B - A cos C , - A sin C: <font color="#FF0000">cos<sup>-1</sup>(</font>
-        D<font color="#FF0000"> =&gt;</font> X◢ Y◢ <font color="#0000FF">π<sup>r</sup></font>
-        + C - Y◢
+        <font color="#FF0000"> Pol(</font> B - A cos C , - A sin C: <font color="#FF0000">cos<sup>-1</sup>(</font> D
+        <font color="#FF0000"> =&gt;</font> X◢ Y◢ <font color="#0000FF">π<sup>r</sup></font> + C - Y◢
     </p>
     <p>D <font color="#FF0000">=&gt;</font> - C◢ - . 5AB sin( C</p>
     <p>　</p>
     <p>
         <font color="#0000FF">第二個程式</font> (86 bytes有記存答案，使用記憶為A, B, C, D, X及Y):
     </p>
-    <p>?→A: ?→B: ?→C: 0&gt;C→Y: Ans <font color="#FF0000">=&gt;</font> √( A<sup>2</sup> + B<sup>2</sup>
-        - 2AB cos( C→C◢</p>
+    <p>?→A: ?→B: ?→C: 0&gt;C→Y: Ans <font color="#FF0000">=&gt;</font> √( A<sup>2</sup> + B<sup>2</sup> - 2AB cos( C→C◢
+    </p>
     <p>
-        <font color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup>
-        - A<sup>2</sup> ) ÷ <font color="#800080"><b>( </b></font>2BC→D◢
+        <font color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup> - A<sup>2</sup> ) ÷ <font
+            color="#800080"><b>( </b></font>2BC→D◢
     </p>
     <p>
         <font color="#FF0000">cos<sup>-1</sup>(</font> A<sup>-1</sup>(C - B cos( D→X◢
     </p>
     <p>
-        <font color="#FF0000">cos<sup>-1</sup>( </font>Y
-        <font color="#FF0000">=&gt;</font>
-        <font color="#0000FF">π<sup>r</sup></font> -
-        D - X→Y◢ . 5 BC sin( D→A
+        <font color="#FF0000">cos<sup>-1</sup>( </font>Y <font color="#FF0000">=&gt;</font>
+        <font color="#0000FF">π<sup>r</sup></font> - D - X→Y◢ . 5 BC sin( D→A
     </p>
-    <p>
-        <span lang="en">
-            註: 如果是使用fx-3650P II或fx-50FH II，上述</span>兩個<span lang="en">程式中</span>紫色的開括號 <font color="#800080"><b>(
-            </b></font>
-        <span lang="en">
-            可以省略，程式長度可減1 byte。</span>
-    </p>
+    <p> <span lang="en"> 註: 如果是使用fx-3650P II或fx-50FH II，上述</span>兩個<span lang="en">程式中</span>紫色的開括號 <font
+            color="#800080"><b>( </b></font> <span lang="en"> 可以省略，程式長度可減1 byte。</span> </p>
     <p>　</p>
-    <p>例題1:
-        a=4, b=5, ∠C=40<sup>o</sup>
-        ，求c、∠A、∠B及三角形面積。</p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按<font color="#FF0000"> </font>
-        4 EXE 5 EXE <b>
+    <p>例題1: a=4, b=5, ∠C=40<sup>o</sup> ，求c、∠A、∠B及三角形面積。</p>
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按<font color="#FF0000"> </font> 4 EXE 5 EXE <b>
             <font color="#FF0000">-</font>
         </b> 40 EXE (<font color="#FF0000">注意負值</font>代表輸入的是<font color="#FF0000">角</font>，顯示c=3.2184) </p>
-    <p>
-        EXE (顯示∠A=53.024<sup>o</sup>)</p>
-    <p>
-        EXE (顯示∠B=86.976<sup>o</sup>)</p>
-    <p>
-        EXE (顯示面積為6.4279)</p>
-    <p>若果使用第二個程式，程式完成後，按 RCL C、RCL
-        D、RCL X及RCL A 分別顯示c、∠A、∠B及面積的數值。</p>
+    <p> EXE (顯示∠A=53.024<sup>o</sup>)</p>
+    <p> EXE (顯示∠B=86.976<sup>o</sup>)</p>
+    <p> EXE (顯示面積為6.4279)</p>
+    <p>若果使用第二個程式，程式完成後，按 RCL C、RCL D、RCL X及RCL A 分別顯示c、∠A、∠B及面積的數值。</p>
     <p>　</p>
-    <p>例題2:
-        a=4, b=5, c=6，求∠A、∠B、∠C及三角形面積。</p>
-    <p>注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 4 EXE 5 EXE
-        6 EXE (顯示∠A=41.410<sup>o</sup>)</p>
-    <p>
-        EXE (顯示∠B=55.771<sup>o</sup>)</p>
-    <p>
-        EXE (顯示∠C=82.8192<sup>o</sup>)</p>
-    <p>
-        EXE (顯示面積為9.9216)</p>
-    <p>若果使用第二個程式，程式完成後，按
-        RCL D、RCL X、RCL Y及RCL A 分別顯示∠A、∠B、∠C及面積的數值。</p>
-    <p>註2: 若果輸入的三邊不能構成三角形，程式會出現Math
-        ERROR。</p>
-    <p>　</p>
-    <!--msthemeseparator-->
+    <p>例題2: a=4, b=5, c=6，求∠A、∠B、∠C及三角形面積。</p>
+    <p>注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 4 EXE 5 EXE 6 EXE (顯示∠A=41.410<sup>o</sup>)</p>
+    <p> EXE (顯示∠B=55.771<sup>o</sup>)</p>
+    <p> EXE (顯示∠C=82.8192<sup>o</sup>)</p>
+    <p> EXE (顯示面積為9.9216)</p>
+    <p>若果使用第二個程式，程式完成後，按 RCL D、RCL X、RCL Y及RCL A 分別顯示∠A、∠B、∠C及面積的數值。</p>
+    <p>註2: 若果輸入的三邊不能構成三角形，程式會出現Math ERROR。</p>
+    <p>　</p> <!--msthemeseparator-->
     <p align="center">
     <p>
         <font color="#0000FF"><a name="Q1" id="Q1"></a>附錄: 有程式編號版本 </font>
@@ -119,87 +81,54 @@
         <font color="#0000FF">附錄程式一</font> (87 bytes，使用記憶為A, B, C,D及X):
     </p>
     <p>?→X: ?→A: ?→B: ?→C: <font color="#FF0000">cos<sup>-1</sup>(</font> X <font color="#FF0000">=&gt;</font>
-        √(A<sup>2</sup> + B<sup>2</sup>
-        - 2AB cos C→C◢</p>
+        √(A<sup>2</sup> + B<sup>2</sup> - 2AB cos C→C◢</p>
     <p>
-        <font color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup>
-        - A<sup>2</sup> ) ÷ (2BC→D◢
+        <font color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup> - A<sup>2</sup> ) ÷ (2BC→D◢
     </p>
     <p>
-        <font color="#FF0000">cos<sup>-1</sup>(</font> (A<sup>2</sup> + C<sup>2</sup>
-        - B<sup>2</sup> ) ÷ (2AC→A◢
+        <font color="#FF0000">cos<sup>-1</sup>(</font> (A<sup>2</sup> + C<sup>2</sup> - B<sup>2</sup> ) ÷ (2AC→A◢
     </p>
-    <p>X
-        <font color="#FF0000">=&gt;</font>
-        <font color="#0000FF">π<sup>r</sup></font>
-        - D - A◢ 2<sup>-1</sup> BC sin( D
+    <p>X <font color="#FF0000">=&gt;</font>
+        <font color="#0000FF">π<sup>r</sup></font> - D - A◢ 2<sup>-1</sup> BC sin( D
     </p>
     <p>　</p>
     <p>
         <font color="#0000FF">附錄程式二</font> (91 bytes有記存答案，使用記憶為A, B, C, D, X及Y):
     </p>
     <p>?→Y: ?→A: ?→B: ?→C: <font color="#FF0000">cos<sup>-1</sup>(</font> Y <font color="#FF0000">=&gt;</font>
-        √(A<sup>2</sup> + B<sup>2</sup>
-        - 2AB cos C→C◢</p>
+        √(A<sup>2</sup> + B<sup>2</sup> - 2AB cos C→C◢</p>
     <p>
-        <font color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup>
-        - A<sup>2</sup> ) ÷ (2BC→D◢
+        <font color="#FF0000">cos<sup>-1</sup>(</font> (B<sup>2</sup> + C<sup>2</sup> - A<sup>2</sup> ) ÷ (2BC→D◢
     </p>
     <p>
-        <font color="#FF0000">cos<sup>-1</sup>(</font> (A<sup>2</sup> + C<sup>2</sup>
-        - B<sup>2</sup> ) ÷ (2AC→X◢
+        <font color="#FF0000">cos<sup>-1</sup>(</font> (A<sup>2</sup> + C<sup>2</sup> - B<sup>2</sup> ) ÷ (2AC→X◢
     </p>
-    <p>Y
-        <font color="#FF0000">=&gt;</font>
-        <font color="#0000FF">π<sup>r</sup></font>
-        - D - X→Y ◢ 2<sup>-1</sup> BC sin( D→A
+    <p>Y <font color="#FF0000">=&gt;</font>
+        <font color="#0000FF">π<sup>r</sup></font> - D - X→Y ◢ 2<sup>-1</sup> BC sin( D→A
     </p>
     <p>　</p>
     <p>
-        <font color="#FF0000">附錄程式</font>例題1:
-        a=4, b=5, ∠C=40<sup>o</sup>
-        ，求c、∠A、∠B及三角形面積。
+        <font color="#FF0000">附錄程式</font>例題1: a=4, b=5, ∠C=40<sup>o</sup> ，求c、∠A、∠B及三角形面積。
     </p>
-    <p>
-        注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 0 EXE (0代表最後輸入的數據為角度)</p>
-    <p>
-        4 EXE 5 EXE 40 EXE (顯示c=3.2184) </p>
-    <p>
-        EXE (顯示∠A=53.024<sup>o</sup>)</p>
-    <p>
-        EXE (顯示∠B=86.976<sup>o</sup>)</p>
-    <p>
-        EXE (顯示面積為6.4279)</p>
-    <p>若果使用程式二，程式完成後，按
-        <font face="Times New Roman, Times, serif">
-            RCL C、RCL
-            D、RCL X及RCL A 分別</font>顯示c、∠A、∠B及面積的數值。
+    <p> 注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 0 EXE (0代表最後輸入的數據為角度)</p>
+    <p> 4 EXE 5 EXE 40 EXE (顯示c=3.2184) </p>
+    <p> EXE (顯示∠A=53.024<sup>o</sup>)</p>
+    <p> EXE (顯示∠B=86.976<sup>o</sup>)</p>
+    <p> EXE (顯示面積為6.4279)</p>
+    <p>若果使用程式二，程式完成後，按 <font face="Times New Roman, Times, serif"> RCL C、RCL D、RCL X及RCL A 分別</font>顯示c、∠A、∠B及面積的數值。
     </p>
     <p>　</p>
     <p>
-        <font color="#FF0000">附錄程式</font>例題2:
-        a=4, b=5, c=6，求∠A、∠B、∠C及三角形面積。
+        <font color="#FF0000">附錄程式</font>例題2: a=4, b=5, c=6，求∠A、∠B、∠C及三角形面積。
     </p>
-    <p>注意:要在DEG
-        Mode執行</p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (1代表最後輸的數據為邊長)</p>
-    <p>
-        4 EXE 5 EXE
-        6 EXE (顯示∠A=41.410<sup>o</sup>)</p>
-    <p>
-        EXE (顯示∠B=55.771<sup>o</sup>)</p>
-    <p>
-        EXE (顯示∠C=82.8192<sup>o</sup>)</p>
-    <p>
-        EXE (顯示面積為9.9216)</p>
-    <p>若果使用程式二，程式完成後，按
-        RCL D、RCL X、RCL Y及RCL A 分別顯示∠A、∠B、∠C及面積的數值。</p>
+    <p>注意:要在DEG Mode執行</p>
+    <p> 按 Prog 1 再按 1 EXE (1代表最後輸的數據為邊長)</p>
+    <p> 4 EXE 5 EXE 6 EXE (顯示∠A=41.410<sup>o</sup>)</p>
+    <p> EXE (顯示∠B=55.771<sup>o</sup>)</p>
+    <p> EXE (顯示∠C=82.8192<sup>o</sup>)</p>
+    <p> EXE (顯示面積為9.9216)</p>
+    <p>若果使用程式二，程式完成後，按 RCL D、RCL X、RCL Y及RCL A 分別顯示∠A、∠B、∠C及面積的數值。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

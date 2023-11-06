@@ -7,122 +7,60 @@
                 <font size="5">二項分佈及泊松分佈</font>
             </b></u></p>
     <p>更新日期: 2014年8月1日</p>
-    <p>注意: 紅色的 <font color="#FF0000">×
-        </font>是乘號，<font color="#FF0000"><sub>n</sub>C<sub>r </sub></font>
-        是按 shift ÷，<font color="#FF0000">e^( </font>是按shift
-        e<sup>x</sup></p>
+    <p>注意: 紅色的 <font color="#FF0000">× </font>是乘號，<font color="#FF0000"><sub>n</sub>C<sub>r </sub></font> 是按 shift ÷，
+        <font color="#FF0000">e^( </font>是按shift e<sup>x</sup></p>
     <p>程式 (125 bytes)</p>
     <p>ClrMemory: ?→Y: ?→A: ?→B: Y=0 <font color="#FF0000">=&gt;</font> B→C: </p>
-    <p>Y=1 <font color="#FF0000">=&gt;</font> ?→C: ?→D: Y=2→X: Ans <font color="#FF0000">=&gt;</font>
-        A^( D→M◢ Lbl 0: </p>
+    <p>Y=1 <font color="#FF0000">=&gt;</font> ?→C: ?→D: Y=2→X: Ans <font color="#FF0000">=&gt;</font> A^( D→M◢ Lbl 0:
+    </p>
     <p>Y=0 <font color="#FF0000">=&gt;</font> A^( C )÷ <b>
             <font color="#800080">(</font>
-        </b> C!<font color="#FF0000">e^( </font>A<font color="#FF0000">M+</font>:
-        Y=1 <font color="#FF0000">=&gt;</font> A<sub>
+        </b> C!<font color="#FF0000">e^( </font>A<font color="#FF0000">M+</font>: Y=1 <font color="#FF0000">=&gt;</font>
+        A<sub>
             <font color="#FF0000">n</font>
         </sub>
-        <font color="#FF0000">C<sub>r</sub></font> C <font color="#FF0000">× </font>B^( C
-        )(1-B)^(A-C<font color="#FF0000">M+</font>:
+        <font color="#FF0000">C<sub>r</sub></font> C <font color="#FF0000">× </font>B^( C )(1-B)^(A-C<font
+            color="#FF0000">M+</font>:
     </p>
-    <p>1+C→C: X <font color="#FF0000">=&gt;</font> B(D-C+1)M┘(AC→M◢ X+(D≧C
-        <font color="#FF0000">=&gt;</font> Goto 0: M
-    </p>
-    <span lang="en">
+    <p>1+C→C: X <font color="#FF0000">=&gt;</font> B(D-C+1)M┘(AC→M◢ X+(D≧C <font color="#FF0000">=&gt;</font> Goto 0: M
+    </p> <span lang="en">
         <p>註1: 如果是使用fx-50FH，上述程式中的乘號<font color="#FF0000"> ×</font>可以省略不輸入，程式長度可節省1 byte。</p>
         <p>註2: 如果是使用fx-3650P II或fx-50FH II，上述程式中的A^( C ) ÷ <b>
-                <font color="#800080">(
-                </font>
-            </b>C!
-            <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: 可以簡化為 A^( C ) ÷
-            C!
-            <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: ，可節省1 byte。
-        </p>
+                <font color="#800080">( </font>
+            </b>C! <font color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: 可以簡化為 A^( C ) ÷ C! <font
+                color="#FF0000">e^( </font>A <font color="#FF0000">M+</font>: ，可節省1 byte。 </p>
     </span>
-    <p>
-        　</p>
-    <p>
-        例題1:
-        若X ~ Po(5)，求P(X=4)。</p>
-    <p>
-        按 Prog 1
-        再按 EXE (不輸入數值或輸入0代表計算泊松分佈)</p>
-    <p>
-        5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.17547)</p>
+    <p> 　</p>
+    <p> 例題1: 若X ~ Po(5)，求P(X=4)。</p>
+    <p> 按 Prog 1 再按 EXE (不輸入數值或輸入0代表計算泊松分佈)</p>
+    <p> 5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.17547)</p>
     <p>　</p>
-    <p>
-        例題2:
-        若X ~ Po(5)，求P(4≦X≦6)。</p>
-    <p>
-        按 Prog 1
-        再按 EXE (不輸入數值或輸入0代表計算泊松分佈)</p>
-    <p>
-        5 EXE 4 EXE 6 EXE (顯示P(4≦X≦6)為0.49716)</p>
+    <p> 例題2: 若X ~ Po(5)，求P(4≦X≦6)。</p>
+    <p> 按 Prog 1 再按 EXE (不輸入數值或輸入0代表計算泊松分佈)</p>
+    <p> 5 EXE 4 EXE 6 EXE (顯示P(4≦X≦6)為0.49716)</p>
     <p>　</p>
-    <p>
-        例題3:
-        若X ~ Bin(9,0.5)，求P(X=4)。</p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (1代表計算二項分佈)</p>
-    <p>
-        9 EXE 0.5 EXE 4 EXE
-        EXE (不輸入最後的數值代表只計算一項，顯示答案為0.24609)</p>
-    <p>
-        　</p>
-    <p>
-        例題4:
-        若X ~ Bin(9,0.5)，求P(4≦X≦6)。</p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (1代表計算二項分佈)</p>
-    <p>
-        9 EXE 0.5 EXE 4 EXE
-        6 EXE (顯示答案為0.65625)</p>
-    <p>
-        　</p>
-    <p>
-        例題5:
-        展開 (1 – 3x)<sup>-2</sup></p>
-    <p>
-        按 Prog 1
-        再按 2 EXE (2代表計算二項式定理)</p>
-    <p>
-        1 EXE - 3 EXE - 2 EXE (顯示第一個係數為1)
-        EXE (顯示第二個係數為6)
-    </p>
-    <p>
-        EXE (顯示第三個係數為27)
-        EXE (顯示第四個係數為108)
-        EXE (顯示第五個係數為405)</p>
-    <p>
-        因此，(1–
-        3x)<sup>-2</sup> = 1 + 6x + 27x<sup>2</sup> + 108x<sup>3</sup> + 405x<sup>4</sup>
-        +……….</p>
-    <p>
-    </p>
-    <p>
-        　</p>
-    <p>
-        例題6:
-        展開 (3x – 2y)<sup>4</sup></p>
-    <p>
-        按 Prog 1
-        再按 2 EXE (2代表計算二項式定理)</p>
-    <p>
-        3 EXE - 2 EXE 4 EXE (顯示第一個係數為81)
-        EXE (顯示第二個係數為-216)
-    </p>
-    <p>
-        EXE (顯示第三個係數為216)
-        EXE (顯示第四個係數為-96)
-        EXE (顯示第五個係數為16)</p>
-    <p>
-        EXE (顯示0，表示已完結)
-    </p>
-    <p>
-        因此，(3x
-        – 2y)<sup>4</sup> = 81x<sup>4</sup> – 216x<sup>3</sup>y + 216x<sup>2</sup>y<sup>2</sup>
-        -96xy<sup>3</sup> + 16y<sup>4</sup> </p>
+    <p> 例題3: 若X ~ Bin(9,0.5)，求P(X=4)。</p>
+    <p> 按 Prog 1 再按 1 EXE (1代表計算二項分佈)</p>
+    <p> 9 EXE 0.5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.24609)</p>
+    <p> 　</p>
+    <p> 例題4: 若X ~ Bin(9,0.5)，求P(4≦X≦6)。</p>
+    <p> 按 Prog 1 再按 1 EXE (1代表計算二項分佈)</p>
+    <p> 9 EXE 0.5 EXE 4 EXE 6 EXE (顯示答案為0.65625)</p>
+    <p> 　</p>
+    <p> 例題5: 展開 (1 – 3x)<sup>-2</sup></p>
+    <p> 按 Prog 1 再按 2 EXE (2代表計算二項式定理)</p>
+    <p> 1 EXE - 3 EXE - 2 EXE (顯示第一個係數為1) EXE (顯示第二個係數為6) </p>
+    <p> EXE (顯示第三個係數為27) EXE (顯示第四個係數為108) EXE (顯示第五個係數為405)</p>
+    <p> 因此，(1– 3x)<sup>-2</sup> = 1 + 6x + 27x<sup>2</sup> + 108x<sup>3</sup> + 405x<sup>4</sup> +……….</p>
+    <p> </p>
+    <p> 　</p>
+    <p> 例題6: 展開 (3x – 2y)<sup>4</sup></p>
+    <p> 按 Prog 1 再按 2 EXE (2代表計算二項式定理)</p>
+    <p> 3 EXE - 2 EXE 4 EXE (顯示第一個係數為81) EXE (顯示第二個係數為-216) </p>
+    <p> EXE (顯示第三個係數為216) EXE (顯示第四個係數為-96) EXE (顯示第五個係數為16)</p>
+    <p> EXE (顯示0，表示已完結) </p>
+    <p> 因此，(3x – 2y)<sup>4</sup> = 81x<sup>4</sup> – 216x<sup>3</sup>y + 216x<sup>2</sup>y<sup>2</sup> -96xy<sup>3</sup>
+        + 16y<sup>4</sup> </p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     </body>

@@ -9,56 +9,42 @@
                 <font size="5">伽瑪函數(I)</font>
             </b></u></p>
     <p>程式更新日期: 2014年8月22日</p>
-    <p>這個程利用Lanczos
-        approximation的方法去計算伽瑪函數的值，能夠準確至有效數字九至十位。第一個程式只能計算正實數的伽瑪函數，第二個程式則能計算任何實數的伽瑪函數。</p>
+    <p>這個程利用Lanczos approximation的方法去計算伽瑪函數的值，能夠準確至有效數字九至十位。第一個程式只能計算正實數的伽瑪函數，第二個程式則能計算任何實數的伽瑪函數。</p>
     <p>　</p>
-    <p>注意: <font color="#FF0000">e^( </font>是按shift
-        e<sup>x</sup>。</p>
+    <p>注意: <font color="#FF0000">e^( </font>是按shift e<sup>x</sup>。</p>
     <p>
         <font color="#0000FF">第一個程式</font> (100 bytes，使用記憶為A)
     </p>
     <p>?→A: A+3: (Ans + . 85)^(A - . 5) <span lang="en">e^(- Ans)(1.071370357</span></p>
-    <p><span lang="en">+ 39.41066934 ÷ A - 35.55136409 ÷ (A + 1) - . 0943944629 ÷
-            Ans</span></p>
+    <p><span lang="en">+ 39.41066934 ÷ A - 35.55136409 ÷ (A + 1) - . 0943944629 ÷ Ans</span></p>
     <p><span lang="en">+ 6.326951402 ÷ (A + 2</span></p>
     <p>　</p>
     <p>
         <font color="#0000FF">第二個程式 </font>(124 bytes，使用記憶A及B)
     </p>
-    <p>注意: <font color="#FF0000">e^(</font>是按shift
-        e<sup>x</sup>，<font color="#0000FF" face="Times New Roman">π</font>
-        <font color="#0000FF"><sup>r</sup></font>
-        是按 Shift EXP Shift Ans 2。
+    <p>注意: <font color="#FF0000">e^(</font>是按shift e<sup>x</sup>，<font color="#0000FF" face="Times New Roman">π</font>
+        <font color="#0000FF"><sup>r</sup></font> 是按 Shift EXP Shift Ans 2。
     </p>
     <p>?→B: Abs(B→A: A+3: (Ans + . 85)^(A - . 5) <span lang="en">e^(- Ans)(1.071370357</span></p>
-    <p><span lang="en">+ 39.41066934 ÷ A - 35.55136409 ÷ (A + 1) - . 0943944629 ÷
-            Ans</span></p>
-    <p><span lang="en">+ 6.326951402 ÷ (A + 2: If 0&gt;B: Then </span>&nbsp;π ÷ (AnsA
-        sin( B<font color="#0000FF">π<sup>r</sup></font>: Else Ans</p>
+    <p><span lang="en">+ 39.41066934 ÷ A - 35.55136409 ÷ (A + 1) - . 0943944629 ÷ Ans</span></p>
+    <p><span lang="en">+ 6.326951402 ÷ (A + 2: If 0&gt;B: Then </span>&nbsp;π ÷ (AnsA sin( B<font color="#0000FF">
+            π<sup>r</sup></font>: Else Ans</p>
     <p>　</p>
-    <p>例題1:
-        計算Γ(0.35)的值。</p>
-    <p>按
-        Prog 1 &nbsp;再按 0.35 EXE (顯示答案為2.546146978)</p>
+    <p>例題1: 計算Γ(0.35)的值。</p>
+    <p>按 Prog 1 &nbsp;再按 0.35 EXE (顯示答案為2.546146978)</p>
     <p>　</p>
-    <p>例題2: 計算Γ(-
-        0.35)的值。 </p>
+    <p>例題2: 計算Γ(- 0.35)的值。 </p>
     <p>只適用於第二個程式</p>
-    <p>按
-        Prog 1 &nbsp;再按 - 0.35 EXE (顯示答案為
-        -3.956557433)</p>
+    <p>按 Prog 1 &nbsp;再按 - 0.35 EXE (顯示答案為 -3.956557433)</p>
     <p>　</p>
-    <p>註1: 對於正整數 n的伽瑪函數，可以利用計算機的乘階功能直接計算，即
-        Γ(n) = (n-1)!。</p>
+    <p>註1: 對於正整數 n的伽瑪函數，可以利用計算機的乘階功能直接計算，即 Γ(n) = (n-1)!。</p>
     <p>註2: 有關伽瑪函數的參考資料，可以參閱以下網址的資料:</p>
     <p><a href="http://mathworld.wolfram.com/GammaFunction.html">
             <font color="#0000FF">Gamma Function - from Wolfram MathWorld</font>
         </a></p>
-    <p>
-        <a href="http://www.sosmath.com/calculus/improper/gamma/gamma.html">
+    <p> <a href="http://www.sosmath.com/calculus/improper/gamma/gamma.html">
             <font color="#0000FF">Gamma Function</font>
-        </a>
-    </p>
+        </a> </p>
     <p>　</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>

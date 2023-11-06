@@ -5,8 +5,7 @@
     <meta name="Microsoft Theme" content="indust 011">
     <p align="center"><u>
             <font size="5"><b>雙</b></font><b>
-                <font size="5">因子變異分析 (Two
-                    way analysis of variance (ANOVA))</font>
+                <font size="5">因子變異分析 (Two way analysis of variance (ANOVA))</font>
             </b>
         </u></p>
     <p>程式可以計算雙因子變異分析中的A因子平方和SSF<sub>A</sub>、B因子平方和SSF<sub>B</sub>、隨機平方和SSE、A因子平均平方和MSF<sub>A</sub>、B因子平均平方和MSF<sub>B</sub>、隨機平均平方和MSE
@@ -16,113 +15,77 @@
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx </font>按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，
-        <font color="#0000FF">n</font>
-        按 Shift 1 3)。
-    </p>
+        <font color="#0000FF">n</font> 按 Shift 1 3)。 </p>
     <p>程式 (237 bytes)</p>
-    <p>ClrStat: 0→A: <font color="#FF0000">Rec(</font> 0 , 0: ?→C: ?→D: C , D
-        <font color="#FF0000">DT</font>:
-    </p>
+    <p>ClrStat: 0→A: <font color="#FF0000">Rec(</font> 0 , 0: ?→C: ?→D: C , D <font color="#FF0000">DT</font>: </p>
     <p>For 1→C To <font color="#0000FF">Σx</font>: 0→B: 0→D: Lbl 0: ?→M:</p>
     <p>X + M<sup>2</sup>→X: Y + M→Y: B + M→B: 1 + D→D:</p>
     <p>
-        <font color="#0000FF">Σy</font>&gt;D <font color="#FF0000">=&gt;</font> Goto 0: A +
-        B<sup>2 </sup><span lang="en">÷</span>
-        <font color="#0000FF">Σy</font><sup>2</sup>→A:
-        Next:
+        <font color="#0000FF">Σy</font>&gt;D <font color="#FF0000">=&gt;</font> Goto 0: A + B<sup>2 </sup><span
+            lang="en">÷</span>
+        <font color="#0000FF">Σy</font><sup>2</sup>→A: Next:
     </p>
-    <p>0 , 0 ; <font color="#0000FF">Σy</font>A - 1 - Y<sup>2</sup> <span lang="en">
-            ÷ (</span>
+    <p>0 , 0 ; <font color="#0000FF">Σy</font>A - 1 - Y<sup>2</sup> <span lang="en"> ÷ (</span>
         <font color="#0000FF">ΣxΣy </font>
-        <font color="#FF0000">DT</font>:
-        0→A:
+        <font color="#FF0000">DT</font>: 0→A:
     </p>
     <p>For 1→C To <font color="#0000FF">Σy</font>: 0→B: 0→D: Lbl 1: ?→M:</p>
-    <p>B + M→B: 1 + D→D: <font color="#0000FF">Σx</font>&gt;D <font color="#FF0000">=&gt;</font>
-        Goto 1: </p>
+    <p>B + M→B: 1 + D→D: <font color="#0000FF">Σx</font>&gt;D <font color="#FF0000">=&gt;</font> Goto 1: </p>
     <p>A + B<sup>2 </sup><span lang="en">÷</span>
-        <font color="#0000FF">Σx</font><sup>2</sup>→A:
-        Next: <font color="#0000FF">n</font>◢ <font color="#0000FF">Σx</font>A - Y<sup>2</sup>
-        <span lang="en">÷ (</span>
+        <font color="#0000FF">Σx</font><sup>2</sup>→A: Next: <font color="#0000FF">n</font>◢ <font color="#0000FF">Σx
+        </font>A - Y<sup>2</sup> <span lang="en">÷ (</span>
         <font color="#0000FF">ΣxΣy</font>→A◢
     </p>
     <p>X - A - <font color="#0000FF">n</font> - Y<sup>2</sup> <span lang="en">÷ (</span>
-        <font color="#0000FF">ΣxΣy</font>→B◢
-        <font color="#0000FF">n</font> <span lang="en">÷ (</span>
-        <font color="#0000FF">Σx</font><span lang="en">
-            - 1→C◢</span>
+        <font color="#0000FF">ΣxΣy</font>→B◢ <font color="#0000FF">n</font> <span lang="en">÷ (</span>
+        <font color="#0000FF">Σx</font><span lang="en"> - 1→C◢</span>
     </p>
     <p><span lang="en-us">A </span><span lang="en">÷ (</span>
-        <font color="#0000FF">Σy</font><span lang="en">
-            - 1→D◢</span><span lang="en-us"> B </span><span lang="en">÷ (</span>
-        <font color="#0000FF">Σx</font><span lang="en">
-            - 1) ÷ (</span>
+        <font color="#0000FF">Σy</font><span lang="en"> - 1→D◢</span><span lang="en-us"> B </span><span lang="en">÷
+            (</span>
+        <font color="#0000FF">Σx</font><span lang="en"> - 1) ÷ (</span>
         <font color="#0000FF">Σy</font><span lang="en"> - 1→X◢</span>
     </p>
-    <p><span lang="en-us">C ÷ X</span><span lang="en">→Y◢ </span><span lang="en-us">
-            D ÷ X</span><span lang="en">→M</span></p>
+    <p><span lang="en-us">C ÷ X</span><span lang="en">→Y◢ </span><span lang="en-us"> D ÷ X</span><span
+            lang="en">→M</span></p>
     <p>　</p>
-    <p>註: 如果是使用fx-3650P II或fx-50FH II，上述程式碼(第五行、第八行及第九行)中 Y<sup>2</sup> <span lang="en">
-            ÷ <font color="#FF0000">(</font></span>
-        <font color="#0000FF"> ΣxΣy</font> 可以簡化為
-        Y<sup>2</sup> <span lang="en">
-            ÷ </span>
+    <p>註: 如果是使用fx-3650P II或fx-50FH II，上述程式碼(第五行、第八行及第九行)中 Y<sup>2</sup> <span lang="en"> ÷ <font color="#FF0000">(
+            </font></span>
+        <font color="#0000FF"> ΣxΣy</font> 可以簡化為 Y<sup>2</sup> <span lang="en"> ÷ </span>
         <font color="#0000FF">ΣxΣy</font> 可節省3 bytes。
     </p>
     <p>　</p>
     <p>例題: 試由下列數據，計算雙因子變異分析中的A因子平方和SSF<sub>A</sub> 、B因子平方和SSF<sub>B</sub>
-        、隨機平方和SSE、A因子平均平方和MSF<sub>A</sub>、B因子平均平方和MSF<sub>B</sub>、隨機平均平方和MSE
-        、F<sub>A</sub>及F<sub>B</sub>。</p>
-
+        、隨機平方和SSE、A因子平均平方和MSF<sub>A</sub>、B因子平均平方和MSF<sub>B</sub>、隨機平均平方和MSE 、F<sub>A</sub>及F<sub>B</sub>。</p>
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="64%" id="AutoNumber1"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
-            <td width="20%" align="center">　
-            </td>
-            <td width="20%" align="center">教學法1
-            </td>
-            <td width="20%" align="center">教學法2
-            </td>
-            <td width="20%" align="center">教學法3
-            </td>
-            <td width="20%" align="center">教學法4
-            </td>
+            <td width="20%" align="center">　 </td>
+            <td width="20%" align="center">教學法1 </td>
+            <td width="20%" align="center">教學法2 </td>
+            <td width="20%" align="center">教學法3 </td>
+            <td width="20%" align="center">教學法4 </td>
         </tr>
         <tr>
-            <td width="20%" align="center">學生1
-            </td>
-            <td width="20%" align="center">76
-            </td>
-            <td width="20%" align="center">75
-            </td>
-            <td width="20%" align="center">73
-            </td>
-            <td width="20%" align="center">81
-            </td>
+            <td width="20%" align="center">學生1 </td>
+            <td width="20%" align="center">76 </td>
+            <td width="20%" align="center">75 </td>
+            <td width="20%" align="center">73 </td>
+            <td width="20%" align="center">81 </td>
         </tr>
         <tr>
-            <td width="20%" align="center">學生2
-            </td>
-            <td width="20%" align="center">79
-            </td>
-            <td width="20%" align="center">71
-            </td>
-            <td width="20%" align="center">76
-            </td>
-            <td width="20%" align="center">87
-            </td>
+            <td width="20%" align="center">學生2 </td>
+            <td width="20%" align="center">79 </td>
+            <td width="20%" align="center">71 </td>
+            <td width="20%" align="center">76 </td>
+            <td width="20%" align="center">87 </td>
         </tr>
         <tr>
-            <td width="20%" align="center">學生3
-            </td>
-            <td width="20%" align="center">74
-            </td>
-            <td width="20%" align="center">80
-            </td>
-            <td width="20%" align="center">69
-            </td>
-            <td width="20%" align="center">81
-            </td>
+            <td width="20%" align="center">學生3 </td>
+            <td width="20%" align="center">74 </td>
+            <td width="20%" align="center">80 </td>
+            <td width="20%" align="center">69 </td>
+            <td width="20%" align="center">81 </td>
         </tr>
     </table>
     <p>按 Prog 1 再按 3 EXE (數據列Row的數目) 4 (數據欄Column的數目)</p>
@@ -140,8 +103,8 @@
     <p>EXE (顯示MSE為14.97222) EXE (顯示F<sub>A</sub>為0.406308)</p>
     <p>EXE (顯示F<sub>B</sub>為3.866419)</p>
     <p>　</p>
-    <p>註: 程式執行完結後可以按 Shift 13, RCL A, RCL B, RCL C, RCL D, RCL X, RCL Y, RCL M分別顯示SSF<sub>A</sub>,
-        SSF<sub>B</sub>, SSE, MSF<sub>A</sub>, MSF<sub>B</sub>, MSE, F<sub>A</sub>及F<sub>B</sub>。</p>
+    <p>註: 程式執行完結後可以按 Shift 13, RCL A, RCL B, RCL C, RCL D, RCL X, RCL Y, RCL M分別顯示SSF<sub>A</sub>, SSF<sub>B</sub>, SSE,
+        MSF<sub>A</sub>, MSF<sub>B</sub>, MSE, F<sub>A</sub>及F<sub>B</sub>。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     </body>

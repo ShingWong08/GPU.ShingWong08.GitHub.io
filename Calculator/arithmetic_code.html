@@ -13,122 +13,71 @@
     </p>
     <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>為平均x
-        按 shift 2 1)</p>
+        </span>為平均x 按 shift 2 1)</p>
     <p>程式 (184 bytes)</p>
-    <p>
-        ClrStat: <font color="#FF0000">Pol(</font> 1, 0: ?→A: ?→B: A ; B
-        <font color="#FF0000">DT</font>:
-    </p>
-    <p>
-        B=1 <font color="#FF0000">=&gt;</font> Goto 0: ?→A: A=1 <font color="#FF0000">=&gt;</font>
-        Goto 0: ?→B: </p>
-    <p>
-        B=1 <font color="#FF0000">=&gt;</font> Goto 0: ?→C: C-1 <font color="#FF0000">=&gt;</font>
-        ?→X:</p>
-    <p>
-        Lbl 0: ?→M: X - Y→D: M=1 <font color="#FF0000">=&gt;</font>Y +
-        <span style="text-decoration: overline">
+    <p> ClrStat: <font color="#FF0000">Pol(</font> 1, 0: ?→A: ?→B: A ; B <font color="#FF0000">DT</font>: </p>
+    <p> B=1 <font color="#FF0000">=&gt;</font> Goto 0: ?→A: A=1 <font color="#FF0000">=&gt;</font> Goto 0: ?→B: </p>
+    <p> B=1 <font color="#FF0000">=&gt;</font> Goto 0: ?→C: C-1 <font color="#FF0000">=&gt;</font> ?→X:</p>
+    <p> Lbl 0: ?→M: X - Y→D: M=1 <font color="#FF0000">=&gt;</font>Y + <span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>D→X:
-    </p>
-    <p>
-        M=2 <font color="#FF0000">=&gt;</font> Y + <font color="#0000FF">n</font>D→X:
-        Ans
-        <font color="#FF0000">=&gt;</font> Y + <span style="text-decoration: overline">
+        </span>D→X: </p>
+    <p> M=2 <font color="#FF0000">=&gt;</font> Y + <font color="#0000FF">n</font>D→X: Ans <font color="#FF0000">=&gt;
+        </font> Y + <span style="text-decoration: overline">
             <font color="#0000FF">x</font>
-        </span>D→Y:
-    </p>
-    <p>
-        M=3 <font color="#FF0000">=&gt;</font> Y + AD→X: Ans <font color="#FF0000">=&gt;</font> Y +
-        <font color="#0000FF">n</font>D→Y:
-    </p>
-    <p>
-        M=4 <font color="#FF0000">=&gt;</font> Y + BD→X: Ans <font color="#FF0000">=&gt;</font> Y +
-        AD→Y:</p>
-    <p>
-        M=5 <font color="#FF0000">=&gt;</font> Y + CD→X: Ans <font color="#FF0000">=&gt;</font> Y +
-        BD→Y:</p>
-    <p>
-        M=6 <font color="#FF0000">=&gt;</font> Y + CD→Y: M <font color="#FF0000">=&gt;</font>
-        Goto 0: Y◢ X</p>
-    <p>
-        　</p>
-    <p>
-        Example: </p>
-    <p>
-        The following are the probability and range of each symbol</p>
+        </span>D→Y: </p>
+    <p> M=3 <font color="#FF0000">=&gt;</font> Y + AD→X: Ans <font color="#FF0000">=&gt;</font> Y + <font
+            color="#0000FF">n</font>D→Y: </p>
+    <p> M=4 <font color="#FF0000">=&gt;</font> Y + BD→X: Ans <font color="#FF0000">=&gt;</font> Y + AD→Y:</p>
+    <p> M=5 <font color="#FF0000">=&gt;</font> Y + CD→X: Ans <font color="#FF0000">=&gt;</font> Y + BD→Y:</p>
+    <p> M=6 <font color="#FF0000">=&gt;</font> Y + CD→Y: M <font color="#FF0000">=&gt;</font> Goto 0: Y◢ X</p>
+    <p> 　</p>
+    <p> Example: </p>
+    <p> The following are the probability and range of each symbol</p>
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="43%" id="AutoNumber1"
         bordercolorlight="#666666" bordercolordark="#000000">
         <tr align="center">
-            <td width="18%">Symbol
-            </td>
-            <td width="36%">Probability
-            </td>
-            <td width="46%">Range
+            <td width="18%">Symbol </td>
+            <td width="36%">Probability </td>
+            <td width="46%">Range </td>
+        </tr>
+        <tr align="center">
+            <td width="18%">1 </td>
+            <td width="36%">0.2 </td>
+            <td width="46%">0 - <font color="#FF0000">0.2</font>
             </td>
         </tr>
         <tr align="center">
-            <td width="18%">1
-            </td>
-            <td width="36%">0.2
-            </td>
-            <td width="46%">0 -
-                <font color="#FF0000">0.2</font>
+            <td width="18%">2 </td>
+            <td width="36%">0.4 </td>
+            <td width="46%">0.2 - <font color="#FF0000">0.6</font>
             </td>
         </tr>
         <tr align="center">
-            <td width="18%">2
-            </td>
-            <td width="36%">0.4
-            </td>
-            <td width="46%">0.2 -
-                <font color="#FF0000">0.6</font>
+            <td width="18%">3 </td>
+            <td width="36%">0.1 </td>
+            <td width="46%">0.6 - <font color="#FF0000">0.7</font>
             </td>
         </tr>
         <tr align="center">
-            <td width="18%">3
-            </td>
-            <td width="36%">0.1
-            </td>
-            <td width="46%">0.6 -
-                <font color="#FF0000">0.7</font>
+            <td width="18%">4 </td>
+            <td width="36%">0.2 </td>
+            <td width="46%">0.7 - <font color="#FF0000">0.9</font>
             </td>
         </tr>
         <tr align="center">
-            <td width="18%">4
-            </td>
-            <td width="36%">0.2
-            </td>
-            <td width="46%">0.7 -
-                <font color="#FF0000">0.9</font>
-            </td>
-        </tr>
-        <tr align="center">
-            <td width="18%">5
-            </td>
-            <td width="36%">0.1
-            </td>
-            <td width="46%">0.9 -
-                <font color="#FF0000">1</font>
+            <td width="18%">5 </td>
+            <td width="36%">0.1 </td>
+            <td width="46%">0.9 - <font color="#FF0000">1</font>
             </td>
         </tr>
     </table>
-    <p>
-        What is the codeword of arithmetic coding for the sequence of 1 2 3 2 2 4 1 5 2
-        4?</p>
-    <p>
-        　</p>
-    <p>
-        Press Prog 1&nbsp; 0.2 EXE 0.6 EXE 0.7 EXE 0.9 EXE 1 EXE</p>
-    <p>
-        1 EXE 2 EXE 3 EXE 2 EXE 2 EXE 4 EXE 1 EXE 5 EXE 2 EXE 4 EXE </p>
-    <p>
-        0 EXE (0 represent end of input, read-out: 0.091184537)</p>
-    <p>
-        EXE (read-out: 0.091184947)</p>
-    <p>
-        The codeword is between 0.091184537 and 0.091184947</p>
+    <p> What is the codeword of arithmetic coding for the sequence of 1 2 3 2 2 4 1 5 2 4?</p>
+    <p> 　</p>
+    <p> Press Prog 1&nbsp; 0.2 EXE 0.6 EXE 0.7 EXE 0.9 EXE 1 EXE</p>
+    <p> 1 EXE 2 EXE 3 EXE 2 EXE 2 EXE 4 EXE 1 EXE 5 EXE 2 EXE 4 EXE </p>
+    <p> 0 EXE (0 represent end of input, read-out: 0.091184537)</p>
+    <p> EXE (read-out: 0.091184947)</p>
+    <p> The codeword is between 0.091184537 and 0.091184947</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     </body>

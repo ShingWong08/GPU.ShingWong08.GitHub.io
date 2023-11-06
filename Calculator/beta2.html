@@ -9,43 +9,23 @@
     <p>程式編寫日期: 2014年8月1日</p>
     <p>程式由網友&nbsp; <font color="#0000FF">Skwai</font>提供。</p>
     <p>這個程式可以計算Beta函數B(x,y)的數值，大約能夠準確至有效數字九至十位，另外這個版本較特別之處是可以計算複數因變數的Beta函數。</p>
-    <p>注意: <font color="#FF0000">e^( </font>是按shift
-        e<sup>x</sup>。</p>
+    <p>注意: <font color="#FF0000">e^( </font>是按shift e<sup>x</sup>。</p>
     <p>程式 (249 bytes)</p>
-    <p>ClrMemory: ?→A: ?→Y: 1→D: While M≠3<font color="#FF0000">M+</font>: <br>
-        <br>
-        A ( 0 &gt; A ( A = Conjg ( A→C: Ans <font color="#FF0000">=&gt;</font> Abs( Ans→A: <br>
-        <br>
-        Abs( A ) sin( arg( A→X: A - . 5 - i Ans→B: A + 3.85: <br>
-        <br>
-        Abs( Ans ) ^ ( B ) ÷ <font color="#FF0000">e^(</font>
-        <font color="#0000FF">π
-            <sup>r-1</sup>
-        </font> X π arg( Ans: <br>
-        <br>
-        Ans ∠ ( B arg( A + 3.85 ) + π <sup>-1</sup> X <font color="#0000FF">π<sup>r</sup></font>
-        ln( Abs( A + 3.85: <br>
-        <br>
-        Ans ÷ <font color="#FF0000">e^(</font> B + 3.5 ) ∠ X<sup>r</sup>
-        <span lang="en">
+    <p>ClrMemory: ?→A: ?→Y: 1→D: While M≠3<font color="#FF0000">M+</font>: <br> <br> A ( 0 &gt; A ( A = Conjg ( A→C: Ans
+        <font color="#FF0000">=&gt;</font> Abs( Ans→A: <br> <br> Abs( A ) sin( arg( A→X: A - . 5 - i Ans→B: A + 3.85:
+        <br> <br> Abs( Ans ) ^ ( B ) ÷ <font color="#FF0000">e^(</font>
+        <font color="#0000FF">π <sup>r-1</sup> </font> X π arg( Ans: <br> <br> Ans ∠ ( B arg( A + 3.85 ) + π
+        <sup>-1</sup> X <font color="#0000FF">π<sup>r</sup></font> ln( Abs( A + 3.85: <br> <br> Ans ÷ <font
+            color="#FF0000">e^(</font> B + 3.5 ) ∠ X<sup>r</sup> <span lang="en">
             <font color="#FF0000">&nbsp;× </font>
-        </span>
-        ( 1.071370357 +
-        <br>
-        <br>
-        39.41066934 ÷ A - 35.55136409 ÷ ( A + 1 ) + 6.326951402 ÷ ( A + 2<br>
-        <br>
-        ) - . 0943944629 ÷ ( A + 3: If C: Then π ÷ ( Ans A sin( C <font color="#0000FF">
-            π<sup>r</sup></font> : IfEnd: <br>
-        <br>
-        Ans ÷ D→D: Y = 0 <font color="#FF0000">=&gt;</font> Break: C <font color="#FF0000">
-            =&gt;</font> Ans→A: Y + A ( M≠2→A: WhileEnd: D
+        </span> ( 1.071370357 + <br> <br> 39.41066934 ÷ A - 35.55136409 ÷ ( A + 1 ) + 6.326951402 ÷ ( A + 2<br> <br> ) -
+        . 0943944629 ÷ ( A + 3: If C: Then π ÷ ( Ans A sin( C <font color="#0000FF"> π<sup>r</sup></font> : IfEnd: <br>
+        <br> Ans ÷ D→D: Y = 0 <font color="#FF0000">=&gt;</font> Break: C <font color="#FF0000"> =&gt;</font> Ans→A: Y +
+        A ( M≠2→A: WhileEnd: D
     </p>
     <p>　</p>
-    <p>註1:&nbsp; 輸入如 B ( 0.35 , 0 ) 時，視為計算Γ ( 0.35 )。如只計算Beta函數，程式碼Y = 0
-        <font color="#FF0000">=&gt;</font> Break: 可以不輸入，程式長度變為242 bytes。
-    </p>
-    <span lang="en">
+    <p>註1:&nbsp; 輸入如 B ( 0.35 , 0 ) 時，視為計算Γ ( 0.35 )。如只計算Beta函數，程式碼Y = 0 <font color="#FF0000">=&gt;</font> Break:
+        可以不輸入，程式長度變為242 bytes。 </p> <span lang="en">
         <p>註2: 如果是使用fx-50FH，上述程式中的乘號<font color="#FF0000"> ×</font>可以省略不輸入，程式長度可節省1 byte。</p>
     </span>
     <p>註3: 答案記存在 D ，按 RCL D可以顯示。</p>
@@ -58,39 +38,27 @@
     <p><strong>
             <font color="#FF0000">( 此時計算機右上角出現R&lt;=&gt;I，表示為複數解)</font>
         </strong></p>
-    <p>
-        (顯示實數部為- 0 . 061 274 167)
-        再按 Shift Re&lt;=&gt;Im (顯示第一個根虛數部為
-        0 . 197 519 756)</p>
+    <p> (顯示實數部為- 0 . 061 274 167) 再按 Shift Re&lt;=&gt;Im (顯示第一個根虛數部為 0 . 197 519 756)</p>
     <p>即 B(1+2i , 3+4i) = - 0 . 061 274 167 + 0 . 197 519 756 i</p>
     <p>　</p>
-    <p>例題32:
-        計算Γ(0.35)的值。</p>
-    <p>按
-        Prog 1 &nbsp;再按 0.35 EXE </p>
+    <p>例題32: 計算Γ(0.35)的值。</p>
+    <p>按 Prog 1 &nbsp;再按 0.35 EXE </p>
     <p>
         <font color="#FF0000">0 EXE</font>(計算伽瑪函數第二個輸入0，顯示答案為2.546146978)
     </p>
     <p>　</p>
-    <p>例題4: 計算Γ(-
-        0.35)的值。 </p>
-    <p>按
-        Prog 1 &nbsp;再按 - 0.35 EXE</p>
+    <p>例題4: 計算Γ(- 0.35)的值。 </p>
+    <p>按 Prog 1 &nbsp;再按 - 0.35 EXE</p>
     <p>
         <font color="#FF0000">0 EXE</font>(計算伽瑪函數第二個輸入0，顯示答案為 -3.956557433)
     </p>
     <p>　</p>
     <p>Beta 函數的參考資料:</p>
-    <p>1. <a href="http://en.wikipedia.org/wiki/Beta_function">Beta function -
-            Wikipedia, the free encyclopedia</a></p>
-    <p><a href="http://en.wikipedia.org/wiki/Beta_function">
-            http://en.wikipedia.org/wiki/Beta_function</a></p>
-    <p>2. <a href="http://mathworld.wolfram.com/BetaFunction.html">Beta Function --
-            from Wolfram MathWorld</a></p>
-    <p><a href="http://mathworld.wolfram.com/BetaFunction.html">
-            http://mathworld.wolfram.com/BetaFunction.html</a></p>
-    <p>
-        　</p>
+    <p>1. <a href="http://en.wikipedia.org/wiki/Beta_function">Beta function - Wikipedia, the free encyclopedia</a></p>
+    <p><a href="http://en.wikipedia.org/wiki/Beta_function"> http://en.wikipedia.org/wiki/Beta_function</a></p>
+    <p>2. <a href="http://mathworld.wolfram.com/BetaFunction.html">Beta Function -- from Wolfram MathWorld</a></p>
+    <p><a href="http://mathworld.wolfram.com/BetaFunction.html"> http://mathworld.wolfram.com/BetaFunction.html</a></p>
+    <p> 　</p>
     <p
         style="color: rgb(0, 0, 0); font-family: 新細明體; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
         For 0→X To 2: If X≠2: Then AnsX→Y: A→D:</p>
@@ -100,35 +68,27 @@
     <p
         style="color: rgb(0, 0, 0); font-family: 新細明體; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
         A ( 0 &gt; A ( A = Conjg( A→C: C<span class="Apple-converted-space">&nbsp;</span>
-        <font color="#FF0000">=&gt;</font><span class="Apple-converted-space">&nbsp;</span>Abs(
-        C→A:<span class="Apple-converted-space">&nbsp;</span><br>
-        <br>
-        Abs( A ) sin( arg( A→M:<span class="Apple-converted-space">&nbsp;</span>
-        <font color="#FF0000">e^(</font>A
-        + 3 - Mi )∠ M<sup>r</sup>→B: A + 3.85:<br>
-        <br>
-        ( Abs( Ans) )^(A - . 5 - iM)&nbsp;<font color="#FF0000">e^(</font>
-        <font color="#0000FF"><span class="Apple-converted-space">&nbsp;</span>-
-            π</font><sup>
+        <font color="#FF0000">=&gt;</font><span class="Apple-converted-space">&nbsp;</span>Abs( C→A:<span
+            class="Apple-converted-space">&nbsp;</span><br> <br> Abs( A ) sin( arg( A→M:<span
+            class="Apple-converted-space">&nbsp;</span>
+        <font color="#FF0000">e^(</font>A + 3 - Mi )∠ M<sup>r</sup>→B: A + 3.85:<br> <br> ( Abs( Ans) )^(A - . 5 -
+        iM)&nbsp;<font color="#FF0000">e^(</font>
+        <font color="#0000FF"><span class="Apple-converted-space">&nbsp;</span>- π</font><sup>
             <font color="#0000FF">r</font><span class="Apple-converted-space">&nbsp;</span>-1
-        </sup><span class="Apple-converted-space">&nbsp;</span>M
-        π arg( Ans) )<span class="Apple-converted-space">&nbsp;</span><br>
-        <br>
-        ∠ ( (A - . 5 - iM) arg( Ans ) + π<sup><span class="Apple-converted-space">&nbsp;</span>-1</sup><span
+        </sup><span class="Apple-converted-space">&nbsp;</span>M π arg( Ans) )<span
+            class="Apple-converted-space">&nbsp;</span><br> <br> ∠ ( (A - . 5 - iM) arg( Ans ) + π<sup><span
+                class="Apple-converted-space">&nbsp;</span>-1</sup><span
             class="Apple-converted-space">&nbsp;</span>M<span class="Apple-converted-space">&nbsp;</span>
-        <font color="#0000FF">π<sup>r</sup></font><span class="Apple-converted-space">&nbsp;</span>ln(
-        Abs( Ans:<span class="Apple-converted-space">&nbsp;</span><br>
-        <br>
-        AnsB<sup>-1</sup>( 1.07 137 035 7+ 39.4 106 693 4 ÷ A - 35.5 513 640 9 ÷ ( A + 1
-        )
+        <font color="#0000FF">π<sup>r</sup></font><span class="Apple-converted-space">&nbsp;</span>ln( Abs( Ans:<span
+            class="Apple-converted-space">&nbsp;</span><br> <br> AnsB<sup>-1</sup>( 1.07 137 035 7+ 39.4 106 693 4 ÷ A -
+        35.5 513 640 9 ÷ ( A + 1 )
     </p>
     <p
         style="color: rgb(0, 0, 0); font-family: 新細明體; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
         + 6.32 695 140 2 ÷ ( A + 2 ) - . 094 394 462 9 ÷ ( A + 3:<span class="Apple-converted-space">&nbsp;</span><br>
-        <br>
-        If C: Then - π ÷&nbsp; (AnsC sin( C<span class="Apple-converted-space">&nbsp;</span>
-        <font color="#0000FF">π<sup>r</sup></font><span class="Apple-converted-space">&nbsp;</span>:
-        IfEnd: Next: Y<span class="Apple-converted-space">&nbsp;</span><span lang="en">÷ Ans</span>
+        <br> If C: Then - π ÷&nbsp; (AnsC sin( C<span class="Apple-converted-space">&nbsp;</span>
+        <font color="#0000FF">π<sup>r</sup></font><span class="Apple-converted-space">&nbsp;</span>: IfEnd: Next: Y<span
+            class="Apple-converted-space">&nbsp;</span><span lang="en">÷ Ans</span>
     </p>
     <p>　</p>
     <p>　</p>

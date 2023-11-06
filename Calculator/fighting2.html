@@ -15,59 +15,38 @@
     <p>注意: <font size="1">E </font>是按 EXP 。</p>
     <p>程式 (人對人版本，448 bytes)</p>
     <p>
-        <font size="1">E</font>2→C: Fix3: <font size="1">E</font>3→Y: 2C→M: Y+M÷<font size="1">E</font>3◢
-        Y→D: M→X: D+X÷<font size="1">E</font>3◢ <br>
-        <br>
-        Lbl 0: ?→A: (A&gt;6) + (A≠1)(A≠3)(M&lt;C(7-A <font color="#FF0000">=&gt;</font> Goto 0: Lbl 1: <br>
-        <br>
-        ?→B: (B&gt;6) + (B≠1)(B≠3)(X&lt;C(7-B <font color="#FF0000">=&gt;</font> Goto 1:
+        <font size="1">E</font>2→C: Fix3: <font size="1">E</font>3→Y: 2C→M: Y+M÷<font size="1">E</font>3◢ Y→D: M→X: D+X÷
+        <font size="1">E</font>3◢ <br> <br> Lbl 0: ?→A: (A&gt;6) + (A≠1)(A≠3)(M&lt;C(7-A <font color="#FF0000">=&gt;
+        </font> Goto 0: Lbl 1: <br> <br> ?→B: (B&gt;6) + (B≠1)(B≠3)(X&lt;C(7-B <font color="#FF0000">=&gt;</font> Goto
+        1:
     </p>
     <p>A◢ B◢ A=1 <font color="#FF0000">=&gt;</font> B-4 <font color="#FF0000">=&gt;</font> D-70→D: A=1 <font
-            color="#FF0000">=&gt;</font> 80<font color="#FF0000">M-</font>: <br>
-        <br>
-        A=2 <font color="#FF0000">=&gt;</font> B-4 <font color="#FF0000">=&gt;</font> D-5C→D: A=2 <font color="#FF0000">
-            =&gt;</font> 5C<font color="#FF0000">M-</font>: A=1 <font color="#FF0000">=&gt;</font> B=3 <font
-            color="#FF0000">=&gt;</font> 14+D→D: <br>
-        <br>
-        A=2 <font color="#FF0000">=&gt;</font> B=3 <font color="#FF0000">=&gt;</font> C+D→D: A=4 <font color="#FF0000">
-            =&gt;</font> 3C<font color="#FF0000">M-</font>: A=5 <font color="#FF0000">=&gt;</font> C+Y→Y: A=5 <font
-            color="#FF0000">=&gt;</font> 2C<font color="#FF0000">M-</font>: <br>
-        <br>
-        B=1 <font color="#FF0000">=&gt;</font> A-4 <font color="#FF0000">=&gt;</font> Y-70→Y: B=1 <font color="#FF0000">
-            =&gt;</font> X- 80→X: B=2 <font color="#FF0000">=&gt;</font> A-4 <font color="#FF0000">=&gt;</font> Y-5C→Y:
-        <br>
-        <br>
+            color="#FF0000">=&gt;</font> 80<font color="#FF0000">M-</font>: <br> <br> A=2 <font color="#FF0000">=&gt;
+        </font> B-4 <font color="#FF0000">=&gt;</font> D-5C→D: A=2 <font color="#FF0000"> =&gt;</font> 5C<font
+            color="#FF0000">M-</font>: A=1 <font color="#FF0000">=&gt;</font> B=3 <font color="#FF0000">=&gt;</font>
+        14+D→D: <br> <br> A=2 <font color="#FF0000">=&gt;</font> B=3 <font color="#FF0000">=&gt;</font> C+D→D: A=4 <font
+            color="#FF0000"> =&gt;</font> 3C<font color="#FF0000">M-</font>: A=5 <font color="#FF0000">=&gt;</font>
+        C+Y→Y: A=5 <font color="#FF0000">=&gt;</font> 2C<font color="#FF0000">M-</font>: <br> <br> B=1 <font
+            color="#FF0000">=&gt;</font> A-4 <font color="#FF0000">=&gt;</font> Y-70→Y: B=1 <font color="#FF0000"> =&gt;
+        </font> X- 80→X: B=2 <font color="#FF0000">=&gt;</font> A-4 <font color="#FF0000">=&gt;</font> Y-5C→Y: <br> <br>
         B=2 <font color="#FF0000">=&gt;</font> X-5C→X: B=4 <font color="#FF0000">=&gt;</font> X-3C→X: B=5<font
-            color="#FF0000">=&gt;</font> C+D→D: B=5<font color="#FF0000">=&gt;</font>X-2C→X: <br>
-        <br>
-        B=1 <font color="#FF0000">=&gt;</font> A=3 <font color="#FF0000">=&gt;</font> 14+Y→Y: B=2 <font color="#FF0000">
-            =&gt;</font> A=3 <font color="#FF0000">=&gt;</font> C+Y→Y: A=6 <font color="#FF0000">=&gt;</font> 50<font
-            color="#FF0000">M+</font>: <br>
-        <br>
-        B=6 <font color="#FF0000">=&gt;</font> 50+X→X: C<font color="#FF0000">M+</font>: C+X→X: M&gt;5C <font
-            color="#FF0000">=&gt;</font> 5C→M: X&gt;5C <font color="#FF0000">=&gt;</font> 5C→X: <br>
-        <br>
-        Y&gt;<font size="1">E</font>3 <font color="#FF0000">=&gt;</font>
+            color="#FF0000">=&gt;</font> C+D→D: B=5<font color="#FF0000">=&gt;</font>X-2C→X: <br> <br> B=1 <font
+            color="#FF0000">=&gt;</font> A=3 <font color="#FF0000">=&gt;</font> 14+Y→Y: B=2 <font color="#FF0000"> =&gt;
+        </font> A=3 <font color="#FF0000">=&gt;</font> C+Y→Y: A=6 <font color="#FF0000">=&gt;</font> 50<font
+            color="#FF0000">M+</font>: <br> <br> B=6 <font color="#FF0000">=&gt;</font> 50+X→X: C<font color="#FF0000">
+            M+</font>: C+X→X: M&gt;5C <font color="#FF0000">=&gt;</font> 5C→M: X&gt;5C <font color="#FF0000">=&gt;
+        </font> 5C→X: <br> <br> Y&gt;<font size="1">E</font>3 <font color="#FF0000">=&gt;</font>
         <font size="1">E</font>3→Y: D&gt;<font size="1">E</font>3 <font color="#FF0000">=&gt;</font>
         <font size="1">E</font>3→D: D&lt;0 <font color="#FF0000">=&gt;</font> 0→D:Y&lt;0 <font color="#FF0000">=&gt;
-        </font> 0→Y:Y+M÷<font size="1">E</font>3◢ <br>
-        <br>
-        D+X÷<font size="1">E</font>3◢ DY <font color="#FF0000">=&gt;</font> Goto 0: D <font color="#FF0000">=&gt;</font>
-        2-GD◢ Y<font color="#FF0000">=&gt;</font>1-GD◢ Norm 1
+        </font> 0→Y:Y+M÷<font size="1">E</font>3◢ <br> <br> D+X÷<font size="1">E</font>3◢ DY <font color="#FF0000">=&gt;
+        </font> Goto 0: D <font color="#FF0000">=&gt;</font> 2-GD◢ Y<font color="#FF0000">=&gt;</font>1-GD◢ Norm 1
     </p>
     <p>　</p>
-    <p>註1: 出招方式輸入1-6整數 <br>
-        1: 標準攻擊 (對方HP減70, 但己方MP減少 80) <br>
-        2: 必殺技 (對方HP減500, 但己方MP減少500) <br>
-        3: 防禦 (減少己方HP損失20%) <br>
-        4: 100%防禦 (己方HP不會有任何損失, 但己方MP減少300) <br>
-        5: 恢復HP (己方HP恢復100, 但己方MP減少200) <br>
-        6: 恢復MP (己方MP恢復50) <br>
-        　</p>
+    <p>註1: 出招方式輸入1-6整數 <br> 1: 標準攻擊 (對方HP減70, 但己方MP減少 80) <br> 2: 必殺技 (對方HP減500, 但己方MP減少500) <br> 3: 防禦 (減少己方HP損失20%)
+        <br> 4: 100%防禦 (己方HP不會有任何損失, 但己方MP減少300) <br> 5: 恢復HP (己方HP恢復100, 但己方MP減少200) <br> 6: 恢復MP (己方MP恢復50) <br> 　</p>
     <p>註2: 每個回合 MP數值會自動增加100</p>
     <p>註3: 當對方的HP數值減少至0，而已方的HP大於0則獲勝。當己方的HP數值減少至0，而對方的HP大於0則戰敗。
-        第一個玩家獲勝會顯示1-GD，第二個玩家獲勝會顯示2-GD，當雙方的HP數值同時減少至0則表示打成平手，這時不會顯示1-GD或2-GD，程式會直接終止(顯示Norm
-        1)。</p>
+        第一個玩家獲勝會顯示1-GD，第二個玩家獲勝會顯示2-GD，當雙方的HP數值同時減少至0則表示打成平手，這時不會顯示1-GD或2-GD，程式會直接終止(顯示Norm 1)。</p>
     <p>　</p>
     <p>操作示範:</p>
     <p>按 Prog 1 (顯示1000.200，即第一個玩家的HP為1000及MP為200)</p>
@@ -80,8 +59,7 @@
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     <p>　</p> <!--msthemeseparator-->
-    <p align="center">
-    <!--msthemeseparator-->
+    <p align="center"> <!--msthemeseparator-->
     <p align="center">
     <p>　</p>
     <p>
@@ -92,51 +70,34 @@
     <p>注意: <font size="1">E </font>是按 EXP 。</p>
     <p>程式 (人對人版本，471 bytes)</p>
     <p>
-        <font size="1">E</font>2→C: Fix3: <font size="1">E</font>3→Y: 2C→M: Y+M÷<font size="1">E</font>3◢
-        Y→D: M→X: D+X÷<font size="1">E</font>3◢ <br>
-        <br>
-        Lbl 0: ?→A: A&gt;6 <font color="#FF0000">=&gt;</font> Goto 0: A=2 <font color="#FF0000">=&gt;</font> M&lt;5C
-        <font color="#FF0000">=&gt;</font> Goto 0: <br>
-        <br>
-        A=4 <font color="#FF0000">=&gt;</font> M&lt;3C <font color="#FF0000">=&gt;</font> Goto 0: A=5 <font
-            color="#FF0000">=&gt;</font> M&lt;2C <font color="#FF0000">=&gt;</font> Goto 0: Lbl 1: <br>
-        <br>
-        ?→B: B=2 <font color="#FF0000">=&gt;</font> X&lt;5C <font color="#FF0000">=&gt;</font> Goto 1: B=4 <font
-            color="#FF0000">=&gt;</font> X&lt;3C <font color="#FF0000">=&gt;</font> Goto 1: <br>
-        <br>
-        B=5 <font color="#FF0000">=&gt;</font> X&lt;2C <font color="#FF0000">=&gt;</font> Goto 1: A◢ B◢ A=1 <font
-            color="#FF0000">=&gt;</font> B-4 <font color="#FF0000">=&gt;</font> D-70→D: A=1 <font color="#FF0000">=&gt;
-        </font> 80<font color="#FF0000">M-</font>: <br>
-        <br>
-        A=2 <font color="#FF0000">=&gt;</font> B-4 <font color="#FF0000">=&gt;</font> D-5C→D: A=2 <font color="#FF0000">
-            =&gt;</font> 5C<font color="#FF0000">M-</font>: A=1 <font color="#FF0000">=&gt;</font> B=3 <font
-            color="#FF0000">=&gt;</font> 14+D→D: <br>
-        <br>
-        A=2 <font color="#FF0000">=&gt;</font> B=3 <font color="#FF0000">=&gt;</font> C+D→D: A=4 <font color="#FF0000">
-            =&gt;</font> 3C<font color="#FF0000">M-</font>: A=5 <font color="#FF0000">=&gt;</font> C+Y→Y: A=5 <font
-            color="#FF0000">=&gt;</font> 2C<font color="#FF0000">M-</font>: <br>
-        <br>
-        B=1 <font color="#FF0000">=&gt;</font> A-4 <font color="#FF0000">=&gt;</font> Y-70→Y: B=1 <font color="#FF0000">
-            =&gt;</font> X- 80→X: B=2 <font color="#FF0000">=&gt;</font> A-4 <font color="#FF0000">=&gt;</font> Y-5C→Y:
-        <br>
-        <br>
-        B=2 <font color="#FF0000">=&gt;</font> X-5C→X: B=4 <font color="#FF0000">=&gt;</font> X-3C→X: B=5<font
-            color="#FF0000">=&gt;</font> C+D→D: B=5<font color="#FF0000">=&gt;</font>X-2C→X: <br>
-        <br>
-        B=1 <font color="#FF0000">=&gt;</font> A=3 <font color="#FF0000">=&gt;</font> 14+Y→Y: B=2 <font color="#FF0000">
-            =&gt;</font> A=3 <font color="#FF0000">=&gt;</font> C+Y→Y: A=6 <font color="#FF0000">=&gt;</font> 50<font
-            color="#FF0000">M+</font>: <br>
-        <br>
-        B=6 <font color="#FF0000">=&gt;</font> 50+X→X: C<font color="#FF0000">M+</font>: C+X→X: M&gt;5C <font
-            color="#FF0000">=&gt;</font> 5C→M: X&gt;5C <font color="#FF0000">=&gt;</font> 5C→X: <br>
-        <br>
-        Y&gt;<font size="1">E</font>3 <font color="#FF0000">=&gt;</font>
+        <font size="1">E</font>2→C: Fix3: <font size="1">E</font>3→Y: 2C→M: Y+M÷<font size="1">E</font>3◢ Y→D: M→X: D+X÷
+        <font size="1">E</font>3◢ <br> <br> Lbl 0: ?→A: A&gt;6 <font color="#FF0000">=&gt;</font> Goto 0: A=2 <font
+            color="#FF0000">=&gt;</font> M&lt;5C <font color="#FF0000">=&gt;</font> Goto 0: <br> <br> A=4 <font
+            color="#FF0000">=&gt;</font> M&lt;3C <font color="#FF0000">=&gt;</font> Goto 0: A=5 <font color="#FF0000">
+            =&gt;</font> M&lt;2C <font color="#FF0000">=&gt;</font> Goto 0: Lbl 1: <br> <br> ?→B: B=2 <font
+            color="#FF0000">=&gt;</font> X&lt;5C <font color="#FF0000">=&gt;</font> Goto 1: B=4 <font color="#FF0000">
+            =&gt;</font> X&lt;3C <font color="#FF0000">=&gt;</font> Goto 1: <br> <br> B=5 <font color="#FF0000">=&gt;
+        </font> X&lt;2C <font color="#FF0000">=&gt;</font> Goto 1: A◢ B◢ A=1 <font color="#FF0000">=&gt;</font> B-4
+        <font color="#FF0000">=&gt;</font> D-70→D: A=1 <font color="#FF0000">=&gt; </font> 80<font color="#FF0000">M-
+        </font>: <br> <br> A=2 <font color="#FF0000">=&gt;</font> B-4 <font color="#FF0000">=&gt;</font> D-5C→D: A=2
+        <font color="#FF0000"> =&gt;</font> 5C<font color="#FF0000">M-</font>: A=1 <font color="#FF0000">=&gt;</font>
+        B=3 <font color="#FF0000">=&gt;</font> 14+D→D: <br> <br> A=2 <font color="#FF0000">=&gt;</font> B=3 <font
+            color="#FF0000">=&gt;</font> C+D→D: A=4 <font color="#FF0000"> =&gt;</font> 3C<font color="#FF0000">M-
+        </font>: A=5 <font color="#FF0000">=&gt;</font> C+Y→Y: A=5 <font color="#FF0000">=&gt;</font> 2C<font
+            color="#FF0000">M-</font>: <br> <br> B=1 <font color="#FF0000">=&gt;</font> A-4 <font color="#FF0000">=&gt;
+        </font> Y-70→Y: B=1 <font color="#FF0000"> =&gt;</font> X- 80→X: B=2 <font color="#FF0000">=&gt;</font> A-4
+        <font color="#FF0000">=&gt;</font> Y-5C→Y: <br> <br> B=2 <font color="#FF0000">=&gt;</font> X-5C→X: B=4 <font
+            color="#FF0000">=&gt;</font> X-3C→X: B=5<font color="#FF0000">=&gt;</font> C+D→D: B=5<font color="#FF0000">
+            =&gt;</font>X-2C→X: <br> <br> B=1 <font color="#FF0000">=&gt;</font> A=3 <font color="#FF0000">=&gt;</font>
+        14+Y→Y: B=2 <font color="#FF0000"> =&gt;</font> A=3 <font color="#FF0000">=&gt;</font> C+Y→Y: A=6 <font
+            color="#FF0000">=&gt;</font> 50<font color="#FF0000">M+</font>: <br> <br> B=6 <font color="#FF0000">=&gt;
+        </font> 50+X→X: C<font color="#FF0000">M+</font>: C+X→X: M&gt;5C <font color="#FF0000">=&gt;</font> 5C→M:
+        X&gt;5C <font color="#FF0000">=&gt;</font> 5C→X: <br> <br> Y&gt;<font size="1">E</font>3 <font color="#FF0000">
+            =&gt;</font>
         <font size="1">E</font>3→Y: D&gt;<font size="1">E</font>3 <font color="#FF0000">=&gt;</font>
         <font size="1">E</font>3→D: D&lt;0 <font color="#FF0000">=&gt;</font> 0→D:Y&lt;0 <font color="#FF0000">=&gt;
-        </font> 0→Y:Y+M÷<font size="1">E</font>3◢ <br>
-        <br>
-        D+X÷<font size="1">E</font>3◢ DY <font color="#FF0000">=&gt;</font> Goto 0: D <font color="#FF0000">=&gt;</font>
-        2-GD◢ Y<font color="#FF0000">=&gt;</font>1-GD◢ Norm 1
+        </font> 0→Y:Y+M÷<font size="1">E</font>3◢ <br> <br> D+X÷<font size="1">E</font>3◢ DY <font color="#FF0000">=&gt;
+        </font> Goto 0: D <font color="#FF0000">=&gt;</font> 2-GD◢ Y<font color="#FF0000">=&gt;</font>1-GD◢ Norm 1
     </p>
 </body>
 

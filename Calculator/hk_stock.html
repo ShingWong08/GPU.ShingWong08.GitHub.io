@@ -12,34 +12,26 @@
     <p>這個程式可以計算現時買賣香港股票時，應付的手續費，手續費包括，經紀佣金、交易徵費、交易費、印花稅及中央結算費用。</p>
     <p>注意: <font size="1">E</font> 是按 EXP。</p>
     <p>程式 (125 bytes)</p>
-    <p>?→A: ?→B: <font color="#008000">?→C: ?→D: </font>AB<span lang="en">÷
-            <font size="1">E</font> 5→A: Fix 2:</p>
+    <p>?→A: ?→B: <font color="#008000">?→C: ?→D: </font>AB<span lang="en">÷ <font size="1">E</font> 5→A: Fix 2:</p>
     <p>Rnd( <font size="1">E</font> 3AC→M: D&gt;M <font color="#FF0000">=&gt;</font> D→M:</p>
-    <p>Rnd( 5A<font color="#FF0000">M+</font>: Rnd( 3A<font color="#FF0000">M+</font>:
-        Rnd( 2A→X: 2&gt;X<font color="#FF0000"> =&gt;</font> 2→X: </p>
-    <p>X&gt;<font size="1">E</font> 2&nbsp;
-        <font color="#FF0000">=&gt; </font>
-        <font size="1">E</font> 2→X: X<font color="#FF0000">M+</font>:
-        <font size="1">E</font> 2A→B: Fix 0:
+    <p>Rnd( 5A<font color="#FF0000">M+</font>: Rnd( 3A<font color="#FF0000">M+</font>: Rnd( 2A→X: 2&gt;X<font
+            color="#FF0000"> =&gt;</font> 2→X: </p>
+    <p>X&gt;<font size="1">E</font> 2&nbsp; <font color="#FF0000">=&gt; </font>
+        <font size="1">E</font> 2→X: X<font color="#FF0000">M+</font>: <font size="1">E</font> 2A→B: Fix 0:
     </p>
     <p>Rnd( Ans - . 5→X: B - Ans<font color="#FF0000"> =&gt;</font> X + 1→X:</p>
-    <p>X<font color="#FF0000">M+</font>: Norm 1: M◢ <font size="1">E</font> 5A + M◢
-        Ans - 2M</p>
+    <p>X<font color="#FF0000">M+</font>: Norm 1: M◢ <font size="1">E</font> 5A + M◢ Ans - 2M</p>
     <p>　</p>
-    <p>註: 若果經紀佣金的百分率及佣金最低收費不變，可以將綠色的程式碼修改，使程式不需要每次輸入佣金百分率及最低收費，例如:
-        佣金百分率及最低收費為0.25%及100，可以將綠色程式碼 &quot;<font color="#008000">?→C: ?→D:</font>&quot; 改為&quot;
-        <font color="#0000FF">4<sup>-1</sup>→C: <font size="1">E</font> 2→D:</font> &quot;即可。
-    </p>
+    <p>註: 若果經紀佣金的百分率及佣金最低收費不變，可以將綠色的程式碼修改，使程式不需要每次輸入佣金百分率及最低收費，例如: 佣金百分率及最低收費為0.25%及100，可以將綠色程式碼 &quot;<font
+            color="#008000">?→C: ?→D:</font>&quot; 改為&quot; <font color="#0000FF">4<sup>-1</sup>→C: <font size="1">E
+            </font> 2→D:</font> &quot;即可。 </p>
     <p>　</p>
     <p>例題: 賣出股票的股數為78000，股價為 $0.79，經紀佣金為0.25%，佣金最低收費為$100，求交易的手續費及沽出股票所得的金額。</p>
     <p>按 Prog 1 再按 78000 EXE 0.79 EXE 0.25 EXE 100 EXE (顯示手續費為$ 229.98)</p>
     <p>EXE (顯示買入所需為$ 61842.98) EXE (顯示沽出所得$ 61397.02) </p>
     <p>　</p>
-    <p>
-        註:
-        現時香港交易徵費為0.003%(計至最接近的仙位)、交易費為0.005%(計至最接近的仙位)、印花稅為0.1%(不足一元亦作一元計)及中央結算費用為0.002%(計至最接近的仙位
-        ，最低收費$2，最高收費$100)。</p>
-    </span>
+    <p> 註: 現時香港交易徵費為0.003%(計至最接近的仙位)、交易費為0.005%(計至最接近的仙位)、印花稅為0.1%(不足一元亦作一元計)及中央結算費用為0.002%(計至最接近的仙位 ，最低收費$2，最高收費$100)。
+    </p> </span>
     <p>　</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>

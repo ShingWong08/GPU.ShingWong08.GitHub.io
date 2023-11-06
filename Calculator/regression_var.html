@@ -9,85 +9,62 @@
                 <font size="5">由統計變數計算線性回歸 </font>
             </b></u></p>
     <p align="center"><u><b>
-                <font size="5">(Linear regression calculations from
-                    statistical variables)</font>
+                <font size="5">(Linear regression calculations from statistical variables)</font>
             </b></u></p>
-    <p>這個程式需要配合內置線性回歸功能一起使用，程式會將輸入的六個數值分別累加到六個統計變數中(Σx<sup>2</sup>, Σx,
-        n, Σy<sup>2</sup>, Σy, Σxy)。 </p>
+    <p>這個程式需要配合內置線性回歸功能一起使用，程式會將輸入的六個數值分別累加到六個統計變數中(Σx<sup>2</sup>, Σx, n, Σy<sup>2</sup>, Σy, Σxy)。 </p>
     <p>程式編寫日期: 2011年5月22日</p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx<sup>2</sup> </font>按 Shift 1 1，<font color="#0000FF">Σx</font>
-        按 Shift 1 2，<font color="#0000FF">n</font>
-        按 Shift 1 3，<font color="#0000FF">Σy<sup>2</sup></font> 按 Shift 1 → 1，<font color="#0000FF">Σy<sup>
-            </sup></font>按 Shift 1 → 2，<font color="#0000FF">Σxy</font><sup> </sup>按 Shift 1
-        → 3 )，而 <font size="1">E</font> 是按 EXP。</p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx<sup>2</sup> </font>按 Shift 1 1，<font color="#0000FF">Σx</font> 按
+        Shift 1 2，<font color="#0000FF">n</font> 按 Shift 1 3，<font color="#0000FF">Σy<sup>2</sup></font> 按 Shift 1 → 1，
+        <font color="#0000FF">Σy<sup> </sup></font>按 Shift 1 → 2，<font color="#0000FF">Σxy</font><sup> </sup>按 Shift 1 →
+        3 )，而 <font size="1">E</font> 是按 EXP。</p>
     <p>程式 (127 bytes)</p>
     <p>
-        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: ?→X:
-        <font color="#0000FF">Σx<sup>2</sup></font> + X→A: ?→X: <font color="#0000FF">Σx</font> + X→B: ?→M:
+        <font color="#FF0000">;</font> 0 <font color="#FF0000">DT</font>: ?→X: <font color="#0000FF">Σx<sup>2</sup>
+        </font> + X→A: ?→X: <font color="#0000FF">Σx</font> + X→B: ?→M:
     </p>
     <p>
         <font color="#0000FF">n</font> + M→C: ?→Y: <font color="#0000FF">Σy<sup>2</sup></font> + Y→D: ?→Y: <font
-            color="#0000FF">Σy</font>
-        + Y→Y:
+            color="#0000FF">Σy</font> + Y→Y:
     </p>
-    <p>?→X: <font color="#0000FF">Σxy </font>+ X→X: ClrStat: 1 <font color="#FF0000">;</font> A-1
-        <font color="#FF0000">DT</font>:
-    </p>
+    <p>?→X: <font color="#0000FF">Σxy </font>+ X→X: ClrStat: 1 <font color="#FF0000">;</font> A-1 <font color="#FF0000">
+            DT</font>: </p>
     <p>
-        <font size="1">E</font>-50
-        <font color="#FF0000">;</font>
-        <font size="1">E</font>50(B - A
-        <font color="#FF0000">DT</font>: 1 <font color="#FF0000">,</font> X
-        <font color="#FF0000">DT</font>: 0 <font color="#FF0000">,</font> 1 <font color="#FF0000">;</font>
-        D - X<sup>2</sup>
+        <font size="1">E</font>-50 <font color="#FF0000">;</font>
+        <font size="1">E</font>50(B - A <font color="#FF0000">DT</font>: 1 <font color="#FF0000">,</font> X <font
+            color="#FF0000">DT</font>: 0 <font color="#FF0000">,</font> 1 <font color="#FF0000">;</font> D -
+        X<sup>2</sup>
         <font color="#FF0000">DT</font>:
     </p>
     <p>
         <font color="#FF0000">,</font>
-        <font size="1">E</font>-50
-        <font color="#FF0000">;</font>
-        <font size="1">E</font>50(Y -
-        <font color="#0000FF">Σy</font>
-        <font color="#FF0000">DT</font>: <font color="#FF0000">,</font> 0 <font color="#FF0000">;</font> -
-        <font color="#0000FF">n</font>
-        <font color="#FF0000">DT</font>:
-        <font color="#FF0000">;</font> C <font color="#FF0000">
-            DT</font>
+        <font size="1">E</font>-50 <font color="#FF0000">;</font>
+        <font size="1">E</font>50(Y - <font color="#0000FF">Σy</font>
+        <font color="#FF0000">DT</font>: <font color="#FF0000">,</font> 0 <font color="#FF0000">;</font> - <font
+            color="#0000FF">n</font>
+        <font color="#FF0000">DT</font>: <font color="#FF0000">;</font> C <font color="#FF0000"> DT</font>
     </p>
     <p>　</p>
-    <p>例題1: 若Σx<sup>2</sup>=14, Σx=6,
-        n=3, Σy<sup>2</sup>=38, Σy=10, Σxy=23，求線性回歸直線。</p>
+    <p>例題1: 若Σx<sup>2</sup>=14, Σx=6, n=3, Σy<sup>2</sup>=38, Σy=10, Σxy=23，求線性回歸直線。</p>
     <p>按 MODE 5 1 (進入線性回歸模式)</p>
     <p>再按 SHIFT CLR 1 EXE (清除統計變數(變為0))</p>
-    <p>按
-        Prog 1 再按 14 EXE 6 EXE 3 EXE 38 EXE 10 EXE 23 EXE</p>
-    <p>數據輸入完成再按 SHIFT S_VAR 1
-        → → 1 EXE (顯示A為0.333333333)</p>
-    <p>SHIFT S_VAR 1
-        → → 2 EXE (顯示B為
-        1.5)</p>
+    <p>按 Prog 1 再按 14 EXE 6 EXE 3 EXE 38 EXE 10 EXE 23 EXE</p>
+    <p>數據輸入完成再按 SHIFT S_VAR 1 → → 1 EXE (顯示A為0.333333333)</p>
+    <p>SHIFT S_VAR 1 → → 2 EXE (顯示B為 1.5)</p>
     <p>所以直線為 y = 0.333333333 + 1.5x</p>
     <p>　</p>
-    <p>例題1: 已知兩點為 (4,6)及(5,7)，另外三點的統計變數為Σx<sup>2</sup>=14, Σx=6,
-        n=3, Σy<sup>2</sup>=38, Σy=10, Σxy=23，求線性回歸直線。</p>
+    <p>例題1: 已知兩點為 (4,6)及(5,7)，另外三點的統計變數為Σx<sup>2</sup>=14, Σx=6, n=3, Σy<sup>2</sup>=38, Σy=10, Σxy=23，求線性回歸直線。</p>
     <p>按 MODE 5 1 (進入線性回歸模式)</p>
     <p>再按 SHIFT CLR 1 EXE (清除統計變數(變為0))</p>
-    <p>4 , 6 <font color="#FF0000">DT</font> 5 , 7 <font color="#FF0000">DT</font>
-        (輸入已知兩點)</p>
-    <p>按
-        Prog 1 再按 14 EXE 6 EXE 3 EXE 38 EXE 10 EXE 23 EXE</p>
-    <p>數據輸入完成再按 SHIFT S_VAR 1
-        → → 1 EXE (顯示A為0.7)</p>
-    <p>SHIFT S_VAR 1
-        → → 2 EXE (顯示B為
-        1.3)</p>
+    <p>4 , 6 <font color="#FF0000">DT</font> 5 , 7 <font color="#FF0000">DT</font> (輸入已知兩點)</p>
+    <p>按 Prog 1 再按 14 EXE 6 EXE 3 EXE 38 EXE 10 EXE 23 EXE</p>
+    <p>數據輸入完成再按 SHIFT S_VAR 1 → → 1 EXE (顯示A為0.7)</p>
+    <p>SHIFT S_VAR 1 → → 2 EXE (顯示B為 1.3)</p>
     <p>所以直線為 y = 0.7 + 1.3x</p>
     <p>　</p>
-    <p>註: 程式累加統計變數的輸入順序與計算機S-VAR表單出現的次序相同(Σx<sup>2</sup>, Σx,
-        n, Σy<sup>2</sup>, Σy, Σxy)。</p>
+    <p>註: 程式累加統計變數的輸入順序與計算機S-VAR表單出現的次序相同(Σx<sup>2</sup>, Σx, n, Σy<sup>2</sup>, Σy, Σxy)。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

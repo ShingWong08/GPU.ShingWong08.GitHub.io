@@ -11,56 +11,37 @@
     <p>更新日期: 2010年4月30日</p>
     <p>注意: <font size="1">E</font> 是按 EXP。</p>
     <p>程式 (138 bytes，不包括兩個函數方程式)</p>
-    <p>ClrMemory: ?→Y: ?→X: If <font color="#FF0000">cos<sup>-1</sup>(</font> Y:
-        Then <font size="1">E</font> 4→Y: </p>
-    <p>While Ans:
-        <font color="#008000">X<sup>3</sup>
-            - 2X - 1</font>→C: X + Y<sup>-1</sup>(1 - 3M→X:
-    </p>
-    <p>M=0
-        <font color="#FF0000">=&gt;</font> C→A◢ M<font face="新細明體">≠</font>2<font color="#FF0000">M+ =&gt;</font>
-        C→D: WhileEnd:
-    </p>
+    <p>ClrMemory: ?→Y: ?→X: If <font color="#FF0000">cos<sup>-1</sup>(</font> Y: Then <font size="1">E</font> 4→Y: </p>
+    <p>While Ans: <font color="#008000">X<sup>3</sup> - 2X - 1</font>→C: X + Y<sup>-1</sup>(1 - 3M→X: </p>
+    <p>M=0 <font color="#FF0000">=&gt;</font> C→A◢ M<font face="新細明體">≠</font>2<font color="#FF0000">M+ =&gt;</font>
+        C→D: WhileEnd: </p>
     <p>. 5Y(D - C→B◢ Y<sup>2</sup>(D + C - 2A→C: </p>
     <p>Else ?→B: ?→C: C<sup>-1</sup>(B-X→A: </p>
-    <p>For 0→D To C: B - DA→X:
-        <font color="#800080">ln( X</font>:
-    </p>
-    <p>Ans(3 - cos(
-        π<sup>r</sup>D ) - (D<sup>2</sup>=DC<font color="#FF0000">M+</font>: Next: </p>
+    <p>For 0→D To C: B - DA→X: <font color="#800080">ln( X</font>: </p>
+    <p>Ans(3 - cos( π<sup>r</sup>D ) - (D<sup>2</sup>=DC<font color="#FF0000">M+</font>: Next: </p>
     <p>AM÷3: IfEnd</p>
     <p>　</p>
     <p>註1: 綠色是計算微分的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是函數方程(變數是X)，若果想計算其它方程，只要修改綠色的部份。</p>
     <p>註2: 紫色的 <font color="#800080">ln( x</font>
-        <font color="#008000"> </font>是
-        計算<font color="#800080">定積分(辛卜生法則)</font>的函數方程(變數是X)，若果想計算其它函數的積分，只要修改紫色的部份。
+        <font color="#008000"> </font>是 計算<font color="#800080">定積分(辛卜生法則)</font>的函數方程(變數是X)，若果想計算其它函數的積分，只要修改紫色的部份。
     </p>
-    <p>註3: 在微分或積分三角函數時,須在函數的角加入弧度(radian)數單位<font color="#FF0000"><sup>r</sup></font>(按
-        SHIFT Ans 2)，例如: sin(X<sup>r</sup> 或 cos((π+X<sup>3</sup>)<sup>r</sup>),或在開始
-        執行程式前時先設定為Rad(按 SHIFT MODE 2 )，否則計算錯誤。</p>
+    <p>註3: 在微分或積分三角函數時,須在函數的角加入弧度(radian)數單位<font color="#FF0000"><sup>r</sup></font>(按 SHIFT Ans 2)，例如:
+        sin(X<sup>r</sup> 或 cos((π+X<sup>3</sup>)<sup>r</sup>),或在開始 執行程式前時先設定為Rad(按 SHIFT MODE 2 )，否則計算錯誤。</p>
     <p>　</p>
     <p>例題1: 計算 f(x) = x<sup>3</sup> - 2x - 1 在 x = 1的第一及第二導數的近似值。</p>
     <p>
-        <font face="新細明體">按
-            Prog 1&nbsp; 再按 EXE (不輸入或輸入0代表計算微分)</font>
+        <font face="新細明體">按 Prog 1&nbsp; 再按 EXE (不輸入或輸入0代表計算微分)</font>
     </p>
     <p>
-        <font face="新細明體">1 EXE (顯示 f(1)為 -2) EXE
-            (顯示f'(1)為1.000001) EXE (顯示f''(1)為6)</font>
+        <font face="新細明體">1 EXE (顯示 f(1)為 -2) EXE (顯示f'(1)為1.000001) EXE (顯示f''(1)為6)</font>
     </p>
     <p>　</p>
     <p>計算完結後，按 RCL A、RCL B及RCL C分別顯示函數值、第一導數及第二導數的近似值。</p>
     <p>　</p>
-    <p>例題2: 利用辛卜生法則，區間數目為10，計算
-        
-    </p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (輸入1代表計算積分)</p>
-    <p>
-        1 EXE 2 EXE 10 EXE (顯示答案為0.386293403)</p>
-    <p>
-        　</p>
+    <p>例題2: 利用辛卜生法則，區間數目為10，計算 </p>
+    <p> 按 Prog 1 再按 1 EXE (輸入1代表計算積分)</p>
+    <p> 1 EXE 2 EXE 10 EXE (顯示答案為0.386293403)</p>
+    <p> 　</p>
     <p>
         <font color="#FF0000">注意:</font> 辛卜生法則的區間數目必為<font color="#FF0000">正雙數</font>，雙數值越大，準確度越高。
     </p>
@@ -68,8 +49,7 @@
     <p><b>
             <font color="#800080">附錄程式(由網友roviury提供)</font>
         </b></p>
-    <p>附錄的三個程式的函數方程較接程式底部，較方便修改函數方程，只要進入程式編輯模式後，按 <font face="新細明體">↓
-            則可直接到達程式最尾的位置，因此可以較快找到要修改函數的位置，但程式速度會較慢小許。</font>
+    <p>附錄的三個程式的函數方程較接程式底部，較方便修改函數方程，只要進入程式編輯模式後，按 <font face="新細明體">↓ 則可直接到達程式最尾的位置，因此可以較快找到要修改函數的位置，但程式速度會較慢小許。</font>
     </p>
     <p>　</p>
     <p><b>
@@ -85,88 +65,65 @@
     </p>
     <p>?→D: D┘2 <font color="#FF0000">nPr</font> 0: ?→X: <font size="1">E</font>- 4(X+(X=0:
     <p>If D: Then ?→Y: D<sup>-1</sup>(Y-X: IfEnd: Ans→Y:
-    <p>FreqOn:
-        <font color="#FF0000">;</font> 0<font color="#FF0000">DT</font>: Goto 9: Lbl 8:
+    <p>FreqOn: <font color="#FF0000">;</font> 0<font color="#FF0000">DT</font>: Goto 9: Lbl 8:
     <p>If D: Then Ans(3 - cos(<font face="新細明體">π<sup>r</sup></font>
         <font color="#0000FF">n</font>)-(<font color="#0000FF">n</font><sup>2</sup>=<font color="#0000FF">n</font>D
         <font color="#FF0000">DT</font>: D&lt;<font color="#0000FF">n</font>
-        <font color="#FF0000">=&gt;</font> Y<font color="#0000FF">Σx</font>÷3◢
-        <font color="#0000FF">n</font>:
-    <p>Else Ans→C: <font color="#0000FF">n</font>≦1 <font color="#FF0000">=></font> Goto3:
-        <font color="#0000FF">Σx</font>
+        <font color="#FF0000">=&gt;</font> Y<font color="#0000FF">Σx</font>÷3◢ <font color="#0000FF">n</font>:
+    <p>Else Ans→C: <font color="#0000FF">n</font>≦1 <font color="#FF0000">=></font> Goto3: <font color="#0000FF">Σx
+        </font>
         <font color="#008000">→A</font>◢ . 5Y<sup>-1</sup>(C-<font color="#0000FF">Σy</font>
         <font color="#008000">→B</font>◢
-    <p>Y<sup>-1
-            2</sup>(<font color="#0000FF">Σy</font>+C-2<font color="#0000FF">Σx</font>
-        <font color="#008000">→C</font>◢ Lbl 3: C-<font color="#0000FF">n</font>C ,
-        <font color="#0000FF">n</font>C <font color="#FF0000">DT</font>: 2<font color="#0000FF">n</font>-3:
-        IfEnd:
+    <p>Y<sup>-1 2</sup>(<font color="#0000FF">Σy</font>+C-2<font color="#0000FF">Σx</font>
+        <font color="#008000">→C</font>◢ Lbl 3: C-<font color="#0000FF">n</font>C , <font color="#0000FF">n</font>C
+        <font color="#FF0000">DT</font>: 2<font color="#0000FF">n</font>-3: IfEnd:
     <p>Lbl 9: X+YAns: <font color="#800080">sin(Ans<sup>r</sup></font>: Goto 8
     <p>　</p>
     <p>附錄程式二(<font color="#008000">155</font>/161 bytes，不包括紫色的函數方程，程式自然離開)</p>
-    <p>?→D: D┘2 <font color="#FF0000">nPr</font> 0: ?→X: D <font color="#FF0000">=&gt;</font>
-        ?→Y: </p>
+    <p>?→D: D┘2 <font color="#FF0000">nPr</font> 0: ?→X: D <font color="#FF0000">=&gt;</font> ?→Y: </p>
     <p>
-        <font size="1">E</font>- 4(X+(X=0→C: D<font color="#FF0000"> =&gt; </font>D<sup>-1</sup>(Y
-        - X→C: 0→M:
+        <font size="1">E</font>- 4(X+(X=0→C: D<font color="#FF0000"> =&gt; </font>D<sup>-1</sup>(Y - X→C: 0→M:
     </p>
     <p>For -1→B To D+2: If D: Then Ans(3 - cos( πrB ) - (B<sup>2</sup>=BD<font color="#FF0000">M+</font>: </p>
-    <p>B&lt;D <font color="#FF0000">=&gt;</font> Goto 0: CM÷3<font color="#008000">→A</font>:
-        Break: IfEnd: Ans→Y: </p>
-    <p>If B=2: Then A◢ .5C<sup>-1</sup>(Y - M<font color="#008000">→B</font>◢ C<sup>2
-            -1</sup>(M + Y - 2A<font color="#008000">→C</font>: Break: IfEnd: </p>
-    <p>A→M: Y→A: 0: Lbl 0: X+C(B+Ans: <font color="#800080">sin(Ans<sup>r</sup></font>:
-        Next</p>
+    <p>B&lt;D <font color="#FF0000">=&gt;</font> Goto 0: CM÷3<font color="#008000">→A</font>: Break: IfEnd: Ans→Y: </p>
+    <p>If B=2: Then A◢ .5C<sup>-1</sup>(Y - M<font color="#008000">→B</font>◢ C<sup>2 -1</sup>(M + Y - 2A<font
+            color="#008000">→C</font>: Break: IfEnd: </p>
+    <p>A→M: Y→A: 0: Lbl 0: X+C(B+Ans: <font color="#800080">sin(Ans<sup>r</sup></font>: Next</p>
     <p>　</p>
     <p>附錄程式三(<font color="#008000">149</font>/155 bytes，不包括紫色的函數方程，需要按AC離開)</p>
-    <p>?→D: D┘2 <font color="#FF0000">nPr</font> 0: ?→X: D <font color="#FF0000">=&gt;</font>
-        ?→Y: </p>
+    <p>?→D: D┘2 <font color="#FF0000">nPr</font> 0: ?→X: D <font color="#FF0000">=&gt;</font> ?→Y: </p>
     <p>
-        <font size="1">E</font>-4(X+(X=0→C: D<font color="#FF0000"> =&gt; </font>D<sup>-1</sup>(Y
-        - X→C: 0→M:
+        <font size="1">E</font>-4(X+(X=0→C: D<font color="#FF0000"> =&gt; </font>D<sup>-1</sup>(Y - X→C: 0→M:
     </p>
     <p>For -1→B To D+2: </p>
-    <p>If D: Then Ans(3 - cos( πrB ) - (B<sup>2</sup>=BD<font color="#FF0000">M+</font>:
-        B=D <font color="#FF0000">=&gt;</font> CM÷3<font color="#008000">→A</font>◢ B + 1: </p>
-    <p>Else Ans→Y: B - 2 <font color="#FF0000">=&gt;</font> Goto 0: A◢ .5C<sup>-1</sup>(Y
-        - M<font color="#008000">→B</font>◢ </p>
-    <p>C<sup>2-1</sup>(M + Y - 2A<font color="#008000">→C</font>◢ Lbl 0: A→M: Y→A:
-        B: IfEnd: </p>
+    <p>If D: Then Ans(3 - cos( πrB ) - (B<sup>2</sup>=BD<font color="#FF0000">M+</font>: B=D <font color="#FF0000">=&gt;
+        </font> CM÷3<font color="#008000">→A</font>◢ B + 1: </p>
+    <p>Else Ans→Y: B - 2 <font color="#FF0000">=&gt;</font> Goto 0: A◢ .5C<sup>-1</sup>(Y - M<font color="#008000">→B
+        </font>◢ </p>
+    <p>C<sup>2-1</sup>(M + Y - 2A<font color="#008000">→C</font>◢ Lbl 0: A→M: Y→A: B: IfEnd: </p>
     <p>X+CAns: <font color="#800080">sin(Ans<sup>r</sup></font>: Next</p>
     <p>　</p>
-    <p>註: 在微分或積分三角函數時,須在函數的角加入弧度(radian)數單位<font color="#FF0000"><sup>r</sup></font>(按
-        SHIFT Ans 2)，例如: sin(Ans<sup>r</sup> 或 cos((π+Ans<sup>3</sup>)<sup>r</sup>),或在開始
-        執行程式前時先設定為Rad(按 SHIFT MODE 2 )，否則計算錯誤。</p>
+    <p>註: 在微分或積分三角函數時,須在函數的角加入弧度(radian)數單位<font color="#FF0000"><sup>r</sup></font>(按 SHIFT Ans 2)，例如:
+        sin(Ans<sup>r</sup> 或 cos((π+Ans<sup>3</sup>)<sup>r</sup>),或在開始 執行程式前時先設定為Rad(按 SHIFT MODE 2 )，否則計算錯誤。</p>
     <p>
         <font color="#FF0000">附錄程式例題1</font>: 計算 f(x) = x<sup>3</sup> - 2x - 1 在 x = 1的第一及第二導數的近似值。
     </p>
-    <p>
-        先將程式中的綠色函數方程改為 X<sup>3</sup>
-        - 2X - 1</p>
-    <p>再重新執行程式，<font face="新細明體">按
-            Prog 1&nbsp; 再按 EXE (輸入0代表計算微分)</font>
+    <p> 先將程式中的綠色函數方程改為 X<sup>3</sup> - 2X - 1</p>
+    <p>再重新執行程式，<font face="新細明體">按 Prog 1&nbsp; 再按 EXE (輸入0代表計算微分)</font>
     </p>
     <p>
-        <font face="新細明體">1 EXE (顯示 f(1)為 -2) EXE
-            (顯示f'(1)為1.00000001) EXE (顯示f''(1)為6)</font>
+        <font face="新細明體">1 EXE (顯示 f(1)為 -2) EXE (顯示f'(1)為1.00000001) EXE (顯示f''(1)為6)</font>
     </p>
     <p>　</p>
     <p>計算完結後，按 RCL A、RCL B及RCL C分別顯示函數值、第一導數及第二導數的近似值。</p>
     <p>　</p>
     <p>
         <font color="#FF0000">附錄程式例題2</font>: 利用辛卜生法則，區間數目為10，計算
-        
     </p>
-    <p>
-        先將程式中的綠色函數方程改為 ln( Ans</p>
-    <p>
-        再重新執行程式，
-        按 Prog 1
-        再按 10 EXE (輸入區間數目)</p>
-    <p>
-        1 EXE 2 EXE (顯示答案為0.386293403)</p>
-    <p>
-        計算完結後按 AC 終止程式</p>
+    <p> 先將程式中的綠色函數方程改為 ln( Ans</p>
+    <p> 再重新執行程式， 按 Prog 1 再按 10 EXE (輸入區間數目)</p>
+    <p> 1 EXE 2 EXE (顯示答案為0.386293403)</p>
+    <p> 計算完結後按 AC 終止程式</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

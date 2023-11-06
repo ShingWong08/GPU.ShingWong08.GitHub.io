@@ -9,95 +9,51 @@
                 <font size="5">聯立二元一次及二次/外點至圓的切線</font>
             </b></u></p>
     <p>更新日期: 2011年6月1日</p>
-    <p>
-        程式可以計算聯立二元一為一次及一為二次方程(二次曲線與直線交點)、聯立二元一之方程及外點至圓的切線。另外若果輸入數據為整數(或分數)及答案為有理數時，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
-        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
-    </p>
+    <p> 程式可以計算聯立二元一為一次及一為二次方程(二次曲線與直線交點)、聯立二元一之方程及外點至圓的切線。另外若果輸入數據為整數(或分數)及答案為有理數時，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按 <font
+            color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。 </p>
     <p>
         <font color="#FF0000">注意</font> : 若果不想記存兩根，程式中<font color="#008000">綠色</font>部份可以不輸入。
     </p>
     <p>程式 (204 / <font color="#008000">196</font> bytes)</p>
     <p>?→C: ?→A: ?→B: ?→M: If C: Then A┘B→D:</p>
-    <p>M┘B→C:
-        ?→M: ?→Y: ?→X: ?→A: XD<sup>2</sup>
-        - DY<font color="#FF0000">M+</font>: </p>
-    <p>?→B: BD - CY + 2CDX - A→Y: ?→A: XC<sup>2 </sup>
-        + BC - A→X:</p>
+    <p>M┘B→C: ?→M: ?→Y: ?→X: ?→A: XD<sup>2</sup> - DY<font color="#FF0000">M+</font>: </p>
+    <p>?→B: BD - CY + 2CDX - A→Y: ?→A: XC<sup>2 </sup> + BC - A→X:</p>
     <p>Else ?→D: ?→C: 4BC + 4C<sup>2</sup> - A<sup>2</sup> + 4M→X: </p>
-    <p>4AD + 4D<sup>2</sup> - B<sup>2</sup>
-        + 4M→M: 2AB+ 4BD + 4AC + 8DC→Y: IfEnd:</p>
+    <p>4AD + 4D<sup>2</sup> - B<sup>2</sup> + 4M→M: 2AB+ 4BD + 4AC + 8DC→Y: IfEnd:</p>
     <p>If M: Then (Y + √(Y<sup>2</sup> - 4XM) )┘( 2M→A◢ C - AnsD<font color="#008000">→B</font>◢ </p>
-    <p>Y┘M - A<font color="#008000">→X</font>◢ Else X┘Y<font color="#008000">→X</font>◢
-        IfEnd: C - AnsD<font color="#008000">→Y</font>
+    <p>Y┘M - A<font color="#008000">→X</font>◢ Else X┘Y<font color="#008000">→X</font>◢ IfEnd: C - AnsD<font
+            color="#008000">→Y</font>
     </p>
-    <p>
-        　</p>
-    <p>
-        例題1:
-        求從外點(0,2)至圓x<sup>2
-        </sup>+ y<sup>2</sup> – 2x + 2y –
-        3 = 0的兩條切線的斜率。</p>
-    <p>
-        按 Prog 1&nbsp;再按
-        0 EXE (0代表計算外點至圓切，使用0是因為與圓形形狀相似)</p>
-    <p>
-        - 2 EXE
-        2 EXE - 3 EXE 0 EXE 2 EXE (顯示切線斜率為
-        -1/2)</p>
-    <p>
-        EXE (顯示切線y截距為 2) EXE (顯示另一切線斜率為2)
-        EXE (顯示另一切線y截距為 2)</p>
-    <p>
-        　</p>
-    <p>
-        例題2:
-        求圓x<sup>2 </sup>+ y<sup>2</sup>
-        + 2x + 8y + 12 = 0上一點(-3,-3)的切線斜率。</p>
-    <p>
-        按 Prog 1&nbsp;
-        再按 0 EXE (0代表計算外點至圓切，使用0是因為與圓形形狀相似)</p>
-    <p>
-        2 EXE 8
-        EXE 12 EXE -3 EXE - 3 EXE (顯示切線斜率為2)</p>
-    <p>
-        EXE (顯示切線y截距為 3) EXE (顯示切線斜率為2)
-        EXE (顯示切線y截距為 3)</p>
-    <p>
-        兩組解答相同表示這點在圓之上</p>
-    <p>
-        　</p>
-    <p>
-        註1: 程式執行完成後，按 RCL A及RCL B顯示切線的斜率及y-截距，按RCL
-        X及RCL Y顯示另一切線的斜率及y-截距。</p>
+    <p> 　</p>
+    <p> 例題1: 求從外點(0,2)至圓x<sup>2 </sup>+ y<sup>2</sup> – 2x + 2y – 3 = 0的兩條切線的斜率。</p>
+    <p> 按 Prog 1&nbsp;再按 0 EXE (0代表計算外點至圓切，使用0是因為與圓形形狀相似)</p>
+    <p> - 2 EXE 2 EXE - 3 EXE 0 EXE 2 EXE (顯示切線斜率為 -1/2)</p>
+    <p> EXE (顯示切線y截距為 2) EXE (顯示另一切線斜率為2) EXE (顯示另一切線y截距為 2)</p>
+    <p> 　</p>
+    <p> 例題2: 求圓x<sup>2 </sup>+ y<sup>2</sup> + 2x + 8y + 12 = 0上一點(-3,-3)的切線斜率。</p>
+    <p> 按 Prog 1&nbsp; 再按 0 EXE (0代表計算外點至圓切，使用0是因為與圓形形狀相似)</p>
+    <p> 2 EXE 8 EXE 12 EXE -3 EXE - 3 EXE (顯示切線斜率為2)</p>
+    <p> EXE (顯示切線y截距為 3) EXE (顯示切線斜率為2) EXE (顯示切線y截距為 3)</p>
+    <p> 兩組解答相同表示這點在圓之上</p>
+    <p> 　</p>
+    <p> 註1: 程式執行完成後，按 RCL A及RCL B顯示切線的斜率及y-截距，按RCL X及RCL Y顯示另一切線的斜率及y-截距。</p>
     <p>註2: 若果程式顯示一組解答後出現Math ERROR，表示另一切線為垂直線。</p>
     <p>　</p>
     <p>例題3: 解聯立方程:</p>
     <p>
-    <p>按
-        Prog 1&nbsp; 再按 1 EXE (1代表計算聯立方程)</p>
-    <p>3 EXE 5 EXE 8 EXE 3 EXE 4
-        EXE 5 EXE 3 EXE 5 EXE 20 </p>
-    <p>EXE (顯示1) EXE
-        (顯示1，即第一組的解答為 x=1, y=1)</p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE (1代表計算聯立方程)</p>
+    <p>3 EXE 5 EXE 8 EXE 3 EXE 4 EXE 5 EXE 3 EXE 5 EXE 20 </p>
+    <p>EXE (顯示1) EXE (顯示1，即第一組的解答為 x=1, y=1)</p>
     <p>EXE (顯示1/3) EXE (顯示7/5，即第一組的解答為 x=1/3, y=7/5)</p>
-    <p>程式執行完成後，按
-        RCL A 及 RCL B分別顯示第一組解答案的x及y的值，按 RCL X
-        及 RCL Y分別顯示第二組解答案的x及y的值。</p>
+    <p>程式執行完成後，按 RCL A 及 RCL B分別顯示第一組解答案的x及y的值，按 RCL X 及 RCL Y分別顯示第二組解答案的x及y的值。</p>
     <p>　</p>
     <p>例題4: 解以下聯立二元一次方程</p>
-    <p>
-        
-    </p>
-    <p>按
-        Prog 1&nbsp; 再按
-        1 EXE (1代表計算聯立方程)</p>
+    <p> </p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE (1代表計算聯立方程)</p>
     <p>1 EXE 1 EXE 7 EXE 0 EXE 0 EXE 0 EXE </p>
     <p>1 EXE -1 EXE 1 EXE (顯示4) EXE (顯示3) </p>
-    <p>
-        因此解答為 x = 4
-        及 y = 3. </p>
-    <p>程式執行完成後，按 RCL A 及 RCL
-        B分別顯示解答案的x及y的值。</p>
+    <p> 因此解答為 x = 4 及 y = 3. </p>
+    <p>程式執行完成後，按 RCL A 及 RCL B分別顯示解答案的x及y的值。</p>
     <p>　</p>
     <p>註4: 程式限制為第二個輸入的係數不可以是0，否則會出現Math error。</p>
     <p>註5: 若果兩組的解相同，表示曲線與直線相切。</p>

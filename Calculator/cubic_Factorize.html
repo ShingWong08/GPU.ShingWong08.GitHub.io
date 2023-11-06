@@ -10,76 +10,38 @@
             </b></u></p>
     <p>網友 <font color="#800080">roviury</font> 及 <font color="#800080">Skwai</font> 提供修改意見。</p>
     <p>更新日期: 2015年1月14日</p>
-    <p>程式可以將三次函數分解，三次函數的形式為 ax<sup>3</sup> + bx<sup>2</sup> + cx +
-        d 或 ax<sup>3</sup> + bx<sup>2</sup>y + cxy<sup>2</sup> +
-        dy<sup>3</sup>，程式會將函數先分解為一個一次式及一個二次式，若果二次式可以分解，則會再分解二次式為兩個一次式及一個常數因子。</p>
+    <p>程式可以將三次函數分解，三次函數的形式為 ax<sup>3</sup> + bx<sup>2</sup> + cx + d 或 ax<sup>3</sup> + bx<sup>2</sup>y +
+        cxy<sup>2</sup> + dy<sup>3</sup>，程式會將函數先分解為一個一次式及一個二次式，若果二次式可以分解，則會再分解二次式為兩個一次式及一個常數因子。</p>
     <p>程式一 (311 bytes) </p>
-    <p>?→A: ?→B: -B┘(3A→B: ?→C: ?→D: <br>
-        <br>
-        B<sup>3</sup> - (BC + D)┘(2A→M: B<sup>2</sup>-C┘(3A: M<sup>2</sup> - Ans<sup>3</sup>→Y:
-        <br>
-        <br>
-        0&gt;Y <font color="#FF0000">=&gt;</font> Goto 0: B + <font color="#FF0000">
-            <sup>3</sup>√(
-        </font> M + √( Y ) ) + <font color="#FF0000"><sup>3</sup>√(</font>
-        M - √( Y→D: 1→M: Goto 1: <br>
-        <br>
-        Lbl 0: 2 <font color="#FF0000"><sup>3</sup>√(</font> Pol( M , √( -Y→X: Y÷3→Y: 3→M: Lbl 4: B + Xcos( Y+
-        5!<sup>o</sup>M→D:
-        <br>
-        <br>
-        Lbl 1: Fix 0: Rnd(AD: Norm 1: Ans≠Rnd(AD <font color="#FF0000">=&gt;</font> M - 1→M: Ans
-        <font color="#FF0000">=&gt;</font> Goto 4: M<sup>-1</sup>: 1→M: <br>
-        <br>
-        Lbl 5: Fix 0: Rnd(MD: Norm 1: Ans≠Rnd(MD<font color="#FF0000">M+</font>
-        <font color="#FF0000">=&gt;</font> Goto 5: M◢
-        -DM→X◢ A ÷ M→A◢
+    <p>?→A: ?→B: -B┘(3A→B: ?→C: ?→D: <br> <br> B<sup>3</sup> - (BC + D)┘(2A→M: B<sup>2</sup>-C┘(3A: M<sup>2</sup> -
+        Ans<sup>3</sup>→Y: <br> <br> 0&gt;Y <font color="#FF0000">=&gt;</font> Goto 0: B + <font color="#FF0000">
+            <sup>3</sup>√( </font> M + √( Y ) ) + <font color="#FF0000"><sup>3</sup>√(</font> M - √( Y→D: 1→M: Goto 1:
+        <br> <br> Lbl 0: 2 <font color="#FF0000"><sup>3</sup>√(</font> Pol( M , √( -Y→X: Y÷3→Y: 3→M: Lbl 4: B + Xcos( Y+
+        5!<sup>o</sup>M→D: <br> <br> Lbl 1: Fix 0: Rnd(AD: Norm 1: Ans≠Rnd(AD <font color="#FF0000">=&gt;</font> M -
+        1→M: Ans <font color="#FF0000">=&gt;</font> Goto 4: M<sup>-1</sup>: 1→M: <br> <br> Lbl 5: Fix 0: Rnd(MD: Norm 1:
+        Ans≠Rnd(MD<font color="#FF0000">M+</font>
+        <font color="#FF0000">=&gt;</font> Goto 5: M◢ -DM→X◢ A ÷ M→A◢
     </p>
-    <p>AD-3AB→B◢ M<sup>-1</sup>(C - XAns→C◢ -B┘(2A→B: B + √( B<sup>2</sup>
-        - C┘A→X: <br>
-        <br>
-        Fix 0: AX = Rnd( AX: Norm 1: log( Ans:
-        For 0→D To 1: 1→M: Fix 0: Lbl 3:
-    </p>
+    <p>AD-3AB→B◢ M<sup>-1</sup>(C - XAns→C◢ -B┘(2A→B: B + √( B<sup>2</sup> - C┘A→X: <br> <br> Fix 0: AX = Rnd( AX: Norm
+        1: log( Ans: For 0→D To 1: 1→M: Fix 0: Lbl 3: </p>
     <p>XM≠Rnd(XM<font color="#FF0000">M+</font>
-        <font color="#FF0000">=&gt;</font> Goto 3: Norm 1:
-        M◢ - XAns◢ 2B - X→X: A÷M→A: Next
+        <font color="#FF0000">=&gt;</font> Goto 3: Norm 1: M◢ - XAns◢ 2B - X→X: A÷M→A: Next
     </p>
-    <p>
-        <span lang="en">
-            註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>(
-            </b></font>
-        <span lang="en">
-            可以省略，程式長度可減2 byte。</span>
-    </p>
-    <p>程式二 (269 bytes，速度較慢，注意: 5<font color="#000080"><b>!</b></font><sup>o</sup>是按 5 SHIFT
-        <font color="#0000FF">x!</font> SHIFT Ans 1。)
-    </p>
-    <p>?→A: ?→B: B┘(3A→B: ?→C: ?→D: <br>
-        <br>
-        - B<sup>3</sup> - (D - BC)┘(2A→M: B<sup>2</sup>-C┘(3A: M<sup>2</sup> - Ans<sup>3</sup>→Y:
-        <br>
-        <br>
-        √( Abs(Y: If 0&gt;Y: Then 2 <font color="#FF0000"><sup>3</sup>√( </font>Pol( M ,
-        Ans→X: 3→M:
-    </p>
-    <p>While Ans: B - Xcos( Y÷3+ 5!<sup>o</sup>M→D:&nbsp; 1<font color="#FF0000">M-</font>:
-        Msin( ADπ<sup>r</sup>: WhileEnd: <br>
-        <br>
-        Else B - <font color="#FF0000"><sup>3</sup>√(</font> M + Ans ) -
-        <font color="#FF0000"><sup>3</sup>√(</font> M - Ans→D: IfEnd: <br>
-        <br>
-        0 P sin( ADπ<sup>r</sup>)^(10→M: While sin(MDπ<sup>r</sup>)^(10: 1<font color="#FF0000">M+</font>:
-        WhileEnd: M◢ <br>
-        <br>
-        MD→X◢ A÷M→A◢ 3AB-AD→B◢ M<sup>-1</sup>(C - XB→C◢
-    </p>
-    <p>B┘(2A→B: B - √( B<sup>2</sup> - C┘A →X: <br>
-        <br>
-        For 0→D To 0 P sin(AXπ<sup>r</sup>)^(10: M<font color="#FF0000">M-</font>: Lbl
-        3: 1<font color="#FF0000">M+</font>: sin(MXπ<sup>r</sup>)^(10 <font color="#FF0000">
-            =&gt;</font> Goto 3:
-    </p>
+    <p> <span lang="en"> 註: 如果是使用fx-3650P II或fx-50FH II，上述程式中</span>紫色的開括號 <font color="#800080"><b>( </b></font> <span
+            lang="en"> 可以省略，程式長度可減2 byte。</span> </p>
+    <p>程式二 (269 bytes，速度較慢，注意: 5<font color="#000080"><b>!</b></font><sup>o</sup>是按 5 SHIFT <font color="#0000FF">x!
+        </font> SHIFT Ans 1。) </p>
+    <p>?→A: ?→B: B┘(3A→B: ?→C: ?→D: <br> <br> - B<sup>3</sup> - (D - BC)┘(2A→M: B<sup>2</sup>-C┘(3A: M<sup>2</sup> -
+        Ans<sup>3</sup>→Y: <br> <br> √( Abs(Y: If 0&gt;Y: Then 2 <font color="#FF0000"><sup>3</sup>√( </font>Pol( M ,
+        Ans→X: 3→M: </p>
+    <p>While Ans: B - Xcos( Y÷3+ 5!<sup>o</sup>M→D:&nbsp; 1<font color="#FF0000">M-</font>: Msin( ADπ<sup>r</sup>:
+        WhileEnd: <br> <br> Else B - <font color="#FF0000"><sup>3</sup>√(</font> M + Ans ) - <font color="#FF0000">
+            <sup>3</sup>√(</font> M - Ans→D: IfEnd: <br> <br> 0 P sin( ADπ<sup>r</sup>)^(10→M: While
+        sin(MDπ<sup>r</sup>)^(10: 1<font color="#FF0000">M+</font>: WhileEnd: M◢ <br> <br> MD→X◢ A÷M→A◢ 3AB-AD→B◢
+        M<sup>-1</sup>(C - XB→C◢ </p>
+    <p>B┘(2A→B: B - √( B<sup>2</sup> - C┘A →X: <br> <br> For 0→D To 0 P sin(AXπ<sup>r</sup>)^(10: M<font
+            color="#FF0000">M-</font>: Lbl 3: 1<font color="#FF0000">M+</font>: sin(MXπ<sup>r</sup>)^(10 <font
+            color="#FF0000"> =&gt;</font> Goto 3: </p>
     <p>M◢ MX◢ 2B - X→X: A÷M→A: Next </p>
     <p>　</p>
     <p>例題1: 因式分解 3x<sup>3</sup> - 7x<sup>2</sup> + 29x - 9</p>
@@ -89,8 +51,7 @@
     <p>EXE (顯示二次因子的x係數為 -2)</p>
     <p>EXE (顯示二次因子的常數項為 9)</p>
     <p>EXE (出現Math ERROR表示二次因子不能再分解)</p>
-    <p>所以 3x<sup>3</sup> - 7x<sup>2</sup> + 29x - 9 = (3x - 1)(x<sup>2</sup> - 2x +
-        9)</p>
+    <p>所以 3x<sup>3</sup> - 7x<sup>2</sup> + 29x - 9 = (3x - 1)(x<sup>2</sup> - 2x + 9)</p>
     <p>　</p>
     <p>例題2: 因式分解 30x<sup>3</sup> + 31x<sup>2</sup> - 25x - 6</p>
     <p>按 Prog 1 再按 30 EXE 31 EXE - 25 EXE - 6 EXE (顯示一次因子的x係數為 3)</p>
@@ -104,10 +65,9 @@
     <p>EXE (顯示第三個一次因子的x常數項為 3)</p>
     <p>EXE (顯示<font color="#FF0000">常數因子</font>為<font color="#FF0000">1</font>)</p>
     <p>所以 </p>
-    <p>30x<sup>3</sup> + 31x<sup>2</sup> - 25x - 6 = (3x - 2)(10x<sup>2</sup> + 17x
-        + 3)</p>
-    <p>30x<sup>3</sup> + 31x<sup>2</sup> - 25x - 6 = <font color="#FF0000">1</font>(3x
-        - 2)(5x + 1)(2x + 3) = (3x - 2)(5x + 1)(2x + 3)</p>
+    <p>30x<sup>3</sup> + 31x<sup>2</sup> - 25x - 6 = (3x - 2)(10x<sup>2</sup> + 17x + 3)</p>
+    <p>30x<sup>3</sup> + 31x<sup>2</sup> - 25x - 6 = <font color="#FF0000">1</font>(3x - 2)(5x + 1)(2x + 3) = (3x -
+        2)(5x + 1)(2x + 3)</p>
     <p>　</p>
     <p>例題3: 因式分解 8x<sup>3</sup> + 27y<sup>3</sup></p>
     <p>按 Prog 1 再按 8 EXE 0 EXE 0 EXE 27 EXE (顯示一次因子的x係數為 2)</p>
@@ -121,8 +81,7 @@
     <p>註: 程式亦可以用作分解二次函數，依次輸入係數，最後的數據輸入0，只要將答案其中一個中 x + 0 的因子捨去即可。</p>
     <p>例題4: 因式分解 x<sup>2</sup> - 7x + 12</p>
     <p>按 Prog 1 再按 1 EXE - 7 EXE 12 EXE <font color="#FF0000">0</font> EXE (最後輸入<font color="#FF0000">0</font>
-        ，顯示一次因子的x係數為
-        1)</p>
+        ，顯示一次因子的x係數為 1)</p>
     <p>EXE (顯示一次因子的常數項為 - 4)</p>
     <p>EXE (顯示二次因子的x<sup>2</sup>係數為 1)</p>
     <p>EXE (顯示二次因子的x係數為 -3)</p>
@@ -134,12 +93,9 @@
     <p>EXE (顯示<font color="#FF0000">常數因子</font>為<font color="#FF0000">1</font>)</p>
     <p>所以 x<sup>2</sup> - 7x + 12 = (x - 4)(x - 3)</p>
     <p>　</p>
-    <p>
-        註1: 注意輸入的係數必須為整數，否則計算不成立。</p>
-    <p>
-        註2: 若果程式出現math ERROR即表示不能再分解。</p>
-    <p>
-        註3: 第一個係數的數值越大，計算的時間可能會越長。</p>
+    <p> 註1: 注意輸入的係數必須為整數，否則計算不成立。</p>
+    <p> 註2: 若果程式出現math ERROR即表示不能再分解。</p>
+    <p> 註3: 第一個係數的數值越大，計算的時間可能會越長。</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

@@ -9,116 +9,64 @@
     <p>更新日期: 2011年7月26日</p>
     <p>程式 (135 bytes，不包括綠色函數方程)</p>
     <p>注意: <font size="1">E</font>是按 EXP。</p>
-    <p>ClrMemory: ?→M: While 1: ?→X: Lbl 1: <font color="#008000">X<sup>3</sup>
-            - 2X - 1</font>→C:</p>
+    <p>ClrMemory: ?→M: While 1: ?→X: Lbl 1: <font color="#008000">X<sup>3</sup> - 2X - 1</font>→C:</p>
     <p>If (M<sup>3</sup>=M) + ( 0&gt;C: Then C→Y: X→A: Else</p>
-    <p>C→D: X→B:<font color="#0000FF"> </font>&nbsp;IfEnd: M=2 <font color="#FF0000">=&gt;</font>
-        -1→Y: Ans <font color="#FF0000">=&gt;</font> 1→D:</p>
+    <p>C→D: X→B:<font color="#0000FF"> </font>&nbsp;IfEnd: M=2 <font color="#FF0000">=&gt;</font> -1→Y: Ans <font
+            color="#FF0000">=&gt;</font> 1→D:</p>
     <p>
         <font color="#0000FF">M<sup>2</sup> - 1</font>
         <font color="#FF0000">=&gt;</font>
-        <font color="#0000FF">C◢ </font>&nbsp;(AD - BY) ÷ (D
-        - Y→X: If M<sup>3</sup>=M: Then Y→D: A→B:
+        <font color="#0000FF">C◢ </font>&nbsp;(AD - BY) ÷ (D - Y→X: If M<sup>3</sup>=M: Then Y→D: A→B:
     </p>
     <p>2M<font color="#FF0000">M- =&gt; </font>M - 1<font color="#FF0000"> =&gt;</font> A + <font size="1">E</font> - 7
-        ( A + (A=0→X:
-        Ans
-        <font color="#FF0000">=&gt;</font> Goto 1: IfEnd: WhileEnd
-    </p>
-    <p>註1: 綠色的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是函數方程(變數是X)，若果想計算其它
-        方程，只要修改綠色的部份。</p>
+        ( A + (A=0→X: Ans <font color="#FF0000">=&gt;</font> Goto 1: IfEnd: WhileEnd </p>
+    <p>註1: 綠色的<font color="#008000">X<sup>3</sup> - 2X - 1</font>是函數方程(變數是X)，若果想計算其它 方程，只要修改綠色的部份。</p>
     <p>註2: 若果不想顯示函數值，只要不輸入<font color="#0000FF">M<sup>2</sup> - 1</font>
         <font color="#FF0000">=&gt;</font>
         <font color="#0000FF">C◢</font>即可。
     </p>
-    <p>註3: 程式中的&quot;ClrMemory:&quot;其實可以不輸入，不過若這做，在輸入第一個數值後，有可能會被原先數字記憶影響(機會率很低)，而出現Math ERROR，如果
-        萬一出現上述情況，需要自行清除所有數字記憶 (按 Shift Mode 1 EXE)，再執行程式。</p>
-    <p>註4: 當計算 半分法、正割法及試位法時，計數機顯示近似值會有<font color="#FF0000">?</font>
-        (最初的兩個數值需要輸入)，當沒有<font color="#FF0000">?</font>並顯示<font color="#FF0000">Disp</font>表示為對應的函數值。計算牛頓法時則不會顯示函數值。</p>
-    <p>註5: 若果函數值為零，表示對應的x值已是計數機能計算出的最準確答案，可按 AC
-        終止程式，若再繼續執行程式，則有可能出現Math ERROR。</p>
-    <p>
-        註6:
-        牛頓法程式是使用近似值的方法去計微分值，所以與真正的牛頓法會有小小分別。</p>
+    <p>註3: 程式中的&quot;ClrMemory:&quot;其實可以不輸入，不過若這做，在輸入第一個數值後，有可能會被原先數字記憶影響(機會率很低)，而出現Math ERROR，如果 萬一出現上述情況，需要自行清除所有數字記憶
+        (按 Shift Mode 1 EXE)，再執行程式。</p>
+    <p>註4: 當計算 半分法、正割法及試位法時，計數機顯示近似值會有<font color="#FF0000">?</font> (最初的兩個數值需要輸入)，當沒有<font color="#FF0000">?</font>並顯示
+        <font color="#FF0000">Disp</font>表示為對應的函數值。計算牛頓法時則不會顯示函數值。</p>
+    <p>註5: 若果函數值為零，表示對應的x值已是計數機能計算出的最準確答案，可按 AC 終止程式，若再繼續執行程式，則有可能出現Math ERROR。</p>
+    <p> 註6: 牛頓法程式是使用近似值的方法去計微分值，所以與真正的牛頓法會有小小分別。</p>
     <p>　</p>
-    <p>例題1:
-        用正割法解 x<sup>3</sup>
-        – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
-    <p>
-        按 Prog 1
-        再按 <font color="#FF0000">EXE</font> (輸入0或直接按EXE，表示使用正割法程式)</p>
-    <p>
-        1 EXE (顯示
-        f(1)的值為 - 2) <font color="#FF0000">EXE</font> (沒有?無法輸入數值，再按一下EXE)</p>
-    <p>
-        2 EXE (顯示 f(2)的值為 3)</p>
+    <p>例題1: 用正割法解 x<sup>3</sup> – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
+    <p> 按 Prog 1 再按 <font color="#FF0000">EXE</font> (輸入0或直接按EXE，表示使用正割法程式)</p>
+    <p> 1 EXE (顯示 f(1)的值為 - 2) <font color="#FF0000">EXE</font> (沒有?無法輸入數值，再按一下EXE)</p>
+    <p> 2 EXE (顯示 f(2)的值為 3)</p>
     <p>EXE (顯示第1近似值1.4)</p>
     <p>EXE (顯示f(1.4)的值為-1.056)</p>
     <p>EXE (顯示第2近似值1.556213)</p>
     <p>EXE (顯示f(1.556213)的值為-0.343591)</p>
     <p>EXE (顯示第3近似值1.631554)</p>
-    <p>EXE (顯示f(1.631554)的值為
-        0.0800355)</p>
+    <p>EXE (顯示f(1.631554)的值為 0.0800355)</p>
     <p>…………</p>
-    <p>
-        　</p>
-    <p>
-        例題2:
-        用牛頓法計算方程式 x<sup>3</sup>
-        – 2x – 1 = 0 的其中一個根，以1為開始的數值
-        。 </p>
-    <p>
-        按 Prog 1
-        再按 1 EXE (輸入1代表使用牛頓法程式)</p>
-    <p>
-        1 EXE (顯示第1個近似值為3)</p>
-    <p>
-        EXE (顯示第2個近似值為2.2)</p>
-    <p>
-        EXE (顯示第3個近似值為1.780830695)</p>
-    <p>
-        EXE (顯示第4個近似值為1.636303226)</p>
-    <p>
-        EXE (顯示第5個近似值為1.618304581)</p>
-    <p>
-        EXE (顯示第6個近似值為1.618034049)</p>
-    <p>
-        ………</p>
+    <p> 　</p>
+    <p> 例題2: 用牛頓法計算方程式 x<sup>3</sup> – 2x – 1 = 0 的其中一個根，以1為開始的數值 。 </p>
+    <p> 按 Prog 1 再按 1 EXE (輸入1代表使用牛頓法程式)</p>
+    <p> 1 EXE (顯示第1個近似值為3)</p>
+    <p> EXE (顯示第2個近似值為2.2)</p>
+    <p> EXE (顯示第3個近似值為1.780830695)</p>
+    <p> EXE (顯示第4個近似值為1.636303226)</p>
+    <p> EXE (顯示第5個近似值為1.618304581)</p>
+    <p> EXE (顯示第6個近似值為1.618034049)</p>
+    <p> ………</p>
     <p>　</p>
-    <p>例題3:
-        試用半分法解 x<sup>3</sup>
-        – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
-    <p>
-        按 Prog 1
-        再按 2 EXE (2代表使用半分法程式)</p>
-    <p>
-        1 EXE (顯示 f(1)的值為 - 2) <font color="#FF0000">EXE</font>
-        (沒有?無法輸入數值，再按一下EXE)</p>
-    <p>
-        2 EXE (顯示
-        f(2)的值為3)</p>
-    <p>
-        EXE
-        (顯示第一個近似值為1.5) EXE (顯示 f(1.5)的值為 -0.625)</p>
-    <p>
-        EXE (顯示第二個近似值為1.75) EXE (顯示 f(1.75)的值為 0.859375)</p>
-    <p>
-        EXE (顯示第三個近似值為1.625) EXE (顯示 f(1.625)的值為
-        0.041015625)</p>
+    <p>例題3: 試用半分法解 x<sup>3</sup> – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
+    <p> 按 Prog 1 再按 2 EXE (2代表使用半分法程式)</p>
+    <p> 1 EXE (顯示 f(1)的值為 - 2) <font color="#FF0000">EXE</font> (沒有?無法輸入數值，再按一下EXE)</p>
+    <p> 2 EXE (顯示 f(2)的值為3)</p>
+    <p> EXE (顯示第一個近似值為1.5) EXE (顯示 f(1.5)的值為 -0.625)</p>
+    <p> EXE (顯示第二個近似值為1.75) EXE (顯示 f(1.75)的值為 0.859375)</p>
+    <p> EXE (顯示第三個近似值為1.625) EXE (顯示 f(1.625)的值為 0.041015625)</p>
     <p>…………(直至要求的確度)</p>
     <p>　</p>
-    <p>例題4:
-        用試位法解
-        x<sup>3</sup> – 2x – 1 =
-        0, 1 &lt; x &lt; 2。</p>
-    <p>
-        按 Prog 1
-        再按 3 EXE (輸入3表示使用試位法程式)</p>
-    <p>
-        1 EXE (顯示
-        f(1)的值為 - 2) <font color="#FF0000">EXE</font> (沒有?無法輸入數值，再按一下EXE)</p>
-    <p>
-        2 EXE (顯示 f(2)的值為 3)</p>
+    <p>例題4: 用試位法解 x<sup>3</sup> – 2x – 1 = 0, 1 &lt; x &lt; 2。</p>
+    <p> 按 Prog 1 再按 3 EXE (輸入3表示使用試位法程式)</p>
+    <p> 1 EXE (顯示 f(1)的值為 - 2) <font color="#FF0000">EXE</font> (沒有?無法輸入數值，再按一下EXE)</p>
+    <p> 2 EXE (顯示 f(2)的值為 3)</p>
     <p>EXE (顯示第1近似值為1.4)</p>
     <p>EXE (顯示f(1.4)的值為-1.056)</p>
     <p>EXE (顯示第2近似值為1.556213)</p>

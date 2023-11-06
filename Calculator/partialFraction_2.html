@@ -11,24 +11,16 @@
     <p>
         <font color="#FF0000">更新日期: 2012年2月17日</font>
     </p>
-    <p>程式可以分解一個多項式分式為部分分式(Partial
-        Fraction)，其中分子為是二次多項式
-        Ax<sup>2</sup>
-        + Bx + C，而分母為三次多項式，可以是
-        (x + a)(x + b)(x + c)
-        或 (x<sup>2</sup>
-        + bx + c)(x + c)，其中 A, B, C,
-        a, b, c
+    <p>程式可以分解一個多項式分式為部分分式(Partial Fraction)，其中分子為是二次多項式 Ax<sup>2</sup> + Bx + C，而分母為三次多項式，可以是 (x + a)(x + b)(x + c) 或
+        (x<sup>2</sup> + bx + c)(x + c)，其中 A, B, C, a, b, c
         均為實數。注意本程式的多項式全部以降冪排列(包括分式)。若果使用第二個程式更加可以計算分子為一次多項式(Ax+B)及分母二次多項式(x+a)(x+b)的情況。</p>
     <p>第一個程式 (152 bytes)</p>
     <p>?→M: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y:</p>
     <p>M <font color="#FF0000">=&gt;</font> Goto 0: Y - AX + DA<sup>2</sup>→M:</p>
-    <p>C - A <font color="#FF0000">=&gt;</font> Goto 1: M◢
-        X - 2AD◢ D◢ &nbsp;Lbl 1: </p>
+    <p>C - A <font color="#FF0000">=&gt;</font> Goto 1: M◢ X - 2AD◢ D◢ &nbsp;Lbl 1: </p>
     <p> (Y - CX + DC<sup>2</sup>)┘(AnsC - AnsB→X:</p>
     <p>M┘( (C - A)(B - A + (A=B◢ D - X - Ans(A≠B◢ X◢</p>
-    <p>Lbl 0: (Y - CX + DC<sup>2</sup>)┘(B - CA + C<sup>2</sup>→M:
-        D - M◢</p>
+    <p>Lbl 0: (Y - CX + DC<sup>2</sup>)┘(B - CA + C<sup>2</sup>→M: D - M◢</p>
     <p>X - AnsC - AM◢ M</p>
     <p>　</p>
     <p>第二個程式 (179 bytes，可同時計算分母為二次多項式(x+a)(x+b)的情況)</p>
@@ -47,17 +39,13 @@
     <p>　</p>
     <p>　</p>
     <p>註: 程式以<font color="#FF0000">降冪的原則</font>輸入係數，答案出現的分子係數與<font color="#FF0000">輸入分母的因子次序一致</font>，若果分母輸入係數相同，答案則以
-        <font color="#FF0000">分母的冪降冪出現</font>。
-    </p>
+        <font color="#FF0000">分母的冪降冪出現</font>。 </p>
     <p>　</p>
     <p>例題1: 將下列分式代為部分分式</p>
     <p>
-    <p>按
-        Prog 1&nbsp;再按 0 EXE (0表示分母可以完全分解)</p>
-    <p>1 EXE - 2
-        EXE 3 EXE (先輸入分母係數，因為分母為三次，冪數較高)</p>
-    <p>&nbsp;2
-        EXE - 5 EXE - 13 EXE (分子係數，顯示第一項分式的分子為1)</p>
+    <p>按 Prog 1&nbsp;再按 0 EXE (0表示分母可以完全分解)</p>
+    <p>1 EXE - 2 EXE 3 EXE (先輸入分母係數，因為分母為三次，冪數較高)</p>
+    <p>&nbsp;2 EXE - 5 EXE - 13 EXE (分子係數，顯示第一項分式的分子為1)</p>
     <p>EXE (顯示第二項分式的分子為 - 1) </p>
     <p>EXE (顯示第三項分式的分子為 2)</p>
     <p>所以答案為:</p>
@@ -65,10 +53,8 @@
     <p>　</p>
     <p>例題2: 將下列分式代為部分分式</p>
     <p>
-    <p>按
-        Prog 1&nbsp;再按 0 EXE (0表示分母可以完全分解)</p>
-    <p>3 EXE 3
-        EXE 2 EXE (分母因子係數，按降冪排列所以先輸入二次項的兩個3)</p>
+    <p>按 Prog 1&nbsp;再按 0 EXE (0表示分母可以完全分解)</p>
+    <p>3 EXE 3 EXE 2 EXE (分母因子係數，按降冪排列所以先輸入二次項的兩個3)</p>
     <p>4 EXE 19 EXE 23 EXE (分子係數，顯示分母(x+3)<sup>2</sup>分母的分子為 -2)</p>
     <p>EXE (顯示分母(x+3)的分子為 3) </p>
     <p>EXE (顯示第三項分式的分子為 1)</p>
@@ -77,10 +63,8 @@
     <p>　</p>
     <p>例題3: 將下列分式代為部分分式</p>
     <p>
-    <p>按
-        Prog 1&nbsp;再按 0 EXE (0表示分母可以完全分解)</p>
-    <p>2 EXE 2
-        EXE 2 EXE (先輸入分母因子的係數)</p>
+    <p>按 Prog 1&nbsp;再按 0 EXE (0表示分母可以完全分解)</p>
+    <p>2 EXE 2 EXE 2 EXE (先輸入分母因子的係數)</p>
     <p>1 EXE 0 EXE 5 EXE (分子係數，顯示分母(x+2)<sup>3</sup>的分子為9)</p>
     <p>EXE (顯示分母(x+2)<sup>2</sup>的分子為 - 4) </p>
     <p>EXE (顯示分母(x+2)的分子為 1)</p>
@@ -89,10 +73,8 @@
     <p>　</p>
     <p>例題4: 將下列分式代為部分分式</p>
     <p>
-    <p>按
-        Prog 1&nbsp;再按 1 EXE (1表示分母不可以完全分解)</p>
-    <p>2 EXE 3
-        EXE 2 EXE (輸入分母因子係數，按降冪所以先輸入二次項係數)</p>
+    <p>按 Prog 1&nbsp;再按 1 EXE (1表示分母不可以完全分解)</p>
+    <p>2 EXE 3 EXE 2 EXE (輸入分母因子係數，按降冪所以先輸入二次項係數)</p>
     <p>0 EXE 3 EXE - 27 EXE (分子係數，顯示二次分母的分子x係數為11)</p>
     <p>EXE (顯示二次分母的分子常數項為 3) </p>
     <p>EXE (顯示一次分母的分子為 -11)</p>
@@ -105,12 +87,9 @@
     <p>
         <font color="#FF0000">只適用於第二個程式</font>
     </p>
-    <p>按
-        Prog 1&nbsp;再按 2 EXE (2表示分母為二次多項式(x+a)(x+b)的形式)</p>
-    <p>3 EXE 2 EXE (先輸入分母)
-    </p>
-    <p>5 EXE 11 EXE (顯示第一個分式分子為4) EXE
-        (顯示第二個分式分子為1)</p>
+    <p>按 Prog 1&nbsp;再按 2 EXE (2表示分母為二次多項式(x+a)(x+b)的形式)</p>
+    <p>3 EXE 2 EXE (先輸入分母) </p>
+    <p>5 EXE 11 EXE (顯示第一個分式分子為4) EXE (顯示第二個分式分子為1)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>所以</p>
     <p>
@@ -120,13 +99,10 @@
     <p>
         <font color="#FF0000">只適用於第二個程式</font>
     </p>
-    <p>按
-        Prog 1&nbsp;再按 2 EXE (2表示分母為二次多項式(x+a)(x+b)的形式)</p>
-    <p>4 EXE 4 EXE (先輸入分母，相同數值表示分母為二次式)
-    </p>
+    <p>按 Prog 1&nbsp;再按 2 EXE (2表示分母為二次多項式(x+a)(x+b)的形式)</p>
+    <p>4 EXE 4 EXE (先輸入分母，相同數值表示分母為二次式) </p>
     <p>2 EXE 11 EXE (顯示第一個分式分母為4) )</p>
-    <p>EXE (顯示第一個分式分子為3) EXE
-        (顯示第二個分式分子為2)</p>
+    <p>EXE (顯示第一個分式分子為3) EXE (顯示第二個分式分子為2)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>所以</p>
     <p>

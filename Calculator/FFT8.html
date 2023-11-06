@@ -12,74 +12,41 @@
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx</font> 按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 →
-        2，<font color="#0000FF">Σxy</font> Shift 1 →3)，<font color="#0000FF">π<sup>r</sup></font>
-        是按 Shift EXP Shift Ans 2</p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">Σx</font> 按 Shift 1 2，<font color="#0000FF">Σy</font> 按 Shift 1 → 2，
+        <font color="#0000FF">Σxy</font> Shift 1 →3)，<font color="#0000FF">π<sup>r</sup></font> 是按 Shift EXP Shift Ans 2
+    </p>
     <p>程式 (158 bytes)</p>
-    <p>ClrStat: ?→M: M - 1
-        <font color="#FF0000">DT</font>: ?→M: 1 , M <font color="#FF0000">DT</font>:
-        ?→M:
-    </p>
+    <p>ClrStat: ?→M: M - 1 <font color="#FF0000">DT</font>: ?→M: 1 , M <font color="#FF0000">DT</font>: ?→M: </p>
     <p>0 , M - <font color="#0000FF">Σy</font>
-        <font color="#FF0000">DT</font>: ?→A:
-        ?→B: ?→C: ?→D: ?→X: 0→M:
+        <font color="#FF0000">DT</font>: ?→A: ?→B: ?→C: ?→D: ?→X: 0→M:
     </p>
-    <p>
-        While M - 8: <font color="#0000FF">π<sup>r</sup></font><sup>
-        </sup>M÷4→Y: <font color="#0000FF">Σx</font>
-        + <font color="#0000FF">Σxy</font> cos( Y ) + <font color="#0000FF">Σy</font> cos( 2Y
-        ) + </p>
-    <p>
-        A cos( 3Y ) + B cos( 4Y ) + C cos( 5Y )+ D cos( 6Y
-        ) + X cos( 7Y◢</p>
-    <p>
-        - <font color="#0000FF">Σxy</font> sin( Y ) - <font color="#0000FF">
-            Σy</font> sin( 2Y ) - A sin( 3Y ) - B sin( 4Y ) - C sin( 5Y ) -</p>
-    <p>
-        D sin( 6Y )- X sin( 7Y◢ M + 1→M: WhileEnd</p>
-    <p>
-        　</p>
-    <p>
-        Example: Perform a 8-sample FFT for the input sequence x[n]={ 1, 2, 0, 1, 2, 1,
-        0, 0}</p>
-    <p>
-        Press Prog 1&nbsp;&nbsp; 1 EXE 2 EXE 0 EXE 1 EXE 2 EXE 1 EXE 0 EXE 0 </p>
-    <p>
-        EXE (read-out: 7) EXE (read-out: 0)</p>
-    <p>
-        EXE (read-out: - 1) EXE (read-out:-1.4142)</p>
-    <p>
-        EXE (read-out: 3) EXE (read-out: - 2)</p>
-    <p>
-        EXE (read-out: - 1) EXE (read-out: -1.4142)</p>
-    <p>
-        EXE (read-out: - 1) EXE (read-out: 0)</p>
-    <p>
-        EXE (read-out: - 1) EXE (read-out: 1.4142)</p>
-    <p>
-        EXE (read-out: 3) EXE (read-out: 2)</p>
-    <p>
-        EXE (read-out: - 1) EXE (read-out: 1.4142)</p>
-    <p>
-        　</p>
-    <p>
-        Therefore, the result is:</p>
-    <p>
-        X[0] = 7</p>
-    <p>
-        X[1] = - 1 - 1.4142 j</p>
-    <p>
-        X[2] = 3 - 2j</p>
-    <p>
-        X[3] = - 1 - 1.4142j</p>
-    <p>
-        X[4] = - 1</p>
-    <p>
-        X[5] = - 1 + 1.4142j</p>
-    <p>
-        X[6] = 3 + 2j</p>
-    <p>
-        X[7] = - 1 + 1.4142j</p>
+    <p> While M - 8: <font color="#0000FF">π<sup>r</sup></font><sup> </sup>M÷4→Y: <font color="#0000FF">Σx</font> +
+        <font color="#0000FF">Σxy</font> cos( Y ) + <font color="#0000FF">Σy</font> cos( 2Y ) + </p>
+    <p> A cos( 3Y ) + B cos( 4Y ) + C cos( 5Y )+ D cos( 6Y ) + X cos( 7Y◢</p>
+    <p> - <font color="#0000FF">Σxy</font> sin( Y ) - <font color="#0000FF"> Σy</font> sin( 2Y ) - A sin( 3Y ) - B sin(
+        4Y ) - C sin( 5Y ) -</p>
+    <p> D sin( 6Y )- X sin( 7Y◢ M + 1→M: WhileEnd</p>
+    <p> 　</p>
+    <p> Example: Perform a 8-sample FFT for the input sequence x[n]={ 1, 2, 0, 1, 2, 1, 0, 0}</p>
+    <p> Press Prog 1&nbsp;&nbsp; 1 EXE 2 EXE 0 EXE 1 EXE 2 EXE 1 EXE 0 EXE 0 </p>
+    <p> EXE (read-out: 7) EXE (read-out: 0)</p>
+    <p> EXE (read-out: - 1) EXE (read-out:-1.4142)</p>
+    <p> EXE (read-out: 3) EXE (read-out: - 2)</p>
+    <p> EXE (read-out: - 1) EXE (read-out: -1.4142)</p>
+    <p> EXE (read-out: - 1) EXE (read-out: 0)</p>
+    <p> EXE (read-out: - 1) EXE (read-out: 1.4142)</p>
+    <p> EXE (read-out: 3) EXE (read-out: 2)</p>
+    <p> EXE (read-out: - 1) EXE (read-out: 1.4142)</p>
+    <p> 　</p>
+    <p> Therefore, the result is:</p>
+    <p> X[0] = 7</p>
+    <p> X[1] = - 1 - 1.4142 j</p>
+    <p> X[2] = 3 - 2j</p>
+    <p> X[3] = - 1 - 1.4142j</p>
+    <p> X[4] = - 1</p>
+    <p> X[5] = - 1 + 1.4142j</p>
+    <p> X[6] = 3 + 2j</p>
+    <p> X[7] = - 1 + 1.4142j</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

@@ -14,31 +14,22 @@
     <p>程式 (85 bytes)</p>
     <p>ClrMemory: Hex: ?→A: 10→C: ?→B: </p>
     <p>For 0→D To 1: 1→Y: D <font color="#FF0000">=&gt;</font> C→B: </p>
-    <p>Ans <font color="#FF0000">=&gt;</font> ?→C:
-        Lbl 1: A÷C→X: Y(A-CX <font color="#FF0000">M+</font>:
-    </p>
+    <p>Ans <font color="#FF0000">=&gt;</font> ?→C: Lbl 1: A÷C→X: Y(A-CX <font color="#FF0000">M+</font>: </p>
     <p>X→A: If Ans: Then BY→Y: Goto 1: IfEnd:</p>
-    <p>M→A: M<font color="#FF0000">M-</font>:
-        Next: A </p>
-    <p>注意: 輸入的數值必須為正整數。n進制的n值可以是2至16，數位大於9，用A, B, C, D, E, F基數的數值代表10至15的數值(例如: A是按
-        <font color="#FF0000">(-)</font>)，若果要計算16進數問題，輸入進制數值時，請輸入<b>
+    <p>M→A: M<font color="#FF0000">M-</font>: Next: A </p>
+    <p>注意: 輸入的數值必須為正整數。n進制的n值可以是2至16，數位大於9，用A, B, C, D, E, F基數的數值代表10至15的數值(例如: A是按 <font color="#FF0000">(-)</font>
+        )，若果要計算16進數問題，輸入進制數值時，請輸入<b>
             <font color="#FF0000">10</font>
-        </b>。
-    </p>
+        </b>。 </p>
     <p>　</p>
     <p>例題1: 將十進制 25 以二進制表示。</p>
-    <p>
-        按 Prog 1&nbsp;
-        再按 25 EXE <font color="#FF0000">A</font> EXE (<font color="#FF0000">A</font>是基數的數值代表十，按
-        <font color="#FF0000">(-)</font> ) 2 EXE (顯示答案為11001)
-    </p>
+    <p> 按 Prog 1&nbsp; 再按 25 EXE <font color="#FF0000">A</font> EXE (<font color="#FF0000">A</font>是基數的數值代表十，按 <font
+            color="#FF0000">(-)</font> ) 2 EXE (顯示答案為11001) </p>
     <p>所以 25<sub>10</sub> = 11001<sub>2</sub> </p>
     <p>計算完結後按 MODE 1 返回正常計算模式。</p>
     <p>　</p>
     <p>例題2: 將二進制 11001 以八進制表示。</p>
-    <p>
-        按 Prog 1&nbsp;
-        再按 11001 EXE 2 EXE 8 EXE (顯示答案為31)</p>
+    <p> 按 Prog 1&nbsp; 再按 11001 EXE 2 EXE 8 EXE (顯示答案為31)</p>
     <p>所以 11001<sub>2</sub> = 31<sub>8</sub></p>
     <p>計算完結後按 MODE 1 返回正常計算模式。</p>
     <p>　</p>

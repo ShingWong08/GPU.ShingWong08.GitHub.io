@@ -12,16 +12,13 @@
             <font color="#0000FF">程式新版</font>
         </b> (舊版保留在網頁下方)</p>
     <p>程式編寫日期: 2008年3月14日 修改日期: 2008年11月25日</p>
-    <p>這個程式<b>完全</b>使用了克萊瑪法則 (Cramer's rule)，因此沒有第一版程式的限制條件，但程式會較長一點。
-        若果輸入係數為整數，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按
-        <font color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。
-    </p>
+    <p>這個程式<b>完全</b>使用了克萊瑪法則 (Cramer's rule)，因此沒有第一版程式的限制條件，但程式會較長一點。 若果輸入係數為整數，答案會以分數形式表示，建議將計數機預先設定為假分數形式表示(按 <font
+            color="#FF0000">SHIFT SETUP → → 2</font>&nbsp; )。 </p>
     <p>
         <font color="#FF0000">程式需要在 REG Lin 模式下執行，因此在選擇新程式位置後，按 5 1 選用REG Lin模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<font color="#0000FF">maxX</font> 按 shift
-        2 2 2，<font color="#0000FF">maxY</font>
-        按 shift 2 2 → 2)，FreqOn 按 Shift MODE ← ← 1。</p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<font color="#0000FF">maxX</font> 按 shift 2 2 2，
+        <font color="#0000FF">maxY</font> 按 shift 2 2 → 2)，FreqOn 按 Shift MODE ← ← 1。</p>
     <p>程式 (153 bytes)</p>
     <p>FreqOn: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: ?→M:</p>
     <p>A: ?→A: AnsY - BX <font color="#FF0000"><b>,</b></font> AnsA - XD <b>
@@ -29,42 +26,25 @@
         </b> AnsM - XC <font color="#FF0000">DT</font>: </p>
     <p>BM - YC→X: BA - YD→Y: CA - MD→M: ?→A: ?→B: </p>
     <p>?→C: ?→D: AX + C<font color="#0000FF">maxX</font> - B<font color="#0000FF">n</font>◢ (DX - CY + BM)┘Ans◢</p>
-    <p>AX + C<font color="#0000FF">maxX</font> - B<font color="#0000FF">n</font>→X: (C
-        <font color="#0000FF">maxY</font> - AM - D<font color="#0000FF">n</font>)┘X◢
-    </p>
-    <p>(AY
-        + D<font color="#0000FF">maxX</font> - B <font color="#0000FF">maxY</font>)┘X</p>
-    <p>註: 若果方程組的行列式為零時，會出現Math
-        ERROR，表示方程無唯一解(無限解或無解)。</p>
+    <p>AX + C<font color="#0000FF">maxX</font> - B<font color="#0000FF">n</font>→X: (C <font color="#0000FF">maxY</font>
+        - AM - D<font color="#0000FF">n</font>)┘X◢ </p>
+    <p>(AY + D<font color="#0000FF">maxX</font> - B <font color="#0000FF">maxY</font>)┘X</p>
+    <p>註: 若果方程組的行列式為零時，會出現Math ERROR，表示方程無唯一解(無限解或無解)。</p>
     <p>　</p>
     <p><a href="simultaneousMethod.html">如何使用聯立三元一次方程程式計算三階伴隨矩陣及逆矩陣</a></p>
     <p>　</p>
+    <p> 例題1: 解聯立方程 :</p>
     <p>
-        例題1:
-        解聯立方程 :</p>
-    <p>
-    <p>按
-        Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE
-        -1 EXE 2 EXE 5 EXE 1 EXE 3 EXE 1 EXE 10 EXE</p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 1 EXE 1 EXE 6 EXE 1 EXE -1 EXE 2 EXE 5 EXE 1 EXE 3 EXE 1 EXE 10 EXE</p>
     <p>(顯示方程組行列式為 -2) EXE (顯示x=1) EXE (顯示y=2) EXE (顯示z=3)</p>
     <p>　</p>
-    <p>例題2:
-        計算下列的行列式:　</p>
-    <p>
-        
-    </p>
-    <p>按
-        Prog 1&nbsp; 再按
-        1 EXE 2 EXE 3 EXE EXE (不輸入數值)</p>
-    <p>
-        7 EXE 8 EXE 9 EXE EXE (不輸入數值)</p>
-    <p>
-        6 EXE 5 EXE 2 EXE EXE
-        (不輸入數值，最後顯示行列式的值為12)</p>
-    <p>
-        程式執行完成後，請按AC中止程式。行列式的值儲存於記憶X。</p>
-    <p>
-        　</p>
+    <p>例題2: 計算下列的行列式:　</p>
+    <p> </p>
+    <p>按 Prog 1&nbsp; 再按 1 EXE 2 EXE 3 EXE EXE (不輸入數值)</p>
+    <p> 7 EXE 8 EXE 9 EXE EXE (不輸入數值)</p>
+    <p> 6 EXE 5 EXE 2 EXE EXE (不輸入數值，最後顯示行列式的值為12)</p>
+    <p> 程式執行完成後，請按AC中止程式。行列式的值儲存於記憶X。</p>
+    <p> 　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
     <p>　</p>
     <p>　</p>
@@ -78,50 +58,41 @@
     <p>
         <font color="#FF0000">程式需要在 SD 模式下執行，因此在選擇新程式位置後，按 4 選用SD模式。</font>
     </p>
-    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<font color="#0000FF">Σx</font>
-        按 shift 1 2)</p>
+    <p>注意: 藍色的英文字為統計模式中的變數(<font color="#0000FF">n</font> 按 shift 1 3 ，<font color="#0000FF">Σx</font> 按 shift 1 2)</p>
     <p>第一個程式 (小數版，165 bytes)</p>
     <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: ?→M:</p>
     <p><b>
             <font color="#FF0000">;</font>
-        </b> AM - XC - 1 <font color="#FF0000">DT</font>:
-        AY - BX <font color="#FF0000">DT</font>: A: ?→A: Ans A - XD <b>
+        </b> AM - XC - 1 <font color="#FF0000">DT</font>: AY - BX <font color="#FF0000">DT</font>: A: ?→A: Ans A - XD
+        <b>
             <font color="#FF0000">; </font>
-        </b>0
-        <font color="#FF0000">DT</font>:
-    </p>
+        </b>0 <font color="#FF0000">DT</font>: </p>
     <p>BM - YC→X: BA - YD→Y: CA - MD→M: ?→A: ?→B: </p>
-    <p>?→C: ?→D: AX + C<font color="#0000FF">Σx</font> - B<font color="#0000FF">n</font>◢
-        Ans<sup>-1</sup>(DX - CY + BM◢</p>
+    <p>?→C: ?→D: AX + C<font color="#0000FF">Σx</font> - B<font color="#0000FF">n</font>◢ Ans<sup>-1</sup>(DX - CY + BM◢
+    </p>
     <p>AX + C<font color="#0000FF">Σx</font> - B<font color="#0000FF">n</font>→X: <b>
             <font color="#FF0000">;</font>
-        </b> 0 <font color="#FF0000">DT</font>: X<sup>-1</sup>(C
-        Ans - AM - D<font color="#0000FF">n</font>◢</p>
+        </b> 0 <font color="#FF0000">DT</font>: X<sup>-1</sup>(C Ans - AM - D<font color="#0000FF">n</font>◢</p>
     <p><b>
             <font color="#FF0000">;</font>
-        </b> 0 <font color="#FF0000">DT</font>: X<sup>-1</sup>(AY
-        + D<font color="#0000FF">Σx</font> - B Ans</p>
+        </b> 0 <font color="#FF0000">DT</font>: X<sup>-1</sup>(AY + D<font color="#0000FF">Σx</font> - B Ans</p>
     <p>　</p>
     <p>第二個程式 (分數版，168 bytes)</p>
     <p>ClrStat: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: ?→M:</p>
     <p><b>
             <font color="#FF0000">;</font>
-        </b> AM - XC - 1 <font color="#FF0000">DT</font>:
-        AY - BX <font color="#FF0000">DT</font>: A: ?→A: Ans A - XD <b>
+        </b> AM - XC - 1 <font color="#FF0000">DT</font>: AY - BX <font color="#FF0000">DT</font>: A: ?→A: Ans A - XD
+        <b>
             <font color="#FF0000">; </font>
-        </b>0
-        <font color="#FF0000">DT</font>:
-    </p>
+        </b>0 <font color="#FF0000">DT</font>: </p>
     <p>BM - YC→X: BA - YD→Y: CA - MD→M: ?→A: ?→B: </p>
     <p>?→C: ?→D: AX + C<font color="#0000FF">Σx</font> - B<font color="#0000FF">n</font>◢ (DX - CY + BM)┘Ans◢</p>
     <p>AX + C<font color="#0000FF">Σx</font> - B<font color="#0000FF">n</font>→X: <b>
             <font color="#FF0000">;</font>
-        </b> 0 <font color="#FF0000">DT</font>: (C
-        Ans - AM - D<font color="#0000FF">n</font>)┘X◢</p>
+        </b> 0 <font color="#FF0000">DT</font>: (C Ans - AM - D<font color="#0000FF">n</font>)┘X◢</p>
     <p><b>
             <font color="#FF0000">;</font>
-        </b> 0 <font color="#FF0000">DT</font>: (AY
-        + D<font color="#0000FF">Σx</font> - B Ans)┘X</p>
+        </b> 0 <font color="#FF0000">DT</font>: (AY + D<font color="#0000FF">Σx</font> - B Ans)┘X</p>
     <p>　</p>
 </body>
 

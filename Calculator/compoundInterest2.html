@@ -9,48 +9,31 @@
                 <font size="5">複利率計算</font>
             </b></u></p>
     <p>更新日期: 2011年9月8日</p>
+    <p> ˙程式用作計算複利率問題，假定利息每月計算及息率固定不變，程式可以計算以下問題:</p>
     <p>
-        ˙程式用作計算複利率問題，假定利息每月計算及息率固定不變，程式可以計算以下問題:</p>
-    <p>
-        <font face="新細明體">˙輸入下列數值任意四個，程式可以計算另一個的數值: 本利和(Amount)、本金(Principle)、年利率(</font>Annual
-        Interest Rate)、存款期數(Deposit period) 及每月存款
-        (Monthly deposit)
+        <font face="新細明體">˙輸入下列數值任意四個，程式可以計算另一個的數值: 本利和(Amount)、本金(Principle)、年利率(</font>Annual Interest
+        Rate)、存款期數(Deposit period) 及每月存款 (Monthly deposit)
     </p>
     <p>˙程式亦可以計算簡單複利率問題、零存整付問題及按揭問題(包括尚欠款額)</p>
     <p>˙ 程式容許指定存款指示的方式，0代表每期結束後存款，1代表每期開始時存款。通常貸款問題選用0，存款問題選用1。</p>
     <p>註1: 若果計算同時包括支出(例如: 存款)及收入(例如: 提款)，需用正負數表示。</p>
-    <p>
-        註2: 計算利率時，由於需要重複計算，所以計算時間可能會較長。</p>
+    <p> 註2: 計算利率時，由於需要重複計算，所以計算時間可能會較長。</p>
     <p>
         <font color="#FF0000">注意</font>: E 是按 EXP。
     </p>
-    <p>
-        程式 (226 bytes)</p>
-    <p>
-        π: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
-    <p>
-        1 + C÷1200→M: M^( Y ) ÷ (M - 1→C: </p>
-    <p>
-        D=π <font color="#FF0000">=&gt;</font> log( M , (A + XC) ÷ (B + XC◢</p>
-    <p>
-        C(M^( D ) - 1→C: X=π <font color="#FF0000">=&gt;</font> C<sup>-1</sup>(A
-        - BM^( D◢</p>
-    <p>
-        A=<font face="Times New Roman">π</font>
-        <font color="#FF0000">=&gt;</font> XC +
-        BM^( D◢ B=<font face="Times New Roman">π</font>
-        <font color="#FF0000">=&gt;</font> M^( -D
-        )(A
-        - XC◢
+    <p> 程式 (226 bytes)</p>
+    <p> π: ?→A: ?→B: ?→C: ?→D: ?→X: ?→Y: </p>
+    <p> 1 + C÷1200→M: M^( Y ) ÷ (M - 1→C: </p>
+    <p> D=π <font color="#FF0000">=&gt;</font> log( M , (A + XC) ÷ (B + XC◢</p>
+    <p> C(M^( D ) - 1→C: X=π <font color="#FF0000">=&gt;</font> C<sup>-1</sup>(A - BM^( D◢</p>
+    <p> A=<font face="Times New Roman">π</font>
+        <font color="#FF0000">=&gt;</font> XC + BM^( D◢ B=<font face="Times New Roman">π</font>
+        <font color="#FF0000">=&gt;</font> M^( -D )(A - XC◢
     </p>
-    <p>
-        . 003→C: Lbl 0: C→M: 1 + C: C - (BAns^( D ) +</p>
-    <p>
-        XC<sup>-1</sup>Ans^( Y )(Ans^( D ) - 1) - A) ÷ (DAns<sup>-1</sup>Ans^( D )(</p>
-    <p>
-        B + XC<sup>-1</sup>Ans^( Y ) ) + XC<sup>-1</sup>(Ans^( D ) - 1)(Y - C<sup>-1</sup>Ans^( Y→C:</p>
-    <p>
-        E - 6 ≦ Abs(C - M <font color="#FF0000">=&gt;</font> Goto 0: 1200C </p>
+    <p> . 003→C: Lbl 0: C→M: 1 + C: C - (BAns^( D ) +</p>
+    <p> XC<sup>-1</sup>Ans^( Y )(Ans^( D ) - 1) - A) ÷ (DAns<sup>-1</sup>Ans^( D )(</p>
+    <p> B + XC<sup>-1</sup>Ans^( Y ) ) + XC<sup>-1</sup>(Ans^( D ) - 1)(Y - C<sup>-1</sup>Ans^( Y→C:</p>
+    <p> E - 6 ≦ Abs(C - M <font color="#FF0000">=&gt;</font> Goto 0: 1200C </p>
     <p>　</p>
     <p>例題1: 本金為$7000，年利率為3%，存款期數為12，每月初存款$200，求本利和。</p>
     <p>按 Prog 1 再按 <font color="#FF0000">Ans EXE</font> (輸入Ans代表計算本利和)</p>
@@ -105,90 +88,49 @@
     <p>1 EXE (每月初存款，顯示每月存款為$200)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>　</p>
-    <p>
-        例題5:
-        每月初存款3000元，年利率為4%，預計存款24個月，求本利和。</p>
-    <p>
-        按 P1 再按
-        <font color="#FF0000">Ans EXE</font>
-        (輸入Ans代表計算本利和)
-    </p>
-    <p>
-        0 EXE (本金為0代表零存整付)</p>
-    <p>
-        4 EXE (年利率)</p>
-    <p>
-        24 EXE (存款期數)</p>
-    <p>
-        3000 EXE (每月存款)</p>
-    <p>
-        1 EXE (每月初存款，顯示本利和為 $75078.09)</p>
+    <p> 例題5: 每月初存款3000元，年利率為4%，預計存款24個月，求本利和。</p>
+    <p> 按 P1 再按 <font color="#FF0000">Ans EXE</font> (輸入Ans代表計算本利和) </p>
+    <p> 0 EXE (本金為0代表零存整付)</p>
+    <p> 4 EXE (年利率)</p>
+    <p> 24 EXE (存款期數)</p>
+    <p> 3000 EXE (每月存款)</p>
+    <p> 1 EXE (每月初存款，顯示本利和為 $75078.09)</p>
     <p>計算完結後按 AC 終止程式</p>
-    <p>
-        　</p>
+    <p> 　</p>
     <p>
         <font color="#FF0000">注意:</font> 按揭計算同時包括支出(例如: 存款)及收入(例如: 提款)，需用正負數表示。
     </p>
+    <p> 假設支出(存款)用正數表示，收入(提款)用負數表示。</p>
+    <p> 例題6: 貸款$100,0000，年利率為6%，每月還款額5995.51，求還款100期後的尚欠貸款。</p>
+    <p> 按 Prog1 再按 <font color="#FF0000">Ans EXE</font> (輸入Ans代表計算尚欠貨款) </p>
+    <p> 100 0000 EXE(<font color="#FF0000">正值</font>代表貸款) </p>
+    <p> 6 EXE (年利率)</p>
+    <p> 100 EXE (還款期)</p>
     <p>
-        假設支出(存款)用正數表示，收入(提款)用負數表示。</p>
-    <p>
-        例題6:
-        貸款$100,0000，年利率為6%，每月還款額5995.51，求還款100期後的尚欠貸款。</p>
-    <p>
-        按 Prog1 再按
-        <font color="#FF0000">Ans EXE</font> (輸入Ans代表計算尚欠貨款)
+        <font color="#FF0000">- 5995.51</font> EXE (<font color="#FF0000">負值</font>代表每月 存款/還款)
     </p>
-    <p>
-        100 0000 EXE(<font color="#FF0000">正值</font>代表貸款) </p>
-    <p>
-        6 EXE (年利率)</p>
-    <p>
-        100 EXE (還款期)</p>
-    <p>
-        <font color="#FF0000">- 5995.51</font> EXE (<font color="#FF0000">負值</font>代表每月
-        存款/還款)
-    </p>
-    <p>
-        0 EXE (0代表每期結束時付款，顯示尚欠貸款為
-        $871247.01)</p>
-    <p>
-        　</p>
-    <p>
-        例題7:
-        貸款$100,0000，年利率為6%，貸款時間為360月，求每月還款額。</p>
-    <p>
-        按 P1 再按 0 EXE (<font color="#FF0000">0</font>代表完全清還)</p>
-    <p>
-        100 0000 EXE(<font color="#FF0000">正值</font>代表貸款) </p>
-    <p>
-        6 EXE (年利率)</p>
-    <p>
-        360 EXE (還款期)</p>
+    <p> 0 EXE (0代表每期結束時付款，顯示尚欠貸款為 $871247.01)</p>
+    <p> 　</p>
+    <p> 例題7: 貸款$100,0000，年利率為6%，貸款時間為360月，求每月還款額。</p>
+    <p> 按 P1 再按 0 EXE (<font color="#FF0000">0</font>代表完全清還)</p>
+    <p> 100 0000 EXE(<font color="#FF0000">正值</font>代表貸款) </p>
+    <p> 6 EXE (年利率)</p>
+    <p> 360 EXE (還款期)</p>
     <p>
         <font color="#FF0000">Ans EXE</font> (輸入Ans代表計算每月還款額)
     </p>
-    <p>
-        0 EXE (0代表每期結束時付款，顯示 -
-        5995.51，即每月還款額為
-        $5995.51)</p>
+    <p> 0 EXE (0代表每期結束時付款，顯示 - 5995.51，即每月還款額為 $5995.51)</p>
     <p>計算完結後按 AC 終止程式</p>
-    <p>
-        　</p>
-    <p>
-        例題8: 本金為$100,0000，年利率3%，打算分360期(月)完全提取所有款項，假設每期提取的款項不變，求每月可以提取的款項。</p>
-    <p>
-        按 P1 再按 0 EXE (<font color="#FF0000">0</font>代表完全提取款項)</p>
-    <p>
-        - 100 0000 EXE(<font color="#FF0000">負值</font>代表存款) </p>
-    <p>
-        3 EXE (年利率)</p>
-    <p>
-        360 EXE (期數)</p>
+    <p> 　</p>
+    <p> 例題8: 本金為$100,0000，年利率3%，打算分360期(月)完全提取所有款項，假設每期提取的款項不變，求每月可以提取的款項。</p>
+    <p> 按 P1 再按 0 EXE (<font color="#FF0000">0</font>代表完全提取款項)</p>
+    <p> - 100 0000 EXE(<font color="#FF0000">負值</font>代表存款) </p>
+    <p> 3 EXE (年利率)</p>
+    <p> 360 EXE (期數)</p>
     <p>
         <font color="#FF0000">Ans EXE</font> (輸入Ans代表計算每月還款額)
     </p>
-    <p>
-        0 EXE (0代表每期結束時付款，顯示每月提取款項為 $4216.04)</p>
+    <p> 0 EXE (0代表每期結束時付款，顯示每月提取款項為 $4216.04)</p>
     <p>計算完結後按 AC 終止程式</p> </span>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>

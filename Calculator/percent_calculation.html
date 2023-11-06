@@ -10,25 +10,22 @@
             </b></u></p>
     <p>更新日期: 2011年11月14日</p>
     <p>程式可以計算簡單的百分變化率問題，亦可以計算簡單複利/增長/貶值問題。</p>
-    <p>注意: <font color="#0000FF">e</font> 是按 ALPHA ln，而 <font size="1">E</font> 是按
-        EXP。</p>
+    <p>注意: <font color="#0000FF">e</font> 是按 ALPHA ln，而 <font size="1">E</font> 是按 EXP。</p>
     <p>程式 (72 bytes，使用記憶A, B, C, D 及 X)</p>
     <p>1→D: <font color="#0000FF">e</font>: ?→A: ?→B: ?→C: ?→D:</p>
     <p>1+C<span lang="en">÷ <font size="1">E</font> 2→X:&nbsp;&nbsp; </span>A=<font color="#0000FF">e</font>
         <font color="#FF0000">=&gt;</font> BX^( D◢
     </p>
     <p>B=<font color="#0000FF">e</font>
-        <font color="#FF0000">=&gt;</font> A<span lang="en">÷X^( D◢
-            C=<font color="#0000FF">e</font>
+        <font color="#FF0000">=&gt;</font> A<span lang="en">÷X^( D◢ C=<font color="#0000FF">e</font>
             <font color="#FF0000">=&gt;</font>
-            <font size="1">
-                E</font> 2( D <font color="#FF0000"><sup>x</sup>√(</font>A÷B) - 1◢
+            <font size="1"> E</font> 2( D <font color="#FF0000"><sup>x</sup>√(</font>A÷B) - 1◢
         </span>
     </p>
     <p><span lang="en-us">log( X , A ÷ B</span></p>
     <p>　</p>
-    <p>註: 程式的變數按照公式 A = P(1 + r%)<sup>n</sup> 出現的順序輸入變數，亦即是新值 (本利和)、舊值 (本金)、改變百分率
-        (利率)及期數。未知的計算變數請輸入 Ans，期數的預設值為1，若果計算簡單的百分率變化問題，只要輸入1或者直接按 EXE 接受預設值即可。</p>
+    <p>註: 程式的變數按照公式 A = P(1 + r%)<sup>n</sup> 出現的順序輸入變數，亦即是新值 (本利和)、舊值 (本金)、改變百分率 (利率)及期數。未知的計算變數請輸入
+        Ans，期數的預設值為1，若果計算簡單的百分率變化問題，只要輸入1或者直接按 EXE 接受預設值即可。</p>
     <p>　</p>
     <p>例題1: 若某批發商出售一計算機，成本為$140，盈利率為15%，求計算機的售價。</p>
     <p>按 Prog 1 再按 Ans EXE (輸入Ans 表示計算售價(新值))</p>
@@ -59,8 +56,8 @@
     <p>5 EXE (複利期數，顯示本金為 $1643.85)</p>
     <p>計算完結後按 AC 終止程式</p>
     <p>
-        <font color="#FF0000">注意: </font>計算複利息問題時，利率是指每一期的利率，不一定是年利率，例如:
-        每月結算一次，輸入或計算的利率是月利率，亦即是相當於年利率<span lang="en">÷12</span>。
+        <font color="#FF0000">注意: </font>計算複利息問題時，利率是指每一期的利率，不一定是年利率，例如: 每月結算一次，輸入或計算的利率是月利率，亦即是相當於年利率<span
+            lang="en">÷12</span>。
     </p>
     <p>　</p>
     <p>例題5: 若以複利每年結算一次，年利率為4%，本金為$1643.85，求多少年後，本利和會變為 $2000。</p>

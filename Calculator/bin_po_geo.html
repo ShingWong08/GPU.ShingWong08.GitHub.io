@@ -7,94 +7,50 @@
 <body>
     <p align="center"> <b><u>
                 <font size="5"> 二項分佈、泊松分佈及幾何分佈 </font>
-            </u></b>
-    </p>
+            </u></b> </p>
     <p align="center"> <b><u>
                 <font size="5"> (Binomial, Poisson and Geometric Distribution)</font>
-            </u></b>
-    </p>
+            </u></b> </p>
     <p>程式編寫日期: 2014年8月1日</p>
-    <p>注意: 紅色的 <font color="#FF0000">×
-        </font>是乘號，<font color="#FF0000"><sub>n</sub>C<sub>r </sub></font>
-        是按 shift ÷，<font color="#FF0000">e^( </font>是按shift
-        e<sup>x</sup></p>
+    <p>注意: 紅色的 <font color="#FF0000">× </font>是乘號，<font color="#FF0000"><sub>n</sub>C<sub>r </sub></font> 是按 shift ÷，
+        <font color="#FF0000">e^( </font>是按shift e<sup>x</sup></p>
     <p>程式 (86 bytes)</p>
     <p>ClrMemory: ?→X: ?→Y: ?→A: A→B: ?→B: </p>
-    <p>For A→A To B: XY <font color="#FF0000">=&gt;</font> X <font color="#FF0000"><sub>n</sub>C<sub>r</sub></font>
-        A <font color="#FF0000">× </font>Y^( A )(1-Y)^(X-A
-        <font color="#FF0000">M+</font>:
-    </p>
-    <p>X=0 <font color="#FF0000">=&gt;</font> Y^( A )÷ <font color="#800080"><b>(</b></font> A!
-        <font color="#FF0000">e^( </font>Y <font color="#FF0000">M+</font>: Y=0
-        <font color="#FF0000">=&gt;</font> X(1 -
-        X)^(A - 1<font color="#FF0000">M+</font>:
-    </p>
+    <p>For A→A To B: XY <font color="#FF0000">=&gt;</font> X <font color="#FF0000"><sub>n</sub>C<sub>r</sub></font> A
+        <font color="#FF0000">× </font>Y^( A )(1-Y)^(X-A <font color="#FF0000">M+</font>: </p>
+    <p>X=0 <font color="#FF0000">=&gt;</font> Y^( A )÷ <font color="#800080"><b>(</b></font> A! <font color="#FF0000">
+            e^( </font>Y <font color="#FF0000">M+</font>: Y=0 <font color="#FF0000">=&gt;</font> X(1 - X)^(A - 1<font
+            color="#FF0000">M+</font>: </p>
     <p>Next: M</p>
-    <p>註: 程式若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory:&quot;改為&quot;M<font color="#FF0000">M-</font>:
-        <font color="#FF0000">Rec(</font> 0, 0:&quot;，程式長度則變為91 bytes，而程式所使用的記憶為A，B，X，Y及M。
-    </p>
-    <span lang="en">
+    <p>註: 程式若果想保留一些記憶用作儲存臨時數據，可將程式中&quot;ClrMemory:&quot;改為&quot;M<font color="#FF0000">M-</font>: <font
+            color="#FF0000">Rec(</font> 0, 0:&quot;，程式長度則變為91 bytes，而程式所使用的記憶為A，B，X，Y及M。 </p> <span lang="en">
         <p>註2: 如果是使用fx-50FH，上述程式中的乘號<font color="#FF0000"> ×</font>可以省略不輸入，程式長度可節省1 byte。</p>
-        <p>註3: 如果是使用fx-3650P II或fx-50FH II，上述程式中的Y^( A ) ÷ <font color="#800080"><b>(
-                </b></font>A!
-            <font color="#FF0000">e^( </font>Y 可以簡化為 Y^( A ) ÷ A!
-            <font color="#FF0000">e^( </font>Y&nbsp; ，可節省1 byte。
+        <p>註3: 如果是使用fx-3650P II或fx-50FH II，上述程式中的Y^( A ) ÷ <font color="#800080"><b>( </b></font>A! <font
+                color="#FF0000">e^( </font>Y 可以簡化為 Y^( A ) ÷ A! <font color="#FF0000">e^( </font>Y&nbsp; ，可節省1 byte。
         </p>
     </span>
     <p>　</p>
-    <p>
-        例題1:
-        若X ~ Bin(9,0.5)，求P(X=4)。</p>
-    <p>
-        按 Prog 1
-        再按 9 EXE 0.5 EXE 4 EXE
-        EXE (不輸入最後的數值代表只計算一項，顯示答案為0.24609)</p>
-    <p>
-        　</p>
-    <p>
-        例題2:
-        若X ~ Bin(9,0.5)，求P(4≦X≦6)。</p>
-    <p>
-        按 Prog 1
-        再按 9 EXE 0.5 EXE 4 EXE
-        6 EXE (顯示答案為0.65625)</p>
-    <p>
-        　</p>
-    <p>
-        例題3:
-        若X ~ Po(5)，求P(X=4)。</p>
-    <p>
-        按 Prog 1
-        再按 <font color="#FF0000">EXE</font> (不輸入第一個數值表計算泊松分佈)</p>
-    <p>
-        5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.17547)</p>
-    <p>
-        　</p>
-    <p>
-        例題4:
-        若X ~ Po(5)，求P(4≦X≦6)。</p>
-    <p>
-        按 Prog 1
-        再按 <font color="#FF0000">EXE</font> (不輸入第一個數值表計算泊松分佈)</p>
-    <p>
-        5 EXE 4 EXE 6 EXE (顯示P(4≦X≦6)為0.49716)</p>
+    <p> 例題1: 若X ~ Bin(9,0.5)，求P(X=4)。</p>
+    <p> 按 Prog 1 再按 9 EXE 0.5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.24609)</p>
+    <p> 　</p>
+    <p> 例題2: 若X ~ Bin(9,0.5)，求P(4≦X≦6)。</p>
+    <p> 按 Prog 1 再按 9 EXE 0.5 EXE 4 EXE 6 EXE (顯示答案為0.65625)</p>
+    <p> 　</p>
+    <p> 例題3: 若X ~ Po(5)，求P(X=4)。</p>
+    <p> 按 Prog 1 再按 <font color="#FF0000">EXE</font> (不輸入第一個數值表計算泊松分佈)</p>
+    <p> 5 EXE 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.17547)</p>
+    <p> 　</p>
+    <p> 例題4: 若X ~ Po(5)，求P(4≦X≦6)。</p>
+    <p> 按 Prog 1 再按 <font color="#FF0000">EXE</font> (不輸入第一個數值表計算泊松分佈)</p>
+    <p> 5 EXE 4 EXE 6 EXE (顯示P(4≦X≦6)為0.49716)</p>
     <p>　</p>
-    <p>
-        例題5: 若 X ~Ge(0.5)，求P(X=4)。</p>
-    <p>
-        按 Prog 1 再按 0.5 EXE <font color="#FF0000">EXE</font> (不輸入第二個數值表示計算幾何分佈)</p>
-    <p>
-        4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.0625)</p>
-    <p>
-        　</p>
-    <p>
-        例題6:
-        若X ~ Ge(5)，求P(4≦X≦6)。</p>
-    <p>
-        按 Prog 1
-        再按 0.5 EXE <font color="#FF0000">EXE</font> (不輸入第二個數值表示計算幾何分佈)</p>
-    <p>
-        4 EXE 6 EXE (顯示P(4≦X≦6)為0.109375)</p>
+    <p> 例題5: 若 X ~Ge(0.5)，求P(X=4)。</p>
+    <p> 按 Prog 1 再按 0.5 EXE <font color="#FF0000">EXE</font> (不輸入第二個數值表示計算幾何分佈)</p>
+    <p> 4 EXE EXE (不輸入最後的數值代表只計算一項，顯示答案為0.0625)</p>
+    <p> 　</p>
+    <p> 例題6: 若X ~ Ge(5)，求P(4≦X≦6)。</p>
+    <p> 按 Prog 1 再按 0.5 EXE <font color="#FF0000">EXE</font> (不輸入第二個數值表示計算幾何分佈)</p>
+    <p> 4 EXE 6 EXE (顯示P(4≦X≦6)為0.109375)</p>
     <p>　</p>
     <p><a href="index.html">返回 CASIO fx-50FH、fx-3650P II、fx-50FH II及fx-50F PLUS 程式集</a></p>
 </body>

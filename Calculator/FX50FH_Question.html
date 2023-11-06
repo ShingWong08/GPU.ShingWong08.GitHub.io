@@ -30,49 +30,40 @@
     <p>　</p>
     <p>解答:</p>
     <p><b><a name="Q1" id="Q1"></a>1. FX50FH與FX3650P比較，計算功能有何分別？</b></p>
-    <p>答:
-        與FX3650P計算功能不同，FX50FH沒有微積分計算功能，不過FX50FH就加入了二十三個內置小程式，包括一元二次方程、餘弦定律及希羅公式等等，亦加入了四十個物理常數。程式方面亦有不少改善，程式容量有680
+    <p>答: 與FX3650P計算功能不同，FX50FH沒有微積分計算功能，不過FX50FH就加入了二十三個內置小程式，包括一元二次方程、餘弦定律及希羅公式等等，亦加入了四十個物理常數。程式方面亦有不少改善，程式容量有680
         bytes，加入新指令等等，其實FX50FH在各方面都比舊款FX3650P有不少改善地方，有關詳情請參考<a href="fx-50FH_information.html">FX50FH與FX3650P功能比較</a>資料。
     </p>
     <p>　</p>
     <p><b><a name="Q2" id="Q2"></a>2. FX50FH可否計算微積分問題?</b></p>
-    <p>答: FX50FH / FX50F
-        PLUS沒有內置的微積分功能，因此不能直接計算這方面的問題，不過可以透過編寫程式方法，計算微分及定積分的問題，大家可以嘗試<a href="differentiate_Integrate.html">這個程式</a>或使用<a
-            href="fx-50F_Plus.html#Q6">程式集中其它微分及定積分程式</a>。</p>
+    <p>答: FX50FH / FX50F PLUS沒有內置的微積分功能，因此不能直接計算這方面的問題，不過可以透過編寫程式方法，計算微分及定積分的問題，大家可以嘗試<a
+            href="differentiate_Integrate.html">這個程式</a>或使用<a href="fx-50F_Plus.html#Q6">程式集中其它微分及定積分程式</a>。</p>
     <p>　</p>
-    <p><a name="Q3" id="Q3"></a><b>3. 若果A=5，計算10÷2A時，為何fx-3650P的答案是1，但FX50FH/Fx50F
-            PLUS的答案卻是25?</b></p>
-    <p>答: 這是因為fx-3650P與 FX50FH/ FX50F
-        PLUS的計算先後順序不相同，FX50FH隱乘及乘號有相同的計算次序，這個設計避免了不必要的混淆，例如: 計算2A，式中的2A其實有一個隱乘，即是
-        2×A，但在 fx-3650P計算機，隱乘及乘號是兩個不同的計算次序，假設A儲存的數值是5，算式 10÷2A
-        與 算式10÷2×A就會得出不同答案，前者答案是1 (即是先計算2A=10，再計算10÷10=1)，後者答案則是25
+    <p><a name="Q3" id="Q3"></a><b>3. 若果A=5，計算10÷2A時，為何fx-3650P的答案是1，但FX50FH/Fx50F PLUS的答案卻是25?</b></p>
+    <p>答: 這是因為fx-3650P與 FX50FH/ FX50F PLUS的計算先後順序不相同，FX50FH隱乘及乘號有相同的計算次序，這個設計避免了不必要的混淆，例如: 計算2A，式中的2A其實有一個隱乘，即是 2×A，但在
+        fx-3650P計算機，隱乘及乘號是兩個不同的計算次序，假設A儲存的數值是5，算式 10÷2A 與 算式10÷2×A就會得出不同答案，前者答案是1 (即是先計算2A=10，再計算10÷10=1)，後者答案則是25
         (即是先計算10÷2=5，再計算5A=25)，但在fx-50FH上執行，因計算次序相同，兩個算式的意義相同，亦即是答案都是25。</p>
     <p>　</p>
     <p><a name="Q4" id="Q4"></a><b>4. 關括何時可以省略 ?</b></p>
-    <p>答: 當使用了開括號後，在算式的適當位置必須加關括號，否則計算機無法正確計算答案，但在按 EXE 之前的算式最後的關括號可以省略一個以上，例如: 2 (
-        3 + ( 4 + 5 <font color="#FF0000">) ) EXE</font>，<font color="#FF0000">紅色</font>的兩個關括號可以省略，即按
-        2 ( 3 + ( 4 + 5 EXE 就可以。不過有網友發現在以下特別情況使用 <font color="#0000FF">Rec( </font>、<font color="#0000FF">Pol(</font>
-        及 <font color="#0000FF">log(</font> 功能會出現問題，就是當使用<font color="#FF0000">二個參數時，第二個
-            參數單獨使用字母記憶又沒有任何其它運算及沒有關括號就會出現計算錯誤</font>，
-        例如: 若記憶A的數值為2，按 <font color="#0000FF">log( 2, A EXE</font>會出現答案0.301029995，但 log<sub>2</sub>
-        2 的正確答案是1，而計算出的答案卻變成 log<sub>10</sub> 2 =&nbsp;
-        0.301029995，所以切記計算上述三個函數要加關括號防止問題的出現。有網友亦就這個問題向CASIO電郵查詢，回覆建議所有帶有開括號的函數都要加關括號。</p>
+    <p>答: 當使用了開括號後，在算式的適當位置必須加關括號，否則計算機無法正確計算答案，但在按 EXE 之前的算式最後的關括號可以省略一個以上，例如: 2 ( 3 + ( 4 + 5 <font color="#FF0000">)
+            ) EXE</font>，<font color="#FF0000">紅色</font>的兩個關括號可以省略，即按 2 ( 3 + ( 4 + 5 EXE 就可以。不過有網友發現在以下特別情況使用 <font
+            color="#0000FF">Rec( </font>、<font color="#0000FF">Pol(</font> 及 <font color="#0000FF">log(</font>
+        功能會出現問題，就是當使用<font color="#FF0000">二個參數時，第二個 參數單獨使用字母記憶又沒有任何其它運算及沒有關括號就會出現計算錯誤</font>， 例如: 若記憶A的數值為2，按 <font
+            color="#0000FF">log( 2, A EXE</font>會出現答案0.301029995，但 log<sub>2</sub> 2 的正確答案是1，而計算出的答案卻變成 log<sub>10</sub>
+        2 =&nbsp; 0.301029995，所以切記計算上述三個函數要加關括號防止問題的出現。有網友亦就這個問題向CASIO電郵查詢，回覆建議所有帶有開括號的函數都要加關括號。</p>
     <p>　</p>
     <p><a name="Q5" id="Q5"></a><b>5. 如何計算次方(例如: 2<sup>10</sup>)及開多次方(例如: <sup>5</sup>√32)的問題？</b></p>
     <p>答: 使用計數機上 ^ 及<sup>
             <font color="#FF0000">x</font>
         </sup>
         <font color="#FF0000">√</font><sup>
-            <font color="#FF0000">
-            </font>&nbsp;
+            <font color="#FF0000"> </font>&nbsp;
         </sup>的功能，
     </p>
     <p>例如:計算2<sup>10&nbsp; </sup></p>
     <p>按 2&nbsp; ^&nbsp; 10 EXE&nbsp; (顯示算式 2^( 10 及答案1024)</p>
     <p>計算<sup>5</sup>√32 </p>
     <p>按 5&nbsp; SHIFT <font color="#FF0000"><sup>&nbsp;x</font></sup>
-        <font color="#FF0000">√</font>
-        <sup>&nbsp;</sup>32 (顯示算式 5<sup> x</sup>√( 32 及答案 2)
+        <font color="#FF0000">√</font> <sup>&nbsp;</sup>32 (顯示算式 5<sup> x</sup>√( 32 及答案 2)
     </p>
     <p>　</p>
     <p><a name="Q6" id="Q6"></a><b>6. 小數位及有效數字是如何設定及取消？</b></p>
@@ -86,8 +77,7 @@
     <p>答: </p>
     <p>正常計算模式:&nbsp;&nbsp;&nbsp;&nbsp; 按 MODE 1 (無特別的細字顯示)</p>
     <p>複數模式:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 按 MODE 2 (有 CMPLX 細字顯示)</p>
-    <p>基數模式:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 按 MODE 3 (計數機右邊有
-        H或o或d或b 細字顯示所用進制)</p>
+    <p>基數模式:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 按 MODE 3 (計數機右邊有 H或o或d或b 細字顯示所用進制)</p>
     <p>普通統計模式: 按 MODE 4 (有 SD 細字顯示)</p>
     <p>
         <font color="#FF0000">回歸模式</font> (有 REG 細字顯示)
@@ -107,15 +97,15 @@
     <p>百分度設定: 按 SHIFT MODE 3</p>
     <p>　</p>
     <p><a name="Q9" id="Q9"></a><b>9. 如何將計算的結果儲存在計數機中？</b></p>
-    <p>答: 可以儲存數值的字母記憶有A、B、C、D、X、Y及M，例如要將數值儲存到記憶A，只要按 SHIFT STO A，要顯示記憶A的數值，在計算完結後，按
-        RCL A，要使用記憶A計算按ALPHA&nbsp; A，以代數符號A表示。</p>
+    <p>答: 可以儲存數值的字母記憶有A、B、C、D、X、Y及M，例如要將數值儲存到記憶A，只要按 SHIFT STO A，要顯示記憶A的數值，在計算完結後，按 RCL A，要使用記憶A計算按ALPHA&nbsp;
+        A，以代數符號A表示。</p>
     <p>　</p>
     <p><a name="Q10" id="Q10"></a><b>10. 為何計算平均數及標準差總是很容易出錯？</b></p>
     <p>答: 出現錯誤的原因可能很多，可以注意下列幾點，看看情況可否改善。</p>
-    <p>(1) 在輸入新數據前，必定要先清除原先的統計記憶(ClrStat)按 SHIFT CLR 1 (亦即是按 SHIFT 9 1)，否則計算很可能出錯，
-        另外切換計算模式至<font color="#FF0000">其它計算模式</font>，或執行FreqOn 或 FreqOff 亦會清除所有統計記憶。</p>
-    <p>(2) 由於可能要輸入不少的統計數據，輸入時要較為小心，輸入完成後計數機會同時顯示數據輸入總數，請核對是否正確，另外亦可以按 SHIFT 1 3
-        顯示n值(數據總數目)，請核對真實數據的數目是否相同，若果不相同表示輸入錯誤。</p>
+    <p>(1) 在輸入新數據前，必定要先清除原先的統計記憶(ClrStat)按 SHIFT CLR 1 (亦即是按 SHIFT 9 1)，否則計算很可能出錯， 另外切換計算模式至<font color="#FF0000">其它計算模式
+        </font>，或執行FreqOn 或 FreqOff 亦會清除所有統計記憶。</p>
+    <p>(2) 由於可能要輸入不少的統計數據，輸入時要較為小心，輸入完成後計數機會同時顯示數據輸入總數，請核對是否正確，另外亦可以按 SHIFT 1 3 顯示n值(數據總數目)，請核對真實數據的數目是否相同，若果不相同表示輸入錯誤。
+    </p>
     <p>　</p>
     <p><a name="Q11" id="Q11"></a><b>11. 為何輸入統計數據的頻數會出現Math ERROR?</b></p>
     <p>答: 這是由於設定了頻數關閉(FreqOff)的原故，只要按 SHIFT MODE ← ← 1 設定了頻數開啟(FreqOn)問題就可以解決。</p>
@@ -126,420 +116,272 @@
     <p>答: 使用 EXP 這個按鍵，例如: 2.1×10<sup>11</sup> 按 2.1 EXP 11</p>
     <p>　</p>
     <p><b><a name="Q13" id="Q13"></a>13. 如何計算非10為底的對數？</b></p>
-    <p>答: FX50FH對數功能 <font color="#FF0000">log( </font>
-        ，可以容許自行設定底的數值，若沒有設定則是以10為底，例如: 計算 log<sub>2</sub> 3 可以按 <font color="#0000FF">
-            log( 2 , 3 EXE</font>，若果是10為底，例如: 計算 log<sub>10</sub> 3，只要簡單按
-        <font color="#0000FF">log( 3 EXE</font> 就可以。
-    </p>
+    <p>答: FX50FH對數功能 <font color="#FF0000">log( </font> ，可以容許自行設定底的數值，若沒有設定則是以10為底，例如: 計算 log<sub>2</sub> 3 可以按 <font
+            color="#0000FF"> log( 2 , 3 EXE</font>，若果是10為底，例如: 計算 log<sub>10</sub> 3，只要簡單按 <font color="#0000FF">log( 3
+            EXE</font> 就可以。 </p>
     <p>　</p>
     <p><a name="Q14" id="Q14"></a> <b>
             <font color="#000000">14. 修改算式時，如何可以將新的字元插入或覆蓋原有算式?</font>
         </b></p>
-    <p>
-        答: FX50FH直立浮標表示為插入狀態，橫向底線浮標表示為覆蓋狀態，按 SHIFT INS (亦即是按 SHIFT DEL) 即可將切換游標的插入或覆蓋狀態。</p>
+    <p> 答: FX50FH直立浮標表示為插入狀態，橫向底線浮標表示為覆蓋狀態，按 SHIFT INS (亦即是按 SHIFT DEL) 即可將切換游標的插入或覆蓋狀態。</p>
     <p>　</p>
     <p><a name="Q15" id="Q15"></a><b>15. 計算時出現錯誤 (ERROR) 不知如何做？</b></p>
-    <p>
-        答: 可以使用FX50FH / FX50F PLUS的錯誤指示器 (Error locator)。當出現錯誤時(ERROR)，按 → 或
-        ←鍵會調出計算式，而游標即會停留在錯誤出現的位置上，只要找出錯誤原因及改正，再執行算式即可。另外出現錯誤時，會顯示錯誤的類型，例如: Syntax ERROR
-        (表示算式中含有錯誤)，Math ERROR (表示計算結果超出可計算範圍 或 輸入數值超出輸入範圍 或 計算一個不合理運算 (例如:
-        除以零)，這些資都可以幫助找出錯誤的原因。</p>
+    <p> 答: 可以使用FX50FH / FX50F PLUS的錯誤指示器 (Error locator)。當出現錯誤時(ERROR)，按 → 或
+        ←鍵會調出計算式，而游標即會停留在錯誤出現的位置上，只要找出錯誤原因及改正，再執行算式即可。另外出現錯誤時，會顯示錯誤的類型，例如: Syntax ERROR (表示算式中含有錯誤)，Math ERROR
+        (表示計算結果超出可計算範圍 或 輸入數值超出輸入範圍 或 計算一個不合理運算 (例如: 除以零)，這些資都可以幫助找出錯誤的原因。</p>
     <p>　</p>
     <p><a name="Q16" id="Q16"></a><b>16. 輸入程式時，一些FX50FH的特別指令(例如: For)不知如何輸入?</b></p>
     <p>答: 可以參考下表的資料，注意: 紅色的<font color="#FF0000">→</font>是指Replay的右鍵，紅色的<font color="#FF0000">←</font>是指Replay的左鍵</p>
-
     <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%" id="AutoNumber1"
         height="455" bordercolorlight="#666666" bordercolordark="#000000">
         <tr>
             <td width="25%" align="center" height="16">
                 <p align="center">特別指令或符號
             </td>
-            <td width="25%" align="center" height="16">程式中的按法
-            </td>
-            <td width="25%" align="center" height="16">特別指令或符號
-            </td>
-            <td width="25%" align="center" height="16">程式中的按法
-            </td>
+            <td width="25%" align="center" height="16">程式中的按法 </td>
+            <td width="25%" align="center" height="16">特別指令或符號 </td>
+            <td width="25%" align="center" height="16">程式中的按法 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">ClrMemory
-            </td>
-            <td width="25%" align="center" height="16">SHIFT 9 1
-            </td>
-            <td width="25%" align="center" height="16">Fix
-            </td>
+            <td width="25%" align="center" height="16">ClrMemory </td>
+            <td width="25%" align="center" height="16">SHIFT 9 1 </td>
+            <td width="25%" align="center" height="16">Fix </td>
             <td width="25%" align="center" height="16">SHIFT MODE <b>
                     <font color="#FF0000">→</font>
-                </b> 1
-            </td>
+                </b> 1 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="19">?
-            </td>
-            <td width="25%" align="center" height="19">Prog 1
-            </td>
-            <td width="25%" align="center" height="16">Sci
-            </td>
+            <td width="25%" align="center" height="19">? </td>
+            <td width="25%" align="center" height="19">Prog 1 </td>
+            <td width="25%" align="center" height="16">Sci </td>
             <td width="25%" align="center" height="16">SHIFT MODE <font color="#FF0000"><b>→</b></font> 2<!--mstheme-->
                 </font>
             </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="19">→
-            </td>
-            <td width="25%" align="center" height="19">SHIFT RCL 或
-                Prog 2
-            </td>
-            <td width="25%" align="center" height="16">Norm
-            </td>
+            <td width="25%" align="center" height="19">→ </td>
+            <td width="25%" align="center" height="19">SHIFT RCL 或 Prog 2 </td>
+            <td width="25%" align="center" height="16">Norm </td>
             <td width="25%" align="center" height="16">SHIFT MODE <font color="#FF0000"><b>→</b></font> 3<!--mstheme-->
                 </font>
             </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">:
-            </td>
-            <td width="25%" align="center" height="16">EXE 或
-                Prog
-                3
-            </td>
-            <td width="25%" align="center" height="16">┘
-            </td>
-            <td width="25%" align="center" height="16">a b/c
-            </td>
+            <td width="25%" align="center" height="16">: </td>
+            <td width="25%" align="center" height="16">EXE 或 Prog 3 </td>
+            <td width="25%" align="center" height="16">┘ </td>
+            <td width="25%" align="center" height="16">a b/c </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="19">◢
-            </td>
-            <td width="25%" align="center" height="19">Prog 4
-            </td>
-            <td width="25%" align="center" height="16">Deg
-            </td>
-            <td width="25%" align="center" height="16">SHIFT MODE 1
-            </td>
+            <td width="25%" align="center" height="19">◢ </td>
+            <td width="25%" align="center" height="19">Prog 4 </td>
+            <td width="25%" align="center" height="16">Deg </td>
+            <td width="25%" align="center" height="16">SHIFT MODE 1 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="19">=&gt;
-            </td>
-            <td width="25%" align="center" height="19">Prog<font color="#FF0000"><b>
-                        → </b></font>1
-            </td>
-            <td width="25%" align="center" height="16">Rad
-            </td>
-            <td width="25%" align="center" height="16">SHIFT MODE 2
-            </td>
+            <td width="25%" align="center" height="19">=&gt; </td>
+            <td width="25%" align="center" height="19">Prog<font color="#FF0000"><b> → </b></font>1 </td>
+            <td width="25%" align="center" height="16">Rad </td>
+            <td width="25%" align="center" height="16">SHIFT MODE 2 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="19">=
-            </td>
-            <td width="25%" align="center" height="19">Prog
-                <b>
+            <td width="25%" align="center" height="19">= </td>
+            <td width="25%" align="center" height="19">Prog <b>
                     <font color="#FF0000">→</font>
-                </b> 2
-            </td>
-            <td width="25%" align="center" height="16">Gra
-            </td>
-            <td width="25%" align="center" height="16">SHIFT MODE 3
-            </td>
+                </b> 2 </td>
+            <td width="25%" align="center" height="16">Gra </td>
+            <td width="25%" align="center" height="16">SHIFT MODE 3 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">≠
-            </td>
+            <td width="25%" align="center" height="16">≠ </td>
             <td width="25%" align="center" height="16">Prog <b>
                     <font color="#FF0000">→</font>
-                </b>&nbsp; 3
-            </td>
-            <td width="25%" align="center" height="16">Abs(
-            </td>
-            <td width="25%" align="center" height="16">SHIFT )
-            </td>
+                </b>&nbsp; 3 </td>
+            <td width="25%" align="center" height="16">Abs( </td>
+            <td width="25%" align="center" height="16">SHIFT ) </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">&gt;
-            </td>
+            <td width="25%" align="center" height="16">&gt; </td>
             <td width="25%" align="center" height="16">Prog <b>
                     <font color="#FF0000">→ →</font>
-                </b>&nbsp; 1
-            </td>
-            <td width="25%" align="center" height="16">
-                arg(
-            </td>
-            <td width="25%" align="center" height="16">SHIFT (
-            </td>
+                </b>&nbsp; 1 </td>
+            <td width="25%" align="center" height="16"> arg( </td>
+            <td width="25%" align="center" height="16">SHIFT ( </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">&lt;
-            </td>
+            <td width="25%" align="center" height="15">&lt; </td>
             <td width="25%" align="center" height="15">Prog <b>
                     <font color="#FF0000">→ →</font>
-                </b>&nbsp; 2
-            </td>
-            <td width="25%" align="center" height="16">
-                Conig(
-            </td>
-            <td width="25%" align="center" height="16">SHIFT ,
-            </td>
+                </b>&nbsp; 2 </td>
+            <td width="25%" align="center" height="16"> Conig( </td>
+            <td width="25%" align="center" height="16">SHIFT , </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">≧
-            </td>
+            <td width="25%" align="center" height="16">≧ </td>
             <td width="25%" align="center" height="16">Prog <b>
                     <font color="#FF0000">→ →</font>
-                </b>&nbsp; 3
-            </td>
-            <td width="25%" align="center" height="16">i
-            </td>
-            <td width="25%" align="center" height="16">ENG
-            </td>
+                </b>&nbsp; 3 </td>
+            <td width="25%" align="center" height="16">i </td>
+            <td width="25%" align="center" height="16">ENG </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">≦
-            </td>
+            <td width="25%" align="center" height="16">≦ </td>
             <td width="25%" align="center" height="16">Prog <b>
                     <font color="#FF0000">→ →</font>
-                </b>&nbsp; 4
-            </td>
-            <td width="25%" align="center" height="16">ClrStat
-            </td>
-            <td width="25%" align="center" height="16">SHIFT 9 1
-            </td>
+                </b>&nbsp; 4 </td>
+            <td width="25%" align="center" height="16">ClrStat </td>
+            <td width="25%" align="center" height="16">SHIFT 9 1 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">Goto
-            </td>
+            <td width="25%" align="center" height="16">Goto </td>
             <td width="25%" align="center" height="16">Prog <b>
                     <font color="#FF0000">→ → →</font>
-                </b>&nbsp;1
-            </td>
-            <td width="25%" align="center" height="19">Σx<sup>2</sup>
-            </td>
-            <td width="25%" align="center" height="19">SHIFT 1 1
-            </td>
+                </b>&nbsp;1 </td>
+            <td width="25%" align="center" height="19">Σx<sup>2</sup> </td>
+            <td width="25%" align="center" height="19">SHIFT 1 1 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">Lbl
-            </td>
+            <td width="25%" align="center" height="15">Lbl </td>
             <td width="25%" align="center" height="15">Prog <b>
                     <font color="#FF0000">→ → →</font>
-                </b>&nbsp;2
-            </td>
-            <td width="25%" align="center" height="19">Σx
-            </td>
-            <td width="25%" align="center" height="19">SHIFT 1 2
-            </td>
+                </b>&nbsp;2 </td>
+            <td width="25%" align="center" height="19">Σx </td>
+            <td width="25%" align="center" height="19">SHIFT 1 2 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">while
-            </td>
+            <td width="25%" align="center" height="15">while </td>
             <td width="25%" align="center" height="15">Prog <b>
                     <font color="#FF0000">→ → → →</font>
-                </b>&nbsp;1
-            </td>
-            <td width="25%" align="center" height="16">n
-            </td>
-            <td width="25%" align="center" height="16">SHIFT 1 3
-            </td>
+                </b>&nbsp;1 </td>
+            <td width="25%" align="center" height="16">n </td>
+            <td width="25%" align="center" height="16">SHIFT 1 3 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">whileEnd
-            </td>
+            <td width="25%" align="center" height="15">whileEnd </td>
             <td width="25%" align="center" height="15">Prog <b>
                     <font color="#FF0000">→ → → →</font>
-                </b>&nbsp;2
-            </td>
-            <td width="25%" align="center" height="19">Σy
-            </td>
+                </b>&nbsp;2 </td>
+            <td width="25%" align="center" height="19">Σy </td>
             <td width="25%" align="center" height="19">SHIFT 1 <b>
                     <font color="#FF0000">→</font>
-                </b> 2
-            </td>
+                </b> 2 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">If
-            </td>
-            <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>←</b>
-                </font>1
-            </td>
-            <td width="25%" align="center" height="19">Σxy
-            </td>
+            <td width="25%" align="center" height="15">If </td>
+            <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>←</b> </font>1 </td>
+            <td width="25%" align="center" height="19">Σxy </td>
             <td width="25%" align="center" height="19">SHIFT 1 <b>
                     <font color="#FF0000">→</font>
-                </b> 3
-            </td>
+                </b> 3 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">Then
-            </td>
-            <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>←</b></font> 2
-            </td>
-            <td width="25%" align="center" height="16"> <span style="text-decoration: overline">x</span>
-            </td>
-            <td width="25%" align="center" height="16">SHIFT 2 1
-            </td>
+            <td width="25%" align="center" height="15">Then </td>
+            <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>←</b></font> 2 </td>
+            <td width="25%" align="center" height="16"> <span style="text-decoration: overline">x</span> </td>
+            <td width="25%" align="center" height="16">SHIFT 2 1 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">Else
-            </td>
+            <td width="25%" align="center" height="15">Else </td>
             <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>← ←</b> </font>1<!--mstheme-->
                 </font>
             </td>
-            <td width="25%" align="center" height="16">;
-            </td>
-            <td width="25%" align="center" height="16">SHIFT ,
-            </td>
+            <td width="25%" align="center" height="16">; </td>
+            <td width="25%" align="center" height="16">SHIFT , </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">IfEnd
-            </td>
+            <td width="25%" align="center" height="15">IfEnd </td>
             <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>← ←</b> </font>2<!--mstheme-->
                 </font>
             </td>
-            <td width="25%" align="center" height="16">
-                DT
-            </td>
+            <td width="25%" align="center" height="16"> DT </td>
             <td width="25%" align="center" height="16">
                 <font color="#FF0000">M+</font>
             </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">For
-            </td>
+            <td width="25%" align="center" height="15">For </td>
             <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>← ← ←</b> </font>1<!--mstheme-->
                 </font>
             </td>
             <td width="25%" align="center" height="19">
                 <font size="1">E</font>
             </td>
-            <td width="25%" align="center" height="19">EXP
-            </td>
+            <td width="25%" align="center" height="19">EXP </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">To
-            </td>
+            <td width="25%" align="center" height="15">To </td>
             <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>← ← ←</b> </font>2<!--mstheme-->
                 </font>
             </td>
-            <td width="25%" align="center" height="19">10^(
-            </td>
-            <td width="25%" align="center" height="19">SHIFT log
-            </td>
+            <td width="25%" align="center" height="19">10^( </td>
+            <td width="25%" align="center" height="19">SHIFT log </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">Step
-            </td>
+            <td width="25%" align="center" height="15">Step </td>
             <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>← ← ←</b> </font>3<!--mstheme-->
                 </font>
             </td>
-            <td width="25%" align="center" height="16">
-                FreqOn
-            </td>
-            <td width="25%" align="center" height="16">SHIFT MODE <font color="#FF0000"><b>← ← </b> </font>
-                1
-            </td>
+            <td width="25%" align="center" height="16"> FreqOn </td>
+            <td width="25%" align="center" height="16">SHIFT MODE <font color="#FF0000"><b>← ← </b> </font> 1 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">Next
-            </td>
+            <td width="25%" align="center" height="15">Next </td>
             <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>← ← ← ←</b> </font>1<!--mstheme-->
                 </font>
             </td>
-            <td width="25%" align="center" height="16">FreqOff
-            </td>
-            <td width="25%" align="center" height="16">SHIFT MODE <font color="#FF0000"><b>← ← </b> </font>
-                2
-            </td>
+            <td width="25%" align="center" height="16">FreqOff </td>
+            <td width="25%" align="center" height="16">SHIFT MODE <font color="#FF0000"><b>← ← </b> </font> 2 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="15">Break
-            </td>
+            <td width="25%" align="center" height="15">Break </td>
             <td width="25%" align="center" height="15">Prog <font color="#FF0000"><b>← ← ← ←</b> </font>2<!--mstheme-->
                 </font>
             </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
+            <td width="25%" align="center" height="16"> </td>
+            <td width="25%" align="center" height="16"> </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">A
-            </td>
-            <td width="25%" align="center" height="16">ALPHA (-)
-            </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
+            <td width="25%" align="center" height="16">A </td>
+            <td width="25%" align="center" height="16">ALPHA (-) </td>
+            <td width="25%" align="center" height="16"> </td>
+            <td width="25%" align="center" height="16"> </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="17">B
-            </td>
-            <td width="25%" align="center" height="17">ALPHA <sup>
-                    o,,,</sup>
-            </td>
-            <td width="25%" align="center" height="19">　
-            </td>
-            <td width="25%" align="center" height="19">　
-            </td>
+            <td width="25%" align="center" height="17">B </td>
+            <td width="25%" align="center" height="17">ALPHA <sup> o,,,</sup> </td>
+            <td width="25%" align="center" height="19">　 </td>
+            <td width="25%" align="center" height="19">　 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">C
-            </td>
-            <td width="25%" align="center" height="16">ALPHA hyp
-            </td>
-            <td width="25%" align="center" height="19">　
-            </td>
-            <td width="25%" align="center" height="19">　
-            </td>
+            <td width="25%" align="center" height="16">C </td>
+            <td width="25%" align="center" height="16">ALPHA hyp </td>
+            <td width="25%" align="center" height="19">　 </td>
+            <td width="25%" align="center" height="19">　 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">D
-            </td>
-            <td width="25%" align="center" height="16">ALPHA sin
-            </td>
-            <td width="25%" align="center" height="19">　
-            </td>
-            <td width="25%" align="center" height="19">　
-            </td>
+            <td width="25%" align="center" height="16">D </td>
+            <td width="25%" align="center" height="16">ALPHA sin </td>
+            <td width="25%" align="center" height="19">　 </td>
+            <td width="25%" align="center" height="19">　 </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">X
-            </td>
-            <td width="25%" align="center" height="16">Aplha )
-            </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
+            <td width="25%" align="center" height="16">X </td>
+            <td width="25%" align="center" height="16">Aplha ) </td>
+            <td width="25%" align="center" height="16"> </td>
+            <td width="25%" align="center" height="16"> </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">Y
-            </td>
-            <td width="25%" align="center" height="16">ALPHA ，
-            </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
+            <td width="25%" align="center" height="16">Y </td>
+            <td width="25%" align="center" height="16">ALPHA ， </td>
+            <td width="25%" align="center" height="16"> </td>
+            <td width="25%" align="center" height="16"> </td>
         </tr>
         <tr>
-            <td width="25%" align="center" height="16">M
-            </td>
+            <td width="25%" align="center" height="16">M </td>
             <td width="25%" align="center" height="16">ALPHA <font color="#FF0000">M+</font>
             </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
-            <td width="25%" align="center" height="16">
-
-            </td>
+            <td width="25%" align="center" height="16"> </td>
+            <td width="25%" align="center" height="16"> </td>
         </tr>
     </table>
     <p>註: 輸入程式指令時按Prog 亦可以改為按SHIFT 3代替。</p>
@@ -549,9 +391,8 @@
     <p>
         <font color="#FF0000"><b>輸入新程式步驟</b></font>
     </p>
-    <p align="left">1. 按 <font color="#0000FF">MODE 6</font> 這時第一行會顯示EDIT
-        Program，而第二行顯示 P-1234及餘下的程式容量，已輸入的位置程式，會在螢幕上邊的細字表示，例如有P4細字，表示P4位置己經輸入了程式，若果是輸入<font color="#FF0000">新程式</font>
-        ，請選擇沒有使用的位置，例如:
+    <p align="left">1. 按 <font color="#0000FF">MODE 6</font> 這時第一行會顯示EDIT Program，而第二行顯示
+        P-1234及餘下的程式容量，已輸入的位置程式，會在螢幕上邊的細字表示，例如有P4細字，表示P4位置己經輸入了程式，若果是輸入<font color="#FF0000">新程式</font> ，請選擇沒有使用的位置，例如:
         沒有P1細字，可以再按 <font color="#0000FF">1</font> 選用P1位置輸入新的程式。</p>
     <p align="left">　</p>
     <p align="left">2. 選擇了程式位置後，會出現程式執行模式選單，可以按</p>
@@ -583,8 +424,7 @@
         <font color="#0000FF">5 → 1</font> 選用 REG lnv 模式 (倒數回歸模式) 或
     </p>
     <p align="left">
-        <font color="#0000FF">5 → 2</font> 選用 REG Quad 模式 (二次回歸模式)&nbsp;
-        或
+        <font color="#0000FF">5 → 2</font> 選用 REG Quad 模式 (二次回歸模式)&nbsp; 或
     </p>
     <p align="left">
         <font color="#0000FF">5 → 3</font> 選用 REG Lin 模式 (AB指數回歸模式)
@@ -593,46 +433,32 @@
     <p align="left">　</p>
     <p align="left">3. 輸入或修改完成後，請查看程式所用實際空間是否與程式大小相同。若果不同表示很有可能輸入有錯誤，請小心檢查。</p>
     <p align="left">　</p>
-    <p align="left">4. 按 <font color="#0000FF">MODE 6 2</font> 或 直按
-        <font color="#0000FF">ON</font> 跳出Edit Mode，返回RUN模式，這時輸入程式的步驟亦完成。
-    </p>
+    <p align="left">4. 按 <font color="#0000FF">MODE 6 2</font> 或 直按 <font color="#0000FF">ON</font> 跳出Edit
+        Mode，返回RUN模式，這時輸入程式的步驟亦完成。 </p>
     <p align="left">　</p>
     <p align="left">
         <font color="#FF0000"><b>修改舊程式步驟</b></font>
     </p>
-    <p align="left">按 <font color="#0000FF">MODE 6</font> 這時第一行會顯示EDIT
-        Program，而第二行顯示 P-1234及餘下的程式容量，已輸入的位置程式，
-        會在螢幕上邊的細字表示，例如有P4細字，表示P4位置己經輸入了程式，假設是修改P4程式，再按 <font color="#0000FF">4</font>
-        選用P4位置程式進行修改，修改完成後按 <font color="#0000FF">MODE 6 2</font> 或直接按
-        <font color="#FF0000">ON </font>離開Edit mode即可。
-    </p>
-    <p align="left">另外在按執行程式時出現ERROR，可以按Replay
-        右/左鍵( <font color="#0000FF">←</font> 或 <font color="#0000FF">→ </font>
-        )，計數機會直按進入Edit模式，並且浮標的位置就是出現問題的位置。另外亦應留意錯誤訊息，對於了解程式的問題及除錯都會有幫助，修改完成後按
-        <font color="#0000FF">MODE 6 2</font> 或直接按 <font color="#FF0000">ON </font>
-        離開Edit mode即可。
-    </p>
+    <p align="left">按 <font color="#0000FF">MODE 6</font> 這時第一行會顯示EDIT Program，而第二行顯示 P-1234及餘下的程式容量，已輸入的位置程式，
+        會在螢幕上邊的細字表示，例如有P4細字，表示P4位置己經輸入了程式，假設是修改P4程式，再按 <font color="#0000FF">4</font> 選用P4位置程式進行修改，修改完成後按 <font
+            color="#0000FF">MODE 6 2</font> 或直接按 <font color="#FF0000">ON </font>離開Edit mode即可。 </p>
+    <p align="left">另外在按執行程式時出現ERROR，可以按Replay 右/左鍵( <font color="#0000FF">←</font> 或 <font color="#0000FF">→ </font>
+        )，計數機會直按進入Edit模式，並且浮標的位置就是出現問題的位置。另外亦應留意錯誤訊息，對於了解程式的問題及除錯都會有幫助，修改完成後按 <font color="#0000FF">MODE 6 2</font> 或直接按
+        <font color="#FF0000">ON </font> 離開Edit mode即可。 </p>
     <p align="left">　</p>
     <p align="left"><u><b>
                 <font color="#FF0000" size="4">刪除程式</font>
             </b></u></p>
-    <p align="left">按 <font color="#0000FF">MODE 6 3</font>，此時會顯示 DELETE Program
-        及程式餘下可用的空間。再選擇刪除程式的位置(按1,2,3或4)。</p>
+    <p align="left">按 <font color="#0000FF">MODE 6 3</font>，此時會顯示 DELETE Program 及程式餘下可用的空間。再選擇刪除程式的位置(按1,2,3或4)。</p>
     <p>　</p>
     <p><a name="Q18" id="Q18"></a><b>18. 為何無法使用FX50F 或 FX50F PLUS內置程式庫的程式？</b></p>
-    <p>答: 使用內置程式庫的程式必須在 comp 模式中執行，若果不是在 comp 模式，請按 MODE 1 進入 comp
-        模式。另外每一個內置程式都有一個編號，使用程式時，請先按FMLA按再按代表程式的兩位編號進入特定的程式。</p>
-    <p>　</p>
-    <p>
-        <a href="index.html">返回 fx-50FH 及 fx-50F PLUS程式集</a>
+    <p>答: 使用內置程式庫的程式必須在 comp 模式中執行，若果不是在 comp 模式，請按 MODE 1 進入 comp 模式。另外每一個內置程式都有一個編號，使用程式時，請先按FMLA按再按代表程式的兩位編號進入特定的程式。
     </p>
     <p>　</p>
-    <p align="left">
-        如有任何錯誤或問題請聯絡 David Cheuk:
-        <a href="mailto:kl_cheuk@yahoo.com.hk">kl_cheuk@yahoo.com.hk</a>
-    </p>
+    <p> <a href="index.html">返回 fx-50FH 及 fx-50F PLUS程式集</a> </p>
     <p>　</p>
-
+    <p align="left"> 如有任何錯誤或問題請聯絡 David Cheuk: <a href="mailto:kl_cheuk@yahoo.com.hk">kl_cheuk@yahoo.com.hk</a> </p>
+    <p>　</p>
 </body>
 
 </html>
