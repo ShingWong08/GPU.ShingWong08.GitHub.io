@@ -11,7 +11,7 @@ function toggleBackground() {
     document.body.style.backgroundSize = "500% 500%";
     document.body.style.animation = "GradientBackground 25s ease-in infinite";
   } else {
-    document.body.style.background = "url('./Arcaea.png')";
+    document.body.style.background = "url('./OldBridge.png')";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundAttachment = "fixed";
